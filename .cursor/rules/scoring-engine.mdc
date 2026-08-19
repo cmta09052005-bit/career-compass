@@ -1,0 +1,16 @@
+---
+description: Rule-based weighted scoring engine conventions — use when implementing, modifying, or debugging category or course scoring logic
+globs:
+alwaysApply: false
+---
+
+Scoring uses two levels: CategoryScore(C) = sum of points from Interests +
+Skills + Academic Performance answers, then MatchPercentage(C) =
+(CategoryScore(C) / MaxPossibleScore(C)) x 100. Course-level ranking starts
+all 4 courses in a category at the category's Match %, then applies
+tie-breaker adjustments (+5% each, max 1-2 per course).
+
+The engine MUST recompute the full score fresh on every submission — never
+incrementally add points per section, to avoid double-counting edited
+answers. Full weight table and formulas: instructions.md Section 6, and
+"6 - 4.4 Complete RuleWeight_Scoring Table + Formula.docx."

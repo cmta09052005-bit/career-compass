@@ -1,0 +1,18 @@
+---
+description: items.json and courses.json schema conventions
+globs: data/**/*.json,lib/**/*.js
+alwaysApply: false
+---
+
+items.json: array of items, each with { id, section, text, options[]
+(each option has text + category tag), or for sliders/fields: type,
+category, scoringRule }. IDs follow INT-XX / SKL-XX / ACA-XX convention.
+
+courses.json: array of 24 courses, each with { courseId, courseName,
+category, overview, schools[] (name, location, type), careerOpportunities[]
+(jobTitle, salaryRange, notes), salarySource, salaryAsOf, guidanceTips }.
+
+Category name strings MUST exactly match across items.json, courses.json,
+and weightTable.js (e.g., "Information Technology & Computing") — never
+abbreviate or reword, since mismatched strings silently break the scoring
+match. Full schema reference: instructions.md Sections 5 and 7.

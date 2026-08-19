@@ -1,0 +1,13 @@
+---
+description: GSAP and Lenis animation conventions for landing page and screen transitions
+globs: app/page.js,components/**/*Scroll*,components/**/*Animation*
+alwaysApply: false
+---
+
+- Use GSAP + GSAP ScrollTrigger for scroll-driven animation; use Lenis.js
+  for smooth scrolling.
+- The landing page compass must be a CSS/SVG element with scroll-scrubbed
+  rotation/opening — never a 3D model, Three.js object, or frame-sequence
+  canvas (see Hard Constraints).
+- Prefer subtle, purposeful motion (parallax layers, staged reveals) over
+  simple fade-in/fade-out.

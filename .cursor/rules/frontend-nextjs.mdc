@@ -1,0 +1,14 @@
+---
+description: React/Next.js conventions for Career Compass frontend
+globs: app/**/*.js,components/**/*.js
+alwaysApply: false
+---
+
+- Use Next.js App Router conventions (app/ directory routing).
+- Plain JavaScript only — never generate .ts or .tsx files.
+- Style with Tailwind CSS utility classes; avoid separate CSS files unless
+  necessary for complex animation keyframes.
+- Components should be responsive by default (mobile, tablet, desktop).
+- Reference the wireframe's numbered indicators as code comments where
+  relevant, for later documentation traceability (see instructions.md
+  Section 4).

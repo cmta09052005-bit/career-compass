@@ -1,0 +1,18 @@
+---
+description: Career Compass project overview and non-negotiable hard constraints
+globs:
+alwaysApply: true
+---
+
+Career Compass is a web-based decision support system for SHS career
+guidance (Next.js, JavaScript, Tailwind, App Router, no backend beyond
+static hosting).
+
+HARD CONSTRAINTS — NEVER VIOLATE:
+- No database, no login, no account system, no admin CMS.
+- Data is either static JSON (data/items.json, data/courses.json) or
+  session-only (React state / sessionStorage).
+- Landing page compass = CSS/SVG + GSAP ScrollTrigger only, never 3D/Three.js.
+
+If a request would require a database, authentication, or a 3D engine,
+stop and flag it instead of implementing it.

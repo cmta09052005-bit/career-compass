@@ -1,0 +1,15 @@
+---
+description: Explorer/Journey visual theme — color palette, typography, tone — use when styling UI components or writing UI copy
+globs:
+alwaysApply: false
+---
+
+Theme: fantasy-adventure "Explorer/Journey" concept — antique compass,
+island map, atmospheric fantasy landscape. Typography: elegant serif for
+headlines, clean sans-serif for body/UI text. Tone: cinematic, premium,
+mysterious — never generic SaaS-landing-page style.
+
+For full creative reference (palette inspiration, copywriting tone), see
+"UI Content & Interaction Design Notes.docx" — but note the literal 3D/
+frame-sequence animation instructions there are NOT binding (superseded by
+the simplified CSS/SVG approach in Hard Constraints).
