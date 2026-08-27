@@ -322,4 +322,5 @@ intentionally simplified per Section 2 Hard Constraints.)
   INTERESTS_WEIGHTS/SKILLS_WEIGHTS data after Prompt 1 flagged placeholder
   uncertainty. Added docs/ folder references throughout. Marked F-07 "In
   Progress." Recorded confirmed answers object shape from Prompt 2.
-  [Phase 5, Step 5.2] Scoring engine complete — all 4 functions implemented, 3 test personas PASS, match % capped at 100." Commit and push this so Juno's copy stays in sync.
+ - [Phase 5, Step 5.2] Scoring engine complete — all 4 functions implemented,
+ 3 test personas PASS, match % capped at 100.
