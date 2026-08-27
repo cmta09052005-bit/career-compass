@@ -1,0 +1,461 @@
+[
+  {
+    "id": "INT-01",
+    "section": "Interests",
+    "type": "card-select",
+    "text": "It's the weekend with completely free time. Which activity appeals to you most?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Plan a small fundraiser/budget for your barkada",
+        "category": "C3"
+      },
+      {
+        "key": "B",
+        "text": "Tutor a sibling/neighbor in a subject you're good at",
+        "category": "C4"
+      },
+      {
+        "key": "C",
+        "text": "Volunteer at a community health/first-aid drive",
+        "category": "C5"
+      },
+      {
+        "key": "D",
+        "text": "Sketch, design, or redecorate a space",
+        "category": "C6"
+      }
+    ]
+  },
+  {
+    "id": "INT-02",
+    "section": "Interests",
+    "type": "card-select",
+    "text": "Your class must create a project to help the school. Which task would you volunteer for?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Build a simple app/online form for the school",
+        "category": "C1"
+      },
+      {
+        "key": "B",
+        "text": "Facilitate an orientation/training session for classmates",
+        "category": "C4"
+      },
+      {
+        "key": "C",
+        "text": "Set up a first-aid/wellness corner",
+        "category": "C5"
+      },
+      {
+        "key": "D",
+        "text": "Design the posters/visuals for the project",
+        "category": "C6"
+      }
+    ]
+  },
+  {
+    "id": "INT-03",
+    "section": "Interests",
+    "type": "card-select",
+    "text": "Your group project is about improving your community. Which contribution excites you most?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Build a tracking app/spreadsheet for community data",
+        "category": "C1"
+      },
+      {
+        "key": "B",
+        "text": "Design/build a physical model or prototype (e.g., drainage system)",
+        "category": "C2"
+      },
+      {
+        "key": "C",
+        "text": "Research health & sanitation practices for the plan",
+        "category": "C5"
+      },
+      {
+        "key": "D",
+        "text": "Create the visual concept/branding for the campaign",
+        "category": "C6"
+      }
+    ]
+  },
+  {
+    "id": "INT-04",
+    "section": "Interests",
+    "type": "card-select",
+    "text": "A local competition invites SHS students to pitch an idea. Which type would you want to develop?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A mobile app/software tool for an everyday problem",
+        "category": "C1"
+      },
+      {
+        "key": "B",
+        "text": "A gadget, machine, or engineering solution",
+        "category": "C2"
+      },
+      {
+        "key": "C",
+        "text": "A small business/startup concept with a marketing plan",
+        "category": "C3"
+      },
+      {
+        "key": "D",
+        "text": "An art, fashion, or design innovation",
+        "category": "C6"
+      }
+    ]
+  },
+  {
+    "id": "INT-05",
+    "section": "Interests",
+    "type": "card-select",
+    "text": "Your favorite type of content to watch in your free time is usually about...",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tech reviews, coding tutorials, app dev",
+        "category": "C1"
+      },
+      {
+        "key": "B",
+        "text": "DIY builds, machine teardowns, engineering explainers",
+        "category": "C2"
+      },
+      {
+        "key": "C",
+        "text": "Entrepreneurship, investing, business case studies",
+        "category": "C3"
+      },
+      {
+        "key": "D",
+        "text": "Teaching tips, motivational talks, study hacks",
+        "category": "C4"
+      }
+    ]
+  },
+  {
+    "id": "INT-06",
+    "section": "Interests",
+    "type": "card-select",
+    "text": "You're asked to represent a profession at Career Day. Which would you enjoy representing most?",
+    "options": [
+      {
+        "key": "A",
+        "text": "An engineer explaining how bridges/circuits are built",
+        "category": "C2"
+      },
+      {
+        "key": "B",
+        "text": "An entrepreneur explaining how to start/grow a business",
+        "category": "C3"
+      },
+      {
+        "key": "C",
+        "text": "A teacher explaining how to guide young learners",
+        "category": "C4"
+      },
+      {
+        "key": "D",
+        "text": "A nurse explaining patient care",
+        "category": "C5"
+      }
+    ]
+  },
+  {
+    "id": "INT-07",
+    "section": "Interests",
+    "type": "card-select",
+    "text": "Your group is running booths at a class fair. Which one would you rather manage?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The \"mini-store\" booth — sales & budgeting",
+        "category": "C3"
+      },
+      {
+        "key": "B",
+        "text": "The \"peer helpdesk\" booth — answering classmates' questions",
+        "category": "C4"
+      },
+      {
+        "key": "C",
+        "text": "The \"wellness check\" booth — basic health screening",
+        "category": "C5"
+      },
+      {
+        "key": "D",
+        "text": "The \"creative corner\" booth — art/face painting displays",
+        "category": "C6"
+      }
+    ]
+  },
+  {
+    "id": "INT-08",
+    "section": "Interests",
+    "type": "card-select",
+    "text": "Think of a problem in your community (traffic, waste, poor internet, limited health services). How would you want to help solve it?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Build a digital tool/system to track and manage it",
+        "category": "C1"
+      },
+      {
+        "key": "B",
+        "text": "Create educational materials to raise awareness",
+        "category": "C4"
+      },
+      {
+        "key": "C",
+        "text": "Join a health/relief mission related to it",
+        "category": "C5"
+      },
+      {
+        "key": "D",
+        "text": "Design signage/campaign visuals about it",
+        "category": "C6"
+      }
+    ]
+  },
+  {
+    "id": "SKL-01",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I can quickly figure out how a computer program, app, or website works, even without being taught.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C1"
+  },
+  {
+    "id": "SKL-02",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I enjoy building, repairing, or taking apart machines/gadgets to see how they work.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C2"
+  },
+  {
+    "id": "SKL-03",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I can explain a complicated topic simply so others understand it.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C4"
+  },
+  {
+    "id": "SKL-04",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I am comfortable managing money, budgets, or tracking expenses for a project.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C3"
+  },
+  {
+    "id": "SKL-05",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I can stay calm and think clearly when someone nearby is injured or unwell.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C5"
+  },
+  {
+    "id": "SKL-06",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I can express my ideas visually through drawing, layout, or design.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C6"
+  },
+  {
+    "id": "SKL-07",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I can persuade others to support an idea, product, or plan.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C3"
+  },
+  {
+    "id": "SKL-08",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I am good at following step-by-step instructions to build or construct something.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C2"
+  },
+  {
+    "id": "SKL-09",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I enjoy taking care of or looking after other people's well-being (siblings, classmates, pets, patients).",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C5"
+  },
+  {
+    "id": "SKL-10",
+    "section": "Skills",
+    "type": "slider",
+    "text": "I enjoy patiently guiding or mentoring someone younger or less experienced.",
+    "min": 1,
+    "max": 5,
+    "minLabel": "Not Confident",
+    "maxLabel": "Very Confident",
+    "category": "C4"
+  },
+  {
+    "id": "ACA-01",
+    "section": "Academic Performance",
+    "type": "dropdown",
+    "text": "Strand",
+    "options": [
+      {
+        "value": "Academic-STEM",
+        "text": "Academic – STEM",
+        "category": ["C1", "C2", "C5"]
+      },
+      {
+        "value": "Academic-ABM",
+        "text": "Academic – ABM",
+        "category": ["C3"]
+      },
+      {
+        "value": "Academic-HUMSS",
+        "text": "Academic – HUMSS",
+        "category": ["C4"]
+      },
+      {
+        "value": "TVL",
+        "text": "TVL",
+        "category": ["C2"]
+      },
+      {
+        "value": "Arts & Design",
+        "text": "Arts & Design",
+        "category": ["C6"]
+      },
+      {
+        "value": "Sports",
+        "text": "Sports",
+        "category": ["C5"]
+      }
+    ]
+  },
+  {
+    "id": "ACA-02",
+    "section": "Academic Performance",
+    "type": "dropdown",
+    "text": "Current Year Level",
+    "options": [
+      { "value": "Grade 11", "text": "Grade 11" },
+      { "value": "Grade 12", "text": "Grade 12" }
+    ]
+  },
+  {
+    "id": "ACA-03",
+    "section": "Academic Performance",
+    "type": "numeric",
+    "text": "General Weighted Average",
+    "min": 75,
+    "max": 100
+  },
+  {
+    "id": "ACA-04",
+    "section": "Academic Performance",
+    "type": "multi-select",
+    "text": "Which subjects are you strongest in? (Select up to 3)",
+    "maxSelect": 3,
+    "options": [
+      {
+        "value": "Computer/ICT",
+        "text": "Computer/ICT (Programming, Computer Systems Servicing)",
+        "category": "C1"
+      },
+      {
+        "value": "Statistics/Research",
+        "text": "Statistics / Research",
+        "category": "C1"
+      },
+      {
+        "value": "Physics",
+        "text": "Physics",
+        "category": "C2"
+      },
+      {
+        "value": "TVL-Industrial Arts",
+        "text": "TVL – Industrial Arts (Electronics, Welding, Automotive)",
+        "category": "C2"
+      },
+      {
+        "value": "Business Math/Accounting",
+        "text": "Business Math / Accounting",
+        "category": "C3"
+      },
+      {
+        "value": "Economics/Entrepreneurship",
+        "text": "Economics / Entrepreneurship",
+        "category": "C3"
+      },
+      {
+        "value": "English/Communication Arts",
+        "text": "English / Communication Arts",
+        "category": "C4"
+      },
+      {
+        "value": "Filipino/Araling Panlipunan",
+        "text": "Filipino / Araling Panlipunan",
+        "category": "C4"
+      },
+      {
+        "value": "Biology/General Science",
+        "text": "Biology / General Science",
+        "category": "C5"
+      },
+      {
+        "value": "PE & Health",
+        "text": "Physical Education & Health",
+        "category": "C5"
+      },
+      {
+        "value": "MAPEH-Arts",
+        "text": "MAPEH – Arts",
+        "category": "C6"
+      },
+      {
+        "value": "TVL-Arts & Design",
+        "text": "TVL – Arts & Design (Visual Arts, Fashion, Culinary Design)",
+        "category": "C6"
+      }
+    ]
+  }
+]
