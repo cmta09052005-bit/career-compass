@@ -1,0 +1,794 @@
+[
+  {
+    "courseId": "BSIT-001",
+    "courseName": "BS Information Technology",
+    "category": "Information Technology & Computing",
+    "overview": "Prepares students to plan, install, and manage IT systems and applications used by organizations. Key subjects include programming, networking, and systems administration.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "IT Support Specialist",
+        "salaryRange": "₱18,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Web Developer",
+        "salaryRange": "₱20,000–₱35,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; DOLE regional wage data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Most HEIs require a general average of 80%+; TESDA/vendor certifications strengthen employability."
+  },
+  {
+    "courseId": "BSCS-001",
+    "courseName": "BS Computer Science",
+    "category": "Information Technology & Computing",
+    "overview": "Focuses on the theoretical and computational foundations of computing, including algorithms, software engineering, and systems design.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "UP Los Baños",
+        "location": "Los Baños, Laguna",
+        "type": "Public"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Software Developer",
+        "salaryRange": "₱25,000–₱40,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Data Analyst",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; DOLE regional wage data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Strong math/logic background helps; build a portfolio of personal coding projects."
+  },
+  {
+    "courseId": "BSIS-001",
+    "courseName": "BS Information Systems",
+    "category": "Information Technology & Computing",
+    "overview": "Bridges business and technology, training students to design and manage information systems that support organizational decision-making.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Business Systems Analyst",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "IT Project Coordinator",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; DOLE regional wage data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Mix of technical + communication skills valued; internships recommended."
+  },
+  {
+    "courseId": "BSCpE-001",
+    "courseName": "BS Computer Engineering",
+    "category": "Information Technology & Computing",
+    "overview": "Combines computer science and electronics engineering principles to design both hardware and software systems.",
+    "schools": [
+      {
+        "name": "Bicol University Tabaco",
+        "location": "Tabaco City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Embedded Systems Engineer",
+        "salaryRange": "₱25,000–₱40,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Hardware/Network Engineer",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC/ECE industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires board licensure exam (ECE-related); STEM strand strongly recommended."
+  },
+  {
+    "courseId": "BSCE-001",
+    "courseName": "BS Civil Engineering",
+    "category": "Engineering & Technology",
+    "overview": "Trains students to design, construct, and maintain infrastructure such as buildings, roads, and bridges.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi (College of Engineering)",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Civil Engineer, Junior",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Construction Site Engineer",
+        "salaryRange": "₱25,000–₱38,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; DOLE regional wage data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Licensure exam required; STEM strand strongly recommended."
+  },
+  {
+    "courseId": "BSEE-001",
+    "courseName": "BS Electrical Engineering",
+    "category": "Engineering & Technology",
+    "overview": "Covers the design and maintenance of electrical power systems, machines, and control systems.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Electrical Engineer",
+        "salaryRange": "₱23,000–₱37,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Power Systems Technician",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the Electrical Engineer licensure exam."
+  },
+  {
+    "courseId": "BSECE-001",
+    "courseName": "BS Electronics Engineering",
+    "category": "Engineering & Technology",
+    "overview": "Focuses on electronic circuits, communications systems, and signal processing.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Electronics Engineer, Junior",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Telecommunications Technician",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Licensure exam required; STEM background with strong physics/math needed."
+  },
+  {
+    "courseId": "BSME-001",
+    "courseName": "BS Mechanical Engineering",
+    "category": "Engineering & Technology",
+    "overview": "Prepares students to design, build, and maintain mechanical systems and machinery.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Mapúa University",
+        "location": "Manila",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Mechanical Engineer",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Manufacturing/Plant Engineer",
+        "salaryRange": "₱25,000–₱38,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; DOLE regional wage data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Licensure exam required; hands-on aptitude + strong physics background helps."
+  },
+  {
+    "courseId": "BSBA-001",
+    "courseName": "BS Business Administration",
+    "category": "Business Administration & Related",
+    "overview": "Provides a broad foundation in management, marketing, and operations across industries.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Management Trainee",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Marketing Associate",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Communication/leadership skills matter as much as academics."
+  },
+  {
+    "courseId": "BSA-001",
+    "courseName": "BS Accountancy",
+    "category": "Business Administration & Related",
+    "overview": "Trains students in financial accounting, auditing, and taxation.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Accountant/Bookkeeper",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Audit Associate",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC/CPA industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the CPA licensure exam; strong Math background recommended."
+  },
+  {
+    "courseId": "BSENT-001",
+    "courseName": "BS Entrepreneurship",
+    "category": "Business Administration & Related",
+    "overview": "Focuses on developing and managing new business ventures.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Business Development Associate",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Startup Founder/Small Business Owner",
+        "salaryRange": "Variable income",
+        "notes": "commission/profit-based"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide (variable/self-employed estimate)",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Practical experience (student-run business/internship) is highly valued."
+  },
+  {
+    "courseId": "BSHRM-001",
+    "courseName": "BS Hospitality Management",
+    "category": "Business Administration & Related",
+    "overview": "Prepares students for careers in hotels, restaurants, and tourism-related services.",
+    "schools": [
+      {
+        "name": "Bicol University Tabaco",
+        "location": "Tabaco City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Front Office/Guest Services Associate",
+        "salaryRange": "₱15,000–₱22,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Food & Beverage Supervisor",
+        "salaryRange": "₱18,000–₱25,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; DOLE regional wage data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "OJT/internship hours typically required for graduation."
+  },
+  {
+    "courseId": "BEED-001",
+    "courseName": "Bachelor of Elementary Education",
+    "category": "Education Science & Teacher Training",
+    "overview": "Trains students to teach across all subject areas at the elementary level.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Public Elementary School Teacher",
+        "salaryRange": "₱27,000–₱30,000/mo",
+        "notes": "entry-level, per Salary Grade 11"
+      },
+      {
+        "jobTitle": "Private School Teacher",
+        "salaryRange": "₱15,000–₱22,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "DepEd Salary Standardization Law (SSL) schedule; JobStreet Philippines (private-school estimate)",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the LET; patience and communication skills are essential."
+  },
+  {
+    "courseId": "BSED-001",
+    "courseName": "Bachelor of Secondary Education",
+    "category": "Education Science & Teacher Training",
+    "overview": "Prepares students to teach a specific subject area at the secondary level.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Public High School Teacher",
+        "salaryRange": "₱27,000–₱30,000/mo",
+        "notes": "entry-level, per Salary Grade 11"
+      },
+      {
+        "jobTitle": "Private High School Teacher",
+        "salaryRange": "₱15,000–₱23,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "DepEd Salary Standardization Law (SSL) schedule; JobStreet Philippines (private-school estimate)",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the LET; choosing a major (Math, Science, English, etc.) matters."
+  },
+  {
+    "courseId": "BTLE-001",
+    "courseName": "Bachelor of Technology and Livelihood Education",
+    "category": "Education Science & Teacher Training",
+    "overview": "Trains future TLE teachers in practical/vocational skill areas.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Public School TLE Teacher",
+        "salaryRange": "₱27,000–₱30,000/mo",
+        "notes": "entry-level, per Salary Grade 11"
+      },
+      {
+        "jobTitle": "TVET/TESDA Trainer",
+        "salaryRange": "₱18,000–₱25,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "DepEd SSL schedule; TESDA/TVET industry estimate",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the LET; TESDA NC II certification is an advantage."
+  },
+  {
+    "courseId": "BPED-001",
+    "courseName": "Bachelor of Physical Education",
+    "category": "Education Science & Teacher Training",
+    "overview": "Prepares students to teach physical education and sports-related subjects.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Public School PE Teacher",
+        "salaryRange": "₱27,000–₱30,000/mo",
+        "notes": "entry-level, per Salary Grade 11"
+      },
+      {
+        "jobTitle": "Fitness Instructor/Coach",
+        "salaryRange": "₱15,000–₱22,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "DepEd SSL schedule; JobStreet Philippines (private-sector estimate)",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the LET; active involvement in school sports programs helps."
+  },
+  {
+    "courseId": "BSN-001",
+    "courseName": "BS Nursing",
+    "category": "Medical & Allied Health Sciences",
+    "overview": "Trains students in patient care, clinical procedures, and health promotion.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Staff Nurse (hospital)",
+        "salaryRange": "₱18,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Community Health Nurse",
+        "salaryRange": "₱18,000–₱25,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC/NLE industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the NLE; clinical duty hours during college are demanding."
+  },
+  {
+    "courseId": "BSPharma-001",
+    "courseName": "BS Pharmacy",
+    "category": "Medical & Allied Health Sciences",
+    "overview": "Covers drug composition, pharmacology, and dispensing practices.",
+    "schools": [
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Retail/Community Pharmacist",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Pharmaceutical Sales Representative",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the Pharmacist Licensure Exam; strong Chemistry background needed."
+  },
+  {
+    "courseId": "BSMLS-001",
+    "courseName": "BS Medical Laboratory Science",
+    "category": "Medical & Allied Health Sciences",
+    "overview": "Trains students to perform laboratory tests (blood, tissue, and other specimens) for diagnosis.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Medical Technologist",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Laboratory Technician",
+        "salaryRange": "₱16,000–₱24,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the Med Tech Licensure Exam; strong Biology/Chemistry background helps."
+  },
+  {
+    "courseId": "BSRT-001",
+    "courseName": "BS Radiologic Technology",
+    "category": "Medical & Allied Health Sciences",
+    "overview": "Prepares students to operate imaging equipment (X-ray, CT, MRI).",
+    "schools": [
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Radiologic Technologist",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Imaging Center Technician",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires passing the Rad Tech Licensure Exam; comfort with clinical/hospital settings needed."
+  },
+  {
+    "courseId": "BSArch-001",
+    "courseName": "BS Architecture",
+    "category": "Architecture, Fine Arts & Design",
+    "overview": "Trains students in building design, structural planning, and construction documentation.",
+    "schools": [
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      },
+      {
+        "name": "University of Santo Tomas",
+        "location": "Manila",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Architect/Architectural Drafter",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "3D Visualizer/Renderer",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC/UAP industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires Architecture Licensure Exam (5-year program); strong drafting/design portfolio helps."
+  },
+  {
+    "courseId": "BFA-001",
+    "courseName": "Bachelor of Fine Arts",
+    "category": "Architecture, Fine Arts & Design",
+    "overview": "Develops skills in visual arts such as painting, sculpture, and studio practice.",
+    "schools": [
+      {
+        "name": "UP Los Baños/Diliman",
+        "location": "",
+        "type": "Public"
+      },
+      {
+        "name": "Ateneo de Naga University (if offered under related program)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Freelance Illustrator/Artist",
+        "salaryRange": "Variable income",
+        "notes": "commission-based"
+      },
+      {
+        "jobTitle": "Art Teacher/Studio Instructor",
+        "salaryRange": "₱15,000–₱22,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide (freelance/commission estimate)",
+    "salaryAsOf": "2025",
+    "guidanceTips": "A strong, unique portfolio matters more than grades for this path."
+  },
+  {
+    "courseId": "BSID-001",
+    "courseName": "BS Interior Design",
+    "category": "Architecture, Fine Arts & Design",
+    "overview": "Trains students in space planning, materials, and interior construction detailing.",
+    "schools": [
+      {
+        "name": "University of Santo Tomas",
+        "location": "Manila",
+        "type": "Private"
+      },
+      {
+        "name": "Ateneo de Naga University (if offered)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Interior Designer",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Furniture/Space Planner",
+        "salaryRange": "₱16,000–₱25,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide; PRC/PIID industry data",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Requires Interior Design Licensure Exam; strong portfolio and spatial-reasoning skills needed."
+  },
+  {
+    "courseId": "BSMA-001",
+    "courseName": "BS Multimedia Arts",
+    "category": "Architecture, Fine Arts & Design",
+    "overview": "Covers digital media production including graphic design, animation, and video.",
+    "schools": [
+      {
+        "name": "Bicol University Tabaco (if offered under IT-related program)",
+        "location": "Tabaco City, Albay",
+        "type": "Public"
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private"
+      }
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Graphic Designer",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Video Editor/Animator",
+        "salaryRange": "₱18,000–₱30,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "salarySource": "JobStreet Philippines salary guide (creative industry estimate)",
+    "salaryAsOf": "2025",
+    "guidanceTips": "Portfolio (design/animation reel) weighed more heavily than academic grades by most employers."
+  }
+]
