@@ -1,7 +1,11 @@
-import ScreenPlaceholder from "@/components/ScreenPlaceholder";
+import JourneySectionPlaceholder from "@/components/JourneySectionPlaceholder";
 
 export default function SkillsPage() {
   return (
-    <ScreenPlaceholder title="Skills" path="/journey/skills" />
+    <JourneySectionPlaceholder
+      sectionId="skills"
+      title="Skills"
+      path="/journey/skills"
+    />
   );
 }

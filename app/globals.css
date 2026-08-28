@@ -22,3 +22,50 @@ body {
   background-color: #f5ecd7;
   color: #1b2a4a;
 }
+
+@keyframes processing-compass-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes processing-compass-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+.processing-compass {
+  animation: processing-compass-turn 1.2s linear infinite;
+}
+
+.processing-compass-pulse {
+  animation: processing-compass-pulse 1.2s
+    cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .processing-compass {
+    animation: none;
+  }
+
+  .processing-compass-pulse {
+    animation-name: processing-compass-pulse-reduced;
+  }
+}
+
+@keyframes processing-compass-pulse-reduced {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.75;
+  }
+}
