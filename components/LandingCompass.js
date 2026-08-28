@@ -51,10 +51,12 @@ export default function LandingCompass({ assemblyRef, lidRef, needleRef }) {
         <g fill="#d4a017" opacity="0.85">
           {Array.from({ length: 12 }, (_, i) => {
             const a = (i * 30 * Math.PI) / 180;
-            const x1 = 120 + Math.sin(a) * 78;
-            const y1 = 120 - Math.cos(a) * 78;
-            const x2 = 120 + Math.sin(a) * 86;
-            const y2 = 120 - Math.cos(a) * 86;
+            // Fixed-precision strings keep server and client SVG attributes
+            // identical during hydration.
+            const x1 = (120 + Math.sin(a) * 78).toFixed(4);
+            const y1 = (120 - Math.cos(a) * 78).toFixed(4);
+            const x2 = (120 + Math.sin(a) * 86).toFixed(4);
+            const y2 = (120 - Math.cos(a) * 86).toFixed(4);
             return (
               <line
                 key={i}

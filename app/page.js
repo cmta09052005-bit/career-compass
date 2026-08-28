@@ -1,13 +1,13 @@
 "use client";
 
 import { useRef } from "react";
-import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import LandingCompass from "@/components/LandingCompass";
+import Button from "@/components/Button";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
 if (typeof window !== "undefined") {
@@ -161,12 +161,12 @@ export default function LandingPage() {
           </p>
 
           {/* 4 — Primary CTA */}
-          <Link
+          <Button
             href="/intake"
-            className="mt-7 inline-flex items-center justify-center rounded-full border border-gold/70 bg-gold/15 px-7 py-3 font-sans text-xs tracking-[0.2em] text-beige uppercase transition-[box-shadow,transform,background-color] duration-200 ease-out hover:bg-gold/25 hover:shadow-[0_0_28px_rgba(212,160,23,0.55)] active:scale-[0.97] sm:mt-8 sm:px-8 sm:text-sm"
-          >
-            Start Your Journey
-          </Link>
+            label="Start Your Journey"
+            variant="cta-glow"
+            className="mt-7 sm:mt-8"
+          />
         </div>
       </section>
     </div>
