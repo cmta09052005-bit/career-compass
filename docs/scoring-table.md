@@ -108,13 +108,33 @@ MatchPercentage(C) = (CategoryScore(C) ÷ MaxPossibleScore(C)) × 100
 ________________________________________
 SECTION 6: COURSE-LEVEL MATCH % (TIE-BREAKER APPROACH)
 Method: All courses within a winning category first receive the same percentage as their category's overall match %. Then, 1–2 tie-breaker answers per course "nudge" that specific course's percentage up, differentiating it from its category-mates.
-Worked Example (within Technology & Computing, assuming an 82% category match):
-Course	Base %	Tie-breaker Rule Applied	Final %
-BSIT-001	82%	If "Computer/ICT" selected in ACA-04 → +5%	87%
-BSCS-001	82%	If "Statistics/Research" selected in ACA-04 → +5%	82% (not selected in this example)
-BSIS-001	82%	No tie-breaker triggered	82%
-BSCpE-001	82%	If SKL-02 (gadgets/hardware) ≥4 → +5%	82% (not ≥4 in this example)
-Result: BSIT-001 (87%) emerges as the top course within the category, while the other three remain tied at 82% (resolved using the ranking rule below).
+Each course has one finalized tie-breaker signal. If that signal is present, the course receives a +5 percentage-point bonus.
+Category	Course	Tie-breaker Rule
+C1 – Information Technology & Computing	BSIT-001	If "Computer/ICT" is selected in ACA-04 → +5%
+C1 – Information Technology & Computing	BSCS-001	If "Statistics/Research" is selected in ACA-04 → +5%
+C1 – Information Technology & Computing	BSIS-001	If SKL-01 (programming/app affinity) ≥4 → +5%
+C1 – Information Technology & Computing	BSCpE-001	If SKL-02 (building/repairing gadgets) ≥4 → +5%
+C2 – Engineering & Technology	BSCE-001	If SKL-08 (following instructions to build) ≥4 → +5%
+C2 – Engineering & Technology	BSEE-001	If "Physics" is selected in ACA-04 → +5%
+C2 – Engineering & Technology	BSECE-001	If "TVL – Industrial Arts" is selected in ACA-04 → +5%
+C2 – Engineering & Technology	BSME-001	If SKL-02 (building/repairing gadgets) ≥4 → +5%
+C3 – Business Administration & Related	BSBA-001	If SKL-07 (persuading others) ≥4 → +5%
+C3 – Business Administration & Related	BSA-001	If "Business Math/Accounting" is selected in ACA-04 → +5%
+C3 – Business Administration & Related	BSENT-001	If "Economics/Entrepreneurship" is selected in ACA-04 → +5%
+C3 – Business Administration & Related	BSHRM-001	If SKL-04 (managing money/budgets) ≥4 → +5%
+C4 – Education Science & Teacher Training	BEED-001	If SKL-10 (mentoring/guiding others) ≥4 → +5%
+C4 – Education Science & Teacher Training	BSED-001	If "English/Communication Arts" is selected in ACA-04 → +5%
+C4 – Education Science & Teacher Training	BTLE-001	If SKL-03 (explaining topics simply) ≥4 → +5%
+C4 – Education Science & Teacher Training	BPED-001	If "Filipino/Araling Panlipunan" is selected in ACA-04 → +5%
+C5 – Medical & Allied Health Sciences	BSN-001	If SKL-09 (caretaking others) ≥4 → +5%
+C5 – Medical & Allied Health Sciences	BSPharma-001	If "PE & Health" is selected in ACA-04 → +5%
+C5 – Medical & Allied Health Sciences	BSMLS-001	If "Biology/General Science" is selected in ACA-04 → +5%
+C5 – Medical & Allied Health Sciences	BSRT-001	If SKL-05 (calm under injury/first response) ≥4 → +5%
+C6 – Architecture, Fine Arts & Design	BSArch-001	If "Physics" is selected in ACA-04 → +5%
+C6 – Architecture, Fine Arts & Design	BFA-001	If "MAPEH – Arts" is selected in ACA-04 → +5%
+C6 – Architecture, Fine Arts & Design	BSID-001	If "TVL – Arts & Design" is selected in ACA-04 → +5%
+C6 – Architecture, Fine Arts & Design	BSMA-001	If SKL-06 (visual/design expression) ≥4 → +5%
+Tie-breaker signals only need to be unique within their own category. Two intentional cross-category borrowings are used: BSCpE-001 uses SKL-02, a C2-mapped skill, because hands-on gadget and hardware aptitude strongly relates to Computer Engineering; BSArch-001 uses Physics, a C2-mapped subject, because Architecture includes structural and technical coursework. Since the function evaluates only the student's winning category, these reused signals do not conflict across categories.
 ________________________________________
 SECTION 7: RANKING & TIE-BREAKING RULE
 The system displays all categories/courses ranked from highest to lowest match percentage. The top category is labeled "Top Match." If two categories or courses tie in percentage (after rounding), the one with the higher raw score before rounding is ranked first. If still exactly tied, alphabetical order of the course/category name is used as the final tie-breaker.
