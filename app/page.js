@@ -10,165 +10,105 @@ import LandingCompass from "@/components/LandingCompass";
 import Button from "@/components/Button";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
-if (typeof window !== "undefined") {
-  gsap.registerPlugin(useGSAP, ScrollTrigger);
+if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+const chapters = [
+  ["mountains", "04", "The Mountains", "Discover what draws you forward.", "Choose between real-life scenarios and uncover the interests that keep calling you back.", "8 guided scenarios"],
+  ["forest", "05", "The Forest", "Find strength in what you can do.", "Reflect on your confidence across practical, creative, technical, and people-centered skills.", "10 strength signals"],
+  ["islands", "06", "The Islands", "See the paths your story opens.", "Connect your interests, strengths, strand, and academic trail to college courses worth exploring.", "24 possible courses"],
+];
+
+function Clouds({ className = "" }) {
+  return <div aria-hidden="true" className={`cloud-bank ${className}`}><i /><i /><i /><i /><i /></div>;
+}
+
+function Scene({ name }) {
+  return <div aria-hidden="true" className={`scene scene-${name}`}><i className="scene-image" /><i className="scene-depth" /><i className="scene-atmosphere" /></div>;
 }
 
 export default function LandingPage() {
   useSessionAnswers();
+  const root = useRef(null);
+  const prologue = useRef(null);
+  const assembly = useRef(null);
+  const lid = useRef(null);
+  const needle = useRef(null);
+  const progress = useRef(null);
 
-  const rootRef = useRef(null);
-  const heroRef = useRef(null);
-  const assemblyRef = useRef(null);
-  const lidRef = useRef(null);
-  const needleRef = useRef(null);
+  useGSAP(() => {
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    gsap.set(assembly.current, { rotation: reduce ? 0 : 58, scale: reduce ? 1 : 0.9, transformOrigin: "50% 50%" });
+    gsap.set(lid.current, { rotation: reduce ? -138 : 0, svgOrigin: "120 34" });
+    gsap.set(needle.current, { rotation: reduce ? 0 : 48, svgOrigin: "120 120" });
+    if (reduce) return;
 
-  useGSAP(
-    () => {
-      const assembly = assemblyRef.current;
-      const lid = lidRef.current;
-      const needle = needleRef.current;
-      const hero = heroRef.current;
-      if (!assembly || !lid || !needle || !hero) return;
+    const lenis = new Lenis({ autoRaf: false, duration: 1.08, anchors: { offset: 0 }, syncTouch: false });
+    const update = () => ScrollTrigger.update();
+    const tick = (time) => lenis.raf(time * 1000);
+    lenis.on("scroll", update);
+    gsap.ticker.add(tick);
+    gsap.ticker.lagSmoothing(0);
 
-      const reduceMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)",
-      ).matches;
+    gsap.timeline({ scrollTrigger: { trigger: prologue.current, start: "top top", end: "+=190%", pin: ".prologue-stage", scrub: 0.55, anticipatePin: 1 } })
+      .to(assembly.current, { rotation: 0, scale: 1.08, duration: 0.64, ease: "none" }, 0)
+      .to(lid.current, { rotation: -138, svgOrigin: "120 34", duration: 0.58, ease: "none" }, 0.06)
+      .to(needle.current, { rotation: 0, duration: 0.42, ease: "none" }, 0.14)
+      .to(".prologue-glow", { scale: 1.45, autoAlpha: 0.8, duration: 0.64, ease: "none" }, 0)
+      .fromTo(".reveal-curtain", { yPercent: 52, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, duration: 0.38, ease: "none" }, 0.66)
+      .to(".prologue-compass", { yPercent: -8, scale: 0.82, autoAlpha: 0, duration: 0.36, ease: "none" }, 0.86)
+      .to(".prologue-shade", { autoAlpha: 0, duration: 0.4, ease: "none" }, 0.86)
+      .to(".reveal-curtain", { yPercent: -32, autoAlpha: 0, duration: 0.42, ease: "none" }, 1.03);
 
-      gsap.set(assembly, {
-        rotation: reduceMotion ? 0 : 60,
-        scale: reduceMotion ? 1 : 0.94,
-        transformOrigin: "50% 50%",
+    gsap.fromTo(".world-intro", { autoAlpha: 0, yPercent: 10 }, { autoAlpha: 1, yPercent: 0, ease: "none", scrollTrigger: { trigger: ".world-intro", start: "top 78%", end: "top 38%", scrub: 0.4 } });
+    gsap.fromTo(".world-nav", { autoAlpha: 0, y: -16 }, { autoAlpha: 1, y: 0, ease: "none", scrollTrigger: { trigger: ".world-intro", start: "top 70%", end: "top 45%", scrub: true } });
+    gsap.fromTo(progress.current, { scaleY: 0 }, { scaleY: 1, transformOrigin: "top", ease: "none", scrollTrigger: { trigger: root.current, start: "top top", end: "bottom bottom", scrub: 0.15 } });
+
+    const media = gsap.matchMedia();
+    media.add("(min-width: 768px)", () => {
+      gsap.utils.toArray(".journey-chapter").forEach((section) => {
+        const timeline = gsap.timeline({
+          scrollTrigger: { trigger: section, start: "top top", end: "+=135%", pin: true, scrub: 0.7, anticipatePin: 1 },
+        });
+        timeline
+          .fromTo(section.querySelector(".scene-image"), { scale: 1.18, yPercent: 5 }, { scale: 1.02, yPercent: -3, ease: "none" }, 0)
+          .fromTo(section.querySelector(".chapter-cloud-curtain"), { yPercent: 0, autoAlpha: 1 }, { yPercent: -26, autoAlpha: 0, ease: "none" }, 0)
+          .fromTo(section.querySelector(".scene-depth"), { autoAlpha: 0.2 }, { autoAlpha: 1, ease: "none" }, 0)
+          .fromTo(section.querySelector(".scene-atmosphere"), { xPercent: -10 }, { xPercent: 10, ease: "none" }, 0)
+          .fromTo(section.querySelector(".chapter-copy"), { clipPath: "inset(0 100% 0 0)", x: -45, autoAlpha: 0 }, { clipPath: "inset(0 0% 0 0)", x: 0, autoAlpha: 1, ease: "none" }, 0.14)
+          .fromTo(section.querySelectorAll(".chapter-copy > *"), { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, stagger: 0.045, ease: "none" }, 0.25)
+          .to(section.querySelector(".chapter-copy"), { y: -28, autoAlpha: 0, ease: "none" }, 0.78)
+          .to(section.querySelector(".scene-image"), { scale: 0.98, ease: "none" }, 0.78);
       });
-      gsap.set(lid, {
-        rotation: reduceMotion ? -132 : 0,
-        svgOrigin: "120 32",
+    });
+    media.add("(max-width: 767px)", () => {
+      gsap.utils.toArray(".journey-chapter").forEach((section) => {
+        gsap.fromTo(section.querySelector(".chapter-copy"), { autoAlpha: 0, y: 48 }, { autoAlpha: 1, y: 0, ease: "none", scrollTrigger: { trigger: section, start: "top 75%", end: "top 38%", scrub: 0.35 } });
+        gsap.fromTo(section.querySelector(".scene-image"), { scale: 1.12 }, { scale: 1.02, ease: "none", scrollTrigger: { trigger: section, start: "top bottom", end: "bottom top", scrub: 0.6 } });
       });
-      gsap.set(needle, {
-        rotation: reduceMotion ? 0 : 42,
-        svgOrigin: "120 120",
-      });
+    });
+    document.fonts.ready.then(() => ScrollTrigger.refresh());
+    return () => { media.revert(); gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.off("scroll", update); lenis.destroy(); };
+  }, { scope: root });
 
-      if (reduceMotion) return;
+  return <main ref={root} className="cinematic-landing text-beige">
+    <div aria-hidden="true" className="landing-progress"><span ref={progress} /></div>
+    <section ref={prologue} className="prologue" aria-label="The compass awakens"><div className="prologue-stage">
+      <div aria-hidden="true" className="prologue-shade" /><div aria-hidden="true" className="prologue-glow" /><Clouds className="cloud-back" />
+      <div className="prologue-compass"><LandingCompass assemblyRef={assembly} lidRef={lid} needleRef={needle} /></div>
+      <Clouds className="cloud-wipe reveal-curtain" />
+      <p className="scroll-cue"><span /> Scroll to awaken</p>
+    </div></section>
 
-      const lenis = new Lenis({
-        autoRaf: false,
-        duration: 1.15,
-      });
-      const onLenisScroll = () => ScrollTrigger.update();
-      lenis.on("scroll", onLenisScroll);
+    <div className="world-shell" id="explore">
+      <header className="world-nav"><a href="#explore" className="world-brand"><span>✦</span> Career Compass</a><nav aria-label="Landing page navigation"><a href="#explore">Explore</a><a href="#how-it-works">How it works</a><a href="#about">About</a></nav></header>
+      <section className="world-intro"><div aria-hidden="true" className="map-contours" /><Clouds className="world-clouds" /><div className="intro-copy">
+        <p className="chapter-label">Chapter 03 · The World</p><h1><span>You are an Explorer.</span><span>Your career path is a map.</span></h1>
+        <p>Chart your interests, strengths, and academic trail. Career Compass turns reflection into possible college directions you can explore with confidence.</p>
+        <Button href="/intake" label="Start Your Journey  ↗" variant="cta-glow" className="mt-8" />
+      </div><div aria-hidden="true" className="world-horizon" /></section>
 
-      const onTick = (time) => {
-        lenis.raf(time * 1000);
-      };
-      gsap.ticker.add(onTick);
-      gsap.ticker.lagSmoothing(0);
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: hero,
-          start: "top top",
-          end: "+=115%",
-          pin: true,
-          scrub: 0.45,
-          anticipatePin: 1,
-        },
-      });
-
-      tl.to(assembly, { rotation: 0, scale: 1.04, ease: "none" }, 0)
-        .to(lid, { rotation: -132, ease: "none" }, 0)
-        .to(needle, { rotation: 0, ease: "none" }, 0.12);
-
-      return () => {
-        gsap.ticker.remove(onTick);
-        gsap.ticker.lagSmoothing(500, 33);
-        lenis.off("scroll", onLenisScroll);
-        lenis.destroy();
-      };
-    },
-    { scope: rootRef },
-  );
-
-  return (
-    <div ref={rootRef} className="relative min-h-svh text-beige">
-      {/* 5 — Background: navy-to-lavender gradient + radial glow (no images) */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(180deg,#121a2e_0%,#1b2a4a_42%,#5a4d7a_100%)]"
-      />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_50%_28%,rgba(212,160,23,0.22)_0%,rgba(45,191,184,0.1)_38%,transparent_68%)]"
-      />
-
-      <section
-        ref={heroRef}
-        className="flex min-h-svh flex-col px-5 pb-10 pt-4 sm:px-8 lg:px-12"
-      >
-        {/* 6 — Navigation Bar (brand mark is also indicator 1) */}
-        <header className="flex items-center justify-between gap-4 py-2">
-          {/* 1 — Brand mark */}
-          <p className="font-serif text-[0.7rem] tracking-[0.28em] text-beige/90 sm:text-xs">
-            CAREER COMPASS
-          </p>
-          <nav
-            aria-label="Placeholder"
-            className="flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-[0.65rem] tracking-[0.18em] text-beige/80 sm:gap-x-4 sm:text-xs"
-          >
-            <a href="#explore" className="transition-colors hover:text-gold">
-              Explore
-            </a>
-            <span aria-hidden="true" className="text-beige/40">
-              ·
-            </span>
-            <a
-              href="#how-it-works"
-              className="transition-colors hover:text-gold"
-            >
-              How It Works
-            </a>
-            <span aria-hidden="true" className="text-beige/40">
-              ·
-            </span>
-            <a href="#about" className="transition-colors hover:text-gold">
-              About
-            </a>
-          </nav>
-        </header>
-
-        <div className="mx-auto flex w-full max-w-3xl flex-1 flex-col items-center justify-center text-center">
-          <div className="mb-6 sm:mb-8">
-            <LandingCompass
-              assemblyRef={assemblyRef}
-              lidRef={lidRef}
-              needleRef={needleRef}
-            />
-          </div>
-
-          {/* 2 — Headline */}
-          <h1 className="font-serif text-[1.75rem] leading-snug text-beige sm:text-4xl md:text-5xl md:leading-tight">
-            You are an Explorer.
-            <br />
-            Your career path is a map.
-          </h1>
-
-          {/* 3 — Description */}
-          <p className="mt-4 max-w-xl font-sans text-sm leading-relaxed text-beige/80 sm:mt-5 sm:text-base">
-            Career Compass helps Senior High School students chart interests,
-            skills, and academic performance toward college courses worth
-            exploring. This is a guidance map for conversation with a counselor
-            — not a final decision about your future.
-          </p>
-
-          {/* 4 — Primary CTA */}
-          <Button
-            href="/intake"
-            label="Start Your Journey"
-            variant="cta-glow"
-            className="mt-7 sm:mt-8"
-          />
-        </div>
-      </section>
+      <div id="how-it-works">{chapters.map(([name, number, eyebrow, title, body, stat], index) => <section key={name} id={name} className={`journey-chapter chapter-${name}`}><Scene name={name} /><Clouds className="chapter-cloud-curtain" /><div className={`chapter-copy ${index % 2 ? "chapter-copy-right" : ""}`}><p className="chapter-label">Chapter {number} · {eyebrow}</p><h2>{title}</h2><p>{body}</p><span className="chapter-stat">{stat}</span></div><a className="chapter-next" href={index === chapters.length - 1 ? "#about" : `#${chapters[index + 1][0]}`} aria-label={`Continue to ${index === chapters.length - 1 ? "the journey ahead" : chapters[index + 1][2]}`}>Explore onward <span>↓</span></a></section>)}</div>
+      <section id="about" className="journey-final"><Clouds className="chapter-cloud-curtain final-cloud-curtain" /><div aria-hidden="true" className="final-rays" /><div className="final-content"><p className="chapter-label">Chapter 07 · The Journey Ahead</p><h2>Your future is not a straight line.</h2><p>Explore the map. Discover your direction. Find the path that fits you.</p><Button href="/intake" label="Start Your Journey  ↗" variant="cta-glow" className="mt-8" /><small>For Senior High School students · No account required · Session-only</small></div></section>
     </div>
-  );
+  </main>;
 }

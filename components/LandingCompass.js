@@ -2,6 +2,7 @@ export default function LandingCompass({ assemblyRef, lidRef, needleRef }) {
   return (
     <svg
       viewBox="0 0 240 240"
+      overflow="visible"
       className="h-auto w-full max-w-[16rem] drop-shadow-[0_18px_40px_rgba(0,0,0,0.35)] sm:max-w-[18rem] md:max-w-[22rem]"
       role="img"
       aria-label="Antique explorer compass"

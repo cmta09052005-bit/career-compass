@@ -173,11 +173,11 @@ export default function JourneyPage() {
   }
 
   return (
-    <main className="relative isolate min-h-svh flex-1 overflow-hidden bg-navy text-beige">
+    <main className="explorer-map-screen relative isolate min-h-svh flex-1 overflow-hidden text-beige">
       {/* 14 — Map background */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-20 bg-[linear-gradient(165deg,#101a31_0%,#17375a_48%,#206d75_100%)]"
+        className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_50%_55%,rgba(179,140,82,.14),transparent_46%)]"
       />
       <svg
         aria-hidden="true"
@@ -187,9 +187,9 @@ export default function JourneyPage() {
       >
         <defs>
           <radialGradient id="island" cx="45%" cy="35%" r="70%">
-            <stop offset="0%" stopColor="#d4a017" stopOpacity=".55" />
-            <stop offset="55%" stopColor="#2dbfb8" stopOpacity=".28" />
-            <stop offset="100%" stopColor="#1b2a4a" stopOpacity="0" />
+            <stop offset="0%" stopColor="#f4d39f" stopOpacity=".4" />
+            <stop offset="55%" stopColor="#2dbfb8" stopOpacity=".18" />
+            <stop offset="100%" stopColor="#24150f" stopOpacity="0" />
           </radialGradient>
           <pattern id="waves" width="72" height="32" patternUnits="userSpaceOnUse">
             <path d="M0 16 Q18 4 36 16 T72 16" fill="none" stroke="#f5ecd7" strokeOpacity=".09" strokeWidth="2" />
@@ -199,16 +199,16 @@ export default function JourneyPage() {
         <ellipse cx="250" cy="450" rx="235" ry="190" fill="url(#island)" />
         <ellipse cx="610" cy="250" rx="250" ry="200" fill="url(#island)" />
         <ellipse cx="970" cy="480" rx="235" ry="190" fill="url(#island)" />
-        <path d="M250 450 C380 390 470 300 610 250 S850 360 970 480" fill="none" stroke="#d4a017" strokeOpacity=".42" strokeWidth="4" strokeDasharray="7 14" />
+        <path className="map-route" d="M250 450 C380 390 470 300 610 250 S850 360 970 480" fill="none" stroke="#f3d9b5" strokeOpacity=".62" strokeWidth="4" />
       </svg>
 
       <div className="mx-auto flex min-h-svh w-full max-w-7xl flex-col px-4 py-5 sm:px-7 sm:py-7 lg:px-10">
-        <header className="flex items-start justify-between gap-4">
+        <header className="map-wood-bar flex items-start justify-between gap-4 p-4 sm:p-5">
           <div>
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.3em] text-teal sm:text-xs">
-              Career Compass
+            <p className="map-ribbon text-[0.68rem] font-extrabold uppercase tracking-[0.2em] sm:text-xs">
+              Explorer&apos;s Log
             </p>
-            <h1 className="mt-1 font-serif text-3xl text-beige sm:text-4xl">
+            <h1 className="mt-3 font-serif text-3xl text-beige sm:text-4xl">
               Your Journey Map
             </h1>
             {session.nickname ? (
@@ -303,10 +303,10 @@ export default function JourneyPage() {
                     icon={state === "completed" ? "✓" : isLocked ? "🔒" : island.icon}
                     aria-hidden="true"
                   />
-                  <span className="mt-4 text-xs font-bold tracking-[0.2em]">
-                    {island.mapLabel}
+                  <span className="map-ribbon mt-4 text-xs font-extrabold tracking-[0.16em]">
+                    CHAPTER {index + 1} · {island.mapLabel}
                   </span>
-                  <span className="mt-2 text-sm leading-5 text-beige/90">
+                  <span className={`mt-3 text-sm font-semibold leading-5 ${isLocked ? "text-beige/65" : "text-[#4b3022]"}`}>
                     {island.description}
                   </span>
                   <Badge
@@ -329,7 +329,7 @@ export default function JourneyPage() {
             {/* 24 — Locate Me button */}
             <Button
               label="◎ Locate Me"
-              variant="secondary"
+              variant="map-secondary"
               onClick={locateNextIsland}
               disabled={!isReady || allCompleted}
             />
@@ -344,6 +344,7 @@ export default function JourneyPage() {
                     ? "Continue Assessment"
                     : "Start Assessment"
               }
+              variant="map-primary"
               onClick={handlePrimaryAction}
               disabled={!isReady}
               className="font-bold tracking-[0.16em] transition-[background-color,transform] duration-150 active:scale-[0.97] disabled:cursor-wait disabled:opacity-50"

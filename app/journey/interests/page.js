@@ -55,7 +55,7 @@ export default function InterestsPage() {
   }
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-navy px-4 py-10 text-beige sm:px-6">
+    <main className="explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
       <div
         className="pointer-events-none absolute inset-0 opacity-50"
         aria-hidden="true"
@@ -67,7 +67,7 @@ export default function InterestsPage() {
 
       <Card className="relative max-w-3xl">
         {/* 25 — Section/progress label */}
-        <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase sm:text-sm">
+        <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
           Interests — Question {questionIndex + 1} of {INTEREST_ITEMS.length}
         </p>
 
