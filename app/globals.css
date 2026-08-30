@@ -37,8 +37,8 @@ body {
 .cloud-bank i:nth-child(2n) { align-self:flex-start; transform:scale(1.35); }
 .cloud-back { z-index:0; top:22%; left:-15%; opacity:.24; transform:scale(1.4); }
 .cloud-wipe { z-index:10; left:-8%; bottom:-8vh; width:116%; height:68vh; opacity:0; will-change:transform,opacity; filter:blur(6px); }
-.cloud-wipe i { min-width:24%; height:82%; margin-inline:-7%; background:radial-gradient(ellipse at 50% 64%,rgba(250,250,246,.98) 0,rgba(214,226,232,.92) 44%,rgba(167,188,204,.48) 66%,transparent 74%); }
-.cloud-wipe i:nth-child(2n) { align-self:center; transform:scale(1.25); }
+.cloud-wipe { background:radial-gradient(ellipse at 8% 70%,rgba(239,245,247,.96) 0 22%,transparent 48%),radial-gradient(ellipse at 31% 57%,rgba(250,250,247,.98) 0 25%,transparent 52%),radial-gradient(ellipse at 56% 68%,rgba(218,229,235,.96) 0 27%,transparent 54%),radial-gradient(ellipse at 78% 52%,rgba(247,248,244,.98) 0 24%,transparent 50%),radial-gradient(ellipse at 96% 70%,rgba(204,219,228,.94) 0 24%,transparent 52%),linear-gradient(to bottom,transparent 0,rgba(219,230,235,.78) 34%,rgba(230,238,240,.96) 72%,rgba(178,198,211,.82) 100%); }
+.cloud-wipe i { display:none; }
 .scroll-cue { position:absolute; z-index:12; bottom:2rem; display:flex; align-items:center; gap:.7rem; font-size:.64rem; letter-spacing:.24em; text-transform:uppercase; color:rgba(245,236,215,.66); }
 .scroll-cue span { width:2.6rem; height:1px; background:currentColor; }
 .world-shell { position:relative; margin-top:-1px; background:#152b40; }
@@ -54,10 +54,12 @@ body {
 .intro-copy h1 { max-width:60rem; margin-inline:auto; font-family:var(--font-playfair),serif; font-size:clamp(2.8rem,6vw,5.5rem); line-height:.98; letter-spacing:-.045em; text-wrap:balance; }.intro-copy h1 span { display:block; }.intro-copy h1 span:last-child { font-style:italic; color:#fff2d4; }
 .intro-copy>p:not(.chapter-label) { max-width:40rem; margin:2rem auto 0; color:rgba(245,236,215,.86); font-size:clamp(.95rem,1.4vw,1.12rem); line-height:1.8; }
 .journey-chapter { position:relative; display:flex; align-items:center; min-height:115svh; overflow:hidden; isolation:isolate; padding:clamp(5rem,9vw,9rem); }
-.chapter-cloud-curtain { z-index:4; top:-32vh; left:-8%; width:116%; height:64vh; opacity:1; filter:blur(8px); will-change:transform,opacity; }
-.chapter-cloud-curtain i { min-width:24%; height:78%; margin-inline:-7%; background:radial-gradient(ellipse at 50% 62%,rgba(244,247,245,.96) 0,rgba(202,217,222,.86) 45%,rgba(126,153,166,.36) 67%,transparent 75%); }
-.chapter-cloud-curtain i:nth-child(2n) { align-self:center; transform:scale(1.28); }
-.final-cloud-curtain { top:-30vh; }
+.chapter-cloud-curtain { z-index:4; top:0; left:-8%; width:116%; height:58vh; opacity:1; filter:blur(8px); will-change:transform,opacity; background:radial-gradient(ellipse at 12% 18%,rgba(235,241,242,.88) 0 17%,transparent 42%),radial-gradient(ellipse at 38% 12%,rgba(249,248,243,.92) 0 20%,transparent 46%),radial-gradient(ellipse at 64% 20%,rgba(209,223,229,.9) 0 19%,transparent 45%),radial-gradient(ellipse at 88% 10%,rgba(242,245,241,.88) 0 18%,transparent 44%),linear-gradient(to bottom,var(--curtain-edge,#253846) 0,rgba(210,223,228,.9) 18%,rgba(230,238,239,.68) 42%,transparent 82%); }
+.chapter-cloud-curtain i { display:none; }
+.chapter-mountains { --curtain-edge:#243746; }
+.chapter-forest { --curtain-edge:#172a35; }
+.chapter-islands { --curtain-edge:#081c20; }
+.final-cloud-curtain { --curtain-edge:#176174; }
 .scene { position:absolute; inset:-12%; z-index:-1; overflow:hidden; background:#0d2434; }
 .scene-image,.scene-depth,.scene-atmosphere { position:absolute; inset:0; display:block; will-change:transform,opacity; }
 .scene-image { background-position:center; background-size:cover; }
@@ -79,7 +81,7 @@ body {
 .chapter-next { position:absolute; z-index:6; right:clamp(1.25rem,4vw,4rem); bottom:2rem; display:flex; align-items:center; gap:.75rem; color:rgba(245,236,215,.72); font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; transition:color 180ms var(--landing-ease); }.chapter-next span{color:#e8c56e;font-size:1rem}
 .journey-final { position:relative; display:grid; place-items:center; min-height:110svh; overflow:hidden; text-align:center; background:linear-gradient(#1c5970 0,#d69a64 48%,#392d35 100%); }.final-rays{position:absolute;top:-20%;width:90vw;aspect-ratio:1;background:repeating-conic-gradient(from 260deg at 50% 50%,rgba(255,228,168,.17) 0 8deg,transparent 9deg 20deg);mask-image:radial-gradient(circle,black,transparent 68%)}.final-content{position:relative;width:min(90%,52rem);padding:6rem 1rem}.final-content>p:not(.chapter-label){margin-top:1.5rem;color:rgba(245,236,215,.85);font-size:1.05rem}.final-content small{display:block;margin-top:2rem;color:rgba(245,236,215,.58);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}
 @media (hover:hover) and (pointer:fine){.world-nav a:hover,.chapter-next:hover{color:#e8c56e}}
-@media (max-width:767px){.world-nav nav{display:none}.journey-chapter{min-height:105svh;padding:5rem 1.25rem}.chapter-copy{margin-top:34vh}.prologue-compass{width:78vw}.chapter-next{bottom:1.25rem}.landing-progress{right:.35rem}.chapter-cloud-curtain{top:-22vh;height:48vh}}
+@media (max-width:767px){.world-nav nav{display:none}.journey-chapter{min-height:105svh;padding:5rem 1.25rem}.chapter-copy{margin-top:34vh}.prologue-compass{width:78vw}.chapter-next{bottom:1.25rem}.landing-progress{right:.35rem}.chapter-cloud-curtain{height:48vh}}
 @media (prefers-reduced-motion:reduce){.prologue{height:100svh}.scroll-cue,.cloud-wipe{display:none}.world-nav,.world-intro,.chapter-copy{opacity:1!important;transform:none!important}.scene>*{transform:none!important}}
 
 /* Dashboard-forward explorer system: original CSS/SVG surfaces, not stock art. */
