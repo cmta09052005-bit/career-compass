@@ -16,7 +16,7 @@ export default async function CourseDetailPage({ params }) {
   if (!course) notFound();
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-navy px-4 py-12 text-beige sm:px-6 lg:py-16">
+    <main className="explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden="true"
@@ -29,8 +29,8 @@ export default async function CourseDetailPage({ params }) {
       <div className="relative mx-auto max-w-6xl">
         {/* 56 — Course title heading and Career Path label */}
         <header className="max-w-4xl">
-          <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase sm:text-sm">
-            Career Path
+          <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
+            Discovered Career Path
           </p>
           <h1 className="mt-3 font-serif text-4xl leading-tight text-balance sm:text-5xl md:text-6xl">
             {course.courseName}

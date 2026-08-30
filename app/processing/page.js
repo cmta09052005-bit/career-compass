@@ -29,7 +29,7 @@ export default function ProcessingPage() {
   }, [isReady, router]);
 
   return (
-    <main className="relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden bg-navy px-5 py-12 text-beige">
+    <main className="explorer-map-screen relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden px-5 py-12 text-beige">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_50%_42%,#305774_0%,#1b2a4a_42%,#10182b_100%)]"
@@ -39,14 +39,14 @@ export default function ProcessingPage() {
         className="absolute inset-0 -z-10 opacity-30 [background-image:repeating-radial-gradient(circle_at_center,transparent_0,transparent_54px,rgba(212,160,23,0.16)_55px,transparent_56px)]"
       />
 
-      <Card variant="processing">
+      <Card variant="processing" className="map-paper rounded-2xl p-8 sm:p-12">
         {/* 45 — Heading */}
-        <h1 className="font-serif text-4xl leading-tight text-beige sm:text-5xl md:text-6xl">
+        <h1 className="font-serif text-4xl leading-tight text-[#3b261c] sm:text-5xl md:text-6xl">
           Charting Your Course
         </h1>
 
         {/* 46 — Supporting subtext */}
-        <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-beige/90 sm:text-base">
+        <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-[#604532] sm:text-base">
           {session.nickname ? `${session.nickname}, your` : "Your"} compass
           points are coming together. We’re tracing the paths that best match
           your journey.

@@ -63,7 +63,7 @@ export default function ResultsPage() {
 
   if (!isReady) {
     return (
-      <main className="flex min-h-screen items-center justify-center bg-navy px-4 text-beige">
+      <main className="explorer-map-screen relative flex min-h-screen items-center justify-center px-4 text-beige">
         <p role="status" className="text-sm tracking-[0.18em] text-gold uppercase">
           Restoring your career map...
         </p>
@@ -72,7 +72,7 @@ export default function ResultsPage() {
   }
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-navy px-4 py-12 text-beige sm:px-6 lg:py-16">
+    <main className="explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden="true"
@@ -95,12 +95,12 @@ export default function ResultsPage() {
           </p>
 
           {/* 51 — Top Match label */}
-          <section className="mt-8 rounded-3xl border border-gold/50 bg-gold/15 px-5 py-6 shadow-[0_0_40px_rgba(212,160,23,0.12)] sm:px-8">
-            <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">
+          <section className="map-paper mt-8 rounded-xl px-5 py-6 sm:px-8">
+            <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase">
               Top Match
             </p>
             <div className="mt-2 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
-              <h2 className="font-serif text-2xl text-balance sm:text-3xl">
+              <h2 className="font-serif text-2xl text-[#3b261c] text-balance sm:text-3xl">
                 {topCategory.label}
               </h2>
               <span className="rounded-full bg-gold px-4 py-1.5 text-lg font-bold text-navy">

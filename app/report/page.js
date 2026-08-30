@@ -48,7 +48,7 @@ export default function ReportPage() {
   };
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-navy px-4 py-12 text-beige sm:px-6">
+    <main className="explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-12 text-beige sm:px-6">
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden="true"
@@ -58,7 +58,7 @@ export default function ReportPage() {
         }}
       />
 
-      <Card className="relative max-w-2xl text-center">
+      <Card className="map-paper relative max-w-2xl rounded-xl text-center">
         <div
           className="mx-auto flex size-16 items-center justify-center rounded-full border border-gold/60 bg-gold/15 text-2xl text-gold"
           aria-hidden="true"
@@ -67,12 +67,12 @@ export default function ReportPage() {
         </div>
 
         {/* 64 — Heading */}
-        <h1 className="mt-6 font-serif text-3xl leading-tight text-balance sm:text-4xl md:text-5xl">
+        <h1 className="mt-6 font-serif text-3xl leading-tight text-[#3b261c] text-balance sm:text-4xl md:text-5xl">
           Your Explorer Report Is Ready
         </h1>
 
         {/* 65 — Supporting text */}
-        <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-beige/75 sm:text-base">
+        <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-[#604532] sm:text-base">
           Your journey has been mapped. Your next destination is yours to
           explore.
         </p>

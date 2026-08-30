@@ -64,7 +64,7 @@ export default function AcademicPage() {
   }
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-navy px-4 py-10 text-beige sm:px-6">
+    <main className="explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
       <div
         className="pointer-events-none absolute inset-0 opacity-50"
         aria-hidden="true"
@@ -77,8 +77,8 @@ export default function AcademicPage() {
       <Card className="relative max-w-4xl">
         <form onSubmit={submitAcademicProfile}>
           {/* 39 — Section label */}
-          <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase sm:text-sm">
-            Academic Performance
+          <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
+            Final Expedition · Academic Performance
           </p>
           <h1 className="mt-3 font-serif text-3xl text-balance sm:text-4xl">
             Complete your academic profile

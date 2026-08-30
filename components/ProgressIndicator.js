@@ -31,11 +31,11 @@ export default function ProgressIndicator({
   return (
     <section
       aria-label={`Compass Points: ${completedCount} of ${items.length} sections completed`}
-      className="mt-6 rounded-2xl border border-beige/15 bg-navy/45 p-4 backdrop-blur-sm"
+      className="map-wood-bar mt-6 p-4"
     >
       <div className="flex items-center justify-between gap-4">
-        <h2 className="font-serif text-lg">Compass Points</h2>
-        <span className="text-sm font-semibold text-gold">
+        <h2 className="font-serif text-lg text-beige">Compass Points</h2>
+        <span className="rounded-md bg-gold px-3 py-1 text-sm font-bold text-navy">
           {completedCount} / {items.length} complete
         </span>
       </div>
