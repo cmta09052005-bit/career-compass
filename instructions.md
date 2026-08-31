@@ -67,7 +67,7 @@ scope and cannot be part of the graded system.
    3b. SKILLS — 10 confidence sliders
    3c. ACADEMIC PERFORMANCE — GWA + subjects form (Strand not re-entered)
 4. PROCESSING / SUMMARY — loading transition, scoring computed in-session
-5. RESULTS PAGE — top match category, ranked course cards, disclaimer,
+5. RESULTS PAGE — globally ranked course cards, secondary strongest-field context, disclaimer,
    Back to Journey Map, Download Report
    5a. COURSE DETAIL VIEW — Overview, Schools, Careers, Guidance Tips
 6. PDF REPORT CONFIRMATION — download/print complete
@@ -89,7 +89,7 @@ Screen 3b (34–38): Section label, statement, slider, Back/Next
 Screen 3c (39–44): Section label, Strand display, GWA field, Subjects
   checklist, Back, Submit
 Screen 4 (45–48): Heading, subtext, loading animation, status text
-Screen 5 (49–55): Heading, subtext, Top Match label, ranked cards,
+Screen 5 (49–55): Heading, subtext, strongest-field note, ranked course cards,
   disclaimer, Back, Download
 Screen 5a (56–63): Course title, Overview, Study subjects, Schools,
   Careers, Salary+source+date, Guidance Tips, Back

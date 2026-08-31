@@ -29,6 +29,7 @@ export default function SkillsPage() {
   }));
 
   function selectConfidence(value) {
+    if (!isReady) return;
     updateSession({
       skills: { [currentItem.id]: Number(value) },
       journeyProgress: { skills: SECTION_STATUS.IN_PROGRESS },
@@ -108,13 +109,14 @@ export default function SkillsPage() {
             max={currentItem.max}
             step="1"
             value={hasSelectedValue ? selectedValue : currentItem.min}
-            onInput={(event) => selectConfidence(event.currentTarget.value)}
+            onChange={(event) => selectConfidence(event.currentTarget.value)}
+            disabled={!isReady}
             aria-valuetext={
               hasSelectedValue
                 ? `${selectedValue} out of ${currentItem.max}`
                 : "No confidence level selected"
             }
-            className="mt-7 h-2 w-full cursor-pointer accent-gold"
+            className="mt-7 h-2 w-full cursor-pointer accent-gold disabled:cursor-not-allowed disabled:opacity-40"
           />
           <div
             className="mt-5 grid grid-cols-5 gap-2"
@@ -134,7 +136,8 @@ export default function SkillsPage() {
                   aria-checked={isSelected}
                   aria-label={`${value} out of ${currentItem.max}`}
                   onClick={() => selectConfidence(value)}
-                  className={`min-h-11 rounded-xl border text-sm font-bold transition-[border-color,background-color,transform] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold active:scale-[0.97] ${
+                  disabled={!isReady}
+                  className={`min-h-11 rounded-xl border text-sm font-bold transition-[border-color,background-color,transform] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-40 ${
                     isSelected
                       ? "border-gold bg-gold text-navy"
                       : "border-beige/25 bg-navy/45 text-beige hover:border-teal"

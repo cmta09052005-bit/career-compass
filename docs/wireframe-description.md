@@ -101,8 +101,8 @@ Layout:
 Indicator	Element	Description
 49	Heading	"Your Career Map"
 50	Supporting subtext	"Based on your journey, these paths may be worth exploring."
-51	Top Match label	Highlighted category name + overall match percentage (e.g., "Technology & Computing — Top Match")
-52	Ranked course card list	Repeating card component: course name, match %, one-line explanation, "Explore This Course" button
+51	Strongest-field note	Small supplementary note below the ranked list showing the strongest category; never the primary result
+52	Global ranked course card list	Top 5 shown first with an option to expand to all 24. Each card contains rank, course code/name, match %, category badge, one-line explanation, and "Explore This Course" button
 53	Guidance disclaimer	Small text: "This is a guidance tool, not a final decision — talk to your guidance counselor about what's right for you."
 54	"Back to Journey Map" button	Secondary action
 55	"Download My Explorer Report" button	Primary action — triggers PDF generation
@@ -131,7 +131,7 @@ Indicator	Element	Description
 68	"Back to Results" button	Returns to the Results Page
 ________________________________________
 APPENDIX NOTE: EXPLORER REPORT (PDF) — REFERENCE ONLY, NOT A WEB SCREEN
-The generated PDF should contain, in order: a cover section (Career Compass branding, nickname if provided, date), a "Your Career Map" summary (top category, top courses, match %), an "Your Exploration Profile" summary (brief interests/skills/academic recap), a "Recommended Paths" ranked list, an "Explore Further" section (course info, schools, careers, guidance tips), and the same guidance disclaimer used on the Results Page.
+The generated PDF should contain, in order: a cover section (Career Compass branding, nickname if provided, date), a primary "Your Top Course Matches" summary, a supplementary strongest-field note, a "Your Exploration Profile" summary, the complete ranked list of 24 courses, and the same guidance disclaimer used on the Results Page.
 ________________________________________
 FULL INDICATOR SUMMARY (Quick Reference)
 Screen	Indicator Range

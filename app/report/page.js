@@ -9,9 +9,8 @@ import {
 } from "@/lib/explorerReport";
 import {
   calculateCategoryScores,
-  calculateCourseMatches,
   calculateMatchPercentages,
-  rankResults,
+  createRecommendationResult,
 } from "@/lib/scoringEngine";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
@@ -19,23 +18,18 @@ export default function ReportPage() {
   const { session, answers, isReady } = useSessionAnswers();
   const categoryScores = calculateCategoryScores(answers);
   const categoryPercentages = calculateMatchPercentages(categoryScores);
-  const rankedCategories = rankResults(categoryPercentages);
-  const topCategory = rankedCategories[0];
-  const rankedCourses = topCategory
-    ? calculateCourseMatches(
-        topCategory.category,
-        topCategory,
-        answers,
-        courses,
-      )
-    : [];
+  const result = createRecommendationResult(
+    categoryPercentages,
+    answers,
+    courses,
+  );
   const report = {
     nickname: session.nickname,
     date: new Intl.DateTimeFormat("en-PH", { dateStyle: "long" }).format(
       new Date(),
     ),
-    topCategory,
-    rankedCourses,
+    topCourses: result.topCourses,
+    strongestCategory: result.strongestCategory,
     profile: {
       interestsAnswered: Object.keys(session.interests).length,
       strongSkills: Object.values(session.skills).filter(
