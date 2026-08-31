@@ -36,17 +36,13 @@ files are the complete originals.
   (a) STATIC — bundled JSON files (items.json, courses.json), or
   (b) SESSION-ONLY — held in React state and/or browser sessionStorage,
       automatically cleared when the browser tab closes.
-- The landing page's animated compass should be a CSS/SVG element animated
-  via GSAP ScrollTrigger — NOT a live 3D model, NOT Three.js, NOT a
-  pre-rendered frame-sequence canvas. Keep it lightweight and achievable.
 - Tech stack: Next.js (JavaScript, NOT TypeScript), Tailwind CSS, App Router,
   no backend server beyond static hosting (Vercel).
 - Prefer functional components + pure functions (standard modern React
   convention) over class-based OOP, unless a specific module (e.g., the
   scoring engine) is explicitly asked to use a class for encapsulation.
 
-If any prompt or generated code suggests a database, login system, or 3D
-engine, STOP and flag it — it violates the approved, ERB-cleared manuscript
+If any prompt or generated code suggests a database, or login system. STOP and flag it — it violates the approved, ERB-cleared manuscript
 scope and cannot be part of the graded system.
 
 ---
