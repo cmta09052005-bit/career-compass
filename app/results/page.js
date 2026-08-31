@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
@@ -7,38 +8,29 @@ import courses from "@/data/courses.json";
 import { downloadExplorerReport } from "@/lib/explorerReport";
 import {
   calculateCategoryScores,
-  calculateCourseMatches,
   calculateMatchPercentages,
-  rankResults,
+  createRecommendationResult,
 } from "@/lib/scoringEngine";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
-function overviewExcerpt(overview) {
-  if (!overview) return "Explore this course and the paths it can open.";
-  const firstSentence = overview.match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim();
-  return firstSentence || overview;
-}
-
 export default function ResultsPage() {
   const router = useRouter();
+  const [showAllCourses, setShowAllCourses] = useState(false);
   const { session, answers, isReady } = useSessionAnswers();
   const categoryScores = calculateCategoryScores(answers);
   const categoryPercentages = calculateMatchPercentages(categoryScores);
-  const rankedCategories = rankResults(categoryPercentages);
-  const topCategory = rankedCategories[0];
-  const rankedCourses = topCategory
-    ? calculateCourseMatches(
-        topCategory.category,
-        topCategory,
-        answers,
-        courses,
-      ).map((match) => ({
-        ...match,
-        details: courses.find(
-          (course) => course.courseId === match.courseId,
-        ),
-      }))
-    : [];
+  const result = createRecommendationResult(
+    categoryPercentages,
+    answers,
+    courses,
+  );
+  const topCourses = result.topCourses.map((match) => ({
+    ...match,
+    details: courses.find((course) => course.courseId === match.courseId),
+  }));
+  const displayedCourses = showAllCourses
+    ? topCourses
+    : topCourses.slice(0, 5);
 
   function downloadReport() {
     downloadExplorerReport({
@@ -46,8 +38,8 @@ export default function ResultsPage() {
       date: new Intl.DateTimeFormat("en-PH", { dateStyle: "long" }).format(
         new Date(),
       ),
-      topCategory,
-      rankedCourses,
+      topCourses,
+      strongestCategory: result.strongestCategory,
       profile: {
         interestsAnswered: Object.keys(session.interests).length,
         strongSkills: Object.values(session.skills).filter(
@@ -91,35 +83,21 @@ export default function ResultsPage() {
 
           {/* 50 — Supporting subtext */}
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-beige/75 sm:text-base">
-            Based on your journey, these paths may be worth exploring.
+            These courses are ranked from strongest to weakest match based on
+            your interests, skills, and academic profile.
           </p>
-
-          {/* 51 — Top Match label */}
-          <section className="map-paper mt-8 rounded-xl px-5 py-6 sm:px-8">
-            <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase">
-              Top Match
-            </p>
-            <div className="mt-2 flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4">
-              <h2 className="font-serif text-2xl text-[#3b261c] text-balance sm:text-3xl">
-                {topCategory.label}
-              </h2>
-              <span className="rounded-full bg-gold px-4 py-1.5 text-lg font-bold text-navy">
-                {topCategory.percentage}%
-              </span>
-            </div>
-          </section>
         </header>
 
         {/* 52 — Ranked course card list */}
-        <section className="mt-10" aria-labelledby="recommended-paths-heading">
+        <section className="mt-8" aria-labelledby="recommended-paths-heading">
           <h2
             id="recommended-paths-heading"
-            className="font-serif text-2xl sm:text-3xl"
+            className="text-center font-serif text-2xl sm:text-3xl"
           >
-            Recommended Paths
+            Your Top Course Matches
           </h2>
           <div className="mt-5 grid gap-4 md:grid-cols-2">
-            {rankedCourses.map((course, index) => (
+            {displayedCourses.map((course, index) => (
               <Card
                 key={course.courseId}
                 as="article"
@@ -128,19 +106,19 @@ export default function ResultsPage() {
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-                      Path {index + 1}
+                      Rank #{index + 1}
                     </p>
                     <h3 className="mt-2 font-serif text-xl leading-tight sm:text-2xl">
-                      {course.courseName}
+                      {course.courseId} – {course.courseName}
                     </h3>
+                    <span className="mt-3 inline-flex rounded-full border border-teal/30 bg-teal/10 px-2.5 py-1 text-xs font-semibold text-teal">
+                      {course.categoryName}
+                    </span>
                   </div>
                   <span className="shrink-0 rounded-full border border-gold/55 bg-gold/10 px-3 py-1 text-sm font-bold text-gold">
-                    {course.matchPercentage}%
+                    {course.finalCourseMatchPercent}%
                   </span>
                 </div>
-                <p className="mt-4 flex-1 text-sm leading-6 text-beige/70">
-                  {overviewExcerpt(course.details?.overview)}
-                </p>
                 <Button
                   label="Explore This Course"
                   href={`/results/${course.courseId}`}
@@ -150,7 +128,26 @@ export default function ResultsPage() {
               </Card>
             ))}
           </div>
+          <div className="mt-6 flex justify-center">
+            <Button
+              label={showAllCourses ? "Show Top 5 Only" : "See All 24 Courses"}
+              onClick={() => setShowAllCourses((current) => !current)}
+              variant="secondary"
+              className="inline-flex w-full items-center justify-center sm:w-auto"
+            />
+          </div>
         </section>
+
+        {result.strongestCategory ? (
+          <aside className="mx-auto mt-8 max-w-3xl rounded-2xl border border-beige/15 bg-navy/35 p-4 text-center text-sm text-beige/70">
+            Your strongest field was{" "}
+            <span className="font-semibold text-beige">
+              {result.strongestCategory.label}
+            </span>{" "}
+            at {result.strongestCategory.percentage}%. This is supporting
+            context; your ranked courses above are the primary result.
+          </aside>
+        ) : null}
 
         {/* 53 — Guidance disclaimer */}
         <aside className="mx-auto mt-10 max-w-3xl rounded-2xl border border-teal/30 bg-teal/10 p-5 text-center text-sm leading-6 text-beige/80">

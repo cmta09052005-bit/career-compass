@@ -42,8 +42,10 @@ Purpose of this document: A Site Map is a structural outline that lists every sc
 •	Rule-based weighted scoring engine computes category + course scores (in-session only)
 
 5.	RESULTS PAGE
-•	Top-match category label (e.g., "Technology and Computing – Top Match")
-•	Ranked list of recommended courses with match percentages
+•	Global ranked list of all 24 recommended courses, initially showing the top 5
+•	Course code, course name, match percentage, and category badge per result
+•	"See All 24 Courses" expansion control
+•	Strongest category shown only as supplementary context below the course list
 •	"Explore This Course" button per course card
 •	"Back to Journey Map" button
 •	"Download My Explorer Report" (PDF export) button

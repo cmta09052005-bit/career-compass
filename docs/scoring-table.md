@@ -10,7 +10,7 @@ ________________________________________
 SECTION 1: OVERVIEW — HOW SCORING WORKS
 Career Compass scores in two levels:
 1.	Category-level scoring — determines which of the 6 broad categories (IT & Computing, Engineering & Technology, Business Administration, Education Science, Medical & Allied Health, Architecture/Fine Arts & Design) best fits the student.
-2.	Course-level scoring — within the winning category, determines which of the 4 specific courses in that category best fits the student, using a tie-breaker method.
+2.	Course-level scoring — computes a match for all 24 courses using each course's category Match % plus its own tie-breaker signal.
 Full process flow:
 Student answers assessment
    ↓
@@ -20,7 +20,7 @@ Total points per category are summed, then converted to a Match Percentage
    ↓
 The category with the highest % becomes the "Top Match"
    ↓
-Within that category, tie-breaker answers rank the 4 specific courses
+Every course receives its category Match % plus its own tie-breaker bonus
 This document applies the real, finalized content from your 22-item Assessment Item Bank (Item 3) and your 24-course Career Dataset (Item 5) — every number below is built from your actual system content, not generic placeholders.
 ________________________________________
 SECTION 2: CATEGORY LEGEND
@@ -107,7 +107,8 @@ Match Percentage:
 MatchPercentage(C) = (CategoryScore(C) ÷ MaxPossibleScore(C)) × 100
 ________________________________________
 SECTION 6: COURSE-LEVEL MATCH % (TIE-BREAKER APPROACH)
-Method: All courses within a winning category first receive the same percentage as their category's overall match %. Then, 1–2 tie-breaker answers per course "nudge" that specific course's percentage up, differentiating it from its category-mates.
+Method: All 24 courses receive their own category's overall Match % as a base. Each course's documented tie-breaker can then nudge only that course's percentage up, regardless of which category is the Top Match.
+CourseMatch%(course) = MatchPercentage(course.category) + (5 if the course's tie-breaker is true, otherwise 0), capped at 100.
 Each course has one finalized tie-breaker signal. If that signal is present, the course receives a +5 percentage-point bonus.
 Category	Course	Tie-breaker Rule
 C1 – Information Technology & Computing	BSIT-001	If "Computer/ICT" is selected in ACA-04 → +5%
@@ -134,10 +135,10 @@ C6 – Architecture, Fine Arts & Design	BSArch-001	If "Physics" is selected in A
 C6 – Architecture, Fine Arts & Design	BFA-001	If "MAPEH – Arts" is selected in ACA-04 → +5%
 C6 – Architecture, Fine Arts & Design	BSID-001	If "TVL – Arts & Design" is selected in ACA-04 → +5%
 C6 – Architecture, Fine Arts & Design	BSMA-001	If SKL-06 (visual/design expression) ≥4 → +5%
-Tie-breaker signals only need to be unique within their own category. Two intentional cross-category borrowings are used: BSCpE-001 uses SKL-02, a C2-mapped skill, because hands-on gadget and hardware aptitude strongly relates to Computer Engineering; BSArch-001 uses Physics, a C2-mapped subject, because Architecture includes structural and technical coursework. Since the function evaluates only the student's winning category, these reused signals do not conflict across categories.
+Tie-breaker signals only need to be unique within their own category. Two intentional cross-category borrowings are used: BSCpE-001 uses SKL-02, a C2-mapped skill, because hands-on gadget and hardware aptitude strongly relates to Computer Engineering; BSArch-001 uses Physics, a C2-mapped subject, because Architecture includes structural and technical coursework. Each course evaluates only its own documented condition; a triggered condition never propagates a bonus to category-mates.
 ________________________________________
 SECTION 7: RANKING & TIE-BREAKING RULE
-The system displays all categories/courses ranked from highest to lowest match percentage. The top category is labeled "Top Match." If two categories or courses tie in percentage (after rounding), the one with the higher raw score before rounding is ranked first. If still exactly tied, alphabetical order of the course/category name is used as the final tie-breaker.
+The system's primary result is the complete list of 24 courses ranked from highest to lowest final course match percentage. If two courses tie after rounding, the course with the higher raw score before rounding ranks first. If still exactly tied, course name alphabetical order is the final tie-breaker. Category rankings remain available only as supplementary context, with the strongest category shown below the primary course list.
 ________________________________________
 SECTION 8: MANUAL DRY RUN — 3 TEST PERSONAS
 To verify the formula produces differentiated, realistic results (not the same output regardless of input), three distinct fake student profiles were manually computed by hand:
