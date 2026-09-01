@@ -226,13 +226,19 @@ Skills + Academic Performance)
 MatchPercentage(C) = (CategoryScore(C) ÷ MaxPossibleScore(C)) × 100
 
 
-### Course-Level Ranking (within winning category)
-All 4 courses in a category start at the category's Match %. Then 1–2
-tie-breaker answers per course add up to +5% each.
+### Course-Level Ranking
+Each course receives 88% of its category's raw Match Percentage as a base,
+then adds four evidence components: primary course signal (0/4/6), strand
+alignment (0/2), applicable GWA alignment (0/1/2), and secondary course
+evidence (0/1/2). CalculatedCourseMatchPercent is the rounded sum, capped at
+100. If calculated percentages tie within the top five, their display values
+are separated by 0.01 points in established rank order. The calculated score
+is retained unchanged for auditability.
 
 ### Ranking & Tie-Breaking Rule
-Rank highest to lowest Match %. Ties resolved by higher raw score before
-rounding; further ties resolved alphabetically by name.
+Rank by calculatedCourseMatchPercent, then rawScoreBeforeRounding, then
+courseName. Secondary signals reduce ties using real assessment evidence.
+Exact top-five display ties are separated by hundredths only after ranking.
 
 ### Re-calculation note
 If a student revisits and edits an earlier section, the scoring engine

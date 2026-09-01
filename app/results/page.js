@@ -10,6 +10,7 @@ import {
   calculateCategoryScores,
   calculateMatchPercentages,
   createRecommendationResult,
+  formatMatchPercent,
 } from "@/lib/scoringEngine";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
@@ -115,8 +116,15 @@ export default function ResultsPage() {
                       {course.categoryName}
                     </span>
                   </div>
-                  <span className="shrink-0 rounded-full border border-gold/55 bg-gold/10 px-3 py-1 text-sm font-bold text-gold">
-                    {course.finalCourseMatchPercent}%
+                  <span
+                    className="shrink-0 rounded-full border border-gold/55 bg-gold/10 px-3 py-1 text-sm font-bold text-gold"
+                    title={
+                      course.displayTieAdjustment
+                        ? `Calculated match: ${formatMatchPercent(course.calculatedCourseMatchPercent)}%. Display separated by hundredths to distinguish tied ranks.`
+                        : `Calculated match: ${formatMatchPercent(course.calculatedCourseMatchPercent)}%.`
+                    }
+                  >
+                    {formatMatchPercent(course.finalCourseMatchPercent)}%
                   </span>
                 </div>
                 <Button

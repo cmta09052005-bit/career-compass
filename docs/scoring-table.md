@@ -106,39 +106,47 @@ CategoryScore(C) = Σ (all points received by Category C from Interests + Skills
 Match Percentage:
 MatchPercentage(C) = (CategoryScore(C) ÷ MaxPossibleScore(C)) × 100
 ________________________________________
-SECTION 6: COURSE-LEVEL MATCH % (TIE-BREAKER APPROACH)
-Method: All 24 courses receive their own category's overall Match % as a base. Each course's documented tie-breaker can then nudge only that course's percentage up, regardless of which category is the Top Match.
-CourseMatch%(course) = MatchPercentage(course.category) + (5 if the course's tie-breaker is true, otherwise 0), capped at 100.
-Each course has one finalized tie-breaker signal. If that signal is present, the course receives a +5 percentage-point bonus.
-Category	Course	Tie-breaker Rule
-C1 – Information Technology & Computing	BSIT-001	If "Computer/ICT" is selected in ACA-04 → +5%
-C1 – Information Technology & Computing	BSCS-001	If "Statistics/Research" is selected in ACA-04 → +5%
-C1 – Information Technology & Computing	BSIS-001	If SKL-01 (programming/app affinity) ≥4 → +5%
-C1 – Information Technology & Computing	BSCpE-001	If SKL-02 (building/repairing gadgets) ≥4 → +5%
-C2 – Engineering & Technology	BSCE-001	If SKL-08 (following instructions to build) ≥4 → +5%
-C2 – Engineering & Technology	BSEE-001	If "Physics" is selected in ACA-04 → +5%
-C2 – Engineering & Technology	BSECE-001	If "TVL – Industrial Arts" is selected in ACA-04 → +5%
-C2 – Engineering & Technology	BSME-001	If SKL-02 (building/repairing gadgets) ≥4 → +5%
-C3 – Business Administration & Related	BSBA-001	If SKL-07 (persuading others) ≥4 → +5%
-C3 – Business Administration & Related	BSA-001	If "Business Math/Accounting" is selected in ACA-04 → +5%
-C3 – Business Administration & Related	BSENT-001	If "Economics/Entrepreneurship" is selected in ACA-04 → +5%
-C3 – Business Administration & Related	BSHRM-001	If SKL-04 (managing money/budgets) ≥4 → +5%
-C4 – Education Science & Teacher Training	BEED-001	If SKL-10 (mentoring/guiding others) ≥4 → +5%
-C4 – Education Science & Teacher Training	BSED-001	If "English/Communication Arts" is selected in ACA-04 → +5%
-C4 – Education Science & Teacher Training	BTLE-001	If SKL-03 (explaining topics simply) ≥4 → +5%
-C4 – Education Science & Teacher Training	BPED-001	If "Filipino/Araling Panlipunan" is selected in ACA-04 → +5%
-C5 – Medical & Allied Health Sciences	BSN-001	If SKL-09 (caretaking others) ≥4 → +5%
-C5 – Medical & Allied Health Sciences	BSPharma-001	If "PE & Health" is selected in ACA-04 → +5%
-C5 – Medical & Allied Health Sciences	BSMLS-001	If "Biology/General Science" is selected in ACA-04 → +5%
-C5 – Medical & Allied Health Sciences	BSRT-001	If SKL-05 (calm under injury/first response) ≥4 → +5%
-C6 – Architecture, Fine Arts & Design	BSArch-001	If "Physics" is selected in ACA-04 → +5%
-C6 – Architecture, Fine Arts & Design	BFA-001	If "MAPEH – Arts" is selected in ACA-04 → +5%
-C6 – Architecture, Fine Arts & Design	BSID-001	If "TVL – Arts & Design" is selected in ACA-04 → +5%
-C6 – Architecture, Fine Arts & Design	BSMA-001	If SKL-06 (visual/design expression) ≥4 → +5%
-Tie-breaker signals only need to be unique within their own category. Two intentional cross-category borrowings are used: BSCpE-001 uses SKL-02, a C2-mapped skill, because hands-on gadget and hardware aptitude strongly relates to Computer Engineering; BSArch-001 uses Physics, a C2-mapped subject, because Architecture includes structural and technical coursework. Each course evaluates only its own documented condition; a triggered condition never propagates a bonus to category-mates.
+SECTION 6: COURSE-LEVEL MATCH % (GRADUATED MULTI-SIGNAL APPROACH)
+ScaledCategoryBase = CategoryMatchPercent(course.category) × 0.88
+
+CourseBonusPoints = ComponentA + ComponentB + ComponentC + ComponentD
+
+- Component A — primary course signal: skill 5 = +6, skill 4 = +4,
+  selected subject = +6, otherwise 0.
+- Component B — strand alignment: +2 when ACA-01 boosts the course category.
+- Component C — GWA alignment: +2 for GWA >=90 or +1 for GWA 85–89.99
+  on C1, C2, and C5 courses; always 0 for C3, C4, and C6.
+- Component D — secondary course evidence: skill 5 = +2, skill 4 = +1,
+  selected subject = +2, otherwise 0.
+
+CalculatedCourseMatchPercent =
+  min(100, round(ScaledCategoryBase + CourseBonusPoints))
+
+For ranks 1–5 only, equal calculated percentages are separated in established
+rank order by 0.01 percentage points (for example, 82, 81.99, 81.98). This is
+a display-only adjustment; CalculatedCourseMatchPercent and the raw score are
+retained unchanged for auditing. A zero-score tie is displayed as a descending
+0.01-point ladder ending at 0, so no displayed top-five values are identical.
+
+The 0.88 scale reserves 12 points of headroom, matching the maximum possible
+bonus (6 + 2 + 2 + 2), so a fully supported course reaches but does not exceed
+100 before capping.
+
+Secondary evidence mapping:
+- BSIT-001: SKL-01 | BSCS-001: SKL-03 | BSIS-001: Business Math/Accounting | BSCpE-001: Physics
+- BSCE-001: Physics | BSEE-001: SKL-02 | BSECE-001: SKL-01 | BSME-001: SKL-08
+- BSBA-001: Economics/Entrepreneurship | BSA-001: SKL-04 | BSENT-001: SKL-07 | BSHRM-001: SKL-10
+- BEED-001: SKL-03 | BSED-001: SKL-10 | BTLE-001: SKL-08 | BPED-001: PE & Health
+- BSN-001: SKL-05 | BSPharma-001: Biology/General Science | BSMLS-001: Statistics/Research | BSRT-001: Physics
+- BSArch-001: SKL-08 | BFA-001: SKL-06 | BSID-001: SKL-02 | BSMA-001: Computer/ICT
+
+Secondary evidence improves meaningful differentiation. Exact evidence ties
+are resolved by calculated score, raw score, then course name before the
+top-five display separation is applied.
+
 ________________________________________
 SECTION 7: RANKING & TIE-BREAKING RULE
-The system's primary result is the complete list of 24 courses ranked from highest to lowest final course match percentage. If two courses tie after rounding, the course with the higher raw score before rounding ranks first. If still exactly tied, course name alphabetical order is the final tie-breaker. Category rankings remain available only as supplementary context, with the strongest category shown below the primary course list.
+The system's primary result is the complete list of 24 courses ranked from highest to lowest calculated course match percentage. If two courses tie after rounding, the course with the higher raw score before rounding ranks first. If still exactly tied, course name alphabetical order is the final tie-breaker. After this order is fixed, ranks 1–5 receive the documented display-only hundredth-point separation when needed. Category rankings remain available only as supplementary context, with the strongest category shown below the primary course list.
 ________________________________________
 SECTION 8: MANUAL DRY RUN — 3 TEST PERSONAS
 To verify the formula produces differentiated, realistic results (not the same output regardless of input), three distinct fake student profiles were manually computed by hand:
