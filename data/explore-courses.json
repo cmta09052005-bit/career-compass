@@ -1,0 +1,1397 @@
+[
+  {
+    "courseId": "BSIT-001",
+    "courseName": "BS Information Technology",
+    "category": "INFORMATION TECHNOLOGY & COMPUTING",
+    "overview": "BS Information Technology is a broad, hands-on tech course that trains students to install, manage, and troubleshoot the computer systems organizations depend on every day. It's not limited to one specialization — depending on the electives and specialization track a school offers, IT graduates can move into network administration, cybersecurity, systems/database administration, technical support, UI/UX design, or entry-level software and web development. The course emphasizes applying and maintaining existing technology to solve real business problems, making it a practical entry point into almost any tech-related career.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Legazpi (College of Science)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Computer Studies)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Southeast Asian University of Technology (SEAUTech, formerly BISCAST)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [
+      "Note: Currently, no public community college in Albay offers a full BSIT program. Students in far-flung municipalities can start with a TESDA Computer Systems Servicing NC II or Programming NC II short course (often available at local community colleges or TESDA centers) as an affordable first step before or alongside a 4-year IT degree."
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "IT Support Specialist/Technician",
+        "salaryRange": "₱16,000–₱25,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Network/Systems Administrator",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Web Developer",
+        "salaryRange": "₱18,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Data Analyst",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level (increasingly common path for IT grads who take extra data/analytics electives)"
+      },
+      {
+        "jobTitle": "Cybersecurity Analyst (junior)",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, typically requires additional certification (e.g., CompTIA Security+)"
+      },
+      {
+        "jobTitle": "Government IT Officer I",
+        "salaryRange": "₱31,705–₱33,611/mo",
+        "notes": "(DBM Salary Grade 11, 2026 rate)"
+      }
+    ],
+    "guidanceTips": "Free introductory resources such as HTML and CSS tutorials on YouTube or Sololearn can help students get a feel for the technical side of IT early on. Some students only realize later that IT work tends to be logical and repetitive rather than exciting, so this kind of early exposure is worth the time. Once in college, TESDA or vendor certifications such as CompTIA or Cisco NetAcad can strengthen a graduate's chances when applying for a first job."
+  },
+  {
+    "courseId": "BSCS-001",
+    "courseName": "BS Computer Science",
+    "category": "INFORMATION TECHNOLOGY & COMPUTING",
+    "overview": "Computer Science is the theory-heavy foundation of software — algorithms, data structures, and the math and logic behind how programs actually work. It suits students who enjoy problem-solving and puzzles more than just \"liking computers\" in general. Beyond traditional software development, a CS background opens doors into data science and machine learning, competitive/algorithmic programming roles, game development, and research-oriented tech careers, since the theoretical foundation transfers well across specializations.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Legazpi (College of Science)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Computer Studies)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "UP Los Baños / UP Diliman",
+        "location": "",
+        "type": "Public",
+        "notes": "national reference"
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Software Developer/Engineer",
+        "salaryRange": "₱25,000–₱45,000/mo",
+        "notes": "entry-level in the provinces (higher in Metro Manila/BPO firms)"
+      },
+      {
+        "jobTitle": "Data Analyst",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Data Scientist (junior)",
+        "salaryRange": "₱25,000–₱38,000/mo",
+        "notes": "entry-level, usually requires additional statistics/ML coursework or certification"
+      },
+      {
+        "jobTitle": "QA/Software Tester",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Game Developer",
+        "salaryRange": "variable income, often freelance/project-based early on",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "Sharpening logic and math skills ahead of college, through resources like Khan Academy or past math contests, is a genuine advantage since CS relies heavily on problem-solving rather than memorization. Building a small portfolio of personal coding projects during college also matters, since employers in this field often want to see actual code rather than just a transcript."
+  },
+  {
+    "courseId": "BSIS-001",
+    "courseName": "BS Information Systems",
+    "category": "INFORMATION TECHNOLOGY & COMPUTING",
+    "overview": "Information Systems sits between business and technology — enough programming and database knowledge to build systems, and enough business understanding to know what an organization actually needs. Graduates often become the \"translator\" inside a company, turning management's goals into something the technical team can build. Career paths lean toward systems analysis, IT project coordination, business intelligence, and enterprise systems support, making this a fit for students who like computers but also enjoy working with people and processes.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Computer Studies)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Business Systems Analyst",
+        "salaryRange": "₱18,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "IT Project Coordinator",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Business Intelligence/Reporting Associate",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "ERP/Systems Support Associate",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "guidanceTips": "Students who enjoy explaining technical concepts to non-technical people tend to do well in this field, and that instinct can be practiced early by helping classmates or family troubleshoot everyday tech issues. Internships in an actual office setting, rather than a computer shop, are especially valuable here since the course draws on both technical and communication skills."
+  },
+  {
+    "courseId": "BSCpE-001",
+    "courseName": "BS Computer Engineering",
+    "category": "INFORMATION TECHNOLOGY & COMPUTING",
+    "overview": "Computer Engineering blends electronics and computer science, training students to work on both hardware (circuits, embedded chips, devices) and the software that controls it. This is the field behind smart devices, microcontrollers, and embedded systems used in machines and IoT products. It's one of the more math- and physics-heavy tech courses, and requires passing a licensure exam (ECE-related) after graduation.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Science, Engineering, and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Embedded Systems Engineer",
+        "salaryRange": "₱25,000–₱38,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Hardware/Network Engineer",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Junior Electronics Engineer",
+        "salaryRange": "₱22,000–₱34,000/mo",
+        "notes": "entry-level, once ECE/ECT licensure is passed"
+      },
+      {
+        "jobTitle": "IoT/Automation Technician",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "guidanceTips": "This course only makes sense for students who are genuinely strong in Math and Physics, or willing to work hard at them, since the first two years are heavily built around those subjects. Most schools offering this program prefer applicants from the STEM strand in senior high school."
+  },
+  {
+    "courseId": "BSCE-001",
+    "courseName": "BS Civil Engineering",
+    "category": "ENGINEERING & TECHNOLOGY",
+    "overview": "Civil Engineering trains students to design, build, and maintain the physical infrastructure people rely on daily — roads, bridges, buildings, drainage, and water systems. Coursework covers structural design, materials, surveying, and project planning. Beyond construction sites, civil engineers also work in project management, government infrastructure planning, quantity surveying/cost estimation, and disaster-resilient design — an increasingly relevant specialization given the region's typhoon exposure. The program ends in a licensure exam required to legally sign off on construction plans.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi (College of Engineering)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC, College of Engineering and Architecture)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Science, Engineering, and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "University of Nueva Caceres (College of Engineering and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Civil Engineer, Junior (private construction firm)",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Government Engineer I",
+        "salaryRange": "₱33,947/mo",
+        "notes": "(DBM Salary Grade 12)"
+      },
+      {
+        "jobTitle": "Construction Site Engineer/Inspector",
+        "salaryRange": "₱25,000–₱38,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Quantity Surveyor/Cost Estimator",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, a common specialization within construction firms"
+      },
+      {
+        "jobTitle": "Structural Drafter (pre-licensure)",
+        "salaryRange": "₱16,000–₱22,000/mo",
+        "notes": ", a common first job while reviewing for the board exam"
+      }
+    ],
+    "guidanceTips": "Passing the board exam is a requirement in this field, so building strong Math and Physics habits early genuinely pays off later. An internship with an actual construction firm, rather than a design-only office, gives a clearer sense of whether fieldwork suits a student's personality."
+  },
+  {
+    "courseId": "BSEE-001",
+    "courseName": "BS Electrical Engineering",
+    "category": "ENGINEERING & TECHNOLOGY",
+    "overview": "Electrical Engineering trains students in how electricity is generated, distributed, and safely used across buildings, factories, and homes. Coursework covers circuits, power systems, and electrical codes. Career paths extend beyond traditional utility work into renewable energy systems (solar/wind installation and design), building/facility electrical systems, and industrial automation — growing fields as the Philippines expands its renewable energy sector. A licensure exam is required to practice.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi (College of Engineering)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Science, Engineering, and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "University of Nueva Caceres (College of Engineering and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Electrical Engineer",
+        "salaryRange": "₱23,000–₱37,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Government Engineer I",
+        "salaryRange": "₱33,947/mo",
+        "notes": "(Salary Grade 12)"
+      },
+      {
+        "jobTitle": "Power Systems Technician",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Renewable Energy Systems Engineer (junior)",
+        "salaryRange": "₱22,000–₱34,000/mo",
+        "notes": "entry-level, an emerging specialization for solar/renewable energy companies"
+      },
+      {
+        "jobTitle": "Plant/Facilities Electrical Engineer",
+        "salaryRange": "₱22,000–₱34,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "guidanceTips": "A board exam is required for this profession as well, so strengthening Math and Physics skills ahead of college is worthwhile. Shadowing or interviewing a working electrical engineer, through a guidance counselor or personal connection, can make this course easier to commit to once the day-to-day work has actually been seen."
+  },
+  {
+    "courseId": "BSECE-001",
+    "courseName": "BS Electronics Engineering",
+    "category": "ENGINEERING & TECHNOLOGY",
+    "overview": "Electronics Engineering centers on circuits, signals, and communication systems — the technology behind phones, broadcast systems, and electronic devices. Students study circuit design, signal processing, and telecommunications. Career paths include traditional telecom and broadcast work, plus growing opportunities in semiconductor/electronics manufacturing quality testing and IoT (Internet of Things) device design, as more consumer and industrial devices become \"smart\" and connected.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Science, Engineering, and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "University of Nueva Caceres (College of Engineering and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Electronics Engineer, Junior",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Telecommunications Technician/Engineer",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Broadcast/Systems Technician (TV/radio stations)",
+        "salaryRange": "₱17,000–₱25,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Electronics/Semiconductor Test Engineer",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, common in electronics manufacturing companies"
+      },
+      {
+        "jobTitle": "Government Engineer I",
+        "salaryRange": "₱33,947/mo",
+        "notes": "(Salary Grade 12)"
+      }
+    ],
+    "guidanceTips": "This course also requires a licensure exam, so solid Physics and Math grades from a STEM background genuinely matter. Students who already enjoy tinkering with gadgets or circuits tend to find this course a natural fit."
+  },
+  {
+    "courseId": "BSME-001",
+    "courseName": "BS Mechanical Engineering",
+    "category": "ENGINEERING & TECHNOLOGY",
+    "overview": "Mechanical Engineering trains students to design, build, and maintain machines and mechanical systems — from car engines to factory equipment to HVAC systems. Coursework covers thermodynamics, materials, and machine design. It's a broad, versatile course, with career paths spanning manufacturing and plant operations, automotive systems, and HVAC (heating/ventilation/air conditioning) design — one of the more widely-applicable engineering degrees across industries.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi (College of Engineering)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Science, Engineering, and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "University of Nueva Caceres (College of Engineering and Architecture)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Mechanical Engineer",
+        "salaryRange": "₱22,000–₱35,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Manufacturing/Plant Engineer",
+        "salaryRange": "₱25,000–₱38,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Maintenance Engineer (industrial/factory settings)",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "HVAC Design/Installation Engineer (junior)",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, a common specialization in construction and facilities firms"
+      },
+      {
+        "jobTitle": "Government Engineer I",
+        "salaryRange": "₱33,947/mo",
+        "notes": "(Salary Grade 12)"
+      }
+    ],
+    "guidanceTips": "Hands-on aptitude matters here as much as grades. Students who enjoy taking things apart to understand how they work should trust that instinct. Most engineering programs expect a STEM background with strong Physics and Math grades."
+  },
+  {
+    "courseId": "BSBA-001",
+    "courseName": "BS Business Administration",
+    "category": "BUSINESS ADMINISTRATION & RELATED",
+    "overview": "BS Business Administration is a broad, flexible business degree covering management, marketing, finance, and operations. Most schools let students choose a major partway through — such as Marketing Management, Financial Management, Human Resource Management, or Operations Management — which shapes their specific career direction. It opens doors into almost any industry, from retail to banking to corporate offices, making it one of the most widely applicable business courses.",
+    "schools": [
+      {
+        "name": "Bicol University Daraga (College of Business, Economics and Management)",
+        "location": "Daraga, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "University of Nueva Caceres",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Management Trainee",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Marketing Associate",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "HR Assistant/Officer",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Sales Associate/Account Executive",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level (often includes commission)"
+      },
+      {
+        "jobTitle": "Operations Associate/Supervisor Trainee",
+        "salaryRange": "₱18,000–₱27,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Bank Teller/Officer Trainee",
+        "salaryRange": "₱18,000–₱27,000/mo",
+        "notes": "entry-level, a common entry point for BSBA graduates"
+      }
+    ],
+    "guidanceTips": "Communication and leadership matter as much as grades in this field. Joining student organizations or taking on an officer role in a club now provides real material for future job interviews. During college, gaining exposure to more than one business function, such as an internship in marketing followed by one in HR, helps before committing to a specialization."
+  },
+  {
+    "courseId": "BSA-001",
+    "courseName": "BS Accountancy",
+    "category": "BUSINESS ADMINISTRATION & RELATED",
+    "overview": "Accountancy trains students in financial accounting, auditing, and taxation, working toward the Certified Public Accountant (CPA) licensure exam. It's one of the more academically demanding business-track courses due to the volume of technical material and the difficulty of the CPA board exam, but it leads to well-defined, in-demand career paths in corporate finance, public accounting firms, and government auditing.",
+    "schools": [
+      {
+        "name": "Bicol University Daraga (College of Business, Economics and Management)",
+        "location": "Daraga, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "University of Nueva Caceres",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [
+      "Note: No public community college in Albay currently offers the full 4-year BSA/CPA-track program. Oas Community College offers a separate 2-year \"Accounting Aide\" program — a shorter, non-licensure path useful for entry-level bookkeeping jobs, but not an equivalent substitute for the BSA/CPA track."
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Accountant/Bookkeeper",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level, before passing the CPA boards"
+      },
+      {
+        "jobTitle": "Audit Associate (accounting firm)",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Internal Auditor (junior)",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, common in mid-size and large companies"
+      },
+      {
+        "jobTitle": "Tax Associate",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Government Accountant I",
+        "salaryRange": "₱33,947/mo",
+        "notes": "(Salary Grade 12, once CPA-licensed)"
+      }
+    ],
+    "guidanceTips": "Passing the CPA board exam is the real milestone in this field, so strong Math grades and disciplined study habits developed early carry over directly. The course load in college is genuinely heavy, so speaking with a current BSA student or a guidance counselor about the actual workload beforehand is worthwhile."
+  },
+  {
+    "courseId": "BSENT-001",
+    "courseName": "BS Entrepreneurship",
+    "category": "BUSINESS ADMINISTRATION & RELATED",
+    "overview": "This course suits students who want to eventually start and run their own business rather than work for someone else. Coursework covers business planning, marketing, and small enterprise operations, often built around a real or simulated startup project. It's a practical, project-based course where the ability to plan, pitch, and run a small venture matters more than grades alone — and it's increasingly relevant given the growth of online selling and small business platforms.",
+    "schools": [
+      {
+        "name": "Polangui Community College",
+        "location": "Alnay, Polangui, Albay",
+        "type": "Public/LGU-run",
+        "notes": "free tuition under RA 10931"
+      },
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Daraga",
+        "location": "Tabaco, and Gubat campuses, Albay/Sorsogon",
+        "type": "Public",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Business Development Associate",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Startup Founder/Small Business Owner",
+        "salaryRange": "variable income, with no fixed entry salary since it depends on the business",
+        "notes": ""
+      },
+      {
+        "jobTitle": "Sales/Marketing Officer",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level, a common starting point before launching one's own venture"
+      },
+      {
+        "jobTitle": "E-commerce/Online Seller",
+        "salaryRange": "variable income, an increasingly common first venture for new graduates",
+        "notes": ""
+      },
+      {
+        "jobTitle": "Franchise Operations Associate",
+        "salaryRange": "₱18,000–₱25,000/mo",
+        "notes": "entry-level, for graduates who join an existing franchise before starting their own"
+      }
+    ],
+    "guidanceTips": "Practical experience often matters more than grades in this field. Starting a small student-run project, such as a food stall or online shop, teaches more than any textbook chapter if a school or barangay allows it. Treating every school project as a real trial run, rather than just a requirement to pass, pays off later."
+  },
+  {
+    "courseId": "BSHRM-001",
+    "courseName": "BS Hospitality Management",
+    "category": "BUSINESS ADMINISTRATION & RELATED",
+    "overview": "This course prepares students for careers in hotels, restaurants, and tourism-related services. It covers guest service, food and beverage operations, and hospitality business basics, with heavy emphasis on on-the-job training in actual hotels or restaurants. It's a people-facing course where communication skills and genuine willingness to serve customers matter as much as classroom performance — and Bicol's growing tourism industry (Mayon, CamSur Watersports Complex, Caramoan) gives graduates real local job options.",
+    "schools": [
+      {
+        "name": "Bicol University Tabaco",
+        "location": "Tabaco City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [
+      "Note: No public community college in Albay currently offers the full 4-year BSHRM program. Oas Community College offers a separate 2-year \"Hotel and Restaurant Management\" program — a shorter, non-licensure track that can serve as an entry point into hospitality work, but it is not equivalent to the 4-year BSHRM degree."
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Front Office/Guest Services Associate",
+        "salaryRange": "₱15,000–₱22,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Food & Beverage Supervisor",
+        "salaryRange": "₱18,000–₱25,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Restaurant/Kitchen Operations Supervisor",
+        "salaryRange": "₱17,000–₱24,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Event/Tourism Coordinator",
+        "salaryRange": "₱16,000–₱24,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Cruise Ship/Hotel Staff (overseas)",
+        "salaryRange": "significantly higher pay than local entry-level roles, a common longer-term goal for HRM graduates",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "OJT hours are typically required to graduate, and this is often where students discover whether hospitality work truly suits their personality. Customer-facing jobs are not for everyone, and that is fine to learn early. Practicing interpersonal skills and patience under pressure now, even through part-time or volunteer work, is worthwhile."
+  },
+  {
+    "courseId": "BEED-001",
+    "courseName": "Bachelor of Elementary Education",
+    "category": "EDUCATION SCIENCE & TEACHER TRAINING",
+    "overview": "This course trains students to teach all subjects at the elementary level — Filipino, English, Math, and Science — usually within a single classroom rather than a specialized subject area. Coursework covers child development, teaching methods, and classroom management. Beyond classroom teaching, BEED graduates can also move into school administration (after further study), instructional materials development, or early childhood/daycare education.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Legazpi (College of Education)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Gubat",
+        "location": "Gubat, Sorsogon",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Oas Community College",
+        "location": "Ilaor Norte, Oas, Albay",
+        "type": "Public/LGU-run",
+        "notes": "free tuition under RA 10931"
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Public Elementary School Teacher (Teacher I)",
+        "salaryRange": "₱31,705/mo",
+        "notes": "entry-level (DBM Salary Grade 11, 2026 rate, once LET-passed and hired by DepEd)"
+      },
+      {
+        "jobTitle": "Private School Teacher",
+        "salaryRange": "₱15,000–₱23,000/mo",
+        "notes": "entry-level, varying widely by school"
+      },
+      {
+        "jobTitle": "Daycare/Preschool Teacher",
+        "salaryRange": "₱13,000–₱18,000/mo",
+        "notes": "entry-level, an option even before passing the LET"
+      },
+      {
+        "jobTitle": "Instructional Materials Writer/Content Developer",
+        "salaryRange": "₱15,000–₱20,000/mo",
+        "notes": "entry-level, an option with publishers or NGOs"
+      },
+      {
+        "jobTitle": "Tutorial Center Instructor",
+        "salaryRange": "₱15,000–₱20,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "guidanceTips": "Passing the Licensure Exam for Teachers (LET) is required for a permanent teaching position, so board exam reviews should be taken seriously starting in year one rather than just before graduation. Observing an actual elementary classroom before committing to this course is a good way to confirm genuine interest in working with children."
+  },
+  {
+    "courseId": "BSED-001",
+    "courseName": "Bachelor of Secondary Education",
+    "category": "EDUCATION SCIENCE & TEACHER TRAINING",
+    "overview": "This course trains students to teach one specific subject — such as Math, Science, English, Filipino, or Social Studies — at the junior or senior high school level. Students go deep into their chosen subject area on top of learning teaching methods. Choosing a major early shapes the rest of the coursework, and subject specialists (especially Math and Science majors) are often in higher demand for both public and private schools.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Legazpi (College of Education)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Tabaco and Gubat campuses",
+        "location": "Albay/Sorsogon",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Polangui Community College",
+        "location": "Alnay, Polangui, Albay",
+        "type": "Public",
+        "notes": "— Filipino, English, Social Studies majors"
+      },
+      {
+        "name": "Ligao Community College (LICOMCO)",
+        "location": "Tomolin, Ligao City, Albay",
+        "type": "Public",
+        "notes": "— Social Studies, Mathematics, English majors"
+      },
+      {
+        "name": "Oas Community College",
+        "location": "Ilaor Norte, Oas, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Daraga Community College",
+        "location": "Sagpon, Daraga, Albay",
+        "type": "Public",
+        "notes": "— offers an Education program; confirm current majors with the school"
+      },
+      {
+        "name": "San Jose Community College",
+        "location": "Malilipot, Albay",
+        "type": "Public",
+        "notes": "— offers an Education program; confirm current majors with the school"
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Public High School Teacher (Teacher I)",
+        "salaryRange": "₱31,705/mo",
+        "notes": "entry-level (Salary Grade 11, once LET-passed)"
+      },
+      {
+        "jobTitle": "Private High School Teacher",
+        "salaryRange": "₱15,000–₱23,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Review Center Instructor (subject specialization)",
+        "salaryRange": "₱15,000–₱22,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Curriculum/Instructional Materials Developer",
+        "salaryRange": "₱15,000–₱20,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Online/Tutoring Educator",
+        "salaryRange": "variable income, increasingly common as a side income or entry job",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "Choosing a subject to teach for years to come is worth thinking through early, since a Math major and an English major follow very different coursework in college. As with other education tracks, the LET is required for a permanent teaching position, so good study habits should start early."
+  },
+  {
+    "courseId": "BTLE-001",
+    "courseName": "Bachelor of Technology and Livelihood Education",
+    "category": "EDUCATION SCIENCE & TEACHER TRAINING",
+    "overview": "This course trains future TLE teachers who handle practical, skills-based subjects — ICT, home economics, agriculture, or industrial arts — in junior and senior high school. Graduates are prepared to teach skills students can use for further study or to earn a living directly, even without college. Students who choose the ICT specialization may also qualify for science/technology-track scholarships not usually available to other education majors.",
+    "schools": [
+      {
+        "name": "Bicol University Polangui",
+        "location": "Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Legazpi (College of Industrial Technology)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Polangui Community College",
+        "location": "Alnay, Polangui, Albay",
+        "type": "Public",
+        "notes": "— Home Economics specialization; also offers a related Bachelor of Technical-Vocational Teacher Education in Garments/Fashion Design and Food & Service Management"
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Public School TLE Teacher (Teacher I)",
+        "salaryRange": "₱31,705/mo",
+        "notes": "entry-level (Salary Grade 11, once LET-passed)"
+      },
+      {
+        "jobTitle": "TVET/TESDA Trainer",
+        "salaryRange": "₱18,000–₱25,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Skills Training Center Instructor (private)",
+        "salaryRange": "₱16,000–₱22,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Livelihood Program Coordinator (LGU/NGO)",
+        "salaryRange": "₱17,000–₱24,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "guidanceTips": "Earning a TESDA NC II certification in a chosen specialization, such as ICT, cookery, or electrical work, alongside the degree improves employability even before passing the LET. Students who enjoy both teaching and working with their hands may find this a better fit than purely academic education tracks."
+  },
+  {
+    "courseId": "BPED-001",
+    "courseName": "Bachelor of Physical Education",
+    "category": "EDUCATION SCIENCE & TEACHER TRAINING",
+    "overview": "This course trains students to teach physical education and health, while also opening doors into sports coaching, fitness, and wellness work more broadly. Coursework covers exercise science, sports psychology, and coaching methods. It suits students already active in sports or genuinely interested in health and fitness as a career — and beyond teaching, some graduates move into sports program management or community wellness coordination.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi (Institute of Physical Education, Sports and Recreation)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Polangui Community College",
+        "location": "Alnay, Polangui, Albay",
+        "type": "Public",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Public School PE Teacher (Teacher I)",
+        "salaryRange": "₱31,705/mo",
+        "notes": "entry-level (Salary Grade 11, once LET-passed)"
+      },
+      {
+        "jobTitle": "Fitness Instructor/Personal Trainer",
+        "salaryRange": "₱15,000–₱22,000/mo",
+        "notes": "entry-level, often supplemented by per-session or membership-based pay"
+      },
+      {
+        "jobTitle": "Sports Coach (school or community-level)",
+        "salaryRange": "₱15,000–₱20,000/mo",
+        "notes": "entry-level, often project- or season-based"
+      },
+      {
+        "jobTitle": "Wellness/Recreation Program Officer",
+        "salaryRange": "₱16,000–₱22,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "guidanceTips": "Joining a school sports team or club is one of the most common real pathways into this field, so early involvement is worth pursuing. As with the other education tracks, the LET is required for a permanent public school position."
+  },
+  {
+    "courseId": "BSN-001",
+    "courseName": "BS Nursing",
+    "category": "MEDICAL & ALLIED HEALTH SCIENCES",
+    "overview": "Nursing trains students in patient care — assessing patients, assisting in clinical procedures, administering medications correctly, and supporting recovery. College involves extensive clinical duty hours in real hospitals, often the most physically and emotionally demanding part of the program. Beyond hospital bedside care, nursing graduates can also move into community/public health nursing, school nursing, occupational health nursing (in companies), or overseas nursing after passing the Nurse Licensure Exam (NLE).",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi (College of Nursing)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Polangui and Tabaco campuses",
+        "location": "Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Ateneo de Naga University (College of Nursing)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "University of Nueva Caceres",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Staff Nurse, government hospital (Nurse I)",
+        "salaryRange": "₱42,178/mo",
+        "notes": "entry-level (DBM Salary Grade 15, mandated by RA 9173, 2026 rate)"
+      },
+      {
+        "jobTitle": "Staff Nurse, private hospital",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level, typically lower than the government rate"
+      },
+      {
+        "jobTitle": "Community/Public Health Nurse",
+        "salaryRange": "₱20,000–₱28,000/mo",
+        "notes": "entry-level, often through LGU or rural health unit positions"
+      },
+      {
+        "jobTitle": "School Nurse",
+        "salaryRange": "₱16,000–₱24,000/mo",
+        "notes": "entry-level, a growing option in private schools"
+      },
+      {
+        "jobTitle": "Overseas Nurse",
+        "salaryRange": "significantly higher pay than local roles, a common long-term goal, though additional exams or certification may be required depending on the destination country",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "Clinical duty hours during college are demanding on both body and mind, so speaking with a nursing student or a guidance counselor about what that actually looks like week to week helps avoid surprises later. Passing the NLE is the real gateway to the profession, so strong study discipline should start early."
+  },
+  {
+    "courseId": "BSPharma-001",
+    "courseName": "BS Pharmacy",
+    "category": "MEDICAL & ALLIED HEALTH SCIENCES",
+    "overview": "Pharmacy trains students in how drugs are made, how they work in the body, and how to dispense medication safely and correctly. A strong foundation in Chemistry and Biology is essential. Beyond retail pharmacy counters, graduates can also move into hospital pharmacy, pharmaceutical company roles (quality control, regulatory affairs, or sales), and compounding pharmacy — a wider range of options than many students initially expect.",
+    "schools": [
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Retail/Community Pharmacist",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, once licensed"
+      },
+      {
+        "jobTitle": "Hospital Pharmacist",
+        "salaryRange": "₱20,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Pharmaceutical Sales Representative",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level, often including commission or incentives"
+      },
+      {
+        "jobTitle": "Quality Control/Regulatory Affairs Associate (pharma company)",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, an option for graduates less interested in direct patient interaction"
+      },
+      {
+        "jobTitle": "Pharmacy Assistant (pre-licensure)",
+        "salaryRange": "₱13,000–₱18,000/mo",
+        "notes": "entry-level, a common first job while reviewing for boards"
+      }
+    ],
+    "guidanceTips": "Strong Chemistry and Biology grades now genuinely predict how manageable this course will feel, so being honest with oneself, or a counselor, about difficulty in those subjects is worthwhile before committing. Passing the Pharmacist Licensure Exam is required to practice."
+  },
+  {
+    "courseId": "BSMLS-001",
+    "courseName": "BS Medical Laboratory Science",
+    "category": "MEDICAL & ALLIED HEALTH SCIENCES",
+    "overview": "This course trains students to run laboratory tests — blood work, tissue sample analysis, and other diagnostics — that doctors rely on to diagnose illness. It builds strong skills in lab procedures, quality control, and accuracy, since lab result errors can directly affect patient diagnosis. Beyond hospital labs, graduates can also work in research laboratories, blood banks, and public health/epidemiology testing programs.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": ""
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Medical Technologist, government hospital",
+        "salaryRange": "₱31,705/mo",
+        "notes": "entry-level (DBM Salary Grade 11, 2026 rate — note: a pending House Bill proposes raising this grade in the future, so this figure may change)"
+      },
+      {
+        "jobTitle": "Medical Technologist, private hospital/laboratory",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Laboratory Technician",
+        "salaryRange": "₱16,000–₱24,000/mo",
+        "notes": "entry-level, common for those not yet licensed"
+      },
+      {
+        "jobTitle": "Blood Bank/Transfusion Services Technologist",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level, a specialization within larger hospitals"
+      },
+      {
+        "jobTitle": "Research/Diagnostic Company Associate",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      }
+    ],
+    "guidanceTips": "This field demands precision and patience. Being detail-oriented matters as much as academic performance, so paying attention to how careful, repetitive tasks are handled now is useful preparation. Passing the Med Tech Licensure Exam is required, and a strong Biology and Chemistry background makes the coursework noticeably more manageable."
+  },
+  {
+    "courseId": "BSRT-001",
+    "courseName": "BS Radiologic Technology",
+    "category": "MEDICAL & ALLIED HEALTH SCIENCES",
+    "overview": "This course trains students to operate imaging equipment — X-ray, CT scan, and MRI machines — used to help diagnose illness and injury. Graduates work closely with radiologists and physicians, with training that emphasizes both technical precision and patient safety, since this equipment involves radiation that must be handled carefully. Beyond hospital imaging departments, some graduates move into specialized imaging centers or radiation therapy support roles.",
+    "schools": [
+      {
+        "name": "Ateneo de Naga University",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Universidad de Sta. Isabel",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Radiologic Technologist, government hospital",
+        "salaryRange": "₱31,705/mo",
+        "notes": "entry-level (DBM Salary Grade 11, 2026 rate)"
+      },
+      {
+        "jobTitle": "Radiologic Technologist, private hospital",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Imaging Center Technician",
+        "salaryRange": "₱18,000–₱26,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Radiation Therapy Technologist (with further specialization)",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, common in cancer treatment centers"
+      },
+      {
+        "jobTitle": "Overseas Radiologic Technologist",
+        "salaryRange": "significantly higher pay, also a common long-term goal in this field",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "Comfort working with technical equipment and strict attention to safety protocols matter a great deal here. Students who are careful and methodical rather than easily bored by routine tend to do well. Passing the Rad Tech Licensure Exam is required to practice."
+  },
+  {
+    "courseId": "BSArch-001",
+    "courseName": "BS Architecture",
+    "category": "ARCHITECTURE, FINE ARTS & DESIGN",
+    "overview": "Architecture trains students to design buildings and spaces, blending creative design thinking with technical knowledge of structures, materials, and safety codes. It's a five-year program — longer than most bachelor's degrees — ending in a licensure exam administered by the PRC. Beyond designing buildings, graduates can move into urban and land-use planning, construction project management, 3D visualization/rendering, heritage conservation work, and (increasingly) disaster-resilient design, given the region's typhoon exposure. A strong, ever-growing design portfolio matters as much as grades, even for landing an internship.",
+    "schools": [
+      {
+        "name": "Bicol University Legazpi (Institute of Design and Architecture)",
+        "location": "Legazpi City, Albay",
+        "type": "Public",
+        "notes": "free tuition under RA 10931"
+      },
+      {
+        "name": "Camarines Sur Polytechnic Colleges (CSPC, College of Engineering and Architecture)",
+        "location": "Nabua, Camarines Sur",
+        "type": "Public",
+        "notes": "free tuition under RA 10931"
+      },
+      {
+        "name": "Ateneo de Naga University (College of Science, Engineering, and Architecture; program opened 2022)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [
+      "Elsewhere: UST, UP, and Mapúa are well known nationally for Architecture.",
+      "Note: No community college in Albay currently offers the full 5-year BS Architecture program. TESDA's Architectural Drafting NC II is a shorter, non-licensure course that can build relevant drafting skills at low cost, but it is not a substitute for the degree or the board exam."
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Architect/Architectural Drafter",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "3D Visualizer/Renderer",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level, often freelance-friendly"
+      },
+      {
+        "jobTitle": "Construction Project Coordinator",
+        "salaryRange": "₱20,000–₱30,000/mo",
+        "notes": "entry-level, common in design-and-build firms"
+      },
+      {
+        "jobTitle": "Government Architect I",
+        "salaryRange": "₱33,947/mo",
+        "notes": "(Salary Grade 12, once licensed and hired in an LGU or government engineering office)"
+      },
+      {
+        "jobTitle": "Interior/Space Planning Consultant (typically a later-career path, post-licensure)",
+        "salaryRange": "variable income",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "This program is a bigger commitment than most courses, given the five-year timeline and licensure exam, so it should be a genuine choice rather than something chosen for its prestige. Building a design portfolio now, even through simple sketches or digital design projects, matters since schools and later employers look at this closely."
+  },
+  {
+    "courseId": "BFA-001",
+    "courseName": "Bachelor of Fine Arts",
+    "category": "ARCHITECTURE, FINE ARTS & DESIGN",
+    "overview": "Fine Arts develops skills in painting, sculpture, and other visual art forms through heavy studio practice, alongside art history and theory. It's a broader career path than \"just painting\" — graduates move into gallery and exhibition work, art direction for advertising and media, art education, illustration, and increasingly, digital/commission-based art through online platforms. Success is measured largely through a body of work rather than grades, since a portfolio is what actually opens doors to galleries, agencies, or teaching positions later. It suits students with a genuine, sustained interest in creating art rather than those who enjoy art only as a hobby.",
+    "schools": [
+      {
+        "name": "UP Los Baños/UP Diliman (College of Fine Arts)",
+        "location": "",
+        "type": "Public",
+        "notes": "national reference, free tuition under RA 10931"
+      },
+      {
+        "name": "Ateneo de Naga University (Digital Illustration and Animation, under a related design program)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [
+      "Elsewhere: University of Santo Tomas College of Fine Arts and Design is a well-known national option.",
+      "Note: No community college in Albay or Camarines Sur currently offers a BFA program. Many working Filipino artists supplement or replace formal BFA training with TESDA's Visual Graphic Design NC III, free online courses, or informal mentorship/apprenticeship under a working artist — a realistic lower-cost path worth considering if a BFA program isn't locally accessible."
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Freelance Illustrator/Artist",
+        "salaryRange": "variable, commission-based income, especially in the first few years",
+        "notes": ""
+      },
+      {
+        "jobTitle": "Art Teacher/Studio Instructor",
+        "salaryRange": "₱15,000–₱22,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Gallery/Exhibition Assistant or Curator's Assistant",
+        "salaryRange": "₱15,000–₱20,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Advertising/Editorial Art Director (junior)",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level, common for graduates who lean toward commercial art"
+      },
+      {
+        "jobTitle": "Concept Artist/Illustrator for games or publishing",
+        "salaryRange": "variable income, often freelance or contract-based, increasingly accessible through online platforms",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "A strong, distinct portfolio matters more than grades in this field, so building an online presence early — even a simple Instagram or ArtStation account — helps with getting comfortable sharing work and receiving feedback. Income is often unpredictable in the early years, which is worth knowing going in rather than discovering by surprise."
+  },
+  {
+    "courseId": "BSID-001",
+    "courseName": "BS Interior Design",
+    "category": "ARCHITECTURE, FINE ARTS & DESIGN",
+    "overview": "Interior Design trains students to plan and design indoor spaces — homes, offices, restaurants, hotels — balancing visual appeal with practical function for the people using the space. Coursework covers materials, space planning, and building codes, translating a client's needs into a functional, cohesive interior. Practice is regulated by law (Republic Act No. 10350, the Philippine Interior Design Act of 2012): graduates must pass the PRC Interior Design Licensure Exam with a general weighted average of at least 70% before they can legally use the title \"Interior Designer\" or sign off on design plans.",
+    "schools": [
+      {
+        "name": "University of Santo Tomas",
+        "location": "Manila",
+        "type": "Private",
+        "notes": "national reference"
+      },
+      {
+        "name": "Ateneo de Naga University",
+        "location": "if offered under a related design program, Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      }
+    ],
+    "schoolNotes": [
+      "Elsewhere: De La Salle-College of Saint Benilde is known nationally for strong Interior Design programs."
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Junior Interior Designer",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Furniture/Space Planner",
+        "salaryRange": "₱16,000–₱25,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Design Firm Drafter/CAD Operator",
+        "salaryRange": "₱16,000–₱24,000/mo",
+        "notes": "entry-level, a common entry job while building experience and reviewing for the boards"
+      },
+      {
+        "jobTitle": "Freelance Residential Designer",
+        "salaryRange": "variable income, common once a client base has been built",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "Software skills such as AutoCAD and SketchUp, alongside a strong portfolio, matter a great deal here, so free tutorials or school electives in design software are worth pursuing early. Since licensure is legally required to use the professional title, factor board exam review time into your college planning from the start."
+  },
+  {
+    "courseId": "BSMA-001",
+    "courseName": "BS Multimedia Arts",
+    "category": "ARCHITECTURE, FINE ARTS & DESIGN",
+    "overview": "Multimedia Arts covers digital content creation — graphic design, animation, video editing, and increasingly UI/UX and game art — using industry-standard software. It's a hands-on, project-heavy course where a demo reel or portfolio often matters more to employers than grades. Demand for digital content (social media, advertising, games, streaming) has grown substantially, and the skill set opens doors into traditional media production as well as freelance and remote/global gig work.",
+    "schools": [
+      {
+        "name": "Ateneo de Naga University (Digital Illustration and Animation, College of Computer Studies)",
+        "location": "Naga City, Camarines Sur",
+        "type": "Private",
+        "notes": ""
+      },
+      {
+        "name": "Bicol University Tabaco",
+        "location": "if offered under an IT-related design track, Tabaco City, Albay",
+        "type": "Public",
+        "notes": "free tuition under RA 10931 (confirm current program offerings with the school, as design-track electives vary by year)"
+      }
+    ],
+    "schoolNotes": [
+      "Elsewhere: De La Salle-College of Saint Benilde and the University of the Philippines are known nationally for strong Multimedia Arts programs.",
+      "Note: No community college in Albay currently offers a 4-year Multimedia Arts degree. TESDA's Visual Graphic Design NC III and Animation NC II are realistic, lower-cost first steps — many working digital artists build a career on certifications like these plus a strong online portfolio, without a 4-year degree."
+    ],
+    "careerOpportunities": [
+      {
+        "jobTitle": "Graphic Designer",
+        "salaryRange": "₱18,000–₱28,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "Video Editor/Animator",
+        "salaryRange": "₱18,000–₱30,000/mo",
+        "notes": "entry-level"
+      },
+      {
+        "jobTitle": "UI/UX Designer (with additional skill-building)",
+        "salaryRange": "₱20,000–₱32,000/mo",
+        "notes": "entry-level, a growing entry point for graduates who lean toward digital product design"
+      },
+      {
+        "jobTitle": "Freelance Digital Artist/Content Creator",
+        "salaryRange": "variable income, increasingly common through freelance platforms and social media work",
+        "notes": ""
+      }
+    ],
+    "guidanceTips": "A portfolio or design and animation reel is weighed more heavily than grades when applying for jobs in this field, so every school project is worth treating as something to showcase later rather than simply submit and forget. Freelance platforms such as Upwork, Fiverr, and local Facebook groups for creatives are realistic entry points even before graduation."
+  }
+]

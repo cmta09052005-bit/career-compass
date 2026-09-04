@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
-import courses from "@/data/courses.json";
+import courses from "@/data/explore-courses.json";
 import YearLevelTip from "./YearLevelTip";
 
 function studyFocus(overview) {
@@ -36,7 +36,7 @@ export default async function CourseDetailPage({ params }) {
             {course.courseName}
           </h1>
           <p className="mt-3 text-sm font-semibold text-teal sm:text-base">
-            {course.category}
+            {course.category} · {course.courseId}
           </p>
         </header>
 
@@ -74,6 +74,11 @@ export default async function CourseDetailPage({ params }) {
                       <p className="mt-1 text-sm text-beige/65">
                         {school.location}
                       </p>
+                      {school.notes && (
+                        <p className="mt-1 text-sm text-beige/65">
+                          {school.notes}
+                        </p>
+                      )}
                     </div>
                     <span className="w-fit rounded-full border border-teal/45 bg-teal/10 px-3 py-1 text-xs font-semibold text-teal">
                       {school.type}
@@ -82,6 +87,11 @@ export default async function CourseDetailPage({ params }) {
                 </li>
               ))}
             </ul>
+            {course.schoolNotes.map((note) => (
+              <p key={note} className="mt-4 text-sm leading-7 text-beige/75 sm:text-base">
+                {note}
+              </p>
+            ))}
           </Card>
 
           {/* 60 — Where Can This Path Lead section */}
@@ -103,15 +113,20 @@ export default async function CourseDetailPage({ params }) {
                       {career.salaryRange}
                     </span>
                   </div>
+                  {career.notes && (
+                    <p className="mt-1 text-sm text-beige/65">
+                      {career.notes}
+                    </p>
+                  )}
                 </li>
               ))}
             </ul>
 
             {/* 61 — Career Outlook source and date */}
-            <div className="mt-5 border-t border-beige/15 pt-4 text-xs leading-5 text-beige/55">
+            {(course.salarySource || course.salaryAsOf) && <div className="mt-5 border-t border-beige/15 pt-4 text-xs leading-5 text-beige/55">
               <p>Salary source: {course.salarySource}</p>
               <p>Figures as of {course.salaryAsOf}</p>
-            </div>
+            </div>}
           </Card>
         </div>
 
