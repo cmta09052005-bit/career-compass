@@ -4,7 +4,7 @@
  */
 export default function ScreenPlaceholder({ title, path }) {
   return (
-    <main className="flex flex-1 flex-col items-center justify-center bg-beige px-6 py-16">
+    <main className="game-ui-screen flex flex-1 flex-col items-center justify-center bg-beige px-6 py-16">
       {path ? (
         <p className="mb-3 font-sans text-sm uppercase tracking-[0.2em] text-teal">
           {path}

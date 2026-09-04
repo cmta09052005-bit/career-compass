@@ -2,10 +2,10 @@ import { forwardRef } from "react";
 
 const VARIANT_CLASSES = {
   panel:
-    "w-full max-w-4xl rounded-[2rem] border border-gold/35 bg-navy/55 p-5 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-md sm:p-8 md:p-10",
+    "game-panel w-full max-w-4xl border border-gold/35 bg-navy/55 p-5 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-md sm:p-8 md:p-10",
   island:
-    "journey-island-card group flex min-h-64 w-full flex-col items-center justify-center border-2 px-8 py-10 text-center shadow-xl transition-[border-color,background-color,box-shadow,transform] duration-200 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-gold active:scale-[0.98]",
-  processing: "w-full max-w-xl text-center",
+    "game-panel game-slot-card journey-island-card group flex min-h-64 w-full flex-col items-center justify-center border-2 px-8 py-10 text-center shadow-xl focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-gold",
+  processing: "game-panel w-full max-w-xl text-center",
 };
 
 const ISLAND_STATE_CLASSES = {

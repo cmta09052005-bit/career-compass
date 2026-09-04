@@ -16,7 +16,7 @@ export default async function CourseDetailPage({ params }) {
   if (!course) notFound();
 
   return (
-    <main className="explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
+    <main className="game-ui-screen explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden="true"

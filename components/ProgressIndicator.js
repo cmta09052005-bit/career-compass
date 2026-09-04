@@ -9,7 +9,7 @@ export default function ProgressIndicator({
     return (
       <div
         aria-label={`${completedCount} of ${items.length} questions completed`}
-        className="flex items-center gap-2"
+        className="game-mini-progress flex items-center gap-2"
         role="progressbar"
         aria-valuemin="0"
         aria-valuemax={items.length}
@@ -31,11 +31,11 @@ export default function ProgressIndicator({
   return (
     <section
       aria-label={`Compass Points: ${completedCount} of ${items.length} sections completed`}
-      className="map-wood-bar mt-6 p-4"
+      className="game-progress-panel map-wood-bar mt-6 p-4"
     >
       <div className="flex items-center justify-between gap-4">
         <h2 className="font-serif text-lg text-beige">Compass Points</h2>
-        <span className="rounded-md bg-gold px-3 py-1 text-sm font-bold text-navy">
+        <span className="game-counter rounded-md bg-gold px-3 py-1 text-sm font-bold text-navy">
           {completedCount} / {items.length} complete
         </span>
       </div>

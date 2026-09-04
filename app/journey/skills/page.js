@@ -57,7 +57,7 @@ export default function SkillsPage() {
   }
 
   return (
-    <main className="explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
+    <main className="game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
       <div
         className="pointer-events-none absolute inset-0 opacity-50"
         aria-hidden="true"

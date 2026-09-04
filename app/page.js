@@ -1,255 +1,140 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
+import { marketingFonts } from "@/components/marketingFonts";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
-import * as THREE from "three";
-import "lenis/dist/lenis.css";
-import "splitting/dist/splitting.css";
-import CompassIntro from "@/components/CompassIntro";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Button from "@/components/Button";
-import { useSessionAnswers } from "@/lib/useSessionAnswers";
+import Card from "@/components/Card";
+import useCarouselAutoplay from "@/components/useCarouselAutoplay";
+import "./story.css";
 
-if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger);
+if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin);
 
 const chapters = [
-  ["mountains", "02", "The Mountains", "Discover what draws you forward.", "Choose between real-life scenarios and uncover the interests that keep calling you back.", "8 guided scenarios", "dark-dissolve"],
-  ["forest", "03", "The Forest", "Find strength in what you can do.", "Reflect on your confidence across practical, creative, technical, and people-centered skills.", "10 strength signals", "light-bloom"],
-  ["islands", "04", "The Islands", "See the paths your story opens.", "Connect your interests, strengths, strand, and academic trail to college courses worth exploring.", "24 possible courses", "warm-wash"],
+  { id: "world", name: "The World" },
+  { id: "mountains", name: "The Mountains", title: "Discover what pulls you forward.", body: "Pick from real-life situations and find out what interests keep calling you back.", stat: "GUIDED SCENARIOS", count: 8, motif: "△", note: "INTERESTS" },
+  { id: "forest", name: "The Forest", title: "Find strength in what you can do.", body: "See how sure you are in different skills, including hands-on, creative, technical, and working with people.", stat: "STRENGTH SIGNALS", count: 10, motif: "♧", note: "SKILLS" },
+  { id: "valley", name: "The Valley", title: "What you've already built matters too.", body: "Add your grades and best subjects. They help complete your journey too.", stat: "A FEW QUICK DETAILS", motif: "≋", note: "ACADEMICS" },
+  { id: "islands", name: "The Islands", title: "See where your journey can take you.", body: "Your interests, strengths, and grades connect to college courses worth checking out.", stat: "POSSIBLE COURSES", count: 24, motif: "⚑", note: "POSSIBILITIES" },
+  { id: "ahead", name: "The Journey Ahead" },
 ];
-
-const chapterNavigation = [
-  ["explore", "01", "The World"],
-  ["mountains", "02", "The Mountains"],
-  ["forest", "03", "The Forest"],
-  ["islands", "04", "The Islands"],
-  ["about", "05", "Journey Ahead"],
+const explorers = [
+  ["The Wanderer", "Curious about everything, sure about nothing yet."],
+  ["The Trailblazer", "Leads first, figures it out along the way."],
+  ["The Scout", "Notices details others walk past."],
+  ["The Cartographer", "Likes a plan, even for the unknown."],
+  ["The Ranger", "Steady, patient, prepared for anything."],
+  ["The Navigator", "Always finding the next direction."],
 ];
-
-function Scene({ name }) {
-  return <div aria-hidden="true" className={`scene scene-${name}`}><i className="scene-image" /><i className="scene-depth" /><i className="scene-atmosphere" /></div>;
-}
-
-function BoundaryTransition({ type }) {
-  return <div aria-hidden="true" className={`boundary-transition transition-${type} chapter-transition-out`} />;
-}
-
-function WorldMountainTransition() {
-  return <div aria-hidden="true" className="world-mountain-transition"><i className="world-mountain-preview" /><i className="world-mountain-haze" /></div>;
-}
-
-function PaintedWorld() {
-  const canvas = useRef(null);
-
-  useEffect(() => {
-    const element = canvas.current;
-    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!element || reduce) return;
-    const renderer = new THREE.WebGLRenderer({ canvas: element, alpha: true, antialias: false, powerPreference: "high-performance" });
-    const scene = new THREE.Scene();
-    const camera = new THREE.Camera();
-    const uniforms = {
-      uTime: { value: 0 },
-      uScroll: { value: 0 },
-      uPointer: { value: new THREE.Vector2(0.5, 0.5) },
-      uResolution: { value: new THREE.Vector2(1, 1) },
-    };
-    const material = new THREE.ShaderMaterial({
-      transparent: true,
-      depthTest: false,
-      vertexShader: "void main(){gl_Position=vec4(position,1.0);}",
-      fragmentShader: `
-        precision mediump float;
-        uniform float uTime;
-        uniform float uScroll;
-        uniform vec2 uPointer;
-        uniform vec2 uResolution;
-        float noise(vec2 p){return sin(p.x)*sin(p.y);}
-        void main(){
-          vec2 uv=gl_FragCoord.xy/uResolution.xy;
-          vec2 p=uv-.5;
-          p.x*=uResolution.x/uResolution.y;
-          float pointerGlow=.15/(.16+distance(uv,uPointer));
-          float brush=noise(p*vec2(8.,5.)+vec2(uTime*.035,uScroll*3.2));
-          brush+=noise(p*vec2(17.,11.)-vec2(uScroll*1.7,uTime*.02))*.45;
-          vec3 midnight=vec3(.025,.075,.13);
-          vec3 teal=vec3(.03,.28,.31);
-          vec3 gold=vec3(.62,.39,.09);
-          float chapter=clamp(uScroll,0.,1.);
-          vec3 color=mix(midnight,teal,smoothstep(0.,.72,chapter));
-          color=mix(color,gold,max(0.,chapter-.72)*.85+pointerGlow*.08);
-          float alpha=.13+smoothstep(-1.,1.,brush)*.11+pointerGlow*.025;
-          gl_FragColor=vec4(color,alpha);
-        }`,
-    });
-    const mesh = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), material);
-    scene.add(mesh);
-    const resize = () => {
-      const ratio = Math.min(devicePixelRatio, 1.5);
-      renderer.setPixelRatio(ratio);
-      renderer.setSize(innerWidth, innerHeight, false);
-      uniforms.uResolution.value.set(element.width, element.height);
-    };
-    const pointer = (event) => uniforms.uPointer.value.set(event.clientX / innerWidth, 1 - event.clientY / innerHeight);
-    const scroll = () => uniforms.uScroll.value = scrollY / Math.max(1, document.documentElement.scrollHeight - innerHeight);
-    let frame;
-    const render = (time) => {
-      uniforms.uTime.value = time * 0.001;
-      renderer.render(scene, camera);
-      frame = requestAnimationFrame(render);
-    };
-    resize();
-    scroll();
-    addEventListener("resize", resize);
-    addEventListener("pointermove", pointer, { passive: true });
-    addEventListener("scroll", scroll, { passive: true });
-    frame = requestAnimationFrame(render);
-    return () => {
-      cancelAnimationFrame(frame);
-      removeEventListener("resize", resize);
-      removeEventListener("pointermove", pointer);
-      removeEventListener("scroll", scroll);
-      material.dispose();
-      mesh.geometry.dispose();
-      renderer.dispose();
-    };
-  }, []);
-
-  return <canvas ref={canvas} className="painted-world" aria-hidden="true" />;
-}
+const number = (index) => String(index + 1).padStart(2, "0");
 
 export default function LandingPage() {
-  useSessionAnswers();
   const root = useRef(null);
-  const progress = useRef(null);
-
+  const track = useRef(null);
+  const carousel = useRef(null);
+  const [explorerIndex, setExplorerIndex] = useState(0);
   useEffect(() => {
-    let cancelled = false;
-    let wordsContext;
-    import("splitting").then(({ default: Splitting }) => {
-      if (cancelled || !root.current) return;
-      Splitting({ target: root.current.querySelectorAll("[data-splitting]"), by: "words" });
-      if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      wordsContext = gsap.context(() => {
-        gsap.fromTo(".intro-copy .word", { yPercent: 115, autoAlpha: 0 }, { yPercent: 0, autoAlpha: 1, stagger: 0.035, ease: "power3.out", scrollTrigger: { trigger: ".intro-copy", start: "top 76%", end: "top 38%", scrub: 0.4 } });
-        gsap.utils.toArray(".journey-chapter").forEach((section) => {
-          gsap.fromTo(section.querySelectorAll("h2 .word"), { yPercent: 115, rotation: 2, autoAlpha: 0 }, { yPercent: 0, rotation: 0, autoAlpha: 1, stagger: 0.045, ease: "power3.out", scrollTrigger: { trigger: section, start: "top 72%", end: "top 34%", scrub: 0.4 } });
-        });
-      }, root);
-      ScrollTrigger.refresh();
-    });
-    return () => {
-      cancelled = true;
-      wordsContext?.revert();
+    const element = track.current;
+    const settle = () => {
+      const distance = element.firstElementChild.getBoundingClientRect().width + 24;
+      const index = Math.round(element.scrollLeft / distance) % explorers.length;
+      setExplorerIndex(index);
+      if (element.scrollLeft >= distance * explorers.length - 1) element.scrollLeft = index * distance;
     };
+    element.addEventListener("scrollend", settle);
+    return () => element.removeEventListener("scrollend", settle);
   }, []);
+  const [active, setActive] = useState(0);
 
-  useGSAP(() => {
-    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
+  const [announcement, setAnnouncement] = useState("");
+  const { contextSafe } = useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)" }, (context) => {
+      const motion = context.conditions.motion;
 
-    const lenis = new Lenis({ autoRaf: false, duration: 1.08, anchors: { offset: 0 }, syncTouch: false });
-    const update = () => ScrollTrigger.update();
-    const tick = (time) => lenis.raf(time * 1000);
-    lenis.on("scroll", update);
-    gsap.ticker.add(tick);
-    gsap.ticker.lagSmoothing(0);
-
-    gsap.fromTo(".world-intro", { autoAlpha: 0, yPercent: 10 }, { autoAlpha: 1, yPercent: 0, ease: "none", scrollTrigger: { trigger: ".world-intro", start: "top 78%", end: "top 38%", scrub: 0.4 } });
-    gsap.fromTo(".world-nav", { autoAlpha: 0, y: -16 }, { autoAlpha: 1, y: 0, ease: "none", scrollTrigger: { trigger: ".world-intro", start: "top 70%", end: "top 45%", scrub: true } });
-    gsap.to(".intro-copy", { yPercent: -8, autoAlpha: 0.18, ease: "none", scrollTrigger: { trigger: ".world-intro", start: "top top", end: "bottom 32%", scrub: 0.55 } });
-    gsap.to(".map-contours", { yPercent: 7, rotation: -4, ease: "none", scrollTrigger: { trigger: ".world-intro", start: "top top", end: "bottom top", scrub: 0.8 } });
-    gsap.timeline({ scrollTrigger: { trigger: ".world-intro", start: "bottom 82%", end: "bottom 28%", scrub: 0.55 } })
-      .fromTo(".world-mountain-transition", { autoAlpha: 0 }, { autoAlpha: 1, ease: "none" }, 0)
-      .fromTo(".world-mountain-preview", { yPercent: 8, scale: 1.08 }, { yPercent: 0, scale: 1, ease: "none" }, 0)
-      .fromTo(".world-mountain-haze", { xPercent: -7, autoAlpha: 0.18 }, { xPercent: 7, autoAlpha: 0.72, ease: "none" }, 0);
-    ScrollTrigger.create({ trigger: root.current, start: 80, end: "bottom bottom", toggleClass: { targets: ".world-nav", className: "world-nav-scrolled" } });
-    chapterNavigation.forEach(([id]) => {
-      const section = id === "explore" ? root.current.querySelector(".world-intro") : document.getElementById(id);
-      if (!section) return;
-      ScrollTrigger.create({
-        trigger: section,
-        start: "top 56%",
-        end: "bottom 44%",
-        onToggle: ({ isActive }) => {
-          if (!isActive) return;
-          root.current.querySelectorAll(".chapter-rail a").forEach((link) => {
-            const active = link.dataset.chapter === id;
-            link.classList.toggle("is-active", active);
-            if (active) link.setAttribute("aria-current", "step");
-            else link.removeAttribute("aria-current");
-          });
-          const activeNav = id === "explore" ? "home" : id === "about" ? "about" : "how-it-works";
-          root.current.querySelectorAll(".world-nav nav a").forEach((link) => {
-            const active = link.dataset.nav === activeNav;
-            link.classList.toggle("is-active", active);
-            if (active) link.setAttribute("aria-current", "page");
-            else link.removeAttribute("aria-current");
-          });
-        },
+      chapters.forEach((chapter, index) => {
+        ScrollTrigger.create({ trigger: `#${chapter.id}-chapter`, start: "top center", end: "bottom center", onEnter: () => setActive(index), onEnterBack: () => setActive(index) });
       });
-    });
-    gsap.fromTo(progress.current, { scaleY: 0 }, { scaleY: 1, transformOrigin: "top", ease: "none", scrollTrigger: { trigger: root.current, start: "top top", end: "bottom bottom", scrub: 0.15 } });
-
-    const media = gsap.matchMedia();
-    media.add("(min-width: 768px)", () => {
-      gsap.utils.toArray(".journey-chapter").forEach((section) => {
-        const timeline = gsap.timeline({
-          scrollTrigger: { trigger: section, start: "top top", end: "+=135%", pin: true, scrub: 0.7, anticipatePin: 1 },
+      if (motion) {
+        gsap.to(".story-map", { yPercent: -70, ease: "none", scrollTrigger: { trigger: ".story-wrapper", start: "top top", end: "bottom bottom", scrub: 1 } });
+        gsap.utils.toArray(".story-panel").forEach((panel) => gsap.from(panel, { opacity: 0, y: 40, duration: 0.8, ease: "power2.out", scrollTrigger: { trigger: panel, start: "top 75%", toggleActions: "play none none reverse" } }));
+        gsap.from(".story-compass", { rotation: -45, opacity: 0, duration: 1.2, ease: "back.out(1.7)" });
+        gsap.to(".story-compass-spin", { rotation: 360, duration: 60, repeat: -1, ease: "none" });
+        gsap.to(".story-start", { boxShadow: "0 0 20px rgba(212,160,23,0.6)", repeat: -1, yoyo: true, duration: 1.8 });
+        gsap.to(".story-ending .story-start", { scale: 1.03, duration: 1.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
+        gsap.utils.toArray("[data-count]").forEach((element) => {
+          const counter = { val: 0 };
+          gsap.to(counter, { val: Number(element.dataset.count), duration: 1.4, ease: "power1.out", onUpdate: () => { element.textContent = Math.round(counter.val); }, scrollTrigger: { trigger: element, start: "top 85%" } });
         });
-        const exit = section.querySelector(".chapter-transition-out");
-        const exitFrom = exit.classList.contains("transition-dark-dissolve")
-          ? { autoAlpha: 0, scale: 1.03 }
-          : exit.classList.contains("transition-light-bloom")
-            ? { autoAlpha: 0, yPercent: 18, scale: 0.96 }
-            : { autoAlpha: 0, scale: 0.92 };
-        const exitTo = exit.classList.contains("transition-warm-wash")
-          ? { autoAlpha: 1, scale: 1.12, duration: 0.32, ease: "none" }
-          : { autoAlpha: 1, yPercent: 0, scale: 1, duration: 0.34, ease: "none" };
-        timeline
-          .fromTo(section.querySelector(".scene-image"), { scale: 1.18, yPercent: 5 }, { scale: 1.02, yPercent: -3, ease: "none" }, 0)
-          .fromTo(section.querySelector(".scene-depth"), { autoAlpha: 0.2 }, { autoAlpha: 1, ease: "none" }, 0)
-          .fromTo(section.querySelector(".scene-atmosphere"), { xPercent: -10 }, { xPercent: 10, ease: "none" }, 0)
-          .fromTo(section.querySelector(".chapter-copy"), { clipPath: "inset(0 100% 0 0)", x: -45, autoAlpha: 0 }, { clipPath: "inset(0 0% 0 0)", x: 0, autoAlpha: 1, ease: "none" }, 0.14)
-          .fromTo(section.querySelectorAll(".chapter-copy > :not(h2)"), { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, stagger: 0.055, ease: "none" }, 0.22)
-          .fromTo(exit, exitFrom, exitTo, 0.72)
-          .to(section.querySelector(".chapter-copy"), { y: -28, autoAlpha: 0, ease: "none" }, 0.78)
-          .to(section.querySelector(".scene-image"), { scale: 0.98, ease: "none" }, 0.78);
-      });
+      }
+      const tl = gsap.timeline({ scrollTrigger: { trigger: "#forest-chapter", start: "bottom 60%", once: true }, onStart: () => setAnnouncement('Badge unlocked: Wayfinder. This is what it feels like after every step.') });
+      if (motion) {
+        tl.set(".story-popup", { scale: 0, rotation: -15, opacity: 0 })
+          .to(".story-popup", { scale: 1.1, rotation: 0, opacity: 1, duration: 0.4, ease: "back.out(3)" })
+          .to(".story-popup", { scale: 1, duration: 0.15 })
+          .to(".story-popup", { opacity: 0, y: -20, duration: 0.4, delay: 2.2 });
+      } else {
+        tl.set(".story-popup", { opacity: 1 }).set(".story-popup", { opacity: 0 }, "+=3.15");
+      }
     });
-    media.add("(max-width: 767px)", () => {
-      gsap.utils.toArray(".journey-chapter").forEach((section) => {
-        gsap.fromTo(section.querySelector(".chapter-copy"), { autoAlpha: 0, y: 48 }, { autoAlpha: 1, y: 0, ease: "none", scrollTrigger: { trigger: section, start: "top 75%", end: "top 38%", scrub: 0.35 } });
-        gsap.fromTo(section.querySelector(".scene-image"), { scale: 1.12 }, { scale: 1.02, ease: "none", scrollTrigger: { trigger: section, start: "top bottom", end: "bottom top", scrub: 0.6 } });
-        const exit = section.querySelector(".chapter-transition-out");
-        const exitFrom = exit.classList.contains("transition-dark-dissolve") ? { autoAlpha: 0, scale: 1.03 } : exit.classList.contains("transition-light-bloom") ? { autoAlpha: 0, yPercent: 18, scale: 0.96 } : { autoAlpha: 0, scale: 0.92 };
-        const exitTo = exit.classList.contains("transition-warm-wash") ? { autoAlpha: 1, scale: 1.12 } : { autoAlpha: 1, yPercent: 0, scale: 1 };
-        gsap.fromTo(exit, exitFrom, { ...exitTo, ease: "none", scrollTrigger: { trigger: section, start: "bottom 48%", end: "bottom 18%", scrub: 0.45 } });
-      });
-    });
-    gsap.fromTo(".final-content > *", { y: 32, autoAlpha: 0 }, { y: 0, autoAlpha: 1, stagger: 0.055, ease: "power3.out", scrollTrigger: { trigger: ".journey-final", start: "top 72%", end: "top 34%", scrub: 0.4, refreshPriority: -10 } });
-    document.fonts.ready.then(() => ScrollTrigger.refresh());
-    return () => { media.revert(); gsap.ticker.remove(tick); gsap.ticker.lagSmoothing(500, 33); lenis.off("scroll", update); lenis.destroy(); };
+    return () => mm.revert();
   }, { scope: root });
+  const showExplorer = (index) => contextSafe(() => {
+    const next = (index + explorers.length) % explorers.length;
+    const element = track.current;
+    const distance = element.firstElementChild.getBoundingClientRect().width + 24;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    setExplorerIndex(next);
+    gsap.killTweensOf(element);
+    let target = next * distance;
+    if (explorerIndex === 0 && next === explorers.length - 1) element.scrollLeft = explorers.length * distance;
+    if (explorerIndex === explorers.length - 1 && next === 0) target = explorers.length * distance;
+    gsap.to(element, { opacity: 1, scrollTo: { x: target }, duration: reduced ? 0 : .6, ease: "power2.out", overwrite: true, onComplete: () => {
+      if (target === explorers.length * distance) element.scrollLeft = 0;
+    } });
+  })();
+  const slide = (direction) => showExplorer(explorerIndex + direction);
+  const autoplay = useCarouselAutoplay(carousel, () => slide(1));
 
-  return <main ref={root} className="cinematic-landing text-beige">
-    <CompassIntro />
-    <div aria-hidden="true" className="landing-progress"><span ref={progress} /></div>
-    <nav className="chapter-rail" aria-label="Landing page chapters">{chapterNavigation.map(([id, number, label], index) => <a key={id} href={`#${id}`} data-chapter={id} className={index === 0 ? "is-active" : ""} aria-current={index === 0 ? "step" : undefined}><span>{number}</span><strong>{label}</strong></a>)}</nav>
-    <div className="world-shell" id="explore">
-      <PaintedWorld />
-      <header className="world-nav"><a href="#explore" className="world-brand"><img src="/brand/career-compass-mark-96.png" alt="" /> Career Compass</a><div className="world-nav-actions"><nav aria-label="Landing page navigation"><a href="#explore" data-nav="home" className="is-active" aria-current="page">Home</a><a href="#about" data-nav="about">About</a><a href="#how-it-works" data-nav="how-it-works">How It Works</a></nav><a className="nav-journey-link" href="/intake">Start Journey</a></div></header>
-      <section className="world-intro"><div aria-hidden="true" className="map-contours" /><WorldMountainTransition /><div className="intro-copy">
-        <p className="chapter-label">Chapter 01 · The World</p><h1 data-splitting><span>You are an Explorer.</span><span>Your career path is a map.</span></h1>
-        <p>Chart your interests, strengths, and academic trail. Career Compass turns reflection into possible college directions you can explore with confidence.</p>
-        <div className="hero-actions"><Button href="/intake" label="Start Your Journey" variant="cta-glow" /><a className="hero-scroll-hint" href="#mountains"><span>Explore the Story</span><i>↓</i></a></div>
-      </div></section>
-
-      <div id="how-it-works">{chapters.map(([name, number, eyebrow, title, body, stat, transition], index) => <section key={name} id={name} className={`journey-chapter chapter-${name}`}><Scene name={name} /><BoundaryTransition type={transition} /><div className={`chapter-copy ${index % 2 ? "chapter-copy-right" : ""}`}><p className="chapter-label">Chapter {number} · {eyebrow}</p><h2 data-splitting>{title}</h2><p>{body}</p><span className="chapter-stat">{stat}</span></div><a className="chapter-next" href={index === chapters.length - 1 ? "#about" : `#${chapters[index + 1][0]}`} aria-label={`Continue to ${index === chapters.length - 1 ? "the journey ahead" : chapters[index + 1][2]}`}>Explore onward <span>↓</span></a></section>)}</div>
-      <section id="about" className="journey-final"><div aria-hidden="true" className="final-rays" /><div className="final-content"><p className="chapter-label">Chapter 05 · The Journey Ahead</p><h2>Your future is not a straight line.</h2><p>Explore the map. Discover your direction. Find the path that fits you.</p><p className="final-disclaimer">Your results are a guide, not the final decision. Talk to your guidance counselor about your next steps.</p><Button href="/intake" label="Start Your Journey" variant="cta-glow" className="mt-8" /><small>For Senior High School students · No account required · Session-only</small></div></section>
-      <footer className="landing-footer"><div className="landing-footer-main"><div><a href="#explore" className="landing-footer-brand"><img src="/brand/career-compass-mark-96.png" alt="" /> <span>Career Compass</span></a><p>Every journey needs a compass.</p></div><nav aria-label="Footer navigation"><a href="#explore">Home</a><a href="#about">About</a><a href="#how-it-works">How It Works</a></nav><p className="landing-footer-contact">Contact Us</p></div><div className="landing-footer-meta"><p>Your map is a guide, not the final decision. Talk to your guidance counselor about your results.</p><small>© 2026 Career Compass. All rights reserved.</small></div></footer>
-    </div>
-  </main>;
+  return (
+    <main ref={root} className={`story-home ${marketingFonts}`}>
+      <a href="#world-chapter" className="story-skip">Skip to content</a>
+      <div className="story-map-window" aria-hidden="true"><div className="story-map" /><div className="story-map-shade" /></div>
+      <nav className="story-stepper" aria-label="Chapter progress">
+        {chapters.map((chapter, index) => <a key={chapter.id} href={`#${chapter.id}-chapter`} aria-label={`Chapter ${number(index)}: ${chapter.name}`} aria-current={active === index ? "step" : undefined}><i /> <span>{number(index)}</span></a>)}
+      </nav>
+      <div className="story-wrapper">
+        <section id="world-chapter" className="story-chapter story-hero" aria-labelledby="world-title">
+          <Card as="div" className="story-panel story-hero-panel">
+            <p className="story-eyebrow">Chapter 01 · The World</p>
+            <h1 id="world-title">You are an Explorer.<br /><em>Your career path<br />is a map.</em></h1>
+            <p id="world-description" className="story-description">See your interests, strengths, and grades in one place. Career Compass turns all of that into a journey you can follow with confidence.</p>
+            <div className="story-actions"><Button href="/intake" className="story-button story-start" label="Start Your Journey ↗" /><a href="#explorers" className="story-text-link">Explore the Story ↓</a></div>
+            <span className="story-panel-corner" aria-hidden="true">✧</span>
+          </Card>
+          <div className="story-compass-stage" aria-hidden="true"><div className="story-orbit" /><span className="story-north">N</span><div className="story-compass-spin"><img className="story-compass" src="/landing-compass.png" width="420" height="480" alt="" /></div><span className="story-compass-caption">YOUR NEXT CHAPTER STARTS HERE</span></div>
+          <a className="story-scroll" href="#explorers">SCROLL TO EXPLORE <span>↓</span></a>
+        </section>
+        <section ref={carousel} id="explorers" className="story-explorers" aria-labelledby="explorers-title">
+          <div className="story-explorers-heading"><div><p className="story-eyebrow">Choose how you explore</p><h2 id="explorers-title">Meet the Explorers</h2><p>Every journey starts with picking who you are on the map.<br />Six ways to explore. Pick the one that feels like you.</p></div><div className="story-arrows"><Button className="story-button" onClick={() => slide(-1)} label="←" aria-label="Previous explorers" /><Button className="story-button" onClick={() => slide(1)} label="→" aria-label="Next explorers" /></div></div>
+          <div ref={track} className="story-carousel" tabIndex={0} aria-label="Six explorer portraits; swipe or use arrow buttons">
+            {[...explorers, ...explorers].map(([name, description], itemIndex) => { const index = itemIndex % explorers.length; return <Card as="article" aria-hidden={itemIndex >= explorers.length ? true : undefined} key={`${name}-${itemIndex}`} className="story-explorer-card"><div className="story-portrait" role="img" aria-label={`${name}, an ink-and-parchment explorer portrait`} style={{ backgroundPosition: `${index * 20}% top` }} /><span className="story-card-number">EXPLORER {number(index)}</span><h3>{name}</h3><p>“{description}”</p><span className="story-card-star" aria-hidden="true">✦</span></Card>; })}
+          </div>
+          <div className="carousel-controls" aria-label="Explorer carousel controls">{explorers.map(([name], index) => <button type="button" key={name} className="carousel-dot" aria-label={`Show ${name}`} aria-pressed={explorerIndex === index} onClick={() => showExplorer(index)} />)}<button type="button" className="carousel-play" onClick={autoplay.togglePaused} aria-label={autoplay.paused ? "Play explorer carousel" : "Pause explorer carousel"}>{autoplay.paused ? "Play" : "Pause"}</button></div>
+        </section>
+        {chapters.slice(1, 5).map((chapter, index) => <Fragment key={chapter.id}><section id={`${chapter.id}-chapter`} className={`story-chapter story-region region-${index}`} aria-labelledby={`${chapter.id}-title`}>
+          <Card as="div" className="story-panel"><p className="story-eyebrow">Chapter {number(index + 1)} · {chapter.name}</p><h2 id={`${chapter.id}-title`}>{chapter.title}</h2><p className="story-description">{chapter.body}</p><div className="story-ribbon">{chapter.count && <span data-count={chapter.count}>{chapter.count}</span>} {chapter.stat}</div><span className="story-panel-corner" aria-hidden="true">✧</span></Card>
+        </section>{index === 1 && <div className="story-discovery-slot"><aside className="story-popup" aria-hidden="true"><p>BADGE UNLOCKED</p><h3>“Wayfinder”</h3><span>This is what it feels like after every step.</span></aside></div>}</Fragment>)}
+        <section id="ahead-chapter" className="story-chapter story-ending" aria-labelledby="ahead-title"><Card as="div" className="story-panel"><img src="/landing-compass.png" width="76" height="90" alt="" /><p className="story-eyebrow">Chapter 06 · The Journey Ahead</p><h2 id="ahead-title">Every path leads somewhere.<br /><em>Yours hasn&apos;t been decided yet.</em></h2><Button href="/intake" className="story-button story-start" label="Start Your Journey ↗" /><p className="story-session">For Senior High School Students · No Account Needed · Nothing Is Saved</p></Card></section>
+      </div>
+      <span className="sr-only" role="status" aria-live="polite">{announcement}</span>
+      <footer className="story-footer"><a className="story-brand" href="#world-chapter"><img src="/landing-compass.png" width="32" height="40" alt="" />CAREER COMPASS</a><p>A web-based decision support system for Senior High School career guidance.</p><a href="#world-chapter">Back to top ↑</a></footer>
+    </main>
+  );
 }
+
+
+

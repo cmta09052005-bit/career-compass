@@ -56,7 +56,7 @@ export default function ResultsPage() {
 
   if (!isReady) {
     return (
-      <main className="explorer-map-screen relative flex min-h-screen items-center justify-center px-4 text-beige">
+      <main className="game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center px-4 text-beige">
         <p role="status" className="text-sm tracking-[0.18em] text-gold uppercase">
           Restoring your career map...
         </p>
@@ -65,7 +65,7 @@ export default function ResultsPage() {
   }
 
   return (
-    <main className="explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
+    <main className="game-ui-screen explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden="true"

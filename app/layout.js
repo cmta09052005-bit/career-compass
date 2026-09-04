@@ -1,5 +1,6 @@
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import MarketingShell from "@/components/MarketingShell";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,8 +27,9 @@ export default function RootLayout({ children }) {
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-beige font-sans text-navy">
-        {children}
+        <MarketingShell>{children}</MarketingShell>
       </body>
     </html>
   );
 }
+

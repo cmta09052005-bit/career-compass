@@ -32,7 +32,7 @@ export default function Badge({
       size === "small" ? SMALL_ICON_CLASSES[state] : LARGE_ICON_CLASSES[state];
     return (
       <span
-        className={`flex shrink-0 items-center justify-center rounded-full border ${dimensions} ${stateClasses} ${className}`.trim()}
+        className={`game-medallion flex shrink-0 items-center justify-center rounded-full border ${dimensions} ${stateClasses} ${className}`.trim()}
         {...props}
       >
         {icon}
@@ -42,7 +42,7 @@ export default function Badge({
 
   return (
     <span
-      className={`rounded-full border px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-wider ${STATUS_CLASSES[state]} ${className}`.trim()}
+      className={`game-status-badge rounded-full border px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-wider ${STATUS_CLASSES[state]} ${className}`.trim()}
       {...props}
     >
       {label}

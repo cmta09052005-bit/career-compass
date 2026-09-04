@@ -173,7 +173,7 @@ export default function JourneyPage() {
   }
 
   return (
-    <main className="explorer-map-screen relative isolate min-h-svh flex-1 overflow-hidden text-beige">
+    <main className="game-ui-screen explorer-map-screen relative isolate min-h-svh flex-1 overflow-hidden text-beige">
       {/* 14 — Map background */}
       <div
         aria-hidden="true"
