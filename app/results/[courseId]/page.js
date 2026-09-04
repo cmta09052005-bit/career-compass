@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
+import ScholarshipInfoBox from "@/components/ScholarshipInfoBox";
 import courses from "@/data/explore-courses.json";
 import YearLevelTip from "./YearLevelTip";
 
@@ -137,6 +138,14 @@ export default async function CourseDetailPage({ params }) {
             {course.guidanceTips}
           </p>
           <YearLevelTip />
+        </Card>
+
+        <ScholarshipInfoBox />
+
+        <Card className="mt-5 max-w-none rounded-2xl border-gold/35 bg-navy/45 p-5 sm:p-7">
+          <p className="text-xs leading-5 text-beige/55 italic">
+            Sources: RA 10931 / UniFAST (unifast.gov.ph) · DOST-SEI (sei.dost.gov.ph) · TESDA (tesda.gov.ph) · CHED (ched.gov.ph). Info verified against official government sources; LGU and school-based scholarships vary by locality — confirm directly with your local government or target school.
+          </p>
         </Card>
 
         {/* 63 — Back to Results button */}
