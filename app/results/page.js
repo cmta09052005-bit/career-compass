@@ -53,7 +53,6 @@ background:
 }}
 />
 
-```
   <div className="relative mx-auto max-w-6xl">
     <header className="mx-auto max-w-3xl text-center">
       {/* 49 — Heading */}
@@ -171,7 +170,6 @@ background:
     </div>
   </div>
 </main>
-```
 
 );
 }
