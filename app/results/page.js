@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import courses from "@/data/courses.json";
-import { downloadExplorerReport } from "@/lib/explorerReport";
 import {
   calculateCategoryScores,
   calculateMatchPercentages,
@@ -15,9 +13,8 @@ import {
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
 export default function ResultsPage() {
-  const router = useRouter();
   const [showAllCourses, setShowAllCourses] = useState(false);
-  const { session, answers, isReady } = useSessionAnswers();
+  const { answers, isReady } = useSessionAnswers();
   const categoryScores = calculateCategoryScores(answers);
   const categoryPercentages = calculateMatchPercentages(categoryScores);
   const result = createRecommendationResult(
@@ -32,27 +29,6 @@ export default function ResultsPage() {
   const displayedCourses = showAllCourses
     ? topCourses
     : topCourses.slice(0, 5);
-
-  function downloadReport() {
-    downloadExplorerReport({
-      nickname: session.nickname,
-      date: new Intl.DateTimeFormat("en-PH", { dateStyle: "long" }).format(
-        new Date(),
-      ),
-      topCourses,
-      strongestCategory: result.strongestCategory,
-      profile: {
-        interestsAnswered: Object.keys(session.interests).length,
-        strongSkills: Object.values(session.skills).filter(
-          (value) => Number(value) >= 4,
-        ).length,
-        strand: session.strand,
-        gwa: session.gwa,
-        subjects: session.subjects,
-      },
-    });
-    router.push("/report");
-  }
 
   if (!isReady) {
     return (
@@ -163,6 +139,10 @@ export default function ResultsPage() {
           counselor about what&apos;s right for you.
         </aside>
 
+        <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-beige/70">
+          Download your report before closing this tab — your answers are not saved anywhere else.
+        </p>
+
         <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-center">
           {/* 54 — Back to Journey Map button */}
           <Button
@@ -174,7 +154,7 @@ export default function ResultsPage() {
           {/* 55 — Download My Explorer Report button */}
           <Button
             label="Download My Explorer Report"
-            onClick={downloadReport}
+            href="/report"
             className="inline-flex w-full items-center justify-center sm:w-auto"
           />
         </div>
