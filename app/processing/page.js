@@ -29,7 +29,7 @@ export default function ProcessingPage() {
   }, [isReady, router]);
 
   return (
-    <main className="explorer-map-screen relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden px-5 py-12 text-beige">
+    <main className="game-ui-screen explorer-map-screen relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden px-5 py-12 text-beige">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_50%_42%,#305774_0%,#1b2a4a_42%,#10182b_100%)]"

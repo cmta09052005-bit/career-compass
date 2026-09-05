@@ -24,7 +24,7 @@ export default function JourneySectionPlaceholder({
   }
 
   return (
-    <main className="relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden bg-navy px-5 py-12 text-beige">
+    <main className="game-ui-screen relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden bg-navy px-5 py-12 text-beige">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-[linear-gradient(145deg,#121a2e_0%,#1b2a4a_55%,#31536a_100%)]"

@@ -1,0 +1,69 @@
+/* Requested marketing-page polish. Scoped to the persistent marketing shell. */
+.marketing-shell { overflow:clip; background:#1b2a4a; min-width:0; }
+.marketing-content { min-width:0; }
+.marketing-shell .story-navbar nav [aria-current="page"] { color:#edc975; text-decoration:underline; text-underline-offset:10px; text-decoration-thickness:2px; }
+.marketing-shell .story-navbar { z-index:100; }
+.marketing-shell .story-brand { min-width:0; }
+.marketing-shell .story-home { min-width:0; }
+.marketing-shell .story-actions { row-gap:14px; column-gap:22px; }
+.marketing-shell .story-text-link { display:inline-block; white-space:nowrap; line-height:1.7; font-size:clamp(.6rem,.8vw,.72rem); }
+.marketing-shell .story-panel,.marketing-shell .hiw-tab-content>*,.marketing-shell .about-team-grid>* { min-width:0; }
+.marketing-shell .story-chapter { min-height:110dvh; }
+.marketing-shell .story-hero { min-height:100dvh; }
+.marketing-shell .story-ending { min-height:105dvh; }
+.marketing-shell .story-map { height:334dvh; }
+.marketing-shell .story-compass-stage { min-width:0; }
+.marketing-shell .story-hero h1 { font-size:clamp(2rem,3.5vw,3.56rem); }
+.marketing-shell .story-region h2 { font-size:clamp(1.9rem,3.5vw,3.06rem); }
+.marketing-shell .story-session { font-size:clamp(.55rem,.7vw,.65rem); }
+.marketing-shell .carousel-controls { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:13px; padding:26px 12px 4px; color:#f5ecd7; }
+.marketing-shell .story-explorers .carousel-controls { margin-right:8vw; }
+.marketing-shell .carousel-dot { width:12px; height:12px; border-radius:50%; border:1px solid #d4b16b; background:transparent; cursor:pointer; padding:0; position:relative; }
+.marketing-shell .carousel-dot::after { content:''; position:absolute; inset:-8px; }
+.marketing-shell .carousel-dot[aria-pressed=true] { background:#d4a017; box-shadow:0 0 0 3px #d4a01733; }
+.marketing-shell .carousel-play { border:1px solid #b3956166; border-radius:3px; padding:8px 12px; margin-left:8px; font:600 10px var(--story-label),sans-serif; cursor:pointer; color:inherit; background:transparent; }
+.marketing-shell .carousel-controls .story-button { padding:8px 15px; min-width:40px; min-height:38px; font-size:17px; }
+.marketing-shell .story-carousel { overscroll-behavior-x:contain; }
+.marketing-shell .hiw-tab-content { min-height:250px; }
+@media(max-width:800px) {
+ .marketing-shell .story-navbar { flex-wrap:wrap; gap:10px; padding:10px 20px 14px; }
+ .marketing-shell .story-navbar nav { display:flex; order:3; width:100%; justify-content:center; gap:30px; }
+ .marketing-shell .story-navbar nav a { font-size:clamp(.55rem,1.5vw,.65rem); }
+ .marketing-shell .story-navbar .story-brand { font-size:clamp(.55rem,1.4vw,.72rem); }
+ .marketing-shell .story-nav-start { font-size:clamp(.5rem,1.3vw,.65rem); padding:10px 18px; }
+ .marketing-shell .story-navbar nav [aria-current="page"] { text-underline-offset:6px; }
+ .marketing-shell .story-hero { padding-top:155px; }
+ .marketing-shell .hiw-intro,.marketing-shell .about-intro { padding-top:155px; }
+}
+@media(max-width:700px) {
+ .marketing-shell .story-chapter { min-height:100dvh; }
+ .marketing-shell .story-home .story-panel { max-width:100%; }
+ .marketing-shell .story-explorers { padding-left:56px; }
+ .marketing-shell .story-home .story-explorer-card { flex-basis:min(250px,calc(100vw - 92px)); width:min(250px,calc(100vw - 92px)); }
+ .marketing-shell .story-home .story-panel { padding:30px 23px!important; }
+ .marketing-shell .story-hero h1 { font-size:clamp(1.8rem,7.5vw,2.75rem); }
+ .marketing-shell .story-actions .story-button { padding-inline:18px; font-size:clamp(.5rem,1.8vw,.65rem); max-width:100%; }
+ .marketing-shell .hiw-tab-content { min-height:365px; }
+ .marketing-shell .about-page h2 { font-size:clamp(1.45rem,5.4vw,1.75rem); }
+ .marketing-shell .team-card-inner { height:440px; }
+ .marketing-shell .team-face { padding:22px; }
+ .marketing-shell .team-bio { font-size:clamp(.7rem,2.9vw,.8rem); }
+}
+.marketing-shell .story-stepper::before { top:15px; }
+.marketing-shell .story-region .story-panel { margin-left:auto; }
+.marketing-shell .region-1 .story-panel,.marketing-shell .region-3 .story-panel { margin-left:0; margin-right:auto; }
+.marketing-shell .story-discovery-slot { display:flex; justify-content:center; align-items:center; min-height:230px; padding:35px 8%; }
+.marketing-shell .story-popup { position:relative; bottom:auto; right:auto; width:min(285px,100%); padding:25px; box-shadow:0 15px 32px #160e0a70,0 3px 8px #160e0a40; z-index:1; }
+.marketing-shell .story-popup h3 { font-size:clamp(1.25rem,2vw,1.5rem); }
+.marketing-shell .hiw-outcome-paper li { display:grid; grid-template-columns:64px minmax(0,1fr); align-items:center; }
+.marketing-shell .hiw-outcome-paper li img { display:block; width:60px; height:60px; object-fit:contain; margin:auto; }
+.marketing-shell .team-thanks { display:block; margin-top:17px; font-style:italic; color:#28686a; }
+.marketing-shell .hiw-step .step-node { transition:background-color .25s,color .25s; }
+@media(max-width:700px) {
+ .marketing-shell .story-discovery-slot { padding:28px 24px 28px 60px; min-height:215px; }
+ .marketing-shell .hiw-outcome-paper li { grid-template-columns:48px minmax(0,1fr); gap:12px; }
+ .marketing-shell .hiw-outcome-paper li img { width:46px; height:46px; }
+}
+@media(prefers-reduced-motion:reduce) { .marketing-shell .story-map { height:100%; }.marketing-shell .story-start,.marketing-shell .hiw-start,.marketing-shell .about-start { transform:none!important; } }
+/* GSAP owns arrow/autoplay movement; touch still scrolls natively. */
+.marketing-shell .story-carousel { scroll-snap-type:none; }

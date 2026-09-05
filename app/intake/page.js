@@ -27,7 +27,7 @@ export default function IntakePage() {
   }
 
   return (
-    <main className="relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden bg-navy px-4 py-10 text-beige sm:px-6 sm:py-14 lg:px-8">
+    <main className="game-ui-screen relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden bg-navy px-4 py-10 text-beige sm:px-6 sm:py-14 lg:px-8">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-[linear-gradient(145deg,#121a2e_0%,#1b2a4a_48%,#443d63_100%)]"
