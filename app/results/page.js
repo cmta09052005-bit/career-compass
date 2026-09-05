@@ -39,6 +39,7 @@ export default function ResultsPage() {
       date: new Intl.DateTimeFormat("en-PH", { dateStyle: "long" }).format(
         new Date(),
       ),
+      answers,
       topCourses,
       strongestCategory: result.strongestCategory,
       profile: {
@@ -162,6 +163,10 @@ export default function ResultsPage() {
           This is a guidance tool, not a final decision — talk to your guidance
           counselor about what&apos;s right for you.
         </aside>
+
+        <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-beige/70">
+          Download your report before closing this tab — your answers are not saved anywhere else.
+        </p>
 
         <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-center">
           {/* 54 — Back to Journey Map button */}

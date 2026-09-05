@@ -28,6 +28,7 @@ export default function ReportPage() {
     date: new Intl.DateTimeFormat("en-PH", { dateStyle: "long" }).format(
       new Date(),
     ),
+    answers,
     topCourses: result.topCourses,
     strongestCategory: result.strongestCategory,
     profile: {
