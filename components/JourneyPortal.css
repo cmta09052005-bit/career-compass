@@ -1,0 +1,12 @@
+.journey-portal[open] { display:flex; position:fixed; inset:0; width:100%; max-width:none; height:100dvh; max-height:none; padding:24px; margin:0; border:0; background:#1b2a4acc; backdrop-filter:blur(6px); align-items:center; justify-content:center; cursor:pointer; color:#1b2a4a; }
+.journey-portal::backdrop { background:transparent; }
+.portal-card { width:min(440px,100%); text-align:center; padding:40px 24px; border:3px solid #b08a52; outline:1px solid #d4a017; outline-offset:5px; border-radius:7px; background:repeating-linear-gradient(92deg,#bd97510c 0 1px,transparent 2px 5px),linear-gradient(110deg,#f5ecd7,#edd7ad); box-shadow:0 25px 70px #0006; }
+.portal-symbol { position:relative; width:86px; margin:0 auto 22px; }
+.portal-compass { width:86px; height:100px; object-fit:contain; }
+.portal-sparks { position:absolute; left:50%; top:50%; pointer-events:none; }
+.portal-sparks i { position:absolute; width:4px; height:4px; border-radius:50%; background:#d4a017; box-shadow:0 0 7px #d4a017; opacity:0; }
+.portal-card h2 { font:700 clamp(1.5rem,3vw,2rem) var(--story-heading),sans-serif; letter-spacing:-.04em; }
+.portal-card p { margin:12px 0 0; font:400 clamp(.85rem,1.5vw,1rem) var(--font-inter),sans-serif; }
+body:has(.journey-portal[open]) { overflow:hidden; }
+.journey-portal[open] { background:#1b2a4a; }
+.portal-halo { position:absolute; inset:8px -6px; border:2px solid #d4a017; border-radius:50%; box-shadow:0 0 22px #d4a01766,inset 0 0 14px #d4a01733; pointer-events:none; opacity:0; }.portal-sparks i:nth-child(3n) { width:5px; height:9px; border-radius:1px; background:#2dbfb8; }.portal-sparks i:nth-child(3n + 1) { clip-path:polygon(50% 0,62% 37%,100% 50%,62% 62%,50% 100%,37% 62%,0 50%,37% 37%); width:11px; height:11px; background:#d4a017; }

@@ -1,0 +1,231 @@
+.basecamp {
+  --deep-navy:#1B2A4A; --compass-gold:#D4A017; --explorer-teal:#2DBFB8;
+  --map-beige:#F5ECD7; --adventure-orange:#FF7F3F; --discovery-green:#4CAF7D;
+  position:relative; isolation:isolate; min-height:100dvh; padding:128px 24px 48px;
+  color:var(--map-beige); font-family:var(--font-inter),sans-serif;
+  font-size:clamp(.8rem,1vw,.95rem);
+}
+.basecamp-watermark { position:fixed; inset:-12px; z-index:-2; pointer-events:none; background:linear-gradient(#1b2a4ad9,#1b2a4ad9),url('/landing-map.jpg') center 38%/cover no-repeat; filter:blur(5px); }
+.basecamp .basecamp-shell.game-panel { width:min(100%,900px); max-width:900px; margin:auto; padding:clamp(24px,4vw,48px)!important; background:var(--deep-navy); border:1px solid #d4a01766!important; border-radius:16px!important; box-shadow:0 24px 70px #08112466!important; animation:none; overflow:visible; }
+.basecamp-shell::before { border-color:#d4a01716; border-radius:12px; background:none; }
+.basecamp-shell::after { border-radius:16px; }
+.basecamp-inner { min-width:0; }
+.basecamp-heading { text-align:center; }
+.basecamp-compass { display:block; width:52px; height:60px; object-fit:contain; margin:0 auto 12px; }
+.basecamp .basecamp-eyebrow { color:var(--explorer-teal); font:600 clamp(.58rem,1vw,.7rem) var(--story-label),sans-serif; letter-spacing:.2em; }
+.basecamp-steps { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:0; margin:14px auto 22px; width:120px; }
+.basecamp-steps>span { width:9px; height:9px; border:1px solid var(--compass-gold); border-radius:50%; }
+.basecamp-steps>.filled { background:var(--compass-gold); box-shadow:0 0 9px #d4a01733; }
+.basecamp-steps>i { width:32px; height:1px; background:#d4a01766; margin:0 7px; }
+.basecamp-steps>p { flex-basis:100%; font-size:clamp(.62rem,.9vw,.72rem); color:#f5ecd7a6; margin:8px 0 0; }
+.basecamp h1 { color:var(--map-beige); font-size:clamp(1.6rem,3.3vw,2.7rem); line-height:1.2; margin:0; }
+.basecamp .basecamp-subtext { font-size:clamp(.8rem,1.25vw,.95rem); line-height:1.7; max-width:620px; margin:14px auto 0; color:#f5ecd7cc; }
+.basecamp .basecamp-privacy { font-size:clamp(.66rem,1vw,.76rem); line-height:1.7; max-width:540px; margin:12px auto 0; color:var(--explorer-teal); }
+.basecamp-form { margin:32px auto 0; max-width:690px; display:grid; gap:26px; }
+.basecamp-form>fieldset { margin:0!important; min-width:0; }
+.basecamp-form label:not(.basecamp-choice),.basecamp legend { font:600 clamp(.72rem,1vw,.82rem) var(--story-label),sans-serif; line-height:1.6; }
+.basecamp-optional { font:400 clamp(.6rem,.85vw,.7rem) var(--font-inter),sans-serif; color:#f5ecd794; border:1px solid #f5ecd724; border-radius:4px; padding:2px 6px; margin-left:6px; }
+.basecamp-required { color:var(--compass-gold); }
+.basecamp #nickname { display:block; width:100%; min-height:48px; margin-top:10px; padding:12px 16px; border:1px solid #d4a01766; border-radius:8px; background:#14213a; color:var(--map-beige); font-size:clamp(.8rem,1.1vw,.95rem); transition:border-color .18s,box-shadow .18s; }
+.basecamp #nickname::placeholder { color:#f5ecd766; }
+.basecamp #nickname:focus { border-color:var(--compass-gold); box-shadow:0 0 0 3px #d4a01722; }
+.basecamp-strands,.basecamp-years { display:grid; gap:12px; margin-top:12px; }
+.basecamp-strands { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.basecamp-years { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.basecamp-choice,.basecamp-avatar { display:block; position:relative; cursor:pointer; min-width:0; }
+.basecamp-choice-face { display:flex; align-items:center; justify-content:center; min-height:62px; padding:16px 24px; border:1px solid #d4a0174d; background:var(--deep-navy); border-radius:8px; color:var(--map-beige); font:600 clamp(.65rem,.95vw,.8rem) var(--story-label),sans-serif; text-align:center; transition:transform .18s,border-color .18s,box-shadow .18s,background .18s,color .18s; }
+.basecamp-choice input:checked+.basecamp-choice-face { background:var(--compass-gold); border-color:var(--compass-gold); color:var(--deep-navy); box-shadow:0 0 18px #d4a01726; }
+.basecamp .basecamp-stamp { position:absolute; right:7px; top:7px; width:23px; height:23px; border:2px double var(--compass-gold); background:var(--deep-navy); box-shadow:0 0 0 2px #1b2a4a; color:var(--compass-gold); opacity:0; pointer-events:none; }
+.basecamp-stamp-rose { font-size:clamp(1rem,1.4vw,1.15rem); line-height:1; opacity:.5; }
+.basecamp-stamp-check { position:absolute; color:var(--map-beige); font-size:clamp(.65rem,1vw,.78rem); font-weight:700; }
+.basecamp input:checked+span .basecamp-stamp { opacity:1; }
+.basecamp .basecamp-helper { color:#f5ecd799; margin:12px 0 0; font-size:clamp(.67rem,.95vw,.76rem); line-height:1.7; }
+.basecamp .basecamp-error { color:var(--adventure-orange); font-size:clamp(.72rem,1vw,.82rem); margin:10px 0 0; }
+.basecamp .has-error .basecamp-choice-face { border-color:var(--adventure-orange); }
+.basecamp-actions { display:flex; justify-content:center; margin-top:6px; padding:6px 0; }
+.basecamp .basecamp-cta { min-width:210px; font-size:clamp(.7rem,1vw,.8rem); padding:16px 32px; animation:none; }
+.basecamp :is(a,button,input):focus-visible,.basecamp-choice input:focus-visible+.basecamp-choice-face,.basecamp-avatar input:focus-visible+.basecamp-avatar-face { outline:3px solid var(--explorer-teal); outline-offset:4px; }
+.basecamp h1:focus { outline:none; }
+.basecamp input:disabled { opacity:.6; cursor:wait; }
+.basecamp-avatars { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; min-width:0; margin:30px 0; }
+.basecamp-avatar-face { position:relative; display:flex; flex-direction:column; height:100%; min-height:275px; align-items:center; border:2px solid #d4a01733; border-radius:10px; background:#17253f; padding:14px 14px 22px; text-align:center; transition:border-color .2s,box-shadow .2s,transform .2s; }
+.basecamp-portrait { display:block; width:140px; height:170px; max-width:100%; background:url('/explorers.png') var(--portrait-position) top/600% auto no-repeat; filter:grayscale(.9); transition:filter .2s; mask-image:linear-gradient(#000 80%,transparent); }
+.basecamp-avatar strong { font-family:var(--story-heading),sans-serif; font-size:clamp(.85rem,1.3vw,1.05rem); line-height:1.4; margin:10px 0 7px; }
+.basecamp-flavor { color:#f5ecd7a6; font-size:clamp(.7rem,1vw,.8rem); line-height:1.6; }
+.basecamp-avatar input:checked+.basecamp-avatar-face { border-color:var(--compass-gold); box-shadow:0 0 22px #d4a01724; }
+.basecamp-avatar input:checked+.basecamp-avatar-face .basecamp-portrait { filter:grayscale(0); }
+.basecamp-skip { grid-column:2; }
+.basecamp-silhouette { background:#d4a01766; mask:url('/explorers.png') 100% top/600% auto no-repeat; filter:none!important; }
+.basecamp-dust { position:fixed; inset:0; pointer-events:none; z-index:-1; overflow:hidden; }
+.basecamp-dust i { position:absolute; width:3px; height:3px; background:var(--compass-gold); border-radius:50%; box-shadow:0 0 7px #d4a01770; opacity:0; animation:basecamp-drift 20s linear infinite; }
+.basecamp-dust[data-paused=true] i { animation-play-state:paused; }
+@keyframes basecamp-drift { 0%,100% { opacity:0; transform:translate(0,25px); } 35%,65% { opacity:.3; } 90% { opacity:0; transform:translate(16px,-55px); } }
+@media(hover:hover) {
+ .basecamp-choice:hover .basecamp-choice-face { border-color:var(--compass-gold); box-shadow:inset 0 0 16px #2dbfb81c; transform:translateY(-2px); }
+ .basecamp-avatar:hover .basecamp-avatar-face { border-color:var(--compass-gold); box-shadow:0 0 24px #2dbfb81f; transform:translateY(-4px); }
+ .basecamp-avatar:hover .basecamp-portrait { filter:grayscale(0); }
+}
+@media(max-width:1000px) { .basecamp-avatars { grid-template-columns:repeat(2,minmax(0,1fr)); }.basecamp-skip { grid-column:1 / -1; width:calc(50% - 9px); justify-self:center; } }
+@media(max-width:800px) { .basecamp { padding-top:145px; } }
+@media(max-width:479px) {
+ .basecamp { padding:145px 16px 30px; }
+ .basecamp .basecamp-shell.game-panel { padding:28px 20px!important; }
+ .basecamp-strands,.basecamp-avatars { grid-template-columns:minmax(0,1fr); }
+ .basecamp-skip { grid-column:auto; width:100%; }
+ .basecamp-avatars { gap:16px; }
+ .basecamp-choice-face { min-height:55px; }
+ .basecamp .basecamp-cta { width:100%; min-width:0; }
+ .basecamp-avatar-face { min-height:265px; }
+}
+@media(prefers-reduced-motion:reduce) { .basecamp-dust { display:none; }.basecamp-choice-face,.basecamp-avatar-face,.basecamp-portrait { transition:none; }.basecamp-choice:hover .basecamp-choice-face,.basecamp-avatar:hover .basecamp-avatar-face { transform:none; } }
+/* Basecamp is an app viewport; only its content regions scroll. */
+body:has(.basecamp) { overflow:hidden; }
+.basecamp { position:fixed; inset:0; height:100dvh; min-height:0; overflow:hidden; padding:66px 24px 20px; display:flex; justify-content:center; }
+.basecamp-appbar { position:fixed; top:16px; left:24px; right:24px; display:flex; align-items:center; gap:30px; }
+.basecamp-wordmark { display:flex; align-items:center; gap:9px; font:600 clamp(.6rem,.9vw,.73rem) var(--story-label),sans-serif; letter-spacing:.13em; color:#f5ecd7cc; }
+.basecamp-wordmark img { width:24px; height:28px; object-fit:contain; }
+.basecamp-back { font:600 clamp(.7rem,1vw,.82rem) var(--story-label),sans-serif; color:#f5ecd7b3; cursor:pointer; background:none; border:0; padding:6px; }
+.basecamp-back:hover { color:var(--compass-gold); }
+.basecamp .basecamp-shell.game-panel { margin:0; max-height:100%; padding:20px 28px!important; display:flex; flex-direction:column; overflow:hidden; }
+.basecamp-inner { overflow:auto; overscroll-behavior:contain; min-height:0; padding:5px 9px 10px; width:100%; }
+.basecamp-inner,.basecamp-avatars { scrollbar-width:thin; scrollbar-color:#d4a01780 #d4a0170a; }
+.basecamp-compass { width:35px; height:40px; margin-bottom:6px; }
+.basecamp-steps { margin:9px auto 12px; }
+.basecamp h1 { font-size:clamp(1.35rem,2.6vw,2.1rem); overflow-wrap:anywhere; }
+.basecamp .basecamp-subtext { margin-top:8px; font-size:clamp(.75rem,1vw,.88rem); }
+.basecamp .basecamp-privacy { margin-top:6px; }
+.basecamp-form { margin-top:20px; gap:17px; }
+.basecamp-strands,.basecamp-years { margin-top:8px; gap:9px; }
+.basecamp-choice-face { min-height:48px; padding:12px 24px; }
+.basecamp #nickname { min-height:44px; padding:10px 14px; margin-top:7px; }
+.basecamp .basecamp-helper { margin-top:8px; }
+.basecamp-actions { margin:0; padding:8px 0 7px; flex-shrink:0; }
+.basecamp-step-2 .basecamp-inner { display:flex; flex-direction:column; overflow:hidden; flex:1; }
+.basecamp-step-2 .basecamp-heading { flex-shrink:0; }
+.basecamp-avatars-step { display:flex; flex-direction:column; flex:1; min-height:0; }
+.basecamp-avatars { display:block; overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; flex:1; min-height:0; margin:14px 0 8px; padding:7px; }
+.basecamp-avatars>legend { float:left; }
+.basecamp-avatars { display:grid; grid-auto-rows:max-content; align-content:start; }
+.basecamp-avatar-face { min-height:230px; padding:8px 12px 16px; }
+.basecamp-portrait { height:135px; width:125px; }
+.basecamp-recap { display:flex; justify-content:center; align-items:center; gap:7px; flex-wrap:wrap; margin:12px 0 2px; font:600 clamp(.6rem,.9vw,.72rem) var(--story-label),sans-serif; }
+.basecamp-recap>span { display:flex; align-items:center; gap:7px; border:1px solid #d4a0174d; border-radius:20px; padding:6px 10px; max-width:100%; overflow-wrap:anywhere; }
+.basecamp-recap>b { color:#d4a01788; }
+.basecamp-recap button { color:var(--explorer-teal); padding:6px; cursor:pointer; }
+.recap-person { display:inline-block; flex-shrink:0; width:12px; height:15px; background:radial-gradient(circle at 50% 25%,#f5ecd7 0 3px,transparent 3.5px),radial-gradient(ellipse at 50% 100%,#f5ecd7 0 6px,transparent 6.5px); }
+/* Interim mystery portrait reuses the hooded ink artwork; final featureless art is pending. */
+.basecamp-silhouette { position:relative; background:url('/explorers.png') 100% top/600% auto no-repeat; mask-image:linear-gradient(#000 80%,transparent); mask-size:100% 100%; mask-position:center; filter:grayscale(.9) brightness(.7)!important; }
+.basecamp-silhouette::after { content:''; position:absolute; left:36%; top:42%; width:38%; height:34%; background:radial-gradient(ellipse,#111b2e 25%,#111b2eaa 48%,transparent 72%); }
+.basecamp-leave { margin:auto; width:min(430px,calc(100% - 40px)); padding:30px; border:1px solid #d4a01788; border-radius:12px; background:#1b2a4a; color:#f5ecd7; box-shadow:0 24px 70px #0008; text-align:center; }
+.basecamp-leave::backdrop { background:#111b2ecc; backdrop-filter:blur(5px); }
+.basecamp-leave h2 { font-size:clamp(1.25rem,2vw,1.6rem); }
+.basecamp-leave p { font-size:clamp(.8rem,1vw,.9rem); line-height:1.7; margin:12px 0 22px; }
+.basecamp-leave>div { display:flex; gap:22px; justify-content:center; align-items:center; }
+@media(max-height:800px) {
+ .basecamp .basecamp-shell.game-panel { padding:12px 22px!important; }
+ .basecamp-compass { width:26px; height:30px; }
+ .basecamp-steps { margin:6px auto 8px; }
+ .basecamp-form { margin-top:14px; gap:12px; }
+ .basecamp-choice-face { min-height:42px; padding-block:9px; }
+ .basecamp .basecamp-cta { min-height:44px; padding-block:10px; }
+}
+@media(max-width:479px) {
+ .basecamp { padding:58px 12px 12px; }
+ .basecamp-appbar { left:16px; right:16px; top:12px; justify-content:space-between; gap:10px; }
+ .basecamp .basecamp-shell.game-panel { padding:14px 12px!important; }
+ .basecamp-avatars { grid-template-columns:minmax(0,1fr); }
+ .basecamp-avatar-face { min-height:225px; }
+ .basecamp-recap { gap:4px; }
+ .basecamp-recap>span { padding:4px 7px; }
+ .basecamp-step-2 .basecamp-subtext { line-height:1.5; }
+}
+@media(max-height:540px) {
+ .basecamp-step-2 .basecamp-inner { display:block; overflow:auto; }
+ .basecamp-avatars { max-height:260px; min-height:225px; }
+ .basecamp-avatars-step { display:block; }
+}
+@media(min-width:800px) and (max-height:800px) {
+ .basecamp-step-1 .basecamp-form { gap:8px; margin-top:10px; }
+ .basecamp-step-1 .basecamp-steps { margin:3px auto 5px; }
+ .basecamp-step-1 .basecamp-subtext { margin-top:4px; }
+ .basecamp-step-1 .basecamp-compass { height:24px; margin-bottom:3px; }
+ .basecamp-step-1 .basecamp-privacy { margin-top:3px; }
+}
+.basecamp-compass { width:auto!important; }
+/* Targeted material and ambient polish. */
+.basecamp .basecamp-shell.game-panel { position:relative; }
+.basecamp-card-back { position:absolute; top:17px; left:24px; z-index:3; }
+.basecamp-heading { position:relative; }
+.basecamp #nickname { background:linear-gradient(110deg,#f5ecd7,#e8d2ad); border:1px solid #a7834c; border-radius:7px 10px 6px 9px; color:#493728; box-shadow:inset 0 2px 7px #67472c30,inset 0 0 0 2px #f9edda77; }
+.basecamp #nickname::placeholder { color:#846c53; }
+.basecamp-choice-face { position:relative; border:2px solid #94704c; border-radius:4px 7px 3px 6px; background:repeating-linear-gradient(3deg,transparent 0 7px,#dfad6518 8px,transparent 10px),linear-gradient(#5e4836,#3d2e24); box-shadow:inset 0 0 0 2px #2e211a,inset 0 4px 0 #ffffff0a,0 3px 0 #171512; color:#eadbc3; }
+.basecamp-choice input:checked+.basecamp-choice-face { background:repeating-linear-gradient(3deg,transparent 0 7px,#61441d20 8px,transparent 10px),linear-gradient(#e6bf58,#cc9825); border-color:#edca71; box-shadow:inset 0 0 0 2px #b08132,inset 0 4px 0 #fff3ca40,0 3px 0 #56401d,0 0 17px #d4a01730; }
+.basecamp-choice:hover .basecamp-choice-face { border-color:var(--compass-gold); transform:translateY(-2px); }
+.basecamp-watermark { animation:basecamp-map-breathe 18s ease-in-out infinite alternate; transform-origin:center; }
+.basecamp-mist { position:fixed; inset:0; pointer-events:none; z-index:-1; overflow:hidden; }
+.basecamp-mist i { position:absolute; top:30%; left:10%; width:45vw; height:24vh; border-radius:50%; background:radial-gradient(ellipse,#eee2c0 0%,#d1d6cf66 35%,transparent 70%); filter:blur(24px); opacity:.09; animation:basecamp-mist-drift 26s ease-in-out infinite alternate; }
+.basecamp-mist i+ i { top:68%; left:53%; animation-delay:-13s; animation-duration:30s; opacity:.08; }
+.basecamp-compass-sparks { position:absolute; width:90px; height:40px; top:0; left:calc(50% - 45px); pointer-events:none; }
+.basecamp-compass-sparks i { position:absolute; left:20%; top:60%; width:2px; height:2px; background:#d4a017; box-shadow:0 0 5px #d4a01788; opacity:0; animation:basecamp-compass-dust 8s ease-in-out infinite; }
+.basecamp-compass-sparks i:nth-child(2) { left:75%; animation-delay:-2s; }
+.basecamp-compass-sparks i:nth-child(3) { left:40%; animation-delay:-4s; }
+.basecamp-compass-sparks i:nth-child(4) { left:90%; animation-delay:-6s; }
+.basecamp[data-ambient-paused=true] :is(.basecamp-watermark,.basecamp-mist i,.basecamp-dust i,.basecamp-compass-sparks i) { animation-play-state:paused; }
+@keyframes basecamp-map-breathe { from { transform:scale(1) translateX(0); } to { transform:scale(1.02) translateX(3px); } }
+@keyframes basecamp-mist-drift { from { transform:translateX(-25px); } to { transform:translateX(45px); } }
+@keyframes basecamp-compass-dust { 0%,100% { opacity:0; transform:translate(0,5px); } 40% { opacity:.4; } 90% { opacity:0; transform:translate(7px,-18px); } }
+@media(max-width:479px) { .basecamp-card-back { top:14px; left:17px; font-size:clamp(.62rem,2.7vw,.72rem); } }
+@media(prefers-reduced-motion:reduce) { .basecamp-watermark,.basecamp-mist i,.basecamp-compass-sparks i { animation:none; }.basecamp-compass-sparks { display:none; }.basecamp-choice:hover .basecamp-choice-face { transform:none; } }
+/* Complete Basecamp's framed-panel and collectible-card materials. */
+.basecamp .basecamp-shell.game-panel {
+ border:3px solid #8f6d43!important;
+ box-shadow:0 0 0 1px #d4a01780,0 0 0 4px #201c19,0 22px 60px #08112466,inset 0 0 0 2px #d4a01733!important;
+}
+.basecamp-shell.game-panel::before {
+ inset:7px; border:1px solid #b08a524d; border-radius:9px;
+ background:radial-gradient(circle at 5px 5px,#e6c17b 0 2px,#6b4c30 2.5px 4px,transparent 4.5px),radial-gradient(circle at calc(100% - 5px) 5px,#e6c17b 0 2px,#6b4c30 2.5px 4px,transparent 4.5px),radial-gradient(circle at 5px calc(100% - 5px),#e6c17b 0 2px,#6b4c30 2.5px 4px,transparent 4.5px),radial-gradient(circle at calc(100% - 5px) calc(100% - 5px),#e6c17b 0 2px,#6b4c30 2.5px 4px,transparent 4.5px);
+}
+.basecamp-avatar-face {
+ border-color:#97754b; border-radius:7px 10px 6px 9px;
+ background:repeating-linear-gradient(94deg,transparent 0 9px,#cda56307 10px,transparent 12px),linear-gradient(120deg,#1b2a4a,#142038);
+ box-shadow:inset 0 0 0 2px #b08a522b,0 3px 0 #15191f;
+ padding:10px 12px 12px;
+}
+.basecamp-portrait-frame { display:flex; justify-content:center; width:100%; border:1px solid #d4a01770; border-radius:5px 7px 4px 6px; background:radial-gradient(ellipse at 50% 80%,#d4a01714,transparent 75%); box-shadow:inset 0 0 16px #08112450; }
+.basecamp-avatar strong {
+ position:relative; display:block; width:calc(100% + 10px); margin:9px -5px 0; padding:7px 10px;
+ font:600 clamp(.75rem,1.1vw,.92rem) var(--story-label),sans-serif; color:#f5ecd7;
+ border:2px solid #997347; border-radius:3px 5px 2px 4px;
+ background:repeating-linear-gradient(3deg,transparent 0 6px,#dfad6520 7px,transparent 9px),linear-gradient(#715137,#483225);
+ box-shadow:inset 0 0 0 1px #2c2118,0 3px 0 #11151c;
+}
+.basecamp-avatar strong::before,.basecamp-avatar strong::after { content:''; position:absolute; top:calc(50% - 1px); width:3px; height:3px; border-radius:50%; background:#d0ad70; }
+.basecamp-avatar strong::before { left:3px; }.basecamp-avatar strong::after { right:3px; }
+.basecamp-flavor {
+ display:flex; align-items:center; justify-content:center; width:100%; flex:1; margin-top:7px; padding:10px 9px;
+ color:#594631; border:1px solid #ad89574d; border-radius:2px 3px 5px 3px;
+ background:repeating-linear-gradient(96deg,#b78b4409 0 1px,transparent 2px 5px),linear-gradient(110deg,#f5ecd7,#e6cfaa);
+ box-shadow:inset 0 0 10px #a77c3320;
+}
+.basecamp-avatar input:checked+.basecamp-avatar-face { border-color:var(--compass-gold); box-shadow:0 0 22px #d4a01724; }
+.basecamp-recap>span {
+ border:1px solid #ab8149; border-radius:2px; padding:5px 13px; color:#493728;
+ background:repeating-linear-gradient(3deg,transparent 0 5px,#8c663018 6px,transparent 8px),linear-gradient(#f0ddb8,#d8b881);
+ clip-path:polygon(0 0,100% 0,calc(100% - 5px) 50%,100% 100%,0 100%,5px 50%);
+ box-shadow:inset 0 0 0 2px #f5ecd72b;
+}
+.basecamp-recap .recap-person { background:radial-gradient(circle at 50% 25%,#695035 0 3px,transparent 3.5px),radial-gradient(ellipse at 50% 100%,#695035 0 6px,transparent 6.5px); }
+.basecamp-optional { border-color:#a7834c; border-radius:2px 4px 2px 3px; color:#f5ecd7; background:linear-gradient(110deg,#695036,#493728); box-shadow:inset 0 0 0 1px #d6b68122; }
+.basecamp-steps>span { border:2px solid #b18b50; box-shadow:0 0 0 2px #d4a01722,inset 0 0 0 1px #1b2a4a; }
+.basecamp-steps>.filled { border-color:#e0b855; box-shadow:0 0 0 2px #d4a01726,inset 0 0 0 1px #725421; }
+.basecamp-steps>i { height:3px; background:radial-gradient(circle,#b99658 1px,transparent 1.4px) left center/6px 3px repeat-x; }
+.basecamp-inner,.basecamp-avatars { scrollbar-width:thin; scrollbar-color:#ba9654 #d4a0170a; }
+@supports selector(::-webkit-scrollbar) {
+ .basecamp-inner,.basecamp-avatars { scrollbar-width:auto; scrollbar-color:auto; }
+ .basecamp-inner::-webkit-scrollbar,.basecamp-avatars::-webkit-scrollbar { width:6px; height:6px; }
+ .basecamp-inner::-webkit-scrollbar-track,.basecamp-avatars::-webkit-scrollbar-track { background:#d4a0170a; border-radius:8px; }
+ .basecamp-inner::-webkit-scrollbar-thumb,.basecamp-avatars::-webkit-scrollbar-thumb { background:linear-gradient(#d1af6b,#8e6e38); border:1px solid #1b2a4a; border-radius:8px; }
+ .basecamp-inner::-webkit-scrollbar-button,.basecamp-avatars::-webkit-scrollbar-button { display:none; width:0; height:0; }
+}
+
+

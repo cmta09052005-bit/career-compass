@@ -60,7 +60,7 @@ export default function AcademicPage() {
     updateSession({
       journeyProgress: { academic: SECTION_STATUS.COMPLETED },
     });
-    router.push("/processing");
+    router.push("/journey");
   }
 
   return (
