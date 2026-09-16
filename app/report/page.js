@@ -1,9 +1,12 @@
 "use client";
 
+import { useRef, useState } from "react";
 import Button from "@/components/Button";
+import JourneyAccess from "@/components/JourneyAccess";
 import Card from "@/components/Card";
 import courses from "@/data/courses.json";
 import {
+  buildExplorerReport,
   downloadExplorerReport,
   printExplorerReport,
 } from "@/lib/explorerReport";
@@ -15,7 +18,10 @@ import {
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
 export default function ReportPage() {
-  const { session, answers, isReady } = useSessionAnswers();
+  const { session, answers, isReady, updateSession } = useSessionAnswers();
+  const [downloading, setDownloading] = useState(false);
+  const [downloadError, setDownloadError] = useState("");
+  const pending = useRef(false);
   const categoryScores = calculateCategoryScores(answers);
   const categoryPercentages = calculateMatchPercentages(categoryScores);
   const result = createRecommendationResult(
@@ -23,27 +29,26 @@ export default function ReportPage() {
     answers,
     courses,
   );
-  const report = {
-    nickname: session.nickname,
-    date: new Intl.DateTimeFormat("en-PH", { dateStyle: "long" }).format(
-      new Date(),
-    ),
-    answers,
-    topCourses: result.topCourses,
-    strongestCategory: result.strongestCategory,
-    profile: {
-      interestsAnswered: Object.keys(session.interests).length,
-      strongSkills: Object.values(session.skills).filter(
-        (value) => Number(value) >= 4,
-      ).length,
-      strand: session.strand,
-      gwa: session.gwa,
-      subjects: session.subjects,
-    },
-  };
+  const report = buildExplorerReport(session, answers, result);
+
+  async function downloadAgain() {
+    if (!isReady || pending.current) return;
+    pending.current = true;
+    setDownloading(true);
+    setDownloadError("");
+    try {
+      await downloadExplorerReport(report);
+      updateSession({ reportDownloaded: true, reportDate: report.date });
+    } catch {
+      setDownloadError("Your report could not be downloaded. Please try again.");
+    } finally {
+      pending.current = false;
+      setDownloading(false);
+    }
+  }
 
   return (
-    <main className="game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-12 text-beige sm:px-6">
+    <JourneyAccess session={session} isReady={isReady} requires={["interests", "skills", "academic"]}><main className="report-screen game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-12 text-beige sm:px-6">
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden="true"
@@ -58,7 +63,7 @@ export default function ReportPage() {
           className="mx-auto flex size-16 items-center justify-center rounded-full border border-gold/60 bg-gold/15 text-2xl text-gold"
           aria-hidden="true"
         >
-          ✓
+          <svg className="report-compass" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" strokeWidth="2" /><path className="report-compass-needle" d="M32 10 L39 32 L32 54 L25 32 Z" fill="#b68124" /><circle cx="32" cy="32" r="4" fill="#1b2a4a" /></svg>
         </div>
 
         {/* 64 — Heading */}
@@ -68,16 +73,15 @@ export default function ReportPage() {
 
         {/* 65 — Supporting text */}
         <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-[#604532] sm:text-base">
-          Your journey has been mapped. Your next destination is yours to
-          explore.
+          {session.reportDownloaded ? "Your Explorer Report has been downloaded." : "Your Explorer Report is ready to download."}
         </p>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2">
           {/* 66 — Download Report button */}
           <Button
-            label="Download Report"
-            onClick={() => downloadExplorerReport(report)}
-            disabled={!isReady}
+            label={downloading ? "Preparing your report…" : "Download Again"}
+            onClick={downloadAgain}
+            disabled={!isReady || downloading}
             className="inline-flex w-full items-center justify-center disabled:cursor-not-allowed disabled:opacity-40"
           />
           {/* 67 — Print Report button */}
@@ -89,6 +93,8 @@ export default function ReportPage() {
             className="inline-flex w-full items-center justify-center"
           />
         </div>
+        {downloadError && <p role="alert" className="mt-4">{downloadError}</p>}
+        <p className="mx-auto mt-6 max-w-md text-sm leading-6 text-[#604532]">Keep learning, one step at a time. Your guidance counselor can help you choose where to go next.</p>
 
         {/* 68 — Back to Results button */}
         <Button
@@ -98,6 +104,6 @@ export default function ReportPage() {
           className="mt-4 inline-flex w-full items-center justify-center sm:w-auto"
         />
       </Card>
-    </main>
+    </main></JourneyAccess>
   );
 }

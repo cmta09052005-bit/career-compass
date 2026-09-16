@@ -6,6 +6,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Button from "@/components/Button";
+import usePopupState from "@/components/usePopupState";
 import Card from "@/components/Card";
 import Badge from "@/components/Badge";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
@@ -22,11 +23,11 @@ const EXPLORERS = [
   ["cartographer", "The Cartographer", "Likes a plan, even for the unknown."],
   ["ranger", "The Ranger", "Steady, patient, prepared for anything."],
   ["navigator", "The Navigator", "Always finding the next direction."],
-  ["skip", "Skip — surprise me later", "You can always come back to this."],
+  ["random", "Random", "We'll pick an Explorer for you."],
 ];
 
 function SelectionStamp() {
-  return <Badge variant="icon" size="small" state="unlocked" className="basecamp-stamp" aria-hidden="true" icon={<><span className="basecamp-stamp-rose">✧</span><span className="basecamp-stamp-check">✓</span></>} />;
+  return <Badge variant="icon" size="small" state="unlocked" className="basecamp-stamp" aria-hidden="true" icon={<span className="basecamp-stamp-check">✓</span>} />;
 }
 
 function CampDust() {
@@ -48,8 +49,14 @@ export default function IntakePage() {
   const [step, setStep] = useState(1);
   const [sessionEnded, setSessionEnded] = useState(false);
   useEffect(() => { queueMicrotask(() => setSessionEnded(new URLSearchParams(window.location.search).get("session") === "ended")); }, []);
+  useEffect(() => {
+    const restoreStep = () => { transitioning.current = false; setStep(new URLSearchParams(window.location.search).get("step") === "2" ? 2 : 1); };
+    queueMicrotask(restoreStep);
+    window.addEventListener("popstate", restoreStep);
+    return () => window.removeEventListener("popstate", restoreStep);
+  }, []);
   const [error, setError] = useState(false);
-  const [leaving, setLeaving] = useState(false);
+  const [leaving, setLeaving] = usePopupState(false, ".basecamp-leave");
   const leaveDialog = useRef(null);
   const root = useRef(null);
   const inner = useRef(null);
@@ -76,7 +83,7 @@ export default function IntakePage() {
       return;
     }
     transitioning.current = true;
-    gsap.to(inner.current, { opacity: 0, duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : .28, onComplete: () => { setStep(2); } });
+    gsap.to(inner.current, { opacity: 0, duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : .28, onComplete: () => { window.history.pushState(null, "", "/intake?step=2"); setStep(2); } });
   })();
   const chooseStrand = (strand) => {
     errorTween.current?.revert();
@@ -87,7 +94,7 @@ export default function IntakePage() {
   const changeStep = (next) => contextSafe(() => {
     if (transitioning.current) return;
     transitioning.current = true;
-    gsap.to(inner.current, { opacity: 0, duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : .28, onComplete: () => setStep(next) });
+    gsap.to(inner.current, { opacity: 0, duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : .28, onComplete: () => { window.history.pushState(null, "", next === 2 ? "/intake?step=2" : "/intake"); setStep(next); } });
   })();
   const back = () => {
     if (step === 2) changeStep(1);
@@ -114,7 +121,7 @@ export default function IntakePage() {
             <p className="basecamp-eyebrow">BASECAMP · EXPLORER PROFILE</p>
             <div className="basecamp-steps" aria-label={`Step ${step} of 2`}><span aria-hidden="true" className="filled" /><i aria-hidden="true" /><span aria-hidden="true" className={step === 2 ? "filled" : ""} /><p>Step {step} of 2</p></div>
             <h1 id="basecamp-title" ref={heading} tabIndex={-1}>{step === 1 ? "Who Are You, Explorer?" : session.nickname.trim() ? `Choose Your Explorer, ${session.nickname.trim()}` : "Choose Your Explorer"}</h1>
-            <p className="basecamp-subtext">{step === 1 ? "Tell us a little about yourself so we can personalize your journey." : "Pick who you'll be for this journey. It's just for fun, your answers are what really matter."}</p>
+            <p className="basecamp-subtext">{step === 1 ? "Choose your strand to begin. You can also add a name for your map." : "Pick who you'll be for this journey. It's just for fun, your answers are what really matter."}</p>
             {step === 1 && <p className="basecamp-privacy">No account needed. Nothing you enter here is saved once your session ends.</p>}
             {step === 2 && <div className="basecamp-recap"><span><i className="recap-person" aria-hidden="true" />{session.nickname.trim() || "Explorer"}</span><b aria-hidden="true">•</b><span>{session.strand}</span>{session.yearLevel && <><b aria-hidden="true">•</b><span>{session.yearLevel}</span></>}<button type="button" onClick={() => changeStep(1)}>Edit</button></div>}
           </header>
@@ -135,14 +142,14 @@ export default function IntakePage() {
             </fieldset>
             <div className="basecamp-actions"><Button type="submit" disabled={!isReady} className="story-button basecamp-cta" label="CONTINUE →" /></div>
           </form> : <div className="basecamp-avatars-step">
-            <fieldset className="basecamp-avatars"><legend className="sr-only">Choose your explorer (optional)</legend>{EXPLORERS.map(([id, name, description], index) => <label key={id} className={`basecamp-avatar ${id === "skip" ? "basecamp-skip" : ""}`}><input className="sr-only" type="radio" name="avatar" value={id} checked={session.avatarId === id} onChange={() => updateSession({ avatarId: id })} /><span className="basecamp-avatar-face"><span className="basecamp-portrait-frame"><span aria-hidden="true" className={`basecamp-portrait ${id === "skip" ? "basecamp-silhouette" : ""}`} style={{ "--portrait-position": `${Math.min(index, 5) * 20}%` }} /></span><strong>{name}</strong><span className="basecamp-flavor">{description}</span><SelectionStamp /></span></label>)}</fieldset>
+            <fieldset className="basecamp-avatars"><legend className="sr-only">Choose your explorer (optional)</legend>{EXPLORERS.map(([id, name, description], index) => <label key={id} className={`basecamp-avatar ${id === "random" ? "basecamp-skip" : ""}`}><input className="sr-only" type="radio" name="avatar" value={id} checked={session.avatarId === id} onChange={() => updateSession({ avatarId: id })} /><span className="basecamp-avatar-face"><span className="basecamp-portrait-frame"><span aria-hidden="true" className={`basecamp-portrait ${id === "random" ? "basecamp-silhouette" : ""}`} style={id === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center top" } : { "--portrait-position": `${Math.min(index, 5) * 20}%` }} /></span><strong>{name}</strong><span className="basecamp-flavor">{description}</span><SelectionStamp /></span></label>)}</fieldset>
             {/* TODO: mount persistent Explorer status chip on next screen (The Atlas) */}
-            <div className="basecamp-actions"><Button className="story-button basecamp-cta" label="ENTER MY MAP →" data-explorer-complete="true" /></div>
+            <div className="basecamp-actions"><Button className="story-button basecamp-cta" label="ENTER MY MAP →" disabled={!isReady} onClick={() => { if (!isReady) return; if (!STRANDS.includes(session.strand)) { setError(true); changeStep(1); return; } if (!session.avatarId || ["random", "skip"].includes(session.avatarId)) updateSession({ avatarId: EXPLORERS[Math.floor(Math.random() * 6)][0] }); window.dispatchEvent(new Event("explorer-created")); }} /></div>
           </div>}
         </div>
       </Card>
-      <dialog ref={leaveDialog} className="basecamp-leave" aria-labelledby="leave-title" aria-describedby="leave-description" onCancel={() => setLeaving(false)} onClose={() => setLeaving(false)}>
-        <h2 id="leave-title">Leave your journey?</h2><p id="leave-description">Your answers here aren&apos;t saved once you go back.</p>
+      <dialog ref={leaveDialog} className="basecamp-leave popup-card" aria-labelledby="leave-title" aria-describedby="leave-description" onCancel={(event) => { event.preventDefault(); setLeaving(false); }} onClose={() => setLeaving(false)}>
+        <button className="popup-close" aria-label="Close dialog" onClick={() => setLeaving(false)}>×</button><h2 id="leave-title">Leave your journey?</h2><p id="leave-description">Your answers here aren&apos;t saved once you go back.</p>
         <div><Button autoFocus className="story-button" label="Stay" onClick={() => setLeaving(false)} /><button className="basecamp-back" type="button" onClick={() => { resetSession(); router.push("/"); }}>Leave</button></div>
       </dialog>
     </main>

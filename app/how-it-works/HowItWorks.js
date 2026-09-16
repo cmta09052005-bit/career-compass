@@ -16,7 +16,7 @@ import "./how-it-works.css";
 if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const steps = [
-  ["Pick your explorer", "Choose how you explore, then add your name, strand, and grade level. Takes less than a minute.", "explorer-backpack"],
+  ["Pick your explorer", "Add your strand and optional name and grade level, then pick an explorer.", "explorer-backpack"],
   ["See the map", "Your journey map shows 3 trails to finish, one at a time. Your compass shows how far you've gone.", "flag-marker-pin"],
   ["The Mountains", "Answer a few real-life situations about what interests you.", "mountain-peak"],
   ["The Forest", "Say how confident you feel in different skills.", "pine-branch"],
@@ -29,7 +29,7 @@ const trails = [
   { id: "forest", name: "The Forest", type: "Skills", icon: "pine-branch", format: '10 quick sliders, from "not really me" to "definitely me"', description: "Covers hands-on, creative, technical, and people skills.", time: "about 2–3 minutes", number: "02" },
   { id: "valley", name: "The Valley", type: "Academics", icon: "ribbon-scroll", format: "a short step-by-step form", description: "Just your general average and your best subjects.", time: "less than a minute", number: "03" },
 ];
-const rewards = [["Wayfinder", "compass-download"], ["Skillcrafter", "pine-branch"], ["Scholar", "ribbon-scroll"]];
+const rewards = [["Wayfinder", "mountain-peak"], ["Skillcrafter", "pine-branch"], ["Scholar", "ribbon-scroll"]];
 const outcomes = [
   ["Up to 24 course matches, ranked just for you", "island-flag"],
   ["A match score for each one", "sunburst"],
@@ -46,6 +46,7 @@ export default function HowItWorks() {
   const tabPanel = useRef(null);
   const carousel = useRef(null);
   const pendingTab = useRef(null);
+  const touchStart = useRef(null);
   const [selected, setSelected] = useState(0);
   const [activeStep, setActiveStep] = useState(0);
   const { contextSafe } = useGSAP(() => {
@@ -117,7 +118,7 @@ export default function HowItWorks() {
     root.current.querySelector(`#trail-tab-${trails[next].id}`).focus();
     switchTab(next);
   };
-  const autoplay = useCarouselAutoplay(carousel, () => switchTab((selected + 1) % trails.length));
+  useCarouselAutoplay(carousel, () => switchTab((selected + 1) % trails.length));
   const trail = trails[selected];
 
   return (
@@ -128,7 +129,7 @@ export default function HowItWorks() {
         <section id="hiw-intro" className="hiw-intro" aria-labelledby="hiw-title">
           <p className="hiw-label">How It Works</p>
           <h1 id="hiw-title">Here&apos;s exactly<br />what happens.</h1>
-          <p>No surprises, no wrong answers. Just a clear path from where you are now to a few college courses worth looking into.</p>
+          <p>Answer questions about yourself, then compare college courses that fit your answers.</p>
           <Image className="hiw-intro-compass" src="/landing-compass.png" alt="" width={145} height={170} priority />
         </section>
 
@@ -152,19 +153,19 @@ export default function HowItWorks() {
           <div role="tablist" aria-label="The three assessment trails" className="hiw-tabs">
             {trails.map((item, index) => <button key={item.id} type="button" role="tab" id={`trail-tab-${item.id}`} aria-selected={selected === index} aria-controls="trail-panel" tabIndex={selected === index ? 0 : -1} onClick={() => switchTab(index)} onKeyDown={(event) => tabKey(event, index)}><span>{item.number}</span>{item.name}</button>)}
           </div>
-          <Card as="div" className="story-panel hiw-trail-paper">
+          <Card as="div" className="story-panel hiw-trail-paper" onTouchStart={(event) => { touchStart.current = event.touches[0].clientX; }} onTouchEnd={(event) => { const distance = event.changedTouches[0].clientX - touchStart.current; if (touchStart.current !== null && Math.abs(distance) > 45) switchTab((selected + (distance < 0 ? 1 : 2)) % trails.length); touchStart.current = null; }} onTouchCancel={() => { touchStart.current = null; }}>
             <div ref={tabPanel} role="tabpanel" id="trail-panel" aria-labelledby={`trail-tab-${trail.id}`} tabIndex={0} className="hiw-tab-content">
               <div className="hiw-trail-art"><Icon name={trail.icon} size={170} /><span>TRAIL {trail.number}</span></div>
               <div className="hiw-trail-copy"><h3>{trail.name}: {trail.type}</h3><p className="hiw-format"><strong>Format:</strong> {trail.format}</p><p>{trail.description}</p><p className="hiw-time"><span aria-hidden="true">◷</span> Time: {trail.time}</p></div>
             </div>
           </Card>
-          <div className="carousel-controls" aria-label="Trail carousel controls"><Button className="story-button" label="←" aria-label="Previous trail" onClick={() => switchTab((selected + 2) % 3)} />{trails.map((item, index) => <button key={item.id} type="button" className="carousel-dot" aria-label={`Show ${item.name}`} aria-pressed={selected === index} onClick={() => switchTab(index)} />)}<Button className="story-button" label="→" aria-label="Next trail" onClick={() => switchTab((selected + 1) % 3)} /><button type="button" className="carousel-play" onClick={autoplay.togglePaused} aria-label={autoplay.paused ? "Play trail carousel" : "Pause trail carousel"}>{autoplay.paused ? "Play" : "Pause"}</button></div>
+          <div className="carousel-controls" aria-label="Trail carousel controls"><Button className="story-button" label="←" aria-label="Previous trail" onClick={() => switchTab((selected + 2) % 3)} />{trails.map((item, index) => <button key={item.id} type="button" className="carousel-dot" aria-label={`Show ${item.name}`} aria-pressed={selected === index} onClick={() => switchTab(index)} />)}<Button className="story-button" label="→" aria-label="Next trail" onClick={() => switchTab((selected + 1) % 3)} /></div>
         </section>
 
         <section className="hiw-rewards" aria-labelledby="rewards-heading">
           <p className="hiw-label">Along the Way</p><h2 id="rewards-heading">Every trail you finish<br />unlocks something.</h2>
           <p>Small rewards along the way, so it never feels like you&apos;re just filling out a form.</p>
-          <div className="badge-row">{rewards.map(([name, icon]) => <div className="badge-preview" key={name}><div className="hiw-seal"><Icon name="wax-seal-frame" size={140} className="hiw-seal-frame" />{name === "Wayfinder" ? <Image src="/landing-compass.png" alt="" width={62} height={62} className="hiw-seal-symbol" /> : <Icon name={icon} size={66} className="hiw-seal-symbol" />}</div><h3>{name}</h3></div>)}</div>
+          <div className="badge-row">{rewards.map(([name, icon]) => <div className="badge-preview" key={name}><div className="hiw-seal"><Icon name="wax-seal-frame" size={140} className="hiw-seal-frame" /><Icon name={icon} size={66} className="hiw-seal-symbol" /></div><h3>{name}</h3></div>)}</div>
         </section>
 
         <section className="hiw-outcomes" aria-labelledby="outcomes-heading">
@@ -173,7 +174,7 @@ export default function HowItWorks() {
         </section>
 
         <section className="hiw-trust" aria-labelledby="trust-heading"><h2 id="trust-heading" className="hiw-label">Good to Know</h2><div className="trust-strip">{trust.map(([copy, icon]) => <Card as="div" className="trust-card" key={copy}><Icon name={icon} size={45} /><p>{copy}</p></Card>)}</div></section>
-        <section className="hiw-closing" aria-labelledby="closing-heading"><h2 id="closing-heading">Ready to see your map?</h2><Button href="/intake" className="story-button hiw-start" label="Start Your Journey ↗" /></section>
+        <section className="hiw-closing" aria-labelledby="closing-heading"><h2 id="closing-heading">Ready to see your map?</h2><Button href="/intake" className="story-button hiw-start" label="Start Your Journey ↗" /><Link href="/#world-chapter" className="story-text-link">Explore the Story ↗</Link></section>
       </div>
       <footer className="story-footer"><Link className="story-brand" href="/"><Image src="/landing-compass.png" width={32} height={32} alt="" />CAREER COMPASS</Link><p>A web-based decision support system for Senior High School career guidance.</p><a href="#hiw-intro">Back to top ↑</a></footer>
     </main>

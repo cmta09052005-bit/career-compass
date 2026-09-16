@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import ScholarshipInfoBox from "@/components/ScholarshipInfoBox";
+import ScholarshipModal from "@/components/ScholarshipModal";
 import courses from "@/data/explore-courses.json";
 import YearLevelTip from "./YearLevelTip";
 
@@ -17,7 +19,8 @@ export default async function CourseDetailPage({ params }) {
   if (!course) notFound();
 
   return (
-    <main className="game-ui-screen explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
+    <main className="course-screen game-ui-screen explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
+      <Link href="/results" className="trail-exit popup-close" aria-label="Close course details">×</Link>
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden="true"
@@ -27,7 +30,7 @@ export default async function CourseDetailPage({ params }) {
         }}
       />
 
-      <div className="relative mx-auto max-w-6xl">
+      <div className="assessment-scroll relative mx-auto max-w-6xl" role="region" aria-label="Course details" tabIndex={0}>
         {/* 56 — Course title heading and Career Path label */}
         <header className="max-w-4xl">
           <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
@@ -140,13 +143,16 @@ export default async function CourseDetailPage({ params }) {
           <YearLevelTip />
         </Card>
 
-        <ScholarshipInfoBox />
+        <ScholarshipModal>
+          <ScholarshipInfoBox />
 
         <Card className="mt-5 max-w-none rounded-2xl border-gold/35 bg-navy/45 p-5 sm:p-7">
           <p className="text-xs leading-5 text-beige/55 italic">
-            Sources: RA 10931 / UniFAST (unifast.gov.ph) · DOST-SEI (sei.dost.gov.ph) · TESDA (tesda.gov.ph) · CHED (ched.gov.ph). Info verified against official government sources; LGU and school-based scholarships vary by locality — confirm directly with your local government or target school.
+            Sources: RA 10931 / UniFAST (unifast.gov.ph) · DOST-SEI (sei.dost.gov.ph) · TESDA (tesda.gov.ph) · CHED (ched.gov.ph). Info verified against official government sources; LGU and school-based scholarships vary by locality, confirm directly with your local government or target school.
           </p>
         </Card>
+
+        </ScholarshipModal>
 
         {/* 63 — Back to Results button */}
         <div className="mt-8">

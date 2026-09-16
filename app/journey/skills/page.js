@@ -1,35 +1,85 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
+import JourneyAccess from "@/components/JourneyAccess";
+import TrailExit from "@/components/TrailExit";
 import Card from "@/components/Card";
-import ProgressIndicator from "@/components/ProgressIndicator";
+import StatementIcon from "./StatementIcon";
+import GrowthSlider from "./GrowthSlider";
+import ForestVine from "./ForestVine";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+import "./presentation.css";
 import items from "@/data/items.json";
 import {
   SECTION_STATUS,
   useSessionAnswers,
 } from "@/lib/useSessionAnswers";
 import useUnsavedProgressWarning from "@/lib/useUnsavedProgressWarning";
+import { playSound } from "@/lib/sound";
+
+gsap.registerPlugin(useGSAP);
 
 const SKILL_ITEMS = items.filter((item) => item.section === "Skills");
+const BRIEFING_KEY = "careerCompassForestBriefing";
 
 export default function SkillsPage() {
   const router = useRouter();
-  const { session, isReady, updateSession } = useSessionAnswers();
-  const [statementIndex, setStatementIndex] = useState(0);
+  const scrollCard = useRef(null);
+  const { session, isReady, updateSession, discardSection } = useSessionAnswers();
+  const [activeStatement, setActiveStatement] = useState(null);
+  const firstUnanswered = SKILL_ITEMS.findIndex(item => !Number.isFinite(session.skills[item.id]));
+  const statementIndex = activeStatement ?? (firstUnanswered < 0 ? 9 : firstUnanswered);
+  function setStatementIndex(next) {
+    setActiveStatement(typeof next === "function" ? next(statementIndex) : next);
+  }
+  const [dismissedBriefing, setDismissedBriefing] = useState(false);
+  let seenBriefing = false;
+  try { seenBriefing = sessionStorage.getItem(BRIEFING_KEY) === "seen"; } catch { /* In-memory dismissal remains available. */ }
+  const showBriefing = !dismissedBriefing && !seenBriefing && !Object.keys(session.skills).length;
+  const heading = useRef(null);
+  const [confirming, setConfirming] = useState(false);
+  const advancing = useRef(false);
+  const lastRustle = useRef("");
+  useEffect(() => {
+    if (scrollCard.current) scrollCard.current.scrollTop = 0;
+    if (isReady && !showBriefing) heading.current?.focus({ preventScroll: true });
+  }, [statementIndex, isReady, showBriefing]);
   useUnsavedProgressWarning(true);
 
   const currentItem = SKILL_ITEMS[statementIndex];
   const selectedValue = session.skills[currentItem.id];
   const hasSelectedValue = Number.isFinite(selectedValue);
-  const progressItems = SKILL_ITEMS.map((item, index) => ({
-    id: item.id,
-    state: index <= statementIndex ? "completed" : "unlocked",
-  }));
+  const isFinalStatement = statementIndex === SKILL_ITEMS.length - 1;
+  useGSAP(() => {
+    if (!confirming || !scrollCard.current) return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    gsap.fromTo(".forest-growth-stage[data-selected=true]", { boxShadow: "0 0 0px #bbc66300" }, { boxShadow: "0 0 24px #bbc663aa", duration: reduced ? 0 : .2 });
+    gsap.delayedCall(.6, () => {
+      if (statementIndex < SKILL_ITEMS.length - 1) {
+        setStatementIndex((index) => index + 1);
+        setConfirming(false);
+        advancing.current = false;
+      } else {
+        updateSession({ journeyProgress: { skills: SECTION_STATUS.COMPLETED } });
+        router.push("/journey");
+      }
+    });
+  }, { scope: scrollCard, dependencies: [confirming], revertOnUpdate: true });
+  const flavor = statementIndex < 2 ? "Just sprouting" : statementIndex < 5 ? "Taking root" : statementIndex < 8 ? "Branching out" : "In full bloom";
+  const visibleLeaves = statementIndex + (confirming ? 1 : 0);
 
   function selectConfidence(value) {
-    if (!isReady) return;
+    if (!isReady || advancing.current) return;
+    setActiveStatement(statementIndex);
+    const stageKey = `${currentItem.id}:${value}`;
+    if (lastRustle.current !== stageKey) {
+      playSound("open");
+      lastRustle.current = stageKey;
+    }
     updateSession({
       skills: { [currentItem.id]: Number(value) },
       journeyProgress: { skills: SECTION_STATUS.IN_PROGRESS },
@@ -37,6 +87,7 @@ export default function SkillsPage() {
   }
 
   function goBack() {
+    if (advancing.current) return;
     if (statementIndex === 0) {
       router.push("/journey");
       return;
@@ -44,137 +95,57 @@ export default function SkillsPage() {
     setStatementIndex((index) => index - 1);
   }
 
-  function goNext() {
-    if (!hasSelectedValue) return;
-    if (statementIndex < SKILL_ITEMS.length - 1) {
-      setStatementIndex((index) => index + 1);
-      return;
-    }
-    updateSession({
-      journeyProgress: { skills: SECTION_STATUS.COMPLETED },
-    });
-    router.push("/journey");
+  function goNext(value = selectedValue) {
+    if (!isReady || !Number.isFinite(value) || advancing.current) return;
+    selectConfidence(value);
+    playSound(statementIndex === SKILL_ITEMS.length - 1 ? "unlock" : "confirm");
+    advancing.current = true;
+    setConfirming(true);
+  }
+
+  function beginTrail() {
+    try { sessionStorage.setItem(BRIEFING_KEY, "seen"); } catch { /* In-memory dismissal remains available. */ }
+    setDismissedBriefing(true);
   }
 
   return (
-    <main className="game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-50"
-        aria-hidden="true"
-        style={{
-          background:
-            "radial-gradient(circle at 15% 15%, rgba(45,191,184,0.22), transparent 30%), radial-gradient(circle at 85% 80%, rgba(212,160,23,0.18), transparent 32%)",
-        }}
-      />
+    <JourneyAccess session={session} isReady={isReady} requires={["interests"]}><main className="trail-screen trail-forest game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
+      {!confirming && <TrailExit onLeave={() => { discardSection("skills"); router.push("/journey"); }} />}
+      <div className="forest-light" aria-hidden="true" style={{ opacity: statementIndex / 9 }} />
+      <div className="forest-mist" aria-hidden="true" />
+      <div className="forest-fireflies" aria-hidden="true">{Array.from({ length: 12 }, (_, index) => <i key={index} style={{ left: ((index * 29 + 7) % 100) + "%", top: ((index * 17 + 13) % 90) + "%", animationDelay: (-index * 1.7) + "s", animationDuration: (11 + index % 4 * 2) + "s" }} />)}</div>
 
-      <Card className="relative max-w-3xl">
+      {showBriefing ? <Card ref={scrollCard} className="forest-card forest-briefing relative max-w-3xl">
+        <h1>The Forest</h1>
+        <p>10 statements. Slide to show how confident you feel. There&apos;s no pass or fail here, just be honest with yourself.</p>
+        <Button label="BEGIN" onClick={beginTrail} />
+      </Card> : <Card ref={scrollCard} className="forest-card relative max-w-3xl">
         {/* 34 — Section/progress label */}
         <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
-          Skills — Statement {statementIndex + 1} of {SKILL_ITEMS.length}
+          The Forest · Statement {statementIndex + 1} of {SKILL_ITEMS.length}
         </p>
-        <div className="mt-4">
-          <ProgressIndicator
-            items={progressItems}
-            completedCount={statementIndex + 1}
-            variant="mini"
-          />
-        </div>
+        <ForestVine leaves={visibleLeaves} />
+        <p className="forest-flavor">{flavor}</p>
 
+        <StatementIcon category={currentItem.category} />
         {/* 35 — Statement text */}
-        <h1 className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">
+        <h1 ref={heading} tabIndex={-1} id="forest-statement" className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">
           {currentItem.text}
         </h1>
 
-        {/* 36 — Confidence slider */}
-        <div className="mt-10 rounded-2xl border border-beige/20 bg-navy/35 p-5 sm:p-7">
-          <div className="flex items-center justify-between gap-4">
-            <label
-              htmlFor={`confidence-${currentItem.id}`}
-              className="text-sm font-semibold text-beige"
-            >
-              Confidence level
-            </label>
-            <output
-              htmlFor={`confidence-${currentItem.id}`}
-              className="flex size-10 items-center justify-center rounded-full border border-gold/60 bg-gold/15 font-bold text-gold"
-              aria-live="polite"
-            >
-              {hasSelectedValue ? selectedValue : "—"}
-            </output>
-          </div>
-          <input
-            id={`confidence-${currentItem.id}`}
-            type="range"
-            min={currentItem.min}
-            max={currentItem.max}
-            step="1"
-            value={hasSelectedValue ? selectedValue : currentItem.min}
-            onChange={(event) => selectConfidence(event.currentTarget.value)}
-            disabled={!isReady}
-            aria-valuetext={
-              hasSelectedValue
-                ? `${selectedValue} out of ${currentItem.max}`
-                : "No confidence level selected"
-            }
-            className="mt-7 h-2 w-full cursor-pointer accent-gold disabled:cursor-not-allowed disabled:opacity-40"
-          />
-          <div
-            className="mt-5 grid grid-cols-5 gap-2"
-            role="radiogroup"
-            aria-label="Choose a confidence level"
-          >
-            {Array.from(
-              { length: currentItem.max - currentItem.min + 1 },
-              (_, index) => currentItem.min + index,
-            ).map((value) => {
-              const isSelected = selectedValue === value;
-              return (
-                <button
-                  key={value}
-                  type="button"
-                  role="radio"
-                  aria-checked={isSelected}
-                  aria-label={`${value} out of ${currentItem.max}`}
-                  onClick={() => selectConfidence(value)}
-                  disabled={!isReady}
-                  className={`min-h-11 rounded-xl border text-sm font-bold transition-[border-color,background-color,transform] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-40 ${
-                    isSelected
-                      ? "border-gold bg-gold text-navy"
-                      : "border-beige/25 bg-navy/45 text-beige hover:border-teal"
-                  }`}
-                >
-                  {value}
-                </button>
-              );
-            })}
-          </div>
-          <div className="mt-3 flex justify-between gap-4 text-xs text-beige/70 sm:text-sm">
-            <span>{currentItem.minLabel}</span>
-            <span className="text-right">{currentItem.maxLabel}</span>
-          </div>
-        </div>
+        <GrowthSlider key={currentItem.id} value={selectedValue} disabled={!isReady || confirming} onChange={selectConfidence} onCommit={isFinalStatement ? undefined : goNext} confirming={confirming} labelledBy="forest-statement" />
 
-        <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-between">
+        <div className="forest-actions">
           {/* 37 — Back button */}
           <Button
             label="Back"
-            variant="secondary"
             onClick={goBack}
+            disabled={confirming}
             className="w-full sm:w-auto"
           />
-          {/* 38 — Next button */}
-          <Button
-            label={
-              statementIndex === SKILL_ITEMS.length - 1
-                ? "Complete Skills"
-                : "Next"
-            }
-            onClick={goNext}
-            disabled={!isReady || !hasSelectedValue}
-            className="w-full disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
-          />
+          <Button label={isFinalStatement ? "Complete Forest" : "Next"} className="forest-complete" onClick={() => goNext()} disabled={!hasSelectedValue || confirming} />
         </div>
-      </Card>
-    </main>
+      </Card>}
+    </main></JourneyAccess>
   );
 }

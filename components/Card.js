@@ -1,6 +1,7 @@
 import { forwardRef } from "react";
 
 const VARIANT_CLASSES = {
+  popup: "w-full",
   panel:
     "game-panel w-full max-w-4xl border border-gold/35 bg-navy/55 p-5 shadow-[0_24px_80px_rgba(0,0,0,0.28)] backdrop-blur-md sm:p-8 md:p-10",
   island:

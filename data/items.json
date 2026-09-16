@@ -3,26 +3,26 @@
     "id": "INT-01",
     "section": "Interests",
     "type": "card-select",
-    "text": "It's the weekend with completely free time. Which activity appeals to you most?",
+    "text": "You have free time this weekend. What would you most like to do?",
     "options": [
       {
         "key": "A",
-        "text": "Plan a small fundraiser/budget for your barkada",
+        "text": "Plan how your barkada can raise and spend money",
         "category": "C3"
       },
       {
         "key": "B",
-        "text": "Tutor a sibling/neighbor in a subject you're good at",
+        "text": "Help a sibling or neighbor with schoolwork",
         "category": "C4"
       },
       {
         "key": "C",
-        "text": "Volunteer at a community health/first-aid drive",
+        "text": "Volunteer at a community first-aid activity",
         "category": "C5"
       },
       {
         "key": "D",
-        "text": "Sketch, design, or redecorate a space",
+        "text": "Draw or redesign a room",
         "category": "C6"
       }
     ]
@@ -31,26 +31,26 @@
     "id": "INT-02",
     "section": "Interests",
     "type": "card-select",
-    "text": "Your class must create a project to help the school. Which task would you volunteer for?",
+    "text": "Your class is doing a project for the school. Which task would you choose?",
     "options": [
       {
         "key": "A",
-        "text": "Build a simple app/online form for the school",
+        "text": "Make a simple app or online form",
         "category": "C1"
       },
       {
         "key": "B",
-        "text": "Facilitate an orientation/training session for classmates",
+        "text": "Teach classmates how to do something new",
         "category": "C4"
       },
       {
         "key": "C",
-        "text": "Set up a first-aid/wellness corner",
+        "text": "Set up a first-aid corner",
         "category": "C5"
       },
       {
         "key": "D",
-        "text": "Design the posters/visuals for the project",
+        "text": "Design the project posters",
         "category": "C6"
       }
     ]
@@ -59,26 +59,26 @@
     "id": "INT-03",
     "section": "Interests",
     "type": "card-select",
-    "text": "Your group project is about improving your community. Which contribution excites you most?",
+    "text": "Your group wants to improve your community. How would you help?",
     "options": [
       {
         "key": "A",
-        "text": "Build a tracking app/spreadsheet for community data",
+        "text": "Make an app or spreadsheet to keep track of information",
         "category": "C1"
       },
       {
         "key": "B",
-        "text": "Design/build a physical model or prototype (e.g., drainage system)",
+        "text": "Build a small model, such as a drainage system",
         "category": "C2"
       },
       {
         "key": "C",
-        "text": "Research health & sanitation practices for the plan",
+        "text": "Find ways to keep people healthy and the area clean",
         "category": "C5"
       },
       {
         "key": "D",
-        "text": "Create the visual concept/branding for the campaign",
+        "text": "Create the campaign's look and posters",
         "category": "C6"
       }
     ]
@@ -87,26 +87,26 @@
     "id": "INT-04",
     "section": "Interests",
     "type": "card-select",
-    "text": "A local competition invites SHS students to pitch an idea. Which type would you want to develop?",
+    "text": "You can enter an idea in a school competition. What would you make?",
     "options": [
       {
         "key": "A",
-        "text": "A mobile app/software tool for an everyday problem",
+        "text": "An app that solves an everyday problem",
         "category": "C1"
       },
       {
         "key": "B",
-        "text": "A gadget, machine, or engineering solution",
+        "text": "A useful gadget or machine",
         "category": "C2"
       },
       {
         "key": "C",
-        "text": "A small business/startup concept with a marketing plan",
+        "text": "A small business plan and ways to find customers",
         "category": "C3"
       },
       {
         "key": "D",
-        "text": "An art, fashion, or design innovation",
+        "text": "A new clothing or art design",
         "category": "C6"
       }
     ]
@@ -115,26 +115,26 @@
     "id": "INT-05",
     "section": "Interests",
     "type": "card-select",
-    "text": "Your favorite type of content to watch in your free time is usually about...",
+    "text": "What do you usually like watching in your free time?",
     "options": [
       {
         "key": "A",
-        "text": "Tech reviews, coding tutorials, app dev",
+        "text": "Videos about apps and how to code",
         "category": "C1"
       },
       {
         "key": "B",
-        "text": "DIY builds, machine teardowns, engineering explainers",
+        "text": "Videos about building or fixing things",
         "category": "C2"
       },
       {
         "key": "C",
-        "text": "Entrepreneurship, investing, business case studies",
+        "text": "Videos about running a business or managing money",
         "category": "C3"
       },
       {
         "key": "D",
-        "text": "Teaching tips, motivational talks, study hacks",
+        "text": "Videos about teaching or study tips",
         "category": "C4"
       }
     ]
@@ -143,26 +143,26 @@
     "id": "INT-06",
     "section": "Interests",
     "type": "card-select",
-    "text": "You're asked to represent a profession at Career Day. Which would you enjoy representing most?",
+    "text": "For Career Day, you can act as someone doing a job. Who would you choose?",
     "options": [
       {
         "key": "A",
-        "text": "An engineer explaining how bridges/circuits are built",
+        "text": "An engineer showing how bridges or circuits work",
         "category": "C2"
       },
       {
         "key": "B",
-        "text": "An entrepreneur explaining how to start/grow a business",
+        "text": "A business owner explaining how to start a business",
         "category": "C3"
       },
       {
         "key": "C",
-        "text": "A teacher explaining how to guide young learners",
+        "text": "A teacher helping young students learn",
         "category": "C4"
       },
       {
         "key": "D",
-        "text": "A nurse explaining patient care",
+        "text": "A nurse showing how to care for patients",
         "category": "C5"
       }
     ]
@@ -171,26 +171,26 @@
     "id": "INT-07",
     "section": "Interests",
     "type": "card-select",
-    "text": "Your group is running booths at a class fair. Which one would you rather manage?",
+    "text": "Your class is running a fair. Which booth would you like to manage?",
     "options": [
       {
         "key": "A",
-        "text": "The \"mini-store\" booth — sales & budgeting",
+        "text": "A small store where you sell things and handle money",
         "category": "C3"
       },
       {
         "key": "B",
-        "text": "The \"peer helpdesk\" booth — answering classmates' questions",
+        "text": "A help desk where you answer classmates' questions",
         "category": "C4"
       },
       {
         "key": "C",
-        "text": "The \"wellness check\" booth — basic health screening",
+        "text": "A health booth where you help with basic health checks",
         "category": "C5"
       },
       {
         "key": "D",
-        "text": "The \"creative corner\" booth — art/face painting displays",
+        "text": "An art booth with drawings or face painting",
         "category": "C6"
       }
     ]
@@ -199,26 +199,26 @@
     "id": "INT-08",
     "section": "Interests",
     "type": "card-select",
-    "text": "Think of a problem in your community (traffic, waste, poor internet, limited health services). How would you want to help solve it?",
+    "text": "Your community has a problem, like too much waste or poor internet. How would you help?",
     "options": [
       {
         "key": "A",
-        "text": "Build a digital tool/system to track and manage it",
+        "text": "Build an app to track the problem and help manage it",
         "category": "C1"
       },
       {
         "key": "B",
-        "text": "Create educational materials to raise awareness",
+        "text": "Make learning materials that explain the problem",
         "category": "C4"
       },
       {
         "key": "C",
-        "text": "Join a health/relief mission related to it",
+        "text": "Join a health or relief activity",
         "category": "C5"
       },
       {
         "key": "D",
-        "text": "Design signage/campaign visuals about it",
+        "text": "Design signs or posters about it",
         "category": "C6"
       }
     ]
@@ -227,7 +227,7 @@
     "id": "SKL-01",
     "section": "Skills",
     "type": "slider",
-    "text": "I can quickly figure out how a computer program, app, or website works, even without being taught.",
+    "text": "I can work out how to use an app or website on my own.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -238,7 +238,7 @@
     "id": "SKL-02",
     "section": "Skills",
     "type": "slider",
-    "text": "I enjoy building, repairing, or taking apart machines/gadgets to see how they work.",
+    "text": "I enjoy building or fixing gadgets, or taking them apart to see how they work.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -249,7 +249,7 @@
     "id": "SKL-03",
     "section": "Skills",
     "type": "slider",
-    "text": "I can explain a complicated topic simply so others understand it.",
+    "text": "I can explain a difficult topic in a way others understand.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -260,7 +260,7 @@
     "id": "SKL-04",
     "section": "Skills",
     "type": "slider",
-    "text": "I am comfortable managing money, budgets, or tracking expenses for a project.",
+    "text": "I feel comfortable planning a budget and keeping track of spending.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -271,7 +271,7 @@
     "id": "SKL-05",
     "section": "Skills",
     "type": "slider",
-    "text": "I can stay calm and think clearly when someone nearby is injured or unwell.",
+    "text": "I can stay calm and think clearly when someone is hurt or sick.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -282,7 +282,7 @@
     "id": "SKL-06",
     "section": "Skills",
     "type": "slider",
-    "text": "I can express my ideas visually through drawing, layout, or design.",
+    "text": "I can show my ideas through drawings or designs.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -293,7 +293,7 @@
     "id": "SKL-07",
     "section": "Skills",
     "type": "slider",
-    "text": "I can persuade others to support an idea, product, or plan.",
+    "text": "I can convince others to support an idea or plan.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -304,7 +304,7 @@
     "id": "SKL-08",
     "section": "Skills",
     "type": "slider",
-    "text": "I am good at following step-by-step instructions to build or construct something.",
+    "text": "I can follow step-by-step instructions to build something.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -315,7 +315,7 @@
     "id": "SKL-09",
     "section": "Skills",
     "type": "slider",
-    "text": "I enjoy taking care of or looking after other people's well-being (siblings, classmates, pets, patients).",
+    "text": "I enjoy looking after others, such as a younger sibling or someone who is sick.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",
@@ -326,7 +326,7 @@
     "id": "SKL-10",
     "section": "Skills",
     "type": "slider",
-    "text": "I enjoy patiently guiding or mentoring someone younger or less experienced.",
+    "text": "I enjoy patiently helping someone younger or new to a task.",
     "min": 1,
     "max": 5,
     "minLabel": "Not Confident",

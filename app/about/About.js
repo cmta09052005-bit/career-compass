@@ -47,8 +47,7 @@ export default function About() {
     setFlipped((current) => current.map((value, item) => item === index ? next : value));
     contextSafe(() => gsap.to(root.current.querySelector(`[data-person="${index}"] .team-card-inner`), { rotationY: next ? 180 : 0, duration: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 0.5, ease: "power2.inOut", overwrite: true }))();
   };
-  const toggleFAQ = (index) => {
-    const next = openFAQ === index ? null : index;
+  const showFAQ = (next) => {
     setOpenFAQ(next);
     contextSafe(() => {
       const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -57,8 +56,8 @@ export default function About() {
         const expanded = itemIndex === next;
         // Measure the inner text so the tween remains interruptible and wraps on mobile.
         const height = answer.firstElementChild.getBoundingClientRect().height;
-        gsap.to(answer, { height: expanded ? height : 0, opacity: expanded ? 1 : 0, duration: reduced ? 0 : 0.35, ease: "power1.inOut", overwrite: true, onComplete: () => { if (expanded) gsap.set(answer, { height: "auto" }); ScrollTrigger.refresh(); } });
-        gsap.to(item.querySelector(".faq-icon"), { rotation: expanded ? 45 : 0, duration: reduced ? 0 : 0.3, overwrite: true });
+        gsap.to(answer, { height: expanded ? height : 0, opacity: expanded ? 1 : 0, duration: reduced ? 0 : 0.25, ease: "power2.out", overwrite: true, onComplete: () => { if (expanded) gsap.set(answer, { height: "auto" }); ScrollTrigger.refresh(); } });
+        gsap.to(item.querySelector(".faq-icon"), { rotation: expanded ? 180 : 0, duration: reduced ? 0 : 0.3, overwrite: true });
       });
     })();
   };
@@ -95,8 +94,8 @@ export default function About() {
             </button>
           </div>)}</div>
         </section>
-        <section className="about-faq" aria-labelledby="faq-title"><p className="hiw-label">A few honest answers</p><h2 id="faq-title">Questions you might have</h2><div className="faq-list">{faqs.map(([question, answer], index) => <div className="faq-item" key={question}><h3><button type="button" id={`faq-question-${index}`} aria-expanded={openFAQ === index} aria-controls={`faq-answer-${index}`} onClick={() => toggleFAQ(index)}><span>{question}</span><span className="faq-icon" aria-hidden="true">+</span></button></h3><div id={`faq-answer-${index}`} className="faq-answer" role="region" aria-labelledby={`faq-question-${index}`} aria-hidden={openFAQ !== index}><p>{answer}</p></div></div>)}</div></section>
-        <section className="hiw-closing" aria-labelledby="about-closing-title"><h2 id="about-closing-title">Ready to start exploring?</h2><Button href="/intake" className="story-button about-start" label="Start Your Journey ↗" /></section>
+        <section className="about-faq" aria-labelledby="faq-title"><p className="hiw-label">A few honest answers</p><h2 id="faq-title">Questions you might have</h2><div className="faq-list">{faqs.map(([question, answer], index) => <div className="faq-item" key={question} onPointerEnter={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(index); }} onPointerLeave={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(null); }}><h3><button type="button" id={`faq-question-${index}`} aria-expanded={openFAQ === index} aria-controls={`faq-answer-${index}`} onClick={() => showFAQ(openFAQ === index ? null : index)}><span>{question}</span><span className="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="m5 9 7 7 7-7" /></svg></span></button></h3><div id={`faq-answer-${index}`} className="faq-answer" role="region" aria-labelledby={`faq-question-${index}`} aria-hidden={openFAQ !== index}><p>{answer}</p></div></div>)}</div></section>
+        <section className="hiw-closing" aria-labelledby="about-closing-title"><h2 id="about-closing-title">Ready to start exploring?</h2><Button href="/intake" className="story-button about-start" label="Start Your Journey ↗" /><Link href="/how-it-works" className="story-text-link">How It Works ↗</Link></section>
       </div>
       <footer className="story-footer"><Link className="story-brand" href="/"><Image src="/landing-compass.png" width={32} height={32} alt="" />CAREER COMPASS</Link><p>A web-based decision support system for Senior High School career guidance.</p><a href="#about-intro">Back to top ↑</a></footer>
     </main>

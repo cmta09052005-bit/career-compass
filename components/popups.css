@@ -1,0 +1,42 @@
+/* One shell for all dialogs, region notices and achievement cards. */
+:root { --popup-duration:200ms; --popup-ease:cubic-bezier(0.23,1,0.32,1); }
+.popup-card.popup-card.popup-card {
+  border:6px double #987449; border-radius:4px;
+  background:linear-gradient(115deg,#fbf0d5,#ebd5ac); color:#1b2a4a;
+  box-shadow:inset 0 0 0 5px #c49c5b30,0 16px 48px #0c162540;
+  outline:0; padding:38px 28px 28px;
+}
+.popup-card.popup-card::before,.popup-card.popup-card::after { display:none; }
+dialog[open] > .popup-card,dialog.popup-card[open],.atlas-popover.popup-card {
+  animation:popup-enter var(--popup-duration) var(--popup-ease) both;
+}
+.popup-card .popup-close,.popup-card .atlas-close {
+  position:absolute; top:8px; right:8px; width:44px; height:44px; padding:0;
+  min-width:44px; min-height:44px; border:0; border-radius:4px;
+  background:transparent; color:#645340; font-size:26px; line-height:1;
+  display:grid; place-items:center; cursor:pointer; z-index:3;
+}
+.popup-close:focus-visible,.atlas-close:focus-visible { outline:2px solid #987449; outline-offset:2px; }
+.popup-card.popup-card h2 { color:#1b2a4a; }
+.popup-card.popup-card p { color:#645340; }
+.popup-card.popup-card .basecamp-back { color:#694923; }
+.basecamp-leave.popup-card { position:fixed; }
+.basecamp-leave.popup-card::backdrop,.trail-exit-dialog::backdrop,.atlas-dialog::backdrop { background:#0c1625bd; backdrop-filter:blur(5px); }
+.atlas-badge-toast.popup-card,.atlas-expedition.popup-card { position:fixed; }
+.atlas-expedition.popup-card { inset:auto; top:50%; left:50%; transform:translate(-50%,-50%); width:min(460px,calc(100vw - 32px)); max-height:calc(100dvh - 32px); overflow:auto; }
+.popup-win.popup-win.popup-win { animation:popup-celebrate 200ms var(--popup-ease) both; }
+.popup-win.popup-win::after {
+  display:block; content:""; position:absolute; inset:0; border-radius:inherit;
+  pointer-events:none; box-shadow:inset 0 0 44px #e8b93b99,0 0 42px #e8b93b66;
+  animation:popup-glow 1s var(--popup-ease) both;
+}
+.portal-card.popup-card { position:relative; cursor:default; }
+.atlas-popover.popup-card { transform-origin:top center; }
+@keyframes popup-enter { from { opacity:0; scale:.97; } to { opacity:1; scale:1; } }
+@keyframes popup-celebrate { 0% { opacity:0; scale:.94; } 70% { opacity:1; scale:1.03; } 100% { opacity:1; scale:1; } }
+@keyframes popup-glow { from { opacity:1; } to { opacity:0; } }
+@media(prefers-reduced-motion:reduce) {
+  dialog[open] > .popup-card,dialog.popup-card[open],.atlas-popover.popup-card,.popup-win.popup-win.popup-win { animation:popup-fade 200ms ease both; }
+  .popup-win.popup-win::after { animation:none; opacity:.15; }
+}
+@keyframes popup-fade { from { opacity:0; } to { opacity:1; } }

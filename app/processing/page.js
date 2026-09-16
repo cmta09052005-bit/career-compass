@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import JourneyAccess from "@/components/JourneyAccess";
 import Card from "@/components/Card";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
 const STATUS_MESSAGES = [
-  "Analyzing interests...",
-  "Mapping strengths...",
-  "Reviewing academic trail...",
+  "Checking your choices...",
+  "Looking at your skills...",
+  "Matching your answers to courses...",
 ];
 
 export default function ProcessingPage() {
@@ -17,7 +18,7 @@ export default function ProcessingPage() {
   const [statusIndex, setStatusIndex] = useState(0);
 
   useEffect(() => {
-    if (!isReady) return;
+    if (!isReady || !session.strand || Object.values(session.journeyProgress).some((value) => value !== "Completed")) return;
 
     const timers = [
       window.setTimeout(() => setStatusIndex(1), 850),
@@ -26,10 +27,10 @@ export default function ProcessingPage() {
     ];
 
     return () => timers.forEach(window.clearTimeout);
-  }, [isReady, router]);
+  }, [isReady, router, session.strand, session.journeyProgress]);
 
   return (
-    <main className="game-ui-screen explorer-map-screen relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden px-5 py-12 text-beige">
+    <JourneyAccess session={session} isReady={isReady} requires={["interests", "skills", "academic"]}><main className="processing-screen game-ui-screen explorer-map-screen relative isolate flex min-h-svh flex-1 items-center justify-center overflow-hidden px-5 py-12 text-beige">
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_50%_42%,#305774_0%,#1b2a4a_42%,#10182b_100%)]"
@@ -47,9 +48,7 @@ export default function ProcessingPage() {
 
         {/* 46 — Supporting subtext */}
         <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-[#604532] sm:text-base">
-          {session.nickname ? `${session.nickname}, your` : "Your"} compass
-          points are coming together. We’re tracing the paths that best match
-          your journey.
+          {session.nickname ? `${session.nickname}, your` : "Your"} answers are being compared with the course list. Your matches will be ready in a moment.
         </p>
 
         {/* 47 — Loading animation area */}
@@ -88,6 +87,6 @@ export default function ProcessingPage() {
           </div>
         </div>
       </Card>
-    </main>
+    </main></JourneyAccess>
   );
 }
