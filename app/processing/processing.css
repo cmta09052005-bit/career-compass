@@ -1,0 +1,7 @@
+.processing-screen .course-lock-ring { opacity:0; box-shadow:0 0 24px #d4a01799; }
+.processing-screen .course-status { display:flex; align-items:center; justify-content:center; gap:10px; min-height:48px; animation:course-status-in .2s ease-out; }
+.processing-screen .course-status svg,.processing-screen .course-status img { width:32px; height:32px; object-fit:contain; flex-shrink:0; }
+.processing-screen .course-trail-segment { height:6px; width:40px; border-radius:8px; background:#b8a586; transition:background .2s ease-out,box-shadow .2s ease-out; }
+.processing-screen .course-trail-segment[data-active=true] { background:#9c711f; box-shadow:0 0 5px #d4a01766; }
+@keyframes course-status-in { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
+@media(prefers-reduced-motion:reduce) { .processing-screen .course-status { animation:none; }.processing-screen .course-trail-segment { transition:none; } }

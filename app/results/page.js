@@ -2,6 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+import CourseMatch from "./CourseMatch";
+import CelebrationEffects from "@/components/CelebrationEffects";
+import { playSound } from "@/lib/sound";
+import "@/components/celebrations.css";
+import "./results.css";
 import usePopupState from "@/components/usePopupState";
 import { buildExplorerReport, downloadExplorerReport } from "@/lib/explorerReport";
 import Button from "@/components/Button";
@@ -25,6 +31,18 @@ export default function ResultsPage() {
     else mapDialog.current?.close();
   }, [confirmMap]);
   const [showAllCourses, setShowAllCourses] = useState(false);
+  const [filters, setFilters] = useState([]);
+  const [comparison, setComparison] = useState([]);
+  const [compareOpen, setCompareOpen] = usePopupState(false, ".results-compare-dialog .popup-card");
+  const compareDialog = useRef(null);
+  const compareButton = useRef(null);
+  const [downloadCelebration, setDownloadCelebration] = useState(false);
+  const mounted = useRef(false);
+  useEffect(() => { mounted.current = true; return () => { mounted.current = false; }; }, []);
+  useEffect(() => {
+    if (compareOpen) compareDialog.current?.showModal();
+    else if (compareDialog.current?.open) { compareDialog.current.close(); compareButton.current?.focus(); }
+  }, [compareOpen]);
   const { session, answers, isReady, updateSession } = useSessionAnswers();
   const [downloading, setDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState("");
@@ -42,15 +60,27 @@ export default function ResultsPage() {
   }));
   const displayedCourses = showAllCourses
     ? topCourses
-    : topCourses.slice(0, 5);
+    : topCourses.slice(0, 4);
+  const categories = [...new Set(displayedCourses.map(course => course.categoryName))];
+  const strongest = displayedCourses[0]?.calculatedCourseMatchPercent || 0;
+  const weakest = displayedCourses.at(-1)?.calculatedCourseMatchPercent || 0;
+  const comparedCourses = comparison.map(id => topCourses.find(course => course.courseId === id)).filter(Boolean);
+
+  function toggleComparison(id) {
+    setComparison(current => current.includes(id) ? current.filter(value => value !== id) : [...current.slice(-1), id]);
+  }
 
   async function downloadReport() {
     if (!isReady || downloadPending.current) return;
     downloadPending.current = true;
     setDownloading(true);
+    setDownloadCelebration(true);
+    playSound("badge", { volume: .48 });
     setDownloadError("");
     try {
       const report = buildExplorerReport(session, answers, result);
+      await new Promise(resolve => window.setTimeout(resolve, 320));
+      if (!mounted.current) return;
       await downloadExplorerReport(report);
       updateSession({ reportDownloaded: true, reportDate: report.date });
       router.push("/report");
@@ -58,7 +88,7 @@ export default function ResultsPage() {
       setDownloadError("Your report could not be downloaded. Please try again.");
     } finally {
       downloadPending.current = false;
-      setDownloading(false);
+      if (mounted.current) { setDownloading(false); setDownloadCelebration(false); }
     }
   }
 
@@ -84,6 +114,19 @@ export default function ResultsPage() {
           <div className="popup-actions"><Button label="Stay" autoFocus variant="secondary" onClick={() => setConfirmMap(false)} /><Button label="Back to Map" onClick={() => setConfirmMap(false, () => router.push("/journey"))} /></div>
         </Card>
       </dialog>
+      <dialog ref={compareDialog} className="trail-exit-dialog results-compare-dialog" aria-labelledby="compare-title" onCancel={event => { event.preventDefault(); setCompareOpen(false); }}>
+        <Card variant="popup" className="popup-card">
+          <button className="popup-close" aria-label="Close comparison" autoFocus onClick={() => setCompareOpen(false)}>×</button>
+          <h2 id="compare-title">Compare your paths</h2>
+          <div className="course-comparison">{comparedCourses.map(course => <section key={course.courseId}>
+            <h3>{course.courseName}</h3><p>{course.categoryName}</p>
+            <p className="comparison-score">{formatMatchPercent(course.finalCourseMatchPercent)}% match</p>
+            {course.details?.overview && <p>{course.details.overview}</p>}
+          </section>)}</div>
+        </Card>
+      </dialog>
+      {comparison.length === 2 && <div className="results-compare-bar"><Button ref={compareButton} label="Compare selected courses" onClick={() => setCompareOpen(true)} /><span role="status">2 courses selected</span></div>}
+      {downloadCelebration && <div className="results-download-seal" role="status"><CelebrationEffects><Image src="/icons/career-compass/compass-download.svg" width={116} height={116} alt="" /></CelebrationEffects><p>Your journey, ready to keep</p></div>}
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
         aria-hidden="true"
@@ -114,64 +157,29 @@ export default function ResultsPage() {
           >
             Your Top Course Matches
           </h2>
+          <div className="course-filters" role="group" aria-label="Focus course categories">
+            {categories.map(category => <button key={category} type="button" aria-pressed={filters.includes(category)} onClick={() => setFilters(current => current.includes(category) ? current.filter(value => value !== category) : [...current, category])}>{category}</button>)}
+            {filters.length > 0 && <button type="button" onClick={() => setFilters([])}>Clear filter</button>}
+          </div>
+          <p className="course-strength-note">The compass arcs show relative match strength within this list.</p>
           <div className="mt-5 grid grid-cols-1 gap-4">
             {displayedCourses.map((course, index) => (
-              <Card
-                key={course.courseId}
-                as="article"
-                className="flex max-w-none flex-col rounded-2xl border-beige/20 bg-navy/45 p-5 sm:p-6"
-              >
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <p className="text-xs font-semibold tracking-[0.16em] text-teal uppercase">
-                      Rank #{index + 1}
-                    </p>
-                    <h3 className="mt-2 font-serif text-xl leading-tight sm:text-2xl">
-                      {course.courseId} – {course.courseName}
-                    </h3>
-                    <span className="mt-3 inline-flex rounded-full border border-teal/30 bg-teal/10 px-2.5 py-1 text-xs font-semibold text-teal">
-                      {course.categoryName}
-                    </span>
-                  </div>
-                  <span
-                    className="shrink-0 rounded-full border border-gold/55 bg-gold/10 px-3 py-1 text-sm font-bold text-gold"
-                    title={
-                      course.displayTieAdjustment
-                        ? `Calculated match: ${formatMatchPercent(course.calculatedCourseMatchPercent)}%. Display separated by hundredths to distinguish tied ranks.`
-                        : `Calculated match: ${formatMatchPercent(course.calculatedCourseMatchPercent)}%.`
-                    }
-                  >
-                    {formatMatchPercent(course.finalCourseMatchPercent)}%
-                  </span>
-                </div>
-                <Button
-                  label="Explore This Course"
-                  href={`/results/${course.courseId}`}
-                  variant="secondary"
-                  className="mt-6 inline-flex w-full items-center justify-center sm:w-fit"
-                />
-              </Card>
+              <CourseMatch key={course.courseId} course={course} rank={index + 1}
+                strength={strongest === weakest ? 95 : 30 + 65 * (course.calculatedCourseMatchPercent - weakest) / (strongest - weakest)}
+                strongestCategory={result.strongestCategory}
+                dimmed={filters.length > 0 && !filters.includes(course.categoryName)}
+                selected={comparison.includes(course.courseId)} onCompare={() => toggleComparison(course.courseId)} />
             ))}
           </div>
           <div className="mt-6 flex justify-center">
             <Button
-              label={showAllCourses ? "Show Top 5 Only" : "See All 24 Courses"}
-              onClick={() => setShowAllCourses((current) => !current)}
+              label={showAllCourses ? "Show Top 4 Only" : `See All ${topCourses.length} Courses`}
+              onClick={() => { setShowAllCourses(current => !current); setFilters([]); }}
               variant="secondary"
               className="inline-flex w-full items-center justify-center sm:w-auto"
             />
           </div>
         </section>
-
-        {result.strongestCategory ? (
-          <aside className="mx-auto mt-8 max-w-3xl rounded-2xl border border-beige/15 bg-navy/35 p-4 text-center text-sm text-beige/70">
-            Your strongest field was{" "}
-            <span className="font-semibold text-beige">
-              {result.strongestCategory.label}
-            </span>{" "}
-            at {result.strongestCategory.percentage}%. This gives you another way to understand your matches.
-          </aside>
-        ) : null}
 
         {/* 53 — Guidance disclaimer */}
         <aside className="mx-auto mt-10 max-w-3xl rounded-2xl border border-teal/30 bg-teal/10 p-5 text-center text-sm leading-6 text-beige/80">
@@ -179,7 +187,7 @@ export default function ResultsPage() {
           counselor about what&apos;s right for you.
         </aside>
 
-        <p className="mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-beige/70">
+        <p className="results-download-note mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-beige/70">
           Download your report before closing this tab. Your answers will be cleared.
         </p>
 
@@ -193,7 +201,7 @@ export default function ResultsPage() {
           />
           {/* 55 — Download My Explorer Report button */}
           <Button
-            label={downloading ? "Preparing your report…" : "Download My Explorer Report"}
+            label={<><Image src="/icons/career-compass/compass-download.svg" width={30} height={30} alt="" />{downloading ? "Preparing your report…" : "Download My Explorer Report"}</>}
             onClick={downloadReport}
             disabled={downloading || !isReady}
             className="inline-flex w-full items-center justify-center sm:w-auto"
