@@ -10,7 +10,7 @@ import { playSound } from "@/lib/sound";
 
 gsap.registerPlugin(useGSAP);
 
-export default function CourseMatch({ course, rank, strength, dimmed, selected, onCompare, strongestCategory }) {
+export default function CourseMatch({ course, rank, strength, selected, onCompare }) {
   const reveal = useRef(null);
   useGSAP((context, contextSafe) => {
     const element = reveal.current;
@@ -27,7 +27,7 @@ export default function CourseMatch({ course, rank, strength, dimmed, selected, 
   }, { scope: reveal });
 
   return <div ref={reveal} className="course-reveal">
-    <Card as="article" className={`course-match ${rank === 1 ? "course-landmark" : ""}`} data-dimmed={dimmed}>
+    <Card as="article" className={`course-match ${rank === 1 ? "course-landmark" : ""}`}>
       {rank === 1 && <p className="landmark-label"><Image src="/icons/career-compass/island-flag.svg" width={48} height={48} alt="" />Your Landmark Match</p>}
       <div className="course-match-heading">
         <div>
@@ -40,10 +40,9 @@ export default function CourseMatch({ course, rank, strength, dimmed, selected, 
           <Image src="/landing-compass.png" width={42} height={48} style={{ height: "auto" }} alt="" />
         </div>
       </div>
-      {rank === 1 && strongestCategory && <p className="landmark-insight">Your strongest field was <strong>{strongestCategory.label}</strong>.</p>}
       <div className="course-match-actions">
         <Button label={<><Image src="/icons/career-compass/magnifying-glass.svg" width={26} height={26} alt="" />Explore This Course</>} href={`/results/${course.courseId}`} variant="secondary" />
-        <button type="button" className="course-compare-toggle" aria-pressed={selected} aria-label={`Compare ${course.courseName}`} onClick={onCompare}><Image src="/icons/career-compass/magnifying-glass.svg" width={26} height={26} alt="" />{selected ? "Selected for comparison" : "Compare"}</button>
+        <button type="button" className="course-compare-toggle" aria-pressed={selected} aria-label={`Compare ${course.courseName}`} onClick={onCompare}>{selected ? "Selected for comparison" : "Compare"}</button>
       </div>
     </Card>
   </div>;

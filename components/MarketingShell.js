@@ -24,6 +24,7 @@ export default function MarketingShell({ children }) {
     try { const stored = JSON.parse(sessionStorage.getItem(SESSION_STORAGE_KEY)) || {}; queueMicrotask(() => setEntry(journeyEntry(stored))); } catch { /* Fresh session CTA remains available. */ }
   }, [pathname]);
   const [scrolled, setScrolled] = useState(false);
+  const [autoAssignedAvatar, setAutoAssignedAvatar] = useState(false);
   const [portal, setPortal] = usePopupState(false, ".portal-card");
   const marketing = routes.includes(pathname);
   const assessment = pathname === "/intake" || pathname === "/journey" || pathname.startsWith("/journey/") || pathname === "/processing" || pathname === "/results" || pathname.startsWith("/results/") || pathname === "/report";
@@ -54,7 +55,7 @@ export default function MarketingShell({ children }) {
 
 
   useEffect(() => {
-    const completed = () => { setPortal("success"); router.prefetch("/journey"); };
+    const completed = event => { setAutoAssignedAvatar(event.detail?.autoAssigned === true); setPortal("success"); router.prefetch("/journey"); };
     window.addEventListener("explorer-created", completed);
     return () => window.removeEventListener("explorer-created", completed);
   }, [router, setPortal]);
@@ -63,7 +64,7 @@ export default function MarketingShell({ children }) {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     if (marketing && pathname !== "/intake" && event.target.closest('a[href="/intake"]')) { event.preventDefault(); event.stopPropagation(); if (entry.href !== "/intake") { router.push(entry.href); return; } setPortal(true); router.prefetch("/intake"); }
   };
-  return <div className={`${marketing ? "story-home marketing-shell" : ""} ${marketingFonts} ${assessment ? "assessment-frame" : ""}`} onClickCapture={startJourney}>{marketing && pathname !== "/intake" && <MarketingNavbar entry={entry} solid={pathname !== "/" || scrolled} active={pathname} onNavigate={navigate} />}<div ref={content} className={marketing ? "marketing-content" : undefined}>{children}</div>{portal && <JourneyPortal celebration icon={portal === "success" ? "/icons/career-compass/explorer-backpack.svg" : "/landing-compass.png"} title={portal === "success" ? "Explorer Created!" : "Welcome, Explorer!"} description={portal === "success" ? "Your profile is ready. Your map awaits." : "Your journey begins now."} destinationSelector={portal === "success" ? ".explorer-map-screen" : ".basecamp"} onCancel={() => setPortal(false)} onEnter={() => router.push(portal === "success" ? "/journey" : "/intake")} onComplete={() => setPortal(false)} />}</div>;
+  return <div className={`${marketing ? "story-home marketing-shell" : ""} ${marketingFonts} ${assessment ? "assessment-frame" : ""}`} onClickCapture={startJourney}>{marketing && pathname !== "/intake" && <MarketingNavbar entry={entry} solid={pathname !== "/" || scrolled} active={pathname} onNavigate={navigate} />}<div ref={content} className={marketing ? "marketing-content" : undefined}>{children}</div>{portal && <JourneyPortal celebration icon={portal === "success" ? "/icons/career-compass/explorer-backpack.svg" : "/landing-compass.png"} title={portal === "success" ? "Explorer Created!" : "Welcome, Explorer!"} description={portal === "success" ? "Your profile is ready. Your map awaits." : "Your journey begins now."} notice={portal === "success" && autoAssignedAvatar ? "We randomly assigned your explorer avatar. It does not affect your assessment results or scoring." : undefined} destinationSelector={portal === "success" ? ".explorer-map-screen" : ".basecamp"} onCancel={() => setPortal(false)} onEnter={() => router.push(portal === "success" ? "/journey" : "/intake")} onComplete={() => setPortal(false)} />}</div>;
 }
 
 

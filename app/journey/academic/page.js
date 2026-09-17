@@ -25,10 +25,10 @@ const SUBJECTS_ITEM = ACADEMIC_ITEMS.find(item => item.id === "ACA-04");
 function Basket({ subjects, basketRef, flightRef, harvest, limitNotice }) {
   const full = subjects.length === SUBJECTS_ITEM.maxSelect;
   return <div ref={basketRef} className="valley-basket" data-full={full}>
-    <svg className="valley-basket-drawing" viewBox="0 0 160 100" fill="none" stroke="currentColor" strokeWidth="3" aria-hidden="true"><path d="M25 42h110l-12 48H37z M45 42Q80-18 115 42 M45 57h70 M42 73h76 M60 44l4 44 M100 44l-4 44" /><path className="valley-basket-ribbon" d="M80 46C40 13 42 62 80 46C118 13 120 62 80 46l-10 30m10-30 10 30" /></svg>
-    <div className="valley-basket-items">{subjects.map(value => <span key={value} aria-label={value} tabIndex={0} data-tooltip={value}><StatementIcon category={SUBJECTS_ITEM.options.find(option => option.value === value)?.category} /></span>)}</div>
+    <svg className="valley-basket-drawing" width="160" height="100" viewBox="0 0 160 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" shapeRendering="geometricPrecision" aria-hidden="true"><path d="M25 42h110l-12 48H37z M45 42Q80-18 115 42 M45 57h70 M42 73h76 M60 44l4 44 M100 44l-4 44" /><path className="valley-basket-ribbon" d="M80 46C40 13 42 62 80 46C118 13 120 62 80 46l-10 30m10-30 10 30" /></svg>
+    <div className="valley-basket-items">{subjects.map(value => <span key={value} aria-label={value} ><StatementIcon category={SUBJECTS_ITEM.options.find(option => option.value === value)?.category} /></span>)}</div>
     {harvest && <span ref={flightRef} className="valley-harvest-flight" aria-hidden="true"><StatementIcon category={harvest.category} /></span>}
-    <p role="status">{limitNotice ? "You can only pick 3. Tap one of your chosen subjects to swap it out first." : full ? "You've picked your 3 — tap one to swap it out" : "Pick 3 subjects to continue"}</p>
+    <p role="status">{limitNotice ? "You can only pick 3. Tap one of your chosen subjects to swap it out first." : full ? "You've picked your 3. Tap one to swap it out" : "Pick 3 subjects to continue"}</p>
   </div>;
 }
 

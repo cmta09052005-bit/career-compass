@@ -18,10 +18,9 @@ import {
   calculateCategoryScores,
   calculateMatchPercentages,
   createRecommendationResult,
-  formatMatchPercent,
 } from "@/lib/scoringEngine";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
-import { toggleCourseComparison } from "@/lib/courseComparison";
+import { COMPARISON_LIMIT_NOTICE, toggleCourseComparison } from "@/lib/courseComparison";
 
 export default function ResultsPage() {
   const router = useRouter();
@@ -32,7 +31,7 @@ export default function ResultsPage() {
     else mapDialog.current?.close();
   }, [confirmMap]);
   const [showAllCourses, setShowAllCourses] = useState(false);
-  const [filters, setFilters] = useState([]);
+  const [comparisonNotice, setComparisonNotice] = useState("");
   const [compareOpen, setCompareOpen] = usePopupState(false, ".results-compare-dialog .popup-card");
   const compareDialog = useRef(null);
   const compareButton = useRef(null);
@@ -62,12 +61,13 @@ export default function ResultsPage() {
   const displayedCourses = showAllCourses
     ? topCourses
     : topCourses.slice(0, 4);
-  const categories = [...new Set(displayedCourses.map(course => course.categoryName))];
   const strongest = displayedCourses[0]?.calculatedCourseMatchPercent || 0;
   const weakest = displayedCourses.at(-1)?.calculatedCourseMatchPercent || 0;
   const comparedCourses = comparison.map(id => topCourses.find(course => course.courseId === id)).filter(Boolean);
 
   function toggleComparison(id) {
+    if (!comparison.includes(id) && comparison.length >= 2) { setComparisonNotice(COMPARISON_LIMIT_NOTICE); return; }
+    setComparisonNotice("");
     updateSession({ courseComparison: toggleCourseComparison(comparison, id) });
   }
 
@@ -80,10 +80,12 @@ export default function ResultsPage() {
     setDownloadError("");
     try {
       const report = buildExplorerReport(session, answers, result);
-      await new Promise(resolve => window.setTimeout(resolve, 320));
+      const celebrationBeat = new Promise(resolve => window.setTimeout(resolve, 950));
       if (!mounted.current) return;
       await downloadExplorerReport(report);
       updateSession({ reportDownloaded: true, reportDate: report.date });
+      await celebrationBeat;
+      if (!mounted.current) return;
       router.push("/report");
     } catch {
       setDownloadError("Your report could not be downloaded. Please try again.");
@@ -121,12 +123,13 @@ export default function ResultsPage() {
           <h2 id="compare-title">Compare your paths</h2>
           <div className="course-comparison">{comparedCourses.map(course => <section key={course.courseId}>
             <h3>{course.courseName}</h3><p>{course.categoryName}</p>
-            <p className="comparison-score">{formatMatchPercent(course.finalCourseMatchPercent)}% match</p>
+            <p className="comparison-score">Rank #{topCourses.findIndex(match => match.courseId === course.courseId) + 1}</p>
             {course.details?.overview && <p>{course.details.overview}</p>}
           </section>)}</div>
         </Card>
       </dialog>
       {comparison.length === 2 && <div className="results-compare-bar"><Button ref={compareButton} label="Compare selected courses" onClick={() => setCompareOpen(true)} /><span role="status">2 courses selected</span></div>}
+      {comparisonNotice && <p className="results-comparison-notice" role="alert">{comparisonNotice}</p>}
       {downloadCelebration && <div className="results-download-seal" role="status"><CelebrationEffects><Image src="/icons/career-compass/compass-download.svg" width={116} height={116} alt="" /></CelebrationEffects><p>Your journey, ready to keep</p></div>}
       <div
         className="pointer-events-none absolute inset-0 opacity-60"
@@ -158,24 +161,18 @@ export default function ResultsPage() {
           >
             Your Top Course Matches
           </h2>
-          <div className="course-filters" role="group" aria-label="Focus course categories">
-            {categories.map(category => <button key={category} type="button" aria-pressed={filters.includes(category)} onClick={() => setFilters(current => current.includes(category) ? current.filter(value => value !== category) : [...current, category])}>{category}</button>)}
-            {filters.length > 0 && <button type="button" onClick={() => setFilters([])}>Clear filter</button>}
-          </div>
           <p className="course-strength-note">The compass arcs show relative match strength within this list.</p>
           <div className="mt-5 grid grid-cols-1 gap-4">
             {displayedCourses.map((course, index) => (
               <CourseMatch key={course.courseId} course={course} rank={index + 1}
                 strength={strongest === weakest ? 95 : 30 + 65 * (course.calculatedCourseMatchPercent - weakest) / (strongest - weakest)}
-                strongestCategory={result.strongestCategory}
-                dimmed={filters.length > 0 && !filters.includes(course.categoryName)}
                 selected={comparison.includes(course.courseId)} onCompare={() => toggleComparison(course.courseId)} />
             ))}
           </div>
           <div className="mt-6 flex justify-center">
             <Button
               label={showAllCourses ? "Show Top 4 Only" : `See All ${topCourses.length} Courses`}
-              onClick={() => { setShowAllCourses(current => !current); setFilters([]); }}
+              onClick={() => setShowAllCourses(current => !current)}
               variant="secondary"
               className="inline-flex w-full items-center justify-center sm:w-auto"
             />

@@ -3,11 +3,13 @@ export default function Toggle({
   enabled,
   onClick,
   className = "",
+  ...props
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
+      {...props}
       role="switch"
       aria-checked={enabled}
       aria-label={label}

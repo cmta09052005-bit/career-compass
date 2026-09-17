@@ -10,3 +10,5 @@
 body:has(.journey-portal[open]) { overflow:hidden; }
 .journey-portal[open] { background:#1b2a4a; }
 .portal-halo { position:absolute; inset:8px -6px; border:2px solid #d4a017; border-radius:50%; box-shadow:0 0 22px #d4a01766,inset 0 0 14px #d4a01733; pointer-events:none; opacity:0; }.portal-sparks i:nth-child(3n) { width:5px; height:9px; border-radius:1px; background:#2dbfb8; }.portal-sparks i:nth-child(3n + 1) { clip-path:polygon(50% 0,62% 37%,100% 50%,62% 62%,50% 100%,37% 62%,0 50%,37% 37%); width:11px; height:11px; background:#d4a017; }
+
+.portal-card .portal-notice { margin-top:14px; padding-top:12px; border-top:1px solid #b8955266; font-size:14px; line-height:1.5; color:#5b4932; }

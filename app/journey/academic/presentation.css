@@ -34,7 +34,7 @@
 .trail-valley .valley-crop:focus-within { outline:3px solid #287b72; outline-offset:3px; }
 .trail-valley .valley-check { position:absolute; top:2px; right:6px; color:#795821; font-weight:700; }
 .trail-valley .valley-basket { position:relative; width:100%; max-width:420px; margin:20px auto 0; text-align:center; color:#866130; }
-.trail-valley .valley-basket-drawing { display:block; width:140px; height:90px; margin:auto; }
+.trail-valley .valley-basket-drawing { display:block; width:144px; height:90px; margin:auto; shape-rendering:geometricPrecision; }
 .trail-valley .valley-basket-items { display:flex; justify-content:center; gap:5px; position:absolute; top:25px; left:0; right:0; }
 .trail-valley .valley-basket-items > span { background:#f9e8c3; border:1px solid #b5965e; border-radius:50%; padding:3px; }
 .trail-valley .valley-basket-items svg { width:22px; height:24px; }
@@ -51,5 +51,5 @@
 .trail-valley .valley-card::-webkit-scrollbar { display:none; }
 .trail-valley .valley-card h1 { font-size:30px; }
 .trail-valley .valley-card form > .mt-8 { margin-top:20px; }
-@media(min-width:701px) { .trail-valley .valley-crop { min-height:84px; }.trail-valley .valley-crops { gap:10px; }.trail-valley .valley-basket { margin-top:12px; }.trail-valley .valley-basket-drawing { height:76px; } }
+@media(min-width:701px) { .trail-valley .valley-crop { min-height:84px; }.trail-valley .valley-crops { gap:10px; }.trail-valley .valley-basket { margin-top:12px; }.trail-valley .valley-basket-drawing { width:128px; height:80px; } }
 @media(max-width:700px) { .assessment-frame .trail-valley > .valley-card { padding:22px 18px; }.trail-valley .valley-card h1 { font-size:26px; } }

@@ -8,7 +8,7 @@ import { useGSAP } from "@gsap/react";
 import Button from "@/components/Button";
 import StatementIcon from "@/app/journey/skills/StatementIcon";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
-import { toggleCourseComparison } from "@/lib/courseComparison";
+import { COMPARISON_LIMIT_NOTICE, toggleCourseComparison } from "@/lib/courseComparison";
 import { playSound } from "@/lib/sound";
 import "./journal.css";
 
@@ -25,6 +25,7 @@ const TABS = [
 
 export default function FieldJournal({ course, categoryCode, children }) {
   const [active, setActive] = useState(0);
+  const [comparisonNotice, setComparisonNotice] = useState("");
   const journal = useRef(null);
   const pages = useRef([]);
   const tabs = useRef([]);
@@ -54,6 +55,12 @@ export default function FieldJournal({ course, categoryCode, children }) {
     tabs.current[index]?.scrollIntoView({ block: "nearest", inline: "nearest" });
   }
 
+  function toggleComparison() {
+    if (!selected && comparison.length >= 2) { setComparisonNotice(COMPARISON_LIMIT_NOTICE); return; }
+    setComparisonNotice("");
+    updateSession({ courseComparison: toggleCourseComparison(comparison, course.courseId) });
+  }
+
   function navigateTabs(event, index) {
     const next = event.key === "ArrowRight" ? (index + 1) % TABS.length : event.key === "ArrowLeft" ? (index + TABS.length - 1) % TABS.length : event.key === "Home" ? 0 : event.key === "End" ? TABS.length - 1 : null;
     if (next === null) return;
@@ -69,9 +76,10 @@ export default function FieldJournal({ course, categoryCode, children }) {
         <h1>{course.courseName}</h1>
         <p className="journal-category">{course.category} · {course.courseId}</p>
         <div className="journal-tools">
-          <button type="button" className="journal-compare" disabled={!isReady} aria-pressed={selected} onClick={() => updateSession({ courseComparison: toggleCourseComparison(comparison, course.courseId) })}><Image src="/icons/career-compass/magnifying-glass.svg" width={24} height={24} alt="" />{selected ? "Added to Compare" : "Add to Compare"}</button>
+          <button type="button" className="journal-compare" disabled={!isReady} aria-pressed={selected} onClick={toggleComparison}>{selected ? "Added to Compare" : "Add to Compare"}</button>
           <div className="journal-bookmark" role="status" aria-label={`${viewed.length} of 6 tabs viewed`}><span>{viewed.length} of 6 explored</span><div aria-hidden="true">{TABS.map((tab, index) => <i key={tab.id} data-viewed={viewed.includes(index)} />)}</div></div>
         </div>
+        {comparisonNotice && <p role="alert" className="journal-comparison-notice">{comparisonNotice}</p>}
       </header>
       <div className="journal-tabs" role="tablist" aria-label="Field journal sections">
         {TABS.map((tab, index) => <button key={tab.id} ref={element => { tabs.current[index] = element; }} type="button" role="tab" id={`journal-tab-${tab.id}`} aria-controls={`journal-panel-${tab.id}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} onClick={() => openTab(index)} onKeyDown={event => navigateTabs(event, index)}>
