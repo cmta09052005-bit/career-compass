@@ -255,8 +255,6 @@
 .atlas-mapped-caption { font-size: 9px; margin-top: 3px; color: #d7c8aa; }
 .atlas-badge:not(.earned) > .atlas-icon:first-child { opacity: .45; }
 .atlas-badge:not(.earned) .atlas-badge-fill { opacity: .18; }
-.atlas-badge-tooltip { display: none; position: absolute; z-index: 30; left: 0; top: calc(100% + 8px); width: 195px; padding: 8px; border: 1px solid #b28b4f; background: #f5ecd7; color: #1b2a4a; font-size: 11px; text-align: left; }
-.atlas-badge:hover .atlas-badge-tooltip, .atlas-badge:focus-visible .atlas-badge-tooltip { display: block; }
 .atlas-guide-steps { display: grid; gap: 14px; margin: 22px 0; padding: 0; list-style: none; text-align: left; }
 .atlas-guide-steps li { display: flex; align-items: center; gap: 12px; font-size: 13px; line-height: 1.6; color: #645340; }
 .atlas-guide-steps li > .atlas-icon { flex: 0 0 26px; width: 26px; height: 30px; object-fit: contain; }
@@ -307,7 +305,6 @@
   .atlas-actions { left:8px; right:8px; justify-content:center; padding:8px; gap:12px; }
   .atlas-round-action { width:132px; }
   .atlas-scroll-hint { bottom:90px; right:12px; background:#f5ecd7df; padding:5px; }
-  .atlas-badge-tooltip { width:150px; }
 }
 @media(prefers-reduced-motion:reduce) {
   .atlas-reward .atlas-reward-badge, .atlas-reward::before, .atlas-reward-sparks i { animation:none; }
@@ -384,3 +381,14 @@
 @media(hover:hover) and (pointer:fine) { .atlas-marker.active .atlas-region-art:hover::before { opacity:1; background:radial-gradient(ellipse,#fff3c9 0%,#ffc83dcc 45%,transparent 75%); } }
 .atlas-window .atlas-location { margin-top:-48px; }
 .atlas-marker.locked .atlas-region-art > .atlas-icon { opacity:.5; }
+
+/* Reassurance belongs to the viewport, above the fixed action row. */
+.atlas-page > .atlas-session { position:fixed; z-index:10; left:50%; bottom:max(12px,env(safe-area-inset-bottom)); transform:translateX(-50%); width:max-content; max-width:calc(100% - 32px); margin:0; padding:8px 14px; border:1px solid #987449; border-radius:6px; background:#f5ecd7f5; color:#1b2a4a; font-size:12px; font-weight:600; line-height:1.5; box-shadow:0 3px 12px #1b2a4a22; }
+.atlas-page .atlas-actions { bottom:68px; }
+.atlas-page .atlas-scroll-hint { bottom:180px; background:#f5ecd7ed; padding:6px 9px; border-radius:4px; }
+.atlas-page .atlas-explorer { object-fit:cover; object-position:center 25%; }
+@media(max-width:640px) {
+  .atlas-page > .atlas-session { width:calc(100% - 24px); max-width:410px; font-size:11px; padding:8px 10px; }
+  .atlas-page .atlas-actions { bottom:72px; }
+  .atlas-page .atlas-scroll-hint { bottom:170px; }
+}

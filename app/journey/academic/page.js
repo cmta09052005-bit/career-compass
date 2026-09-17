@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import Button from "@/components/Button";
 import JourneyAccess from "@/components/JourneyAccess";
 import TrailExit from "@/components/TrailExit";
@@ -27,7 +26,7 @@ function Basket({ subjects, basketRef, flightRef, harvest, limitNotice }) {
   const full = subjects.length === SUBJECTS_ITEM.maxSelect;
   return <div ref={basketRef} className="valley-basket" data-full={full}>
     <svg className="valley-basket-drawing" viewBox="0 0 160 100" fill="none" stroke="currentColor" strokeWidth="3" aria-hidden="true"><path d="M25 42h110l-12 48H37z M45 42Q80-18 115 42 M45 57h70 M42 73h76 M60 44l4 44 M100 44l-4 44" /><path className="valley-basket-ribbon" d="M80 46C40 13 42 62 80 46C118 13 120 62 80 46l-10 30m10-30 10 30" /></svg>
-    <div className="valley-basket-items">{subjects.map(value => <span key={value} title={value}><StatementIcon category={SUBJECTS_ITEM.options.find(option => option.value === value)?.category} /></span>)}</div>
+    <div className="valley-basket-items">{subjects.map(value => <span key={value} aria-label={value} tabIndex={0} data-tooltip={value}><StatementIcon category={SUBJECTS_ITEM.options.find(option => option.value === value)?.category} /></span>)}</div>
     {harvest && <span ref={flightRef} className="valley-harvest-flight" aria-hidden="true"><StatementIcon category={harvest.category} /></span>}
     <p role="status">{limitNotice ? "You can only pick 3. Tap one of your chosen subjects to swap it out first." : full ? "You've picked your 3 — tap one to swap it out" : "Pick 3 subjects to continue"}</p>
   </div>;
@@ -92,7 +91,6 @@ export default function AcademicPage() {
   const nod = contextSafe(() => {
     if (!hasValidGwa) return;
     playSound("confirm");
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) gsap.fromTo(".valley-companion", { y: 0, rotation: -8 }, { y: -6, rotation: 8, duration: .16, repeat: 1, yoyo: true, overwrite: true, clearProps: "transform" });
   });
   function updateGwa(event) {
     const value = event.target.value;
@@ -158,7 +156,7 @@ export default function AcademicPage() {
               <Link className="valley-profile-link" href="/intake?step=1">Not right? Edit your profile</Link>
               <section className="valley-gauge">
                 <label htmlFor="academic-gwa">{GWA_ITEM.text}</label>
-                <div className="valley-grade-number"><Image className="valley-companion" src="/landing-compass.png" width={48} height={48} alt="" /><input id="academic-gwa" type="number" min={GWA_ITEM.min} max={GWA_ITEM.max} step="0.01" value={session.gwa ?? ""} onChange={updateGwa} onBlur={nod} placeholder="75–100" disabled={!isReady} aria-invalid={gwaAttempted && !hasValidGwa} aria-describedby="valley-gwa-help" /></div>
+                <div className="valley-grade-number"><input id="academic-gwa" type="number" min={GWA_ITEM.min} max={GWA_ITEM.max} step="0.01" value={session.gwa ?? ""} onChange={updateGwa} onBlur={nod} placeholder="75–100" disabled={!isReady} aria-invalid={gwaAttempted && !hasValidGwa} aria-describedby="valley-gwa-help" /></div>
                 <p className="valley-tier" aria-live="polite">{tier || "Enter your general average"}</p>
                 <input className="valley-grade-slider" type="range" aria-label="General Weighted Average gauge" min={GWA_ITEM.min} max={GWA_ITEM.max} step="0.01" value={hasValidGwa ? session.gwa : GWA_ITEM.min} onChange={updateGwa} onPointerUp={nod} onKeyUp={nod} disabled={!isReady} />
                 <div className="valley-gauge-ends"><span>75</span><span>100</span></div>

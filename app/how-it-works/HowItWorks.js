@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { marketingFonts } from "@/components/marketingFonts";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
-import useCarouselAutoplay from "@/components/useCarouselAutoplay";
+import useCardCarousel from "@/components/useCardCarousel";
 import "../story.css";
 import "./how-it-works.css";
 
@@ -45,11 +45,9 @@ export default function HowItWorks() {
   const root = useRef(null);
   const tabPanel = useRef(null);
   const carousel = useRef(null);
-  const pendingTab = useRef(null);
-  const touchStart = useRef(null);
-  const [selected, setSelected] = useState(0);
+  const { selected, select: switchTab, step: slide, swipeProps } = useCardCarousel(carousel, tabPanel, trails.length);
   const [activeStep, setActiveStep] = useState(0);
-  const { contextSafe } = useGSAP(() => {
+  useGSAP(() => {
     root.current.querySelectorAll(".hiw-step").forEach((step, index) => {
       ScrollTrigger.create({ trigger: step, start: "top 60%", end: "bottom 60%", onEnter: () => setActiveStep(index), onEnterBack: () => setActiveStep(index) });
     });
@@ -84,29 +82,6 @@ export default function HowItWorks() {
     return () => mm.revert();
   }, { scope: root });
 
-  useGSAP(() => {
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      gsap.fromTo(tabPanel.current, { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.3, onComplete: () => ScrollTrigger.refresh() });
-    }
-  }, { scope: root, dependencies: [selected], revertOnUpdate: true });
-
-  const switchTab = (index) => {
-    if (index === selected && pendingTab.current === null) return;
-    pendingTab.current = index;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setSelected(index);
-      pendingTab.current = null;
-      return;
-    }
-    contextSafe(() => {
-      gsap.to(tabPanel.current, { opacity: 0, x: -20, duration: 0.25, overwrite: true, onComplete: () => {
-        setSelected(index);
-        pendingTab.current = null;
-        // If rapid switching returns to the current tab, React has no change to animate.
-        if (index === selected) gsap.to(tabPanel.current, { opacity: 1, x: 0, duration: 0.3 });
-      } });
-    })();
-  };
   const tabKey = (event, index) => {
     let next;
     if (event.key === "ArrowRight") next = (index + 1) % trails.length;
@@ -118,7 +93,7 @@ export default function HowItWorks() {
     root.current.querySelector(`#trail-tab-${trails[next].id}`).focus();
     switchTab(next);
   };
-  useCarouselAutoplay(carousel, () => switchTab((selected + 1) % trails.length));
+
   const trail = trails[selected];
 
   return (
@@ -153,13 +128,13 @@ export default function HowItWorks() {
           <div role="tablist" aria-label="The three assessment trails" className="hiw-tabs">
             {trails.map((item, index) => <button key={item.id} type="button" role="tab" id={`trail-tab-${item.id}`} aria-selected={selected === index} aria-controls="trail-panel" tabIndex={selected === index ? 0 : -1} onClick={() => switchTab(index)} onKeyDown={(event) => tabKey(event, index)}><span>{item.number}</span>{item.name}</button>)}
           </div>
-          <Card as="div" className="story-panel hiw-trail-paper" onTouchStart={(event) => { touchStart.current = event.touches[0].clientX; }} onTouchEnd={(event) => { const distance = event.changedTouches[0].clientX - touchStart.current; if (touchStart.current !== null && Math.abs(distance) > 45) switchTab((selected + (distance < 0 ? 1 : 2)) % trails.length); touchStart.current = null; }} onTouchCancel={() => { touchStart.current = null; }}>
+          <Card as="div" className="story-panel hiw-trail-paper" {...swipeProps}>
             <div ref={tabPanel} role="tabpanel" id="trail-panel" aria-labelledby={`trail-tab-${trail.id}`} tabIndex={0} className="hiw-tab-content">
               <div className="hiw-trail-art"><Icon name={trail.icon} size={170} /><span>TRAIL {trail.number}</span></div>
               <div className="hiw-trail-copy"><h3>{trail.name}: {trail.type}</h3><p className="hiw-format"><strong>Format:</strong> {trail.format}</p><p>{trail.description}</p><p className="hiw-time"><span aria-hidden="true">◷</span> Time: {trail.time}</p></div>
             </div>
           </Card>
-          <div className="carousel-controls" aria-label="Trail carousel controls"><Button className="story-button" label="←" aria-label="Previous trail" onClick={() => switchTab((selected + 2) % 3)} />{trails.map((item, index) => <button key={item.id} type="button" className="carousel-dot" aria-label={`Show ${item.name}`} aria-pressed={selected === index} onClick={() => switchTab(index)} />)}<Button className="story-button" label="→" aria-label="Next trail" onClick={() => switchTab((selected + 1) % 3)} /></div>
+          <div className="carousel-controls" aria-label="Trail carousel controls"><Button className="story-button" label="←" aria-label="Previous trail" onClick={() => slide(-1)} />{trails.map((item, index) => <button key={item.id} type="button" className="carousel-dot" aria-label={`Show ${item.name}`} aria-pressed={selected === index} onClick={() => switchTab(index)} />)}<Button className="story-button" label="→" aria-label="Next trail" onClick={() => slide(1)} /></div>
         </section>
 
         <section className="hiw-rewards" aria-labelledby="rewards-heading">

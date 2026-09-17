@@ -99,6 +99,29 @@
 .marketing-shell .hiw-closing .story-text-link:hover { color:#fff4d7; }
 .marketing-shell .hiw-closing .story-text-link:focus-visible { outline:2px solid #edc975; outline-offset:5px; }
 
+/* Both carousels share the Trails card transition and a stable paper surface. */
+.marketing-shell .story-explorer-paper { max-width:calc(100% - 8vw); padding:35px; touch-action:pan-y; }
+.marketing-shell .story-explorer-panel { display:block; }
+.marketing-shell .story-explorer-content { display:grid; grid-template-columns:190px minmax(0,1fr); grid-template-rows:auto auto 1fr; column-gap:30px; align-items:center; width:100%; min-height:250px; text-align:left; }
+.marketing-shell .story-explorer-panel .story-portrait { grid-row:1 / 4; height:230px; width:190px; border-right:1px solid #a7895950; }
+.marketing-shell .story-explorer-panel h3 { font-size:26px; }
+.marketing-shell .story-explorer-panel p { padding:0; font-size:15px; }
+.marketing-shell .story-explorer-content { grid-template-rows:auto auto auto; align-content:center; align-items:start; row-gap:12px; }
+.marketing-shell .story-explorer-content p { align-self:start; margin-top:8px; }
+@media(max-width:700px) {
+  .marketing-shell .story-explorer-paper { width:calc(100% - 12px); margin:auto; }
+  .marketing-shell .story-explorer-content { display:block; width:100%; min-height:365px; text-align:center; }
+  .marketing-shell .story-explorer-panel .story-portrait { margin:auto; border:0; }
+  .marketing-shell .story-explorer-panel h3 { font-size:23px; }
+  .marketing-shell .story-navbar .story-nav-start { max-width:155px; white-space:normal; line-height:1.5; }
+}
+@media(max-width:400px) {
+  .marketing-shell .story-explorers .carousel-controls { display:grid; grid-template-columns:repeat(6,44px); justify-content:center; row-gap:4px; }
+  .marketing-shell .story-explorers .carousel-dot { width:44px; grid-row:1; }
+  .marketing-shell .story-explorers .carousel-controls .story-button:first-child { grid-row:2; grid-column:1; }
+  .marketing-shell .story-explorers .carousel-controls .story-button:last-child { grid-row:2; grid-column:6; }
+}
+
 .marketing-shell .story-motif { position:absolute; left:12%; top:50%; transform:translateY(-50%); width:32%; text-align:center; height:clamp(260px,32vw,480px); background:center/contain no-repeat; opacity:.85; filter:drop-shadow(0 10px 20px #1b2a4a45); pointer-events:none; user-select:none; }
 .marketing-shell .region-1 .story-motif,.marketing-shell .region-3 .story-motif,.marketing-shell .story-hero .story-motif { left:auto; right:7%; }
 .marketing-shell .story-chapter > .story-panel { position:relative; z-index:1; }

@@ -1,17 +1,18 @@
 "use client";
 
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import { marketingFonts } from "@/components/marketingFonts";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
-import useCarouselAutoplay from "@/components/useCarouselAutoplay";
+import useCardCarousel from "@/components/useCardCarousel";
+import { useSessionAnswers } from "@/lib/useSessionAnswers";
+import { journeyEntry } from "@/lib/journeyEntry";
 import "./story.css";
 
-if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollToPlugin);
+if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const chapters = [
   { id: "world", name: "The World" },
@@ -35,44 +36,13 @@ export default function LandingPage() {
   const root = useRef(null);
   const track = useRef(null);
   const carousel = useRef(null);
-  const [explorerIndex, setExplorerIndex] = useState(0);
-  const requestedExplorer = useRef(0);
-  const movingExplorer = useRef(false);
-  useEffect(() => {
-    const element = track.current;
-    const distance = () => element.children[1].offsetLeft - element.children[0].offsetLeft;
-    const settle = () => {
-      if (movingExplorer.current) return;
-      const index = Math.max(0, Math.min(explorers.length - 1, Math.round(element.scrollLeft / distance())));
-      requestedExplorer.current = index;
-      setExplorerIndex(index);
-    };
-    const resize = () => {
-      gsap.killTweensOf(element);
-      element.style.paddingRight = Math.max(5, element.clientWidth - element.firstElementChild.offsetWidth - 5) + "px";
-      element.scrollLeft = requestedExplorer.current * distance();
-      movingExplorer.current = false;
-    };
-    const interrupt = () => {
-      gsap.killTweensOf(element);
-      movingExplorer.current = false;
-    };
-    const observer = new ResizeObserver(resize);
-    observer.observe(element);
-    element.addEventListener("scrollend", settle);
-    element.addEventListener("pointerdown", interrupt);
-    element.addEventListener("wheel", interrupt, { passive: true });
-    return () => {
-      observer.disconnect();
-      element.removeEventListener("scrollend", settle);
-      element.removeEventListener("pointerdown", interrupt);
-      element.removeEventListener("wheel", interrupt);
-    };
-  }, []);
+  const { selected: explorerIndex, select: showExplorer, step: slide, swipeProps } = useCardCarousel(carousel, track, explorers.length);
+  const { session } = useSessionAnswers();
+  const entry = journeyEntry(session);
   const [active, setActive] = useState(0);
 
   const [announcement, setAnnouncement] = useState("");
-  const { contextSafe } = useGSAP(() => {
+  useGSAP(() => {
     const mm = gsap.matchMedia();
     mm.add({ motion: "(prefers-reduced-motion: no-preference)", reduced: "(prefers-reduced-motion: reduce)" }, (context) => {
       const motion = context.conditions.motion;
@@ -105,21 +75,7 @@ export default function LandingPage() {
     });
     return () => mm.revert();
   }, { scope: root });
-  const showExplorer = (index) => contextSafe(() => {
-    const next = (index + explorers.length) % explorers.length;
-    const element = track.current;
-    const distance = element.children[1].offsetLeft - element.children[0].offsetLeft;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    gsap.killTweensOf(element);
-    requestedExplorer.current = next;
-    movingExplorer.current = true;
-    setExplorerIndex(next);
-    gsap.to(element, { scrollTo: { x: next * distance, autoKill: false }, duration: reduced ? 0 : .6, ease: "power2.out", overwrite: true, onComplete: () => {
-      movingExplorer.current = false;
-    } });
-  })();
-  const slide = (direction) => showExplorer(requestedExplorer.current + direction);
-  useCarouselAutoplay(carousel, () => slide(1));
+
 
   return (
     <main ref={root} className={`story-home ${marketingFonts}`}>
@@ -134,7 +90,7 @@ export default function LandingPage() {
             <p className="story-eyebrow">Chapter 01 · The World</p>
             <h1 id="world-title">You are an Explorer.<br /><em>Your career path<br />is a map.</em></h1>
             <p id="world-description" className="story-description">Not sure which college course to choose? Answer a few questions about yourself and find courses worth exploring.</p>
-            <div className="story-actions"><Button href="/intake" className="story-button story-start" label="Start Your Journey ↗" /><a href="#explorers" className="story-text-link">Explore the Story ↓</a></div>
+            <div className="story-actions"><Button href={entry.href} className="story-button story-start" label={entry.label} /><a href="#explorers" className="story-text-link">Explore the Story ↓</a></div>
 
           </Card>
           <div className="story-compass-stage" aria-hidden="true"><div className="story-orbit" /><div className="story-compass-spin"><img className="story-compass" src="/landing-compass.png" width="420" height="480" alt="" /></div><span className="story-compass-caption">YOUR NEXT CHAPTER STARTS HERE</span></div>
@@ -142,15 +98,17 @@ export default function LandingPage() {
         </section>
         <section ref={carousel} id="explorers" className="story-explorers" aria-labelledby="explorers-title">
           <div className="story-explorers-heading"><div><p className="story-eyebrow">Choose how you explore</p><h2 id="explorers-title">Meet the Explorers</h2><p>Every journey starts with picking who you are on the map.<br />Six ways to explore. Pick the one that feels like you.</p></div></div>
-          <div ref={track} className="story-carousel" tabIndex={0} aria-label="Six explorer portraits; swipe or use arrow buttons">
-            {explorers.map(([name, description], index) => { return <Card as="article" key={name} className="story-explorer-card"><div className="story-portrait" role="img" aria-label={`${name}, an ink-and-parchment explorer portrait`} style={index === 5 ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center top" } : { backgroundPosition: `${index * 20}% top` }} /><span className="story-card-number">EXPLORER {number(index)}</span><h3>{name}</h3><p>“{description}”</p></Card>; })}
-          </div>
+          <Card as="div" className="story-panel story-explorer-paper" {...swipeProps}>
+            <div ref={track} className="story-explorer-panel" tabIndex={0} onKeyDown={event => { if (event.key === "ArrowRight" || event.key === "ArrowLeft") { event.preventDefault(); slide(event.key === "ArrowRight" ? 1 : -1); } }} aria-label="Six explorer portraits; swipe or use arrow buttons">
+              {explorers.slice(explorerIndex, explorerIndex + 1).map(([name, description]) => { const index = explorerIndex; return <article key={name} className="story-explorer-content"><div className="story-portrait" role="img" aria-label={`${name}, an ink-and-parchment explorer portrait`} style={index === 5 ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center top" } : { backgroundPosition: `${index * 20}% top` }} /><span className="story-card-number">EXPLORER {number(index)}</span><h3>{name}</h3><p>“{description}”</p></article>; })}
+            </div>
+          </Card>
           <div className="carousel-controls" aria-label="Explorer carousel controls"><Button className="story-button" onClick={() => slide(-1)} label="←" aria-label="Previous explorers" />{explorers.map(([name], index) => <button type="button" key={name} className="carousel-dot" aria-label={`Show ${name}`} aria-pressed={explorerIndex === index} onClick={() => showExplorer(index)} />)}<Button className="story-button" onClick={() => slide(1)} label="→" aria-label="Next explorers" /></div>
         </section>
         {chapters.slice(1, 5).map((chapter, index) => <Fragment key={chapter.id}><section id={`${chapter.id}-chapter`} className={`story-chapter story-region region-${index}`} aria-labelledby={`${chapter.id}-title`}><span className="story-motif" aria-hidden="true" style={{ backgroundImage: `url(/icons/career-compass/${chapter.motif}.svg)` }} />
           <Card as="div" className="story-panel"><p className="story-eyebrow">Chapter {number(index + 1)} · {chapter.name}</p><h2 id={`${chapter.id}-title`}>{chapter.title}</h2><p className="story-description">{chapter.body}</p><div className="story-ribbon">{chapter.count && <span data-count={chapter.count}>{chapter.count}</span>} {chapter.stat}</div></Card>
         </section>{index === 1 && <div className="story-discovery-slot"><aside className="story-popup" aria-hidden="true"><p>BADGE UNLOCKED</p><h3>“Wayfinder”</h3><span>This is what it feels like after every step.</span></aside></div>}</Fragment>)}
-        <section id="ahead-chapter" className="story-chapter story-ending" aria-labelledby="ahead-title"><Card as="div" className="story-panel"><img src="/landing-compass.png" width="76" height="90" alt="" /><p className="story-eyebrow">Chapter 06 · The Journey Ahead</p><h2 id="ahead-title">Every path leads somewhere.<br /><em>Yours hasn&apos;t been decided yet.</em></h2><Button href="/intake" className="story-button story-start" label="Start Your Journey ↗" /><a href="/about" className="story-text-link">About Career Compass ↗</a><p className="story-session">For Senior High School Students · No Account Needed · Nothing Is Saved</p></Card></section>
+        <section id="ahead-chapter" className="story-chapter story-ending" aria-labelledby="ahead-title"><Card as="div" className="story-panel"><img src="/landing-compass.png" width="76" height="90" alt="" /><p className="story-eyebrow">Chapter 06 · The Journey Ahead</p><h2 id="ahead-title">Every path leads somewhere.<br /><em>Yours hasn&apos;t been decided yet.</em></h2><Button href={entry.href} className="story-button story-start" label={entry.label} /><a href="/about" className="story-text-link">About Career Compass ↗</a><p className="story-session">For Senior High School Students · No Account Needed · Nothing Is Saved</p></Card></section>
       </div>
       <span className="sr-only" role="status" aria-live="polite">{announcement}</span>
       <footer className="story-footer"><a className="story-brand" href="#world-chapter"><img src="/landing-compass.png" width="32" height="40" alt="" />CAREER COMPASS</a><p>A web-based decision support system for Senior High School career guidance.</p><a href="#world-chapter">Back to top ↑</a></footer>

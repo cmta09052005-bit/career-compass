@@ -21,6 +21,7 @@ import {
   formatMatchPercent,
 } from "@/lib/scoringEngine";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
+import { toggleCourseComparison } from "@/lib/courseComparison";
 
 export default function ResultsPage() {
   const router = useRouter();
@@ -32,7 +33,6 @@ export default function ResultsPage() {
   }, [confirmMap]);
   const [showAllCourses, setShowAllCourses] = useState(false);
   const [filters, setFilters] = useState([]);
-  const [comparison, setComparison] = useState([]);
   const [compareOpen, setCompareOpen] = usePopupState(false, ".results-compare-dialog .popup-card");
   const compareDialog = useRef(null);
   const compareButton = useRef(null);
@@ -44,6 +44,7 @@ export default function ResultsPage() {
     else if (compareDialog.current?.open) { compareDialog.current.close(); compareButton.current?.focus(); }
   }, [compareOpen]);
   const { session, answers, isReady, updateSession } = useSessionAnswers();
+  const comparison = session.courseComparison || [];
   const [downloading, setDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState("");
   const downloadPending = useRef(false);
@@ -67,7 +68,7 @@ export default function ResultsPage() {
   const comparedCourses = comparison.map(id => topCourses.find(course => course.courseId === id)).filter(Boolean);
 
   function toggleComparison(id) {
-    setComparison(current => current.includes(id) ? current.filter(value => value !== id) : [...current.slice(-1), id]);
+    updateSession({ courseComparison: toggleCourseComparison(comparison, id) });
   }
 
   async function downloadReport() {
@@ -109,7 +110,7 @@ export default function ResultsPage() {
         <Card variant="popup" className="popup-card">
           <button className="popup-close" aria-label="Close dialog" onClick={() => setConfirmMap(false)}>×</button>
           <h2 id="results-map-title">Go back to your map?</h2>
-          <p>Your results are still here. You can come back to them anytime this session, unless you restart or leave the journey.</p>
+          <p>Your results are still here. You can come back to them anytime this session, unless you restart or close this tab.</p>
           {!session.reportDownloaded && <p className="mt-3 text-sm">You haven&apos;t downloaded your report yet.</p>}
           <div className="popup-actions"><Button label="Stay" autoFocus variant="secondary" onClick={() => setConfirmMap(false)} /><Button label="Back to Map" onClick={() => setConfirmMap(false, () => router.push("/journey"))} /></div>
         </Card>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/Button";
 
-export default function MarketingNavbar({ solid = false, active, onNavigate }) {
+export default function MarketingNavbar({ solid = false, active, onNavigate, entry = { href: "/intake", label: "START YOUR JOURNEY" } }) {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header data-menu-open={menuOpen} onKeyDown={(event) => { if (event.key === "Escape") setMenuOpen(false); }} className={`story-navbar ${solid ? "is-solid" : ""}`}>
@@ -16,7 +16,7 @@ export default function MarketingNavbar({ solid = false, active, onNavigate }) {
         <Link href="/about" aria-current={active === "/about" ? "page" : undefined} onClick={(event) => onNavigate?.(event, "/about")}>About</Link>
         <Link href="/how-it-works" aria-current={active === "/how-it-works" ? "page" : undefined} onClick={(event) => onNavigate?.(event, "/how-it-works")}>How It Works</Link>
       </nav>
-      <Button href="/intake" className="story-button story-nav-start" label="Start Journey ↗" />
+      <Button href={entry.href} className="story-button story-nav-start" label={entry.label} />
     </header>
   );
 }

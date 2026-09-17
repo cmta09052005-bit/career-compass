@@ -35,14 +35,14 @@ export default function CourseMatch({ course, rank, strength, dimmed, selected, 
           <h3>{course.courseId} – {course.courseName}</h3>
           <span className="course-category">{course.categoryName}</span>
         </div>
-        <div className="course-strength" role="img" aria-label={`Relative match strength, ranked ${rank}`} title="Arc shows relative strength among these matches">
+        <div className="course-strength" role="img" aria-label={`Relative match strength, ranked ${rank}`} data-tooltip="Arc shows relative strength among these matches" tabIndex={0}>
           <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="35" fill="none" stroke="#cbb891" strokeWidth="5" /><circle cx="40" cy="40" r="35" fill="none" stroke="#98701c" strokeWidth="5" pathLength="100" strokeDasharray={`${strength} 100`} strokeLinecap="round" transform="rotate(-90 40 40)" /></svg>
-          <Image src="/landing-compass.png" width={42} height={48} alt="" />
+          <Image src="/landing-compass.png" width={42} height={48} style={{ height: "auto" }} alt="" />
         </div>
       </div>
       {rank === 1 && strongestCategory && <p className="landmark-insight">Your strongest field was <strong>{strongestCategory.label}</strong>.</p>}
       <div className="course-match-actions">
-        <Button label="Explore This Course" href={`/results/${course.courseId}`} variant="secondary" />
+        <Button label={<><Image src="/icons/career-compass/magnifying-glass.svg" width={26} height={26} alt="" />Explore This Course</>} href={`/results/${course.courseId}`} variant="secondary" />
         <button type="button" className="course-compare-toggle" aria-pressed={selected} aria-label={`Compare ${course.courseName}`} onClick={onCompare}><Image src="/icons/career-compass/magnifying-glass.svg" width={26} height={26} alt="" />{selected ? "Selected for comparison" : "Compare"}</button>
       </div>
     </Card>

@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { journeyEntry } from "@/lib/journeyEntry";
+import { SESSION_STORAGE_KEY } from "@/lib/useSessionAnswers";
 import MarketingNavbar from "@/components/MarketingNavbar";
 import usePopupState from "./usePopupState";
 import JourneyPortal from "@/components/JourneyPortal";
@@ -17,6 +19,10 @@ export default function MarketingShell({ children }) {
   const router = useRouter();
   const content = useRef(null);
   const switching = useRef(false);
+  const [entry, setEntry] = useState(() => journeyEntry({}));
+  useEffect(() => {
+    try { const stored = JSON.parse(sessionStorage.getItem(SESSION_STORAGE_KEY)) || {}; queueMicrotask(() => setEntry(journeyEntry(stored))); } catch { /* Fresh session CTA remains available. */ }
+  }, [pathname]);
   const [scrolled, setScrolled] = useState(false);
   const [portal, setPortal] = usePopupState(false, ".portal-card");
   const marketing = routes.includes(pathname);
@@ -55,9 +61,9 @@ export default function MarketingShell({ children }) {
 
   const startJourney = (event) => {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    if (marketing && pathname !== "/intake" && event.target.closest('a[href="/intake"]')) { event.preventDefault(); event.stopPropagation(); setPortal(true); router.prefetch("/intake"); }
+    if (marketing && pathname !== "/intake" && event.target.closest('a[href="/intake"]')) { event.preventDefault(); event.stopPropagation(); if (entry.href !== "/intake") { router.push(entry.href); return; } setPortal(true); router.prefetch("/intake"); }
   };
-  return <div className={`${marketing ? "story-home marketing-shell" : ""} ${marketingFonts} ${assessment ? "assessment-frame" : ""}`} onClickCapture={startJourney}>{marketing && pathname !== "/intake" && <MarketingNavbar solid={pathname !== "/" || scrolled} active={pathname} onNavigate={navigate} />}<div ref={content} className={marketing ? "marketing-content" : undefined}>{children}</div>{portal && <JourneyPortal celebration icon={portal === "success" ? "/icons/career-compass/explorer-backpack.svg" : "/landing-compass.png"} title={portal === "success" ? "Explorer Created!" : "Welcome, Explorer!"} description={portal === "success" ? "Your profile is ready. Your map awaits." : "Your journey begins now."} destinationSelector={portal === "success" ? ".explorer-map-screen" : ".basecamp"} onCancel={() => setPortal(false)} onEnter={() => router.push(portal === "success" ? "/journey" : "/intake")} onComplete={() => setPortal(false)} />}</div>;
+  return <div className={`${marketing ? "story-home marketing-shell" : ""} ${marketingFonts} ${assessment ? "assessment-frame" : ""}`} onClickCapture={startJourney}>{marketing && pathname !== "/intake" && <MarketingNavbar entry={entry} solid={pathname !== "/" || scrolled} active={pathname} onNavigate={navigate} />}<div ref={content} className={marketing ? "marketing-content" : undefined}>{children}</div>{portal && <JourneyPortal celebration icon={portal === "success" ? "/icons/career-compass/explorer-backpack.svg" : "/landing-compass.png"} title={portal === "success" ? "Explorer Created!" : "Welcome, Explorer!"} description={portal === "success" ? "Your profile is ready. Your map awaits." : "Your journey begins now."} destinationSelector={portal === "success" ? ".explorer-map-screen" : ".basecamp"} onCancel={() => setPortal(false)} onEnter={() => router.push(portal === "success" ? "/journey" : "/intake")} onComplete={() => setPortal(false)} />}</div>;
 }
 
 

@@ -41,6 +41,7 @@ export default function SkillsPage() {
   try { seenBriefing = sessionStorage.getItem(BRIEFING_KEY) === "seen"; } catch { /* In-memory dismissal remains available. */ }
   const showBriefing = !dismissedBriefing && !seenBriefing && !Object.keys(session.skills).length;
   const heading = useRef(null);
+  const [reviewing, setReviewing] = useState(false);
   const [confirming, setConfirming] = useState(false);
   const advancing = useRef(false);
   const lastRustle = useRef("");
@@ -60,6 +61,7 @@ export default function SkillsPage() {
     gsap.fromTo(".forest-growth-stage[data-selected=true]", { boxShadow: "0 0 0px #bbc66300" }, { boxShadow: "0 0 24px #bbc663aa", duration: reduced ? 0 : .2 });
     gsap.delayedCall(.6, () => {
       if (statementIndex < SKILL_ITEMS.length - 1) {
+        setReviewing(Number.isFinite(session.skills[SKILL_ITEMS[statementIndex + 1].id]));
         setStatementIndex((index) => index + 1);
         setConfirming(false);
         advancing.current = false;
@@ -92,6 +94,7 @@ export default function SkillsPage() {
       router.push("/journey");
       return;
     }
+    setReviewing(true);
     setStatementIndex((index) => index - 1);
   }
 
@@ -143,7 +146,7 @@ export default function SkillsPage() {
             disabled={confirming}
             className="w-full sm:w-auto"
           />
-          <Button label={isFinalStatement ? "Complete Forest" : "Next"} className="forest-complete" onClick={() => goNext()} disabled={!hasSelectedValue || confirming} />
+          {(isFinalStatement || (reviewing && hasSelectedValue)) && <Button label={isFinalStatement ? "Complete Forest" : "Next"} className="forest-complete" onClick={() => goNext()} disabled={!hasSelectedValue || confirming} />}
         </div>
       </Card>}
     </main></JourneyAccess>

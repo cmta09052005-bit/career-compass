@@ -507,3 +507,6 @@ html:has(.assessment-frame), body:has(.assessment-frame) { height:100%; overflow
 .report-compass-needle { transform-origin:32px 32px; animation:report-needle-settle 800ms var(--popup-ease) both; }
 @keyframes report-needle-settle { 0% { transform:rotate(-45deg); } 65% { transform:rotate(12deg); } 100% { transform:rotate(0deg); } }
 @media(prefers-reduced-motion:reduce) { .report-compass-needle { animation:none; } }
+/* Shared presentation for short hover/focus hints. */
+.compass-tooltip { position:fixed; z-index:150; padding:10px 12px; border:1px solid #b28b4f; border-radius:5px; background:#f5ecd7; color:#1b2a4a; box-shadow:0 5px 16px #1b2a4a33; font:400 13px/1.5 var(--font-inter),sans-serif; pointer-events:none; }
+.results-screen .assessment-scroll .game-button-secondary,.report-screen .game-button-secondary,.field-journal .journal-footer .game-button-secondary { color:#fff3d5!important; background:repeating-linear-gradient(4deg,transparent 0 7px,#cba36318 8px 9px),linear-gradient(#715135,#463022)!important; border-color:#d0a75e!important; }

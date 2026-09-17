@@ -45,7 +45,7 @@ function CampDust() {
 
 export default function IntakePage() {
   const router = useRouter();
-  const { session, isReady, updateSession, resetSession } = useSessionAnswers();
+  const { session, isReady, updateSession } = useSessionAnswers();
   const [step, setStep] = useState(1);
   const [sessionEnded, setSessionEnded] = useState(false);
   useEffect(() => { queueMicrotask(() => setSessionEnded(new URLSearchParams(window.location.search).get("session") === "ended")); }, []);
@@ -137,7 +137,7 @@ export default function IntakePage() {
             </fieldset>
             <fieldset disabled={!isReady}>
               <legend>Current year level <span className="basecamp-optional">Optional</span></legend>
-              <div className="basecamp-years">{YEAR_LEVELS.map((yearLevel) => <label key={yearLevel} className="basecamp-choice"><input className="sr-only" type="radio" name="yearLevel" value={yearLevel} checked={session.yearLevel === yearLevel} onChange={() => updateSession({ yearLevel })} /><span className="basecamp-choice-face">{yearLevel}<SelectionStamp /></span></label>)}</div>
+              <div className="basecamp-years">{YEAR_LEVELS.map((yearLevel) => <label key={yearLevel} className="basecamp-choice"><input className="sr-only" type="checkbox" name="yearLevel" value={yearLevel} checked={session.yearLevel === yearLevel} onChange={() => updateSession({ yearLevel: session.yearLevel === yearLevel ? "" : yearLevel })} /><span className="basecamp-choice-face">{yearLevel}<SelectionStamp /></span></label>)}</div>
               <p className="basecamp-helper">This is for personalization only. It does not affect your recommendations.</p>
             </fieldset>
             <div className="basecamp-actions"><Button type="submit" disabled={!isReady} className="story-button basecamp-cta" label="CONTINUE →" /></div>
@@ -149,8 +149,8 @@ export default function IntakePage() {
         </div>
       </Card>
       <dialog ref={leaveDialog} className="basecamp-leave popup-card" aria-labelledby="leave-title" aria-describedby="leave-description" onCancel={(event) => { event.preventDefault(); setLeaving(false); }} onClose={() => setLeaving(false)}>
-        <button className="popup-close" aria-label="Close dialog" onClick={() => setLeaving(false)}>×</button><h2 id="leave-title">Leave your journey?</h2><p id="leave-description">Your answers here aren&apos;t saved once you go back.</p>
-        <div><Button autoFocus className="story-button" label="Stay" onClick={() => setLeaving(false)} /><button className="basecamp-back" type="button" onClick={() => { resetSession(); router.push("/"); }}>Leave</button></div>
+        <button className="popup-close" aria-label="Close dialog" onClick={() => setLeaving(false)}>×</button><h2 id="leave-title">Leave your journey?</h2><p id="leave-description">Your progress stays in this tab. You can continue from Home anytime before closing it.</p>
+        <div><Button autoFocus className="story-button" label="Stay" onClick={() => setLeaving(false)} /><button className="basecamp-back" type="button" onClick={() => { router.push("/"); }}>Leave</button></div>
       </dialog>
     </main>
   );
