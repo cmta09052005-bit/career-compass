@@ -4,6 +4,7 @@ import "@/components/popups.css";
 import SoundEffects from "@/components/SoundEffects";
 import MarketingShell from "@/components/MarketingShell";
 import TooltipProvider from "@/components/TooltipProvider";
+import LanguageProvider from "@/components/LanguageProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,9 +31,11 @@ export default function RootLayout({ children }) {
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-beige font-sans text-navy">
+        <LanguageProvider>
         <SoundEffects />
         <TooltipProvider />
         <MarketingShell>{children}</MarketingShell>
+        </LanguageProvider>
       </body>
     </html>
   );

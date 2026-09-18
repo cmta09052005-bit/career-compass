@@ -1,6 +1,6 @@
 "use client";
 
-import { createElement, forwardRef } from "react";
+import { Children, cloneElement, createElement, forwardRef, Fragment, isValidElement } from "react";
 import { useLanguage } from "./LanguageProvider";
 
 const TEXT_ATTRIBUTES = ["aria-label", "aria-valuetext", "alt", "title", "placeholder", "data-tooltip"];
@@ -14,7 +14,7 @@ const Localized = forwardRef(function Localized({ as = "span", children, ...prop
   for (const key of TEXT_ATTRIBUTES) {
     if (typeof translated[key] === "string") translated[key] = t(translated[key]);
   }
-  const text = child => typeof child === "string" ? t(child) : Array.isArray(child) ? child.map(text) : child;
+  const text = child => typeof child === "string" ? t(child) : Array.isArray(child) ? Children.map(child, text) : isValidElement(child) && child.type === Fragment ? cloneElement(child, {}, text(child.props.children)) : child;
   return createElement(as, translated, text(children));
 });
 

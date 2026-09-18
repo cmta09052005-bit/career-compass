@@ -1,6 +1,17 @@
 @import "tailwindcss";
 
 .assessment-validation { color:#9b3c24!important; font-weight:600; }
+.language-switcher { position:relative; font:inherit; }
+.language-switcher summary { cursor:pointer; list-style:none; white-space:nowrap; }
+.language-switcher summary::-webkit-details-marker { display:none; }
+.language-switcher summary:focus-visible,.language-options button:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
+.language-options { position:absolute; top:calc(100% + 12px); right:0; z-index:100; min-width:150px; padding:6px; border:1px solid #ad8951; border-radius:4px; background:#f5ecd7; color:#1b2a4a; box-shadow:0 6px 18px #1b2a4a33; }
+.language-options button { display:block; width:100%; padding:10px 14px; text-align:left; cursor:pointer; }
+.language-options button[aria-pressed=true] { font-weight:700; background:#d9c7a3; }
+.atlas-language select { max-width:60%; padding:8px; border:1px solid #ad8951; border-radius:4px; background:#f5ecd7; color:#1b2a4a; font:inherit; }
+html[lang=fil] .story-navbar nav { gap:clamp(10px,1.5vw,24px); }
+html[lang=fil] .story-navbar { flex-wrap:wrap; }
+html[lang=fil] .atlas-utility small { white-space:normal; }
 
 /* Explorer palette — finalized. Do not change. */
 @theme inline {

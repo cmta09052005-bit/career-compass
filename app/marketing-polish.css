@@ -78,6 +78,15 @@
 
 .story-menu-toggle { display:none; }
 .marketing-shell .story-navbar nav a { min-height:44px; display:inline-flex; align-items:center; }
+.marketing-shell .story-navbar[data-landing] .language-switcher summary { display:flex; align-items:center; gap:6px; min-height:44px; font-family:var(--story-label),sans-serif; font-size:11px; font-weight:600; letter-spacing:.13em; text-transform:uppercase; }
+.marketing-shell .story-navbar[data-landing] .language-switcher summary span { font-size:.8em; letter-spacing:0; }
+.marketing-shell .story-navbar[data-landing] .language-switcher summary:hover { color:#d4a017; }
+.marketing-shell .story-navbar[data-landing] .language-options { top:calc(100% + 6px); min-width:128px; padding:4px; font-family:var(--story-label),sans-serif; font-size:11px; font-weight:600; line-height:1.5; letter-spacing:.03em; }
+.marketing-shell .story-navbar[data-landing] .language-options button { min-height:36px; padding:9px 12px; }
+@media(max-width:800px) {
+ .marketing-shell .story-navbar[data-landing] .language-switcher summary { font-size:clamp(.55rem,1.5vw,.65rem); }
+ .marketing-shell .story-navbar[data-landing] .language-options button { min-height:44px; }
+}
 .marketing-shell .story-text-link { min-height:44px; align-content:center; white-space:normal; }
 @media(max-width:800px) {
  .story-menu-toggle { display:block; min-width:44px; min-height:44px; color:#f5ecd7; border:1px solid #b39561; padding:6px 10px; border-radius:4px; margin-left:auto; font-size:12px; }

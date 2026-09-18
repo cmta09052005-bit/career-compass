@@ -1,6 +1,7 @@
 "use client";
 
 import Localized from "@/components/Localized";
+import { useLanguage } from "@/components/LanguageProvider";
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -25,6 +26,7 @@ import { useSessionAnswers } from "@/lib/useSessionAnswers";
 import { COMPARISON_LIMIT_NOTICE, toggleCourseComparison } from "@/lib/courseComparison";
 
 export default function ResultsPage() {
+  const { language } = useLanguage();
   const router = useRouter();
   const mapDialog = useRef(null);
   const [confirmMap, setConfirmMap] = usePopupState(false, ".results-map-dialog .popup-card");
@@ -81,7 +83,7 @@ export default function ResultsPage() {
     playSound("badge", { volume: .48 });
     setDownloadError("");
     try {
-      const report = buildExplorerReport(session, answers, result);
+      const report = buildExplorerReport(session, answers, result, language);
       const celebrationBeat = new Promise(resolve => window.setTimeout(resolve, 950));
       if (!mounted.current) return;
       await downloadExplorerReport(report);

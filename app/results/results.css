@@ -26,6 +26,7 @@
 .results-screen .course-comparison p { font-size:14px; }
 .results-screen .course-comparison .comparison-score { font-weight:800; color:#715014; font-size:22px; }
 .results-screen .results-download-note { padding:16px; border:1px solid #b8955255; border-radius:8px; background:#f5ecd70d; }
+.results-screen:has(.results-download-seal)::after { content:""; display:block; position:fixed; inset:0; z-index:29; opacity:1; mix-blend-mode:normal; background:#0c1625bd; backdrop-filter:blur(6px); pointer-events:auto; }
 .results-screen .results-download-seal { position:fixed; z-index:30; left:50%; top:50%; transform:translate(-50%,-50%); padding:26px; border:3px double #b89552; border-radius:12px; background:#f5ecd7; color:#1b2a4a; text-align:center; pointer-events:none; box-shadow:0 8px 40px #08101e66; }
 .results-download-seal .celebration-symbol { animation:report-stamp .45s ease-out both; }
 .results-screen .game-button img { display:inline-block; margin-right:8px; vertical-align:middle; }

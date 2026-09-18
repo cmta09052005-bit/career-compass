@@ -90,7 +90,7 @@ export default function IntakePage() {
   const chooseStrand = (strand) => {
     errorTween.current?.revert();
     setError(false);
-    updateSession({ strand });
+    updateSession({ strand: session.strand === strand ? "" : strand });
   };
 
   const changeStep = (next) => contextSafe(() => {
@@ -125,7 +125,7 @@ export default function IntakePage() {
             <Localized as="h1" id="basecamp-title" ref={heading} tabIndex={-1}>{step === 1 ? "Who Are You, Explorer?" : session.nickname.trim() ? `Choose Your Explorer, ${session.nickname.trim()}` : "Choose Your Explorer"}</Localized>
             <Localized as="p" className="basecamp-subtext">{step === 1 ? "Choose your strand to begin. You can also add a name for your map." : "Pick who you'll be for this journey. It's just for fun, your answers are what really matter."}</Localized>
             {step === 1 && <Localized as="p" className="basecamp-privacy">No account needed. Nothing you enter here is saved once your session ends.</Localized>}
-            {step === 2 && <Localized as="div" className="basecamp-recap"><Localized as="span"><i className="recap-person" aria-hidden="true" />{session.nickname.trim() || "Explorer"}</Localized><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.strand}</Localized>{session.yearLevel && <><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.yearLevel}</Localized></>}<Localized as="button" type="button" onClick={() => changeStep(1)}>Edit</Localized></Localized>}
+            {step === 2 && <Localized as="div" className="basecamp-recap"><Localized as="span" translate={session.nickname.trim() ? "no" : undefined}><i className="recap-person" aria-hidden="true" />{session.nickname.trim() || "Explorer"}</Localized><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.strand}</Localized>{session.yearLevel && <><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.yearLevel}</Localized></>}<Localized as="button" type="button" onClick={() => changeStep(1)}>Edit</Localized></Localized>}
           </Localized>
           {step === 1 ? <form onSubmit={advance} noValidate className="basecamp-form">
             <div>
@@ -134,7 +134,7 @@ export default function IntakePage() {
             </div>
             <Localized as="fieldset" ref={strandGroup} disabled={!isReady} className={error ? "has-error" : ""} aria-invalid={error} aria-describedby={error ? "strand-error" : undefined}>
               <Localized as="legend">Choose your strand <Localized as="span" className="basecamp-required" aria-hidden="true">*</Localized><Localized as="span" className="sr-only"> (required)</Localized></Localized>
-              <Localized as="div" className="basecamp-strands">{STRANDS.map((strand) => <label key={strand} className="basecamp-choice"><input className="sr-only" type="radio" name="strand" required value={strand} checked={session.strand === strand} aria-describedby={error ? "strand-error" : undefined} onChange={() => chooseStrand(strand)} /><Localized as="span" className="basecamp-choice-face">{strand}<SelectionStamp /></Localized></label>)}</Localized>
+              <Localized as="div" className="basecamp-strands">{STRANDS.map((strand) => <label key={strand} className="basecamp-choice"><input className="sr-only" type="checkbox" name="strand" value={strand} checked={session.strand === strand} aria-describedby={error ? "strand-error" : undefined} onChange={() => chooseStrand(strand)} /><Localized as="span" className="basecamp-choice-face">{strand}<SelectionStamp /></Localized></label>)}</Localized>
               {error && <Localized as="p" id="strand-error" className="basecamp-error" role="alert">Please choose a strand to continue.</Localized>}
             </Localized>
             <fieldset disabled={!isReady}>
@@ -144,7 +144,7 @@ export default function IntakePage() {
             </fieldset>
             <div className="basecamp-actions"><Button type="submit" disabled={!isReady} className="story-button basecamp-cta" label="CONTINUE →" /></div>
           </form> : <Localized as="div" className="basecamp-avatars-step">
-            <Localized as="fieldset" className="basecamp-avatars"><Localized as="legend" className="sr-only">Choose your explorer (optional)</Localized>{EXPLORERS.map(([id, name, description], index) => <label key={id} className={`basecamp-avatar ${id === "random" ? "basecamp-skip" : ""}`}><input className="sr-only" type="radio" name="avatar" value={id} checked={session.avatarId === id} onChange={() => updateSession({ avatarId: id })} /><span className="basecamp-avatar-face"><span className="basecamp-portrait-frame"><span aria-hidden="true" className={`basecamp-portrait ${id === "random" ? "basecamp-silhouette" : ""}`} style={id === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center top" } : { "--portrait-position": `${Math.min(index, 5) * 20}%` }} /></span><Localized as="strong">{name}</Localized><Localized as="span" className="basecamp-flavor">{description}</Localized><SelectionStamp /></span></label>)}</Localized>
+            <Localized as="fieldset" className="basecamp-avatars"><Localized as="legend" className="sr-only">Choose your explorer (optional)</Localized>{EXPLORERS.map(([id, name, description], index) => <label key={id} className={`basecamp-avatar ${id === "random" ? "basecamp-skip" : ""}`}><input className="sr-only" type="checkbox" name="avatar" value={id} checked={session.avatarId === id} onChange={() => updateSession({ avatarId: session.avatarId === id ? null : id })} /><span className="basecamp-avatar-face"><span className="basecamp-portrait-frame"><span aria-hidden="true" className={`basecamp-portrait ${id === "random" ? "basecamp-silhouette" : ""}`} style={id === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center top" } : { "--portrait-position": `${Math.min(index, 5) * 20}%` }} /></span><Localized as="strong">{name}</Localized><Localized as="span" className="basecamp-flavor">{description}</Localized><SelectionStamp /></span></label>)}</Localized>
             {/* TODO: mount persistent Explorer status chip on next screen (The Atlas) */}
             <div className="basecamp-actions"><Button className="story-button basecamp-cta" label="ENTER MY MAP →" disabled={!isReady} onClick={() => { if (!isReady) return; if (!STRANDS.includes(session.strand)) { setError(true); changeStep(1); return; } const autoAssigned = !session.avatarId || ["random", "skip"].includes(session.avatarId); if (autoAssigned) updateSession({ avatarId: EXPLORERS[Math.floor(Math.random() * 6)][0] }); window.dispatchEvent(new CustomEvent("explorer-created", { detail: { autoAssigned } })); }} /></div>
           </Localized>}
