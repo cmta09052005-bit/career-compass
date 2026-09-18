@@ -1,5 +1,8 @@
+"use client";
+
+import Localized from "@/components/Localized";
 export default function ForestVine({ leaves }) {
-  return <div className="forest-progress" role="progressbar" aria-label="The Forest" aria-valuemin={0} aria-valuemax={10} aria-valuenow={leaves}>
+  return <Localized as="div" className="forest-progress" role="progressbar" aria-label="The Forest" aria-valuemin={0} aria-valuemax={10} aria-valuenow={leaves}>
     <svg viewBox="0 0 340 84" fill="none" strokeLinecap="round" aria-hidden="true">
       <path className="forest-vine-guide" d="M14 54Q95 40 175 54T326 54" />
       <path className="forest-vine-stem" d="M14 54Q95 40 175 54T326 54" pathLength="1" strokeDasharray="1" strokeDashoffset={1 - leaves / 10} />
@@ -8,5 +11,5 @@ export default function ForestVine({ leaves }) {
         <path className="forest-leaf-vein" d={index % 2 ? "M-2 3L-15 17" : "M-2-3L-15-19"} />
       </g>)}
     </svg>
-  </div>;
+  </Localized>;
 }

@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { useGSAP } from "@gsap/react";
@@ -64,7 +66,7 @@ export default function MarketingShell({ children }) {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     if (marketing && pathname !== "/intake" && event.target.closest('a[href="/intake"]')) { event.preventDefault(); event.stopPropagation(); if (entry.href !== "/intake") { router.push(entry.href); return; } setPortal(true); router.prefetch("/intake"); }
   };
-  return <div className={`${marketing ? "story-home marketing-shell" : ""} ${marketingFonts} ${assessment ? "assessment-frame" : ""}`} onClickCapture={startJourney}>{marketing && pathname !== "/intake" && <MarketingNavbar entry={entry} solid={pathname !== "/" || scrolled} active={pathname} onNavigate={navigate} />}<div ref={content} className={marketing ? "marketing-content" : undefined}>{children}</div>{portal && <JourneyPortal celebration icon={portal === "success" ? "/icons/career-compass/explorer-backpack.svg" : "/landing-compass.png"} title={portal === "success" ? "Explorer Created!" : "Welcome, Explorer!"} description={portal === "success" ? "Your profile is ready. Your map awaits." : "Your journey begins now."} notice={portal === "success" && autoAssignedAvatar ? "We randomly assigned your explorer avatar. It does not affect your assessment results or scoring." : undefined} destinationSelector={portal === "success" ? ".explorer-map-screen" : ".basecamp"} onCancel={() => setPortal(false)} onEnter={() => router.push(portal === "success" ? "/journey" : "/intake")} onComplete={() => setPortal(false)} />}</div>;
+  return <Localized as="div" className={`${marketing ? "story-home marketing-shell" : ""} ${marketingFonts} ${assessment ? "assessment-frame" : ""}`} onClickCapture={startJourney}>{marketing && pathname !== "/intake" && <MarketingNavbar entry={entry} solid={pathname !== "/" || scrolled} active={pathname} onNavigate={navigate} />}<Localized as="div" ref={content} className={marketing ? "marketing-content" : undefined}>{children}</Localized>{portal && <JourneyPortal celebration icon={portal === "success" ? "/icons/career-compass/explorer-backpack.svg" : "/landing-compass.png"} title={portal === "success" ? "Explorer Created!" : "Welcome, Explorer!"} description={portal === "success" ? "Your profile is ready. Your map awaits." : "Your journey begins now."} notice={portal === "success" && autoAssignedAvatar ? "We randomly assigned your explorer avatar. It does not affect your assessment results or scoring." : undefined} destinationSelector={portal === "success" ? ".explorer-map-screen" : ".basecamp"} onCancel={() => setPortal(false)} onEnter={() => router.push(portal === "success" ? "/journey" : "/intake")} onComplete={() => setPortal(false)} />}</Localized>;
 }
 
 

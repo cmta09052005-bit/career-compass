@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -43,7 +45,7 @@ export default function JourneyPortal({ onEnter, onCancel, onComplete, title, de
     tl.addPause(2, enter);
     return () => { observer?.disconnect(); tl.kill(); advance.current = () => {}; };
   }, { scope: dialog });
-  return <dialog ref={dialog} className="journey-portal" data-celebration={celebration ? "true" : undefined} aria-labelledby="portal-title" aria-describedby={notice ? "portal-description portal-notice" : "portal-description"} onCancel={event => { event.preventDefault(); if (!handoff.current) onCancel(); }} onClick={() => advance.current()} onKeyDown={event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); advance.current(); } }}><div className={`portal-card popup-card celebration-card ${celebration ? "popup-win" : ""}`}><button className="popup-close" aria-label="Close dialog" onKeyDown={event => event.stopPropagation()} onClick={event => { event.stopPropagation(); if (handoff.current) onComplete(); else onCancel(); }}>×</button><CelebrationEffects><Image className="portal-compass" src={icon} alt="" width={116} height={116} /></CelebrationEffects><h2 id="portal-title">{title}</h2><p id="portal-description">{description}</p>{notice && <p id="portal-notice" className="portal-notice">{notice}</p>}</div></dialog>;
+  return <dialog ref={dialog} className="journey-portal" data-celebration={celebration ? "true" : undefined} aria-labelledby="portal-title" aria-describedby={notice ? "portal-description portal-notice" : "portal-description"} onCancel={event => { event.preventDefault(); if (!handoff.current) onCancel(); }} onClick={() => advance.current()} onKeyDown={event => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); advance.current(); } }}><Localized as="div" className={`portal-card popup-card celebration-card ${celebration ? "popup-win" : ""}`}><Localized as="button" className="popup-close" aria-label="Close dialog" onKeyDown={event => event.stopPropagation()} onClick={event => { event.stopPropagation(); if (handoff.current) onComplete(); else onCancel(); }}>×</Localized><CelebrationEffects><Localized as={Image} className="portal-compass" src={icon} alt="" width={116} height={116} /></CelebrationEffects><Localized as="h2" id="portal-title">{title}</Localized><Localized as="p" id="portal-description">{description}</Localized>{notice && <Localized as="p" id="portal-notice" className="portal-notice">{notice}</Localized>}</Localized></dialog>;
 }
 
 

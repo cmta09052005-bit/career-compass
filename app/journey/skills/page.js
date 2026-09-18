@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
@@ -20,6 +22,7 @@ import {
 } from "@/lib/useSessionAnswers";
 import useUnsavedProgressWarning from "@/lib/useUnsavedProgressWarning";
 import { playSound } from "@/lib/sound";
+import { isValidConfidence } from "@/lib/assessmentValidation";
 
 gsap.registerPlugin(useGSAP);
 
@@ -31,7 +34,7 @@ export default function SkillsPage() {
   const scrollCard = useRef(null);
   const { session, isReady, updateSession, discardSection } = useSessionAnswers();
   const [activeStatement, setActiveStatement] = useState(null);
-  const firstUnanswered = SKILL_ITEMS.findIndex(item => !Number.isFinite(session.skills[item.id]));
+  const firstUnanswered = SKILL_ITEMS.findIndex(item => !isValidConfidence(session.skills[item.id]));
   const statementIndex = activeStatement ?? (firstUnanswered < 0 ? 9 : firstUnanswered);
   function setStatementIndex(next) {
     setActiveStatement(typeof next === "function" ? next(statementIndex) : next);
@@ -41,7 +44,7 @@ export default function SkillsPage() {
   try { seenBriefing = sessionStorage.getItem(BRIEFING_KEY) === "seen"; } catch { /* In-memory dismissal remains available. */ }
   const showBriefing = !dismissedBriefing && !seenBriefing && !Object.keys(session.skills).length;
   const heading = useRef(null);
-  const [reviewing, setReviewing] = useState(false);
+  const [attempted, setAttempted] = useState(false);
   const [confirming, setConfirming] = useState(false);
   const advancing = useRef(false);
   const lastRustle = useRef("");
@@ -53,7 +56,7 @@ export default function SkillsPage() {
 
   const currentItem = SKILL_ITEMS[statementIndex];
   const selectedValue = session.skills[currentItem.id];
-  const hasSelectedValue = Number.isFinite(selectedValue);
+  const hasSelectedValue = isValidConfidence(selectedValue);
   const isFinalStatement = statementIndex === SKILL_ITEMS.length - 1;
   useGSAP(() => {
     if (!confirming || !scrollCard.current) return;
@@ -61,7 +64,7 @@ export default function SkillsPage() {
     gsap.fromTo(".forest-growth-stage[data-selected=true]", { boxShadow: "0 0 0px #bbc66300" }, { boxShadow: "0 0 24px #bbc663aa", duration: reduced ? 0 : .2 });
     gsap.delayedCall(.6, () => {
       if (statementIndex < SKILL_ITEMS.length - 1) {
-        setReviewing(Number.isFinite(session.skills[SKILL_ITEMS[statementIndex + 1].id]));
+        setAttempted(false);
         setStatementIndex((index) => index + 1);
         setConfirming(false);
         advancing.current = false;
@@ -75,7 +78,8 @@ export default function SkillsPage() {
   const visibleLeaves = statementIndex + (confirming ? 1 : 0);
 
   function selectConfidence(value) {
-    if (!isReady || advancing.current) return;
+    if (!isReady || advancing.current || !isValidConfidence(value)) return;
+    setAttempted(false);
     setActiveStatement(statementIndex);
     const stageKey = `${currentItem.id}:${value}`;
     if (lastRustle.current !== stageKey) {
@@ -94,12 +98,17 @@ export default function SkillsPage() {
       router.push("/journey");
       return;
     }
-    setReviewing(true);
+    setAttempted(false);
     setStatementIndex((index) => index - 1);
   }
 
   function goNext(value = selectedValue) {
-    if (!isReady || !Number.isFinite(value) || advancing.current) return;
+    if (!isReady || advancing.current) return;
+    if (!isValidConfidence(value)) {
+      setAttempted(true);
+      scrollCard.current?.querySelector('[role="slider"]')?.focus();
+      return;
+    }
     selectConfidence(value);
     playSound(statementIndex === SKILL_ITEMS.length - 1 ? "unlock" : "confirm");
     advancing.current = true;
@@ -112,33 +121,34 @@ export default function SkillsPage() {
   }
 
   return (
-    <JourneyAccess session={session} isReady={isReady} requires={["interests"]}><main className="trail-screen trail-forest game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
+    <JourneyAccess session={session} isReady={isReady} requires={["interests"]}><Localized as="main" className="trail-screen trail-forest game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
       {!confirming && <TrailExit onLeave={() => { discardSection("skills"); router.push("/journey"); }} />}
       <div className="forest-light" aria-hidden="true" style={{ opacity: statementIndex / 9 }} />
       <div className="forest-mist" aria-hidden="true" />
-      <div className="forest-fireflies" aria-hidden="true">{Array.from({ length: 12 }, (_, index) => <i key={index} style={{ left: ((index * 29 + 7) % 100) + "%", top: ((index * 17 + 13) % 90) + "%", animationDelay: (-index * 1.7) + "s", animationDuration: (11 + index % 4 * 2) + "s" }} />)}</div>
+      <Localized as="div" className="forest-fireflies" aria-hidden="true">{Array.from({ length: 12 }, (_, index) => <i key={index} style={{ left: ((index * 29 + 7) % 100) + "%", top: ((index * 17 + 13) % 90) + "%", animationDelay: (-index * 1.7) + "s", animationDuration: (11 + index % 4 * 2) + "s" }} />)}</Localized>
 
       {showBriefing ? <Card ref={scrollCard} className="forest-card forest-briefing relative max-w-3xl">
-        <h1>The Forest</h1>
-        <p>10 statements. Slide to show how confident you feel. There&apos;s no pass or fail here, just be honest with yourself.</p>
+        <Localized as="h1">The Forest</Localized>
+        <Localized as="p">10 statements. Slide to show how confident you feel. There&apos;s no pass or fail here, just be honest with yourself.</Localized>
         <Button label="BEGIN" onClick={beginTrail} />
       </Card> : <Card ref={scrollCard} className="forest-card relative max-w-3xl">
         {/* 34 — Section/progress label */}
-        <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
+        <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
           The Forest · Statement {statementIndex + 1} of {SKILL_ITEMS.length}
-        </p>
+        </Localized>
         <ForestVine leaves={visibleLeaves} />
-        <p className="forest-flavor">{flavor}</p>
+        <Localized as="p" className="forest-flavor">{flavor}</Localized>
 
         <StatementIcon category={currentItem.category} />
         {/* 35 — Statement text */}
-        <h1 ref={heading} tabIndex={-1} id="forest-statement" className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">
+        <Localized as="h1" ref={heading} tabIndex={-1} id="forest-statement" className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">
           {currentItem.text}
-        </h1>
+        </Localized>
 
-        <GrowthSlider key={currentItem.id} value={selectedValue} disabled={!isReady || confirming} onChange={selectConfidence} onCommit={isFinalStatement ? undefined : goNext} confirming={confirming} labelledBy="forest-statement" />
+        <GrowthSlider key={currentItem.id} value={hasSelectedValue ? selectedValue : undefined} disabled={!isReady || confirming} onChange={selectConfidence} onCommit={isFinalStatement ? undefined : goNext} confirming={confirming} labelledBy="forest-statement" invalid={attempted && !hasSelectedValue} describedBy="forest-choice-help" />
+        <Localized as="p" id="forest-choice-help" className={attempted && !hasSelectedValue ? "assessment-validation" : "forest-choice-help"} role="status">{attempted && !hasSelectedValue ? "Choose a confidence level from 1 to 5 before continuing." : `Slide or tap a level from 1 to 5, or use the arrow keys and select ${isFinalStatement ? "Complete Forest" : "Next"}.`}</Localized>
 
-        <div className="forest-actions">
+        <Localized as="div" className="forest-actions">
           {/* 37 — Back button */}
           <Button
             label="Back"
@@ -146,9 +156,9 @@ export default function SkillsPage() {
             disabled={confirming}
             className="w-full sm:w-auto"
           />
-          {(isFinalStatement || (reviewing && hasSelectedValue)) && <Button label={isFinalStatement ? "Complete Forest" : "Next"} className="forest-complete" onClick={() => goNext()} disabled={!hasSelectedValue || confirming} />}
-        </div>
+          <Button label={isFinalStatement ? "Complete Forest" : "Next"} className="forest-complete" onClick={() => goNext()} disabled={!isReady || confirming} />
+        </Localized>
       </Card>}
-    </main></JourneyAccess>
+    </Localized></JourneyAccess>
   );
 }

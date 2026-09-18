@@ -200,6 +200,7 @@
 .atlas-window.is-dragging { cursor: grabbing; }
 .atlas-window .atlas-canvas { width: max(180vw, 1800px); height: max(125vh, 800px); margin: 0; border: 0; transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1); }
 .atlas-window.is-dragging .atlas-canvas { transition: none; }
+.atlas-window.is-holding .atlas-canvas { transition: none; }
 .atlas-rotate { position: fixed; inset: 0; z-index: 100; display: grid; place-content: center; justify-items: center; padding: 32px; background: #1b2a4a; color: #f5ecd7; text-align: center; }
 .atlas-rotate span { font-size: 64px; }
 .atlas-rotate p { max-width: 320px; line-height: 1.8; }

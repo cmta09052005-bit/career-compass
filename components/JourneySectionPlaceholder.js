@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useRouter } from "next/navigation";
 import {
   SECTION_STATUS,
@@ -35,33 +37,33 @@ export default function JourneySectionPlaceholder({
       />
 
       <section className="w-full max-w-2xl rounded-3xl border border-gold/35 bg-navy/65 p-6 text-center shadow-2xl backdrop-blur-md sm:p-10">
-        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-teal">
+        <Localized as="p" className="text-xs font-semibold uppercase tracking-[0.25em] text-teal">
           {path}
-        </p>
-        <h1 className="mt-3 font-serif text-4xl text-beige sm:text-5xl">
+        </Localized>
+        <Localized as="h1" className="mt-3 font-serif text-4xl text-beige sm:text-5xl">
           {title}
-        </h1>
-        <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-beige/85 sm:text-base">
+        </Localized>
+        <Localized as="p" className="mx-auto mt-4 max-w-lg text-sm leading-6 text-beige/85 sm:text-base">
           This assessment section is still a placeholder. Use the completion
           control below to verify the guided Journey Map flow.
-        </p>
+        </Localized>
 
         <div className="mt-8 flex flex-col-reverse justify-center gap-3 sm:flex-row">
-          <button
+          <Localized as="button"
             type="button"
             onClick={() => router.push("/journey")}
             className="min-h-12 rounded-full border border-teal/70 bg-teal/10 px-6 py-3 text-sm font-semibold text-beige transition-[border-color,background-color,transform] duration-150 hover:border-teal hover:bg-teal/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold active:scale-[0.97]"
           >
             Back to Journey Map
-          </button>
-          <button
+          </Localized>
+          <Localized as="button"
             type="button"
             onClick={completeSection}
             disabled={!isReady}
             className="min-h-12 rounded-full border border-gold bg-gold px-7 py-3 text-sm font-bold uppercase tracking-[0.12em] text-navy transition-[background-color,transform] duration-150 hover:bg-[#e2b52f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal active:scale-[0.97] disabled:cursor-wait disabled:opacity-50"
           >
             {isCompleted ? "Return to Journey Map" : "Complete Section"}
-          </button>
+          </Localized>
         </div>
       </section>
     </main>

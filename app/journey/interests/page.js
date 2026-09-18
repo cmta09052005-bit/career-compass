@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
@@ -18,6 +20,7 @@ import {
   useSessionAnswers,
 } from "@/lib/useSessionAnswers";
 import useUnsavedProgressWarning from "@/lib/useUnsavedProgressWarning";
+import { isValidInterest } from "@/lib/assessmentValidation";
 
 gsap.registerPlugin(useGSAP);
 const INTEREST_ITEMS = items.filter((item) => item.section === "Interests");
@@ -58,7 +61,7 @@ export default function InterestsPage() {
   const scrollCard = useRef(null);
   const { session, isReady, updateSession, discardSection } = useSessionAnswers();
   const [activeQuestion, setActiveQuestion] = useState(null);
-  const firstUnanswered = INTEREST_ITEMS.findIndex(item => !session.interests[item.id]);
+  const firstUnanswered = INTEREST_ITEMS.findIndex(item => !isValidInterest(item, session.interests[item.id]));
   const questionIndex = activeQuestion ?? (firstUnanswered < 0 ? 7 : firstUnanswered);
   function setQuestionIndex(next) {
     setActiveQuestion(typeof next === "function" ? next(questionIndex) : next);
@@ -79,7 +82,7 @@ export default function InterestsPage() {
 
   const currentItem = INTEREST_ITEMS[questionIndex];
   const selectedKey = session.interests[currentItem.id];
-  const completedCount = INTEREST_ITEMS.filter(item => session.interests[item.id]).length;
+  const completedCount = INTEREST_ITEMS.filter(item => isValidInterest(item, session.interests[item.id])).length;
   const elevation = questionIndex < 2 ? "Base of the trail" : questionIndex < 5 ? "Halfway up" : questionIndex < 7 ? "Near the summit" : "You've reached the top";
   const summitWarmth = questionIndex / 7;
   const { contextSafe } = useGSAP(() => {
@@ -109,7 +112,7 @@ export default function InterestsPage() {
 
   function selectOption(key, card) {
     contextSafe(() => {
-    if (advancing.current || !isReady) return;
+    if (advancing.current || !isReady || !isValidInterest(currentItem, key)) return;
     advancing.current = true;
     setActiveQuestion(questionIndex);
     setSettling(true);
@@ -152,7 +155,7 @@ export default function InterestsPage() {
   }
 
   function goNext() {
-    if (!selectedKey || advancing.current) return;
+    if (!isReady || !isValidInterest(currentItem, selectedKey) || advancing.current) return;
     if (questionIndex < INTEREST_ITEMS.length - 1) {
       setQuestionIndex((index) => index + 1);
       return;
@@ -164,7 +167,7 @@ export default function InterestsPage() {
   }
 
   return (
-    <JourneyAccess session={session} isReady={isReady} requires={[]}><main style={{ "--summit-warmth": summitWarmth }} className="trail-screen trail-mountains game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
+    <JourneyAccess session={session} isReady={isReady} requires={[]}><Localized as="main" style={{ "--summit-warmth": summitWarmth }} className="trail-screen trail-mountains game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
       {!settling && <TrailExit onLeave={() => { discardSection("interests"); router.push("/journey"); }} />}
       <div className="mountain-sunrise" aria-hidden="true" />
       <div
@@ -174,9 +177,9 @@ export default function InterestsPage() {
 
       {showBriefing ? (
       <Card ref={scrollCard} className="mountain-briefing-panel relative max-w-3xl">
-        <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">The Mountains</p>
-        <h1 className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">The Mountains</h1>
-        <p className="mountain-briefing-copy">8 situations. No right answers.{"\n\n"}Just pick whatever feels most like you. Every choice tells us something new.</p>
+        <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">The Mountains</Localized>
+        <Localized as="h1" className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">The Mountains</Localized>
+        <Localized as="p" className="mountain-briefing-copy">8 situations. No right answers.{"\n\n"}Just pick whatever feels most like you. Every choice tells us something new.</Localized>
         <div className="mountain-actions mt-8 flex justify-center">
           <Button label="BEGIN" onClick={beginTrail} className="w-full sm:w-auto" />
         </div>
@@ -184,12 +187,12 @@ export default function InterestsPage() {
       ) : (
       <Card ref={scrollCard} className="mountain-question-panel relative max-w-3xl">
         {/* 25 — Section/progress label */}
-        <p className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
+        <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
           The Mountains · Question {questionIndex + 1} of {INTEREST_ITEMS.length}
-        </p>
+        </Localized>
 
-        <div className="mountain-progress" role="progressbar" aria-label="Wayfinder medallion" aria-valuemin={0} aria-valuemax={8} aria-valuenow={completedCount} aria-valuetext={completedCount + " of 8 scenarios answered"}>
-          <div className="mountain-medallion" aria-hidden="true">
+        <Localized as="div" className="mountain-progress" role="progressbar" aria-label="Wayfinder medallion" aria-valuemin={0} aria-valuemax={8} aria-valuenow={completedCount} aria-valuetext={completedCount + " of 8 scenarios answered"}>
+          <Localized as="div" className="mountain-medallion" aria-hidden="true">
             <svg viewBox="0 0 168 124">
               <line x1="2" y1="112" x2="166" y2="112" />
               {MOUNTAIN_PEAKS.map((path, index) => (
@@ -207,21 +210,23 @@ export default function InterestsPage() {
               </g>
             </svg>
             {settling && <span className="mountain-dust" style={PEAK_DUST[questionIndex]}><CelebrationEffects /></span>}
-          </div>
-          <p className="mountain-elevation" key={elevation}>{elevation}</p>
-        </div>
+          </Localized>
+          <Localized as="p" className="mountain-elevation" key={elevation}>{elevation}</Localized>
+        </Localized>
 
         {/* 27 — Scenario prompt text */}
-        <p className="assessment-scene">{SCENE_LABELS[questionIndex]}</p>
-        <h1 ref={heading} tabIndex={-1} className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">
+        <Localized as="p" className="assessment-scene">{SCENE_LABELS[questionIndex]}</Localized>
+        <Localized as="h1" ref={heading} tabIndex={-1} className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">
           {currentItem.text}
-        </h1>
+        </Localized>
 
-        <div
+        <Localized as="div"
           id="scenario-choices" key={currentItem.id}
           className="scenario-choices scenario-feed mt-8 grid gap-3 sm:grid-cols-2"
           aria-label="Answer options"
           role="radiogroup"
+          aria-required="true"
+          aria-describedby="mountain-choice-help"
         >
           {currentItem.options.map((option, optionIndex) => {
             const isSelected = selectedKey === option.key;
@@ -243,11 +248,11 @@ export default function InterestsPage() {
                     : "border-beige/20 bg-navy/35 hover:border-teal/70 hover:bg-teal/10"
                 }`}
               >
-                {isSelected && <Badge variant="icon" size="small" state="unlocked" className="mountain-selection-stamp" aria-hidden="true" icon={<span className="mountain-selection-check">✓</span>} />}
+                {isSelected && <Badge variant="icon" size="small" state="unlocked" className="mountain-selection-stamp" aria-hidden="true" icon={<Localized as="span" className="mountain-selection-check">✓</Localized>} />}
                 {isSelected && settling && <span className="mountain-card-dust" aria-hidden="true"><CelebrationEffects /></span>}
                 <span className="scenario-thumbnail" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d={CATEGORY_ICONS[option.category]} /></svg></span>
                 <span className="mountain-option-copy flex items-start gap-4">
-                  <span
+                  <Localized as="span"
                     className={`flex size-9 shrink-0 items-center justify-center rounded-full border text-sm font-bold ${
                       isSelected
                         ? "border-gold bg-gold text-navy"
@@ -256,18 +261,18 @@ export default function InterestsPage() {
                     aria-hidden="true"
                   >
                     {option.key}
-                  </span>
-                  <span className="pt-1 text-sm leading-6 sm:text-base">
+                  </Localized>
+                  <Localized as="span" className="pt-1 text-sm leading-6 sm:text-base">
                     {option.text}
-                  </span>
+                  </Localized>
                 </span>
               </Card>
             );
           })}
-        </div>
-        <p className="assessment-note" role="status" aria-live="polite">{selectedKey ? ACKNOWLEDGMENTS[questionIndex] : ""}</p>
+        </Localized>
+        <Localized as="p" id="mountain-choice-help" className="assessment-note" role="status" aria-live="polite">{isValidInterest(currentItem, selectedKey) ? ACKNOWLEDGMENTS[questionIndex] : "Choose one option to continue. Your choice takes you to the next question."}</Localized>
 
-        <div className="mountain-actions mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-between">
+        <Localized as="div" className="mountain-actions mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-between">
           {/* 32 — Back button */}
           <Button
             label="Back"
@@ -276,7 +281,7 @@ export default function InterestsPage() {
             className="w-full sm:w-auto"
           />
           {/* Saved answers can be reviewed without selecting them again. */}
-          {selectedKey && !settling && <Button
+          {isValidInterest(currentItem, selectedKey) && !settling && <Button
             label={
               questionIndex === INTEREST_ITEMS.length - 1
                 ? "Complete Interests"
@@ -286,9 +291,9 @@ export default function InterestsPage() {
             disabled={!isReady || settling}
             className="w-full disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
           />}
-        </div>
+        </Localized>
       </Card>
       )}
-    </main></JourneyAccess>
+    </Localized></JourneyAccess>
   );
 }

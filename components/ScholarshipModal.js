@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useEffect, useId, useRef, useState } from "react";
 import Button from "./Button";
 import Card from "./Card";
@@ -41,8 +43,8 @@ export default function ScholarshipModal({ children }) {
     <Button ref={trigger} label="Need help with school expenses?" variant="secondary" aria-haspopup="dialog" aria-expanded={open} onPointerEnter={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) show(false); }} onPointerLeave={leave} onClick={() => show(true)} />
     <dialog ref={dialog} className="scholarship-dialog" aria-labelledby={titleId} onPointerEnter={() => clearTimeout(closeTimer.current)} onPointerLeave={leave} onCancel={(event) => { event.preventDefault(); if (!pinned.current) close(); }}>
       <Card variant="popup" className="popup-card">
-        <button className="popup-close" aria-label="Close scholarships" onClick={close}>×</button>
-        <h2 id={titleId}>Help with school expenses</h2>
+        <Localized as="button" className="popup-close" aria-label="Close scholarships" onClick={close}>×</Localized>
+        <Localized as="h2" id={titleId}>Help with school expenses</Localized>
         {children}
       </Card>
     </dialog>

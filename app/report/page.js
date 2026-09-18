@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useRef, useState } from "react";
 import Button from "@/components/Button";
 import JourneyAccess from "@/components/JourneyAccess";
@@ -67,16 +69,16 @@ export default function ReportPage() {
         </div>
 
         {/* 64 — Heading */}
-        <h1 className="mt-6 font-serif text-3xl leading-tight text-[#3b261c] text-balance sm:text-4xl md:text-5xl">
+        <Localized as="h1" className="mt-6 font-serif text-3xl leading-tight text-[#3b261c] text-balance sm:text-4xl md:text-5xl">
           Your Explorer Report Is Ready
-        </h1>
+        </Localized>
 
         {/* 65 — Supporting text */}
-        <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-[#604532] sm:text-base">
+        <Localized as="p" className="mx-auto mt-4 max-w-lg text-sm leading-6 text-[#604532] sm:text-base">
           {session.reportDownloaded ? "Your Explorer Report has been downloaded." : "Your Explorer Report is ready to download."}
-        </p>
+        </Localized>
 
-        <div className="mt-8 grid gap-3 sm:grid-cols-2">
+        <Localized as="div" className="mt-8 grid gap-3 sm:grid-cols-2">
           {/* 66 — Download Report button */}
           <Button
             label={downloading ? "Preparing your report…" : "Download Again"}
@@ -92,9 +94,9 @@ export default function ReportPage() {
             disabled={!isReady}
             className="inline-flex w-full items-center justify-center"
           />
-        </div>
-        {downloadError && <p role="alert" className="mt-4">{downloadError}</p>}
-        <p className="mx-auto mt-6 max-w-md text-sm leading-6 text-[#604532]">Keep learning, one step at a time. Your guidance counselor can help you choose where to go next.</p>
+        </Localized>
+        {downloadError && <Localized as="p" role="alert" className="mt-4">{downloadError}</Localized>}
+        <Localized as="p" className="mx-auto mt-6 max-w-md text-sm leading-6 text-[#604532]">Keep learning, one step at a time. Your guidance counselor can help you choose where to go next.</Localized>
 
         {/* 68 — Back to Results button */}
         <Button

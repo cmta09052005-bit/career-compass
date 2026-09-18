@@ -1,3 +1,6 @@
+"use client";
+
+import Localized from "@/components/Localized";
 import { forwardRef } from "react";
 
 const VARIANT_CLASSES = {
@@ -33,9 +36,9 @@ const Card = forwardRef(function Card(
   const classes = `${VARIANT_CLASSES[variant]} ${stateClasses} ${className}`.trim();
 
   return (
-    <Component ref={ref} className={classes} {...props}>
+    <Localized as={Component} ref={ref} className={classes} {...props}>
       {children}
-    </Component>
+    </Localized>
   );
 });
 

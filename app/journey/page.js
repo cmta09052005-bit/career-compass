@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Button from "@/components/Button";
@@ -9,6 +11,7 @@ import { soundEnabled, setSoundEnabled } from "@/lib/sound";
 import usePopupState from "@/components/usePopupState";
 import Toggle from "@/components/Toggle";
 import { SECTION_STATUS, SESSION_STORAGE_KEY, useSessionAnswers } from "@/lib/useSessionAnswers";
+import { isValidStrand } from "@/lib/assessmentValidation";
 import "./atlas.css";
 
 const GUIDE_KEY = "careerCompassJourneyGuideSeen";
@@ -33,16 +36,16 @@ function Icon({ name, className = "" }) {
   if (name === "lock") return <svg className={`atlas-icon ${className}`} viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M7 10V7a5 5 0 0 1 10 0v3" /><rect x="4" y="10" width="16" height="12" rx="2" fill="#1b2a4a" /><path d="M12 14v4" /></svg>;
   // Local illustrations retain their original proportions.
   // eslint-disable-next-line @next/next/no-img-element
-  return <img className={`atlas-icon ${className}`} src={name === "compass" ? "/landing-compass.png" : `/icons/career-compass/${name}.svg`} alt="" draggable="false" />;
+  return <Localized as="img" className={`atlas-icon ${className}`} src={name === "compass" ? "/landing-compass.png" : `/icons/career-compass/${name}.svg`} alt="" draggable="false" />;
 }
 
 function LocationCard({ name, eyebrow, description }) {
-  return <div className="atlas-location-card"><span className="atlas-location-eyebrow">{eyebrow || "\u00a0"}</span><h2>{name}</h2><p>{description || "\u00a0"}</p></div>;
+  return <div className="atlas-location-card"><Localized as="span" className="atlas-location-eyebrow">{eyebrow || "\u00a0"}</Localized><Localized as="h2">{name}</Localized><Localized as="p">{description || "\u00a0"}</Localized></div>;
 }
 
 function Explorer({ avatarId, className = "" }) {
   const index = Math.max(0, AVATARS.indexOf(avatarId));
-  return <span aria-hidden="true" className={`atlas-explorer ${className}`} style={avatarId === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center 25%" } : index >= 0 ? { backgroundImage: "url('/explorers.png')", backgroundPosition: `${index * 20}% 25%` } : undefined}>{index < 0 && <Icon name="compass" />}</span>;
+  return <Localized as="span" aria-hidden="true" className={`atlas-explorer ${className}`} style={avatarId === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center 25%" } : index >= 0 ? { backgroundImage: "url('/explorers.png')", backgroundPosition: `${index * 20}% 25%` } : undefined}>{index < 0 && <Icon name="compass" />}</Localized>;
 }
 
 export default function JourneyPage() {
@@ -64,6 +67,7 @@ export default function JourneyPage() {
   const [position, setPosition] = useState(null);
   const [sequenceReady, setSequenceReady] = useState(false);
   const closingBadge = useRef(false);
+  const initialized = useRef(false);
   const [openNode, setOpenNode] = usePopupState(null, ".atlas-popover");
   const [panel, setPanel] = usePopupState(null, ".atlas-dialog-card");
   const [sound, setSound] = useState(false);
@@ -78,14 +82,14 @@ export default function JourneyPage() {
   const percent = [0, 33, 66, 100][count];
   const started = REGIONS.some(({ id }) => progress[id] !== SECTION_STATUS.NOT_STARTED);
   const next = REGIONS.findIndex((_, index) => regionState(index, progress) === "active");
-  const current = position || (!started ? "basecamp" : complete ? "academic" : REGIONS[next]?.id);
+  const current = position || "basecamp";
   const actionReady = isReady && sequenceReady && !walking && !badgeToast.length;
 
   useEffect(() => {
     if (!isReady) return;
     const recover = () => {
       if (leaving.current) return;
-      let missing = !session.strand;
+      let missing = !isValidStrand(session.strand);
       try { const stored = JSON.parse(sessionStorage.getItem(SESSION_STORAGE_KEY)); missing = missing || !stored?.strand; } catch { missing = true; }
       if (missing) { leaving.current = true; router.replace("/intake?session=ended"); }
     };
@@ -95,30 +99,35 @@ export default function JourneyPage() {
     return () => { window.removeEventListener("focus", recover); window.removeEventListener("pageshow", recover); };
   }, [isReady, session.strand, router]);
 
-  useEffect(() => {
-    if (!isReady || !session.strand) return;
-    const timer = setTimeout(() => {
-      let seen = [];
-      try { seen = JSON.parse(sessionStorage.getItem("careerCompassBadgeNotices")) || []; } catch { /* Optional storage. */ }
-      if (!Array.isArray(seen)) seen = [];
-      const earned = REGIONS.filter(({ id }) => progress[id] === SECTION_STATUS.COMPLETED && !seen.includes(id));
-      if (earned.length) {
-        setPosition(earned[0].id);
-        setSequenceReady(false);
-        setBadgeToast(earned);
+  /* eslint-disable react-hooks/set-state-in-effect -- Restore session-only map position before the badge's first paint. */
+  useLayoutEffect(() => {
+    if (!isReady || !isValidStrand(session.strand) || initialized.current) return;
+    initialized.current = true;
+    // Establish the completed node and camera before the badge can be painted.
+    setSequenceReady(false);
+    let seen = [];
+    try { seen = JSON.parse(sessionStorage.getItem("careerCompassBadgeNotices")) || []; } catch { /* Optional storage. */ }
+    if (!Array.isArray(seen)) seen = [];
+    const earned = REGIONS.filter(({ id }) => progress[id] === SECTION_STATUS.COMPLETED && !seen.includes(id));
+    if (earned.length) {
+      setPosition(earned[0].id);
+      setBadgeToast(earned);
+    } else {
+      const destination = complete ? "islands" : !started ? "basecamp" : REGIONS[next]?.id;
+      let previous;
+      try { previous = Number(sessionStorage.getItem("careerCompassAtlasPosition")); } catch { /* Optional storage. */ }
+      const from = REGIONS.find((region) => region.left === previous);
+      const to = complete ? ISLANDS : REGIONS[next];
+      if (from && to && from.left < to.left) {
+        setPosition(from.id);
+        setWalking({ from, to });
       } else {
-        const destination = complete ? "islands" : !started ? "basecamp" : REGIONS[next]?.id;
-        let previous;
-        try { previous = Number(sessionStorage.getItem("careerCompassAtlasPosition")); } catch { /* Optional storage. */ }
-        const from = REGIONS.find((region) => region.left === previous);
-        const to = complete ? ISLANDS : REGIONS[next];
         setPosition(destination);
-        if (from && to && from.left < to.left) setWalking({ from, to });
-        else setSequenceReady(true);
+        setSequenceReady(true);
       }
-    }, 350);
-    return () => clearTimeout(timer);
+    }
   }, [isReady, progress, session.strand, setBadgeToast, complete, next, started]);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   function closeBadge() {
     if (closingBadge.current || !badgeToast.length) return;
@@ -137,7 +146,6 @@ export default function JourneyPage() {
         return;
       }
       const destination = REGIONS[REGIONS.indexOf(region) + 1] || ISLANDS;
-      setPosition(destination === ISLANDS ? "islands" : destination.id);
       setWalking({ from: region, to: destination });
     });
   }
@@ -146,8 +154,8 @@ export default function JourneyPage() {
   const tokenLeft = current === "islands" ? ISLANDS.left : current === "basecamp" ? BASECAMP.left : REGIONS.find(({ id }) => id === current)?.left || 36;
   const tokenOffset = 0;
 
-  useEffect(() => {
-    if (!walking || !token.current || !mapLayer.current) return;
+  useLayoutEffect(() => {
+    if (!walking || badgeToast.length || !token.current || !mapLayer.current) return;
     const { from, to } = walking;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const width = mapLayer.current.offsetWidth;
@@ -164,18 +172,21 @@ export default function JourneyPage() {
       return nearest;
     };
     const start = distanceAt(from), end = distanceAt(to);
+    const first = path.getPointAtLength(start), last = path.getPointAtLength(end);
     const frames = Array.from({ length: 61 }, (_, index) => {
       const t = index / 60;
       const point = path.getPointAtLength(start + (end - start) * t);
-      // A returning explorer already at the node takes a short step into it.
-      const approach = Math.abs(end - start) < 2 ? Math.sin(Math.PI * t) * 24 : 0;
-      return { transform: `translate(calc(-50% + ${(point.x / 1000 - to.left / 100) * width - approach}px), calc(-50% + ${(point.y / 1000 - to.top / 100) * height}px))` };
+      // Match the exact node centers at both ends so neither handoff can jump.
+      const x = point.x + (from.left * 10 - first.x) * (1 - t) + (to.left * 10 - last.x) * t;
+      const y = point.y + (from.top * 10 - first.y) * (1 - t) + (to.top * 10 - last.y) * t;
+      return { transform: `translate(calc(-50% + ${(x / 1000 - from.left / 100) * width}px), calc(-50% + ${(y / 1000 - from.top / 100) * height}px))` };
     });
     let cancelled = false;
     const animation = token.current.animate(reduced ? [{ opacity: .6 }, { opacity: 1 }] : frames, { duration: reduced ? 200 : 2400, easing: "ease-in-out", fill: "forwards" });
     animation.finished.then(() => {
       if (cancelled) return;
       try { sessionStorage.setItem("careerCompassAtlasPosition", String(to.left)); } catch { /* Optional storage. */ }
+      setPosition(to.id);
       setWalking(false);
       setSequenceReady(true);
       if (walking.enter) {
@@ -184,16 +195,16 @@ export default function JourneyPage() {
       } else if (to !== ISLANDS) setPanel("next");
     }).catch(() => {});
     return () => { cancelled = true; animation.cancel(); };
-  }, [walking, setPanel, updateSession, router]);
+  }, [walking, badgeToast.length, setPanel, updateSession, router]);
 
   const centerOnNode = useCallback(() => {
     if (!mapWindow.current || !mapLayer.current) return;
-    const node = current === "islands" ? ISLANDS : current === "basecamp" ? BASECAMP : REGIONS.find(({ id }) => id === current);
+    const node = walking?.to || (current === "islands" ? ISLANDS : current === "basecamp" ? BASECAMP : REGIONS.find(({ id }) => id === current));
     if (!node) return;
     setCamera({ x: Math.max(mapWindow.current.clientWidth - mapLayer.current.offsetWidth, Math.min(0, mapWindow.current.clientWidth / 2 - mapLayer.current.offsetWidth * node.left / 100)), y: Math.max(mapWindow.current.clientHeight - mapLayer.current.offsetHeight, Math.min(0, (mapWindow.current.clientHeight + 100) / 2 - mapLayer.current.offsetHeight * node.top / 100)) });
-  }, [current]);
+  }, [current, walking]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const elements = [document.documentElement, document.body];
     const previous = elements.map((element) => ({ overflow: element.style.overflow, height: element.style.height }));
     elements.forEach((element) => { element.style.overflow = "hidden"; element.style.height = "100%"; });
@@ -217,7 +228,7 @@ export default function JourneyPage() {
   }, [centerOnNode]);
 
   function panStart(event) {
-    if (walking || !event.isPrimary || event.button !== 0 || event.target.closest("button, a, .atlas-popover")) return;
+    if (!actionReady || !event.isPrimary || event.button !== 0 || event.target.closest("button, a, .atlas-popover")) return;
     setOpenNode(null);
     const matrix = new DOMMatrixReadOnly(getComputedStyle(mapLayer.current).transform);
     drag.current = { id: event.pointerId, x: event.clientX, y: event.clientY, cameraX: matrix.m41, cameraY: matrix.m42 };
@@ -287,7 +298,6 @@ export default function JourneyPage() {
         router.push(`/journey/${region.id}`);
         return;
       }
-      setPosition(region.id);
       setWalking({ from, to: region, enter: true });
     });
   }
@@ -341,66 +351,66 @@ export default function JourneyPage() {
   }
 
   return (
-    <main ref={root} className="explorer-map-screen atlas-page" onPointerDownCapture={(event) => { if (!event.target.closest(".atlas-popover, .atlas-marker")) setOpenNode(null); }}>
-      <header className="atlas-nameplate" aria-label="Your explorer profile">
+    <Localized as="main" ref={root} className="explorer-map-screen atlas-page" onPointerDownCapture={(event) => { if (!event.target.closest(".atlas-popover, .atlas-marker")) setOpenNode(null); }}>
+      <Localized as="header" className="atlas-nameplate" aria-label="Your explorer profile">
         <div className="atlas-identity">
-          <div className="atlas-name"><Explorer avatarId={session.avatarId} /><span>{session.nickname || "Explorer"}</span></div>
-          <div className="atlas-progress-row"><div className="atlas-progress" role="progressbar" aria-label="Your Compass, journey mapped" aria-valuenow={percent} aria-valuemin={0} aria-valuemax={100}><span style={{ width: `${percent}%` }} /></div><span className="atlas-percent">{percent}%</span></div>
-          <div className="atlas-badges">{REGIONS.map((region, index) => <button key={region.id} className={`atlas-badge ${progress[region.id] === SECTION_STATUS.COMPLETED ? "earned" : ""}`} onClick={() => progress[region.id] === SECTION_STATUS.COMPLETED && setPanel(index)} aria-label={`${region.badge}: ${progress[region.id] === SECTION_STATUS.COMPLETED ? "earned, view badge" : "not yet earned"}`} data-tooltip={progress[region.id] === SECTION_STATUS.COMPLETED ? `${region.badge} earned` : `Finish ${region.name} to earn this.`}><Icon name="wax-seal-frame" /><Icon className="atlas-badge-fill" name={progress[region.id] === SECTION_STATUS.COMPLETED ? region.badgeIcon : region.icon} /></button>)}</div><p className="atlas-mapped-caption">{count} of 3 regions mapped</p><button className="atlas-list-link" onClick={() => setPanel("list")}>View as list</button>
+          <div className="atlas-name"><Explorer avatarId={session.avatarId} /><Localized as="span">{session.nickname || "Explorer"}</Localized></div>
+          <div className="atlas-progress-row"><Localized as="div" className="atlas-progress" role="progressbar" aria-label="Your Compass, journey mapped" aria-valuenow={percent} aria-valuemin={0} aria-valuemax={100}><span style={{ width: `${percent}%` }} /></Localized><Localized as="span" className="atlas-percent">{percent}%</Localized></div>
+          <Localized as="div" className="atlas-badges">{REGIONS.map((region, index) => <Localized as="button" key={region.id} className={`atlas-badge ${progress[region.id] === SECTION_STATUS.COMPLETED ? "earned" : ""}`} onClick={() => progress[region.id] === SECTION_STATUS.COMPLETED ? setPanel(index) : setOpenNode(index)} aria-label={`${region.badge}: ${progress[region.id] === SECTION_STATUS.COMPLETED ? "earned, view badge" : "not yet earned"}`} data-tooltip={progress[region.id] === SECTION_STATUS.COMPLETED ? `${region.badge} earned` : `Finish ${region.name} to earn this.`}><Icon name="wax-seal-frame" /><Icon className="atlas-badge-fill" name={progress[region.id] === SECTION_STATUS.COMPLETED ? region.badgeIcon : region.icon} /></Localized>)}</Localized><Localized as="p" className="atlas-mapped-caption">{count} of 3 regions mapped</Localized><Localized as="button" className="atlas-list-link" onClick={() => setPanel("list")}>View as list</Localized>
         </div>
-      </header>
-      <nav className="atlas-utilities" aria-label="Map tools">
-        <button onClick={() => setPanel("settings")} className="atlas-utility" data-tooltip="Open journey settings" aria-label="Settings" disabled={!isReady}><span><Icon name="settings-gear" /></span><small>Settings</small></button>
-        <button onClick={locate} className="atlas-utility" data-tooltip="Center the map on your explorer" aria-label="Locate Me" disabled={!isReady}><span><Icon name="flag-marker-pin" /></span><small>Locate Me</small></button>
-        <button onClick={() => setPanel("guide")} className="atlas-utility" data-tooltip="Learn how to explore the map" aria-label="Journey Guide" disabled={!isReady}><span><Icon name="question-mark" /></span><small>Journey Guide</small></button>
-      </nav>
-      <section ref={mapWindow} className={`atlas-window ${dragging ? "is-dragging" : ""}`} aria-label="Journey map, drag to explore" tabIndex={0} onPointerDown={panStart} onPointerMove={panMove} onPointerUp={panEnd} onPointerCancel={panEnd} onLostPointerCapture={panEnd}>
-        <div ref={mapLayer} className="atlas-canvas" style={{ transform: `translate3d(${camera.x}px, ${camera.y}px, 0)` }}>
+      </Localized>
+      <Localized as="nav" className="atlas-utilities" aria-label="Map tools">
+        <Localized as="button" onClick={() => setPanel("settings")} className="atlas-utility" data-tooltip="Open journey settings" aria-label="Settings" disabled={!isReady}><span><Icon name="settings-gear" /></span><Localized as="small">Settings</Localized></Localized>
+        <Localized as="button" onClick={locate} className="atlas-utility" data-tooltip="Center the map on your explorer" aria-label="Locate Me" disabled={!isReady}><span><Icon name="flag-marker-pin" /></span><Localized as="small">Locate Me</Localized></Localized>
+        <Localized as="button" onClick={() => setPanel("guide")} className="atlas-utility" data-tooltip="Learn how to explore the map" aria-label="Journey Guide" disabled={!isReady}><span><Icon name="question-mark" /></span><Localized as="small">Journey Guide</Localized></Localized>
+      </Localized>
+      <Localized as="section" ref={mapWindow} className={`atlas-window ${dragging ? "is-dragging" : ""} ${!sequenceReady && !walking ? "is-holding" : ""}`} aria-label="Journey map, drag to explore" tabIndex={0} onPointerDown={panStart} onPointerMove={panMove} onPointerUp={panEnd} onPointerCancel={panEnd} onLostPointerCapture={panEnd}>
+        <Localized as="div" ref={mapLayer} className="atlas-canvas" style={{ transform: `translate3d(${camera.x}px, ${camera.y}px, 0)` }}>
           <div className="atlas-cartography" aria-hidden="true" />
           <svg className="atlas-trail" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><path ref={trail} d={ROAD} /></svg>
-          <div className="atlas-basecamp atlas-marker atlas-location" style={{ left: `${BASECAMP.left}%`, top: `${BASECAMP.top}%` }}><button ref={element => { nodes.current.basecamp = element; }} className="atlas-region-art" aria-label="Basecamp, profile complete" aria-expanded={openNode === "basecamp"} onClick={() => setOpenNode("basecamp")} {...hoverEvents("basecamp")}><Icon name="explorer-backpack" /></button><LocationCard name="Basecamp" eyebrow="YOUR STARTING POINT" description="Explorer profile complete ✓" /></div>
-          <div ref={token} className="atlas-you atlas-token" style={{ visibility: position ? "visible" : "hidden", left: `${tokenLeft}%`, top: `calc(${tokenTop}% + ${tokenOffset}px)` }}><Explorer avatarId={session.avatarId} /><span>You are here</span></div>
+          <div className="atlas-basecamp atlas-marker atlas-location" style={{ left: `${BASECAMP.left}%`, top: `${BASECAMP.top}%` }}><Localized as="button" ref={element => { nodes.current.basecamp = element; }} className="atlas-region-art" aria-label="Basecamp, profile complete" aria-expanded={openNode === "basecamp"} onClick={() => setOpenNode("basecamp")} {...hoverEvents("basecamp")}><Icon name="explorer-backpack" /></Localized><LocationCard name="Basecamp" eyebrow="YOUR STARTING POINT" description="Explorer profile complete ✓" /></div>
+          <div ref={token} className="atlas-you atlas-token" style={{ visibility: position ? "visible" : "hidden", left: `${tokenLeft}%`, top: `calc(${tokenTop}% + ${tokenOffset}px)` }}><Explorer avatarId={session.avatarId} /><Localized as="span">You are here</Localized></div>
           {REGIONS.map((region, index) => {
             const state = regionState(index, progress);
             return <div key={region.id} className={`atlas-marker atlas-location ${state} ${state === "active" && badgeToast.length ? "just-unlocked" : ""}`} style={{ left: `${region.left}%`, top: `${region.top}%` }}>
-              <button ref={(element) => { nodes.current[region.id] = element; }} className="atlas-region-art" aria-label={`${region.name}, ${state}`} aria-expanded={openNode === index} onClick={() => state === "active" ? enter(index) : setOpenNode(index)} {...hoverEvents(index)}><Icon name={region.icon} /><span>{String(index + 1).padStart(2, "0")}</span></button>
+              <Localized as="button" ref={(element) => { nodes.current[region.id] = element; }} className="atlas-region-art" aria-label={`${region.name}, ${state}`} aria-expanded={openNode === index} onClick={() => state === "active" ? enter(index) : setOpenNode(index)} {...hoverEvents(index)}><Icon name={region.icon} /><Localized as="span">{String(index + 1).padStart(2, "0")}</Localized></Localized>
               <LocationCard name={region.name} description={region.description} />
             </div>;
           })}
-          <div className={`atlas-summit atlas-marker atlas-location ${complete ? "active revealed" : "locked"}`} style={{ left: `${ISLANDS.left}%`, top: `${ISLANDS.top}%` }}><button ref={element => { nodes.current.islands = element; }} className="atlas-region-art" aria-expanded={openNode === "islands"} aria-label={`The Islands, ${complete ? "ready" : "locked"}`} onClick={() => complete && actionReady ? router.push("/processing") : setOpenNode("islands")} {...hoverEvents("islands")}><Icon name="island-flag" /></button><LocationCard name="The Islands" eyebrow="BEYOND THE THREE REGIONS" description={complete ? "Your path is ready to reveal." : "Your next horizon is waiting."} /></div>
+          <div className={`atlas-summit atlas-marker atlas-location ${complete ? "active revealed" : "locked"}`} style={{ left: `${ISLANDS.left}%`, top: `${ISLANDS.top}%` }}><Localized as="button" ref={element => { nodes.current.islands = element; }} className="atlas-region-art" aria-expanded={openNode === "islands"} aria-label={`The Islands, ${complete ? "ready" : "locked"}`} onClick={() => complete && actionReady ? router.push("/processing") : setOpenNode("islands")} {...hoverEvents("islands")}><Icon name="island-flag" /></Localized><LocationCard name="The Islands" eyebrow="BEYOND THE THREE REGIONS" description={complete ? "Your path is ready to reveal." : "Your next horizon is waiting."} /></div>
 
-        </div>
+        </Localized>
         {hoverNode && <Card ref={hoverCard} variant="popup" className="atlas-popover popup-card" role="dialog" aria-labelledby="atlas-node-title" onPointerEnter={() => setOpenNode(openNode)} onPointerLeave={event => { if (event.pointerType === "mouse") setOpenNode(null); }} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpenNode(null); }} onKeyDown={event => { if (event.key === "Escape") { nodes.current[hoverNode.id]?.focus(); setOpenNode(null); } }}>
-          <button className="atlas-close" aria-label="Close region details" onClick={() => setOpenNode(null)}>×</button>
-          <p className="atlas-eyebrow">{hoverNode.eyebrow}</p>
-          <h2 id="atlas-node-title">{hoverNode.name}</h2><p className="atlas-description">{hoverNode.description}</p>
-          {typeof openNode === "number" && <><span className="atlas-detail">{hoverNode.detail}</span>
-          <button className="atlas-node-action" disabled={!isReady || regionState(openNode, progress) === "locked"} onClick={() => regionState(openNode, progress) === "completed" ? setPanel(openNode) : enter(openNode)}>{regionState(openNode, progress) === "completed" ? `✓ Complete · ${REGIONS[openNode].badge}` : regionState(openNode, progress) === "locked" ? `Locked, finish ${REGIONS[openNode - 1].name} first.` : `Enter ${REGIONS[openNode].name} →`}</button>
+          <Localized as="button" className="atlas-close" aria-label="Close region details" onClick={() => setOpenNode(null)}>×</Localized>
+          <Localized as="p" className="atlas-eyebrow">{hoverNode.eyebrow}</Localized>
+          <Localized as="h2" id="atlas-node-title">{hoverNode.name}</Localized><Localized as="p" className="atlas-description">{hoverNode.description}</Localized>
+          {typeof openNode === "number" && <><Localized as="span" className="atlas-detail">{hoverNode.detail}</Localized>
+          <Localized as="button" className="atlas-node-action" disabled={!actionReady || regionState(openNode, progress) === "locked"} onClick={() => regionState(openNode, progress) === "completed" ? setPanel(openNode) : enter(openNode)}>{regionState(openNode, progress) === "completed" ? `✓ Complete · ${REGIONS[openNode].badge}` : regionState(openNode, progress) === "locked" ? `Locked, finish ${REGIONS[openNode - 1].name} first.` : walking ? `Walking to ${walking.to.name}…` : `Enter ${REGIONS[openNode].name} →`}</Localized>
           </>}
         </Card>}
-      </section>
-      <p className="atlas-session">No account needed · Progress stays in this tab until you close it</p>
-      <nav className="atlas-actions" aria-label="Assessment actions">
-        {!complete && <button className="atlas-round-action primary" disabled={!actionReady} onClick={() => enter(next)}><span className="atlas-action-disc"><Icon name="compass" /></span><span>{started ? "Continue" : "Start Assessment"}<b aria-hidden="true">→</b></span></button>}
-        <button ref={results} className={`atlas-round-action ${complete ? "primary" : "is-locked"}`} disabled={!actionReady || !complete} onClick={() => router.push("/processing")} aria-label={complete ? "View My Results" : "Results locked, complete all three regions"}><span className="atlas-action-disc"><Icon name="island-flag" />{!complete && <span className="atlas-lock"><Icon name="lock" /></span>}</span><span>{walking && complete ? "Walking to The Islands…" : complete ? "View My Results" : "Results locked"}</span></button>
-      </nav>
-      {isReady && offscreen && <button className="atlas-edge-arrow" aria-label={`Locate ${target.name}`} onClick={locate} style={{ left: Math.max(22, Math.min(mapSize.viewWidth - 22, targetX)), top: Math.max(22, Math.min(mapSize.viewHeight - 22, targetY)) }}><span aria-hidden="true" style={{ transform: `rotate(${edgeAngle}deg)` }}>➜</span></button>}
+      </Localized>
+      <Localized as="p" className="atlas-session">No account needed · Progress stays in this tab until you close it</Localized>
+      <Localized as="nav" className="atlas-actions" aria-label="Assessment actions">
+        {!complete && <button className="atlas-round-action primary" disabled={!actionReady} onClick={() => enter(next)}><span className="atlas-action-disc"><Icon name="compass" /></span><Localized as="span">{walking ? `Walking to ${walking.to.name}…` : started ? "Continue" : "Start Assessment"}<Localized as="b" aria-hidden="true">→</Localized></Localized></button>}
+        <Localized as="button" ref={results} className={`atlas-round-action ${complete ? "primary" : "is-locked"}`} disabled={!actionReady || !complete} onClick={() => router.push("/processing")} aria-label={complete ? "View My Results" : "Results locked, complete all three regions"}><Localized as="span" className="atlas-action-disc"><Icon name="island-flag" />{!complete && <span className="atlas-lock"><Icon name="lock" /></span>}</Localized><Localized as="span">{walking && complete ? "Walking to The Islands…" : complete ? "View My Results" : "Results locked — finish all 3 regions"}</Localized></Localized>
+      </Localized>
+      {isReady && offscreen && <Localized as="button" className="atlas-edge-arrow" aria-label={`Locate ${target.name}`} onClick={locate} style={{ left: Math.max(22, Math.min(mapSize.viewWidth - 22, targetX)), top: Math.max(22, Math.min(mapSize.viewHeight - 22, targetY)) }}><Localized as="span" aria-hidden="true" style={{ transform: `rotate(${edgeAngle}deg)` }}>➜</Localized></Localized>}
       {badgeToast.length > 0 && <CelebrationDialog key={badgeToast[0].id} className="atlas-badge-toast" autoDismissMs={3200} theme={{ interests: "wind", skills: "leaves", academic: "paper" }[badgeToast[0].id]} title={badgeToast[0].badge} eyebrow="Achievement unlocked" description={`${badgeToast[0].name} complete`} icon={<Icon name={badgeToast[0].badgeIcon} />} onClose={closeBadge} />}
-      <span className="atlas-scroll-hint" aria-hidden="true">DRAG TO EXPLORE ↔</span>
-      <p className="sr-only" aria-live="polite">{percent}% mapped. {complete ? "All regions complete. Results unlocked." : `${REGIONS[next]?.name || "The Mountains"} is your next region.`}</p>
+      <Localized as="span" className="atlas-scroll-hint" aria-hidden="true">DRAG TO EXPLORE ↔</Localized>
+      <Localized as="p" className="sr-only" aria-live="polite">{percent}% mapped. {complete ? "All regions complete. Results unlocked." : `${REGIONS[next]?.name || "The Mountains"} is your next region.`}</Localized>
       {celebrate && <CelebrationDialog className="atlas-expedition" major title="Full Expedition!" description="All three regions explored. Your path is ready." icon={<Icon name="sunburst" />} onClose={() => setCelebrate(false)} actionLabel="View My Results" onAction={() => setCelebrate(false, () => router.push("/processing"))} />}
       <dialog ref={dialog} className="atlas-dialog" data-popup-key={panel} aria-labelledby="atlas-dialog-title" onCancel={(event) => { event.preventDefault(); closePanel(); }} onClick={(event) => { if (event.target === event.currentTarget) closePanel(); }}>
         <Card key={panel} variant="popup" className="atlas-dialog-card popup-card">
-          <button className="atlas-close" aria-label="Close dialog" onClick={closePanel}>×</button>
+          <Localized as="button" className="atlas-close" aria-label="Close dialog" onClick={closePanel}>×</Localized>
           <Icon className="atlas-dialog-icon" name={(panel === "next" ? REGIONS[next]?.icon : earnedRegion?.badgeIcon) || (panel === "settings" ? "settings-gear" : panel === "guide" ? "question-mark" : "compass")} />
-          {panel === "next" && REGIONS[next] && <><p className="atlas-eyebrow">NEXT REGION UNLOCKED</p><h2 id="atlas-dialog-title">{REGIONS[next].name}</h2><p>Finish {REGIONS[next].name} to earn the {REGIONS[next].badge} badge.</p><Button label="Continue" onClick={() => enter(next)} /></>}
-          {panel === "guide" && <><p className="atlas-eyebrow">JOURNEY GUIDE</p><h2 id="atlas-dialog-title">Welcome to The Atlas</h2><ul className="atlas-guide-steps"><li><Icon name="ribbon-scroll" /><span>This is your map. Drag it left or right to look around.</span></li><li><Icon name="mountain-peak" /><span>Finish regions in order: Mountains, then Forest, then Valley.</span></li><li><Icon name="sunburst" /><span>A glowing region means it&apos;s ready. Tap it to start.</span></li><li><Icon name="flag-marker-pin" /><span>Lost? Tap Locate Me anytime to find your spot again.</span></li></ul><div className="atlas-guide-path">Mountains <span>···</span> Forest <span>···</span> Valley</div><Button label="Got it" onClick={closePanel} /></>}
-          {panel === "list" && <><p className="atlas-eyebrow">YOUR REGIONS</p><h2 id="atlas-dialog-title">Journey list</h2><ul className="atlas-region-list">{REGIONS.map((region, index) => { const state = regionState(index, progress); return <li key={region.id}><div><strong>{region.name}</strong><span>{state === "active" ? "Ready" : state === "completed" ? "Done" : "Locked"}</span></div><Button label={state === "completed" ? "View badge" : state === "locked" ? "Locked" : "Enter region"} disabled={state === "locked" || !isReady} onClick={() => state === "completed" ? setPanel(index) : enter(index)} /></li>; })}</ul></>}
-          {panel === "settings" && <><p className="atlas-eyebrow">YOUR SESSION</p><h2 id="atlas-dialog-title">Journey Settings</h2><Toggle label="Sound" enabled={sound} onClick={toggleSound} className="atlas-sound" data-tooltip={sound ? "Turn journey sound effects off" : "Turn journey sound effects on"} /><div className="atlas-language"><span>Language</span><strong>English</strong></div><p className="atlas-setting-note">Filipino translation is planned for a future version.</p><div className="atlas-settings-actions"><button className="atlas-danger" onClick={() => setPanel("restart")}>Restart Assessment</button><button className="atlas-danger" onClick={() => setPanel("exit")}>Exit</button></div></>}
-          {(panel === "restart" || panel === "exit") && <><p className="atlas-eyebrow">BEFORE YOU GO</p><h2 id="atlas-dialog-title">{panel === "restart" ? "Restart your journey?" : "Leave The Atlas?"}</h2><p>{panel === "restart" ? "This clears everything and can't be undone." : "Your progress stays in this tab. Use Continue Your Journey on Home to return."}</p><div className="atlas-confirm-actions"><Button label={panel === "exit" ? "Stay" : "Keep Going"} autoFocus variant="secondary" onClick={closePanel} /><button className="atlas-danger" onClick={() => leave(panel === "restart")}>{panel === "restart" ? "Restart" : "Leave"}</button></div></>}
-          {earnedRegion && <><p className="atlas-eyebrow">BADGE EARNED: {earnedRegion.badge}</p><h2 id="atlas-dialog-title">{earnedRegion.name}, Complete</h2><p>View only, this leg of the journey is already mapped.</p><Button label="Back to The Atlas" onClick={closePanel} /></>}
+          {panel === "next" && REGIONS[next] && <><Localized as="p" className="atlas-eyebrow">NEXT REGION UNLOCKED</Localized><Localized as="h2" id="atlas-dialog-title">{REGIONS[next].name}</Localized><Localized as="p">Finish {REGIONS[next].name} to earn the {REGIONS[next].badge} badge.</Localized><Button label="Continue" onClick={() => enter(next)} /></>}
+          {panel === "guide" && <><Localized as="p" className="atlas-eyebrow">JOURNEY GUIDE</Localized><Localized as="h2" id="atlas-dialog-title">Welcome to The Atlas</Localized><ul className="atlas-guide-steps"><li><Icon name="ribbon-scroll" /><Localized as="span">This is your map. Drag it left or right to look around.</Localized></li><li><Icon name="mountain-peak" /><Localized as="span">Finish regions in order: Mountains, then Forest, then Valley.</Localized></li><li><Icon name="sunburst" /><Localized as="span">A glowing region means it&apos;s ready. Tap it to start.</Localized></li><li><Icon name="flag-marker-pin" /><Localized as="span">Lost? Tap Locate Me anytime to find your spot again.</Localized></li></ul><Localized as="div" className="atlas-guide-path">Mountains <Localized as="span">···</Localized> Forest <Localized as="span">···</Localized> Valley</Localized><Button label="Got it" onClick={closePanel} /></>}
+          {panel === "list" && <><Localized as="p" className="atlas-eyebrow">YOUR REGIONS</Localized><Localized as="h2" id="atlas-dialog-title">Journey list</Localized><Localized as="ul" className="atlas-region-list">{REGIONS.map((region, index) => { const state = regionState(index, progress); return <li key={region.id}><div><Localized as="strong">{region.name}</Localized><Localized as="span">{state === "active" ? "Ready" : state === "completed" ? "Done" : `Finish ${REGIONS[index - 1].name} first`}</Localized></div><Button label={state === "completed" ? "View badge" : state === "locked" ? "Locked" : "Enter region"} disabled={state === "locked" || !actionReady} onClick={() => state === "completed" ? setPanel(index) : enter(index)} /></li>; })}</Localized></>}
+          {panel === "settings" && <><Localized as="p" className="atlas-eyebrow">YOUR SESSION</Localized><Localized as="h2" id="atlas-dialog-title">Journey Settings</Localized><Toggle label="Sound" enabled={sound} onClick={toggleSound} className="atlas-sound" data-tooltip={sound ? "Turn journey sound effects off" : "Turn journey sound effects on"} /><div className="atlas-language"><Localized as="span">Language</Localized><Localized as="strong">English</Localized></div><Localized as="p" className="atlas-setting-note">Filipino translation is planned for a future version.</Localized><div className="atlas-settings-actions"><Localized as="button" className="atlas-danger" onClick={() => setPanel("restart")}>Restart Assessment</Localized><Localized as="button" className="atlas-danger" onClick={() => setPanel("exit")}>Exit</Localized></div></>}
+          {(panel === "restart" || panel === "exit") && <><Localized as="p" className="atlas-eyebrow">BEFORE YOU GO</Localized><Localized as="h2" id="atlas-dialog-title">{panel === "restart" ? "Restart your journey?" : "Leave The Atlas?"}</Localized><Localized as="p">{panel === "restart" ? "This clears everything and can't be undone." : "Your progress stays in this tab. Use Continue Your Journey on Home to return."}</Localized><div className="atlas-confirm-actions"><Button label={panel === "exit" ? "Stay" : "Keep Going"} autoFocus variant="secondary" onClick={closePanel} /><Localized as="button" className="atlas-danger" onClick={() => leave(panel === "restart")}>{panel === "restart" ? "Restart" : "Leave"}</Localized></div></>}
+          {earnedRegion && <><Localized as="p" className="atlas-eyebrow">BADGE EARNED: {earnedRegion.badge}</Localized><Localized as="h2" id="atlas-dialog-title">{earnedRegion.name}, Complete</Localized><Localized as="p">View only, this leg of the journey is already mapped.</Localized><Button label="Back to The Atlas" onClick={closePanel} /></>}
         </Card>
       </dialog>
-    </main>
+    </Localized>
   );
 }

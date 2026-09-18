@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { Fragment, useRef, useState } from "react";
 import { marketingFonts } from "@/components/marketingFonts";
 import gsap from "gsap";
@@ -79,39 +81,39 @@ export default function LandingPage() {
 
   return (
     <main ref={root} className={`story-home ${marketingFonts}`}>
-      <a href="#world-chapter" className="story-skip">Skip to content</a>
+      <Localized as="a" href="#world-chapter" className="story-skip">Skip to content</Localized>
       <div className="story-map-window" aria-hidden="true"><div className="story-map" /><div className="story-map-shade" /></div>
-      <nav className="story-stepper" aria-label="Chapter progress">
-        {chapters.map((chapter, index) => <a key={chapter.id} href={`#${chapter.id}-chapter`} aria-label={`Chapter ${number(index)}: ${chapter.name}`} aria-current={active === index ? "step" : undefined}><i /> <span>{number(index)}</span></a>)}
-      </nav>
-      <div className="story-wrapper">
+      <Localized as="nav" className="story-stepper" aria-label="Chapter progress">
+        {chapters.map((chapter, index) => <Localized as="a" key={chapter.id} href={`#${chapter.id}-chapter`} aria-label={`Chapter ${number(index)}: ${chapter.name}`} aria-current={active === index ? "step" : undefined}><i /> <Localized as="span">{number(index)}</Localized></Localized>)}
+      </Localized>
+      <Localized as="div" className="story-wrapper">
         <section id="world-chapter" className="story-chapter story-hero" aria-labelledby="world-title">
           <Card as="div" className="story-panel story-hero-panel">
-            <p className="story-eyebrow">Chapter 01 · The World</p>
-            <h1 id="world-title">You are an Explorer.<br /><em>Your career path<br />is a map.</em></h1>
-            <p id="world-description" className="story-description">Not sure which college course to choose? Answer a few questions about yourself and find courses worth exploring.</p>
-            <div className="story-actions"><Button href={entry.href} className="story-button story-start" label={entry.label} /><a href="#explorers" className="story-text-link">Explore the Story ↓</a></div>
+            <Localized as="p" className="story-eyebrow">Chapter 01 · The World</Localized>
+            <Localized as="h1" id="world-title">You are an Explorer.<br /><Localized as="em">Your career path<br />is a map.</Localized></Localized>
+            <Localized as="p" id="world-description" className="story-description">Not sure which college course to choose? Answer a few questions about yourself and find courses worth exploring.</Localized>
+            <div className="story-actions"><Button href={entry.href} className="story-button story-start" label={entry.label} /><Localized as="a" href="#explorers" className="story-text-link">Explore the Story ↓</Localized></div>
 
           </Card>
-          <div className="story-compass-stage" aria-hidden="true"><div className="story-orbit" /><div className="story-compass-spin"><img className="story-compass" src="/landing-compass.png" width="420" height="480" alt="" /></div><span className="story-compass-caption">YOUR NEXT CHAPTER STARTS HERE</span></div>
-          <a className="story-scroll" href="#explorers">SCROLL TO EXPLORE <span>↓</span></a>
+          <div className="story-compass-stage" aria-hidden="true"><div className="story-orbit" /><div className="story-compass-spin"><Localized as="img" className="story-compass" src="/landing-compass.png" width="420" height="480" alt="" /></div><Localized as="span" className="story-compass-caption">YOUR NEXT CHAPTER STARTS HERE</Localized></div>
+          <Localized as="a" className="story-scroll" href="#explorers">SCROLL TO EXPLORE <Localized as="span">↓</Localized></Localized>
         </section>
         <section ref={carousel} id="explorers" className="story-explorers" aria-labelledby="explorers-title">
-          <div className="story-explorers-heading"><div><p className="story-eyebrow">Choose how you explore</p><h2 id="explorers-title">Meet the Explorers</h2><p>Every journey starts with picking who you are on the map.<br />Six ways to explore. Pick the one that feels like you.</p></div></div>
+          <div className="story-explorers-heading"><div><Localized as="p" className="story-eyebrow">Choose how you explore</Localized><Localized as="h2" id="explorers-title">Meet the Explorers</Localized><Localized as="p">Every journey starts with picking who you are on the map.<br />Six ways to explore. Pick the one that feels like you.</Localized></div></div>
           <Card as="div" className="story-panel story-explorer-paper" {...swipeProps}>
-            <div ref={track} className="story-explorer-panel" tabIndex={0} onKeyDown={event => { if (event.key === "ArrowRight" || event.key === "ArrowLeft") { event.preventDefault(); slide(event.key === "ArrowRight" ? 1 : -1); } }} aria-label="Six explorer portraits; swipe or use arrow buttons">
-              {explorers.slice(explorerIndex, explorerIndex + 1).map(([name, description]) => { const index = explorerIndex; return <article key={name} className="story-explorer-content"><div className="story-portrait" role="img" aria-label={`${name}, an ink-and-parchment explorer portrait`} style={index === 5 ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center top" } : { backgroundPosition: `${index * 20}% top` }} /><span className="story-card-number">EXPLORER {number(index)}</span><h3>{name}</h3><p>“{description}”</p></article>; })}
-            </div>
+            <Localized as="div" ref={track} className="story-explorer-panel" tabIndex={0} onKeyDown={event => { if (event.key === "ArrowRight" || event.key === "ArrowLeft") { event.preventDefault(); slide(event.key === "ArrowRight" ? 1 : -1); } }} aria-label="Six explorer portraits; swipe or use arrow buttons">
+              {explorers.slice(explorerIndex, explorerIndex + 1).map(([name, description]) => { const index = explorerIndex; return <article key={name} className="story-explorer-content"><Localized as="div" className="story-portrait" role="img" aria-label={`${name}, an ink-and-parchment explorer portrait`} style={index === 5 ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center top" } : { backgroundPosition: `${index * 20}% top` }} /><Localized as="span" className="story-card-number">EXPLORER {number(index)}</Localized><Localized as="h3">{name}</Localized><Localized as="p">“{description}”</Localized></article>; })}
+            </Localized>
           </Card>
-          <div className="carousel-controls" aria-label="Explorer carousel controls"><Button className="story-button" onClick={() => slide(-1)} label="←" aria-label="Previous explorers" />{explorers.map(([name], index) => <button type="button" key={name} className="carousel-dot" aria-label={`Show ${name}`} aria-pressed={explorerIndex === index} onClick={() => showExplorer(index)} />)}<Button className="story-button" onClick={() => slide(1)} label="→" aria-label="Next explorers" /></div>
+          <Localized as="div" className="carousel-controls" aria-label="Explorer carousel controls"><Button className="story-button" onClick={() => slide(-1)} label="←" aria-label="Previous explorers" />{explorers.map(([name], index) => <Localized as="button" type="button" key={name} className="carousel-dot" aria-label={`Show ${name}`} aria-pressed={explorerIndex === index} onClick={() => showExplorer(index)} />)}<Button className="story-button" onClick={() => slide(1)} label="→" aria-label="Next explorers" /></Localized>
         </section>
         {chapters.slice(1, 5).map((chapter, index) => <Fragment key={chapter.id}><section id={`${chapter.id}-chapter`} className={`story-chapter story-region region-${index}`} aria-labelledby={`${chapter.id}-title`}><span className="story-motif" aria-hidden="true" style={{ backgroundImage: `url(/icons/career-compass/${chapter.motif}.svg)` }} />
-          <Card as="div" className="story-panel"><p className="story-eyebrow">Chapter {number(index + 1)} · {chapter.name}</p><h2 id={`${chapter.id}-title`}>{chapter.title}</h2><p className="story-description">{chapter.body}</p><div className="story-ribbon">{chapter.count && <span data-count={chapter.count}>{chapter.count}</span>} {chapter.stat}</div></Card>
-        </section>{index === 1 && <div className="story-discovery-slot"><aside className="story-popup" aria-hidden="true"><p>BADGE UNLOCKED</p><h3>“Wayfinder”</h3><span>This is what it feels like after every step.</span></aside></div>}</Fragment>)}
-        <section id="ahead-chapter" className="story-chapter story-ending" aria-labelledby="ahead-title"><Card as="div" className="story-panel"><img src="/landing-compass.png" width="76" height="90" alt="" /><p className="story-eyebrow">Chapter 06 · The Journey Ahead</p><h2 id="ahead-title">Every path leads somewhere.<br /><em>Yours hasn&apos;t been decided yet.</em></h2><Button href={entry.href} className="story-button story-start" label={entry.label} /><a href="/about" className="story-text-link">About Career Compass ↗</a><p className="story-session">For Senior High School Students · No Account Needed · Nothing Is Saved</p></Card></section>
-      </div>
-      <span className="sr-only" role="status" aria-live="polite">{announcement}</span>
-      <footer className="story-footer"><a className="story-brand" href="#world-chapter"><img src="/landing-compass.png" width="32" height="40" alt="" />CAREER COMPASS</a><p>A web-based decision support system for Senior High School career guidance.</p><a href="#world-chapter">Back to top ↑</a></footer>
+          <Card as="div" className="story-panel"><Localized as="p" className="story-eyebrow">Chapter {number(index + 1)} · {chapter.name}</Localized><Localized as="h2" id={`${chapter.id}-title`}>{chapter.title}</Localized><Localized as="p" className="story-description">{chapter.body}</Localized><Localized as="div" className="story-ribbon">{chapter.count && <Localized as="span" data-count={chapter.count}>{chapter.count}</Localized>} {chapter.stat}</Localized></Card>
+        </section>{index === 1 && <div className="story-discovery-slot"><aside className="story-popup" aria-hidden="true"><Localized as="p">BADGE UNLOCKED</Localized><Localized as="h3">“Wayfinder”</Localized><Localized as="span">This is what it feels like after every step.</Localized></aside></div>}</Fragment>)}
+        <section id="ahead-chapter" className="story-chapter story-ending" aria-labelledby="ahead-title"><Card as="div" className="story-panel"><Localized as="img" src="/landing-compass.png" width="76" height="90" alt="" /><Localized as="p" className="story-eyebrow">Chapter 06 · The Journey Ahead</Localized><Localized as="h2" id="ahead-title">Every path leads somewhere.<br /><Localized as="em">Yours hasn&apos;t been decided yet.</Localized></Localized><Button href={entry.href} className="story-button story-start" label={entry.label} /><Localized as="a" href="/about" className="story-text-link">About Career Compass ↗</Localized><Localized as="p" className="story-session">For Senior High School Students · No Account Needed · Nothing Is Saved</Localized></Card></section>
+      </Localized>
+      <Localized as="span" className="sr-only" role="status" aria-live="polite">{announcement}</Localized>
+      <footer className="story-footer"><Localized as="a" className="story-brand" href="#world-chapter"><Localized as="img" src="/landing-compass.png" width="32" height="40" alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#world-chapter">Back to top ↑</Localized></footer>
     </main>
   );
 }

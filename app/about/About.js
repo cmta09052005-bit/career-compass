@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -64,40 +66,40 @@ export default function About() {
 
   return (
     <main ref={root} className={`story-home hiw-page about-page ${marketingFonts}`}>
-      <a href="#about-intro" className="story-skip">Skip to content</a>
+      <Localized as="a" href="#about-intro" className="story-skip">Skip to content</Localized>
       <div className="hiw-watermark" aria-hidden="true" />
       <div className="about-container">
         <section id="about-intro" className="about-intro" aria-labelledby="about-title">
-          <Image src="/landing-compass.png" alt="" width={76} height={76} priority />
-          <p className="hiw-label">About</p><h1 id="about-title">Why Career<br />Compass exists.</h1>
-          <p>A lot of Senior High School students end up guessing when it&apos;s time to pick a college course. This was built to make that choice a little less confusing, and a lot less scary.</p>
+          <Localized as={Image} src="/landing-compass.png" alt="" width={76} height={76} priority />
+          <Localized as="p" className="hiw-label">About</Localized><Localized as="h1" id="about-title">Why Career<br />Compass exists.</Localized>
+          <Localized as="p">A lot of Senior High School students end up guessing when it&apos;s time to pick a college course. This was built to make that choice a little less confusing, and a lot less scary.</Localized>
         </section>
         <section className="about-text-section" aria-labelledby="problem-title">
-          <p className="hiw-label">The Problem</p><div><h2 id="problem-title">Choosing a course shouldn&apos;t feel like guessing.</h2><p>Many students pick a course based on what&apos;s popular, what their friends chose, or what their family expects, not what actually fits them. Most schools want to help, but counselors often don&apos;t have enough time to sit down with every single student.</p></div>
+          <Localized as="p" className="hiw-label">The Problem</Localized><div><Localized as="h2" id="problem-title">Choosing a course shouldn&apos;t feel like guessing.</Localized><Localized as="p">Many students pick a course based on what&apos;s popular, what their friends chose, or what their family expects, not what actually fits them. Most schools want to help, but counselors often don&apos;t have enough time to sit down with every single student.</Localized></div>
         </section>
         <section className="pillars-section" aria-labelledby="approach-title">
-          <p className="hiw-label">Our Approach</p><h2 id="approach-title">Built to feel like exploring,<br />not taking a test.</h2>
-          <div className="about-pillars">{pillars.map(([name, copy, icon], index) => <Card as="article" className="story-panel pillar-card" key={name}><span className="about-card-number">0{index + 1}</span><Image src={`/icons/career-compass/${icon}.svg`} alt="" width={60} height={60} /><h3>{name}</h3><p>{copy}</p></Card>)}</div>
+          <Localized as="p" className="hiw-label">Our Approach</Localized><Localized as="h2" id="approach-title">Built to feel like exploring,<br />not taking a test.</Localized>
+          <Localized as="div" className="about-pillars">{pillars.map(([name, copy, icon], index) => <Card as="article" className="story-panel pillar-card" key={name}><Localized as="span" className="about-card-number">0{index + 1}</Localized><Localized as={Image} src={`/icons/career-compass/${icon}.svg`} alt="" width={60} height={60} /><Localized as="h3">{name}</Localized><Localized as="p">{copy}</Localized></Card>)}</Localized>
         </section>
         <section className="about-text-section about-research" aria-labelledby="research-title">
-          <p className="hiw-label">Grounded in<br />Real Research</p><div><h2 id="research-title">Not just an idea. Built with real schools.</h2><p>Career Compass was developed with guidance counselors and teachers from senior high schools in Albay, so the questions and results reflect what students actually go through, not just theory.</p></div>
+          <Localized as="p" className="hiw-label">Grounded in<br />Real Research</Localized><div><Localized as="h2" id="research-title">Not just an idea. Built with real schools.</Localized><Localized as="p">Career Compass was developed with guidance counselors and teachers from senior high schools in Albay, so the questions and results reflect what students actually go through, not just theory.</Localized></div>
         </section>
         <section className="team-section" aria-labelledby="team-title">
-          <p className="hiw-label">Who Made This</p><h2 id="team-title">Made by two BSIT students who wanted better guidance for Senior High.</h2>
-          <p className="about-team-description">Career Compass is a capstone project by Charlene Mae T. Adille and Juno Alligah B. Romano, BSIT students at Bicol University Polangui. It was built because they saw how many students in their own community needed this kind of support.</p>
-          <div className="about-team-grid">{team.map(([name, initials], index) => <div className="team-card" data-person={index} key={name}>
-            <button className="about-team-button" type="button" onClick={() => flipCard(index)} aria-label={`${flipped[index] ? "Show front" : "Read biography"}: ${name}`} aria-pressed={flipped[index]}>
+          <Localized as="p" className="hiw-label">Who Made This</Localized><Localized as="h2" id="team-title">Made by two BSIT students who wanted better guidance for Senior High.</Localized>
+          <Localized as="p" className="about-team-description">Career Compass is a capstone project by Charlene Mae T. Adille and Juno Alligah B. Romano, BSIT students at Bicol University Polangui. It was built because they saw how many students in their own community needed this kind of support.</Localized>
+          <Localized as="div" className="about-team-grid">{team.map(([name, initials], index) => <div className="team-card" data-person={index} key={name}>
+            <Localized as="button" className="about-team-button" type="button" onClick={() => flipCard(index)} aria-label={`${flipped[index] ? "Show front" : "Read biography"}: ${name}`} aria-pressed={flipped[index]}>
               <span className="team-card-inner">
-                <span className="team-face team-front" aria-hidden={flipped[index]}><span className="team-portrait" aria-label="Initials in place of a portrait photo"><span className="team-initials">{initials}</span><Image src="/icons/career-compass/wax-seal-frame.svg" alt="" width={185} height={185} /></span><span className="team-name">{name}</span><span className="team-role">BSIT Student Researcher</span><span className="team-school">Bicol University Polangui</span><span className="team-flip-hint">Read bio <span aria-hidden="true">↗</span></span></span>
-                <span className="team-face team-back" aria-hidden={!flipped[index]}><Image src="/landing-compass.png" alt="" width={58} height={58} /><span className="team-name">{name}</span><span className="team-role">BSIT Student Researcher</span><span className="team-bio">Co-created Career Compass as part of a BSIT capstone project at Bicol University Polangui, from early research through system design and development.<span className="team-thanks">“Thank you for exploring what we built.”</span></span><span className="team-flip-hint">Back to front <span aria-hidden="true">↶</span></span></span>
+                <span className="team-face team-front" aria-hidden={flipped[index]}><Localized as="span" className="team-portrait" aria-label="Initials in place of a portrait photo"><Localized as="span" className="team-initials">{initials}</Localized><Localized as={Image} src="/icons/career-compass/wax-seal-frame.svg" alt="" width={185} height={185} /></Localized><Localized as="span" className="team-name">{name}</Localized><Localized as="span" className="team-role">BSIT Student Researcher</Localized><Localized as="span" className="team-school">Bicol University Polangui</Localized><Localized as="span" className="team-flip-hint">Read bio <Localized as="span" aria-hidden="true">↗</Localized></Localized></span>
+                <span className="team-face team-back" aria-hidden={!flipped[index]}><Localized as={Image} src="/landing-compass.png" alt="" width={58} height={58} /><Localized as="span" className="team-name">{name}</Localized><Localized as="span" className="team-role">BSIT Student Researcher</Localized><Localized as="span" className="team-bio">Co-created Career Compass as part of a BSIT capstone project at Bicol University Polangui, from early research through system design and development.<Localized as="span" className="team-thanks">“Thank you for exploring what we built.”</Localized></Localized><Localized as="span" className="team-flip-hint">Back to front <Localized as="span" aria-hidden="true">↶</Localized></Localized></span>
               </span>
-            </button>
-          </div>)}</div>
+            </Localized>
+          </div>)}</Localized>
         </section>
-        <section className="about-faq" aria-labelledby="faq-title"><p className="hiw-label">A few honest answers</p><h2 id="faq-title">Questions you might have</h2><div className="faq-list">{faqs.map(([question, answer], index) => <div className="faq-item" key={question} onPointerEnter={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(index); }} onPointerLeave={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(null); }}><h3><button type="button" id={`faq-question-${index}`} aria-expanded={openFAQ === index} aria-controls={`faq-answer-${index}`} onClick={() => showFAQ(openFAQ === index ? null : index)}><span>{question}</span><span className="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="m5 9 7 7 7-7" /></svg></span></button></h3><div id={`faq-answer-${index}`} className="faq-answer" role="region" aria-labelledby={`faq-question-${index}`} aria-hidden={openFAQ !== index}><p>{answer}</p></div></div>)}</div></section>
-        <section className="hiw-closing" aria-labelledby="about-closing-title"><h2 id="about-closing-title">Ready to start exploring?</h2><Button href="/intake" className="story-button about-start" label="Start Your Journey ↗" /><Link href="/how-it-works" className="story-text-link">How It Works ↗</Link></section>
+        <section className="about-faq" aria-labelledby="faq-title"><Localized as="p" className="hiw-label">A few honest answers</Localized><Localized as="h2" id="faq-title">Questions you might have</Localized><Localized as="div" className="faq-list">{faqs.map(([question, answer], index) => <div className="faq-item" key={question} onPointerEnter={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(index); }} onPointerLeave={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(null); }}><h3><button type="button" id={`faq-question-${index}`} aria-expanded={openFAQ === index} aria-controls={`faq-answer-${index}`} onClick={() => showFAQ(openFAQ === index ? null : index)}><Localized as="span">{question}</Localized><span className="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="m5 9 7 7 7-7" /></svg></span></button></h3><div id={`faq-answer-${index}`} className="faq-answer" role="region" aria-labelledby={`faq-question-${index}`} aria-hidden={openFAQ !== index}><Localized as="p">{answer}</Localized></div></div>)}</Localized></section>
+        <section className="hiw-closing" aria-labelledby="about-closing-title"><Localized as="h2" id="about-closing-title">Ready to start exploring?</Localized><Button href="/intake" className="story-button about-start" label="Start Your Journey ↗" /><Localized as={Link} href="/how-it-works" className="story-text-link">How It Works ↗</Localized></section>
       </div>
-      <footer className="story-footer"><Link className="story-brand" href="/"><Image src="/landing-compass.png" width={32} height={32} alt="" />CAREER COMPASS</Link><p>A web-based decision support system for Senior High School career guidance.</p><a href="#about-intro">Back to top ↑</a></footer>
+      <footer className="story-footer"><Localized as={Link} className="story-brand" href="/"><Localized as={Image} src="/landing-compass.png" width={32} height={32} alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#about-intro">Back to top ↑</Localized></footer>
     </main>
   );
 }

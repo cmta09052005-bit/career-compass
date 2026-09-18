@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { Children, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -69,28 +71,28 @@ export default function FieldJournal({ course, categoryCode, children }) {
   }
 
   return <main ref={journal} className="course-screen field-journal game-ui-screen explorer-map-screen">
-    <Link href="/results" className="trail-exit popup-close" aria-label="Close course details">×</Link>
+    <Localized as={Link} href="/results" className="trail-exit popup-close" aria-label="Close course details">×</Localized>
     <div className="journal-shell" data-tab={TABS[active].id}>
-      <header className="journal-header">
-        <p className="map-ribbon">Discovered Career Path</p>
-        <h1>{course.courseName}</h1>
-        <p className="journal-category">{course.category} · {course.courseId}</p>
+      <Localized as="header" className="journal-header">
+        <Localized as="p" className="map-ribbon">Discovered Career Path</Localized>
+        <Localized as="h1">{course.courseName}</Localized>
+        <Localized as="p" className="journal-category">{course.category} · {course.courseId}</Localized>
         <div className="journal-tools">
-          <button type="button" className="journal-compare" disabled={!isReady} aria-pressed={selected} onClick={toggleComparison}>{selected ? "Added to Compare" : "Add to Compare"}</button>
-          <div className="journal-bookmark" role="status" aria-label={`${viewed.length} of 6 tabs viewed`}><span>{viewed.length} of 6 explored</span><div aria-hidden="true">{TABS.map((tab, index) => <i key={tab.id} data-viewed={viewed.includes(index)} />)}</div></div>
+          <Localized as="button" type="button" className="journal-compare" disabled={!isReady} aria-pressed={selected} onClick={toggleComparison}>{selected ? "Added to Compare" : "Add to Compare"}</Localized>
+          <Localized as="div" className="journal-bookmark" role="status" aria-label={`${viewed.length} of 6 tabs viewed`}><Localized as="span">{viewed.length} of 6 explored</Localized><Localized as="div" aria-hidden="true">{TABS.map((tab, index) => <i key={tab.id} data-viewed={viewed.includes(index)} />)}</Localized></Localized>
         </div>
-        {comparisonNotice && <p role="alert" className="journal-comparison-notice">{comparisonNotice}</p>}
-      </header>
-      <div className="journal-tabs" role="tablist" aria-label="Field journal sections">
-        {TABS.map((tab, index) => <button key={tab.id} ref={element => { tabs.current[index] = element; }} type="button" role="tab" id={`journal-tab-${tab.id}`} aria-controls={`journal-panel-${tab.id}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} onClick={() => openTab(index)} onKeyDown={event => navigateTabs(event, index)}>
-          {tab.category ? <StatementIcon category={tab.category} /> : <Image src={tab.asset} width={28} height={28} style={{ height: "auto" }} alt="" />}<span>{tab.label}</span>
-        </button>)}
-      </div>
-      <div className="journal-pages">
+        {comparisonNotice && <Localized as="p" role="alert" className="journal-comparison-notice">{comparisonNotice}</Localized>}
+      </Localized>
+      <Localized as="div" className="journal-tabs" role="tablist" aria-label="Field journal sections">
+        {TABS.map((tab, index) => <Localized as="button" key={tab.id} ref={element => { tabs.current[index] = element; }} type="button" role="tab" id={`journal-tab-${tab.id}`} aria-controls={`journal-panel-${tab.id}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} onClick={() => openTab(index)} onKeyDown={event => navigateTabs(event, index)}>
+          {tab.category ? <StatementIcon category={tab.category} /> : <Localized as={Image} src={tab.asset} width={28} height={28} style={{ height: "auto" }} alt="" />}<Localized as="span">{tab.label}</Localized>
+        </Localized>)}
+      </Localized>
+      <Localized as="div" className="journal-pages">
         <div className="journal-watermark" aria-hidden="true"><StatementIcon category={categoryCode} /></div>
-        {TABS.map((tab, index) => <section ref={element => { pages.current[index] = element; }} key={tab.id} id={`journal-panel-${tab.id}`} className="journal-page" role="tabpanel" aria-labelledby={`journal-tab-${tab.id}`} tabIndex={0} hidden={active !== index}>{panels[index]}</section>)}
-      </div>
-      <footer className="journal-footer"><Button label="Back to Results" href="/results" variant="secondary" /><button type="button" className="journal-aid-link" onClick={() => openTab(5, true)}>Need help with school expenses?</button></footer>
+        {TABS.map((tab, index) => <Localized as="section" ref={element => { pages.current[index] = element; }} key={tab.id} id={`journal-panel-${tab.id}`} className="journal-page" role="tabpanel" aria-labelledby={`journal-tab-${tab.id}`} tabIndex={0} hidden={active !== index}>{panels[index]}</Localized>)}
+      </Localized>
+      <footer className="journal-footer"><Button label="Back to Results" href="/results" variant="secondary" /><Localized as="button" type="button" className="journal-aid-link" onClick={() => openTab(5, true)}>Need help with school expenses?</Localized></footer>
     </div>
   </main>;
 }

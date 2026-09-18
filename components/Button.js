@@ -1,3 +1,6 @@
+"use client";
+
+import Localized from "@/components/Localized";
 import Link from "next/link";
 
 const VARIANT_CLASSES = {
@@ -27,14 +30,14 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={classes} {...props}>
+      <Localized as={Link} href={href} className={classes} {...props}>
         {label}
-      </Link>
+      </Localized>
     );
   }
 
   return (
-    <button
+    <Localized as="button"
       type={type}
       onClick={onClick}
       disabled={disabled}
@@ -42,6 +45,6 @@ export default function Button({
       {...props}
     >
       {label}
-    </button>
+    </Localized>
   );
 }

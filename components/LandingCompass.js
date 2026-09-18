@@ -1,3 +1,6 @@
+"use client";
+
+import Localized from "@/components/Localized";
 export default function LandingCompass({ assemblyRef, lidRef, needleRef }) {
   return (
     <svg
@@ -73,7 +76,7 @@ export default function LandingCompass({ assemblyRef, lidRef, needleRef }) {
           })}
         </g>
 
-        <text
+        <Localized as="text"
           x="120"
           y="52"
           textAnchor="middle"
@@ -83,8 +86,8 @@ export default function LandingCompass({ assemblyRef, lidRef, needleRef }) {
           letterSpacing="2"
         >
           N
-        </text>
-        <text
+        </Localized>
+        <Localized as="text"
           x="188"
           y="125"
           textAnchor="middle"
@@ -93,8 +96,8 @@ export default function LandingCompass({ assemblyRef, lidRef, needleRef }) {
           fontFamily="Georgia, serif"
         >
           E
-        </text>
-        <text
+        </Localized>
+        <Localized as="text"
           x="120"
           y="198"
           textAnchor="middle"
@@ -103,8 +106,8 @@ export default function LandingCompass({ assemblyRef, lidRef, needleRef }) {
           fontFamily="Georgia, serif"
         >
           S
-        </text>
-        <text
+        </Localized>
+        <Localized as="text"
           x="52"
           y="125"
           textAnchor="middle"
@@ -113,7 +116,7 @@ export default function LandingCompass({ assemblyRef, lidRef, needleRef }) {
           fontFamily="Georgia, serif"
         >
           W
-        </text>
+        </Localized>
 
         <polygon
           points="120,64 128,120 120,128 112,120"

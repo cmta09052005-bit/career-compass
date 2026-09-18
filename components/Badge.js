@@ -1,3 +1,6 @@
+"use client";
+
+import Localized from "@/components/Localized";
 const LARGE_ICON_CLASSES = {
   completed: "border-teal bg-teal text-navy",
   locked: "border-beige/20 bg-navy/30",
@@ -31,21 +34,21 @@ export default function Badge({
     const stateClasses =
       size === "small" ? SMALL_ICON_CLASSES[state] : LARGE_ICON_CLASSES[state];
     return (
-      <span
+      <Localized as="span"
         className={`game-medallion flex shrink-0 items-center justify-center rounded-full border ${dimensions} ${stateClasses} ${className}`.trim()}
         {...props}
       >
         {icon}
-      </span>
+      </Localized>
     );
   }
 
   return (
-    <span
+    <Localized as="span"
       className={`game-status-badge rounded-full border px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-wider ${STATUS_CLASSES[state]} ${className}`.trim()}
       {...props}
     >
       {label}
-    </span>
+    </Localized>
   );
 }

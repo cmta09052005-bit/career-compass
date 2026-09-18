@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
 const YEAR_LEVEL_TIPS = {
@@ -17,8 +19,8 @@ export default function YearLevelTip() {
   if (!tip) return null;
 
   return (
-    <p className="mt-4 rounded-xl border border-teal/30 bg-teal/10 p-4 text-sm leading-6 text-beige/85">
+    <Localized as="p" className="mt-4 rounded-xl border border-teal/30 bg-teal/10 p-4 text-sm leading-6 text-beige/85">
       {tip}
-    </p>
+    </Localized>
   );
 }

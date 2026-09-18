@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useEffect, useId, useRef } from "react";
 import Card from "./Card";
 import Button from "./Button";
@@ -20,10 +22,10 @@ export default function CelebrationDialog({ title, description, eyebrow, icon, m
   useEffect(() => { dialog.current.showModal(); }, []);
   return <dialog ref={dialog} className="celebration-dialog" data-celebration="true" aria-labelledby={titleId} aria-describedby={descriptionId} onCancel={(event) => { event.preventDefault(); onClose(); }}>
     <Card variant="popup" className={`popup-card popup-win celebration-card ${major ? "celebration-grand" : ""} ${className}`}>
-      <button className="popup-close" aria-label="Close celebration" onClick={onClose}>×</button>
+      <Localized as="button" className="popup-close" aria-label="Close celebration" onClick={onClose}>×</Localized>
       <CelebrationEffects major={major} theme={theme}>{icon}</CelebrationEffects>
-      {eyebrow && <p className="atlas-eyebrow">{eyebrow}</p>}
-      <h2 id={titleId}>{title}</h2><p id={descriptionId}>{description}</p>
+      {eyebrow && <Localized as="p" className="atlas-eyebrow">{eyebrow}</Localized>}
+      <Localized as="h2" id={titleId}>{title}</Localized><Localized as="p" id={descriptionId}>{description}</Localized>
       {!autoDismissMs && <Button label={actionLabel} onClick={onAction} />}
     </Card>
   </dialog>;

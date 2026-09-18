@@ -1,3 +1,6 @@
+"use client";
+
+import Localized from "@/components/Localized";
 import Badge from "@/components/Badge";
 
 export default function ProgressIndicator({
@@ -7,7 +10,7 @@ export default function ProgressIndicator({
 }) {
   if (variant === "mini") {
     return (
-      <div
+      <Localized as="div"
         aria-label={`${completedCount} of ${items.length} questions completed`}
         className="game-mini-progress flex items-center gap-2"
         role="progressbar"
@@ -24,22 +27,22 @@ export default function ProgressIndicator({
             aria-hidden="true"
           />
         ))}
-      </div>
+      </Localized>
     );
   }
 
   return (
-    <section
+    <Localized as="section"
       aria-label={`Compass Points: ${completedCount} of ${items.length} sections completed`}
       className="game-progress-panel map-wood-bar mt-6 p-4"
     >
       <div className="flex items-center justify-between gap-4">
-        <h2 className="font-serif text-lg text-beige">Compass Points</h2>
-        <span className="game-counter rounded-md bg-gold px-3 py-1 text-sm font-bold text-navy">
+        <Localized as="h2" className="font-serif text-lg text-beige">Compass Points</Localized>
+        <Localized as="span" className="game-counter rounded-md bg-gold px-3 py-1 text-sm font-bold text-navy">
           {completedCount} / {items.length} complete
-        </span>
+        </Localized>
       </div>
-      <ol className="mt-3 grid gap-2 sm:grid-cols-3">
+      <Localized as="ol" className="mt-3 grid gap-2 sm:grid-cols-3">
         {items.map((item) => (
           <li
             key={item.id}
@@ -52,12 +55,12 @@ export default function ProgressIndicator({
               size="small"
               aria-hidden="true"
             />
-            <span>
+            <Localized as="span">
               {item.label}: {item.status}
-            </span>
+            </Localized>
           </li>
         ))}
-      </ol>
-    </section>
+      </Localized>
+    </Localized>
   );
 }

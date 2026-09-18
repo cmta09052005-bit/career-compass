@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -66,14 +68,14 @@ export default function ProcessingPage() {
 
       <Card variant="processing" className="map-paper rounded-2xl p-8 sm:p-12">
         {/* 45 — Heading */}
-        <h1 className="font-serif text-4xl leading-tight text-[#3b261c] sm:text-5xl md:text-6xl">
+        <Localized as="h1" className="font-serif text-4xl leading-tight text-[#3b261c] sm:text-5xl md:text-6xl">
           Charting Your Course
-        </h1>
+        </Localized>
 
         {/* 46 — Supporting subtext */}
-        <p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-[#604532] sm:text-base">
+        <Localized as="p" className="mx-auto mt-4 max-w-lg text-sm leading-6 text-[#604532] sm:text-base">
           {session.nickname ? `${session.nickname}, your` : "Your"} answers are being compared with the course list. Your matches will be ready in a moment.
-        </p>
+        </Localized>
 
         {/* 47 — Loading animation area */}
         <div
@@ -97,11 +99,11 @@ export default function ProcessingPage() {
 
         {/* 48 — Staged status text */}
         <div className="mt-8" role="status" aria-live="polite" aria-atomic="true">
-          <p key={statusIndex} className="course-status text-sm font-semibold text-gold sm:text-base">
-            {statusIndex === 2 ? <StatementIcon category="C4" /> : <Image src={statusIndex === 3 ? "/landing-compass.png" : `/icons/career-compass/${statusIndex === 0 ? "mountain-peak" : "pine-branch"}.svg`} width={32} height={32} alt="" />}
+          <Localized as="p" key={statusIndex} className="course-status text-sm font-semibold text-gold sm:text-base">
+            {statusIndex === 2 ? <StatementIcon category="C4" /> : <Localized as={Image} src={statusIndex === 3 ? "/landing-compass.png" : `/icons/career-compass/${statusIndex === 0 ? "mountain-peak" : "pine-branch"}.svg`} width={32} height={32} alt="" />}
             {isReady ? STATUS_MESSAGES[statusIndex] : "Restoring your trail..."}
-          </p>
-          <div className="mx-auto mt-4 flex w-fit gap-2" aria-hidden="true">
+          </Localized>
+          <Localized as="div" className="mx-auto mt-4 flex w-fit gap-2" aria-hidden="true">
             {STATUS_MESSAGES.map((message, index) => (
               <span
                 key={message}
@@ -109,7 +111,7 @@ export default function ProcessingPage() {
                 className="course-trail-segment"
               />
             ))}
-          </div>
+          </Localized>
         </div>
       </Card>
     </main></JourneyAccess>

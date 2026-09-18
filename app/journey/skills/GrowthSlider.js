@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useRef } from "react";
 
 export const CONFIDENCE_LABELS = ["Not really me", "A little", "Somewhat", "Mostly", "Definitely me"];
@@ -26,7 +28,7 @@ export function stageAtPointer(clientX, left, width) {
   return Math.max(1, Math.min(5, Math.round(((clientX - left) / width - .1) * 5) + 1));
 }
 
-export default function GrowthSlider({ value, disabled, onChange, onCommit, labelledBy, confirming }) {
+export default function GrowthSlider({ value, disabled, onChange, onCommit, labelledBy, confirming, invalid, describedBy }) {
   const dragging = useRef(null);
   const stage = Number.isFinite(value) ? value : null;
   const label = stage === null ? "Slide or tap to show how confident you feel." : CONFIDENCE_LABELS[stage - 1];
@@ -66,12 +68,12 @@ export default function GrowthSlider({ value, disabled, onChange, onCommit, labe
     }
   }
   return <div className="forest-growth" data-confirming={confirming}>
-    <details className="forest-help"><summary aria-label="Confidence level">?</summary><p>This is about how sure you feel doing this, not how good you already are.</p></details>
-    <output className="forest-growth-label" data-unanswered={stage === null} aria-live="polite">{label}</output>
-    <div className="forest-growth-slider" role="slider" data-control="slider" tabIndex={disabled ? -1 : 0} aria-labelledby={labelledBy} aria-valuemin={1} aria-valuemax={5} aria-valuenow={stage ?? 1} aria-valuetext={label} aria-disabled={disabled}
+    <details className="forest-help"><Localized as="summary" aria-label="Confidence level">?</Localized><Localized as="p">This is about how sure you feel doing this, not how good you already are.</Localized></details>
+    <Localized as="output" className="forest-growth-label" data-unanswered={stage === null} aria-live="polite">{label}</Localized>
+    <Localized as="div" className="forest-growth-slider" role="slider" data-control="slider" tabIndex={disabled ? -1 : 0} aria-labelledby={labelledBy} aria-describedby={describedBy} aria-invalid={invalid} aria-valuemin={1} aria-valuemax={5} aria-valuenow={stage ?? 1} aria-valuetext={label} aria-disabled={disabled}
       onPointerDown={pointerDown} onPointerMove={event => { if (dragging.current === event.pointerId && !disabled) choose(event); }} onPointerUp={pointerUp}
       onPointerCancel={() => { dragging.current = null; }} onLostPointerCapture={() => { dragging.current = null; }} onKeyDown={keyDown}>
-      {[1, 2, 3, 4, 5].map(number => <span className="forest-growth-stage" data-stage={number} data-selected={number === stage} key={number}><Plant stage={number} /><span>{number}</span></span>)}
-    </div>
+      {[1, 2, 3, 4, 5].map(number => <span className="forest-growth-stage" data-stage={number} data-selected={number === stage} key={number}><Plant stage={number} /><Localized as="span">{number}</Localized></span>)}
+    </Localized>
   </div>;
 }

@@ -1,3 +1,6 @@
+"use client";
+
+import Localized from "@/components/Localized";
 import Card from "@/components/Card";
 
 const SCHOLARSHIPS = [
@@ -12,21 +15,21 @@ const SCHOLARSHIPS = [
 export default function ScholarshipInfoBox() {
   return (
     <Card className="mt-5 max-w-none rounded-2xl border-gold/35 bg-navy/45 p-5 sm:p-7">
-      <h2 className="font-serif text-2xl">Possible Scholarships &amp; Financial Aid</h2>
-      <p className="mt-4 text-sm leading-7 text-beige/80 sm:text-base">
+      <Localized as="h2" className="font-serif text-2xl">Possible Scholarships &amp; Financial Aid</Localized>
+      <Localized as="p" className="mt-4 text-sm leading-7 text-beige/80 sm:text-base">
         Don&apos;t worry if your budget is tight, there&apos;s help available before you even have to think about stopping your studies:
-      </p>
-      <ul className="mt-5 list-disc space-y-4 pl-5 text-sm leading-7 text-beige/80 marker:text-gold sm:text-base">
+      </Localized>
+      <Localized as="ul" className="mt-5 list-disc space-y-4 pl-5 text-sm leading-7 text-beige/80 marker:text-gold sm:text-base">
         {SCHOLARSHIPS.map((scholarship) => (
-          <li key={scholarship}>{scholarship}</li>
+          <Localized as="li" key={scholarship}>{scholarship}</Localized>
         ))}
-      </ul>
-      <p className="mt-5 rounded-xl border border-gold/35 bg-gold/10 p-4 text-sm leading-7 text-beige/80 italic sm:text-base">
+      </Localized>
+      <Localized as="p" className="mt-5 rounded-xl border border-gold/35 bg-gold/10 p-4 text-sm leading-7 text-beige/80 italic sm:text-base">
         Note: Not every scholarship applies to every course, DOST-SEI, for example, is only for Science/Tech/Engineering/Architecture-related courses. But RA 10931, TES, TESDA, and LGU scholarships are open to almost all students regardless of course.
-      </p>
-      <p className="mt-5 border-t border-beige/15 pt-4 text-xs leading-5 text-beige/55">
+      </Localized>
+      <Localized as="p" className="mt-5 border-t border-beige/15 pt-4 text-xs leading-5 text-beige/55">
         Reminder: The information on this page is only a starting guide. For the most up-to-date and complete details, whether about the course overview, where to study, or possible jobs, also search online or ask the school directly (in person or by phone), since requirements, curricula, and scholarship offers can change year to year.
-      </p>
+      </Localized>
     </Card>
   );
 }
