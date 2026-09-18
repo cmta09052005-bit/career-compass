@@ -5,7 +5,7 @@
 .language-switcher summary { cursor:pointer; list-style:none; white-space:nowrap; }
 .language-switcher summary::-webkit-details-marker { display:none; }
 .language-switcher summary:focus-visible,.language-options button:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
-.language-options { position:absolute; top:calc(100% + 12px); right:0; z-index:100; min-width:150px; padding:6px; border:1px solid #ad8951; border-radius:4px; background:#f5ecd7; color:#1b2a4a; box-shadow:0 6px 18px #1b2a4a33; }
+.language-options { position:absolute; top:calc(100% + 12px); right:0; z-index:100; min-width:9.375rem; padding:6px; border:1px solid #ad8951; border-radius:4px; background:#f5ecd7; color:#1b2a4a; box-shadow:0 6px 18px #1b2a4a33; }
 .language-options button { display:block; width:100%; padding:10px 14px; text-align:left; cursor:pointer; }
 .language-options button[aria-pressed=true] { font-weight:700; background:#d9c7a3; }
 .atlas-language select { max-width:60%; padding:8px; border:1px solid #ad8951; border-radius:4px; background:#f5ecd7; color:#1b2a4a; font:inherit; }
@@ -211,7 +211,7 @@ body {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  border-width: 2px !important;
+  border-width: 0.125rem !important;
   border-color: rgba(212,160,23,.58) !important;
   border-radius: .75rem !important;
   box-shadow:
@@ -296,7 +296,7 @@ body {
 .game-button:disabled { filter: grayscale(.6) brightness(.72); box-shadow: 0 0 0 2px rgba(20,13,11,.65), inset 0 2px 8px rgba(0,0,0,.3); }
 .game-medallion {
   position: relative;
-  border-width: 2px !important;
+  border-width: 0.125rem !important;
   box-shadow: 0 0 0 3px #21140f, 0 0 0 5px rgba(212,160,23,.62), inset 0 0 12px rgba(0,0,0,.28), 0 7px 16px rgba(0,0,0,.3);
 }
 .game-status-badge {
@@ -318,7 +318,7 @@ body {
 }
 .game-ui-screen input[type="text"],
 .game-ui-screen input[type="number"] {
-  border-width: 2px !important;
+  border-width: 0.125rem !important;
   border-color: rgba(212,160,23,.45) !important;
   border-radius: .42rem !important;
   background: linear-gradient(180deg,rgba(12,22,38,.76),rgba(25,35,57,.82)) !important;
@@ -333,7 +333,7 @@ body {
 .game-ui-screen input[type="radio"] + span,
 .game-ui-screen input[type="checkbox"] + span {
   position: relative;
-  border-width: 2px !important;
+  border-width: 0.125rem !important;
   border-color: rgba(212,160,23,.32) !important;
   border-radius: .42rem !important;
   background: linear-gradient(180deg,rgba(35,49,75,.84),rgba(16,28,50,.9)) !important;
@@ -364,7 +364,7 @@ body {
   .game-toggle:hover { border-color: rgba(212,160,23,.55); background: rgba(212,160,23,.08); transform: translateY(-1px); }
   .game-ui-screen input[type="radio"] + span:hover,.game-ui-screen input[type="checkbox"] + span:hover { transform: translateY(-2px); border-color: rgba(212,160,23,.68) !important; }
 }
-@media (max-width:560px) {
+@media (max-width:35rem) {
   .game-panel { border-radius:.55rem !important; box-shadow:0 0 0 2px rgba(20,13,11,.92),0 0 0 3px rgba(115,83,58,.72),0 16px 38px rgba(3,8,18,.34),inset 0 0 0 1px rgba(245,227,191,.12) !important; }
   .game-button { letter-spacing:.06em; }
 }
@@ -407,7 +407,7 @@ body {
 .game-panel :where(fieldset,form,section) + :where(fieldset,section) { margin-top: var(--ui-space-5); }
 .game-footer-credit strong { color: rgba(245,236,215,.86); font-weight: 700; }
 .map-footer-credit strong { color: rgba(245,236,215,.88); font-weight: 700; }
-@media (max-width: 640px) {
+@media (max-width: 40rem) {
   .game-ui-screen { --ui-space-5: 1.5rem; --ui-space-6: 2.25rem; }
   .game-ui-screen h1 { line-height: 1.08; }
   .game-ui-screen h2 { line-height: 1.15; }
@@ -418,8 +418,8 @@ body {
 
 .game-toggle { min-height:52px; gap:20px; }
 .toggle-state { display:flex; align-items:center; gap:12px; color:#f5ecd7; }
-.toggle-track { display:block; width:48px; height:28px; padding:3px; border:1px solid #c9b99a; border-radius:999px; background:#586074; }
-.toggle-knob { display:block; width:20px; height:20px; border-radius:50%; background:#fff6df; box-shadow:0 1px 3px #0005; transition:transform .18s ease-out; }
+.toggle-track { display:block; width:3rem; height:28px; padding:3px; border:1px solid #c9b99a; border-radius:999px; background:#586074; }
+.toggle-knob { display:block; width:1.25rem; height:20px; border-radius:50%; background:#fff6df; box-shadow:0 1px 3px #0005; transition:transform .18s ease-out; }
 .game-toggle[aria-checked=true] .toggle-track { background:#247b72; }
 .game-toggle[aria-checked=true] .toggle-knob { transform:translateX(20px); }
 @media(prefers-reduced-motion:reduce) { .toggle-knob { transition:none; } }
@@ -449,7 +449,7 @@ body {
 .game-ui-screen :focus-visible { outline:3px solid #247b72; outline-offset:4px; }
 .game-ui-screen .game-panel [role=radio][aria-checked=true] { background:#e4cd96; border-color:#89601b!important; }
 .game-ui-screen .game-panel [role=radio][aria-checked=true] > span { color:#1b2a4a; }
-@media(max-width:640px) {
+@media(max-width:40rem) {
  .game-ui-screen { padding-inline:16px; }
  .game-ui-screen .game-panel { padding:24px 18px; }
  .game-ui-screen .game-button { padding-inline:16px; font-size:12px; min-height:48px; }
@@ -466,18 +466,18 @@ body {
 .confidence-track > span { right:auto; width:100%; transform-origin:left; background:#a67c19; transition:transform .15s var(--game-ease-out); }
 .game-ui-screen .confidence-track input[type=range] { position:relative; appearance:none; -webkit-appearance:none; width:100%; height:44px; margin:0; background:transparent; }
 .confidence-track input::-webkit-slider-runnable-track { height:8px; background:transparent; }
-.confidence-track input::-webkit-slider-thumb { appearance:none; -webkit-appearance:none; width:26px; height:26px; margin-top:-9px; border-radius:50%; background:#1b2a4a; border:3px solid #d5b260; box-shadow:0 2px 4px #1b2a4a40; }
+.confidence-track input::-webkit-slider-thumb { appearance:none; -webkit-appearance:none; width:1.625rem; height:26px; margin-top:-9px; border-radius:50%; background:#1b2a4a; border:3px solid #d5b260; box-shadow:0 2px 4px #1b2a4a40; }
 .confidence-track input::-moz-range-track { height:8px; background:transparent; }
-.confidence-track input::-moz-range-thumb { width:22px; height:22px; border-radius:50%; background:#1b2a4a; border:3px solid #d5b260; }
+.confidence-track input::-moz-range-thumb { width:1.375rem; height:22px; border-radius:50%; background:#1b2a4a; border:3px solid #d5b260; }
 @media(prefers-reduced-motion:reduce) { .scenario-choices { animation:none; } .confidence-track > span { transition:none; } }
 
 /* Shared parchment confirmations. */
-.trail-exit-dialog { margin:auto; padding:0; width:min(510px,calc(100vw - 32px)); border:0; border-radius:4px; background:transparent; color:#1b2a4a; }
+.trail-exit-dialog { margin:auto; padding:0; width:min(31.875rem,calc(100vw - 2rem)); border:0; border-radius:4px; background:transparent; color:#1b2a4a; }
 .trail-exit-dialog::backdrop { background:#0c1625bd; backdrop-filter:blur(5px); }
 .popup-card { position:relative; padding:40px 28px 28px; border:6px double #987449; border-radius:4px; background:linear-gradient(115deg,#fbf0d5,#ebd5ac); color:#1b2a4a; text-align:center; box-shadow:inset 0 0 0 5px #c49c5b30; }
 .popup-card h2 { font-size:27px; margin:8px 0 16px; }
 .popup-card p { color:#645340; line-height:1.8; }
-.popup-close { position:absolute; right:8px; top:8px; width:44px; height:44px; color:#645340; font-size:26px; z-index:2; }
+.popup-close { position:absolute; right:8px; top:8px; width:2.75rem; height:44px; color:#645340; font-size:26px; z-index:2; }
 .trail-exit { position:fixed; top:12px; right:12px; background:#f5ecd7; border:1px solid #987449; border-radius:4px; z-index:20; }
 .popup-actions { display:flex; justify-content:center; gap:16px; margin-top:24px; }
 .popup-actions .game-button-secondary { color:#1b2a4a; border-color:#987449; }
@@ -491,7 +491,7 @@ html:has(.assessment-frame), body:has(.assessment-frame) { height:100%; overflow
 .assessment-frame .game-ui-screen > .game-panel { max-height:100%; min-height:0; overflow-y:auto; overscroll-behavior:contain; scrollbar-gutter:stable; }
 .assessment-frame .assessment-scroll { height:100%; min-height:0; overflow-y:auto; overscroll-behavior:contain; scrollbar-gutter:stable; padding:8px 16px 24px; border:1px solid #b8955266; border-radius:12px; background:#f5ecd720; }
 .assessment-frame .assessment-scroll:focus-visible { outline:2px solid #b89552; outline-offset:2px; }
-@media(max-width:640px) {
+@media(max-width:40rem) {
   .assessment-frame main:not(.atlas-page):not(.basecamp) { padding-block:12px; }
   .assessment-frame .trail-screen { padding-top:58px!important; }
   .assessment-frame .assessment-scroll { padding:8px 10px 20px; }
@@ -509,16 +509,34 @@ html:has(.assessment-frame), body:has(.assessment-frame) { height:100%; overflow
 .course-financials > summary::-webkit-details-marker { display:none; }
 .course-financials[open] > summary { box-shadow:0 0 0 3px #d4a01730; }
 
-.scholarship-dialog { position:fixed; inset:0; margin:auto; width:min(760px,calc(100vw - 32px)); max-height:calc(100dvh - 32px); overflow:auto; padding:0; border:0; background:transparent; z-index:60; box-shadow:0 0 0 100vmax #0c162590; }
+.scholarship-dialog { position:fixed; inset:0; margin:auto; width:min(47.5rem,calc(100vw - 2rem)); max-height:calc(100dvh - 32px); overflow:auto; padding:0; border:0; background:transparent; z-index:60; box-shadow:0 0 0 100vmax #0c162590; }
 .scholarship-dialog::backdrop { background:#0c1625bd; backdrop-filter:blur(5px); }
 .scholarship-dialog > .popup-card { position:relative; max-width:none; }
 .scholarship-dialog .popup-card h2 { font-size:24px; }
 .scholarship-dialog .popup-card ul { color:#493820; }
 .results-map-dialog .popup-card { position:relative; }
-.trail-exit.popup-close { display:grid; place-items:center; width:44px; height:44px; font-size:26px; color:#645340; }
-.report-compass { width:56px; height:56px; }
+.trail-exit.popup-close { display:grid; place-items:center; width:2.75rem; height:44px; font-size:26px; color:#645340; }
+.report-compass { width:3.5rem; height:56px; }
 .report-compass-needle { transform-origin:32px 32px; animation:report-needle-settle 800ms var(--popup-ease) both; }
 @keyframes report-needle-settle { 0% { transform:rotate(-45deg); } 65% { transform:rotate(12deg); } 100% { transform:rotate(0deg); } }
 @media(prefers-reduced-motion:reduce) { .report-compass-needle { animation:none; } }
 /* Shared presentation for short hover/focus hints. */
 .results-screen .assessment-scroll .game-button-secondary,.report-screen .game-button-secondary,.field-journal .journal-footer .game-button-secondary { color:#fff3d5!important; background:repeating-linear-gradient(4deg,transparent 0 7px,#cba36318 8px 9px),linear-gradient(#715135,#463022)!important; border-color:#d0a75e!important; }
+
+/* Mobile rhythm shared by the existing assessment surfaces. */
+@media(max-width:48rem) {
+  .assessment-frame main:not(.atlas-page):not(.basecamp) { padding:1rem; }
+  .assessment-frame main.trail-screen { padding:4rem 1rem 1rem!important; }
+  .assessment-frame .game-ui-screen > .game-panel { padding:1.5rem 1rem!important; }
+  .assessment-frame .assessment-scroll { padding:1rem 1rem 1.5rem; }
+  .game-ui-screen :is(h1,h2,h3) { overflow-wrap:anywhere; }
+  .game-ui-screen h1 { font-size:clamp(1.75rem,5vw,2.25rem); line-height:1.2; }
+  .game-ui-screen .game-button { min-height:2.75rem; min-width:2.5rem; max-width:100%; white-space:normal; overflow-wrap:anywhere; }
+  .game-ui-screen .popup-actions { flex-wrap:wrap; gap:1rem; }
+  .game-ui-screen .popup-card { padding:2.5rem 1rem 1.5rem; }
+  .game-ui-screen .popup-card h2 { font-size:1.5rem; }
+  .game-ui-screen .trail-exit { top:.5rem; right:.5rem; }
+  .game-ui-screen .language-switcher :is(summary,button) { min-height:2.5rem; }
+  .game-ui-screen .assessment-scroll > header { padding-inline:1.5rem; }
+}
+

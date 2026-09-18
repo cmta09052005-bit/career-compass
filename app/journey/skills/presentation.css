@@ -2,14 +2,14 @@
 .trail-forest .forest-growth-slider { position:relative; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); touch-action:none; user-select:none; cursor:ew-resize; border-radius:12px; padding:8px 0; }
 .trail-forest .forest-growth-slider::before { content:''; position:absolute; left:10%; right:10%; bottom:31px; height:1px; background:#81916a; }
 .trail-forest .forest-growth-stage { position:relative; display:grid; justify-items:center; gap:4px; border-radius:12px; padding:6px 0; transition:background-color .18s ease; }
-.trail-forest .forest-growth-stage svg { height:66px; width:66px; transform-origin:center bottom; transition:transform .18s ease; }
+.trail-forest .forest-growth-stage svg { height:66px; width:4.125rem; transform-origin:center bottom; transition:transform .18s ease; }
 .trail-forest .forest-growth-stage[data-selected=true] svg { transform:scale(1.16); }
-.trail-forest .forest-growth-stage > span { display:grid; place-items:center; background:#e4e5cb; border:1px solid #899669; width:25px; height:25px; border-radius:50%; font-size:12px; }
+.trail-forest .forest-growth-stage > span { display:grid; place-items:center; background:#e4e5cb; border:1px solid #899669; width:1.5625rem; height:25px; border-radius:50%; font-size:12px; }
 .trail-forest .forest-growth-stage[data-selected=true] { background:#75985420; }
 .trail-forest .forest-growth-stage[data-selected=true] > span { background:#456749; color:#fff6d9; border-color:#456749; }
 .trail-forest .forest-growth-label { display:block; font-family:var(--font-playfair),serif; font-size:24px; font-weight:600; line-height:1.3; margin-top:20px; }
-.trail-forest .forest-statement-icon { display:block; width:56px; height:56px; margin:12px auto; color:#34543a; }
-.trail-forest .forest-progress { width:min(100%,380px); margin:8px auto 0; }
+.trail-forest .forest-statement-icon { display:block; width:3.5rem; height:56px; margin:12px auto; color:#34543a; }
+.trail-forest .forest-progress { width:min(100%,23.75rem); margin:8px auto 0; }
 .trail-forest .forest-progress svg { display:block; width:100%; height:74px; }
 .trail-forest .forest-vine-guide { stroke:#697b4c; stroke-width:1; opacity:.2; }
 .trail-forest .forest-vine-stem { stroke:#456749; stroke-width:2.5; transition:stroke-dashoffset .35s ease; }
@@ -22,23 +22,23 @@
 .trail-forest .forest-mist { overflow:hidden; }
 .trail-forest .forest-mist::before,.trail-forest .forest-mist::after { content:''; position:absolute; width:140%; height:48%; left:-20%; bottom:-6%; background:radial-gradient(ellipse,#dbe3cb30,transparent 65%); filter:blur(20px); animation:forest-mist-drift 26s ease-in-out infinite alternate; }
 .trail-forest .forest-mist::after { bottom:48%; opacity:.55; animation-delay:-13s; animation-direction:alternate-reverse; }
-.trail-forest .forest-fireflies i { position:absolute; width:4px; height:4px; border-radius:50%; background:#d6e993; box-shadow:0 0 9px 3px #bcde7655; animation:forest-firefly-drift 13s ease-in-out infinite; }
+.trail-forest .forest-fireflies i { position:absolute; width:0.25rem; height:4px; border-radius:50%; background:#d6e993; box-shadow:0 0 9px 3px #bcde7655; animation:forest-firefly-drift 13s ease-in-out infinite; }
 @keyframes forest-mist-drift { from { transform:translateX(-6%); } to { transform:translateX(6%); } }
 @keyframes forest-firefly-drift { 0%,100% { transform:translate(0,0); opacity:.12; } 40% { transform:translate(24px,-36px); opacity:.55; } 75% { transform:translate(-12px,-62px); opacity:.2; } }
 @media(prefers-reduced-motion:reduce) { .trail-forest .forest-fireflies i,.trail-forest .forest-mist::before,.trail-forest .forest-mist::after { animation:none; opacity:.15; }.trail-forest .forest-light,.trail-forest .forest-vine-stem,.trail-forest .forest-vine-leaf { transition:none; } }
 .trail-forest .forest-growth { position:relative; }
 .trail-forest .forest-help { position:absolute; top:0; right:0; z-index:3; text-align:left; }
-.trail-forest .forest-help summary { display:grid; place-items:center; width:28px; height:28px; border:1px solid #7d8e65; border-radius:50%; cursor:pointer; color:#34543a; font-weight:600; list-style:none; }
+.trail-forest .forest-help summary { display:grid; place-items:center; width:1.75rem; height:28px; border:1px solid #7d8e65; border-radius:50%; cursor:pointer; color:#34543a; font-weight:600; list-style:none; }
 .trail-forest .forest-help summary::-webkit-details-marker { display:none; }
-.trail-forest .forest-help p { position:absolute; top:32px; right:0; width:min(280px,65vw); margin:0; padding:14px; border:1px solid #8c9a71; border-radius:6px; background:#f1f0d9; box-shadow:0 6px 20px #203b2530; font-size:14px; line-height:1.5; color:#34543a; }
+.trail-forest .forest-help p { position:absolute; top:32px; right:0; width:min(17.5rem,65vw); margin:0; padding:14px; border:1px solid #8c9a71; border-radius:6px; background:#f1f0d9; box-shadow:0 6px 20px #203b2530; font-size:14px; line-height:1.5; color:#34543a; }
 /* Forest-only layout and green parchment; retain an invisible overflow fallback for zoom. */
 .assessment-frame main.trail-screen.trail-forest { align-items:center; padding:24px 60px!important; }
-.assessment-frame .trail-forest > .forest-card { width:100%; max-width:850px; padding:24px 36px; scrollbar-width:none; scrollbar-gutter:auto; background:linear-gradient(115deg,#eef0d8,#d8dfbb); border-color:#82916a!important; }
+.assessment-frame .trail-forest > .forest-card { width:100%; max-width:53.125rem; padding:24px 36px; scrollbar-width:none; scrollbar-gutter:auto; background:linear-gradient(115deg,#eef0d8,#d8dfbb); border-color:#82916a!important; }
 .trail-forest > .forest-card::-webkit-scrollbar { display:none; }
 .trail-forest.game-ui-screen .forest-card::after { background:url('/map-paper-grain.svg') 0 0/240px 240px; opacity:.07; }
 .trail-forest .forest-card > .map-ribbon { display:table; width:fit-content; margin:0 auto; font-size:12px; }
-.trail-forest .forest-card > h1 { font-size:clamp(22px,2.3vw,30px); line-height:1.3; margin:8px auto 0; max-width:680px; text-align:center; }
-.trail-forest .forest-statement-icon { width:44px; height:44px; margin:10px auto 0; }
+.trail-forest .forest-card > h1 { font-size:clamp(22px,2.3vw,30px); line-height:1.3; margin:8px auto 0; max-width:42.5rem; text-align:center; }
+.trail-forest .forest-statement-icon { width:2.75rem; height:44px; margin:10px auto 0; }
 .trail-forest .forest-progress svg { height:56px; }
 .trail-forest .forest-growth-label { margin-top:16px; font-size:23px; }
 .trail-forest .forest-growth-label { padding-inline:32px; min-height:30px; }
@@ -58,30 +58,38 @@
 @media(prefers-reduced-motion:reduce) {
   .trail-forest .forest-growth-stage,.trail-forest .forest-growth-stage svg { transition:none; }
 }
-@media(max-width:600px) {
+@media(max-width:37.5rem) {
   .assessment-frame main.trail-screen.trail-forest { padding:52px 14px 14px!important; }
   .assessment-frame .trail-forest > .forest-card { padding:18px; }
   .trail-forest .forest-card > .map-ribbon { font-size:10px; letter-spacing:.07em; }
   .trail-forest .forest-card > h1 { font-size:22px; }
-  .trail-forest .forest-growth-stage svg { width:48px; height:56px; }
+  .trail-forest .forest-growth-stage svg { width:3rem; height:56px; }
 }
-@media(max-width:600px) and (max-height:700px) {
+@media(max-width:37.5rem) and (max-height:43.75rem) {
   .trail-forest .forest-card > h1 { font-size:20px; }
   .trail-forest .forest-progress svg { height:44px; }
   .trail-forest .forest-statement-icon { height:32px; margin-top:6px; }
   .trail-forest .forest-growth-label { margin-top:10px; font-size:21px; }
   .trail-forest .forest-actions { margin-top:8px; }
 }
-@media(min-width:601px) and (max-height:640px) {
+@media(min-width:37.5625rem) and (max-height:40rem) {
   .assessment-frame main.trail-screen.trail-forest { padding:14px 54px!important; }
   .trail-forest .forest-card { display:grid; grid-template-columns:1fr 1fr; column-gap:28px; }
   .trail-forest .forest-card > .map-ribbon,.trail-forest .forest-progress,.trail-forest .forest-flavor,.trail-forest .forest-statement-icon,.trail-forest .forest-card > h1 { grid-column:1; }
   .trail-forest .forest-growth { grid-column:2; grid-row:1 / 6; align-self:center; }
   .trail-forest .forest-actions { grid-column:1 / -1; }
   .trail-forest .forest-card > h1 { font-size:22px; }
-  .trail-forest .forest-growth-stage svg { width:48px; height:48px; }
+  .trail-forest .forest-growth-stage svg { width:3rem; height:48px; }
 }
-.assessment-frame .trail-forest > .forest-briefing { display:block; max-width:620px; padding:40px 32px; text-align:center; }
+.assessment-frame .trail-forest > .forest-briefing { display:block; max-width:38.75rem; padding:40px 32px; text-align:center; }
 .trail-forest .forest-briefing > h1 { font-family:var(--font-playfair),serif; font-size:36px; margin:0; }
-.trail-forest .forest-briefing > p { margin:24px auto; max-width:440px; font-size:17px; line-height:1.7; color:#4a6044; }
+.trail-forest .forest-briefing > p { margin:24px auto; max-width:27.5rem; font-size:17px; line-height:1.7; color:#4a6044; }
 .trail-forest .forest-briefing .game-button { min-height:44px; padding:10px 28px; }
+
+@media(max-width:48rem) {
+  .trail-forest .forest-card > h1 { font-size:clamp(1.5rem,4vw,1.75rem); line-height:1.3; }
+  .trail-forest .forest-growth-stage { min-width:2.5rem; min-height:2.5rem; }
+  .trail-forest .forest-actions { gap:1rem; }
+  .trail-forest .forest-briefing > p { font-size:1rem; margin-block:1.5rem; }
+}
+

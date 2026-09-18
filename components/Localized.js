@@ -3,7 +3,7 @@
 import { Children, cloneElement, createElement, forwardRef, Fragment, isValidElement } from "react";
 import { useLanguage } from "./LanguageProvider";
 
-const TEXT_ATTRIBUTES = ["aria-label", "aria-valuetext", "alt", "title", "placeholder", "data-tooltip"];
+const TEXT_ATTRIBUTES = ["aria-label", "aria-valuetext", "alt", "title", "placeholder", "data-tooltip", "data-plain-tooltip"];
 
 // Translate at the React render boundary, never by mutating the DOM. The original
 // source copy is the catalog key. Form values, IDs, handlers and scoring data pass through.

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-labelledby="journey-guide-title"><title id="journey-guide-title">Journey Guide lantern with compass base</title><defs>
+<linearGradient id="journey-guide-gold" x1="0" y1="0" x2=".85" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#fff0b5"/><stop offset=".24" stop-color="#d4a017"/><stop offset=".48" stop-color="#b57a25"/><stop offset=".62" stop-color="#edc975"/><stop offset="1" stop-color="#805025"/></linearGradient>
+<linearGradient id="journey-guide-paper" x2=".8" y2="1"><stop stop-color="#fff5db"/><stop offset=".55" stop-color="#f5ecd7"/><stop offset="1" stop-color="#cbb185"/></linearGradient>
+<linearGradient id="journey-guide-navy" x2="1" y2="1"><stop stop-color="#344b6a"/><stop offset=".55" stop-color="#1b2a4a"/><stop offset="1" stop-color="#101b30"/></linearGradient>
+<pattern id="journey-guide-hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(24)"><path d="M0 0V5" stroke="#1b2a4a" stroke-width=".7" opacity=".6"/></pattern>
+<filter id="journey-guide-grain" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="17" result="noise"/><feColorMatrix in="noise" type="saturate" values="0"/><feComponentTransfer><feFuncR type="linear" slope=".3" intercept=".74"/><feFuncG type="linear" slope=".3" intercept=".74"/><feFuncB type="linear" slope=".3" intercept=".74"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/><feComposite in2="SourceGraphic" operator="in"/></filter><filter id="journey-guide-mist" x="-25%" y="-50%" width="150%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+
+<radialGradient id="journey-guide-light"><stop stop-color="#fff5db"/><stop offset=".45" stop-color="#fff0b5"/><stop offset="1" stop-color="#d4a017"/></radialGradient>
+</defs><g filter="url(#journey-guide-grain)" stroke="#1B2A4A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M98 63V43a30 30 0 0 1 60 0v20h-9V43a21 21 0 0 0-42 0v20Z" fill="url(#journey-guide-navy)"/>
+<path d="M101 57h54l22 27H79Z" fill="url(#journey-guide-navy)"/><path d="M86 79h84M105 61h46" fill="none" stroke="#edc975" stroke-width="1.2"/>
+<path d="M83 87h90l-5 91q-40 16-80 0Z" fill="url(#journey-guide-light)"/>
+<path d="M77 86h12l10 92H86ZM167 86h12l-9 92h-13Z" fill="url(#journey-guide-navy)"/><path d="M80 91l10 79M175 91l-9 79" fill="none" stroke="#edc975" stroke-width="1.2"/>
+<path d="M128 115q-22 22-12 35 10 13 23 0 9-12-2-24-1 12-7 12 5-14-2-23Z" fill="url(#journey-guide-gold)" stroke-width="2"/>
+<path d="M115 157h26v12h-26Z" fill="url(#journey-guide-navy)"/><path d="M95 98l6 43m5-43 2 20" fill="none" stroke="#fff5db" stroke-width="2"/>
+<path d="M80 175q48 13 96 0l9 15q-57 19-114 0Z" fill="url(#journey-guide-gold)"/>
+<path d="m128 176 18 5 18 1 12 10 13 9-3 13-1 13-19 6-14 10-24-2-24 2-14-10-19-6-1-13-3-13 13-9 12-10 18-1Z" fill="url(#journey-guide-gold)"/>
+<ellipse cx="128" cy="211" rx="48" ry="25" fill="url(#journey-guide-navy)"/><ellipse cx="128" cy="211" rx="42" ry="20" fill="url(#journey-guide-paper)" stroke-width="1.5"/>
+<path d="m128 190 6 16 28 5-28 5-6 16-6-16-28-5 28-5Z" fill="url(#journey-guide-gold)" stroke-width="2"/><path d="m128 195 0 16-6 0Z" fill="#1b2a4a" stroke-width="1"/>
+<path d="m94 200 5 3m57-3-5 3m-57 19 5-3m57 3-5-3M88 211h6m68 0h6" fill="none" stroke-width=".85"/><circle cx="128" cy="211" r="3" fill="url(#journey-guide-navy)"/>
+<path d="M81 185q18 7 30 7M103 31q4-8 12-10" fill="none" stroke="#fff5db" stroke-width="1.1"/>
+</g></svg>

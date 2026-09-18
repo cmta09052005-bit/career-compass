@@ -4,20 +4,20 @@
 .assessment-trail .game-mini-progress { height:60px; gap:0; counter-reset:trail-stop; }
 .assessment-trail .game-mini-progress > span { position:relative; flex:1; height:28px; margin:0; border:0; background:none; box-shadow:none; overflow:visible; transform:translateY(-10px); counter-increment:trail-stop; }
 .assessment-trail .game-mini-progress > span:nth-child(even) { transform:translateY(10px); }
-.assessment-trail .game-mini-progress > span::after { content:counter(trail-stop); position:absolute; left:50%; transform:translateX(-50%); display:grid; place-items:center; width:28px; height:28px; border:1px solid #987449; border-radius:50%; background:#f5ecd7; color:#645039; font:600 12px/1 var(--font-inter),sans-serif; }
+.assessment-trail .game-mini-progress > span::after { content:counter(trail-stop); position:absolute; left:50%; transform:translateX(-50%); display:grid; place-items:center; width:1.75rem; height:28px; border:1px solid #987449; border-radius:50%; background:#f5ecd7; color:#645039; font:600 12px/1 var(--font-inter),sans-serif; }
 .assessment-trail .game-mini-progress > span.bg-gold::after { background:#1b2a4a; color:#f5ecd7; border:2px solid #c29b51; }
 .trail-screen .assessment-scene { color:#756039; font-size:13px; margin:22px 0 0; line-height:1.6; }
 .trail-screen .assessment-scene + h1 { margin-top:10px; }
 .trail-screen .assessment-note { min-height:24px; margin:18px 0 0; color:#276b64; font-size:15px; font-weight:600; }
 .trail-mountains .scenario-thumbnail { display:grid; place-items:center; height:100px; margin:-4px -4px 14px; border:1px solid #98744955; border-radius:6px; background:repeating-linear-gradient(0deg,transparent 0 15px,#98744912 16px),#ddc49a; color:#274557; }
-.scenario-thumbnail svg { width:86px; height:86px; }
+.scenario-thumbnail svg { width:5.375rem; height:86px; }
 .scenario-feed > :nth-child(1) .scenario-thumbnail { background-color:#e2d2a6; }
 .scenario-feed > :nth-child(2) .scenario-thumbnail { background-color:#d8cfad; }
 .scenario-feed > :nth-child(3) .scenario-thumbnail { background-color:#e6c5a3; }
 .scenario-feed > :nth-child(4) .scenario-thumbnail { background-color:#c7d4c2; }
-@media(max-width:480px) { .assessment-trail .game-mini-progress > span::after { width:23px; height:23px; top:2px; font-size:10px; }.trail-mountains .scenario-thumbnail { height:76px; }.scenario-thumbnail svg { width:66px; height:66px; } }
+@media(max-width:30rem) { .assessment-trail .game-mini-progress > span::after { width:1.4375rem; height:23px; top:2px; font-size:10px; }.trail-mountains .scenario-thumbnail { height:76px; }.scenario-thumbnail svg { width:4.125rem; height:66px; } }
 .mountain-progress { text-align:center; margin:18px auto 0; }
-.mountain-medallion { position:relative; width:148px; height:112px; margin:auto; }
+.mountain-medallion { position:relative; width:9.25rem; height:112px; margin:auto; }
 .mountain-medallion > svg { width:100%; height:100%; overflow:visible; }
 .mountain-medallion > svg line { stroke:#b28a3e; stroke-width:1.5; }
 .mountain-peak { fill:transparent; stroke:#d4a017; stroke-width:1.7; stroke-linejoin:round; transform-box:fill-box; transform-origin:50% 100%; transition:fill .22s ease; }
@@ -37,12 +37,12 @@
 .trail-mountains.game-ui-screen .mountain-question-panel .option-card.game-panel.texture-1 { background-image:url('/map-paper-grain.svg'), linear-gradient(28deg,#efe0bb,#dcc59a); background-position:92px -28px, 0 0; background-size:440px 440px, auto; }
 .trail-mountains.game-ui-screen .mountain-question-panel .option-card.game-panel.texture-2 { background-image:url('/map-paper-grain.svg'), linear-gradient(200deg,#f8edd4,#e3cba4); background-position:-48px 88px, 0 0; background-size:210px 210px, auto; }
 .trail-mountains.game-ui-screen .mountain-question-panel .option-card.game-panel.texture-3 { background-image:url('/map-paper-grain.svg'), linear-gradient(110deg,#e8d4ae,#f3e2c2); background-position:160px 40px, 0 0; background-size:520px 520px, auto; }
-.trail-mountains .mountain-selection-stamp { position:absolute; right:7px; top:7px; width:23px; height:23px; border:2px double #d4a017; background:#1b2a4a; box-shadow:0 0 0 2px #1b2a4a; color:#f5ecd7; font-weight:700; }
+.trail-mountains .mountain-selection-stamp { position:absolute; right:7px; top:7px; width:1.4375rem; height:23px; border:2px double #d4a017; background:#1b2a4a; box-shadow:0 0 0 2px #1b2a4a; color:#f5ecd7; font-weight:700; }
 .mountain-sunrise { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse 90% 55% at 72% 6%, rgba(255,186,74,.92), transparent 58%), linear-gradient(185deg, rgba(255,160,64,.7), rgba(196,74,22,.28) 38%, transparent 76%); opacity:calc(var(--summit-warmth,0) * .78); transition:opacity .8s ease; }
 .mountain-haze { background:radial-gradient(circle at 15% 15%, rgba(45,191,184,calc(.22 * (1 - var(--summit-warmth,0)))), transparent 30%), radial-gradient(circle at 85% 80%, rgba(212,160,23,calc(.16 + var(--summit-warmth,0) * .28)), transparent 32%); }
 @property --summit-warmth { syntax:"<number>"; inherits:true; initial-value:0; }
 .trail-screen.trail-mountains { transition:--summit-warmth .8s ease; background-image:linear-gradient(color-mix(in srgb, rgb(21 36 59 / 81%) calc(100% - var(--summit-warmth,0) * 70%), rgb(107 50 16 / 82%)), color-mix(in srgb, rgb(21 36 59 / 91%) calc(100% - var(--summit-warmth,0) * 76%), rgb(196 94 22 / 86%))),url('/landing-mountains.webp'); background-size:cover; background-position:center; }
-.mountain-briefing-panel { width:100%; max-width:640px; text-align:center; padding:40px 36px; }
+.mountain-briefing-panel { width:100%; max-width:40rem; text-align:center; padding:40px 36px; }
 .mountain-briefing-panel > h1 { margin-top:18px; }
 .mountain-briefing-copy { margin:22px auto 0; max-width:34rem; color:#645039; font-size:17px; line-height:1.75; white-space:pre-line; }
 @media(hover:none) and (prefers-reduced-motion:no-preference) { .trail-mountains .option-card:active:not(:disabled) { scale:1.02; } }
@@ -50,17 +50,17 @@
 @media(prefers-reduced-motion:reduce) { .mountain-peak,.mountain-sunrise,.mountain-haze,.mountain-summit-flag { transition:none; }.mountain-dust,.mountain-card-dust { display:none; }.mountain-summit-flag { transform:none; } }
 
 /* Keep the question, choices, and navigation together at desktop heights. */
-.trail-mountains .mountain-question-panel { width:100%; max-width:1080px; }
+.trail-mountains .mountain-question-panel { width:100%; max-width:67.5rem; }
 .trail-mountains .mountain-option-copy { align-items:center; gap:12px; }
 .trail-mountains .mountain-option-copy > span:last-child { padding-top:0; line-height:1.5; }
 .trail-mountains .mountain-actions { margin-top:12px; gap:12px; }
 .trail-mountains .scenario-choices { animation:none; }
-@media(min-width:768px) {
+@media(min-width:48rem) {
   .assessment-frame main.trail-mountains { align-items:center; padding:24px 72px; }
-  .trail-mountains .mountain-question-panel { display:grid; grid-template-columns:minmax(0,1fr) 148px; column-gap:28px; align-content:start; padding:28px 36px; }
+  .trail-mountains .mountain-question-panel { display:grid; grid-template-columns:minmax(0,1fr) 9.25rem; column-gap:28px; align-content:start; padding:28px 36px; }
   .trail-mountains .mountain-question-panel > .map-ribbon { grid-column:1; grid-row:1; justify-self:start; align-self:start; width:fit-content; max-width:100%; margin:0 0 18px; font-size:12px; line-height:1.4; letter-spacing:.1em; }
-  .trail-mountains .mountain-progress { grid-column:2; grid-row:1 / 4; align-self:center; width:148px; margin:0; }
-  .trail-mountains .mountain-medallion { width:132px; height:100px; }
+  .trail-mountains .mountain-progress { grid-column:2; grid-row:1 / 4; align-self:center; width:9.25rem; margin:0; }
+  .trail-mountains .mountain-medallion { width:8.25rem; height:100px; }
   .trail-mountains .mountain-elevation { margin:8px 0 0; line-height:1.4; font-size:12px; }
   .trail-mountains .mountain-question-panel > .assessment-scene { grid-column:1; grid-row:2; margin:0 0 8px; font-size:13px; line-height:1.4; }
   .trail-mountains .mountain-question-panel > h1 { grid-column:1; grid-row:3; margin:0; font-size:clamp(26px,2.2vw,34px); line-height:1.2; text-align:left; text-wrap:pretty; }
@@ -69,21 +69,21 @@
   .trail-mountains .mountain-option-copy { min-width:0; }
   .trail-mountains .mountain-option-copy > span:last-child { font-size:16px; }
   .trail-mountains .scenario-feed .option-card { gap:16px; }
-  .trail-mountains .scenario-feed .scenario-thumbnail { flex:0 0 72px; width:72px; height:72px; margin:0; }
-  .trail-mountains .scenario-thumbnail svg { width:60px; height:60px; }
+  .trail-mountains .scenario-feed .scenario-thumbnail { flex:0 0 72px; width:4.5rem; height:72px; margin:0; }
+  .trail-mountains .scenario-thumbnail svg { width:3.75rem; height:60px; }
   .trail-mountains .mountain-question-panel > .assessment-note { grid-column:1 / -1; grid-row:5; margin:14px 0 0; min-height:24px; line-height:24px; }
   .trail-mountains .mountain-actions { grid-column:1 / -1; grid-row:6; align-items:center; }
   .trail-mountains .mountain-actions .game-button { min-height:44px; padding:10px 22px; }
 }
-@media(min-width:768px) and (max-height:740px) {
+@media(min-width:48rem) and (max-height:46.25rem) {
   .assessment-frame main.trail-mountains { padding-block:16px; }
   .trail-mountains .mountain-question-panel { padding:22px 30px; }
   .trail-mountains .mountain-question-panel > h1 { font-size:28px; }
   .trail-mountains .scenario-choices { margin-top:20px; gap:12px; }
   .trail-mountains .scenario-choices .option-card { min-height:96px; padding:16px 20px; }
 }
-@media(max-width:767px) {
-  .trail-mountains .mountain-medallion { width:120px; height:90px; }
+@media(max-width:47.9375rem) {
+  .trail-mountains .mountain-medallion { width:7.5rem; height:90px; }
   .trail-mountains .mountain-progress { margin-top:16px; }
   .trail-mountains .mountain-question-panel > h1 { font-size:26px; line-height:1.25; }
   .trail-mountains .scenario-choices { margin-top:20px; }
@@ -97,3 +97,13 @@
 @media(hover:hover) and (pointer:fine) {
   .trail-mountains.game-ui-screen .mountain-question-panel .option-card:hover:not(:disabled) { border-color:#d4a017!important; box-shadow:0 12px 30px #07122266,inset 0 0 0 2px #d4a01780,0 0 16px #d4a01726!important; }
 }
+@media(max-width:48rem) {
+  .trail-mountains .mountain-question-panel { display:block; }
+  .trail-mountains .mountain-progress { width:auto; margin:1rem auto; }
+  .trail-mountains .mountain-question-panel > h1 { font-size:clamp(1.5rem,4vw,1.75rem); line-height:1.3; }
+  .trail-mountains .scenario-choices { gap:1rem; margin-top:1.5rem; }
+  .trail-mountains .scenario-choices .option-card { padding:1rem; }
+  .trail-mountains .mountain-actions { gap:1rem; margin-top:1.5rem; }
+  .trail-mountains .mountain-briefing-copy { margin-top:1.5rem; font-size:1rem; }
+}
+

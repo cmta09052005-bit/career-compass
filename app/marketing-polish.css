@@ -18,14 +18,14 @@
 .marketing-shell .story-session { font-size:clamp(.55rem,.7vw,.65rem); }
 .marketing-shell .carousel-controls { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:13px; padding:26px 12px 4px; color:#f5ecd7; }
 .marketing-shell .story-explorers .carousel-controls { margin-right:8vw; }
-.marketing-shell .carousel-dot { width:12px; height:12px; border-radius:50%; border:1px solid #d4b16b; background:transparent; cursor:pointer; padding:0; position:relative; }
+.marketing-shell .carousel-dot { width:0.75rem; height:12px; border-radius:50%; border:1px solid #d4b16b; background:transparent; cursor:pointer; padding:0; position:relative; }
 .marketing-shell .carousel-dot::after { content:''; position:absolute; inset:-8px; }
 .marketing-shell .carousel-dot[aria-pressed=true] { background:#d4a017; box-shadow:0 0 0 3px #d4a01733; }
 .marketing-shell .carousel-play { border:1px solid #b3956166; border-radius:3px; padding:8px 12px; margin-left:8px; font:600 10px var(--story-label),sans-serif; cursor:pointer; color:inherit; background:transparent; }
-.marketing-shell .carousel-controls .story-button { padding:8px 15px; min-width:40px; min-height:38px; font-size:17px; }
+.marketing-shell .carousel-controls .story-button { padding:8px 15px; min-width:2.5rem; min-height:38px; font-size:17px; }
 .marketing-shell .story-carousel { overscroll-behavior-x:contain; }
 .marketing-shell .hiw-tab-content { min-height:250px; }
-@media(max-width:800px) {
+@media(max-width:50rem) {
  .marketing-shell .story-navbar { flex-wrap:wrap; gap:10px; padding:10px 20px 14px; }
  .marketing-shell .story-navbar nav { display:flex; order:3; width:100%; justify-content:center; gap:30px; }
  .marketing-shell .story-navbar nav a { font-size:clamp(.55rem,1.5vw,.65rem); }
@@ -35,11 +35,11 @@
  .marketing-shell .story-hero { padding-top:155px; }
  .marketing-shell .hiw-intro,.marketing-shell .about-intro { padding-top:155px; }
 }
-@media(max-width:700px) {
+@media(max-width:43.75rem) {
  .marketing-shell .story-chapter { min-height:100dvh; }
  .marketing-shell .story-home .story-panel { max-width:100%; }
  .marketing-shell .story-explorers { padding-left:56px; }
- .marketing-shell .story-home .story-explorer-card { flex-basis:min(250px,calc(100vw - 92px)); width:min(250px,calc(100vw - 92px)); }
+ .marketing-shell .story-home .story-explorer-card { flex-basis:min(15.625rem,calc(100vw - 5.75rem)); width:min(15.625rem,calc(100vw - 5.75rem)); }
  .marketing-shell .story-home .story-panel { padding:30px 23px!important; }
  .marketing-shell .story-hero h1 { font-size:clamp(1.8rem,7.5vw,2.75rem); }
  .marketing-shell .story-actions .story-button { padding-inline:18px; font-size:clamp(.5rem,1.8vw,.65rem); max-width:100%; }
@@ -53,26 +53,26 @@
 .marketing-shell .story-region .story-panel { margin-left:auto; }
 .marketing-shell .region-1 .story-panel,.marketing-shell .region-3 .story-panel { margin-left:0; margin-right:auto; }
 .marketing-shell .story-discovery-slot { display:flex; justify-content:center; align-items:center; min-height:230px; padding:35px 8%; }
-.marketing-shell .story-popup { position:relative; bottom:auto; right:auto; width:min(285px,100%); padding:25px; box-shadow:0 15px 32px #160e0a70,0 3px 8px #160e0a40; z-index:1; }
+.marketing-shell .story-popup { position:relative; bottom:auto; right:auto; width:min(17.8125rem,100%); padding:25px; box-shadow:0 15px 32px #160e0a70,0 3px 8px #160e0a40; z-index:1; }
 .marketing-shell .story-popup h3 { font-size:clamp(1.25rem,2vw,1.5rem); }
-.marketing-shell .hiw-outcome-paper li { display:grid; grid-template-columns:64px minmax(0,1fr); align-items:center; }
-.marketing-shell .hiw-outcome-paper li img { display:block; width:60px; height:60px; object-fit:contain; margin:auto; }
+.marketing-shell .hiw-outcome-paper li { display:grid; grid-template-columns:4rem minmax(0,1fr); align-items:center; }
+.marketing-shell .hiw-outcome-paper li img { display:block; width:3.75rem; height:60px; object-fit:contain; margin:auto; }
 .marketing-shell .team-thanks { display:block; margin-top:17px; font-style:italic; color:#28686a; }
 .marketing-shell .hiw-step .step-node { transition:background-color .25s,color .25s; }
-@media(max-width:700px) {
+@media(max-width:43.75rem) {
  .marketing-shell .story-discovery-slot { padding:28px 24px 28px 60px; min-height:215px; }
- .marketing-shell .hiw-outcome-paper li { grid-template-columns:48px minmax(0,1fr); gap:12px; }
- .marketing-shell .hiw-outcome-paper li img { width:46px; height:46px; }
+ .marketing-shell .hiw-outcome-paper li { grid-template-columns:3rem minmax(0,1fr); gap:12px; }
+ .marketing-shell .hiw-outcome-paper li img { width:2.875rem; height:46px; }
 }
 @media(prefers-reduced-motion:reduce) { .marketing-shell .story-map { height:100%; }.marketing-shell .story-start,.marketing-shell .hiw-start,.marketing-shell .about-start { transform:none!important; } }
 /* GSAP owns arrow/autoplay movement; touch still scrolls natively. */
 .marketing-shell .story-carousel { scroll-snap-type:none; }
 
-.marketing-shell .carousel-dot { width:44px; height:44px; border:0; background:radial-gradient(circle, transparent 4px, #d4b16b 4px, #d4b16b 5px, transparent 6px); }
+.marketing-shell .carousel-dot { width:2.75rem; height:44px; border:0; background:radial-gradient(circle, transparent 4px, #d4b16b 4px, #d4b16b 5px, transparent 6px); }
 .marketing-shell .carousel-dot::after { inset:0; }
 .marketing-shell .carousel-dot[aria-pressed=true] { background:radial-gradient(circle, #d4a017 6px, transparent 7px); box-shadow:none; }
 .marketing-shell .carousel-controls { gap:0; flex-wrap:nowrap; }
-.marketing-shell .carousel-controls .story-button { min-width:44px; min-height:44px; padding:8px; }
+.marketing-shell .carousel-controls .story-button { min-width:2.75rem; min-height:44px; padding:8px; }
 .story-ending .story-text-link, .hiw-closing .story-text-link { display:inline-flex; min-height:44px; align-items:center; margin:12px 20px; }
 .hiw-trail-paper { touch-action:pan-y; }
 
@@ -81,15 +81,15 @@
 .marketing-shell .story-navbar[data-landing] .language-switcher summary { display:flex; align-items:center; gap:6px; min-height:44px; font-family:var(--story-label),sans-serif; font-size:11px; font-weight:600; letter-spacing:.13em; text-transform:uppercase; }
 .marketing-shell .story-navbar[data-landing] .language-switcher summary span { font-size:.8em; letter-spacing:0; }
 .marketing-shell .story-navbar[data-landing] .language-switcher summary:hover { color:#d4a017; }
-.marketing-shell .story-navbar[data-landing] .language-options { top:calc(100% + 6px); min-width:128px; padding:4px; font-family:var(--story-label),sans-serif; font-size:11px; font-weight:600; line-height:1.5; letter-spacing:.03em; }
+.marketing-shell .story-navbar[data-landing] .language-options { top:calc(100% + 6px); min-width:8rem; padding:4px; font-family:var(--story-label),sans-serif; font-size:11px; font-weight:600; line-height:1.5; letter-spacing:.03em; }
 .marketing-shell .story-navbar[data-landing] .language-options button { min-height:36px; padding:9px 12px; }
-@media(max-width:800px) {
+@media(max-width:50rem) {
  .marketing-shell .story-navbar[data-landing] .language-switcher summary { font-size:clamp(.55rem,1.5vw,.65rem); }
  .marketing-shell .story-navbar[data-landing] .language-options button { min-height:44px; }
 }
 .marketing-shell .story-text-link { min-height:44px; align-content:center; white-space:normal; }
-@media(max-width:800px) {
- .story-menu-toggle { display:block; min-width:44px; min-height:44px; color:#f5ecd7; border:1px solid #b39561; padding:6px 10px; border-radius:4px; margin-left:auto; font-size:12px; }
+@media(max-width:50rem) {
+ .story-menu-toggle { display:block; min-width:2.75rem; min-height:44px; color:#f5ecd7; border:1px solid #b39561; padding:6px 10px; border-radius:4px; margin-left:auto; font-size:12px; }
  .marketing-shell .story-navbar nav { display:none; }
  .marketing-shell .story-navbar[data-menu-open=true] nav { display:flex; }
  .marketing-shell .story-navbar { padding:10px 14px; }
@@ -97,13 +97,13 @@
  .marketing-shell .story-nav-start { min-height:44px; padding:8px 10px; font-size:9px; }
  .marketing-shell .story-hero, .marketing-shell .hiw-intro, .marketing-shell .about-intro { padding-top:130px; }
 }
-@media(max-width:700px) {
+@media(max-width:43.75rem) {
  .marketing-shell .story-explorers { padding-left:16px; padding-right:16px; }
  .marketing-shell .story-explorers .carousel-controls { margin-right:0; padding-inline:0; }
  .marketing-shell .carousel-dot { flex-shrink:0; }
  .marketing-shell .hiw-tabs button { min-height:48px; }
 }
-@media(max-width:380px) { .marketing-shell .story-explorers .carousel-dot { width:32px; } }
+@media(max-width:23.75rem) { .marketing-shell .story-explorers .carousel-dot { width:2rem; } }
 .marketing-shell .hiw-closing .story-text-link { color:#edc975; opacity:1; text-decoration:underline; text-underline-offset:5px; }
 .marketing-shell .hiw-closing .story-text-link:hover { color:#fff4d7; }
 .marketing-shell .hiw-closing .story-text-link:focus-visible { outline:2px solid #edc975; outline-offset:5px; }
@@ -111,22 +111,22 @@
 /* Both carousels share the Trails card transition and a stable paper surface. */
 .marketing-shell .story-explorer-paper { max-width:calc(100% - 8vw); padding:35px; touch-action:pan-y; }
 .marketing-shell .story-explorer-panel { display:block; }
-.marketing-shell .story-explorer-content { display:grid; grid-template-columns:190px minmax(0,1fr); grid-template-rows:auto auto 1fr; column-gap:30px; align-items:center; width:100%; min-height:250px; text-align:left; }
-.marketing-shell .story-explorer-panel .story-portrait { grid-row:1 / 4; height:230px; width:190px; border-right:1px solid #a7895950; }
+.marketing-shell .story-explorer-content { display:grid; grid-template-columns:11.875rem minmax(0,1fr); grid-template-rows:auto auto 1fr; column-gap:30px; align-items:center; width:100%; min-height:250px; text-align:left; }
+.marketing-shell .story-explorer-panel .story-portrait { grid-row:1 / 4; height:230px; width:11.875rem; border-right:1px solid #a7895950; }
 .marketing-shell .story-explorer-panel h3 { font-size:26px; }
 .marketing-shell .story-explorer-panel p { padding:0; font-size:15px; }
 .marketing-shell .story-explorer-content { grid-template-rows:auto auto auto; align-content:center; align-items:start; row-gap:12px; }
 .marketing-shell .story-explorer-content p { align-self:start; margin-top:8px; }
-@media(max-width:700px) {
-  .marketing-shell .story-explorer-paper { width:calc(100% - 12px); margin:auto; }
+@media(max-width:43.75rem) {
+  .marketing-shell .story-explorer-paper { width:calc(100% - 0.75rem); margin:auto; }
   .marketing-shell .story-explorer-content { display:block; width:100%; min-height:365px; text-align:center; }
   .marketing-shell .story-explorer-panel .story-portrait { margin:auto; border:0; }
   .marketing-shell .story-explorer-panel h3 { font-size:23px; }
-  .marketing-shell .story-navbar .story-nav-start { max-width:155px; white-space:normal; line-height:1.5; }
+  .marketing-shell .story-navbar .story-nav-start { max-width:9.6875rem; white-space:normal; line-height:1.5; }
 }
-@media(max-width:400px) {
-  .marketing-shell .story-explorers .carousel-controls { display:grid; grid-template-columns:repeat(6,44px); justify-content:center; row-gap:4px; }
-  .marketing-shell .story-explorers .carousel-dot { width:44px; grid-row:1; }
+@media(max-width:25rem) {
+  .marketing-shell .story-explorers .carousel-controls { display:grid; grid-template-columns:repeat(6,2.75rem); justify-content:center; row-gap:4px; }
+  .marketing-shell .story-explorers .carousel-dot { width:2.75rem; grid-row:1; }
   .marketing-shell .story-explorers .carousel-controls .story-button:first-child { grid-row:2; grid-column:1; }
   .marketing-shell .story-explorers .carousel-controls .story-button:last-child { grid-row:2; grid-column:6; }
 }
@@ -134,4 +134,30 @@
 .marketing-shell .story-motif { position:absolute; left:12%; top:50%; transform:translateY(-50%); width:32%; text-align:center; height:clamp(260px,32vw,480px); background:center/contain no-repeat; opacity:.85; filter:drop-shadow(0 10px 20px #1b2a4a45); pointer-events:none; user-select:none; }
 .marketing-shell .region-1 .story-motif,.marketing-shell .region-3 .story-motif,.marketing-shell .story-hero .story-motif { left:auto; right:7%; }
 .marketing-shell .story-chapter > .story-panel { position:relative; z-index:1; }
-@media(max-width:1100px) { .marketing-shell .story-motif { display:none; } }
+@media(max-width:68.75rem) { .marketing-shell .story-motif { display:none; } }
+
+/* Keep the marketing pages on the same phone/tablet spacing and target scale. */
+@media(max-width:48rem) {
+  .marketing-shell .story-brand,.marketing-shell .story-footer a { min-height:2.5rem; display:inline-flex; align-items:center; }
+  .marketing-shell .story-navbar nav { gap:.5rem 1rem; flex-wrap:wrap; }
+  .marketing-shell .story-navbar nav a,.marketing-shell .story-navbar .language-switcher summary { font-size:.75rem; }
+  .marketing-shell .story-navbar .language-options button { min-height:2.5rem; }
+  .marketing-shell .story-stepper { left:.25rem; gap:.25rem; }
+  .marketing-shell .story-stepper a { min-width:2.5rem; min-height:2.5rem; }
+  .marketing-shell .story-chapter { padding-inline:3.5rem 1.5rem; }
+  .marketing-shell .story-home .story-panel { padding:1.5rem 1rem!important; }
+  .marketing-shell .story-hero h1 { font-size:clamp(1.75rem,7vw,2.5rem); line-height:1.2; }
+  .marketing-shell .story-description { font-size:.875rem; line-height:1.7; }
+  .marketing-shell .story-actions { gap:1rem; }
+  .marketing-shell .story-actions .story-button { min-height:2.75rem; font-size:.6875rem; line-height:1.5; }
+  .marketing-shell .story-text-link,.marketing-shell .story-eyebrow { font-size:.6875rem; }
+  .marketing-shell .story-footer { padding:1.5rem; gap:1rem; }
+  .marketing-shell .story-explorers { padding:3rem 1rem; }
+  .marketing-shell .story-explorer-paper { max-width:100%; padding:1.5rem 1rem; }
+  .marketing-shell .story-explorers .carousel-controls { display:grid; grid-template-columns:repeat(6,2.75rem); row-gap:.5rem; }
+  .marketing-shell .story-explorers .carousel-dot { grid-row:1; width:2.75rem; }
+  .marketing-shell .story-explorers .carousel-controls .story-button:first-child { grid-row:2; grid-column:1; }
+  .marketing-shell .story-explorers .carousel-controls .story-button:last-child { grid-row:2; grid-column:6; }
+  .marketing-shell .carousel-play { min-height:2.5rem; }
+}
+
