@@ -88,8 +88,10 @@
 
 @media(max-width:48rem) {
   .trail-forest .forest-card > h1 { font-size:clamp(1.5rem,4vw,1.75rem); line-height:1.3; }
+  .trail-forest .forest-help summary { width:2.5rem; height:2.5rem; }
+  .trail-forest .forest-help p { top:calc(100% + .5rem); }
+  .trail-forest .forest-growth-label { padding-inline:2.75rem; }
   .trail-forest .forest-growth-stage { min-width:2.5rem; min-height:2.5rem; }
   .trail-forest .forest-actions { gap:1rem; }
   .trail-forest .forest-briefing > p { font-size:1rem; margin-block:1.5rem; }
 }
-

@@ -1,0 +1,23 @@
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.56.1:3000
+✓ Ready in 1629ms
+✓ Running next.config.mjs took 112ms
+
+○ Compiling / ...
+ GET / 200 in 9.1s (next.js: 7.9s, application-code: 1210ms)
+ GET /intake 200 in 1079ms (next.js: 682ms, application-code: 397ms)
+ GET /journey 200 in 649ms (next.js: 514ms, application-code: 135ms)
+ GET /journey/interests 200 in 655ms (next.js: 472ms, application-code: 183ms)
+ GET /journey/interests 200 in 247ms (next.js: 19ms, application-code: 228ms)
+ GET /journey 200 in 228ms (next.js: 96ms, application-code: 132ms)
+ GET /journey/skills 200 in 556ms (next.js: 405ms, application-code: 151ms)
+✓ Compiled in 1309ms
+ GET /journey 200 in 710ms (next.js: 552ms, application-code: 159ms)
+ GET /journey/academic 200 in 550ms (next.js: 320ms, application-code: 230ms)
+ GET /journey 200 in 388ms (next.js: 213ms, application-code: 175ms)
+ GET /processing 200 in 2.6s (next.js: 2.0s, application-code: 597ms)
+ GET /results 200 in 471ms (next.js: 396ms, application-code: 75ms)
+ GET /results/BSIT-001 200 in 4.2s (next.js: 3.9s, application-code: 359ms)
+ GET /how-it-works 200 in 769ms (next.js: 472ms, application-code: 297ms)
+ GET / 200 in 456ms (next.js: 98ms, application-code: 358ms)

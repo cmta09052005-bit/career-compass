@@ -105,7 +105,7 @@
   .hiw-intro h1 { font-size:clamp(2rem,6vw,2.5rem); }
   .hiw-page :is(.hiw-trail-paper,.hiw-outcome-paper) { padding:1.5rem 1rem!important; }
   .hiw-trail-copy p,.hiw-outcome-paper li,.trust-card p { font-size:.875rem; line-height:1.7; }
-  .hiw-tabs button { min-width:0; padding:.5rem; font-size:.75rem; overflow-wrap:anywhere; }
+  .hiw-tabs button { min-width:0; min-height:2.75rem; padding:.5rem; font-size:.75rem; overflow-wrap:anywhere; }
   .hiw-rewards,.hiw-trust { padding-block:3rem; }
   .hiw-closing { padding:3rem 1rem; }
 }
