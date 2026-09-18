@@ -156,7 +156,6 @@ export default function SkillsPage() {
             disabled={confirming}
             className="w-full sm:w-auto"
           />
-          <Button label={isFinalStatement ? "Complete Forest" : "Next"} className="forest-complete" onClick={() => goNext()} disabled={!isReady || confirming} />
         </Localized>
       </Card>}
     </Localized></JourneyAccess>
