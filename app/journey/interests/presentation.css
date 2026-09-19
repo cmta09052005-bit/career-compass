@@ -98,6 +98,8 @@
   .trail-mountains.game-ui-screen .mountain-question-panel .option-card:hover:not(:disabled) { border-color:#d4a017!important; box-shadow:0 12px 30px #07122266,inset 0 0 0 2px #d4a01780,0 0 16px #d4a01726!important; }
 }
 @media(max-width:48rem) {
+  .assessment-frame main.trail-mountains:has(.mountain-briefing-panel) { align-items:center; padding:4rem 1rem!important; }
+  .trail-mountains .mountain-briefing-panel > h1 { margin-top:1rem; }
   .trail-mountains .mountain-question-panel { display:block; }
   .trail-mountains .mountain-progress { width:auto; margin:1rem auto; }
   .trail-mountains .mountain-question-panel > h1 { font-size:clamp(1.5rem,4vw,1.75rem); line-height:1.3; }
