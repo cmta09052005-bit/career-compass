@@ -1,5 +1,8 @@
 "use client";
 
+import { browserStorage } from "@/lib/browserStorage";
+
+
 import Localized from "@/components/Localized";
 
 import { useEffect, useRef, useState } from "react";
@@ -15,7 +18,6 @@ import { useGSAP } from "@gsap/react";
 import "./presentation.css";
 import items from "@/data/items.json";
 import { SECTION_STATUS, useSessionAnswers } from "@/lib/useSessionAnswers";
-import useUnsavedProgressWarning from "@/lib/useUnsavedProgressWarning";
 import { playSound } from "@/lib/sound";
 import { isValidGwa, isValidSubjects } from "@/lib/assessmentValidation";
 
@@ -41,7 +43,6 @@ export default function AcademicPage() {
   const basket = useRef(null);
   const flight = useRef(null);
   const { session, isReady, updateSession, discardSection } = useSessionAnswers();
-  useUnsavedProgressWarning(true);
   const [step, setStep] = useState(1);
   const [briefingSeen, setBriefingSeen] = useState(false);
   const [gwaAttempted, setGwaAttempted] = useState(false);
@@ -53,9 +54,9 @@ export default function AcademicPage() {
   useEffect(() => {
     queueMicrotask(() => {
       try {
-        setBriefingSeen(sessionStorage.getItem("careerCompassValleyBriefing") === "seen");
-        if (sessionStorage.getItem("careerCompassValleyStep") === "2") setStep(2);
-      } catch { /* Session memory remains available. */ }
+        setBriefingSeen(browserStorage.getItem("careerCompassValleyBriefing") === "seen");
+        if (browserStorage.getItem("careerCompassValleyStep") === "2") setStep(2);
+      } catch { /* In-memory state remains available. */ }
     });
   }, []);
   useEffect(() => {
@@ -84,10 +85,10 @@ export default function AcademicPage() {
 
   function changeStep(next) {
     setStep(next);
-    try { sessionStorage.setItem("careerCompassValleyStep", String(next)); } catch {}
+    try { browserStorage.setItem("careerCompassValleyStep", String(next)); } catch {}
   }
   function beginTrail() {
-    try { sessionStorage.setItem("careerCompassValleyBriefing", "seen"); } catch {}
+    try { browserStorage.setItem("careerCompassValleyBriefing", "seen"); } catch {}
     setBriefingSeen(true);
     changeStep(1);
   }
@@ -147,9 +148,9 @@ export default function AcademicPage() {
     <JourneyAccess session={session} isReady={isReady} requires={["interests", "skills"]}><Localized as="main" className="trail-screen trail-valley game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
       <div className="valley-light" aria-hidden="true" />
       <Localized as="div" className="valley-pollen" aria-hidden="true">{Array.from({ length: 10 }, (_, index) => <i key={index} style={{ left: ((index * 29 + 7) % 100) + "%", top: ((index * 17 + 13) % 90) + "%", animationDelay: (-index * 2.7) + "s" }} />)}</Localized>
-      {showBriefing ? <Card className="valley-briefing relative">{!submitting && <TrailExit onLeave={() => { discardSection("academic"); try { sessionStorage.removeItem("careerCompassValleyStep"); } catch {} router.push("/journey"); }} />}<Localized as="h1">The Valley</Localized><Localized as="p">2 quick details. Add your grades and pick your strongest subjects. The ground the rest of your journey stands on.</Localized><Button label="BEGIN" onClick={beginTrail} /></Card> :
+      {showBriefing ? <Card className="valley-briefing relative">{!submitting && <TrailExit onLeave={() => { discardSection("academic"); try { browserStorage.removeItem("careerCompassValleyStep"); } catch {} router.push("/journey"); }} />}<Localized as="h1">The Valley</Localized><Localized as="p">2 quick details. Add your grades and pick your strongest subjects. The ground the rest of your journey stands on.</Localized><Button label="BEGIN" onClick={beginTrail} /></Card> :
       <Card ref={scrollCard} className="valley-card relative max-w-4xl">
-        {!submitting && <TrailExit onLeave={() => { discardSection("academic"); try { sessionStorage.removeItem("careerCompassValleyStep"); } catch {} router.push("/journey"); }} />}
+        {!submitting && <TrailExit onLeave={() => { discardSection("academic"); try { browserStorage.removeItem("careerCompassValleyStep"); } catch {} router.push("/journey"); }} />}
         <form onSubmit={submitAcademicProfile} noValidate>
           <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">The Valley · Step {step} of 2</Localized>
           <Localized as="h1" className="mt-3 font-serif text-3xl text-balance sm:text-4xl">Complete your academic profile</Localized>

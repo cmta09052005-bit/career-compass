@@ -8,7 +8,7 @@ Implemented September 8, 2026.
 - Intake success opens through an explicit completion event. Browser history
   restores the intake step and selections.
 - Atlas supports portrait, uses atlas-journey-v3.png and a winding SVG route,
-  offsets its token below labels, and adds session-only sound and badge rewards.
+  offsets its token below labels, and adds locally saved sound and badge rewards.
 - Assessments, processing, results, course details and report use journal surfaces.
 - Interests reveal choices; Skills has reactive confidence feedback; Academics
   uses two steps. Progress indicators count saved answers.

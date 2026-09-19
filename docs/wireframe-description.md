@@ -22,7 +22,7 @@ Indicator	Element	Description
 Motion Note (not numbered — reference only): On load/scroll, elements 1–4 and 6 may reveal sequentially (brand → nav → headline → description → CTA) over the background. A compass graphic may subtly rotate/settle during this reveal. This is implemented in Phase 5 using GSAP — the wireframe above represents the final settled state.
 ________________________________________
 SCREEN 2: STUDENT INFO INTAKE
-Purpose: Collects session-only personalization info (not an account) before entering the assessment.
+Purpose: Collects locally saved personalization info (not an account) before entering the assessment.
 Layout:
 Indicator	Element	Description
 7	Panel heading	"Who Are You, Explorer?"
@@ -44,7 +44,7 @@ Indicator	Element	Description
 18	Compass Points progress indicator	Visual progress element showing each section's state: Not Started / In Progress / Completed
 19	Settings icon	Small gear/settings icon (top corner) — opens Restart Assessment, etc 
 20	" View My Results" button	Enabled only once all 3 sections are marked Completed; replaces the Start Button (Indicator 22) once available — the two are never shown at the same time
-21	Session reminder text	Small one-time note: "Your progress is temporary and not saved after this session"
+21	Session reminder text	Small one-time note: "Your progress is saved in this browser on this device until you restart or clear site data"
 22	"Start Assessment" button	Shown only before any section has been started; begins the guided flow at the first section. Disappears once at least one section is in progress changes to “Continue Assessment” and once all sections are done, button cannot be accessed anymore.
 23	Journey Guide icon	Small or compass-shaped help icon; opens a brief first-time overlay explaining how to navigate the map and select a section. 
 24	"Locate Me" button	Centers/highlights the student's current or next recommended island on the map — useful if the map is zoomable or larger than the screen. 

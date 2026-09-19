@@ -476,8 +476,8 @@ Small controls can sit in the upper corner:
 •	Restart Assessment
 •	Sound On / Off
 Important:
-Make it clear that this session data is temporary.
-You don't need to repeatedly tell the user "session-only" everywhere. One small explanation can be enough.
+Make it clear that progress is saved in this browser on this device, without an account.
+Explain local saving once, including restart and browser-data clearing, without repeating it everywhere.
 ________________________________________
 5. INTERESTS — “DISCOVER WHAT DRAWS YOU”
 This should not feel like a boring questionnaire.

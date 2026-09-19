@@ -9,7 +9,7 @@ enter their trail directly. The full-route sepia artwork
 atlas-journey-v3.png fills the world behind a winding SVG trail.
 
 The selected Explorer portrait appears in the fixed nameplate and one circular
-map token. Session-only previous position enables automatic trail advance after
+map token. Locally saved previous position enables automatic trail advance after
 the earned badge clears, with reduced-motion support. Portrait and
 landscape phones share the fixed viewport without a rotation blocker. The HUD
 adapts to narrow widths and the token sits below node labels.
@@ -23,10 +23,10 @@ adapts to narrow widths and the token sits below node labels.
 - Academic submission returns to the Atlas for the Full Expedition moment;
   Scholar clears automatically, then the token follows the final curve to The
   Islands. Full Expedition appears after arrival; View My Results opens processing.
-  The final Islands position is retained for this session.
+  The final Islands position is retained across visits on this browser/device.
 - Restart clears the assessment session and guide/celebration flags, then opens
   Basecamp. Exit also clears the session. Both require confirmation.
-- Sound defaults off and remembers its setting for this tab. Short local WAV
+- Sound defaults off and remembers its setting on this browser/device. Short local WAV
   effects use the shared lib/sound.js helper after a user gesture; active sounds
   stop when the tab is hidden. Settings provides a visible switch.
 - English remains the supported language. Settings explicitly identifies
@@ -89,7 +89,7 @@ No browser console errors were observed in the fresh verification session.
 - Badge exit finishes before the 1.2-second curved walk (200ms reduced motion).
   Arrival enables the glowing action and opens a Forest/Valley preview with
   Continue Journey and ×. The final arrival shows Full Expedition instead.
-  Reloading during a pending completion resumes from session-only notices/position.
+  Reloading during a pending completion resumes from locally saved notices/position.
 - Intake onward uses a fixed assessment frame. Intake retains its inner scroller;
   trail, processing and report cards contain overflow; Results and all course
   details share an accessible internal content region. Trail step changes reset

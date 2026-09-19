@@ -14,7 +14,7 @@ Purpose of this document: A Site Map is a structural outline that lists every sc
 •	Short description of the system's purpose
 •	"Start Your Journey" button
 
-2.	STUDENT INFO INTAKE (session-only — not an account)
+2.	STUDENT INFO INTAKE (locally saved — not an account)
 •	Nickname / First Name (optional, for personalization only)
 •	Strand (Academic-STEM, Academic-ABM, Academic-HUMSS, TVL, Arts & Design, Sports)
 •	Current Year Level (Grade 11 / Grade 12) — display/personalization only, not scored
@@ -27,7 +27,7 @@ Purpose of this document: A Site Map is a structural outline that lists every sc
 •	Journey Guide icon (first-time help overlay explaining map navigation) 
 •	"Locate Me" button (centers/highlights current or next section on the map)
 •	"View My Results" button (enabled once all 3 sections are completed)
-•	Session Options (Restart Assessment, Sound On/Off) — session-only, not saved between visits
+•	Session Options (Restart Assessment, Sound On/Off) — saved locally between visits; Restart clears journey data but keeps preferences
 •	"Start Assessment" button (shown only before any section has been started if not, “Start” changes to “Continue”
 
 3a. INTERESTS SECTION
@@ -39,7 +39,7 @@ Purpose of this document: A Site Map is a structural outline that lists every sc
 
 4.	PROCESSING / ASSESSMENT SUMMARY (transition screen)
 •	Brief loading/computing animation
-•	Rule-based weighted scoring engine computes category + course scores (in-session only)
+•	Rule-based weighted scoring engine computes category + course scores (in the browser from locally saved answers)
 
 5.	RESULTS PAGE
 •	Global ranked list of all 24 recommended courses, initially showing the top 5

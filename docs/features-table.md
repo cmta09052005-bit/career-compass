@@ -11,7 +11,7 @@ Purpose of this document: This table provides a consolidated, at-a-glance invent
 CAREER COMPASS: System Features and Functionality Table (v1.0)
 Feature ID	Feature	Description	Status
 F-01	Explorer-Themed Landing Page	Introduces the system's journey/exploration concept to students	Planned
-F-02	Session-Only Student Info Intake	Collects nickname, strand, and year level (no account/database)	Planned
+F-02	Locally Saved Student Info Intake	Collects nickname, strand, and year level (no account/database)	Planned
 F-03	Journey Map Navigation Hub	Visual island-map interface showing progress across 3 assessment sections	Planned
 F-04	Interests Assessment Module	Scenario-based card selection to gauge student interests	Planned
 F-05	Skills Assessment Module	Confidence-slider self-assessment of key skills	Planned
@@ -22,8 +22,8 @@ F-09	Ranked Results with Match Percentage	Displays top-matching category and ran
 F-10	Course Detail Explorer	Shows Overview, Schools, Career Opportunities, and Guidance Tips per course	Planned
 F-11	Printable PDF Report Generator	Generates a downloadable "Explorer Report" summarizing the student's results	Planned
 F-12	Responsive Web Access	Accessible via desktop, laptop, or mobile browser (Chrome/Edge)	Planned
-F-13	Session Auto-Recovery	Uses browser sessionStorage to restore in-progress answers after an accidental page refresh (tab-only, no server storage)	Planned
-F-14	Unsaved Progress Warning	Prompts the user before leaving mid-assessment to prevent accidental data loss	Planned
+F-13	Local Progress Recovery	Uses browser localStorage to restore progress after refresh or reopening on the same browser/device (no server storage)	Planned
+F-14	Unsaved Progress Warning	Warns before leaving only when local saving fails; explicit trail discard and restart retain confirmation	Planned
 F-15	Guided Sequential Progression	Assessment sections unlock one at a time in fixed order; students cannot skip ahead or freely jump between sections	Planned
 
 

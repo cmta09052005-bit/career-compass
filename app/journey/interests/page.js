@@ -1,5 +1,8 @@
 "use client";
 
+import { browserStorage } from "@/lib/browserStorage";
+
+
 import Localized from "@/components/Localized";
 
 import { useEffect, useRef, useState } from "react";
@@ -19,7 +22,6 @@ import {
   SECTION_STATUS,
   useSessionAnswers,
 } from "@/lib/useSessionAnswers";
-import useUnsavedProgressWarning from "@/lib/useUnsavedProgressWarning";
 import { isValidInterest } from "@/lib/assessmentValidation";
 
 gsap.registerPlugin(useGSAP);
@@ -73,10 +75,9 @@ export default function InterestsPage() {
   const [settling, setSettling] = useState(false);
   const advancing = useRef(false);
   const heading = useRef(null);
-  useUnsavedProgressWarning(true);
 
   let seenBriefing = false;
-  try { seenBriefing = sessionStorage.getItem(BRIEFING_KEY) === "seen"; } catch { /* Session memory still works. */ }
+  try { seenBriefing = browserStorage.getItem(BRIEFING_KEY) === "seen"; } catch { /* In-memory state still works. */ }
   const regionStarted = Object.keys(session.interests).length > 0;
   const showBriefing = !dismissedBriefing && !regionStarted && !seenBriefing;
 
@@ -96,7 +97,7 @@ export default function InterestsPage() {
   }, { scope: scrollCard, dependencies: [elevation, isReady, showBriefing], revertOnUpdate: true });
 
   function beginTrail() {
-    try { sessionStorage.setItem(BRIEFING_KEY, "seen"); } catch { /* Session memory still works. */ }
+    try { browserStorage.setItem(BRIEFING_KEY, "seen"); } catch { /* In-memory state still works. */ }
     playSound("tap");
     setDismissedBriefing(true);
   }

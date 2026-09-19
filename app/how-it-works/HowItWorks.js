@@ -38,7 +38,7 @@ const outcomes = [
   ["Details for every course, including schools, careers, and tips to get there", "magnifying-glass"],
   ["A downloadable report you can keep or show your guidance counselor", "compass-download"],
 ];
-const trust = [["No login needed", "explorer-backpack"], ["Nothing is saved after you close the tab", "fog-mist"], ["Free for all Senior High School students", "sunburst"], ["About 10 minutes, start to finish", "footprint-trail"]];
+const trust = [["No login needed", "explorer-backpack"], ["Progress is saved on this device", "fog-mist"], ["Free for all Senior High School students", "sunburst"], ["About 10 minutes, start to finish", "footprint-trail"]];
 function Icon({ name, size = 64, className = "" }) {
   return <Localized as={Image} className={className} src={`/icons/career-compass/${name}.svg`} alt="" width={size} height={size} />;
 }

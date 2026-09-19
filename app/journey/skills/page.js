@@ -1,5 +1,8 @@
 "use client";
 
+import { browserStorage } from "@/lib/browserStorage";
+
+
 import Localized from "@/components/Localized";
 
 import { useEffect, useRef, useState } from "react";
@@ -20,7 +23,6 @@ import {
   SECTION_STATUS,
   useSessionAnswers,
 } from "@/lib/useSessionAnswers";
-import useUnsavedProgressWarning from "@/lib/useUnsavedProgressWarning";
 import { playSound } from "@/lib/sound";
 import { isValidConfidence } from "@/lib/assessmentValidation";
 
@@ -41,7 +43,7 @@ export default function SkillsPage() {
   }
   const [dismissedBriefing, setDismissedBriefing] = useState(false);
   let seenBriefing = false;
-  try { seenBriefing = sessionStorage.getItem(BRIEFING_KEY) === "seen"; } catch { /* In-memory dismissal remains available. */ }
+  try { seenBriefing = browserStorage.getItem(BRIEFING_KEY) === "seen"; } catch { /* In-memory dismissal remains available. */ }
   const showBriefing = !dismissedBriefing && !seenBriefing && !Object.keys(session.skills).length;
   const heading = useRef(null);
   const [attempted, setAttempted] = useState(false);
@@ -53,7 +55,6 @@ export default function SkillsPage() {
     if (scrollCard.current) scrollCard.current.scrollTop = 0;
     if (isReady && !showBriefing) heading.current?.focus({ preventScroll: true });
   }, [statementIndex, isReady, showBriefing]);
-  useUnsavedProgressWarning(true);
 
   const currentItem = SKILL_ITEMS[statementIndex];
   const selectedValue = session.skills[currentItem.id];
@@ -130,7 +131,7 @@ export default function SkillsPage() {
   }
 
   function beginTrail() {
-    try { sessionStorage.setItem(BRIEFING_KEY, "seen"); } catch { /* In-memory dismissal remains available. */ }
+    try { browserStorage.setItem(BRIEFING_KEY, "seen"); } catch { /* In-memory dismissal remains available. */ }
     setDismissedBriefing(true);
   }
 

@@ -1,9 +1,13 @@
 "use client";
 import { useEffect } from "react";
 import { activateSound, initializeSound, playSound, stopSounds } from "@/lib/sound";
+import { subscribeToStorage } from "@/lib/browserStorage";
 export default function SoundEffects() {
   useEffect(() => {
     initializeSound();
+    const unsubscribe = subscribeToStorage(key => {
+      if (key === null || key === "careerCompassSound") { initializeSound(); stopSounds(); }
+    });
     const activate = () => activateSound();
     const click = (event) => { activate(); if (event.target.closest("button:not(:disabled), a, input[type=radio], input[type=checkbox]")) playSound("tap"); };
     const visibility = () => { if (document.hidden) stopSounds(); };
@@ -19,7 +23,7 @@ export default function SoundEffects() {
       previous = current;
     });
     observer.observe(document.body, { childList:true, subtree:true, attributes:true, attributeFilter:["open", "data-popup-key"] });
-    return () => { observer.disconnect(); stopSounds(); document.removeEventListener("pointerdown", activate); document.removeEventListener("keydown", activate); document.removeEventListener("click", click); document.removeEventListener("visibilitychange", visibility); };
+    return () => { unsubscribe(); observer.disconnect(); stopSounds(); document.removeEventListener("pointerdown", activate); document.removeEventListener("keydown", activate); document.removeEventListener("click", click); document.removeEventListener("visibilitychange", visibility); };
   }, []);
   return null;
 }

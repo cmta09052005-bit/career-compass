@@ -19,8 +19,8 @@ scroll animations.
 - NO login, NO account registration, NO authentication, NO user roles.
 - NO admin dashboard / admin CMS.
 - All data is either STATIC (bundled JSON: `items.json`, `courses.json`) or
-  SESSION-ONLY (React state / browser `sessionStorage`, auto-cleared when
-  the tab closes).
+  LOCALLY SAVED (browser `localStorage` for progress and preferences; React
+  state for transient UI). Restart clears journey data; clearing site data removes local saves.
 - Landing page compass animation = CSS/SVG + GSAP ScrollTrigger only — NOT
   a 3D model, NOT Three.js, NOT a pre-rendered frame-sequence canvas.
 

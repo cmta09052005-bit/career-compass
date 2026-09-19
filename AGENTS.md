@@ -8,8 +8,7 @@ relevant file in docs/ for the specific area you're touching.
 
 ## Hard Constraints (Never Violate)
 - NO database, NO login, NO account registration, NO admin dashboard.
-- All data is static (JSON files) or session-only (React state /
-  sessionStorage)
+- All data is static (JSON files) or locally saved (localStorage for progress/preferences; React state for transient UI)
 - Tech stack: Next.js, JavaScript, Tailwind CSS, App Router, no backend
   server beyond static hosting.
 

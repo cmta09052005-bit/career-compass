@@ -1,5 +1,8 @@
 "use client";
 
+import { browserStorage, subscribeToStorage } from "@/lib/browserStorage";
+
+
 import Localized from "@/components/Localized";
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
@@ -115,7 +118,7 @@ export default function JourneyPage() {
     const recover = () => {
       if (leaving.current) return;
       let missing = !isValidStrand(session.strand);
-      try { const stored = JSON.parse(sessionStorage.getItem(SESSION_STORAGE_KEY)); missing = missing || !stored?.strand; } catch { missing = true; }
+      try { const stored = JSON.parse(browserStorage.getItem(SESSION_STORAGE_KEY)); missing = missing || !stored?.strand; } catch { missing = true; }
       if (missing) { leaving.current = true; router.replace("/intake?session=ended"); }
     };
     recover();
@@ -124,14 +127,14 @@ export default function JourneyPage() {
     return () => { window.removeEventListener("focus", recover); window.removeEventListener("pageshow", recover); };
   }, [isReady, session.strand, router]);
 
-  /* eslint-disable react-hooks/set-state-in-effect -- Restore session-only map position before the badge's first paint. */
+  /* eslint-disable react-hooks/set-state-in-effect -- Restore locally saved map position before the badge's first paint. */
   useLayoutEffect(() => {
     if (!isReady || !isValidStrand(session.strand) || initialized.current) return;
     initialized.current = true;
     // Establish the completed node and camera before the badge can be painted.
     setSequenceReady(false);
     let seen = [];
-    try { seen = JSON.parse(sessionStorage.getItem("careerCompassBadgeNotices")) || []; } catch { /* Optional storage. */ }
+    try { seen = JSON.parse(browserStorage.getItem("careerCompassBadgeNotices")) || []; } catch { /* Optional storage. */ }
     if (!Array.isArray(seen)) seen = [];
     const earned = REGIONS.filter(({ id }) => progress[id] === SECTION_STATUS.COMPLETED && !seen.includes(id));
     if (earned.length) {
@@ -140,7 +143,7 @@ export default function JourneyPage() {
     } else {
       const destination = complete ? "islands" : !started ? "basecamp" : REGIONS[next]?.id;
       let previous;
-      try { previous = Number(sessionStorage.getItem("careerCompassAtlasPosition")); } catch { /* Optional storage. */ }
+      try { previous = Number(browserStorage.getItem("careerCompassAtlasPosition")); } catch { /* Optional storage. */ }
       const from = REGIONS.find((region) => region.left === previous);
       const to = complete ? ISLANDS : REGIONS[next];
       if (from && to && from.left < to.left) {
@@ -160,9 +163,9 @@ export default function JourneyPage() {
     const region = badgeToast[0];
     setBadgeToast([], () => {
       try {
-        let seen = JSON.parse(sessionStorage.getItem("careerCompassBadgeNotices")) || [];
+        let seen = JSON.parse(browserStorage.getItem("careerCompassBadgeNotices")) || [];
         if (!Array.isArray(seen)) seen = [];
-        sessionStorage.setItem("careerCompassBadgeNotices", JSON.stringify([...new Set([...seen, region.id])]));
+        browserStorage.setItem("careerCompassBadgeNotices", JSON.stringify([...new Set([...seen, region.id])]));
       } catch { /* Optional storage. */ }
       closingBadge.current = false;
       if (badgeToast.length > 1) {
@@ -210,7 +213,7 @@ export default function JourneyPage() {
     const animation = token.current.animate(reduced ? [{ opacity: .6 }, { opacity: 1 }] : frames, { duration: reduced ? 200 : 2400, easing: "ease-in-out", fill: "forwards" });
     animation.finished.then(() => {
       if (cancelled) return;
-      try { sessionStorage.setItem("careerCompassAtlasPosition", String(to.left)); } catch { /* Optional storage. */ }
+      try { browserStorage.setItem("careerCompassAtlasPosition", String(to.left)); } catch { /* Optional storage. */ }
       setPosition(to.id);
       setWalking(false);
       setSequenceReady(true);
@@ -283,12 +286,12 @@ export default function JourneyPage() {
       if (!sequenceReady || walking || !noticesReady || handled || document.querySelector(".journey-portal[open], .atlas-badge-toast")) return;
       handled = true;
       try {
-        if (complete && !sessionStorage.getItem(EXPEDITION_KEY)) {
-          sessionStorage.setItem(EXPEDITION_KEY, "true");
+        if (complete && !browserStorage.getItem(EXPEDITION_KEY)) {
+          browserStorage.setItem(EXPEDITION_KEY, "true");
           setCelebrate(true);
 
-        } else if (!sessionStorage.getItem(GUIDE_KEY)) setPanel("guide");
-      } catch { /* Help remains accessible when session storage is unavailable. */ }
+        } else if (!browserStorage.getItem(GUIDE_KEY)) setPanel("guide");
+      } catch { /* Help remains accessible when local storage is unavailable. */ }
     };
     const observer = new MutationObserver(showWelcome);
     observer.observe(document.body, { childList: true, subtree: true });
@@ -302,11 +305,14 @@ export default function JourneyPage() {
     if (panel === "exit" || panel === "restart") dialog.current?.querySelector(".atlas-confirm-actions .game-button")?.focus();
   }, [panel]);
 
-  useEffect(() => { queueMicrotask(() => setSound(soundEnabled())); }, []);
+  useEffect(() => {
+    queueMicrotask(() => setSound(soundEnabled()));
+    return subscribeToStorage(key => { if (key === null || key === "careerCompassSound") setSound(browserStorage.getItem("careerCompassSound") === "on"); });
+  }, []);
 
   function closePanel() {
     if (panel === "guide") {
-      try { sessionStorage.setItem(GUIDE_KEY, "true"); } catch { /* Optional storage. */ }
+      try { browserStorage.setItem(GUIDE_KEY, "true"); } catch { /* Optional storage. */ }
     }
     setPanel(null);
   }
@@ -340,7 +346,6 @@ export default function JourneyPage() {
     leaving.current = true;
     setPanel(null, () => {
     if (restart) resetSession();
-    if (restart) try { ["careerCompassBadgeNotices", GUIDE_KEY, EXPEDITION_KEY, "careerCompassAtlasPosition", "careerCompassMountainsBriefing", "careerCompassForestBriefing", "careerCompassValleyBriefing", "careerCompassValleyStep"].forEach(key => sessionStorage.removeItem(key)); } catch { /* Optional storage. */ }
     router.push(restart ? "/intake" : "/");
     });
   }
@@ -428,7 +433,7 @@ export default function JourneyPage() {
           {(openNode === "basecamp" || openNode === "islands") && checkpoints.find(stop => stop.id === openNode)?.mapped && <Localized as="button" className="atlas-node-action" disabled={!actionReady} onClick={() => setPanel(`badge-${openNode}`)}>✓ View Your Badge</Localized>}
         </Card>}
       </Localized>
-      <Localized as="p" className="atlas-session">No account needed · Progress stays in this tab until you close it</Localized>
+      <Localized as="p" className="atlas-session">No account needed · Progress saved in this browser on this device</Localized>
       <Localized as="nav" className="atlas-actions" aria-label="Assessment actions">
         {!complete && <button className="atlas-round-action primary" disabled={!actionReady} onClick={() => enter(next)}><span className="atlas-action-disc"><Icon name="compass" /></span><Localized as="span"><span className="atlas-label-desktop">{walking ? `Walking to ${walking.to.name}…` : started ? "Continue" : "Start Assessment"}</span><span className="atlas-label-mobile">{started ? "Continue" : "Start"}</span></Localized></button>}
         <Localized as="button" ref={results} className={`atlas-round-action ${complete ? "primary" : "is-locked"}`} disabled={!actionReady || !complete} onClick={() => router.push("/processing")} aria-label={complete ? "View My Results" : "Results locked, complete all three regions"}><Localized as="span" className="atlas-action-disc"><Icon name="island-flag" />{!complete && <span className="atlas-lock"><Icon name="lock" /></span>}</Localized><Localized as="span"><span className="atlas-label-desktop">{walking && complete ? "Walking to The Islands…" : complete ? "View My Results" : "Results locked"}</span><span className="atlas-label-mobile">Results</span></Localized></Localized>
@@ -446,7 +451,7 @@ export default function JourneyPage() {
           {panel === "guide" && <><Localized as="p" className="atlas-eyebrow">JOURNEY GUIDE</Localized><Localized as="h2" id="atlas-dialog-title">Welcome to The Atlas</Localized><ul className="atlas-guide-steps"><li><Icon name="ribbon-scroll" /><Localized as="span">This is your map. Drag it left or right to look around.</Localized></li><li><Icon name="mountain-peak" /><Localized as="span">Finish regions in order: Mountains, then Forest, then Valley.</Localized></li><li><Icon name="sunburst" /><Localized as="span">A glowing region means it&apos;s ready. Tap it to start.</Localized></li><li><Icon name="flag-marker-pin" /><Localized as="span">Lost? Tap Locate Me anytime to find your spot again.</Localized></li></ul><Localized as="div" className="atlas-guide-path">Mountains <Localized as="span">···</Localized> Forest <Localized as="span">···</Localized> Valley</Localized><Button label="Got it" onClick={closePanel} /></>}
           {panel === "list" && <><Localized as="p" className="atlas-eyebrow">YOUR REGIONS</Localized><Localized as="h2" id="atlas-dialog-title">Journey list</Localized><Localized as="ul" className="atlas-region-list">{journeyRows.map(row => <li key={row.id}><div><Localized as="strong">{row.name}</Localized><Localized as="span">{row.status}</Localized></div><Button label={row.action === "badge" ? "View Badge" : row.action === "enter" ? "Enter Region" : "Locked"} disabled={row.action === "locked" || !actionReady} onClick={() => row.action === "badge" ? setPanel(`badge-${row.id}`) : enter(row.regionIndex)} /></li>)}</Localized></>}
           {panel === "settings" && <><Localized as="p" className="atlas-eyebrow">YOUR SESSION</Localized><Localized as="h2" id="atlas-dialog-title">Journey Settings</Localized><Toggle label="Sound" enabled={sound} onClick={toggleSound} className="atlas-sound" data-tooltip={sound ? "Turn journey sound effects off" : "Turn journey sound effects on"} /><LanguageSwitcher /><div className="atlas-settings-actions"><Localized as="button" className="atlas-danger" onClick={() => setPanel("restart")}>Restart Assessment</Localized><Localized as="button" className="atlas-danger" onClick={() => setPanel("exit")}>Exit</Localized></div></>}
-          {(panel === "restart" || panel === "exit") && <><Localized as="p" className="atlas-eyebrow">BEFORE YOU GO</Localized><Localized as="h2" id="atlas-dialog-title">{panel === "restart" ? "Restart your journey?" : "Leave The Atlas?"}</Localized><Localized as="p">{panel === "restart" ? "This clears everything and can't be undone." : "Your progress stays in this tab. Use Continue Your Journey on Home to return."}</Localized><div className="atlas-confirm-actions"><Button label={panel === "exit" ? "Stay" : "Keep Going"} autoFocus variant="secondary" onClick={closePanel} /><Localized as="button" className="atlas-danger" onClick={() => leave(panel === "restart")}>{panel === "restart" ? "Restart" : "Leave"}</Localized></div></>}
+          {(panel === "restart" || panel === "exit") && <><Localized as="p" className="atlas-eyebrow">BEFORE YOU GO</Localized><Localized as="h2" id="atlas-dialog-title">{panel === "restart" ? "Restart your journey?" : "Leave The Atlas?"}</Localized><Localized as="p">{panel === "restart" ? "This clears your saved journey and results. Your language and sound settings stay the same. This can't be undone." : "Your progress is saved in this browser. Use Continue Your Journey on Home when you return to this device."}</Localized><div className="atlas-confirm-actions"><Button label={panel === "exit" ? "Stay" : "Keep Going"} autoFocus variant="secondary" onClick={closePanel} /><Localized as="button" className="atlas-danger" onClick={() => leave(panel === "restart")}>{panel === "restart" ? "Restart" : "Leave"}</Localized></div></>}
           {badgeDetail && <><Localized as="p" className="atlas-eyebrow">{badgeDetail.status}</Localized><Localized as="h2" id="atlas-dialog-title">{badgeDetail.title}</Localized><Localized as="p">{badgeDetail.description}</Localized><Button label="Back to The Atlas" onClick={closePanel} /></>}
         </Card>
       </dialog>

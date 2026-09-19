@@ -115,7 +115,7 @@ export default function ResultsPage() {
         <Card variant="popup" className="popup-card">
           <Localized as="button" className="popup-close" aria-label="Close dialog" onClick={() => setConfirmMap(false)}>×</Localized>
           <Localized as="h2" id="results-map-title">Go back to your map?</Localized>
-          <Localized as="p">Your results are still here. You can come back to them anytime this session, unless you restart or close this tab.</Localized>
+          <Localized as="p">Your results are saved in this browser on this device until you restart your journey or clear this site&apos;s browser data.</Localized>
           {!session.reportDownloaded && <Localized as="p" className="mt-3 text-sm">You haven&apos;t downloaded your report yet.</Localized>}
           <div className="popup-actions"><Button label="Stay" autoFocus variant="secondary" onClick={() => setConfirmMap(false)} /><Button label="Back to Map" onClick={() => setConfirmMap(false, () => router.push("/journey"))} /></div>
         </Card>
@@ -190,7 +190,7 @@ export default function ResultsPage() {
         </Localized>
 
         <Localized as="p" className="results-download-note mx-auto mt-6 max-w-3xl text-center text-sm leading-6 text-beige/70">
-          Download your report before closing this tab. Your answers will be cleared.
+          Your answers are saved in this browser. Download your report to keep a separate copy.
         </Localized>
 
         <Localized as="div" className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-center">

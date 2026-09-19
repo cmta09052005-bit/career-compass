@@ -119,12 +119,12 @@ export default function IntakePage() {
         <Localized as="div" ref={inner} className="basecamp-inner">
           <Localized as="header" className="basecamp-heading">
             <Localized as={Image} src="/landing-compass.png" width={52} height={60} alt="" className="basecamp-compass" priority /><span className="basecamp-compass-sparks" aria-hidden="true"><i /><i /><i /><i /></span>
-            {sessionEnded && <Localized as="p" className="basecamp-subtext" role="status">Your session ended. Let’s start again.</Localized>}
+            {sessionEnded && <Localized as="p" className="basecamp-subtext" role="status">No saved journey was found. Let’s start again.</Localized>}
             <Localized as="p" className="basecamp-eyebrow">BASECAMP · EXPLORER PROFILE</Localized>
             <Localized as="div" className="basecamp-steps" aria-label={`Step ${step} of 2`}><span aria-hidden="true" className="filled" /><i aria-hidden="true" /><span aria-hidden="true" className={step === 2 ? "filled" : ""} /><Localized as="p">Step {step} of 2</Localized></Localized>
             <Localized as="h1" id="basecamp-title" ref={heading} tabIndex={-1}>{step === 1 ? "Who Are You, Explorer?" : session.nickname.trim() ? `Choose Your Explorer, ${session.nickname.trim()}` : "Choose Your Explorer"}</Localized>
             <Localized as="p" className="basecamp-subtext">{step === 1 ? "Choose your strand to begin. You can also add a name for your map." : "Pick who you'll be for this journey. It's just for fun, your answers are what really matter."}</Localized>
-            {step === 1 && <Localized as="p" className="basecamp-privacy">No account needed. Nothing you enter here is saved once your session ends.</Localized>}
+            {step === 1 && <Localized as="p" className="basecamp-privacy">No account needed. Progress is saved in this browser on this device. Restart your journey or clear this site&apos;s browser data to erase it.</Localized>}
             {step === 2 && <Localized as="div" className="basecamp-recap"><Localized as="span" translate={session.nickname.trim() ? "no" : undefined}><i className="recap-person" aria-hidden="true" />{session.nickname.trim() || "Explorer"}</Localized><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.strand}</Localized>{session.yearLevel && <><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.yearLevel}</Localized></>}<Localized as="button" type="button" onClick={() => changeStep(1)}>Edit</Localized></Localized>}
           </Localized>
           {step === 1 ? <form onSubmit={advance} noValidate className="basecamp-form">
@@ -151,7 +151,7 @@ export default function IntakePage() {
         </Localized>
       </Card>
       <dialog ref={leaveDialog} className="basecamp-leave popup-card" aria-labelledby="leave-title" aria-describedby="leave-description" onCancel={(event) => { event.preventDefault(); setLeaving(false); }} onClose={() => setLeaving(false)}>
-        <Localized as="button" className="popup-close" aria-label="Close dialog" onClick={() => setLeaving(false)}>×</Localized><Localized as="h2" id="leave-title">Leave your journey?</Localized><Localized as="p" id="leave-description">Your progress stays in this tab. You can continue from Home anytime before closing it.</Localized>
+        <Localized as="button" className="popup-close" aria-label="Close dialog" onClick={() => setLeaving(false)}>×</Localized><Localized as="h2" id="leave-title">Leave your journey?</Localized><Localized as="p" id="leave-description">Your progress is saved in this browser. You can close the tab and continue from Home later on this device.</Localized>
         <div><Button autoFocus className="story-button" label="Stay" onClick={() => setLeaving(false)} /><Localized as="button" className="basecamp-back" type="button" onClick={() => { router.push("/"); }}>Leave</Localized></div>
       </dialog>
     </Localized>

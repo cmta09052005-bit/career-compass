@@ -1,5 +1,8 @@
 "use client";
 
+import { browserStorage } from "@/lib/browserStorage";
+
+
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,13 +34,13 @@ export default function CompassIntro() {
       gsap.set(element, { autoAlpha: 0, display: "none" });
       setVisible(false);
       try {
-        sessionStorage.setItem(INTRO_SESSION_KEY, "true");
+        browserStorage.setItem(INTRO_SESSION_KEY, "true");
       } catch {}
       ScrollTrigger.refresh();
     };
 
     try {
-      if (sessionStorage.getItem(INTRO_SESSION_KEY) === "true") {
+      if (browserStorage.getItem(INTRO_SESSION_KEY) === "true") {
         revealLanding();
         return;
       }

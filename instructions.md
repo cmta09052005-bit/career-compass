@@ -27,6 +27,8 @@ files are the complete originals.
 
 ## 2. HARD CONSTRAINTS (NEVER VIOLATE THESE)
 
+Local saving, migration, and reset behavior: docs/local-storage.md.
+
 - NO database of any kind (no Firebase, no Supabase, no Firestore, no SQL,
   no persistent server-side storage).
 - NO login, NO account registration, NO authentication system, NO user roles
@@ -34,8 +36,9 @@ files are the complete originals.
 - NO admin dashboard / admin CMS as part of the deployed system.
 - All data is either:
   (a) STATIC — bundled JSON files (items.json, courses.json), or
-  (b) SESSION-ONLY — held in React state and/or browser sessionStorage,
-      automatically cleared when the browser tab closes.
+  (b) LOCALLY SAVED — progress and preferences use browser localStorage on the
+      same browser/device, without an account. Explicit restart clears journey
+      data; clearing site data removes local saves. Transient UI uses React state.
 - Tech stack: Next.js (JavaScript, NOT TypeScript), Tailwind CSS, App Router,
   no backend server beyond static hosting (Vercel).
 - Prefer functional components + pure functions (standard modern React
@@ -53,7 +56,7 @@ scope and cannot be part of the graded system.
 
 1. LANDING / WELCOME PAGE — Explorer/Journey intro, description, "Start
    Your Journey" button
-2. STUDENT INFO INTAKE (session-only) — Nickname, Strand, Year Level
+2. STUDENT INFO INTAKE (locally saved) — Nickname, Strand, Year Level
    (non-scoring), Continue button
 3. JOURNEY MAP / DASHBOARD — 3 island markers, sequential unlock (Interests
    → Skills → Academic, no free jumping), progress indicator, Journey
@@ -292,7 +295,7 @@ category, overview, schools[] (name, location, type), careerOpportunities[]
 | ID | Feature | Status |
 |---|---|---|
 | F-01 | Explorer-Themed Landing Page | Planned |
-| F-02 | Session-Only Student Info Intake | Planned |
+| F-02 | Locally Saved Student Info Intake | Planned |
 | F-03 | Journey Map Navigation Hub | Planned |
 | F-04 | Interests Assessment Module | Planned |
 | F-05 | Skills Assessment Module | Planned |
@@ -303,7 +306,7 @@ category, overview, schools[] (name, location, type), careerOpportunities[]
 | F-10 | Course Detail Explorer | Planned |
 | F-11 | Printable PDF Report Generator | Planned |
 | F-12 | Responsive Web Access | Planned |
-| F-13 | Session Auto-Recovery (sessionStorage) | Planned |
+| F-13 | Local Progress Recovery (localStorage) | Planned |
 | F-14 | Unsaved Progress Warning | Planned |
 | F-15 | Guided Sequential Progression | Planned |
 
