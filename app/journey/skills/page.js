@@ -145,8 +145,8 @@ export default function SkillsPage() {
           {currentItem.text}
         </Localized>
 
-        <GrowthSlider key={currentItem.id} value={hasSelectedValue ? selectedValue : undefined} disabled={!isReady || confirming} onChange={selectConfidence} onCommit={isFinalStatement ? undefined : goNext} confirming={confirming} labelledBy="forest-statement" invalid={attempted && !hasSelectedValue} describedBy="forest-choice-help" />
-        <Localized as="p" id="forest-choice-help" className={attempted && !hasSelectedValue ? "assessment-validation" : "forest-choice-help"} role="status">{attempted && !hasSelectedValue ? "Choose a confidence level from 1 to 5 before continuing." : `Slide or tap a level from 1 to 5, or use the arrow keys and select ${isFinalStatement ? "Complete Forest" : "Next"}.`}</Localized>
+        <GrowthSlider key={currentItem.id} value={hasSelectedValue ? selectedValue : undefined} disabled={!isReady || confirming} onChange={selectConfidence} onCommit={goNext} confirming={confirming} labelledBy="forest-statement" invalid={attempted && !hasSelectedValue} describedBy="forest-choice-help" />
+        <Localized as="p" id="forest-choice-help" className={attempted && !hasSelectedValue ? "assessment-validation" : "forest-choice-help"} role="status">{attempted && !hasSelectedValue ? "Choose a confidence level from 1 to 5 before continuing." : "Slide or tap a level from 1 to 5, or use the arrow keys to choose a value."}</Localized>
 
         <Localized as="div" className="forest-actions">
           {/* 37 — Back button */}
@@ -156,7 +156,6 @@ export default function SkillsPage() {
             disabled={confirming}
             className="w-full sm:w-auto"
           />
-          <Button label={isFinalStatement ? "Complete Forest" : "Next"} className="forest-complete" onClick={() => goNext()} disabled={!isReady || confirming} />
         </Localized>
       </Card>}
     </Localized></JourneyAccess>
