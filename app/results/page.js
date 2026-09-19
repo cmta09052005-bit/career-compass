@@ -111,7 +111,6 @@ export default function ResultsPage() {
 
   return (
     <JourneyAccess session={session} isReady={isReady} requires={["interests", "skills", "academic"]}><Localized as="main" className="results-screen game-ui-screen explorer-map-screen relative min-h-screen overflow-hidden px-4 py-12 text-beige sm:px-6 lg:py-16">
-      <Localized as="button" className="trail-exit popup-close" aria-label="Close results" onClick={() => setConfirmMap(true)}>×</Localized>
       <dialog ref={mapDialog} className="trail-exit-dialog results-map-dialog" aria-labelledby="results-map-title" onCancel={(event) => { event.preventDefault(); setConfirmMap(false); }}>
         <Card variant="popup" className="popup-card">
           <Localized as="button" className="popup-close" aria-label="Close dialog" onClick={() => setConfirmMap(false)}>×</Localized>
@@ -145,6 +144,7 @@ export default function ResultsPage() {
       />
 
       <Localized as="div" className="assessment-scroll relative mx-auto max-w-6xl" role="region" aria-label="Your course recommendations" tabIndex={0}>
+        <Localized as="button" className="trail-exit popup-close" aria-label="Close results" onClick={() => setConfirmMap(true)}>×</Localized>
         <Localized as="header" className="mx-auto max-w-3xl text-center">
           {/* 49 — Heading */}
           <Localized as="h1" className="font-serif text-4xl leading-tight text-balance sm:text-5xl md:text-6xl">

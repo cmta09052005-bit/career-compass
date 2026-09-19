@@ -46,6 +46,7 @@ export default function SkillsPage() {
   const heading = useRef(null);
   const [attempted, setAttempted] = useState(false);
   const [confirming, setConfirming] = useState(false);
+  const [reviewingSavedAnswer, setReviewingSavedAnswer] = useState(false);
   const advancing = useRef(false);
   const lastRustle = useRef("");
   useEffect(() => {
@@ -65,6 +66,7 @@ export default function SkillsPage() {
     gsap.delayedCall(.6, () => {
       if (statementIndex < SKILL_ITEMS.length - 1) {
         setAttempted(false);
+        setReviewingSavedAnswer(false);
         setStatementIndex((index) => index + 1);
         setConfirming(false);
         advancing.current = false;
@@ -99,10 +101,11 @@ export default function SkillsPage() {
       return;
     }
     setAttempted(false);
+    setReviewingSavedAnswer(true);
     setStatementIndex((index) => index - 1);
   }
 
-  function goNext(value = selectedValue) {
+  function commitConfidence(value = selectedValue) {
     if (!isReady || advancing.current) return;
     if (!isValidConfidence(value)) {
       setAttempted(true);
@@ -115,6 +118,17 @@ export default function SkillsPage() {
     setConfirming(true);
   }
 
+  function goNext() {
+    if (!isReady || !hasSelectedValue || advancing.current) return;
+    if (statementIndex < SKILL_ITEMS.length - 1) {
+      setReviewingSavedAnswer(isValidConfidence(session.skills[SKILL_ITEMS[statementIndex + 1].id]));
+      setStatementIndex((index) => index + 1);
+      return;
+    }
+    updateSession({ journeyProgress: { skills: SECTION_STATUS.COMPLETED } });
+    router.push("/journey");
+  }
+
   function beginTrail() {
     try { sessionStorage.setItem(BRIEFING_KEY, "seen"); } catch { /* In-memory dismissal remains available. */ }
     setDismissedBriefing(true);
@@ -122,16 +136,17 @@ export default function SkillsPage() {
 
   return (
     <JourneyAccess session={session} isReady={isReady} requires={["interests"]}><Localized as="main" className="trail-screen trail-forest game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
-      {!confirming && <TrailExit onLeave={() => { discardSection("skills"); router.push("/journey"); }} />}
       <div className="forest-light" aria-hidden="true" style={{ opacity: statementIndex / 9 }} />
       <div className="forest-mist" aria-hidden="true" />
       <Localized as="div" className="forest-fireflies" aria-hidden="true">{Array.from({ length: 12 }, (_, index) => <i key={index} style={{ left: ((index * 29 + 7) % 100) + "%", top: ((index * 17 + 13) % 90) + "%", animationDelay: (-index * 1.7) + "s", animationDuration: (11 + index % 4 * 2) + "s" }} />)}</Localized>
 
       {showBriefing ? <Card ref={scrollCard} className="forest-card forest-briefing relative max-w-3xl">
+        {!confirming && <TrailExit onLeave={() => { discardSection("skills"); router.push("/journey"); }} />}
         <Localized as="h1">The Forest</Localized>
         <Localized as="p">10 statements. Slide to show how confident you feel. There&apos;s no pass or fail here, just be honest with yourself.</Localized>
         <Button label="BEGIN" onClick={beginTrail} />
       </Card> : <Card ref={scrollCard} className="forest-card relative max-w-3xl">
+        {!confirming && <TrailExit onLeave={() => { discardSection("skills"); router.push("/journey"); }} />}
         {/* 34 — Section/progress label */}
         <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
           The Forest · Statement {statementIndex + 1} of {SKILL_ITEMS.length}
@@ -145,7 +160,7 @@ export default function SkillsPage() {
           {currentItem.text}
         </Localized>
 
-        <GrowthSlider key={currentItem.id} value={hasSelectedValue ? selectedValue : undefined} disabled={!isReady || confirming} onChange={selectConfidence} onCommit={goNext} confirming={confirming} labelledBy="forest-statement" invalid={attempted && !hasSelectedValue} describedBy="forest-choice-help" />
+        <GrowthSlider key={currentItem.id} value={hasSelectedValue ? selectedValue : undefined} disabled={!isReady || confirming} onChange={selectConfidence} onCommit={commitConfidence} confirming={confirming} labelledBy="forest-statement" invalid={attempted && !hasSelectedValue} describedBy="forest-choice-help" />
         <Localized as="p" id="forest-choice-help" className={attempted && !hasSelectedValue ? "assessment-validation" : "forest-choice-help"} role="status">{attempted && !hasSelectedValue ? "Choose a confidence level from 1 to 5 before continuing." : "Slide or tap a level from 1 to 5, or use the arrow keys to choose a value."}</Localized>
 
         <Localized as="div" className="forest-actions">
@@ -156,6 +171,13 @@ export default function SkillsPage() {
             disabled={confirming}
             className="w-full sm:w-auto"
           />
+          {/* Saved answers can be reviewed without selecting them again. */}
+          {reviewingSavedAnswer && hasSelectedValue && !confirming && <Button
+            label={isFinalStatement ? "Complete Skills" : "Next"}
+            onClick={goNext}
+            disabled={!isReady || confirming}
+            className="w-full disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
+          />}
         </Localized>
       </Card>}
     </Localized></JourneyAccess>

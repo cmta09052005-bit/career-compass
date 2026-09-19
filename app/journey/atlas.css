@@ -98,7 +98,7 @@
 .atlas-dialog::backdrop { background: #0c1625bd; backdrop-filter: blur(5px); }
 .atlas-dialog .atlas-dialog-card { position: relative; padding: 34px; border: 6px double #987449; border-radius: 4px; background: linear-gradient(115deg, #fbf0d5, #ebd5ac); color: #1b2a4a; text-align: center; box-shadow: inset 0 0 0 5px #c49c5b30; }
 .atlas-dialog .atlas-dialog-card::before, .atlas-dialog .atlas-dialog-card::after { display: none; }
-.atlas-close { position: absolute; right: 9px; top: 9px; width: 2rem; height: 32px; background: #824536; color: #f5ecd7; border: 1px solid #ad7854; font-size: 24px; line-height: 1; }
+.atlas-close { position: absolute; right: 9px; top: 9px; width: 2rem; height: 32px; padding: 0; background: transparent; color: #1b2a4a; border: 0; border-radius: 0; font-size: 24px; line-height: 1; cursor: pointer; transition: color .18s ease-out; }
 .atlas-dialog-icon { width: 4.3125rem; height: 76px; margin: 0 auto 15px; }
 .atlas-dialog h2 { font-size: 27px; letter-spacing: -.035em; line-height: 1.25; margin: 8px 0 16px; }
 .atlas-dialog p:not(.atlas-eyebrow) { font-size: 14px; line-height: 1.8; color: #645340; }
@@ -123,6 +123,7 @@
 @keyframes atlas-arrive { from { opacity: 0; } to { opacity: 1; } }
 @media (hover: hover) and (pointer: fine) {
   .atlas-utility:hover > span { transform: translateY(-2px); box-shadow: 0 0 15px #2dbfb850; }
+  .atlas-close:hover { color: #9a6510; }
   .atlas-round-action:not(:disabled):hover .atlas-action-disc { transform: translateY(-3px); }
   .atlas-node-action:not([aria-disabled="true"]):hover { transform: translateY(-2px); filter: brightness(1.14); }
 }

@@ -168,7 +168,6 @@ export default function InterestsPage() {
 
   return (
     <JourneyAccess session={session} isReady={isReady} requires={[]}><Localized as="main" style={{ "--summit-warmth": summitWarmth }} className="trail-screen trail-mountains game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
-      {!settling && <TrailExit onLeave={() => { discardSection("interests"); router.push("/journey"); }} />}
       <div className="mountain-sunrise" aria-hidden="true" />
       <div
         className="pointer-events-none absolute inset-0 mountain-haze"
@@ -177,6 +176,7 @@ export default function InterestsPage() {
 
       {showBriefing ? (
       <Card ref={scrollCard} className="mountain-briefing-panel relative max-w-3xl">
+        {!settling && <TrailExit onLeave={() => { discardSection("interests"); router.push("/journey"); }} />}
         <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">The Mountains</Localized>
         <Localized as="h1" className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">The Mountains</Localized>
         <Localized as="p" className="mountain-briefing-copy">8 situations. No right answers.{"\n\n"}Just pick whatever feels most like you. Every choice tells us something new.</Localized>
@@ -186,6 +186,7 @@ export default function InterestsPage() {
       </Card>
       ) : (
       <Card ref={scrollCard} className="mountain-question-panel relative max-w-3xl">
+        {!settling && <TrailExit onLeave={() => { discardSection("interests"); router.push("/journey"); }} />}
         {/* 25 — Section/progress label */}
         <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
           The Mountains · Question {questionIndex + 1} of {INTEREST_ITEMS.length}

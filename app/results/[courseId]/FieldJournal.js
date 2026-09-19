@@ -17,12 +17,12 @@ import "./journal.css";
 gsap.registerPlugin(useGSAP);
 
 const TABS = [
-  { id: "overview", label: "Overview", asset: "/landing-compass.png" },
-  { id: "study", label: "What You'll Study", category: "C4" },
-  { id: "schools", label: "Where Can You Study", asset: "/icons/career-compass/flag-marker-pin.svg" },
-  { id: "careers", label: "Where Can This Path Lead", category: "C3" },
-  { id: "guidance", label: "Guidance Tips", asset: "/icons/career-compass/ribbon-scroll.svg" },
-  { id: "aid", label: "Financial Aid", asset: "/icons/career-compass/wax-seal-frame.svg" },
+  { id: "overview", label: "Overview", asset: "/icons/career-compass/course-overview-dossier.svg" },
+  { id: "study", label: "What You'll Study", asset: "/icons/career-compass/course-study-books.svg" },
+  { id: "schools", label: "Where Can You Study", asset: "/icons/career-compass/course-schools-academy.svg" },
+  { id: "careers", label: "Where Can This Path Lead", asset: "/icons/career-compass/course-careers-signpost.svg" },
+  { id: "guidance", label: "Guidance Tips", asset: "/icons/career-compass/course-guidance-lantern.svg" },
+  { id: "aid", label: "Financial Aid", asset: "/icons/career-compass/course-aid-purse.svg" },
 ];
 
 export default function FieldJournal({ course, categoryCode, children }) {
@@ -71,8 +71,8 @@ export default function FieldJournal({ course, categoryCode, children }) {
   }
 
   return <main ref={journal} className="course-screen field-journal game-ui-screen explorer-map-screen">
-    <Localized as={Link} href="/results" className="trail-exit popup-close" aria-label="Close course details">×</Localized>
     <div className="journal-shell" data-tab={TABS[active].id}>
+      <Localized as={Link} href="/results" className="trail-exit popup-close" aria-label="Close course details">×</Localized>
       <Localized as="header" className="journal-header">
         <Localized as="p" className="map-ribbon">Discovered Career Path</Localized>
         <Localized as="h1">{course.courseName}</Localized>
@@ -85,7 +85,7 @@ export default function FieldJournal({ course, categoryCode, children }) {
       </Localized>
       <Localized as="div" className="journal-tabs" role="tablist" aria-label="Field journal sections">
         {TABS.map((tab, index) => <Localized as="button" key={tab.id} ref={element => { tabs.current[index] = element; }} type="button" role="tab" id={`journal-tab-${tab.id}`} aria-controls={`journal-panel-${tab.id}`} aria-selected={active === index} tabIndex={active === index ? 0 : -1} onClick={() => openTab(index)} onKeyDown={event => navigateTabs(event, index)}>
-          {tab.category ? <StatementIcon category={tab.category} /> : <Localized as={Image} src={tab.asset} width={28} height={28} style={{ height: "auto" }} alt="" />}<Localized as="span">{tab.label}</Localized>
+          <Localized as={Image} src={tab.asset} width={28} height={28} style={{ height: "auto" }} alt="" /><Localized as="span">{tab.label}</Localized>
         </Localized>)}
       </Localized>
       <Localized as="div" className="journal-pages">
