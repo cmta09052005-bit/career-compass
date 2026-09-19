@@ -443,3 +443,34 @@
 }
 
 @media(max-width:48rem) { .atlas-page > .atlas-session { display:none; } }
+
+@media(max-width:48rem) {
+  .atlas-page .atlas-actions {
+    position:fixed;
+    left:16px;
+    right:auto;
+    bottom:calc(16px + env(safe-area-inset-bottom));
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:12px;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    background:transparent;
+    box-shadow:none;
+    transform:none;
+    pointer-events:none;
+  }
+  .atlas-page .atlas-actions .atlas-round-action {
+    width:4.75rem;
+    min-width:4.75rem;
+    min-height:44px;
+    pointer-events:auto;
+  }
+  .atlas-page .atlas-scroll-hint {
+    bottom:calc(140px + env(safe-area-inset-bottom));
+  }
+}
