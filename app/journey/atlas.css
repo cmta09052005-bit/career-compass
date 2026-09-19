@@ -368,11 +368,14 @@
 .atlas-page .atlas-round-action > span:last-child { width:auto; max-width:100%; padding:5px 9px; border:0; border-radius:3px; background:#1b2a4af5; color:#f5ecd7; font-size:13px; line-height:1.5; font-weight:600; white-space:normal; text-align:center; justify-content:center; text-wrap:balance; }
 .atlas-page .atlas-round-action.is-locked { opacity:1; }
 .atlas-page .atlas-round-action.is-locked .atlas-action-disc { filter:grayscale(.7); }
+.atlas-label-mobile { display:none; }
 @media(max-width:40rem) {
-  .atlas-page .atlas-actions { left:12px; bottom:76px; gap:12px; }
+  .atlas-page .atlas-actions { left:12px; bottom:max(12px,env(safe-area-inset-bottom)); gap:12px; }
   .atlas-page .atlas-round-action { width:8.875rem; }
   .atlas-page .atlas-action-disc { width:4.75rem; height:76px; padding:12px; }
   .atlas-page .atlas-round-action > span:last-child { font-size:12px; }
+  .atlas-label-desktop { display:none; }
+  .atlas-label-mobile { display:inline; }
 }
 
 /* Ready regions remain luminous even when motion is reduced. */
