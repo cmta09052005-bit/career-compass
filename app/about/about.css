@@ -35,6 +35,7 @@
 .team-back>img { object-fit:contain; margin-bottom:15px; }
 .team-bio { display:block; margin-top:20px; font-size:12px; line-height:1.8; color:#5d4d3c; }
 .team-back .team-flip-hint { margin-top:0; }
+.about-avatar-credits { max-width:50.625rem; margin:0 auto 32px; color:#cdd0d3; font-size:12px; line-height:1.7; text-align:center; }
 .about-faq { padding:0 0 25px; max-width:50.625rem; margin:auto; }
 .about-faq h2 { margin:18px 0 28px; }
 .faq-list { border-top:1px solid #ba995a66; }
