@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "@/components/Button";
+import { OfflineButton } from "@/components/OfflineMode";
 import Card from "@/components/Card";
 import useCardCarousel from "@/components/useCardCarousel";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
@@ -113,7 +114,7 @@ export default function LandingPage() {
         <section id="ahead-chapter" className="story-chapter story-ending" aria-labelledby="ahead-title"><Card as="div" className="story-panel"><Localized as="img" src="/landing-compass.png" width="76" height="90" alt="" /><Localized as="p" className="story-eyebrow">Chapter 06 · The Journey Ahead</Localized><Localized as="h2" id="ahead-title">Every path leads somewhere.<br /><Localized as="em">Yours hasn&apos;t been decided yet.</Localized></Localized><Button href={entry.href} className="story-button story-start" label={entry.label} /><Localized as="a" href="/about" className="story-text-link">About Career Compass ↗</Localized><Localized as="p" className="story-session">For Senior High School Students · No Account Needed · Progress Saved on This Device</Localized></Card></section>
       </Localized>
       <Localized as="span" className="sr-only" role="status" aria-live="polite">{announcement}</Localized>
-      <footer className="story-footer"><Localized as="a" className="story-brand" href="#world-chapter"><Localized as="img" src="/landing-compass.png" width="32" height="40" alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#world-chapter">Back to top ↑</Localized></footer>
+      <footer className="story-footer"><OfflineButton /><Localized as="a" className="story-brand" href="#world-chapter"><Localized as="img" src="/landing-compass.png" width="32" height="40" alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#world-chapter">Back to top ↑</Localized></footer>
     </main>
   );
 }

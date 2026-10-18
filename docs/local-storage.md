@@ -13,6 +13,13 @@ Private browsing and browser storage restrictions can limit persistence.
   and report download metadata. Results are still calculated from the answers.
 - Existing separate keys keep journey briefings, guide and achievement notices,
   Atlas position, and the academic form step.
+- `careerCompassAtlasTourSeen` records a finished/skipped Atlas tutorial. Existing
+  assessment progress or an already armed/completed first walk silently marks it
+  seen. Tutorial steps and replay mode are transient. Finishing the first tour
+  writes the existing pending first-walk marker before the seen flag, so reload
+  resumes that walk. Restart clears the tour with the other journey keys. Exit
+  also clears the tour, Guide and first-walk flags; before any assessment starts,
+  it clears the unlock-animation flags so a fresh introduction can unlock again.
 - Language, sound, and the already-seen introduction are browser preferences.
 - Animation state, open dialogs, hover/drag state, validation messages, and
   temporary download state remain in memory. Assessment screens continue to
@@ -53,4 +60,7 @@ until the browser accepts the save.
   restoration, academic step restoration, completion, comparisons, journal
   history, PDF download, language restoration, cross-tab edits and restart,
   explicit section discard, malformed records, and blocked saving.
-- This change does not add offline/PWA support or revise the manuscript.
+- Offline Mode is a separate opt-in copy of the public app in Cache Storage.
+  Its `careerCompassOfflineMode` preference survives Restart Assessment; removing
+  the offline copy leaves journey records untouched. Clearing all site data
+  removes both the saved journey and the offline copy. See `offline-mode.md`.

@@ -13,6 +13,10 @@ function studyFocus(overview) {
   return sentences.length > 1 ? sentences.slice(1).join(" ").trim() : overview;
 }
 
+export function generateStaticParams() {
+  return courses.map(({ courseId }) => ({ courseId }));
+}
+
 export default async function CourseDetailPage({ params }) {
   const { courseId } = await params;
   const course = courses.find(entry => entry.courseId === courseId);

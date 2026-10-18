@@ -4,6 +4,7 @@ import "@/components/popups.css";
 import SoundEffects from "@/components/SoundEffects";
 import MarketingShell from "@/components/MarketingShell";
 import TooltipProvider from "@/components/TooltipProvider";
+import OfflineMode from "@/components/OfflineMode";
 import LanguageProvider from "@/components/LanguageProvider";
 
 const inter = Inter({
@@ -32,9 +33,11 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col bg-beige font-sans text-navy">
         <LanguageProvider>
+        <OfflineMode>
         <SoundEffects />
         <TooltipProvider />
         <MarketingShell>{children}</MarketingShell>
+        </OfflineMode>
         </LanguageProvider>
       </body>
     </html>
