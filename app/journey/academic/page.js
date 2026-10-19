@@ -29,10 +29,12 @@ const SUBJECTS_ITEM = ACADEMIC_ITEMS.find(item => item.id === "ACA-04");
 
 function Basket({ subjects, basketRef, flightRef, harvest, limitNotice }) {
   const full = subjects.length === SUBJECTS_ITEM.maxSelect;
-  return <Localized as="div" ref={basketRef} className="valley-basket" data-full={full}>
+  return <Localized as="div" className="valley-basket" data-full={full}>
+    <div ref={basketRef} className="valley-basket-art">
     <svg className="valley-basket-drawing" width="160" height="100" viewBox="0 0 160 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" shapeRendering="geometricPrecision" aria-hidden="true"><path d="M25 42h110l-12 48H37z M45 42Q80-18 115 42 M45 57h70 M42 73h76 M60 44l4 44 M100 44l-4 44" /><path className="valley-basket-ribbon" d="M80 46C40 13 42 62 80 46C118 13 120 62 80 46l-10 30m10-30 10 30" /></svg>
     <Localized as="div" className="valley-basket-items">{subjects.map(value => <Localized as="span" key={value} aria-label={value} ><StatementIcon category={SUBJECTS_ITEM.options.find(option => option.value === value)?.category} /></Localized>)}</Localized>
     {harvest && <span ref={flightRef} className="valley-harvest-flight" aria-hidden="true"><StatementIcon category={harvest.category} /></span>}
+    </div>
     <Localized as="p" id="valley-subjects-help" role="status" className={limitNotice || !subjects.length ? "assessment-validation" : undefined}>{limitNotice ? "You can select up to 3 subjects. Deselect one before choosing another." : !subjects.length ? "Select at least 1 subject to continue. You can choose up to 3." : full ? "You've picked your 3. Tap one to swap it out." : "You can continue now, or choose up to 3 subjects."}</Localized>
   </Localized>;
 }
@@ -155,8 +157,8 @@ export default function AcademicPage() {
           <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">The Valley · Step {step} of 2</Localized>
           <Localized as="h1" className="mt-3 font-serif text-3xl text-balance sm:text-4xl">Complete your academic profile</Localized>
           <Localized as="p" className="mt-3 max-w-2xl text-sm leading-6 text-beige/70 sm:text-base">Add your general average and choose 1 to 3 subjects where you perform best.</Localized>
-          <div className="mt-8 grid gap-6">
-            <div className="space-y-6" hidden={step !== 1}>
+          <div className="valley-content mt-8 grid gap-6">
+            <div className="valley-average space-y-6" hidden={step !== 1}>
               <section className="valley-field-marker"><StatementIcon category={strand?.category[0]} /><div><Localized as="h2">{STRAND_ITEM.text}</Localized><Localized as="p">{strandLabel}</Localized><Localized as="small">Based on your student intake information</Localized></div></section>
               <Localized as={Link} className="valley-profile-link" href="/intake?step=1">Not right? Edit your profile</Localized>
               <section className="valley-gauge">
@@ -185,7 +187,7 @@ export default function AcademicPage() {
               <Basket subjects={session.subjects} basketRef={basket} flightRef={flight} harvest={harvest} limitNotice={limitNotice} />
             </fieldset>
           </div>
-          <div className="mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-between">
+          <div className="valley-actions mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-between">
             <Button label="Back" onClick={() => step === 2 ? changeStep(1) : router.push("/journey")} className="w-full sm:w-auto" />
             <Button label={step === 1 ? "Choose my subjects →" : "Complete Academics"} type="submit" disabled={!isReady || submitting || (step === 2 && !hasSubjects)} aria-describedby={step === 2 ? "valley-subjects-help" : "valley-gwa-help"} className="w-full sm:w-auto" />
           </div>

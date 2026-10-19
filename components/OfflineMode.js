@@ -65,6 +65,32 @@ export function OfflineButton() {
   return <Button className="offline-entry" variant="secondary" label="Offline Mode" onClick={offline?.open} />;
 }
 
+export function OfflineSettingsRow({ onOpen }) {
+  const offline = useContext(OfflineContext);
+  return <Localized as="button" type="button" className="settings-row settings-offline-row" data-offline-settings-row="" onClick={() => { offline.prepare(); onOpen(); }}><span>Offline Mode</span><span className="settings-row-value"><span>{offline.status}</span><span aria-hidden="true">›</span></span></Localized>;
+}
+
+export function OfflinePanel({ titleId = "offline-title", onBack }) {
+  const { state, enabled, percent, copy, available, persistent, detail, turnOn, remove, update } = useContext(OfflineContext);
+  const downloading = state === "downloading";
+  const primaryLabel = state === "update" ? "Update now" : enabled || downloading ? "Turn off" : "Turn on Offline Mode";
+  return <div className="offline-panel">
+    {onBack && <Localized as="button" type="button" className="offline-back" onClick={onBack}>← Settings</Localized>}
+    <Localized as="h2" id={titleId} tabIndex={-1}>Offline Mode</Localized>
+    <Localized as="p">Use Career Compass without internet. Turn this on while you&apos;re connected, and the whole system is saved on this device.</Localized>
+    <Localized as="p" className="offline-state" role="status" aria-live="polite">{state === "ready" ? "Ready. Works without internet." : downloading ? `Downloading ${percent}%` : state === "error" ? "Couldn't finish. Check your connection and try again." : state === "update" ? "Update available" : "Off"}</Localized>
+    {downloading && <div className="offline-progress" role="progressbar" aria-label="Offline download" aria-valuemin={0} aria-valuemax={100} aria-valuenow={percent}><span style={{ transform: `scaleX(${percent / 100})` }} /></div>}
+    {copy && <Localized as="p" className="offline-copy">About {(copy.bytes / 1000000).toFixed(1)} MB {enabled ? "on this device" : "to download"}</Localized>}
+    {persistent !== null && <Localized as="p">{persistent ? "This browser allowed protected storage." : "This browser may remove the offline copy when storage is low."}</Localized>}
+    {detail && <Localized as="p" role="status">{detail}</Localized>}
+    <div className="offline-actions">
+      <Button label={primaryLabel} onClick={state === "update" ? update : enabled || downloading ? remove : turnOn} />
+      <Button className="offline-remove" variant="secondary" label="Remove offline copy" onClick={remove} />
+    </div>
+    {(copy || available) && <details className="offline-details"><Localized as="summary">Details</Localized>{copy && <Localized as="p">{copy.resources != null && <>{copy.resources} resources<br /></>}{enabled ? "Saved copy" : "Available copy"}: <span translate="no">{copy.version}</span></Localized>}{available && <Localized as="p">New copy: <span translate="no">{available.version}</span></Localized>}</details>}
+  </div>;
+}
+
 export default function OfflineMode({ children }) {
   const pathname = usePathname();
   const [opened, setOpened] = useState(false);
@@ -200,8 +226,12 @@ export default function OfflineMode({ children }) {
     else if (modal.current?.open) { modal.current.close(); previousFocus.current?.focus({ preventScroll: true }); }
   }, [opened]);
 
-  async function open() {
+  function open() {
     setOpened(true);
+    prepare();
+  }
+
+  async function prepare() {
     if (navigator.onLine) {
       try {
         const response = await fetch("/offline-manifest.json", { cache: "no-store", credentials: "omit" });
@@ -276,26 +306,14 @@ export default function OfflineMode({ children }) {
     } catch { navigator.serviceWorker.removeEventListener("controllerchange", reload); setDetail("Couldn't finish. Check your connection and try again."); }
   }
 
-  return <OfflineContext.Provider value={{ open }}>
+  const status = state === "downloading" ? `Downloading ${percent}%` : state === "ready" ? "Ready" : state === "update" ? "Update available" : state === "error" ? "Try again" : "Off";
+  return <OfflineContext.Provider value={{ open, prepare, status, state, enabled, percent, copy, available, persistent, detail, turnOn, remove, update }}>
     {children}
     {notice && <Localized as="p" className="offline-notice" role="status" aria-live="polite">{notice}</Localized>}
     <dialog ref={modal} className={`offline-dialog ${marketingFonts}`} aria-labelledby="offline-title" onCancel={event => { event.preventDefault(); setOpened(false); }} onClick={event => { if (event.target === event.currentTarget) setOpened(false); }}>
       <Card variant="popup" className="popup-card offline-card">
         <Localized as="button" className="popup-close" aria-label="Close Offline Mode" onClick={() => setOpened(false)}>×</Localized>
-        <Localized as="h2" id="offline-title">Offline Mode</Localized>
-        <Localized as="p">Use Career Compass without internet. Turn this on while you&apos;re connected, and the whole system is saved on this device.</Localized>
-        <Localized as="p" className="offline-state" role="status" aria-live="polite">{state === "ready" ? "Ready. Works without internet." : state === "downloading" ? `Downloading ${percent}%` : state === "error" ? "Couldn't finish. Check your connection and try again." : state === "update" ? "Update available" : "Off"}</Localized>
-        {state === "downloading" && <div className="offline-progress" role="progressbar" aria-label="Offline download" aria-valuemin={0} aria-valuemax={100} aria-valuenow={percent}><span style={{ transform: `scaleX(${percent / 100})` }} /></div>}
-        {copy && <Localized as="p" className="offline-copy">About {(copy.bytes / 1048576).toFixed(1)} MB {enabled ? "on this device" : "to download"} · {copy.resources} resources<br />{enabled ? "Saved copy" : "Available copy"}: <span translate="no">{copy.version}</span></Localized>}
-        {available && <Localized as="p">New copy: <span translate="no">{available.version}</span></Localized>}
-        {persistent !== null && <Localized as="p">{persistent ? "This browser allowed protected storage." : "This browser may remove the offline copy when storage is low."}</Localized>}
-        {detail && <Localized as="p" role="status">{detail}</Localized>}
-        <div className="offline-actions">
-          {(state === "off" || state === "error") && <Button label="Turn on Offline Mode" onClick={turnOn} />}
-          {state === "update" && <Button label="Update now" onClick={update} />}
-          {(enabled || state === "downloading") && <Button variant="secondary" label="Turn off" onClick={remove} />}
-          <Button variant="secondary" label="Remove offline copy" onClick={remove} />
-        </div>
+        <OfflinePanel />
       </Card>
     </dialog>
   </OfflineContext.Provider>;
