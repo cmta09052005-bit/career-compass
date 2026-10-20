@@ -27,13 +27,29 @@ const STRAND_ITEM = ACADEMIC_ITEMS.find(item => item.id === "ACA-01");
 const GWA_ITEM = ACADEMIC_ITEMS.find(item => item.id === "ACA-03");
 const SUBJECTS_ITEM = ACADEMIC_ITEMS.find(item => item.id === "ACA-04");
 
-function Basket({ subjects, basketRef, flightRef, harvest, limitNotice }) {
+function SubjectFlight({ harvest, basketRef, onArrive }) {
+  const flight = useRef(null);
+  useGSAP(() => {
+    if (!basketRef.current) return;
+    const end = basketRef.current.getBoundingClientRect();
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const startX = harvest.x - end.left - end.width / 2;
+    const startY = harvest.y - end.top - end.height / 2;
+    gsap.set(flight.current, { x: reduced ? 0 : startX, y: reduced ? 0 : startY, opacity: 1, scale: 1 });
+    const arrival = gsap.timeline({ onComplete: () => onArrive(harvest.id) });
+    if (!reduced) arrival.to(flight.current, { x: 0, y: 0, duration: .75, ease: "power2.inOut" });
+    arrival.to(flight.current, { opacity: 0, scale: reduced ? 1 : .45, duration: .15, ease: "power2.out" });
+  }, { scope: flight, dependencies: [harvest], revertOnUpdate: true });
+  return <span ref={flight} className="valley-harvest-flight" aria-hidden="true"><StatementIcon category={harvest.category} /></span>;
+}
+
+function Basket({ subjects, basketRef, harvests, onArrive, limitNotice }) {
   const full = subjects.length === SUBJECTS_ITEM.maxSelect;
   return <Localized as="div" className="valley-basket" data-full={full}>
     <div ref={basketRef} className="valley-basket-art" aria-hidden="true">
     <svg className="valley-basket-drawing" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m7 9 5-6 5 6 M3 9h18l-2 11H5z M9 13v3 M15 13v3" /></svg>
     <Localized as="div" className="valley-basket-items">{subjects.map(value => <Localized as="span" key={value} aria-label={value} ><StatementIcon category={SUBJECTS_ITEM.options.find(option => option.value === value)?.category} /></Localized>)}</Localized>
-    {harvest && <span ref={flightRef} className="valley-harvest-flight" aria-hidden="true"><StatementIcon category={harvest.category} /></span>}
+    {harvests.map(harvest => <SubjectFlight key={harvest.id} harvest={harvest} basketRef={basketRef} onArrive={onArrive} />)}
     </div>
     <Localized as="p" id="valley-subjects-help" role="status" className={limitNotice || !subjects.length ? "assessment-validation" : undefined}>{limitNotice ? "You can select up to 3 subjects. Deselect one before choosing another." : !subjects.length ? "Select at least 1 subject to continue. You can choose up to 3." : full ? "You've picked your 3. Tap one to swap it out." : "You can continue now, or choose up to 3 subjects."}</Localized>
   </Localized>;
@@ -43,12 +59,12 @@ export default function AcademicPage() {
   const router = useRouter();
   const scrollCard = useRef(null);
   const basket = useRef(null);
-  const flight = useRef(null);
+  const harvestId = useRef(0);
   const { session, isReady, updateSession, discardSection } = useSessionAnswers();
   const [step, setStep] = useState(1);
   const [briefingSeen, setBriefingSeen] = useState(false);
   const [gwaAttempted, setGwaAttempted] = useState(false);
-  const [harvest, setHarvest] = useState(null);
+  const [harvests, setHarvests] = useState([]);
   const [submitting, setSubmitting] = useState(false);
   const [limitNotice, setLimitNotice] = useState(0);
   const stamping = useRef(false);
@@ -69,12 +85,7 @@ export default function AcademicPage() {
     const timer = setTimeout(() => setLimitNotice(0), 3500);
     return () => clearTimeout(timer);
   }, [limitNotice]);
-  useGSAP(() => {
-    if (!harvest || !flight.current || !basket.current) return;
-    const end = basket.current.getBoundingClientRect();
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    gsap.fromTo(flight.current, { x: harvest.x - end.left - end.width / 2, y: harvest.y - end.top - 30, opacity: 1, scale: 1 }, { x: 0, y: 0, opacity: 0, scale: .5, duration: reduced ? 0 : .5, ease: "power2.inOut" });
-  }, { scope: scrollCard, dependencies: [harvest], revertOnUpdate: true });
+
 
   const strand = STRAND_ITEM.options.find(option => option.value === session.strand);
   const strandLabel = strand?.text || session.strand || "Not provided";
@@ -116,8 +127,9 @@ export default function AcademicPage() {
     }
     setLimitNotice(0);
     if (!isSelected) {
-      const bounds = event.currentTarget.closest("label").getBoundingClientRect();
-      setHarvest({ x: bounds.left + bounds.width / 2, y: bounds.top + bounds.height / 2, category: option.category });
+      const bounds = event.currentTarget.closest("label").querySelector(".forest-statement-icon").getBoundingClientRect();
+      const harvest = { id: ++harvestId.current, x: bounds.left + bounds.width / 2, y: bounds.top + bounds.height / 2, category: option.category };
+      setHarvests(current => [...current, harvest]);
       playSound("confirm");
     }
     updateSession({
@@ -184,7 +196,7 @@ export default function AcademicPage() {
                   </Localized>;
                 })}
               </Localized>
-              <Basket subjects={session.subjects} basketRef={basket} flightRef={flight} harvest={harvest} limitNotice={limitNotice} />
+              <Basket subjects={session.subjects} basketRef={basket} harvests={harvests} onArrive={id => setHarvests(current => current.filter(harvest => harvest.id !== id))} limitNotice={limitNotice} />
             </fieldset>
           </div>
           <div className="valley-actions mt-8 flex flex-col-reverse gap-3 sm:flex-row sm:justify-between">
