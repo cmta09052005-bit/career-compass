@@ -30,8 +30,8 @@ const SUBJECTS_ITEM = ACADEMIC_ITEMS.find(item => item.id === "ACA-04");
 function Basket({ subjects, basketRef, flightRef, harvest, limitNotice }) {
   const full = subjects.length === SUBJECTS_ITEM.maxSelect;
   return <Localized as="div" className="valley-basket" data-full={full}>
-    <div ref={basketRef} className="valley-basket-art">
-    <svg className="valley-basket-drawing" width="160" height="100" viewBox="0 0 160 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" shapeRendering="geometricPrecision" aria-hidden="true"><path d="M25 42h110l-12 48H37z M45 42Q80-18 115 42 M45 57h70 M42 73h76 M60 44l4 44 M100 44l-4 44" /><path className="valley-basket-ribbon" d="M80 46C40 13 42 62 80 46C118 13 120 62 80 46l-10 30m10-30 10 30" /></svg>
+    <div ref={basketRef} className="valley-basket-art" aria-hidden="true">
+    <svg className="valley-basket-drawing" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="m7 9 5-6 5 6 M3 9h18l-2 11H5z M9 13v3 M15 13v3" /></svg>
     <Localized as="div" className="valley-basket-items">{subjects.map(value => <Localized as="span" key={value} aria-label={value} ><StatementIcon category={SUBJECTS_ITEM.options.find(option => option.value === value)?.category} /></Localized>)}</Localized>
     {harvest && <span ref={flightRef} className="valley-harvest-flight" aria-hidden="true"><StatementIcon category={harvest.category} /></span>}
     </div>
@@ -151,7 +151,7 @@ export default function AcademicPage() {
       <div className="valley-light" aria-hidden="true" />
       <Localized as="div" className="valley-pollen" aria-hidden="true">{Array.from({ length: 10 }, (_, index) => <i key={index} style={{ left: ((index * 29 + 7) % 100) + "%", top: ((index * 17 + 13) % 90) + "%", animationDelay: (-index * 2.7) + "s" }} />)}</Localized>
       {showBriefing ? <Card className="valley-briefing relative">{!submitting && <TrailExit onLeave={() => { discardSection("academic"); try { browserStorage.removeItem("careerCompassValleyStep"); } catch {} router.push("/journey"); }} />}<Localized as="h1">The Valley</Localized><Localized as="p">2 quick details. Add your grades and pick your strongest subjects. The ground the rest of your journey stands on.</Localized><Button label="BEGIN" onClick={beginTrail} /></Card> :
-      <Card ref={scrollCard} className="valley-card relative max-w-4xl">
+      <Card ref={scrollCard} className="valley-card assessment-panel relative">
         {!submitting && <TrailExit onLeave={() => { discardSection("academic"); try { browserStorage.removeItem("careerCompassValleyStep"); } catch {} router.push("/journey"); }} />}
         <form onSubmit={submitAcademicProfile} noValidate>
           <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">The Valley · Step {step} of 2</Localized>
@@ -159,7 +159,7 @@ export default function AcademicPage() {
           <Localized as="p" className="mt-3 max-w-2xl text-sm leading-6 text-beige/70 sm:text-base">Add your general average and choose 1 to 3 subjects where you perform best.</Localized>
           <div className="valley-content mt-8 grid gap-6">
             <div className="valley-average space-y-6" hidden={step !== 1}>
-              <section className="valley-field-marker"><StatementIcon category={strand?.category[0]} /><div><Localized as="h2">{STRAND_ITEM.text}</Localized><Localized as="p">{strandLabel}</Localized><Localized as="small">Based on your student intake information</Localized></div></section>
+              <section className="valley-field-marker"><StatementIcon category={session.strand === "Academic-GAS" ? "Academic-GAS" : strand?.category[0]} /><div><Localized as="h2">{STRAND_ITEM.text}</Localized><Localized as="p">{strandLabel}</Localized><Localized as="small">Based on your student intake information</Localized></div></section>
               <Localized as={Link} className="valley-profile-link" href="/intake?step=1">Not right? Edit your profile</Localized>
               <section className="valley-gauge">
                 <Localized as="label" htmlFor="academic-gwa">{GWA_ITEM.text}</Localized>

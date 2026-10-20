@@ -544,3 +544,11 @@ html:has(.assessment-frame), body:has(.assessment-frame) { height:100%; overflow
   .game-ui-screen .language-switcher :is(summary,button) { min-height:2.5rem; }
   .game-ui-screen .assessment-scroll > header { padding-inline:1.5rem; }
 }
+
+/* Shared assessment panel geometry for Mountains, Forest, and Valley. */
+.assessment-frame main.trail-screen:has(> .assessment-panel) { align-items:center; justify-content:center; padding:24px 60px!important; }
+.assessment-frame .trail-screen > .assessment-panel { width:100%; max-width:53.125rem; padding:24px 36px; }
+@media(max-width:48rem) {
+  .assessment-frame main.trail-screen:has(> .assessment-panel) { padding:52px 14px 14px!important; }
+  .assessment-frame .trail-screen > .assessment-panel { padding:18px!important; }
+}

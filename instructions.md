@@ -192,6 +192,7 @@ Coverage check: C1×1, C2×2, C3×2, C4×2, C5×2, C6×1 (10 items total) ✅
 
 - ACA-01 Strand (single-select, +2 each):
   Academic-STEM → C1, C2, C5 | Academic-ABM → C3 | Academic-HUMSS → C4 |
+  Academic-GAS → no bonus (zero category points and zero course strand bonus) |
   TVL → C2 | Arts & Design → C6 | Sports → C5
 - ACA-02 Year Level: NON-SCORING — display/personalization only
 - ACA-03 GWA: >=90 → C1,C2,C5 +2 each | 85–89.99 → C1,C2,C5 +1 each |

@@ -33,7 +33,7 @@
 .trail-forest .forest-help p { position:absolute; top:32px; right:0; width:min(17.5rem,65vw); margin:0; padding:14px; border:1px solid #8c9a71; border-radius:6px; background:#f1f0d9; box-shadow:0 6px 20px #203b2530; font-size:14px; line-height:1.5; color:#34543a; }
 /* Forest-only layout and green parchment; retain an invisible overflow fallback for zoom. */
 .assessment-frame main.trail-screen.trail-forest { align-items:center; padding:24px 60px!important; }
-.assessment-frame .trail-forest > .forest-card { width:100%; max-width:53.125rem; padding:24px 36px; scrollbar-width:none; scrollbar-gutter:auto; background:linear-gradient(115deg,#eef0d8,#d8dfbb); border-color:#82916a!important; }
+.assessment-frame .trail-forest > .forest-card { scrollbar-width:none; scrollbar-gutter:auto; background:linear-gradient(115deg,#eef0d8,#d8dfbb); border-color:#82916a!important; }
 .trail-forest > .forest-card::-webkit-scrollbar { display:none; }
 .trail-forest.game-ui-screen .forest-card::after { background:url('/map-paper-grain.svg') 0 0/240px 240px; opacity:.07; }
 .trail-forest .forest-card > .map-ribbon { display:table; width:fit-content; margin:0 auto; font-size:12px; }

@@ -16,7 +16,7 @@ import "./basecamp.css";
 
 gsap.registerPlugin(useGSAP);
 
-const STRANDS = ["Academic-STEM", "Academic-ABM", "Academic-HUMSS", "TVL", "Arts & Design", "Sports"];
+const STRANDS = ["Academic-STEM", "Academic-ABM", "Academic-HUMSS", "Academic-GAS", "TVL", "Arts & Design", "Sports"];
 const YEAR_LEVELS = ["Grade 11", "Grade 12"];
 const EXPLORERS = [
   ["wanderer", "The Wanderer", "Curious about everything, sure about nothing yet."],
@@ -125,7 +125,7 @@ export default function IntakePage() {
             <Localized as="h1" id="basecamp-title" ref={heading} tabIndex={-1}>{step === 1 ? "Who Are You, Explorer?" : session.nickname.trim() ? `Choose Your Explorer, ${session.nickname.trim()}` : "Choose Your Explorer"}</Localized>
             <Localized as="p" className="basecamp-subtext">{step === 1 ? "Choose your strand to begin. You can also add a name for your map." : "Pick who you'll be for this journey. It's just for fun, your answers are what really matter."}</Localized>
             {step === 1 && <Localized as="p" className="basecamp-privacy">No account needed. Progress is saved in this browser on this device. Restart your journey or clear this site&apos;s browser data to erase it.</Localized>}
-            {step === 2 && <Localized as="div" className="basecamp-recap"><Localized as="span" translate={session.nickname.trim() ? "no" : undefined}><i className="recap-person" aria-hidden="true" />{session.nickname.trim() || "Explorer"}</Localized><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.strand}</Localized>{session.yearLevel && <><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.yearLevel}</Localized></>}<Localized as="button" type="button" onClick={() => changeStep(1)}>Edit</Localized></Localized>}
+            {step === 2 && <Localized as="div" className="basecamp-recap"><Localized as="span" translate={session.nickname.trim() ? "no" : undefined}><i className="recap-person" aria-hidden="true" />{session.nickname.trim() || "Explorer"}</Localized><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.strand === "Academic-GAS" ? "Academic – GAS (General Academic)" : session.strand}</Localized>{session.yearLevel && <><Localized as="b" aria-hidden="true">•</Localized><Localized as="span">{session.yearLevel}</Localized></>}<Localized as="button" type="button" onClick={() => changeStep(1)}>Edit</Localized></Localized>}
           </Localized>
           {step === 1 ? <form onSubmit={advance} noValidate className="basecamp-form">
             <div>
@@ -134,7 +134,7 @@ export default function IntakePage() {
             </div>
             <Localized as="fieldset" ref={strandGroup} disabled={!isReady} className={error ? "has-error" : ""} aria-invalid={error} aria-describedby={error ? "strand-error" : undefined}>
               <Localized as="legend">Choose your strand <Localized as="span" className="basecamp-required" aria-hidden="true">*</Localized><Localized as="span" className="sr-only"> (required)</Localized></Localized>
-              <Localized as="div" className="basecamp-strands">{STRANDS.map((strand) => <label key={strand} className="basecamp-choice"><input className="sr-only" type="checkbox" name="strand" value={strand} checked={session.strand === strand} aria-describedby={error ? "strand-error" : undefined} onChange={() => chooseStrand(strand)} /><Localized as="span" className="basecamp-choice-face">{strand}<SelectionStamp /></Localized></label>)}</Localized>
+              <Localized as="div" className="basecamp-strands">{STRANDS.map((strand) => <label key={strand} className="basecamp-choice"><input className="sr-only" type="checkbox" name="strand" value={strand} checked={session.strand === strand} aria-describedby={error ? "strand-error" : undefined} onChange={() => chooseStrand(strand)} /><Localized as="span" className="basecamp-choice-face">{strand === "Academic-GAS" ? "Academic – GAS (General Academic)" : strand}<SelectionStamp /></Localized></label>)}</Localized>
               {error && <Localized as="p" id="strand-error" className="basecamp-error" role="alert">Please choose a strand to continue.</Localized>}
             </Localized>
             <fieldset disabled={!isReady}>

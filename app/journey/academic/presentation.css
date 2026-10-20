@@ -48,7 +48,7 @@
 @media(max-width:43.75rem) { .trail-valley .valley-crops { grid-template-columns:repeat(2,minmax(0,1fr)); }.trail-valley .valley-crop { flex-direction:column; text-align:center; gap:6px; min-height:120px; }.trail-valley .valley-gauge { padding:16px; }.trail-valley #academic-gwa { width:10rem; font-size:32px; } }
 @media(prefers-reduced-motion:reduce) { .trail-valley .valley-pollen i,.trail-valley .valley-basket[data-full=true] .valley-basket-ribbon { animation:none; }.trail-valley .valley-crop { transition:none; } }
 .assessment-frame main.trail-valley:has(.valley-briefing) { align-items:center; }
-.assessment-frame .trail-valley > .valley-card { padding:24px 30px; scrollbar-width:none; }
+.assessment-frame .trail-valley > .valley-card { scrollbar-width:none; }
 .trail-valley .valley-card::-webkit-scrollbar { display:none; }
 .trail-valley .valley-card h1 { font-size:30px; }
 .trail-valley .valley-card form > .mt-8 { margin-top:20px; }
@@ -68,9 +68,11 @@
 }
 
 /* Desktop keeps the whole assessment in view; smaller windows retain card scrolling. */
-@media screen and (min-width:64rem) and (min-height:37.5rem) {
+@media screen and (min-width:48.0625rem) and (min-height:37.5rem) {
   .assessment-frame main.trail-valley:not(.atlas-page):not(.basecamp) { padding-block:clamp(16px,2vh,24px); }
-  .assessment-frame .trail-valley > .valley-card { max-width:78rem; padding:clamp(12px,2vh,24px) 24px; overflow:visible; scrollbar-gutter:auto; }
+  .assessment-frame .trail-valley > .valley-card { height:min(640px,calc(100dvh - 48px)); overflow:visible; scrollbar-gutter:auto; }
+  .trail-valley .valley-card form { display:flex; flex-direction:column; height:100%; }
+  .trail-valley .valley-card form > .valley-content { flex:1; align-content:center; }
   .trail-valley .valley-card form > .map-ribbon { min-height:24px; padding:2px 16px; font-family:var(--story-label),sans-serif; font-size:12px; line-height:20px; background:#1B2A4A!important; }
   .trail-valley .valley-card h1 { max-width:none; margin-top:8px; padding-right:32px; font-family:var(--story-heading),sans-serif; font-size:clamp(24px,3.5vh,32px); line-height:1.2; }
   .trail-valley .valley-card form > h1 + p { max-width:none; margin-top:8px; font-size:14px; line-height:20px; }
@@ -78,17 +80,17 @@
   .trail-valley .valley-harvest legend { font-family:var(--story-label),sans-serif; font-size:18px; line-height:24px; }
   .trail-valley .valley-harvest > p { margin-top:0; font-size:14px; line-height:20px; }
   .trail-valley .valley-crops { grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; margin-top:8px; }
-  .trail-valley .valley-crop { min-height:clamp(72px,10vh,104px); gap:8px; padding:8px; border:2px solid #D4A017; background:#F5ECD7; }
+  .trail-valley .valley-crop { min-height:clamp(72px,10vh,88px); gap:8px; padding:8px; border:2px solid #D4A017; background:#F5ECD7; }
   .trail-valley .valley-crop[data-selected=true] { padding:8px; border-color:#1B2A4A; background:#D4A017; }
   .trail-valley .valley-crop .forest-statement-icon { width:20px; height:24px; color:#1B2A4A; }
   .trail-valley .valley-crop .valley-subject-name { min-width:0; font-size:14px; line-height:1.2; color:#1B2A4A!important; }
   .trail-valley .valley-crop:focus-within { outline-color:#2DBFB8; }
   /* The same limit message is visible in the reserved status line below the grid. */
   .trail-valley .valley-crop > .assessment-validation { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
-  .trail-valley .valley-basket { display:grid; grid-template-columns:72px minmax(0,1fr); align-items:center; gap:8px; max-width:none; min-height:44px; margin-top:8px; text-align:left; color:#1B2A4A; }
-  .trail-valley .valley-basket-drawing { width:64px; height:40px; }
-  .trail-valley .valley-basket-art { width:72px; }
-  .trail-valley .valley-basket-items { top:9px; right:auto; width:72px; gap:0; }
+  .trail-valley .valley-basket { display:grid; grid-template-columns:40px minmax(0,1fr); align-items:center; gap:8px; max-width:none; min-height:44px; margin-top:8px; text-align:left; color:#1B2A4A; }
+  .trail-valley .valley-basket-drawing { width:40px; height:40px; }
+  .trail-valley .valley-basket-art { width:40px; }
+  .trail-valley .valley-basket-items { display:none; }
   .trail-valley .valley-basket-items > span { padding:1px; border-color:#D4A017; background:#F5ECD7; }
   .trail-valley .valley-basket-items svg { width:14px; height:14px; }
   .trail-valley .valley-basket p { display:flex; align-items:center; min-height:40px; margin:0; font-size:14px; line-height:20px; color:#1B2A4A!important; }
@@ -107,3 +109,9 @@
   .trail-valley #valley-gwa-help { min-height:40px; margin-top:8px; font-size:14px; line-height:20px; }
 }
 
+
+.trail-valley .valley-basket { display:flex; align-items:center; gap:12px; text-align:left; color:#1B2A4A; }
+.trail-valley .valley-basket-art { flex:0 0 40px; }
+.trail-valley .valley-basket-drawing { width:40px; height:40px; margin:0; }
+.trail-valley .valley-basket-items { display:none; }
+.trail-valley .valley-basket p { margin:0; }

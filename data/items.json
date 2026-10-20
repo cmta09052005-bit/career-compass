@@ -355,6 +355,11 @@
         "category": ["C4"]
       },
       {
+        "value": "Academic-GAS",
+        "text": "Academic – GAS (General Academic)",
+        "category": []
+      },
+      {
         "value": "TVL",
         "text": "TVL",
         "category": ["C2"]

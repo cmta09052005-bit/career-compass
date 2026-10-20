@@ -28,7 +28,7 @@ Indicator	Element	Description
 7	Panel heading	"Who Are You, Explorer?"
 8	Supporting subtext	"Tell us a little about yourself so we can personalize your journey."
 9	Nickname input field	Text input, labeled "Your nickname or first name (optional)"
-10	Strand selector	6 selectable cards: Academic-STEM, Academic-ABM, Academic-HUMSS, TVL, Arts & Design, Sports
+10	Strand selector	7 selectable cards: Academic-STEM, Academic-ABM, Academic-HUMSS, Academic-GAS (General Academic; no category points or course strand bonus), TVL, Arts & Design, Sports
 11	Year Level selector	2 selectable cards: "Grade 11" / "Grade 12," with small note below: "This is for personalization only and does not affect your results"
 12	"Continue" button	Primary action button, becomes active once required fields are filled
 13	Background panel frame	Form content sits inside a bordered panel over the same background theme (subdued/lower opacity)

@@ -17,6 +17,7 @@ import Button from "@/components/Button";
 import JourneyAccess from "@/components/JourneyAccess";
 import Card from "@/components/Card";
 import courses from "@/data/courses.json";
+import StatementIcon from "@/app/journey/skills/StatementIcon";
 import {
   calculateCategoryScores,
   calculateMatchPercentages,
@@ -150,6 +151,7 @@ export default function ResultsPage() {
           <Localized as="h1" className="font-serif text-4xl leading-tight text-balance sm:text-5xl md:text-6xl">
             Your Career Map
           </Localized>
+          {session.strand === "Academic-GAS" && <Localized as="p" className="results-strand"><StatementIcon category="Academic-GAS" />Academic – GAS (General Academic)</Localized>}
 
           {/* 50 — Supporting subtext */}
           <Localized as="p" className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-beige/75 sm:text-base">

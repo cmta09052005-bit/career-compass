@@ -65,6 +65,7 @@ Strand Option	Category Tag(s)
 Academic – STEM	C1, C2, C5
 Academic – ABM	C3
 Academic – HUMSS	C4
+Academic – GAS (General Academic)	None — zero category points and zero course strand bonus
 TVL	C2 
 Arts & Design	C6
 Sports	C5

@@ -16,7 +16,7 @@ Purpose of this document: A Site Map is a structural outline that lists every sc
 
 2.	STUDENT INFO INTAKE (locally saved — not an account)
 •	Nickname / First Name (optional, for personalization only)
-•	Strand (Academic-STEM, Academic-ABM, Academic-HUMSS, TVL, Arts & Design, Sports)
+•	Strand (Academic-STEM, Academic-ABM, Academic-HUMSS, Academic-GAS (General Academic; no category points or course strand bonus), TVL, Arts & Design, Sports)
 •	Current Year Level (Grade 11 / Grade 12) — display/personalization only, not scored
 •	"Continue" button
 

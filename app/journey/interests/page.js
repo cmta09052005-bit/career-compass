@@ -186,7 +186,7 @@ export default function InterestsPage() {
         </div>
       </Card>
       ) : (
-      <Card ref={scrollCard} className="mountain-question-panel relative max-w-3xl">
+      <Card ref={scrollCard} className="mountain-question-panel assessment-panel relative max-w-3xl">
         {!settling && <TrailExit onLeave={() => { discardSection("interests"); router.push("/journey"); }} />}
         {/* 25 — Section/progress label */}
         <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">

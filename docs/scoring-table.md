@@ -64,6 +64,7 @@ Strand Selected	Category Boosted	Points
 Academic – STEM	C1, C2, C5	+2 each
 Academic – ABM	C3	+2
 Academic – HUMSS	C4	+2
+Academic – GAS (General Academic)	None	0 (no category points or course strand bonus)
 TVL	C2	+2
 Arts & Design	C6	+2
 Sports	C5	+2
@@ -87,7 +88,7 @@ Biology/General Science	C5	+2
 PE & Health	C5	+2
 MAPEH – Arts	C6	+2
 TVL – Arts & Design	C6	+2
-Total weight table size: 32 (Interests options) + 10 (Skills items) + 6 (Strand options) + 2 (GWA tiers) + 12 (Subject options) + 1 (Year Level, documented as non-scoring) = 63 total scoring rows, once fully expanded into a spreadsheet — one row per possible option/response.
+Total weight table size: 32 (Interests options) + 10 (Skills items) + 7 (Strand options) + 2 (GWA tiers) + 12 (Subject options) + 1 (Year Level, documented as non-scoring) = 64 total scoring rows, once fully expanded into a spreadsheet — one row per possible option/response.
 ________________________________________
 SECTION 4: MAX POSSIBLE SCORE PER CATEGORY
 This is calculated once, per category, representing the highest score a student could theoretically achieve in that category if every applicable answer maximized points toward it.

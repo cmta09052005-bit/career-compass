@@ -146,7 +146,7 @@ export default function SkillsPage() {
         <Localized as="h1">The Forest</Localized>
         <Localized as="p">10 statements. Slide to show how confident you feel. There&apos;s no pass or fail here, just be honest with yourself.</Localized>
         <Button label="BEGIN" onClick={beginTrail} />
-      </Card> : <Card ref={scrollCard} className="forest-card relative max-w-3xl">
+      </Card> : <Card ref={scrollCard} className="forest-card assessment-panel relative max-w-3xl">
         {!confirming && <TrailExit onLeave={() => { discardSection("skills"); router.push("/journey"); }} />}
         {/* 34 — Section/progress label */}
         <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">

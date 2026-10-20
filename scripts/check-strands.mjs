@@ -1,0 +1,12 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { STRAND_WEIGHTS } from "../lib/weightTable.js";
+const items = JSON.parse(readFileSync(new URL("../data/items.json", import.meta.url), "utf8"));
+const intake = readFileSync(new URL("../app/intake/page.js", import.meta.url), "utf8");
+const intakeStrands = JSON.parse(intake.match(/const STRANDS = (\[[^;]+\]);/)[1]);
+const options = items.find(item => item.id === "ACA-01").options;
+assert.deepEqual(intakeStrands, options.map(option => option.value));
+assert.deepEqual(intakeStrands, Object.keys(STRAND_WEIGHTS).filter(key => key !== "points"));
+for (const option of options) assert.deepEqual(option.category, STRAND_WEIGHTS[option.value]);
+assert.deepEqual(STRAND_WEIGHTS["Academic-GAS"], []);
+console.log("PASS: intake, item bank, and scoring strand lists and mappings agree; GAS has no bonus.");

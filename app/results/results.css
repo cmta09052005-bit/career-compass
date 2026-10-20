@@ -50,3 +50,6 @@
   .results-screen .course-comparison p { font-size:.875rem; }
 }
 
+
+.results-strand { display:flex; align-items:center; justify-content:center; gap:8px; margin-top:12px; font-size:14px; }
+.results-strand .forest-statement-icon { width:24px; height:28px; color:#D4A017; }

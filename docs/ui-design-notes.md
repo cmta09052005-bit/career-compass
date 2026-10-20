@@ -384,6 +384,7 @@ Cards:
 •	Academic — STEM
 •	Academic — ABM
 •	Academic — HUMSS
+•	Academic – GAS (General Academic) — no category points or course strand bonus
 •	TVL
 •	Arts & Design
 •	Sports
