@@ -1,0 +1,16 @@
+[
+  {
+    "case": 1,
+    "route": "old",
+    "path": "C:/Users/Charlene/OneDrive/Desktop/career-compass/docs/qa/ui-edits/browser-1-fil.pdf",
+    "downloadedPath": "C:\\Users\\Charlene\\Downloads\\career-compass-explorer-report (28).pdf",
+    "confirmation": "http://127.0.0.1:3111/report"
+  },
+  {
+    "case": 7,
+    "route": "new",
+    "path": "C:/Users/Charlene/OneDrive/Desktop/career-compass/docs/qa/ui-edits/browser-7-fil.pdf",
+    "downloadedPath": "C:\\Users\\Charlene\\Downloads\\career-compass-explorer-report (29).pdf",
+    "confirmation": "http://127.0.0.1:3111/report"
+  }
+]

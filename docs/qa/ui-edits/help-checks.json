@@ -1,0 +1,48 @@
+[
+  {
+    "lang": "en",
+    "clicked": true,
+    "escape": true,
+    "afterEscapeClick": true,
+    "blur": true,
+    "focusOpen": true,
+    "noLayoutShift": true,
+    "sliderLayout": {
+      "closed": [
+        30,
+        0,
+        755,
+        123
+      ],
+      "open": [
+        30,
+        0,
+        755,
+        123
+      ]
+    }
+  },
+  {
+    "lang": "fil",
+    "clicked": true,
+    "escape": true,
+    "afterEscapeClick": true,
+    "blur": true,
+    "focusOpen": true,
+    "noLayoutShift": true,
+    "sliderLayout": {
+      "closed": [
+        30,
+        0,
+        755,
+        123
+      ],
+      "open": [
+        30,
+        0,
+        755,
+        123
+      ]
+    }
+  }
+]

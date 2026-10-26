@@ -1,0 +1,10 @@
+{
+  "input": "C:\\Users\\Charlene\\OneDrive\\Desktop\\career-compass\\output\\pdf\\career-compass-new-flows.json",
+  "report": "C:\\Users\\Charlene\\OneDrive\\Desktop\\career-compass\\docs\\qa\\chatgpt-flows-new-report.md",
+  "passed": 85,
+  "failed": [],
+  "minimumLead": 3,
+  "rank1Hash": 0,
+  "anyRankHash": 85,
+  "expectedTotalsMatch": true
+}

@@ -12,7 +12,7 @@ import { OfflineButton } from "@/components/OfflineMode";
 import Card from "@/components/Card";
 import useCardCarousel from "@/components/useCardCarousel";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
-import { journeyEntry } from "@/lib/journeyEntry";
+import { journeyEntry, journeyLabel } from "@/lib/journeyEntry";
 import "./story.css";
 
 if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -51,22 +51,22 @@ export default function LandingPage() {
       const motion = context.conditions.motion;
 
       chapters.forEach((chapter, index) => {
-        ScrollTrigger.create({ trigger: `#${chapter.id}-chapter`, start: "top center", end: "bottom center", onEnter: () => setActive(index), onEnterBack: () => setActive(index) });
+        ScrollTrigger.create({ scroller: root.current.closest(".marketing-content"), trigger: `#${chapter.id}-chapter`, start: "top center", end: "bottom center", onEnter: () => setActive(index), onEnterBack: () => setActive(index) });
       });
       if (motion) {
-        gsap.to(".story-map", { yPercent: -70, ease: "none", scrollTrigger: { trigger: ".story-wrapper", start: "top top", end: "bottom bottom", scrub: 1 } });
-        gsap.utils.toArray(".story-panel").forEach((panel) => gsap.from(panel, { opacity: 0, y: 40, duration: 0.8, ease: "power2.out", scrollTrigger: { trigger: panel, start: "top 75%", toggleActions: "play none none reverse" } }));
-        gsap.utils.toArray(".story-motif").forEach((motif) => gsap.from(motif, { opacity: 0, y: "+=40", duration: 0.8, ease: "power2.out", scrollTrigger: { trigger: motif.parentElement, start: "top 65%", toggleActions: "play none none reverse" } }));
-        gsap.from(".story-compass", { rotation: -45, opacity: 0, duration: 1.2, ease: "back.out(1.7)" });
-        gsap.to(".story-compass-spin", { rotation: 360, duration: 60, repeat: -1, ease: "none" });
+        gsap.to(".story-map", { yPercent: -70, ease: "none", scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: ".story-wrapper", start: "top top", end: "bottom bottom", scrub: 1 } });
+        gsap.utils.toArray(".story-panel").forEach((panel) => gsap.from(panel, { opacity: 0, y: 40, duration: 0.8, ease: "power2.out", scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: panel, start: "top 75%", toggleActions: "play none none reverse" } }));
+        gsap.utils.toArray(".story-motif").forEach((motif) => gsap.from(motif, { opacity: 0, y: "+=40", duration: 0.8, ease: "power2.out", scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: motif.parentElement, start: "top 65%", toggleActions: "play none none reverse" } }));
+        gsap.from(".story-compass", { opacity: 0, duration: 1.2, ease: "power2.out" });
+        gsap.fromTo(".story-compass-spin", { rotation: -28 }, { rotation: 0, duration: 3, ease: "elastic.out(1, 0.4)" });
         gsap.to(".story-start", { boxShadow: "0 0 20px rgba(212,160,23,0.6)", repeat: -1, yoyo: true, duration: 1.8 });
         gsap.to(".story-ending .story-start", { scale: 1.03, duration: 1.8, repeat: -1, yoyo: true, ease: "sine.inOut" });
         gsap.utils.toArray("[data-count]").forEach((element) => {
           const counter = { val: 0 };
-          gsap.to(counter, { val: Number(element.dataset.count), duration: 1.4, ease: "power1.out", onUpdate: () => { element.textContent = Math.round(counter.val); }, scrollTrigger: { trigger: element, start: "top 85%" } });
+          gsap.to(counter, { val: Number(element.dataset.count), duration: 1.4, ease: "power1.out", onUpdate: () => { element.textContent = Math.round(counter.val); }, scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: element, start: "top 85%" } });
         });
       }
-      const tl = gsap.timeline({ scrollTrigger: { trigger: "#forest-chapter", start: "bottom 60%", once: true }, onStart: () => setAnnouncement('Badge unlocked: Wayfinder. This is what it feels like after every step.') });
+      const tl = gsap.timeline({ scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: "#forest-chapter", start: "bottom 60%", once: true }, onStart: () => setAnnouncement('Badge unlocked: Wayfinder. This is what it feels like after every step.') });
       if (motion) {
         tl.set(".story-popup", { scale: 0, rotation: -15, opacity: 0 })
           .to(".story-popup", { scale: 1.1, rotation: 0, opacity: 1, duration: 0.4, ease: "back.out(3)" })
@@ -93,10 +93,10 @@ export default function LandingPage() {
             <Localized as="p" className="story-eyebrow">Chapter 01 · The World</Localized>
             <Localized as="h1" id="world-title">You are an Explorer.<br /><Localized as="em">Your career path<br />is a map.</Localized></Localized>
             <Localized as="p" id="world-description" className="story-description">Not sure which college course to choose? Answer a few questions about yourself and find courses worth exploring.</Localized>
-            <div className="story-actions"><Button href={entry.href} className="story-button story-start" label={entry.label} /><Localized as="a" href="#explorers" className="story-text-link">Explore the Story ↓</Localized></div>
+            <div className="story-actions"><Button href={entry.href} className="story-button story-start" label={journeyLabel(entry, "hero")} /><Localized as="a" href="#explorers" className="story-text-link">Explore the Story ↓</Localized></div>
 
           </Card>
-          <div className="story-compass-stage" aria-hidden="true"><div className="story-orbit" /><div className="story-compass-spin"><Localized as="img" className="story-compass" src="/landing-compass.png" width="420" height="480" alt="" /></div><Localized as="span" className="story-compass-caption">YOUR NEXT CHAPTER STARTS HERE</Localized></div>
+          <div className="story-compass-stage" aria-hidden="true"><div className="story-orbit" /><div className="story-compass-spin"><Localized as="img" className="story-compass" src="/brand/compass-v2-transparent-1024.png" width="420" height="480" alt="" /></div></div>
           <Localized as="a" className="story-scroll" href="#explorers">SCROLL TO EXPLORE <Localized as="span">↓</Localized></Localized>
         </section>
         <section ref={carousel} id="explorers" className="story-explorers" aria-labelledby="explorers-title">
@@ -111,10 +111,10 @@ export default function LandingPage() {
         {chapters.slice(1, 5).map((chapter, index) => <Fragment key={chapter.id}><section id={`${chapter.id}-chapter`} className={`story-chapter story-region region-${index}`} aria-labelledby={`${chapter.id}-title`}><span className="story-motif" aria-hidden="true" style={{ backgroundImage: `url(/icons/career-compass/${chapter.motif}.svg)` }} />
           <Card as="div" className="story-panel"><Localized as="p" className="story-eyebrow">Chapter {number(index + 1)} · {chapter.name}</Localized><Localized as="h2" id={`${chapter.id}-title`}>{chapter.title}</Localized><Localized as="p" className="story-description">{chapter.body}</Localized><Localized as="div" className="story-ribbon">{chapter.count && <Localized as="span" data-count={chapter.count}>{chapter.count}</Localized>} {chapter.stat}</Localized></Card>
         </section>{index === 1 && <div className="story-discovery-slot"><aside className="story-popup" aria-hidden="true"><Localized as="p">BADGE UNLOCKED</Localized><Localized as="h3">“Wayfinder”</Localized><Localized as="span">This is what it feels like after every step.</Localized></aside></div>}</Fragment>)}
-        <section id="ahead-chapter" className="story-chapter story-ending" aria-labelledby="ahead-title"><Card as="div" className="story-panel"><Localized as="img" src="/landing-compass.png" width="76" height="90" alt="" /><Localized as="p" className="story-eyebrow">Chapter 06 · The Journey Ahead</Localized><Localized as="h2" id="ahead-title">Every path leads somewhere.<br /><Localized as="em">Yours hasn&apos;t been decided yet.</Localized></Localized><Button href={entry.href} className="story-button story-start" label={entry.label} /><Localized as="a" href="/about" className="story-text-link">About Career Compass ↗</Localized><Localized as="p" className="story-session">For Senior High School Students · No Account Needed · Progress Saved on This Device</Localized></Card></section>
+        <section id="ahead-chapter" className="story-chapter story-ending" aria-labelledby="ahead-title"><Card as="div" className="story-panel"><Localized as="img" src="/brand/compass-v2-transparent-96.png" width="76" height="90" alt="" /><Localized as="p" className="story-eyebrow">Chapter 06 · The Journey Ahead</Localized><Localized as="h2" id="ahead-title">Every path leads somewhere.<br /><Localized as="em">Yours hasn&apos;t been decided yet.</Localized></Localized><Button href={entry.href} className="story-button story-start" label={journeyLabel(entry, "ending")} /><Localized as="a" href="/about" className="story-text-link">About Career Compass ↗</Localized><Localized as="p" className="story-session">For Senior High School Students · No Account Needed · Progress Saved on This Device</Localized></Card></section>
       </Localized>
       <Localized as="span" className="sr-only" role="status" aria-live="polite">{announcement}</Localized>
-      <footer className="story-footer"><OfflineButton /><Localized as="a" className="story-brand" href="#world-chapter"><Localized as="img" src="/landing-compass.png" width="32" height="40" alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#world-chapter">Back to top ↑</Localized></footer>
+      <footer className="story-footer"><OfflineButton /><Localized as="a" className="story-brand" href="#world-chapter"><Localized as="img" src="/brand/compass-v2-transparent-96.png" width="32" height="40" alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#world-chapter">Back to top ↑</Localized></footer>
     </main>
   );
 }

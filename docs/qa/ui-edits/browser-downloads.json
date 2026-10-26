@@ -1,0 +1,26 @@
+[
+  {
+    "id": "BUS02-old",
+    "case": 1,
+    "course": "BUS02",
+    "name": "BS Management Accounting",
+    "group": "Business and Management",
+    "route": "old",
+    "rank1": "BUS02",
+    "processingObserved": true,
+    "reportConfirmationObserved": true,
+    "path": "C:/Users/Charlene/OneDrive/Desktop/career-compass/docs/qa/ui-edits/browser-1-en.pdf"
+  },
+  {
+    "id": "HLT01-new",
+    "case": 7,
+    "course": "HLT01",
+    "name": "BS Nursing",
+    "group": "Health and Allied Sciences",
+    "route": "new",
+    "rank1": "HLT01",
+    "processingObserved": true,
+    "reportConfirmationObserved": true,
+    "path": "C:/Users/Charlene/OneDrive/Desktop/career-compass/docs/qa/ui-edits/browser-7-en.pdf"
+  }
+]

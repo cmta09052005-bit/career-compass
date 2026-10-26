@@ -6,6 +6,7 @@ import master from "@/data/v2/courses-master.json";
 import { buildCourseDetail } from "@/lib/courseDetailModel";
 import YearLevelTip from "./YearLevelTip";
 import FieldJournal from "./FieldJournal";
+import { SCHOOL_DISTANCE_NOTE } from "@/lib/schoolProximity";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return master.map(({ id }) => ({ courseId: id })); }
@@ -28,7 +29,9 @@ export default async function CourseDetailPage({ params }) {
     </Card>
     <Card className="max-w-none rounded-2xl border-beige/20 bg-navy/45 p-5 sm:p-7">
       <Localized as="h2" className="font-serif text-2xl">Where Can You Study?</Localized>
-      {course.schools.map(group=><section key={group.id} className="mt-5"><Localized as="h3" className="font-semibold">{group.name}</Localized><ul className="mt-3 space-y-3">{group.schools.map(school=><li key={school.id} className="rounded-xl border border-beige/15 bg-navy/35 p-4"><Localized as="h4" className="font-semibold">{school.label}</Localized>{school.notes.map(note=><Localized as="p" key={note} className="mt-1 text-sm">{note}</Localized>)}</li>)}</ul></section>)}
+      <Localized as="p" className="mt-3 text-sm leading-6">{SCHOOL_DISTANCE_NOTE}</Localized>
+      {course.schools.map(group=><section key={group.id} className="mt-5"><Localized as="h3" className="font-semibold">{group.name}</Localized><ul className="mt-3 space-y-3">{group.schools.map(school=><li key={school.id} className="rounded-xl border border-beige/15 bg-navy/35 p-4"><Localized as="h4" className="font-semibold">{school.label}</Localized><Localized as="p" className="mt-1 text-sm">{school.typeLabel}</Localized><Localized as="p" className="mt-1 text-sm">{school.distanceLabel}</Localized>{school.notes.map(note=><Localized as="p" key={note} className="mt-1 text-sm">{note}</Localized>)}</li>)}</ul></section>)}
+      <p className="mt-4 text-xs"><Localized as="span">Map coordinates: </Localized><Localized as="a" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" className="underline">© OpenStreetMap contributors</Localized><Localized as="span"> and CHED Region V.</Localized></p>
       <Localized as="p" className="mt-5 text-sm leading-7">School lists are not complete. Confirm programs, campus availability and admission requirements with the school.</Localized>
     </Card>
     <Card className="max-w-none rounded-2xl border-beige/20 bg-navy/45 p-5 sm:p-7">

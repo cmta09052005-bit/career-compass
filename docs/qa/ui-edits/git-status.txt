@@ -1,0 +1,120 @@
+ M app/about/About.js
+ M app/apple-icon.png
+ M app/how-it-works/HowItWorks.js
+ M app/icon.png
+ M app/intake/basecamp.css
+ M app/intake/page.js
+ M app/journey/academic/page.js
+ M app/journey/page.js
+ M app/journey/skills/GrowthSlider.js
+ M app/marketing-polish.css
+ M app/page.js
+ M app/processing/page.js
+ M app/report/page.js
+ M app/results/CourseMatch.js
+ M app/results/ResultsControls.js
+ M app/results/[courseId]/FieldJournal.js
+ M app/results/[courseId]/journal.css
+ M app/results/page.js
+ M app/results/results.css
+ M app/story.css
+ M components/JourneyPortal.js
+ M components/Localized.js
+ M components/MarketingNavbar.js
+ M components/MarketingShell.js
+ M docs/qa/browser-replay.json
+ M docs/qa/witness-replay.json
+ M lib/explorerReport.js
+ M lib/i18n/fil.js
+ M lib/i18n/patterns.js
+ M lib/i18n/translate.js
+ M lib/i18n/translate.test.js
+ M lib/journeyEntry.js
+ M lib/recommendations.test.js
+ M scripts/qa-replay-server.mjs
+ M scripts/qa/pdf-text.py
+ M scripts/replay-witnesses.mjs
+ M scripts/verify-browser-replay.mjs
+?? docs/i18n-missing.json
+?? docs/i18n-report.md
+?? docs/i18n-review.md
+?? docs/qa/chatgpt-flows-new-report.md
+?? docs/qa/chatgpt-flows-new-tests.txt
+?? docs/qa/i18n-browser-checks.json
+?? docs/qa/i18n-browser-downloads.json
+?? docs/qa/i18n-browser-new-page-1.png
+?? docs/qa/i18n-browser-new-page-2.png
+?? docs/qa/i18n-browser-new-page-3.png
+?? docs/qa/i18n-browser-new-page-6.png
+?? docs/qa/i18n-browser-new-text.txt
+?? docs/qa/i18n-browser-new.pdf
+?? docs/qa/i18n-browser-old-page-1.png
+?? docs/qa/i18n-browser-old-page-2.png
+?? docs/qa/i18n-browser-old-page-3.png
+?? docs/qa/i18n-browser-old-page-6.png
+?? docs/qa/i18n-browser-old-text.txt
+?? docs/qa/i18n-browser-old.pdf
+?? docs/qa/i18n-browser-pdf-checks.json
+?? docs/qa/i18n-build-output.txt
+?? docs/qa/i18n-coverage-tests.txt
+?? docs/qa/i18n-file-audit.json
+?? docs/qa/i18n-git-status.txt
+?? docs/qa/i18n-glyph-probe.pdf
+?? docs/qa/i18n-glyph-probe.png
+?? docs/qa/i18n-mobile-results.png
+?? docs/qa/i18n-new-page-1.png
+?? docs/qa/i18n-new-page-2.png
+?? docs/qa/i18n-new-page-3.png
+?? docs/qa/i18n-new-page-6.png
+?? docs/qa/i18n-new-text.txt
+?? docs/qa/i18n-new.pdf
+?? docs/qa/i18n-old-page-1.png
+?? docs/qa/i18n-old-page-2.png
+?? docs/qa/i18n-old-page-3.png
+?? docs/qa/i18n-old-page-6.png
+?? docs/qa/i18n-old-text.txt
+?? docs/qa/i18n-old.pdf
+?? docs/qa/i18n-pdf-checks.json
+?? docs/qa/i18n-pdf-expectations.json
+?? docs/qa/i18n-prose-source.json
+?? docs/qa/i18n-test-output.txt
+?? docs/qa/i18n-uncertainties.json
+?? docs/qa/i18n-verify-browser-replay.txt
+?? docs/qa/i18n-verify-details.txt
+?? docs/qa/i18n-verify-flow-catalog.txt
+?? docs/qa/i18n-verify-i18n-pdf.txt
+?? docs/qa/i18n-verify-links.txt
+?? docs/qa/i18n-verify-reachability.txt
+?? docs/qa/i18n-verify-routes.txt
+?? docs/qa/i18n-verify-simulation.txt
+?? docs/qa/logo-v2/
+?? docs/qa/ui-edits/
+?? docs/ui-edits-report.md
+?? lib/i18n/fil-ui-edits.js
+?? lib/i18n/fil-v2-content.js
+?? lib/i18n/fil-v2.js
+?? lib/i18n/policy.js
+?? lib/i18n/v2.test.js
+?? lib/uiEdits.test.js
+?? output/pdf/career-compass-new-flows.json
+?? output/pdf/career-compass-new-test-flow-catalog.pdf
+?? public/brand/compass-v2-transparent-1024.png
+?? public/brand/compass-v2-transparent-180.png
+?? public/brand/compass-v2-transparent-192.png
+?? public/brand/compass-v2-transparent-32.png
+?? public/brand/compass-v2-transparent-512.png
+?? public/brand/compass-v2-transparent-96.png
+?? public/brand/compass-v2-transparent-master.png
+?? public/brand/legacy-apple-icon.png
+?? public/brand/legacy-icon.png
+?? scripts/i18n-missing.mjs
+?? scripts/i18n-prose-drafts.mjs
+?? scripts/prepare-compass-logo.cjs
+?? scripts/qa/i18n-pdf-text.py
+?? scripts/qa/ui-edits-pdf.mjs
+?? scripts/qa/ui-edits-pdf.py
+?? scripts/qa/verify-chatgpt-flows.mjs
+?? scripts/verify-i18n-pdf.mjs
+?? scripts/write-i18n-review.mjs
+?? tmp/pdfs/build_new_catalog.py
+?? tmp/pdfs/new-catalog-verification.json

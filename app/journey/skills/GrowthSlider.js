@@ -30,6 +30,7 @@ export function stageAtPointer(clientX, left, width) {
 
 export default function GrowthSlider({ value, disabled, onChange, onCommit, labelledBy, confirming, invalid, describedBy }) {
   const dragging = useRef(null);
+  const hoverOpened = useRef(false);
   const stage = Number.isFinite(value) ? value : null;
   const label = stage === null ? "Slide or tap to show how confident you feel." : CONFIDENCE_LABELS[stage - 1];
   function choose(event) {
@@ -68,7 +69,7 @@ export default function GrowthSlider({ value, disabled, onChange, onCommit, labe
     }
   }
   return <div className="forest-growth" data-confirming={confirming}>
-    <details className="forest-help"><Localized as="summary" aria-label="Confidence level">?</Localized><Localized as="p">This is about how sure you feel doing this, not how good you already are.</Localized></details>
+    <details className="forest-help" onPointerEnter={event => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) { hoverOpened.current = !event.currentTarget.open; event.currentTarget.open = true; } }} onPointerLeave={event => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) { hoverOpened.current = false; event.currentTarget.open = false; } }} onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) { hoverOpened.current = false; event.currentTarget.open = false; } }} onKeyDown={event => { if (event.key === "Escape") { event.preventDefault(); hoverOpened.current = false; event.currentTarget.open = false; } }}><Localized as="summary" aria-label="Confidence level" onClick={event => { if (hoverOpened.current) { event.preventDefault(); hoverOpened.current = false; } }} onFocus={event => { if (event.currentTarget.matches(":focus-visible")) event.currentTarget.parentElement.open = true; }}>?</Localized><Localized as="p">This is about how sure you feel doing this, not how good you already are.</Localized></details>
     <Localized as="output" className="forest-growth-label" data-unanswered={stage === null} aria-live="polite">{label}</Localized>
     <Localized as="div" className="forest-growth-slider" role="slider" data-control="slider" tabIndex={disabled ? -1 : 0} aria-labelledby={labelledBy} aria-describedby={describedBy} aria-invalid={invalid} aria-valuemin={1} aria-valuemax={5} aria-valuenow={stage ?? 1} aria-valuetext={label} aria-disabled={disabled}
       onPointerDown={pointerDown} onPointerMove={event => { if (dragging.current === event.pointerId && !disabled) choose(event); }} onPointerUp={pointerUp}

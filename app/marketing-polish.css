@@ -161,3 +161,10 @@
   .marketing-shell .carousel-play { min-height:2.5rem; }
 }
 
+
+/* Marketing chapters scroll inside the app viewport. */
+body:has(.marketing-shell) { overflow:hidden; }
+.marketing-shell { position:fixed; inset:0; height:100dvh; overflow:hidden; }
+.marketing-content { height:100%; overflow-y:auto; overflow-x:hidden; overscroll-behavior:contain; scroll-behavior:smooth; }
+.marketing-shell .story-button { max-width:100%; white-space:normal; overflow-wrap:anywhere; }
+@media(prefers-reduced-motion:reduce) { .marketing-content { scroll-behavior:auto; } }

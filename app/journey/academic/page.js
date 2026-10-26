@@ -1,5 +1,7 @@
 "use client";
 
+import Localized from "@/components/Localized";
+
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import gsap from "gsap";
@@ -148,7 +150,7 @@ export default function AcademicPage() {
           {step === "gwa" ? <section className="valley-gauge"><label htmlFor="academic-gwa">General Weighted Average (GWA)</label><div className="valley-grade-number"><input id="academic-gwa" type="number" inputMode="decimal" min="60" max="100" step="0.01" value={gwaDraft ?? session.gwa ?? ""} onChange={updateGwa} aria-invalid={Boolean(error)} aria-describedby="valley-gwa-help" disabled={!isReady || submitting} /></div><p id="valley-gwa-help">60 to 100, up to 2 decimal places.</p></section> : <>
             <p className="valley-pick-help">{step === "strand" ? "Choose one. Tap again to deselect." : step === "certificates" ? "Choose up to 3, or None yet." : step === "electives" ? "Choose 1 to 3, or Not sure yet / None." : "Choose 1 to 3."}</p>
             {optional && <button type="button" className="valley-crop valley-none" data-selected={noneSelected} aria-pressed={noneSelected} disabled={!isReady || submitting} onClick={event => choose(null, event)}>{step === "certificates" ? "None yet" : "Not sure yet / None"}</button>}
-            {groups.map((group, i) => <section className="valley-choice-group" key={group.name || i}>{group.name && <h2>{group.name}</h2>}<div className="valley-crops">{group.items.map(option)}</div></section>)}
+            {groups.map((group, i) => <section className="valley-choice-group" key={group.name || i}>{group.name && <Localized as="h2">{group.name}</Localized>}<div className="valley-crops">{group.items.map(option)}</div></section>)}
           </>}
         </div>
         <footer className="valley-v2-footer">

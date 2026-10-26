@@ -1,0 +1,18 @@
+{
+  "source": "C:\\Users\\Charlene\\Downloads\\COMPASS-LOGO_Restored2_20261025195216.png",
+  "width": 4160,
+  "height": 4160,
+  "threshold": 235,
+  "backgroundPixels": 10264167,
+  "ringSeed": 1383283,
+  "fringePixels": 15003,
+  "artworkPixelsUnchanged": 7026430,
+  "sizes": [
+    32,
+    96,
+    180,
+    192,
+    512,
+    1024
+  ]
+}

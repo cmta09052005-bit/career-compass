@@ -1,0 +1,5 @@
+(node:171720) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringV2/index.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: 40,000 uniform profiles, all 12 GWA strata, 153,000 persona profiles, 510 course/route/p cells, rank/count/cap invariants and four byte-identical JSON/CSV hashes.

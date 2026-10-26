@@ -1,0 +1,9 @@
+PASS: course-details and schools-by-course contain exactly the 85 master IDs.
+PASS: all five source text fields are nonempty for every course; CHED basis and exact text splits match.
+PASS: 463 parsed salary ranges = 463 source ranges; 463 careers with titles and salaries; 2 careerNotes; all 465 source segments retained.
+PASS: all 45 original review items resolved; 49 handled entries approved (including 4 additional comma-prefix fixes); 0 pending career splits.
+PASS: 51 school source rows; 297 valid school/course links; all 85 courses covered; uncertain CBSUA ENG12 excluded.
+PASS: school flags, explicit course codes, ordered reverse index and 8 exact interest prompts verified.
+Schools per course (source rows): min=1, max=18.
+Courses with only 1 school source row (27): BUS02, ENG06, ENG07, ENG08, ENG10, ENG11, ENG12, SCI03, SCI04, SCI05, SCI08, SCI11, HLT02, HLT07, HLT09, SOC06, SOC07, SOC08, SOC13, SOC14, SOC17, SOC18, ART01, ART02, ART03, ART04, ART05.
+NOTE: career splits are approved; school source qualifications and the separate ENG04 salary outlier still require manual checks.

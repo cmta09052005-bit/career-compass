@@ -1,0 +1,52 @@
+{
+  "old": {
+    "names": [
+      "BS Management Accounting",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Hospitality Management",
+      "BS Statistics"
+    ],
+    "profileLabels": [
+      "Grade",
+      "Curriculum",
+      "Strand",
+      "Mga Asignatura",
+      "GWA",
+      "Mga Sertipiko"
+    ],
+    "sections": [
+      "Ulat ng Manlalakbay",
+      "Profile ng Iyong Pagtuklas",
+      "Mga Sagot na Batayan",
+      "Mga Kursong Pinakaangkop sa Iyo",
+      "Mga Trabaho",
+      "Mga Paaralan"
+    ]
+  },
+  "new": {
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "profileLabels": [
+      "Grade",
+      "Curriculum",
+      "Mga elective",
+      "Mga core subject",
+      "GWA",
+      "Mga Sertipiko"
+    ],
+    "sections": [
+      "Ulat ng Manlalakbay",
+      "Profile ng Iyong Pagtuklas",
+      "Mga Sagot na Batayan",
+      "Mga Kursong Pinakaangkop sa Iyo",
+      "Mga Trabaho",
+      "Mga Paaralan"
+    ]
+  }
+}

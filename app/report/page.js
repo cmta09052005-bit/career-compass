@@ -1,6 +1,7 @@
 "use client";
 
 import Localized from "@/components/Localized";
+import { useLanguage } from "@/components/LanguageProvider";
 
 import { useRef, useState } from "react";
 import Button from "@/components/Button";
@@ -14,11 +15,12 @@ import {
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
 export default function ReportPage() {
+  const { language } = useLanguage();
   const { session, isReady, updateSession } = useSessionAnswers();
   const [downloading, setDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState("");
   const pending = useRef(false);
-  const report = buildExplorerReport(session);
+  const report = buildExplorerReport(session, language);
 
   async function downloadAgain() {
     if (!isReady || pending.current) return;

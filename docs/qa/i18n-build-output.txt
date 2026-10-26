@@ -1,0 +1,48 @@
+
+> career-compass@0.1.0 build
+> next build && node scripts/build-offline.mjs
+
+▲ Next.js 16.3.1 (Turbopack)
+⚠ Warning: Next.js ignored package-lock.json in C:\Users\Charlene because it is outside the current Git repository (C:\Users\Charlene\OneDrive\Desktop\career-compass).
+ To use this directory, set `turbopack.root` in your Next.js config.
+
+✓ Running next.config.mjs took 43ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 6.2s
+  Running TypeScript ...
+  Finished TypeScript in 11ms ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/100) ...
+  Generating static pages using 1 worker (25/100) 
+  Generating static pages using 1 worker (50/100) 
+  Generating static pages using 1 worker (75/100) 
+✓ Generating static pages using 1 worker (100/100) in 6.9s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /apple-icon.png
+├ ○ /how-it-works
+├ ○ /icon.png
+├ ○ /intake
+├ ○ /journey
+├ ○ /journey/academic
+├ ○ /journey/interests
+├ ○ /journey/skills
+├ ○ /processing
+├ ○ /report
+├ ○ /results
+└   /results/[courseId]
+  ├ ● /results/BUS01
+  ├ ● /results/BUS02
+  ├ ● /results/BUS03
+  └ ● [+82 more paths]
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+Offline copy: 615 resources, 49.65 MiB, 96 routes, build WtnpLBoZ8FM2Jx7Tx-kV8

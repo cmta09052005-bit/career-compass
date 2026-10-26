@@ -57,7 +57,7 @@ function regionState(index, progress) {
 function Icon({ name, className = "" }) {
   if (name === "lock") return <svg className={`atlas-icon ${className}`} viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M7 10V7a5 5 0 0 1 10 0v3" /><rect x="4" y="10" width="16" height="12" rx="2" fill="#1b2a4a" /><path d="M12 14v4" /></svg>;
   // Local illustrations retain their original proportions.
-  return <Localized as="img" className={`atlas-icon ${className}`} src={name === "compass" ? "/landing-compass.png" : `/icons/career-compass/${name}.svg`} alt="" draggable="false" />;
+  return <Localized as="img" className={`atlas-icon ${className}`} src={name === "compass" ? "/brand/compass-v2-transparent-96.png" : `/icons/career-compass/${name}.svg`} alt="" draggable="false" />;
 }
 
 function LocationCard({ name }) {

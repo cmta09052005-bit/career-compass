@@ -1,0 +1,6 @@
+(node:155036) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/explorerReport.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PDF model checks: old BUS02 and new HLT01; Filipino profile and headings. Font probe: ñ Ñ á é í ó ú Á É Í Ó Ú ü Ü.
+Non-Latin-1 catalog characters (including existing symbols): ↗ ↓ “ ” ↑ – → ← ✓ … ↔ ’ ₱. PDF text extraction checks actual use separately.

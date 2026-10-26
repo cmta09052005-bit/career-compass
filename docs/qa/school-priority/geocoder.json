@@ -1,0 +1,1233 @@
+{
+  "origin": {
+    "query": "Polangui Municipal Hall, Albay, Philippines",
+    "fetchedAt": "2026-10-26T17:40:47.566Z",
+    "candidates": [
+      {
+        "place_id": 258985583,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 871800990,
+        "lat": "13.2928332",
+        "lon": "123.4841431",
+        "category": "amenity",
+        "type": "townhall",
+        "place_rank": 30,
+        "importance": 0.00004838864728766335,
+        "addresstype": "amenity",
+        "name": "Polangui Municipal Hall",
+        "display_name": "Polangui Municipal Hall, Polangui, Albay, Bicol Region, 4506, Philippines",
+        "boundingbox": [
+          "13.2926911",
+          "13.2929969",
+          "123.4838590",
+          "123.4844271"
+        ]
+      }
+    ]
+  },
+  "SCH-001": {
+    "query": "Bicol University Main Campus, Legazpi, Philippines",
+    "fetchedAt": "2026-10-26T17:40:49.034Z",
+    "candidates": []
+  },
+  "SCH-002": {
+    "query": "Bicol University East Campus, Legazpi, Philippines",
+    "fetchedAt": "2026-10-26T17:40:50.840Z",
+    "candidates": [
+      {
+        "place_id": 258786413,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 389168938,
+        "lat": "13.1477433",
+        "lon": "123.7294450",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.000054252689402563785,
+        "addresstype": "amenity",
+        "name": "Bicol University East Campus",
+        "display_name": "Bicol University East Campus, BUCIT Road, Em's Barrio East, Daraga, Albay, Bicol Region, 4500, Philippines",
+        "boundingbox": [
+          "13.1461817",
+          "13.1497399",
+          "123.7270294",
+          "123.7315158"
+        ]
+      }
+    ]
+  },
+  "SCH-003": {
+    "query": "Bicol University Daraga, Philippines",
+    "fetchedAt": "2026-10-26T17:40:52.707Z",
+    "candidates": [
+      {
+        "place_id": 258790635,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1290396971,
+        "lat": "13.1480804",
+        "lon": "123.7180541",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.000055001907377691576,
+        "addresstype": "amenity",
+        "name": "Bicol University Daraga Campus",
+        "display_name": "Bicol University Daraga Campus, Rizal Avenue, First Park Subdivision, Sagpon, Sipi, Daraga, Albay, Bicol Region, 4501, Philippines",
+        "boundingbox": [
+          "13.1472721",
+          "13.1488013",
+          "123.7169248",
+          "123.7191199"
+        ]
+      },
+      {
+        "place_id": 258786413,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 389168938,
+        "lat": "13.1477433",
+        "lon": "123.7294450",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.000054252689402563785,
+        "addresstype": "amenity",
+        "name": "Bicol University East Campus",
+        "display_name": "Bicol University East Campus, BUCIT Road, Em's Barrio East, Daraga, Albay, Bicol Region, 4500, Philippines",
+        "boundingbox": [
+          "13.1461817",
+          "13.1497399",
+          "123.7270294",
+          "123.7315158"
+        ]
+      },
+      {
+        "place_id": 259123219,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 71436545,
+        "lat": "13.1440608",
+        "lon": "123.7228153",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.000055001907377691576,
+        "addresstype": "amenity",
+        "name": "Bicol University West Campus",
+        "display_name": "Bicol University West Campus, Rizal Avenue, First Park Subdivision, Sagpon, Sipi, Legazpi, Albay, Bicol Region, 4500, Philippines",
+        "boundingbox": [
+          "13.1416417",
+          "13.1464687",
+          "123.7189132",
+          "123.7261545"
+        ]
+      }
+    ]
+  },
+  "SCH-004": {
+    "query": "Bicol University Guinobatan, Philippines",
+    "fetchedAt": "2026-10-26T17:40:54.487Z",
+    "candidates": [
+      {
+        "place_id": 259016158,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 661086063,
+        "lat": "13.1924898",
+        "lon": "123.5948412",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.000046691844052750704,
+        "addresstype": "amenity",
+        "name": "Bicol University Guinobatan",
+        "display_name": "Bicol University Guinobatan, Maharlika Highway, Ilawod, Guinobatan, Albay, Bicol Region, 4503, Philippines",
+        "boundingbox": [
+          "13.1895257",
+          "13.1953115",
+          "123.5921276",
+          "123.5976727"
+        ]
+      },
+      {
+        "place_id": 258791805,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 729462000,
+        "lat": "13.1903007",
+        "lon": "123.5933986",
+        "category": "amenity",
+        "type": "school",
+        "place_rank": 30,
+        "importance": 0.000046691844052750704,
+        "addresstype": "amenity",
+        "name": "Bicol University Guinobatan",
+        "display_name": "Bicol University Guinobatan, Salceda Avenue, Ilawod, Guinobatan, Albay, Bicol Region, 4503, Philippines",
+        "boundingbox": [
+          "13.1878896",
+          "13.1926964",
+          "123.5912017",
+          "123.5947072"
+        ]
+      }
+    ]
+  },
+  "SCH-005": {
+    "query": "Bicol University Tabaco, Philippines",
+    "fetchedAt": "2026-10-26T17:40:56.387Z",
+    "candidates": [
+      {
+        "place_id": 260227558,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 92802540,
+        "lat": "13.3638884",
+        "lon": "123.7329549",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.000044224460212054895,
+        "addresstype": "amenity",
+        "name": "Bicol University, Tabaco Campus",
+        "display_name": "Bicol University, Tabaco Campus, M.H. Del Pilar Street, Bacolod, Bombon, Tabaco, Albay, Bicol Region, 4511, Philippines",
+        "boundingbox": [
+          "13.3630070",
+          "13.3649740",
+          "123.7310888",
+          "123.7347633"
+        ]
+      }
+    ]
+  },
+  "SCH-006": {
+    "query": "Bicol University Gubat, Philippines",
+    "fetchedAt": "2026-10-26T17:40:58.064Z",
+    "candidates": [
+      {
+        "place_id": 259740471,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1290396972,
+        "lat": "12.9202599",
+        "lon": "124.1261434",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.00005168154421297043,
+        "addresstype": "amenity",
+        "name": "Bicol University Gubat Campus",
+        "display_name": "Bicol University Gubat Campus, Mabini Street, Pinontingan, Poblacion, Ariman, Gubat, Sorsogon, Bicol Region, 4710, Philippines",
+        "boundingbox": [
+          "12.9197237",
+          "12.9205162",
+          "124.1259042",
+          "124.1264711"
+        ]
+      }
+    ]
+  },
+  "SCH-007": {
+    "query": "Bicol University Polangui, Philippines",
+    "fetchedAt": "2026-10-26T17:40:59.890Z",
+    "candidates": [
+      {
+        "place_id": 259063928,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 13027320,
+        "lat": "13.2964422",
+        "lon": "123.4846901",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.00004838864728766335,
+        "addresstype": "amenity",
+        "name": "Bicol University Polangui Campus",
+        "display_name": "Bicol University Polangui Campus, San Juan Street, Centro Oriental, Magurang, Polangui, Albay, Bicol Region, 4507, Philippines",
+        "boundingbox": [
+          "13.2949964",
+          "13.2976445",
+          "123.4832861",
+          "123.4866429"
+        ]
+      }
+    ]
+  },
+  "SCH-008": {
+    "query": "Sorsogon State College Bulan Campus",
+    "fetchedAt": "2026-10-26T17:44:35.338Z",
+    "candidates": []
+  },
+  "SCH-009": {
+    "query": "Sorsogon State University Magallanes, Philippines",
+    "fetchedAt": "2026-10-26T17:41:04.101Z",
+    "candidates": [
+      {
+        "place_id": 259069623,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 12327856,
+        "lat": "12.8227468",
+        "lon": "123.8423535",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.000040000762951049326,
+        "addresstype": "amenity",
+        "name": "Sorsogon State University Magallanes Campus",
+        "display_name": "Sorsogon State University Magallanes Campus, Magallanes-Juban Road, Aguada Norte, Magallanes, Sorsogon, Bicol Region, 4705, Philippines",
+        "boundingbox": [
+          "12.8216109",
+          "12.8240129",
+          "123.8410743",
+          "123.8437940"
+        ]
+      }
+    ]
+  },
+  "SCH-010": {
+    "query": "Sorsogon State University Sorsogon City, Philippines",
+    "fetchedAt": "2026-10-26T17:41:06.025Z",
+    "candidates": [
+      {
+        "place_id": 260395225,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1339846721,
+        "lat": "12.9949237",
+        "lon": "124.0259566",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.00005168154421297043,
+        "addresstype": "amenity",
+        "name": "Sorsogon State University",
+        "display_name": "Sorsogon State University, Salvador H. Escudero III Diversion Road, Sorsogon City, Sorsogon, Bicol Region, 4701, Philippines",
+        "boundingbox": [
+          "12.9941898",
+          "12.9955831",
+          "124.0251921",
+          "124.0268860"
+        ]
+      }
+    ]
+  },
+  "SCH-011": {
+    "query": "Sorsogon State University Castilla, Philippines",
+    "fetchedAt": "2026-10-26T17:41:08.315Z",
+    "candidates": [
+      {
+        "place_id": 258834508,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 756143956,
+        "lat": "12.9592501",
+        "lon": "123.7956973",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.00003750133516437045,
+        "addresstype": "amenity",
+        "name": "Sorsogon State University, Castilla Campus",
+        "display_name": "Sorsogon State University, Castilla Campus, Maharlika Highway, Cumadcad, Castilla, Sorsogon, Bicol Region, 4713, Philippines",
+        "boundingbox": [
+          "12.9572012",
+          "12.9607008",
+          "123.7946169",
+          "123.7963492"
+        ]
+      }
+    ]
+  },
+  "SCH-012": {
+    "query": "Camarines Sur Polytechnic Colleges, Nabua, Philippines",
+    "fetchedAt": "2026-10-26T17:41:12.152Z",
+    "candidates": [
+      {
+        "place_id": 259967768,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 19176042,
+        "lat": "13.4058177",
+        "lon": "123.3763382",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.3022467077917196,
+        "addresstype": "amenity",
+        "name": "Polytechnic State University of Bicol",
+        "display_name": "Polytechnic State University of Bicol, Maharlika Highway, San Miguel, Cagas, Nabua, Camarines Sur, Bicol Region, 4434, Philippines",
+        "boundingbox": [
+          "13.4049536",
+          "13.4067034",
+          "123.3735422",
+          "123.3785615"
+        ]
+      }
+    ]
+  },
+  "SCH-014": {
+    "query": "Catanduanes State University, Virac, Philippines",
+    "fetchedAt": "2026-10-26T17:41:13.500Z",
+    "candidates": [
+      {
+        "place_id": 256846720,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 237765548,
+        "lat": "13.5854701",
+        "lon": "124.2115620",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.00004912108033870478,
+        "addresstype": "amenity",
+        "name": "Catanduanes State University",
+        "display_name": "Catanduanes State University, Catanduanes Circumferential Road, San Isidro Village, Calatagan Proper, Virac, Catanduanes, Bicol Region, 4800, Philippines",
+        "boundingbox": [
+          "13.5813835",
+          "13.5888951",
+          "124.2084246",
+          "124.2147268"
+        ]
+      }
+    ]
+  },
+  "SCH-019": {
+    "query": "Ateneo de Naga University, Naga, Philippines",
+    "fetchedAt": "2026-10-26T17:41:14.833Z",
+    "candidates": [
+      {
+        "place_id": 259246863,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 222268858,
+        "lat": "13.6308139",
+        "lon": "123.1845570",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.3090170114439377,
+        "addresstype": "amenity",
+        "name": "Ateneo de Naga University",
+        "display_name": "Ateneo de Naga University, Ateneo Avenue, Bagumbayan Sur, Naga City, Bicol Region, 4400, Philippines",
+        "boundingbox": [
+          "13.6291339",
+          "13.6327715",
+          "123.1830776",
+          "123.1860401"
+        ]
+      }
+    ]
+  },
+  "SCH-020": {
+    "query": "University of Nueva Caceres, Naga, Philippines",
+    "fetchedAt": "2026-10-26T17:41:16.257Z",
+    "candidates": [
+      {
+        "place_id": 259095299,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 383244706,
+        "lat": "13.6249069",
+        "lon": "123.1824102",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.0000533722438391244,
+        "addresstype": "amenity",
+        "name": "University of Nueva Caceres",
+        "display_name": "University of Nueva Caceres, J. Hernandez Avenue, Zone 5, Santa Cruz, Naga City, Bicol Region, 4400, Philippines",
+        "boundingbox": [
+          "13.6237863",
+          "13.6260254",
+          "123.1808963",
+          "123.1841914"
+        ]
+      }
+    ]
+  },
+  "SCH-039": {
+    "query": "University of the Philippines Diliman, Philippines",
+    "fetchedAt": "2026-10-26T17:41:18.047Z",
+    "candidates": [
+      {
+        "place_id": 417203116,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 20670730,
+        "lat": "14.6503760",
+        "lon": "121.0676426",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.49114123708072377,
+        "addresstype": "amenity",
+        "name": "University of the Philippines Diliman",
+        "display_name": "University of the Philippines Diliman, Mactan Street, U.P. Campus, Diliman, 4th District, Quezon City, Eastern Manila District, Metro Manila, 1101, Philippines",
+        "boundingbox": [
+          "14.6370655",
+          "14.6633595",
+          "121.0447615",
+          "121.0762264"
+        ]
+      },
+      {
+        "place_id": 259437229,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 927197175,
+        "lat": "14.6547213",
+        "lon": "121.0663102",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.49114123708072377,
+        "addresstype": "amenity",
+        "name": "University of the Philippines Diliman",
+        "display_name": "University of the Philippines Diliman, Mactan Street, U.P. Campus, Diliman, 4th District, Quezon City, Eastern Manila District, Metro Manila, 1100, Philippines",
+        "boundingbox": [
+          "14.6464160",
+          "14.6631261",
+          "121.0523361",
+          "121.0762264"
+        ]
+      }
+    ]
+  },
+  "SCH-040": {
+    "query": "University of the Philippines Los Banos, Philippines",
+    "fetchedAt": "2026-10-26T17:41:19.397Z",
+    "candidates": [
+      {
+        "place_id": 259811800,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 517120243,
+        "lat": "14.1605290",
+        "lon": "121.2425665",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.3955795074137208,
+        "addresstype": "amenity",
+        "name": "University of the Philippines Los Baños",
+        "display_name": "University of the Philippines Los Baños, Dapdap Street, Putho Tuntungin, Los Baños, Laguna, Calabarzon, 4031, Philippines",
+        "boundingbox": [
+          "14.1514333",
+          "14.1695451",
+          "121.2318013",
+          "121.2559750"
+        ]
+      }
+    ]
+  },
+  "SCH-041": {
+    "query": "University of the Philippines Manila, Philippines",
+    "fetchedAt": "2026-10-26T17:41:20.796Z",
+    "candidates": [
+      {
+        "place_id": 259951502,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 28395504,
+        "lat": "14.5759437",
+        "lon": "120.9864733",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.3957352519202844,
+        "addresstype": "amenity",
+        "name": "University of the Philippines Manila",
+        "display_name": "University of the Philippines Manila, Antonio Vasquez Street, Barangay 696, Malate, Fifth District, Manila, Capital District, Metro Manila, 1004, Philippines",
+        "boundingbox": [
+          "14.5749069",
+          "14.5771390",
+          "120.9848504",
+          "120.9880865"
+        ]
+      },
+      {
+        "place_id": 259415563,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 2918734,
+        "lat": "14.5791337",
+        "lon": "120.9835126",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.3957352519202844,
+        "addresstype": "amenity",
+        "name": "University of the Philippines Manila",
+        "display_name": "University of the Philippines Manila, Maria Orosa Street, Barangay 670, Ermita, Fifth District, Manila, Capital District, Metro Manila, 1000, Philippines",
+        "boundingbox": [
+          "14.5785162",
+          "14.5795745",
+          "120.9830937",
+          "120.9839086"
+        ]
+      }
+    ]
+  },
+  "SCH-042": {
+    "query": "University of Santo Tomas, Manila, Philippines",
+    "fetchedAt": "2026-10-26T17:41:22.332Z",
+    "candidates": [
+      {
+        "place_id": 421137915,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "relation",
+        "osm_id": 21046172,
+        "lat": "14.6098426",
+        "lon": "120.9894646",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.5415404546797228,
+        "addresstype": "amenity",
+        "name": "University of Santo Tomas",
+        "display_name": "University of Santo Tomas, España Boulevard, Barangay 410, Sampaloc, Fourth District, Manila, Capital District, Metro Manila, 1008, Philippines",
+        "boundingbox": [
+          "14.6068490",
+          "14.6127914",
+          "120.9864093",
+          "120.9925724"
+        ]
+      }
+    ]
+  },
+  "SCH-043": {
+    "query": "Ateneo de Manila University, Quezon City, Philippines",
+    "fetchedAt": "2026-10-26T17:41:23.749Z",
+    "candidates": [
+      {
+        "place_id": 259427866,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 138294127,
+        "lat": "14.6398984",
+        "lon": "121.0781952",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.5378632512480847,
+        "addresstype": "amenity",
+        "name": "Ateneo de Manila University",
+        "display_name": "Ateneo de Manila University, Katipunan Avenue, Loyola Heights, 3rd District, Quezon City, Eastern Manila District, Metro Manila, 1108, Philippines",
+        "boundingbox": [
+          "14.6327038",
+          "14.6470414",
+          "121.0745218",
+          "121.0831984"
+        ]
+      }
+    ]
+  },
+  "SCH-044": {
+    "query": "De La Salle College of Saint Benilde, Manila, Philippines",
+    "fetchedAt": "2026-10-26T17:41:25.627Z",
+    "candidates": [
+      {
+        "place_id": 260766890,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 124694590,
+        "lat": "14.5640603",
+        "lon": "120.9951226",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.00007501869230177795,
+        "addresstype": "amenity",
+        "name": "De La Salle - College of Saint Benilde",
+        "display_name": "De La Salle - College of Saint Benilde, 2544, Taft Avenue, Barangay 726, Barangay 708, Malate, Fifth District, Manila, Capital District, Metro Manila, 1004, Philippines",
+        "boundingbox": [
+          "14.5632959",
+          "14.5646649",
+          "120.9946953",
+          "120.9956410"
+        ]
+      }
+    ]
+  },
+  "SCH-045": {
+    "query": "De La Salle University, Manila, Philippines",
+    "fetchedAt": "2026-10-26T17:41:27.448Z",
+    "candidates": [
+      {
+        "place_id": 259521515,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 22480452,
+        "lat": "14.5669303",
+        "lon": "120.9918739",
+        "category": "leisure",
+        "type": "sports_centre",
+        "place_rank": 30,
+        "importance": 0.2861574737770128,
+        "addresstype": "leisure",
+        "name": "Enrique M. Razon Sports Center",
+        "display_name": "Enrique M. Razon Sports Center, Noli Street, Agno, Barangay 708, Malate, Fifth District, Manila, Capital District, Metro Manila, 1004, Philippines",
+        "boundingbox": [
+          "14.5666296",
+          "14.5672259",
+          "120.9915568",
+          "120.9922153"
+        ]
+      },
+      {
+        "place_id": 259461382,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 406882755,
+        "lat": "14.5675138",
+        "lon": "120.9914195",
+        "category": "place",
+        "type": "house",
+        "place_rank": 30,
+        "importance": 0.00007501869230177795,
+        "addresstype": "place",
+        "name": "De La Salle University",
+        "display_name": "De La Salle University, Fidel A. Reyes Street, Agno, Barangay 714, Malate, Fifth District, Manila, Capital District, Metro Manila, 1004, Philippines",
+        "boundingbox": [
+          "14.5673173",
+          "14.5677456",
+          "120.9911948",
+          "120.9919391"
+        ]
+      },
+      {
+        "place_id": 426653312,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 14132443079,
+        "lat": "14.5647839",
+        "lon": "120.9940343",
+        "category": "highway",
+        "type": "bus_stop",
+        "place_rank": 30,
+        "importance": 0.00007501869230177795,
+        "addresstype": "highway",
+        "name": "De La Salle University",
+        "display_name": "De La Salle University, Taft Avenue, Barangay 726, Barangay 708, Malate, Fifth District, Manila, Capital District, Metro Manila, 1004, Philippines",
+        "boundingbox": [
+          "14.5647339",
+          "14.5648339",
+          "120.9939843",
+          "120.9940843"
+        ]
+      },
+      {
+        "place_id": 426653313,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 14132443080,
+        "lat": "14.5650513",
+        "lon": "120.9941791",
+        "category": "highway",
+        "type": "bus_stop",
+        "place_rank": 30,
+        "importance": 0.00007501869230177795,
+        "addresstype": "highway",
+        "name": "De La Salle University",
+        "display_name": "De La Salle University, Taft Avenue, Barangay 727, Malate, Fifth District, Manila, Capital District, Metro Manila, 1004, Philippines",
+        "boundingbox": [
+          "14.5650013",
+          "14.5651013",
+          "120.9941291",
+          "120.9942291"
+        ]
+      },
+      {
+        "place_id": 259454271,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 68194576,
+        "lat": "14.5670858",
+        "lon": "120.9925972",
+        "category": "building",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.00007501869230177795,
+        "addresstype": "building",
+        "name": "Brother Andrew Gonzalez Hall",
+        "display_name": "Brother Andrew Gonzalez Hall, Taft Avenue, Barangay 726, Barangay 714, Malate, Fifth District, Manila, Capital District, Metro Manila, 1004, Philippines",
+        "boundingbox": [
+          "14.5668567",
+          "14.5673103",
+          "120.9922741",
+          "120.9929201"
+        ]
+      }
+    ]
+  },
+  "SCH-046": {
+    "query": "Ateneo de Davao University, Davao, Philippines",
+    "fetchedAt": "2026-10-26T17:41:29.216Z",
+    "candidates": [
+      {
+        "place_id": 260457789,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 28993853,
+        "lat": "7.0718147",
+        "lon": "125.6134160",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.3668857539234569,
+        "addresstype": "amenity",
+        "name": "Ateneo de Davao University",
+        "display_name": "Ateneo de Davao University, E. Jacinto Street, Barangay 32-D, Poblacion District, Davao City, Davao Region, 8016, Philippines",
+        "boundingbox": [
+          "7.0708857",
+          "7.0731041",
+          "125.6122108",
+          "125.6143358"
+        ]
+      }
+    ]
+  },
+  "SCH-047": {
+    "query": "Northwestern University, Laoag, Philippines",
+    "fetchedAt": "2026-10-26T17:41:30.616Z",
+    "candidates": [
+      {
+        "place_id": 236783271,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 107057437,
+        "lat": "18.1868854",
+        "lon": "120.5704244",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.00005197299153119734,
+        "addresstype": "amenity",
+        "name": "NorthWestern University",
+        "display_name": "NorthWestern University, Airport Access Road, Laoag, Brgy. 46, Ilocos Norte, Ilocos Region, 2900, Philippines",
+        "boundingbox": [
+          "18.1850316",
+          "18.1887418",
+          "120.5666122",
+          "120.5723360"
+        ]
+      }
+    ]
+  },
+  "SCH-048": {
+    "query": "Davao Doctors College, Davao, Philippines",
+    "fetchedAt": "2026-10-26T17:41:32.086Z",
+    "candidates": [
+      {
+        "place_id": 261476804,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 115065291,
+        "lat": "7.0718996",
+        "lon": "125.6034002",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.16273786379520622,
+        "addresstype": "amenity",
+        "name": "Davao Doctors College",
+        "display_name": "Davao Doctors College, General Malvar Street, Pelayo, 7-A General Malvar, Poblacion District, Davao City, Davao Region, 8000, Philippines",
+        "boundingbox": [
+          "7.0714191",
+          "7.0723845",
+          "125.6031941",
+          "125.6041102"
+        ]
+      }
+    ]
+  },
+  "SCH-049": {
+    "query": "Philippine Merchant Marine Academy, San Narciso, Philippines",
+    "fetchedAt": "2026-10-26T17:41:33.851Z",
+    "candidates": [
+      {
+        "place_id": 261022244,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 235919517,
+        "lat": "14.9993612",
+        "lon": "120.0708444",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.37653081765694324,
+        "addresstype": "amenity",
+        "name": "Philippine Merchant Marine Academy",
+        "display_name": "Philippine Merchant Marine Academy, 1972, San Marcelino-San Antonio-San Narciso Road, Patrocinio, San Narciso, Zambales, Central Luzon, 2205, Philippines",
+        "boundingbox": [
+          "14.9958584",
+          "15.0031082",
+          "120.0659309",
+          "120.0748453"
+        ]
+      }
+    ]
+  },
+  "SCH-021": {
+    "query": "Daraga Community College, Daraga, Albay, Philippines",
+    "fetchedAt": "2026-10-26T17:41:35.698Z",
+    "candidates": [
+      {
+        "place_id": 258802686,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1024453830,
+        "lat": "13.1773483",
+        "lon": "123.6778702",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.000046691844052750704,
+        "addresstype": "amenity",
+        "name": "Daraga Community College",
+        "display_name": "Daraga Community College, Maharlika Highway, Salvacion, Daraga, Albay, Bicol Region, 4502, Philippines",
+        "boundingbox": [
+          "13.1766990",
+          "13.1779362",
+          "123.6772451",
+          "123.6784856"
+        ]
+      }
+    ]
+  },
+  "SCH-022": {
+    "query": "Ligao Community College",
+    "fetchedAt": "2026-10-26T17:44:39.033Z",
+    "candidates": []
+  },
+  "SCH-023": {
+    "query": "Polangui Community College, Polangui, Albay, Philippines",
+    "fetchedAt": "2026-10-26T17:41:38.506Z",
+    "candidates": [
+      {
+        "place_id": 259337750,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 884855676,
+        "lat": "13.2890323",
+        "lon": "123.5022839",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.00004838864728766335,
+        "addresstype": "amenity",
+        "name": "Polangui Community College",
+        "display_name": "Polangui Community College, Sabido Road, Centro Oriental, Magurang, Polangui, Albay, Bicol Region, 4506, Philippines",
+        "boundingbox": [
+          "13.2881316",
+          "13.2896259",
+          "123.5018766",
+          "123.5026342"
+        ]
+      }
+    ]
+  },
+  "SCH-024": {
+    "query": "Libon Community College",
+    "fetchedAt": "2026-10-26T17:44:40.405Z",
+    "candidates": [
+      {
+        "place_id": 257423928,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 389461278,
+        "lat": "13.2999241",
+        "lon": "123.4359221",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.00004838864728766335,
+        "addresstype": "amenity",
+        "name": "Libon Community College",
+        "display_name": "Libon Community College, Zone Ⅳ, Albay, Bicol Region, 4507, Philippines",
+        "boundingbox": [
+          "13.2995045",
+          "13.3003398",
+          "123.4352268",
+          "123.4365242"
+        ]
+      }
+    ]
+  },
+  "SCH-025": {
+    "query": "Oas Community College, Oas, Albay, Philippines",
+    "fetchedAt": "2026-10-26T17:41:41.690Z",
+    "candidates": [
+      {
+        "place_id": 258913791,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 338936232,
+        "lat": "13.2501247",
+        "lon": "123.5155197",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.000046691844052750704,
+        "addresstype": "amenity",
+        "name": "Oas Community College",
+        "display_name": "Oas Community College, Calzada, Oas, Albay, Bicol Region, 4505, Philippines",
+        "boundingbox": [
+          "13.2494430",
+          "13.2508146",
+          "123.5149531",
+          "123.5160396"
+        ]
+      },
+      {
+        "place_id": 261705755,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 12899665468,
+        "lat": "13.2500704",
+        "lon": "123.5154569",
+        "category": "amenity",
+        "type": "school",
+        "place_rank": 30,
+        "importance": 0.000046691844052750704,
+        "addresstype": "amenity",
+        "name": "Oas Community College",
+        "display_name": "Oas Community College, Calzada, Oas, Albay, Bicol Region, 4505, Philippines",
+        "boundingbox": [
+          "13.2500204",
+          "13.2501204",
+          "123.5154069",
+          "123.5155069"
+        ]
+      }
+    ]
+  },
+  "SCH-026": {
+    "query": "Tiwi Community College",
+    "fetchedAt": "2026-10-26T17:44:41.828Z",
+    "candidates": []
+  },
+  "SCH-027": {
+    "query": "San Jose Community College, Malilipot, Albay, Philippines",
+    "fetchedAt": "2026-10-26T17:41:47.188Z",
+    "candidates": [
+      {
+        "place_id": 260228733,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 624064857,
+        "lat": "13.3018376",
+        "lon": "123.7505557",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.000055001907377691576,
+        "addresstype": "amenity",
+        "name": "San Jose Community College",
+        "display_name": "San Jose Community College, Santa Teresa - San Jose Road, Datag, San Francisco, Malilipot, Albay, Bicol Region, 4510, Philippines",
+        "boundingbox": [
+          "13.3011519",
+          "13.3022682",
+          "123.7499333",
+          "123.7511687"
+        ]
+      }
+    ]
+  },
+  "SCH-028": {
+    "query": "Community College of Manito",
+    "fetchedAt": "2026-10-26T17:44:43.295Z",
+    "candidates": []
+  },
+  "SCH-029": {
+    "query": "Donsol Community College, Donsol, Sorsogon, Philippines",
+    "fetchedAt": "2026-10-26T17:41:50.367Z",
+    "candidates": [
+      {
+        "place_id": 259364949,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1391015709,
+        "lat": "12.9193983",
+        "lon": "123.6051416",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.000040000762951049326,
+        "addresstype": "amenity",
+        "name": "Donsol Community College",
+        "display_name": "Donsol Community College, Tres Marias Drive, Poso, Tres Marias, Donsol, Sorsogon, Bicol Region, 4715, Philippines",
+        "boundingbox": [
+          "12.9181960",
+          "12.9206696",
+          "123.6047685",
+          "123.6055135"
+        ]
+      }
+    ]
+  },
+  "SCH-030": {
+    "query": "Baao Community College , Baao, Camarines Sur, Philippines",
+    "fetchedAt": "2026-10-26T17:41:51.770Z",
+    "candidates": [
+      {
+        "place_id": 260049318,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1131424863,
+        "lat": "13.4494157",
+        "lon": "123.3899044",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.00004838864728766335,
+        "addresstype": "amenity",
+        "name": "Baao Community College",
+        "display_name": "Baao Community College, Baao-Iriga City-Nabua Road, Sagrada, San Juan, Baao, Camarines Sur, Bicol Region, 4432, Philippines",
+        "boundingbox": [
+          "13.4488605",
+          "13.4499026",
+          "123.3893772",
+          "123.3904273"
+        ]
+      }
+    ]
+  },
+  "SCH-031": {
+    "query": "Calabanga Community College, Calabanga, Camarines Sur, Philippines",
+    "fetchedAt": "2026-10-26T17:41:53.420Z",
+    "candidates": [
+      {
+        "place_id": 259435745,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1187201221,
+        "lat": "13.7208185",
+        "lon": "123.2507789",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.00004217517357132856,
+        "addresstype": "amenity",
+        "name": "Calabanga Community College",
+        "display_name": "Calabanga Community College, Calabanga-Tinambac Road, Paolbo, Calabanga, Camarines Sur, Bicol Region, 4405, Philippines",
+        "boundingbox": [
+          "13.7200440",
+          "13.7215579",
+          "123.2501006",
+          "123.2515584"
+        ]
+      }
+    ]
+  },
+  "SCH-032": {
+    "query": "Gov Mariano E Villafuerte Community College Libmanan",
+    "fetchedAt": "2026-10-26T17:44:45.160Z",
+    "candidates": []
+  },
+  "SCH-033": {
+    "query": "Governor Mariano E Villafuerte Community College Garchitorena",
+    "fetchedAt": "2026-10-26T17:44:47.054Z",
+    "candidates": []
+  },
+  "SCH-034": {
+    "query": "Governor Mariano E Villafuerte Community College Siruma",
+    "fetchedAt": "2026-10-26T17:44:48.885Z",
+    "candidates": []
+  },
+  "SCH-035": {
+    "query": "Caramoan Community College",
+    "fetchedAt": "2026-10-26T17:44:50.702Z",
+    "candidates": []
+  },
+  "SCH-036": {
+    "query": "City College of Naga, Naga City, Philippines",
+    "fetchedAt": "2026-10-26T17:42:01.930Z",
+    "candidates": [
+      {
+        "place_id": 257427715,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 959623257,
+        "lat": "13.6121114",
+        "lon": "123.2106974",
+        "category": "building",
+        "type": "yes",
+        "place_rank": 30,
+        "importance": 0.0000533722438391244,
+        "addresstype": "building",
+        "name": "City College of Naga",
+        "display_name": "City College of Naga, Almeda Highway, Capucnasan, Naga City, Camarines Sur, Bicol Region, 4400, Philippines",
+        "boundingbox": [
+          "13.6116508",
+          "13.6125720",
+          "123.2105079",
+          "123.2108869"
+        ]
+      },
+      {
+        "place_id": 257428300,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1138248370,
+        "lat": "13.6119167",
+        "lon": "123.2108015",
+        "category": "amenity",
+        "type": "college",
+        "place_rank": 30,
+        "importance": 0.000045396353093721176,
+        "addresstype": "amenity",
+        "name": "City College of Naga",
+        "display_name": "City College of Naga, Almeda Highway, Capucnasan, Naga City, Camarines Sur, Bicol Region, 4400, Philippines",
+        "boundingbox": [
+          "13.6115199",
+          "13.6128137",
+          "123.2103692",
+          "123.2110960"
+        ]
+      }
+    ]
+  },
+  "SCH-037": {
+    "query": "Aroroy Municipal College",
+    "fetchedAt": "2026-10-26T17:44:52.481Z",
+    "candidates": []
+  },
+  "SCH-038": {
+    "query": "San Pascual Polytechnic College, San Pascual, Masbate, Philippines",
+    "fetchedAt": "2026-10-26T17:42:05.436Z",
+    "candidates": []
+  },
+  "SCH-017": {
+    "query": "University of Santo Tomas Legazpi Rawis",
+    "fetchedAt": "2026-10-26T17:44:37.246Z",
+    "candidates": [
+      {
+        "place_id": 260838304,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 92628302,
+        "lat": "13.1639162",
+        "lon": "123.7490897",
+        "category": "amenity",
+        "type": "university",
+        "place_rank": 30,
+        "importance": 0.000054252689402563785,
+        "addresstype": "amenity",
+        "name": "University of Santo Tomas Legazpi",
+        "display_name": "University of Santo Tomas Legazpi, Tabaco-Legazpi National Road, Rawis, San Joaquin, Legazpi, Albay, Bicol Region, 4500, Philippines",
+        "boundingbox": [
+          "13.1622166",
+          "13.1658208",
+          "123.7468404",
+          "123.7513357"
+        ]
+      }
+    ]
+  }
+}

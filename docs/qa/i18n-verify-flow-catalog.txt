@@ -1,0 +1,14 @@
+(node:160748) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/sessionSchema.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "input": "C:\\Users\\Charlene\\OneDrive\\Desktop\\career-compass\\output\\pdf\\career-compass-new-flows.json",
+  "report": "C:\\Users\\Charlene\\OneDrive\\Desktop\\career-compass\\docs\\qa\\chatgpt-flows-new-report.md",
+  "passed": 85,
+  "failed": [],
+  "minimumLead": 3,
+  "rank1Hash": 0,
+  "anyRankHash": 85,
+  "expectedTotalsMatch": true
+}

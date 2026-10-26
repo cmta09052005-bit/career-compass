@@ -1,0 +1,442 @@
+{
+  "checkedOn": "2026-10-27",
+  "method": "Great-circle distance between bundled campus reference points and Polangui Municipal Hall; not road distance or travel time.",
+  "attribution": "Map coordinates © OpenStreetMap contributors (ODbL) and CHED Region V. Individual coordinate sources are retained per record.",
+  "origin": {
+    "name": "Polangui Municipal Hall, Albay, Philippines",
+    "coordinates": [
+      13.2928332,
+      123.4841431
+    ],
+    "source": "https://www.openstreetmap.org/way/871800990",
+    "basis": "Mapped campus reference point"
+  },
+  "schools": {
+    "SCH-001": {
+      "coordinates": [
+        13.1440608,
+        123.7228153
+      ],
+      "source": "https://www.openstreetmap.org/way/71436545",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16701",
+      "unresolvedCourses": [
+        "EDU06",
+        "EDU03",
+        "EDU01",
+        "EDU02"
+      ],
+      "review": "The current BU programs page locates College of Education under Daraga. The original source's West-campus association is retained for review, without assigning a distance to those course links."
+    },
+    "SCH-002": {
+      "coordinates": [
+        13.1477433,
+        123.729445
+      ],
+      "source": "https://www.openstreetmap.org/way/389168938",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16701"
+    },
+    "SCH-003": {
+      "coordinates": [
+        13.1480804,
+        123.7180541
+      ],
+      "source": "https://www.openstreetmap.org/way/1290396971",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16700"
+    },
+    "SCH-004": {
+      "coordinates": [
+        13.1924898,
+        123.5948412
+      ],
+      "source": "https://www.openstreetmap.org/way/661086063",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16699"
+    },
+    "SCH-005": {
+      "coordinates": [
+        13.3638884,
+        123.7329549
+      ],
+      "source": "https://www.openstreetmap.org/way/92802540",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16698"
+    },
+    "SCH-006": {
+      "coordinates": [
+        12.9202599,
+        124.1261434
+      ],
+      "source": "https://www.openstreetmap.org/way/1290396972",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16581"
+    },
+    "SCH-007": {
+      "coordinates": [
+        13.2964422,
+        123.4846901
+      ],
+      "source": "https://www.openstreetmap.org/relation/13027320",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16648"
+    },
+    "SCH-008": {
+      "coordinates": [
+        12.66644616,
+        123.88228655
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16627",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16627"
+    },
+    "SCH-009": {
+      "coordinates": [
+        12.8227468,
+        123.8423535
+      ],
+      "source": "https://www.openstreetmap.org/relation/12327856",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16626"
+    },
+    "SCH-010": {
+      "coordinates": [
+        12.97660307,
+        124.00736332
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16647",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16647"
+    },
+    "SCH-011": {
+      "coordinates": [
+        12.9592501,
+        123.7956973
+      ],
+      "source": "https://www.openstreetmap.org/way/756143956",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16625"
+    },
+    "SCH-012": {
+      "coordinates": [
+        13.4058177,
+        123.3763382
+      ],
+      "source": "https://www.openstreetmap.org/relation/19176042",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16694"
+    },
+    "SCH-013": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Offering campus not resolved to one verified location",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16657"
+    },
+    "SCH-014": {
+      "coordinates": [
+        13.5854701,
+        124.211562
+      ],
+      "source": "https://www.openstreetmap.org/way/237765548",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16688"
+    },
+    "SCH-015": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Offering campus not resolved to one verified location",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16693"
+    },
+    "SCH-016": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Offering campus not resolved to one verified location",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16696"
+    },
+    "SCH-017": {
+      "coordinates": [
+        13.1639162,
+        123.7490897
+      ],
+      "source": "https://www.openstreetmap.org/way/92628302",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16707"
+    },
+    "SCH-018": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Offering campus not resolved to one verified location",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16667"
+    },
+    "SCH-019": {
+      "coordinates": [
+        13.6308139,
+        123.184557
+      ],
+      "source": "https://www.openstreetmap.org/way/222268858",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16706"
+    },
+    "SCH-020": {
+      "coordinates": [
+        13.6249069,
+        123.1824102
+      ],
+      "source": "https://www.openstreetmap.org/way/383244706",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16640"
+    },
+    "SCH-021": {
+      "coordinates": [
+        13.1773483,
+        123.6778702
+      ],
+      "source": "https://www.openstreetmap.org/way/1024453830",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16594"
+    },
+    "SCH-022": {
+      "coordinates": [
+        13.23727191,
+        123.52956533
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16669",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16669"
+    },
+    "SCH-023": {
+      "coordinates": [
+        13.2890323,
+        123.5022839
+      ],
+      "source": "https://www.openstreetmap.org/way/884855676",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16654"
+    },
+    "SCH-024": {
+      "coordinates": [
+        13.2999241,
+        123.4359221
+      ],
+      "source": "https://www.openstreetmap.org/way/389461278",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16605"
+    },
+    "SCH-025": {
+      "coordinates": [
+        13.2501247,
+        123.5155197
+      ],
+      "source": "https://www.openstreetmap.org/way/338936232",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16606"
+    },
+    "SCH-026": {
+      "coordinates": [
+        13.46091598,
+        123.66125107
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16622",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16622"
+    },
+    "SCH-027": {
+      "coordinates": [
+        13.3018376,
+        123.7505557
+      ],
+      "source": "https://www.openstreetmap.org/way/624064857",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16649"
+    },
+    "SCH-028": {
+      "coordinates": [
+        13.12631586,
+        123.8691539
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/15201",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/15201"
+    },
+    "SCH-029": {
+      "coordinates": [
+        12.9193983,
+        123.6051416
+      ],
+      "source": "https://www.openstreetmap.org/way/1391015709",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16560"
+    },
+    "SCH-030": {
+      "coordinates": [
+        13.4494157,
+        123.3899044
+      ],
+      "source": "https://www.openstreetmap.org/way/1131424863",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16603"
+    },
+    "SCH-031": {
+      "coordinates": [
+        13.7208185,
+        123.2507789
+      ],
+      "source": "https://www.openstreetmap.org/way/1187201221",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16598"
+    },
+    "SCH-032": {
+      "coordinates": [
+        13.68526864,
+        123.04133892
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16553",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16553"
+    },
+    "SCH-033": {
+      "coordinates": [
+        13.8855161,
+        123.7020421
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16554",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16554"
+    },
+    "SCH-034": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Campus reference point not verified",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16552"
+    },
+    "SCH-035": {
+      "coordinates": [
+        13.77286872,
+        123.8643505
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16692",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16692"
+    },
+    "SCH-036": {
+      "coordinates": [
+        13.6119167,
+        123.2108015
+      ],
+      "source": "https://www.openstreetmap.org/way/1138248370",
+      "basis": "Mapped campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16695"
+    },
+    "SCH-037": {
+      "coordinates": [
+        12.5000599,
+        123.40039015
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16565",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16565"
+    },
+    "SCH-038": {
+      "coordinates": [
+        13.12771306,
+        122.97788858
+      ],
+      "source": "https://region5.ched.gov.ph/hei-directory/16559",
+      "basis": "CHED campus reference point",
+      "programSource": "https://region5.ched.gov.ph/hei-directory/16559"
+    },
+    "SCH-039": {
+      "coordinates": [
+        14.650376,
+        121.0676426
+      ],
+      "source": "https://www.openstreetmap.org/relation/20670730",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-040": {
+      "coordinates": [
+        14.160529,
+        121.2425665
+      ],
+      "source": "https://www.openstreetmap.org/way/517120243",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-041": {
+      "coordinates": [
+        14.5791337,
+        120.9835126
+      ],
+      "source": "https://www.openstreetmap.org/relation/2918734",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-042": {
+      "coordinates": [
+        14.6098426,
+        120.9894646
+      ],
+      "source": "https://www.openstreetmap.org/relation/21046172",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-043": {
+      "coordinates": [
+        14.6398984,
+        121.0781952
+      ],
+      "source": "https://www.openstreetmap.org/way/138294127",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-044": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Offering campus not resolved to one verified location"
+    },
+    "SCH-045": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Offering campus not resolved to one verified location"
+    },
+    "SCH-046": {
+      "coordinates": [
+        7.0718147,
+        125.613416
+      ],
+      "source": "https://www.openstreetmap.org/way/28993853",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-047": {
+      "coordinates": [
+        18.1868854,
+        120.5704244
+      ],
+      "source": "https://www.openstreetmap.org/way/107057437",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-048": {
+      "coordinates": [
+        7.0718996,
+        125.6034002
+      ],
+      "source": "https://www.openstreetmap.org/way/115065291",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-049": {
+      "coordinates": [
+        14.9993612,
+        120.0708444
+      ],
+      "source": "https://www.openstreetmap.org/way/235919517",
+      "basis": "Mapped campus reference point"
+    },
+    "SCH-050": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Offering campus not resolved to one verified location"
+    },
+    "SCH-051": {
+      "coordinates": null,
+      "source": null,
+      "basis": "Offering campus not resolved to one verified location"
+    }
+  }
+}

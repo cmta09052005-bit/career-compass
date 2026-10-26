@@ -1,0 +1,62 @@
+[
+  {
+    "tier": "T1",
+    "english": "Limited source reliability",
+    "filipino": "Limitado ang pagiging maaasahan ng pinagkunan",
+    "reason": "Warning tone and source reliability terminology"
+  },
+  {
+    "tier": "T1",
+    "english": "Which electives do you take and feel strongest in?",
+    "filipino": "Aling mga elective ang kinukuha mo at sa tingin mo ay pinakakaya mo?",
+    "reason": "Naturalness of strongest-in wording"
+  },
+  {
+    "tier": "T1",
+    "english": "Trade skills (welding, electrical, automotive, drafting)",
+    "filipino": "Mga kasanayan sa hanapbuhay (welding, electrical, automotive, drafting)",
+    "reason": "Local technical-trade terminology"
+  },
+  {
+    "tier": "T1",
+    "english": "Leadership and uniformed service (student government, scouting, CAT/ROTC, peace and order, seafarer, lifesaving)",
+    "filipino": "Pamumuno at paglilingkod na nakauniporme (student government, scouting, CAT/ROTC, kapayapaan at kaayusan, seafarer, pagsagip ng buhay)",
+    "reason": "Certificate category terminology"
+  },
+  {
+    "tier": "T1",
+    "english": "I can keep track of money, records, budgets, files, books, and schedules carefully.",
+    "filipino": "Kaya kong maingat na subaybayan ang pera, mga tala, budget, file, aklat, at iskedyul.",
+    "reason": "Long skills statement clarity"
+  },
+  {
+    "tier": "T2",
+    "english": "All amounts are estimated gross monthly salary ranges in Philippine pesos (PHP). They are indicative career-exploration estimates, not guaranteed offers or exact official salary bands. Ranges were built by using typical monthly salary benchmarks published in Jobstreet Philippines' career salary pages for comparable roles and widening those benchmarks to reflect entry-level versus experienced workers, employer size, location, specialization, and differences in job titles. For roles with no directly comparable benchmark, a related occupational family was used as a cautious estimate. Self-employment, freelance work, shipboard work, and roles requiring licensure or advanced training can vary substantially; income may not be regular or directly comparable to employee salaries.",
+    "filipino": "Ang lahat ng halaga ay tinatayang buwanang sahod bago ang mga kaltas, sa Philippine pesos (PHP). Mga pagtataya lamang ito para sa pagtuklas ng mga karera, at hindi garantisadong alok o eksaktong opisyal na saklaw ng sahod. Binuo ang mga saklaw gamit ang karaniwang buwanang sahod na inilathala sa mga pahina ng Jobstreet Philippines para sa mga katulad na trabaho. Pinalawak ang mga ito upang isaalang-alang ang pagkakaiba ng mga baguhan at may karanasan, laki ng employer, lokasyon, espesyalisasyon, at mga titulo ng trabaho. Para sa mga trabahong walang direktang maihahambing na batayan, ginamit ang kaugnay na pangkat ng trabaho bilang maingat na pagtataya. Maaaring malaki ang pagkakaiba sa sariling negosyo, freelance na trabaho, trabaho sa barko, at mga tungkuling nangangailangan ng lisensya o mas mataas na pagsasanay. Maaaring hindi regular ang kita o hindi ito direktang maihahambing sa sahod ng empleyado.",
+    "reason": "Gross salary and benchmark methodology terminology"
+  },
+  {
+    "tier": "T2",
+    "english": "Professional practice may require meeting applicable registration rules.",
+    "filipino": "Maaaring kailangang matugunan ang naaangkop na mga patakaran sa pagpaparehistro para sa propesyonal na pagsasanay.",
+    "reason": "Preserve conditional registration requirement"
+  },
+  {
+    "tier": "T2",
+    "english": "after meeting applicable teacher qualification and licensure requirements",
+    "filipino": "pagkatapos matugunan ang naaangkop na mga kailangan sa kwalipikasyon at lisensya sa pagtuturo",
+    "reason": "Qualification and licensure wording"
+  },
+  {
+    "tier": "T2",
+    "english": "Human Services focuses on helping people find and use services that support their well-being. Students learn about human needs, community resources, communication, service coordination, and ways to support people facing personal or social difficulties. The exact focus and professional scope can vary by institution and local employer requirements.",
+    "filipino": "Nakatuon ang Human Services sa pagtulong sa mga tao na makahanap at gumamit ng serbisyong sumusuporta sa kanilang kapakanan. Natututuhan ang pangangailangan ng tao, yaman ng komunidad, komunikasyon, pag-uugnay ng serbisyo, at pagsuporta sa may personal o panlipunang suliranin. Maaaring mag-iba ang eksaktong pokus at saklaw ng propesyon ayon sa institusyon at mga kailangan ng lokal na employer.",
+    "reason": "Institution-dependent professional scope wording"
+  },
+  {
+    "tier": "T2",
+    "english": "Anthropology studies human beings, cultures, communities, and societies across time and place. Students learn how people create meaning, organize family and social life, use language, adapt to environments, and understand their own traditions. Depending on the program, it may emphasize cultural, biological, archaeological, or linguistic approaches and often includes field research.",
+    "filipino": "Pinag-aaralan ng Anthropology ang mga tao, kultura, komunidad, at lipunan sa iba't ibang panahon at lugar. Natututuhan ng mga estudyante kung paano bumubuo ng kahulugan ang mga tao, inaayos ang buhay-pamilya at pakikisalamuha, gumagamit ng wika, umaangkop sa kapaligiran, at nauunawaan ang sariling tradisyon. Depende sa programa, maaaring bigyang-diin ang kultura, biyolohiya, arkeolohiya, o wika, at madalas itong may pananaliksik sa komunidad.",
+    "reason": "Technical anthropology approaches"
+  }
+]
