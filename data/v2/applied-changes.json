@@ -1,0 +1,284 @@
+[
+  {
+    "courseId": "SOC11",
+    "course": "BS Criminology",
+    "removed": [
+      "ELE-13",
+      "ELE-15",
+      "ELE-23"
+    ],
+    "added": [
+      "ELE-03",
+      "ELE-11",
+      "ELE-31"
+    ],
+    "sourceRemoved": "Business 1; Business 2; Finite Mathematics",
+    "sourceAdded": "Citizenship and Civic Engagement; Philippine Governance; Physical Education 1"
+  },
+  {
+    "courseId": "SCI10",
+    "course": "BS Geology",
+    "removed": [
+      "ELE-13",
+      "ELE-15"
+    ],
+    "added": [
+      "ELE-21",
+      "ELE-25"
+    ],
+    "sourceRemoved": "Business 1; Business 2",
+    "sourceAdded": "Physics 1, 2, 3, 4; General Science 3, 4"
+  },
+  {
+    "courseId": "SCI11",
+    "course": "BS Meteorology",
+    "removed": [
+      "ELE-13",
+      "ELE-15"
+    ],
+    "added": [
+      "ELE-21",
+      "ELE-25"
+    ],
+    "sourceRemoved": "Business 1; Business 2",
+    "sourceAdded": "Physics 1, 2, 3, 4; General Science 3, 4"
+  },
+  {
+    "courseId": "HLT02",
+    "course": "BS Pharmacy",
+    "removed": [
+      "ELE-13",
+      "ELE-15"
+    ],
+    "added": [
+      "ELE-25",
+      "ELE-37"
+    ],
+    "sourceRemoved": "Business 1; Business 2",
+    "sourceAdded": "General Science 3, 4; Safety and First Aid"
+  },
+  {
+    "courseId": "AGR02",
+    "course": "BS Forestry",
+    "removed": [
+      "ELE-13"
+    ],
+    "added": [
+      "ELE-25"
+    ],
+    "sourceRemoved": "Business 1",
+    "sourceAdded": "General Science 3, 4"
+  },
+  {
+    "courseId": "ART04",
+    "course": "BS Interior Design",
+    "removed": [
+      "ELE-20"
+    ],
+    "added": [
+      "ELE-50"
+    ],
+    "sourceRemoved": "Chemistry 1, 2, 3, 4",
+    "sourceAdded": "Carpentry; Construction Operation"
+  },
+  {
+    "courseId": "ART06",
+    "course": "BS Architecture",
+    "removed": [
+      "ELE-15"
+    ],
+    "added": [
+      "ELE-01"
+    ],
+    "sourceRemoved": "Business 2",
+    "sourceAdded": "Arts 1"
+  },
+  {
+    "courseId": "SOC04",
+    "course": "BA Political Science",
+    "removed": [
+      "ELE-28"
+    ],
+    "added": [
+      "ELE-14"
+    ],
+    "sourceRemoved": "Database Management",
+    "sourceAdded": "Introduction to Organization and Management"
+  },
+  {
+    "courseId": "AGR04",
+    "course": "BS Food Technology",
+    "removed": [
+      "ELE-28"
+    ],
+    "added": [
+      "ELE-25"
+    ],
+    "sourceRemoved": "Database Management",
+    "sourceAdded": "General Science 3, 4"
+  },
+  {
+    "courseId": "BUS04",
+    "course": "BS Internal Auditing",
+    "removed": [
+      "ELE-20",
+      "ELE-25"
+    ],
+    "added": [
+      "ELE-16",
+      "ELE-14"
+    ],
+    "sourceRemoved": "Chemistry 1, 2, 3, 4; General Science 3, 4",
+    "sourceAdded": "Business 3 (Business Economics); Introduction to Organization and Management"
+  },
+  {
+    "courseId": "SCI09",
+    "course": "BS Environmental Science",
+    "removed": [
+      "ELE-09"
+    ],
+    "added": [
+      "ELE-20"
+    ],
+    "sourceRemoved": "Introduction to Philosophy",
+    "sourceAdded": "Chemistry 1, 2, 3, 4"
+  },
+  {
+    "courseId": "SCI07",
+    "course": "BS Applied Mathematics",
+    "removed": [
+      "ELE-13",
+      "ELE-20"
+    ],
+    "added": [
+      "ELE-27",
+      "ELE-21"
+    ],
+    "sourceRemoved": "Business 1; Chemistry 1, 2, 3, 4",
+    "sourceAdded": "Fundamentals in Data Analytics; Physics 1, 2, 3, 4"
+  },
+  {
+    "courseId": "ART05",
+    "course": "Bachelor of Landscape Architecture",
+    "removed": [
+      "ELE-32",
+      "ELE-34"
+    ],
+    "added": [
+      "ELE-01",
+      "ELE-42"
+    ],
+    "sourceRemoved": "Physical Education 2; Sports Coaching",
+    "sourceAdded": "Arts 1; Agricultural Crops Production; Organic Agriculture Production"
+  },
+  {
+    "courseId": "SOC09",
+    "course": "Bachelor of Public Administration",
+    "removed": [
+      "ELE-01"
+    ],
+    "added": [
+      "ELE-09"
+    ],
+    "sourceRemoved": "Arts 1",
+    "sourceAdded": "Introduction to Philosophy"
+  },
+  {
+    "courseId": "SOC03",
+    "course": "Bachelor in Human Services",
+    "removed": [
+      "ELE-38",
+      "ELE-58"
+    ],
+    "added": [
+      "ELE-40",
+      "ELE-11"
+    ],
+    "sourceRemoved": "Aesthetic Services row; Tourism Services",
+    "sourceAdded": "Caregiving (Child Care); Philippine Governance"
+  },
+  {
+    "courseId": "ENG06",
+    "course": "BS Chemical Engineering",
+    "removed": [
+      "ELE-68"
+    ],
+    "added": [
+      "ELE-25"
+    ],
+    "sourceRemoved": "Marine Engineering (Support Level)",
+    "sourceAdded": "General Science 3, 4"
+  },
+  {
+    "courseId": "ENG07",
+    "course": "BS Industrial Engineering",
+    "removed": [
+      "ELE-68"
+    ],
+    "added": [
+      "ELE-14"
+    ],
+    "sourceRemoved": "Marine Engineering (Support Level)",
+    "sourceAdded": "Introduction to Organization and Management"
+  },
+  {
+    "courseId": "ENG08",
+    "course": "BS Geodetic Engineering",
+    "removed": [
+      "ELE-68"
+    ],
+    "added": [
+      "ELE-23"
+    ],
+    "sourceRemoved": "Marine Engineering (Support Level)",
+    "sourceAdded": "Finite Mathematics 1, 2"
+  },
+  {
+    "courseId": "ENG09",
+    "course": "BS Mining Engineering",
+    "removed": [
+      "ELE-68"
+    ],
+    "added": [
+      "ELE-20"
+    ],
+    "sourceRemoved": "Marine Engineering (Support Level)",
+    "sourceAdded": "Chemistry 1, 2, 3, 4"
+  },
+  {
+    "courseId": "ENG10",
+    "course": "BS Materials Engineering",
+    "removed": [
+      "ELE-68"
+    ],
+    "added": [
+      "ELE-25"
+    ],
+    "sourceRemoved": "Marine Engineering (Support Level)",
+    "sourceAdded": "General Science 3, 4"
+  },
+  {
+    "courseId": "ENG11",
+    "course": "BS Metallurgical Engineering",
+    "removed": [
+      "ELE-68"
+    ],
+    "added": [
+      "ELE-25"
+    ],
+    "sourceRemoved": "Marine Engineering (Support Level)",
+    "sourceAdded": "General Science 3, 4"
+  },
+  {
+    "courseId": "SCI02",
+    "course": "BS Marine Biology",
+    "removed": [
+      "ELE-68"
+    ],
+    "added": [
+      "ELE-22"
+    ],
+    "sourceRemoved": "Marine Engineering (Support Level)",
+    "sourceAdded": "Earth and Space Science 1, 2, 3, 4"
+  }
+]

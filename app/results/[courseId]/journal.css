@@ -59,3 +59,6 @@
   .field-journal .journal-footer { padding:.5rem 1rem; gap:.5rem; flex-wrap:wrap; }
   .field-journal .journal-aid-link { max-width:100%; }
 }
+.field-journal .journal-salary-method summary { cursor:pointer; font-weight:600; }
+.field-journal .journal-salary-method :is(summary,a):focus-visible { outline:3px solid #287b72; outline-offset:3px; }
+.field-journal .journal-salary-method a { overflow-wrap:anywhere; }

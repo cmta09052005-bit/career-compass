@@ -1,0 +1,1191 @@
+route,tier,profiles,id,name,group,top1,top5,meanRank,top5Share
+"old","all",20000,"BUS01","BS Accountancy","Business and Management",195,1242,42.89255,0.0621
+"old","all",20000,"BUS02","BS Management Accounting","Business and Management",182,1203,43.0474,0.06015
+"old","all",20000,"BUS03","BS Accounting Information Systems","Business and Management",349,1338,43.1463,0.0669
+"old","all",20000,"BUS04","BS Internal Auditing","Business and Management",171,1234,42.91695,0.0617
+"old","all",20000,"BUS05","BS Business Administration","Business and Management",170,1137,43.1551,0.05685
+"old","all",20000,"BUS06","BS Entrepreneurship","Business and Management",461,1597,43.12595,0.07985
+"old","all",20000,"BUS07","BS Office Administration","Business and Management",274,1232,43.02855,0.0616
+"old","all",20000,"BUS08","Economics (BA/BS)","Business and Management",222,1198,42.84095,0.0599
+"old","all",20000,"BUS09","BS Tourism Management","Business and Management",320,1273,43.03605,0.06365
+"old","all",20000,"BUS10","BS Hospitality Management","Business and Management",201,1208,42.9528,0.0604
+"old","all",20000,"ICT01","BS Information Technology","Computing",189,1333,43.31025,0.06665
+"old","all",20000,"ICT02","BS Information Systems","Computing",273,1336,43.12565,0.0668
+"old","all",20000,"ICT03","BS Computer Science","Computing",246,1344,43.2268,0.0672
+"old","all",20000,"ENG01","BS Civil Engineering","Engineering and Technology",156,903,42.9296,0.04515
+"old","all",20000,"ENG02","BS Mechanical Engineering","Engineering and Technology",267,1245,43.19495,0.06225
+"old","all",20000,"ENG03","BS Electrical Engineering","Engineering and Technology",168,1252,43.0759,0.0626
+"old","all",20000,"ENG04","BS Electronics Engineering","Engineering and Technology",232,1336,43.2343,0.0668
+"old","all",20000,"ENG05","BS Computer Engineering","Engineering and Technology",253,1315,43.24975,0.06575
+"old","all",20000,"ENG06","BS Chemical Engineering","Engineering and Technology",144,913,42.99795,0.04565
+"old","all",20000,"ENG07","BS Industrial Engineering","Engineering and Technology",392,1294,42.9309,0.0647
+"old","all",20000,"ENG08","BS Geodetic Engineering","Engineering and Technology",131,901,42.9603,0.04505
+"old","all",20000,"ENG09","BS Mining Engineering","Engineering and Technology",221,1237,43.05705,0.06185
+"old","all",20000,"ENG10","BS Materials Engineering","Engineering and Technology",204,1218,42.9174,0.0609
+"old","all",20000,"ENG11","BS Metallurgical Engineering","Engineering and Technology",180,1221,43.0475,0.06105
+"old","all",20000,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",390,1303,43.155,0.06515
+"old","all",20000,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",202,1250,43.32115,0.0625
+"old","all",20000,"ENG14","BS Marine Engineering","Engineering and Technology",258,1185,43.1031,0.05925
+"old","all",20000,"ENG15","BS Marine Transportation","Engineering and Technology",328,1269,42.8882,0.06345
+"old","all",20000,"SCI01","BS Biology","Science and Mathematics",176,965,42.67485,0.04825
+"old","all",20000,"SCI02","BS Marine Biology","Science and Mathematics",143,1347,43.0313,0.06735
+"old","all",20000,"SCI03","BS Chemistry","Science and Mathematics",136,892,42.89465,0.0446
+"old","all",20000,"SCI04","BS Physics","Science and Mathematics",124,887,42.9887,0.04435
+"old","all",20000,"SCI05","BS Applied Physics","Science and Mathematics",136,881,43.1463,0.04405
+"old","all",20000,"SCI06","BS Mathematics","Science and Mathematics",157,921,42.9715,0.04605
+"old","all",20000,"SCI07","BS Applied Mathematics","Science and Mathematics",269,1120,42.85045,0.056
+"old","all",20000,"SCI08","BS Statistics","Science and Mathematics",244,1214,42.7757,0.0607
+"old","all",20000,"SCI09","BS Environmental Science","Science and Mathematics",155,1307,42.87195,0.06535
+"old","all",20000,"SCI10","BS Geology","Science and Mathematics",182,924,42.9209,0.0462
+"old","all",20000,"SCI11","BS Meteorology","Science and Mathematics",148,823,43.0375,0.04115
+"old","all",20000,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",346,1364,43.22215,0.0682
+"old","all",20000,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",178,1373,43.1151,0.06865
+"old","all",20000,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",189,1391,43.137,0.06955
+"old","all",20000,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",436,1693,43.12935,0.08465
+"old","all",20000,"HLT01","BS Nursing","Health and Allied Sciences",185,1038,43.1202,0.0519
+"old","all",20000,"HLT02","BS Pharmacy","Health and Allied Sciences",185,1013,42.66915,0.05065
+"old","all",20000,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",206,1057,42.7814,0.05285
+"old","all",20000,"HLT04","BS Physical Therapy","Health and Allied Sciences",211,1119,42.9445,0.05595
+"old","all",20000,"HLT05","BS Occupational Therapy","Health and Allied Sciences",189,1098,43.15745,0.0549
+"old","all",20000,"HLT06","BS Radiologic Technology","Health and Allied Sciences",195,958,43.0182,0.0479
+"old","all",20000,"HLT07","BS Public Health","Health and Allied Sciences",164,920,42.9191,0.046
+"old","all",20000,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",396,1598,43.2069,0.0799
+"old","all",20000,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",195,1025,43.16345,0.05125
+"old","all",20000,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",362,1336,42.8622,0.0668
+"old","all",20000,"EDU01","Bachelor of Elementary Education","Education and Sports",167,951,42.8824,0.04755
+"old","all",20000,"EDU02","Bachelor of Secondary Education","Education and Sports",165,909,42.7733,0.04545
+"old","all",20000,"EDU03","Bachelor of Early Childhood Education","Education and Sports",198,1016,42.92165,0.0508
+"old","all",20000,"EDU04","Bachelor of Physical Education","Education and Sports",581,1793,42.921,0.08965
+"old","all",20000,"EDU05","BS Exercise and Sports Sciences","Education and Sports",569,1727,43.0564,0.08635
+"old","all",20000,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",325,1455,43.21835,0.07275
+"old","all",20000,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",352,1596,43.27615,0.0798
+"old","all",20000,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",412,1541,43.1141,0.07705
+"old","all",20000,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",179,948,42.966,0.0474
+"old","all",20000,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",131,900,43.0314,0.045
+"old","all",20000,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",209,994,42.8866,0.0497
+"old","all",20000,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",70,764,42.6527,0.0382
+"old","all",20000,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",154,929,42.7625,0.04645
+"old","all",20000,"SOC06","BA History","Social Sciences, Communication, and Humanities",96,767,42.71865,0.03835
+"old","all",20000,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",143,831,43.02615,0.04155
+"old","all",20000,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",159,959,42.8972,0.04795
+"old","all",20000,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",190,911,42.61955,0.04555
+"old","all",20000,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",347,1343,43.0377,0.06715
+"old","all",20000,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",301,1099,42.8877,0.05495
+"old","all",20000,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",320,1189,42.79575,0.05945
+"old","all",20000,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",216,1008,43.05555,0.0504
+"old","all",20000,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",187,1051,42.75845,0.05255
+"old","all",20000,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",180,893,42.8046,0.04465
+"old","all",20000,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",174,997,42.76335,0.04985
+"old","all",20000,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",143,983,42.87995,0.04915
+"old","all",20000,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",155,946,42.89375,0.0473
+"old","all",20000,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",210,1534,43.2223,0.0767
+"old","all",20000,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",381,1482,43.14925,0.0741
+"old","all",20000,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",279,1421,43.109,0.07105
+"old","all",20000,"ART04","BS Interior Design","Arts, Design, and Architecture",232,1432,43.2353,0.0716
+"old","all",20000,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",367,1427,43.13,0.07135
+"old","all",20000,"ART06","BS Architecture","Arts, Design, and Architecture",322,1423,43.07495,0.07115
+"old","below75",3322,"BUS01","BS Accountancy","Business and Management",43,227,42.55689343768814,0.0683323299217339
+"old","below75",3322,"BUS02","BS Management Accounting","Business and Management",36,180,42.97110174593618,0.054184226369656835
+"old","below75",3322,"BUS03","BS Accounting Information Systems","Business and Management",50,195,42.93166767007827,0.058699578567128236
+"old","below75",3322,"BUS04","BS Internal Auditing","Business and Management",46,237,42.43738711619506,0.07134256472004816
+"old","below75",3322,"BUS05","BS Business Administration","Business and Management",40,179,43.334136062612885,0.053883202889825406
+"old","below75",3322,"BUS06","BS Entrepreneurship","Business and Management",68,219,43.100541842263695,0.06592414208308248
+"old","below75",3322,"BUS07","BS Office Administration","Business and Management",41,189,43.10565924142083,0.056893437688139675
+"old","below75",3322,"BUS08","Economics (BA/BS)","Business and Management",41,221,41.94310656231186,0.06652618904274533
+"old","below75",3322,"BUS09","BS Tourism Management","Business and Management",56,224,42.611980734497294,0.06742925948223961
+"old","below75",3322,"BUS10","BS Hospitality Management","Business and Management",34,210,42.77092113184828,0.06321493076459964
+"old","below75",3322,"ICT01","BS Information Technology","Computing",30,199,43.399458157736305,0.059903672486453945
+"old","below75",3322,"ICT02","BS Information Systems","Computing",39,197,43.16556291390729,0.05930162552679109
+"old","below75",3322,"ICT03","BS Computer Science","Computing",37,195,42.72034918723661,0.058699578567128236
+"old","below75",3322,"ENG01","BS Civil Engineering","Engineering and Technology",39,174,42.23208910295003,0.052378085490668275
+"old","below75",3322,"ENG02","BS Mechanical Engineering","Engineering and Technology",48,195,42.897350993377486,0.058699578567128236
+"old","below75",3322,"ENG03","BS Electrical Engineering","Engineering and Technology",23,198,42.99548464780253,0.059602649006622516
+"old","below75",3322,"ENG04","BS Electronics Engineering","Engineering and Technology",30,201,43.2317880794702,0.060505719446116796
+"old","below75",3322,"ENG05","BS Computer Engineering","Engineering and Technology",40,205,43.14118001204094,0.061709813365442505
+"old","below75",3322,"ENG06","BS Chemical Engineering","Engineering and Technology",32,184,42.310957254665865,0.055388320288982544
+"old","below75",3322,"ENG07","BS Industrial Engineering","Engineering and Technology",47,206,43.24623720650211,0.062010836845273934
+"old","below75",3322,"ENG08","BS Geodetic Engineering","Engineering and Technology",26,168,42.25316074653823,0.050571944611679714
+"old","below75",3322,"ENG09","BS Mining Engineering","Engineering and Technology",31,182,43.026791089705,0.054786273329319686
+"old","below75",3322,"ENG10","BS Materials Engineering","Engineering and Technology",35,197,43.210716435882,0.05930162552679109
+"old","below75",3322,"ENG11","BS Metallurgical Engineering","Engineering and Technology",19,177,42.958157736303434,0.053281155930162555
+"old","below75",3322,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",46,198,42.55087296809151,0.059602649006622516
+"old","below75",3322,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",32,183,43.60596026490066,0.055087296809151115
+"old","below75",3322,"ENG14","BS Marine Engineering","Engineering and Technology",43,176,43.14539434075858,0.052980132450331126
+"old","below75",3322,"ENG15","BS Marine Transportation","Engineering and Technology",49,192,42.97712221553281,0.057796508127633955
+"old","below75",3322,"SCI01","BS Biology","Science and Mathematics",43,192,41.84346779048766,0.057796508127633955
+"old","below75",3322,"SCI02","BS Marine Biology","Science and Mathematics",23,186,43.35942203491872,0.055990367248645395
+"old","below75",3322,"SCI03","BS Chemistry","Science and Mathematics",29,204,41.77031908488862,0.061408789885611076
+"old","below75",3322,"SCI04","BS Physics","Science and Mathematics",33,162,42.4741119807345,0.04876580373269115
+"old","below75",3322,"SCI05","BS Applied Physics","Science and Mathematics",23,180,43.14990969295605,0.054184226369656835
+"old","below75",3322,"SCI06","BS Mathematics","Science and Mathematics",25,165,41.89644792293799,0.04966887417218543
+"old","below75",3322,"SCI07","BS Applied Mathematics","Science and Mathematics",39,183,42.01926550270921,0.055087296809151115
+"old","below75",3322,"SCI08","BS Statistics","Science and Mathematics",53,215,42.139975918121614,0.06472004816375677
+"old","below75",3322,"SCI09","BS Environmental Science","Science and Mathematics",31,188,42.97712221553281,0.056592414208308246
+"old","below75",3322,"SCI10","BS Geology","Science and Mathematics",35,160,42.37116195063215,0.048163756773028296
+"old","below75",3322,"SCI11","BS Meteorology","Science and Mathematics",25,152,42.2940999397953,0.045755568934376885
+"old","below75",3322,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",52,216,42.961167971101744,0.0650210716435882
+"old","below75",3322,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",24,206,43.31155930162553,0.062010836845273934
+"old","below75",3322,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",30,210,43.38832028898254,0.06321493076459964
+"old","below75",3322,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",76,264,42.31818181818182,0.07947019867549669
+"old","below75",3322,"HLT01","BS Nursing","Health and Allied Sciences",37,203,42.66074653822998,0.061107766405779654
+"old","below75",3322,"HLT02","BS Pharmacy","Health and Allied Sciences",37,198,42.51926550270921,0.059602649006622516
+"old","below75",3322,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",38,216,42.83112582781457,0.0650210716435882
+"old","below75",3322,"HLT04","BS Physical Therapy","Health and Allied Sciences",36,208,42.756472004816374,0.06261288380493679
+"old","below75",3322,"HLT05","BS Occupational Therapy","Health and Allied Sciences",34,212,42.803431667670075,0.0638169777242625
+"old","below75",3322,"HLT06","BS Radiologic Technology","Health and Allied Sciences",41,186,43.29590608067429,0.055990367248645395
+"old","below75",3322,"HLT07","BS Public Health","Health and Allied Sciences",31,180,42.76279349789284,0.054184226369656835
+"old","below75",3322,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",50,221,42.88651414810355,0.06652618904274533
+"old","below75",3322,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",40,197,43.68633353401565,0.05930162552679109
+"old","below75",3322,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",47,201,42.667971101745934,0.060505719446116796
+"old","below75",3322,"EDU01","Bachelor of Elementary Education","Education and Sports",36,200,43.94882600842866,0.060204695966285374
+"old","below75",3322,"EDU02","Bachelor of Secondary Education","Education and Sports",30,173,43.632149307645996,0.052077062010836846
+"old","below75",3322,"EDU03","Bachelor of Early Childhood Education","Education and Sports",43,216,43.9367850692354,0.0650210716435882
+"old","below75",3322,"EDU04","Bachelor of Physical Education","Education and Sports",59,220,42.94912703190849,0.06622516556291391
+"old","below75",3322,"EDU05","BS Exercise and Sports Sciences","Education and Sports",54,221,43.22817579771222,0.06652618904274533
+"old","below75",3322,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",46,202,44.12673088500903,0.060806742925948225
+"old","below75",3322,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",54,204,43.71703792895846,0.061408789885611076
+"old","below75",3322,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",52,219,43.294701986754966,0.06592414208308248
+"old","below75",3322,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",43,178,42.726369656833235,0.05358217940999398
+"old","below75",3322,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",25,182,42.96387718242023,0.054786273329319686
+"old","below75",3322,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",37,162,43.37597832630945,0.04876580373269115
+"old","below75",3322,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",18,153,43.46447922937989,0.04605659241420831
+"old","below75",3322,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",30,182,42.611077664057795,0.054786273329319686
+"old","below75",3322,"SOC06","BA History","Social Sciences, Communication, and Humanities",19,154,43.32811559301626,0.046357615894039736
+"old","below75",3322,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",27,169,43.47983142685129,0.050872968091511137
+"old","below75",3322,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",43,191,43.32390126429861,0.057495484647802526
+"old","below75",3322,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",44,166,43.04033714629741,0.049969897652016856
+"old","below75",3322,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",45,200,43.16225165562914,0.060204695966285374
+"old","below75",3322,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",66,215,43.487055990367246,0.06472004816375677
+"old","below75",3322,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",54,192,42.759181216134856,0.057796508127633955
+"old","below75",3322,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",39,189,43.99789283564118,0.056893437688139675
+"old","below75",3322,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",49,204,42.85460565924142,0.061408789885611076
+"old","below75",3322,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",33,174,43.11830222757375,0.052378085490668275
+"old","below75",3322,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",38,200,42.771523178807946,0.060204695966285374
+"old","below75",3322,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",25,191,43.25015051173992,0.057495484647802526
+"old","below75",3322,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",28,187,43.459361830222754,0.056291390728476824
+"old","below75",3322,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",38,225,43.851294400963276,0.06773028296207104
+"old","below75",3322,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",47,206,44.030403371462974,0.062010836845273934
+"old","below75",3322,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",45,201,44.0842865743528,0.060505719446116796
+"old","below75",3322,"ART04","BS Interior Design","Arts, Design, and Architecture",31,190,43.335039133052376,0.057194461167971104
+"old","below75",3322,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",50,214,42.985851896447926,0.06441902468392535
+"old","below75",3322,"ART06","BS Architecture","Arts, Design, and Architecture",41,217,42.72817579771222,0.06532209512341963
+"old","75to79",3298,"BUS01","BS Accountancy","Business and Management",31,211,42.64190418435415,0.06397816858702243
+"old","75to79",3298,"BUS02","BS Management Accounting","Business and Management",38,211,42.403274711946636,0.06397816858702243
+"old","75to79",3298,"BUS03","BS Accounting Information Systems","Business and Management",63,216,43.405397210430564,0.06549423893268648
+"old","75to79",3298,"BUS04","BS Internal Auditing","Business and Management",29,204,42.69648271679806,0.061855670103092786
+"old","75to79",3298,"BUS05","BS Business Administration","Business and Management",31,203,42.79260157671316,0.06155245603395998
+"old","75to79",3298,"BUS06","BS Entrepreneurship","Business and Management",62,254,43.371740448756825,0.07701637355973318
+"old","75to79",3298,"BUS07","BS Office Administration","Business and Management",51,216,42.53820497271074,0.06549423893268648
+"old","75to79",3298,"BUS08","Economics (BA/BS)","Business and Management",42,204,42.889326864766524,0.061855670103092786
+"old","75to79",3298,"BUS09","BS Tourism Management","Business and Management",54,214,43.3253486961795,0.06488781079442087
+"old","75to79",3298,"BUS10","BS Hospitality Management","Business and Management",44,233,42.83808368708308,0.07064887810794421
+"old","75to79",3298,"ICT01","BS Information Technology","Computing",29,195,43.4417828987265,0.05912674348089751
+"old","75to79",3298,"ICT02","BS Information Systems","Computing",41,195,43.546694966646456,0.05912674348089751
+"old","75to79",3298,"ICT03","BS Computer Science","Computing",32,197,43.48514251061249,0.05973317161916313
+"old","75to79",3298,"ENG01","BS Civil Engineering","Engineering and Technology",35,197,42.28229229836264,0.05973317161916313
+"old","75to79",3298,"ENG02","BS Mechanical Engineering","Engineering and Technology",48,202,43.7892662219527,0.061249241964827165
+"old","75to79",3298,"ENG03","BS Electrical Engineering","Engineering and Technology",34,217,43.73317161916313,0.06579745300181929
+"old","75to79",3298,"ENG04","BS Electronics Engineering","Engineering and Technology",47,194,43.37386294724075,0.058823529411764705
+"old","75to79",3298,"ENG05","BS Computer Engineering","Engineering and Technology",38,185,43.52971497877502,0.05609460278956944
+"old","75to79",3298,"ENG06","BS Chemical Engineering","Engineering and Technology",19,167,42.696179502728924,0.0506367495451789
+"old","75to79",3298,"ENG07","BS Industrial Engineering","Engineering and Technology",61,218,42.12007277137659,0.0661006670709521
+"old","75to79",3298,"ENG08","BS Geodetic Engineering","Engineering and Technology",24,161,42.71437234687689,0.04881746513038205
+"old","75to79",3298,"ENG09","BS Mining Engineering","Engineering and Technology",36,199,43.14008489993936,0.060339599757428745
+"old","75to79",3298,"ENG10","BS Materials Engineering","Engineering and Technology",30,195,42.83959975742874,0.05912674348089751
+"old","75to79",3298,"ENG11","BS Metallurgical Engineering","Engineering and Technology",41,201,43.10278956943602,0.06094602789569436
+"old","75to79",3298,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",50,189,42.90448756822317,0.057307459066100665
+"old","75to79",3298,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",34,207,43.864766525166765,0.0627653123104912
+"old","75to79",3298,"ENG14","BS Marine Engineering","Engineering and Technology",44,189,43.14160097028502,0.057307459066100665
+"old","75to79",3298,"ENG15","BS Marine Transportation","Engineering and Technology",62,211,42.55306246209824,0.06397816858702243
+"old","75to79",3298,"SCI01","BS Biology","Science and Mathematics",40,179,42.82443905397211,0.05427531837477259
+"old","75to79",3298,"SCI02","BS Marine Biology","Science and Mathematics",25,195,43.4057004244997,0.05912674348089751
+"old","75to79",3298,"SCI03","BS Chemistry","Science and Mathematics",24,156,42.98392965433596,0.04730139478471801
+"old","75to79",3298,"SCI04","BS Physics","Science and Mathematics",24,151,43.2513644633111,0.04578532443905397
+"old","75to79",3298,"SCI05","BS Applied Physics","Science and Mathematics",26,151,43.31655548817465,0.04578532443905397
+"old","75to79",3298,"SCI06","BS Mathematics","Science and Mathematics",26,158,42.97604608853851,0.04790782292298363
+"old","75to79",3298,"SCI07","BS Applied Mathematics","Science and Mathematics",38,164,43.09824135839903,0.04972710733778047
+"old","75to79",3298,"SCI08","BS Statistics","Science and Mathematics",36,211,42.560946027895696,0.06397816858702243
+"old","75to79",3298,"SCI09","BS Environmental Science","Science and Mathematics",20,195,43.23135233474833,0.05912674348089751
+"old","75to79",3298,"SCI10","BS Geology","Science and Mathematics",34,168,43.18162522741055,0.050939963614311703
+"old","75to79",3298,"SCI11","BS Meteorology","Science and Mathematics",27,136,43.36567616737417,0.041237113402061855
+"old","75to79",3298,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",42,228,43.01607034566404,0.06913280776228017
+"old","75to79",3298,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",29,195,43.39721043056398,0.05912674348089751
+"old","75to79",3298,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",35,218,43.00303214069133,0.0661006670709521
+"old","75to79",3298,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",71,247,44.11127956337174,0.07489387507580351
+"old","75to79",3298,"HLT01","BS Nursing","Health and Allied Sciences",27,149,43.57155852031534,0.045178896300788356
+"old","75to79",3298,"HLT02","BS Pharmacy","Health and Allied Sciences",36,191,42.536992116434206,0.057913887204366285
+"old","75to79",3298,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",38,195,42.54457246816252,0.05912674348089751
+"old","75to79",3298,"HLT04","BS Physical Therapy","Health and Allied Sciences",33,187,43.3086719223772,0.05670103092783505
+"old","75to79",3298,"HLT05","BS Occupational Therapy","Health and Allied Sciences",31,185,43.54093389933293,0.05609460278956944
+"old","75to79",3298,"HLT06","BS Radiologic Technology","Health and Allied Sciences",25,152,43.26349302607641,0.04608853850818678
+"old","75to79",3298,"HLT07","BS Public Health","Health and Allied Sciences",36,167,43.300788356579744,0.0506367495451789
+"old","75to79",3298,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",62,215,43.7504548211037,0.06519102486355367
+"old","75to79",3298,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",35,185,43.2486355366889,0.05609460278956944
+"old","75to79",3298,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",45,211,43.493935718617344,0.06397816858702243
+"old","75to79",3298,"EDU01","Bachelor of Elementary Education","Education and Sports",28,156,42.72286234081261,0.04730139478471801
+"old","75to79",3298,"EDU02","Bachelor of Secondary Education","Education and Sports",23,151,42.334445118253484,0.04578532443905397
+"old","75to79",3298,"EDU03","Bachelor of Early Childhood Education","Education and Sports",37,175,42.83141297756216,0.05306246209824136
+"old","75to79",3298,"EDU04","Bachelor of Physical Education","Education and Sports",70,258,42.808368708308066,0.0782292298362644
+"old","75to79",3298,"EDU05","BS Exercise and Sports Sciences","Education and Sports",75,247,43.26167374166161,0.07489387507580351
+"old","75to79",3298,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",45,222,42.65767131594906,0.06731352334748332
+"old","75to79",3298,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",57,248,43.19557307459066,0.07519708914493632
+"old","75to79",3298,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",53,229,43.088841722255914,0.06943602183141298
+"old","75to79",3298,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",30,166,43.677380230442694,0.05033353547604609
+"old","75to79",3298,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",26,155,43.52850212249849,0.0469981807155852
+"old","75to79",3298,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",36,201,43.13159490600364,0.06094602789569436
+"old","75to79",3298,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",18,146,42.684960582171016,0.044269254093389936
+"old","75to79",3298,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",29,162,43.28107944208611,0.049120679199514856
+"old","75to79",3298,"SOC06","BA History","Social Sciences, Communication, and Humanities",25,144,42.8429351121892,0.043662825955124315
+"old","75to79",3298,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",32,163,43.29836264402668,0.04942389326864766
+"old","75to79",3298,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",25,165,43.74378411158278,0.05003032140691328
+"old","75to79",3298,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",30,162,42.45785324439054,0.049120679199514856
+"old","75to79",3298,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",54,218,42.60006064281383,0.0661006670709521
+"old","75to79",3298,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",55,198,42.79775621588842,0.06003638568829594
+"old","75to79",3298,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",52,199,41.69648271679806,0.060339599757428745
+"old","75to79",3298,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",45,175,42.2292298362644,0.05306246209824136
+"old","75to79",3298,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",33,184,42.32080048514251,0.05579138872043663
+"old","75to79",3298,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",35,154,42.889326864766524,0.046694966646452396
+"old","75to79",3298,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",35,195,42.23711340206186,0.05912674348089751
+"old","75to79",3298,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",23,159,42.22286234081261,0.048211036992116436
+"old","75to79",3298,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",25,187,42.01334141904184,0.05670103092783505
+"old","75to79",3298,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",35,245,42.80351728320194,0.0742874469375379
+"old","75to79",3298,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",55,218,43.24984839296543,0.0661006670709521
+"old","75to79",3298,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",38,226,42.46816252274105,0.06852637962401456
+"old","75to79",3298,"ART04","BS Interior Design","Arts, Design, and Architecture",48,234,43.00636749545179,0.07095209217707701
+"old","75to79",3298,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",64,233,42.95876288659794,0.07064887810794421
+"old","75to79",3298,"ART06","BS Architecture","Arts, Design, and Architecture",47,241,42.51425106124924,0.07307459066100667
+"old","80to84",3325,"BUS01","BS Accountancy","Business and Management",31,193,42.96300751879699,0.058045112781954886
+"old","80to84",3325,"BUS02","BS Management Accounting","Business and Management",31,217,43.38195488721804,0.06526315789473684
+"old","80to84",3325,"BUS03","BS Accounting Information Systems","Business and Management",57,209,43.266165413533834,0.06285714285714286
+"old","80to84",3325,"BUS04","BS Internal Auditing","Business and Management",21,198,43.26105263157895,0.05954887218045113
+"old","80to84",3325,"BUS05","BS Business Administration","Business and Management",23,185,43.371127819548875,0.055639097744360905
+"old","80to84",3325,"BUS06","BS Entrepreneurship","Business and Management",77,252,43.222255639097746,0.07578947368421053
+"old","80to84",3325,"BUS07","BS Office Administration","Business and Management",45,203,42.97353383458647,0.061052631578947365
+"old","80to84",3325,"BUS08","Economics (BA/BS)","Business and Management",32,194,43.13533834586466,0.05834586466165414
+"old","80to84",3325,"BUS09","BS Tourism Management","Business and Management",48,218,43.654736842105265,0.06556390977443609
+"old","80to84",3325,"BUS10","BS Hospitality Management","Business and Management",30,193,43.23699248120301,0.058045112781954886
+"old","80to84",3325,"ICT01","BS Information Technology","Computing",25,207,43.919097744360904,0.06225563909774436
+"old","80to84",3325,"ICT02","BS Information Systems","Computing",42,220,43.63037593984962,0.06616541353383458
+"old","80to84",3325,"ICT03","BS Computer Science","Computing",28,205,43.82375939849624,0.061654135338345864
+"old","80to84",3325,"ENG01","BS Civil Engineering","Engineering and Technology",17,127,43.58015037593985,0.03819548872180451
+"old","80to84",3325,"ENG02","BS Mechanical Engineering","Engineering and Technology",34,215,43.12872180451128,0.06466165413533835
+"old","80to84",3325,"ENG03","BS Electrical Engineering","Engineering and Technology",35,213,42.68360902255639,0.06406015037593984
+"old","80to84",3325,"ENG04","BS Electronics Engineering","Engineering and Technology",32,220,43.70225563909774,0.06616541353383458
+"old","80to84",3325,"ENG05","BS Computer Engineering","Engineering and Technology",48,204,43.45924812030075,0.06135338345864662
+"old","80to84",3325,"ENG06","BS Chemical Engineering","Engineering and Technology",24,150,43.35248120300752,0.045112781954887216
+"old","80to84",3325,"ENG07","BS Industrial Engineering","Engineering and Technology",73,225,42.70285714285714,0.06766917293233082
+"old","80to84",3325,"ENG08","BS Geodetic Engineering","Engineering and Technology",19,128,43.698345864661654,0.03849624060150376
+"old","80to84",3325,"ENG09","BS Mining Engineering","Engineering and Technology",29,185,42.51518796992481,0.055639097744360905
+"old","80to84",3325,"ENG10","BS Materials Engineering","Engineering and Technology",33,216,42.562105263157896,0.0649624060150376
+"old","80to84",3325,"ENG11","BS Metallurgical Engineering","Engineering and Technology",31,205,42.533233082706765,0.061654135338345864
+"old","80to84",3325,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",69,230,43.913082706766914,0.06917293233082707
+"old","80to84",3325,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",43,213,42.74315789473684,0.06406015037593984
+"old","80to84",3325,"ENG14","BS Marine Engineering","Engineering and Technology",51,202,42.94496240601504,0.06075187969924812
+"old","80to84",3325,"ENG15","BS Marine Transportation","Engineering and Technology",59,220,42.40240601503759,0.06616541353383458
+"old","80to84",3325,"SCI01","BS Biology","Science and Mathematics",23,156,43.33744360902256,0.046917293233082705
+"old","80to84",3325,"SCI02","BS Marine Biology","Science and Mathematics",19,218,43.1624060150376,0.06556390977443609
+"old","80to84",3325,"SCI03","BS Chemistry","Science and Mathematics",21,147,43.733834586466166,0.04421052631578947
+"old","80to84",3325,"SCI04","BS Physics","Science and Mathematics",12,140,43.62646616541353,0.042105263157894736
+"old","80to84",3325,"SCI05","BS Applied Physics","Science and Mathematics",18,131,43.85864661654136,0.0393984962406015
+"old","80to84",3325,"SCI06","BS Mathematics","Science and Mathematics",27,151,43.985864661654134,0.04541353383458647
+"old","80to84",3325,"SCI07","BS Applied Mathematics","Science and Mathematics",52,191,43.84872180451128,0.057443609022556394
+"old","80to84",3325,"SCI08","BS Statistics","Science and Mathematics",46,195,43.36691729323308,0.058646616541353384
+"old","80to84",3325,"SCI09","BS Environmental Science","Science and Mathematics",24,210,43.00330827067669,0.06315789473684211
+"old","80to84",3325,"SCI10","BS Geology","Science and Mathematics",29,149,43.09864661654135,0.04481203007518797
+"old","80to84",3325,"SCI11","BS Meteorology","Science and Mathematics",23,127,43.65052631578947,0.03819548872180451
+"old","80to84",3325,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",56,203,43.78285714285714,0.061052631578947365
+"old","80to84",3325,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",19,223,43.21112781954887,0.06706766917293233
+"old","80to84",3325,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",26,223,43.185864661654136,0.06706766917293233
+"old","80to84",3325,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",71,251,43.06887218045113,0.07548872180451127
+"old","80to84",3325,"HLT01","BS Nursing","Health and Allied Sciences",29,188,43.04421052631579,0.05654135338345865
+"old","80to84",3325,"HLT02","BS Pharmacy","Health and Allied Sciences",36,164,43.054736842105264,0.04932330827067669
+"old","80to84",3325,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",37,189,42.658345864661655,0.056842105263157895
+"old","80to84",3325,"HLT04","BS Physical Therapy","Health and Allied Sciences",40,216,42.55458646616541,0.0649624060150376
+"old","80to84",3325,"HLT05","BS Occupational Therapy","Health and Allied Sciences",40,199,42.75578947368421,0.059849624060150375
+"old","80to84",3325,"HLT06","BS Radiologic Technology","Health and Allied Sciences",34,171,43.20691729323308,0.05142857142857143
+"old","80to84",3325,"HLT07","BS Public Health","Health and Allied Sciences",23,157,42.7593984962406,0.04721804511278196
+"old","80to84",3325,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",59,251,42.873082706766915,0.07548872180451127
+"old","80to84",3325,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",40,201,42.991278195488725,0.060451127819548874
+"old","80to84",3325,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",69,226,42.42015037593985,0.06796992481203007
+"old","80to84",3325,"EDU01","Bachelor of Elementary Education","Education and Sports",41,173,42.57172932330827,0.052030075187969926
+"old","80to84",3325,"EDU02","Bachelor of Secondary Education","Education and Sports",38,172,42.32270676691729,0.051729323308270674
+"old","80to84",3325,"EDU03","Bachelor of Early Childhood Education","Education and Sports",32,174,43.0403007518797,0.05233082706766917
+"old","80to84",3325,"EDU04","Bachelor of Physical Education","Education and Sports",85,278,43.09293233082707,0.08360902255639098
+"old","80to84",3325,"EDU05","BS Exercise and Sports Sciences","Education and Sports",82,265,43.077894736842104,0.07969924812030076
+"old","80to84",3325,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",59,250,43.62676691729323,0.07518796992481203
+"old","80to84",3325,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",66,254,43.4796992481203,0.07639097744360902
+"old","80to84",3325,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",72,245,43.169924812030075,0.07368421052631578
+"old","80to84",3325,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",31,167,42.55458646616541,0.05022556390977444
+"old","80to84",3325,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",23,169,42.480902255639094,0.05082706766917293
+"old","80to84",3325,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",47,181,42.12601503759399,0.05443609022556391
+"old","80to84",3325,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",10,129,42.15428571428571,0.03879699248120301
+"old","80to84",3325,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",26,173,42.123007518796996,0.052030075187969926
+"old","80to84",3325,"SOC06","BA History","Social Sciences, Communication, and Humanities",15,129,42.037593984962406,0.03879699248120301
+"old","80to84",3325,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",31,149,42.233082706766915,0.04481203007518797
+"old","80to84",3325,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",28,159,42.615338345864664,0.04781954887218045
+"old","80to84",3325,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",26,138,42.3590977443609,0.04150375939849624
+"old","80to84",3325,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",55,227,43.06796992481203,0.06827067669172933
+"old","80to84",3325,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",49,183,42.68691729323308,0.055037593984962406
+"old","80to84",3325,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",58,205,42.23218045112782,0.061654135338345864
+"old","80to84",3325,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",40,185,42.72,0.055639097744360905
+"old","80to84",3325,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",31,193,42.40962406015038,0.058045112781954886
+"old","80to84",3325,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",30,167,42.12240601503759,0.05022556390977444
+"old","80to84",3325,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",27,167,41.93774436090226,0.05022556390977444
+"old","80to84",3325,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",28,173,42.279097744360904,0.052030075187969926
+"old","80to84",3325,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",23,143,42.146165413533836,0.04300751879699248
+"old","80to84",3325,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",40,237,43.041503759398495,0.0712781954887218
+"old","80to84",3325,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",65,281,42.8378947368421,0.08451127819548872
+"old","80to84",3325,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",57,239,42.863157894736844,0.07187969924812031
+"old","80to84",3325,"ART04","BS Interior Design","Arts, Design, and Architecture",36,231,43.41984962406015,0.06947368421052631
+"old","80to84",3325,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",62,235,43.08601503759399,0.07067669172932331
+"old","80to84",3325,"ART06","BS Architecture","Arts, Design, and Architecture",52,230,43.08240601503759,0.06917293233082707
+"old","85to89",3359,"BUS01","BS Accountancy","Business and Management",34,199,42.76213158678178,0.05924382256623995
+"old","85to89",3359,"BUS02","BS Management Accounting","Business and Management",23,197,42.67460553736231,0.058648407264066685
+"old","85to89",3359,"BUS03","BS Accounting Information Systems","Business and Management",68,243,42.9642750818696,0.0723429592140518
+"old","85to89",3359,"BUS04","BS Internal Auditing","Business and Management",19,218,42.66567430782971,0.06490026793688598
+"old","85to89",3359,"BUS05","BS Business Administration","Business and Management",31,197,42.55165227746353,0.058648407264066685
+"old","85to89",3359,"BUS06","BS Entrepreneurship","Business and Management",78,273,43.13426615064007,0.0812741887466508
+"old","85to89",3359,"BUS07","BS Office Administration","Business and Management",45,204,43.34027984519202,0.06073236082167312
+"old","85to89",3359,"BUS08","Economics (BA/BS)","Business and Management",49,211,42.88925275379577,0.06281631437927955
+"old","85to89",3359,"BUS09","BS Tourism Management","Business and Management",56,233,42.54956832390592,0.06936588270318547
+"old","85to89",3359,"BUS10","BS Hospitality Management","Business and Management",35,198,42.70259005656445,0.05894611491515332
+"old","85to89",3359,"ICT01","BS Information Technology","Computing",39,235,42.97588568026198,0.06996129800535873
+"old","85to89",3359,"ICT02","BS Information Systems","Computing",55,241,42.665376600178625,0.07174754391187854
+"old","85to89",3359,"ICT03","BS Computer Science","Computing",45,247,42.871390294730574,0.07353378981839834
+"old","85to89",3359,"ENG01","BS Civil Engineering","Engineering and Technology",19,140,42.961298005358735,0.041679071152128606
+"old","85to89",3359,"ENG02","BS Mechanical Engineering","Engineering and Technology",40,194,43.32211967847574,0.05775528431080679
+"old","85to89",3359,"ENG03","BS Electrical Engineering","Engineering and Technology",25,210,43.136350104197675,0.06251860672819291
+"old","85to89",3359,"ENG04","BS Electronics Engineering","Engineering and Technology",40,224,43.17326585293242,0.06668651384340578
+"old","85to89",3359,"ENG05","BS Computer Engineering","Engineering and Technology",32,233,43.23459362905626,0.06936588270318547
+"old","85to89",3359,"ENG06","BS Chemical Engineering","Engineering and Technology",29,163,42.72878832986008,0.048526347127121165
+"old","85to89",3359,"ENG07","BS Industrial Engineering","Engineering and Technology",65,216,43.159571300982435,0.06430485263471271
+"old","85to89",3359,"ENG08","BS Geodetic Engineering","Engineering and Technology",27,179,42.974099434355466,0.05328966954450729
+"old","85to89",3359,"ENG09","BS Mining Engineering","Engineering and Technology",54,241,43.04525156296517,0.07174754391187854
+"old","85to89",3359,"ENG10","BS Materials Engineering","Engineering and Technology",28,197,42.82703185471867,0.058648407264066685
+"old","85to89",3359,"ENG11","BS Metallurgical Engineering","Engineering and Technology",30,215,43.226853230128015,0.06400714498362609
+"old","85to89",3359,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",71,217,43.52604941947008,0.06460256028579935
+"old","85to89",3359,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",26,207,43.22744864543019,0.061625483774933015
+"old","85to89",3359,"ENG14","BS Marine Engineering","Engineering and Technology",33,184,43.416195296219115,0.054778207799940457
+"old","85to89",3359,"ENG15","BS Marine Transportation","Engineering and Technology",58,210,43.20065495683239,0.06251860672819291
+"old","85to89",3359,"SCI01","BS Biology","Science and Mathematics",24,147,42.314081571896395,0.04376302470973504
+"old","85to89",3359,"SCI02","BS Marine Biology","Science and Mathematics",25,239,42.743673712414406,0.07115212860970527
+"old","85to89",3359,"SCI03","BS Chemistry","Science and Mathematics",25,153,42.67371241440905,0.045549270616254835
+"old","85to89",3359,"SCI04","BS Physics","Science and Mathematics",22,151,42.804108365584995,0.044953855314081574
+"old","85to89",3359,"SCI05","BS Applied Physics","Science and Mathematics",24,151,43.09199166418577,0.044953855314081574
+"old","85to89",3359,"SCI06","BS Mathematics","Science and Mathematics",32,158,43.30872283417684,0.047037808871688
+"old","85to89",3359,"SCI07","BS Applied Mathematics","Science and Mathematics",49,203,42.885680261982735,0.06043465317058649
+"old","85to89",3359,"SCI08","BS Statistics","Science and Mathematics",45,206,42.91247395058053,0.061327776123846385
+"old","85to89",3359,"SCI09","BS Environmental Science","Science and Mathematics",27,226,42.84876451324799,0.06728192914557904
+"old","85to89",3359,"SCI10","BS Geology","Science and Mathematics",28,160,42.62161357546889,0.04763322417386127
+"old","85to89",3359,"SCI11","BS Meteorology","Science and Mathematics",27,142,43.19618934206609,0.042274486454301874
+"old","85to89",3359,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",66,212,43.31437927954748,0.06311402203036617
+"old","85to89",3359,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",34,234,42.91961893420661,0.06966359035427211
+"old","85to89",3359,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",26,236,43.353081274188746,0.07025900565644537
+"old","85to89",3359,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",77,283,42.40518011312891,0.08425126525751712
+"old","85to89",3359,"HLT01","BS Nursing","Health and Allied Sciences",32,172,42.98690086335219,0.051205715986900865
+"old","85to89",3359,"HLT02","BS Pharmacy","Health and Allied Sciences",27,157,42.222089907710625,0.04674010122060137
+"old","85to89",3359,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",43,165,42.88151235486752,0.04912176242929443
+"old","85to89",3359,"HLT04","BS Physical Therapy","Health and Allied Sciences",33,179,43.01369455194998,0.05328966954450729
+"old","85to89",3359,"HLT05","BS Occupational Therapy","Health and Allied Sciences",25,171,43.032450133968446,0.05090800833581423
+"old","85to89",3359,"HLT06","BS Radiologic Technology","Health and Allied Sciences",34,154,42.87258112533492,0.04584697826734147
+"old","85to89",3359,"HLT07","BS Public Health","Health and Allied Sciences",29,151,43.16046442393569,0.044953855314081574
+"old","85to89",3359,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",86,302,43.16016671628461,0.08990771062816315
+"old","85to89",3359,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",28,146,43.061327776123846,0.04346531705864841
+"old","85to89",3359,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",55,231,43.229532598987795,0.06877046740101221
+"old","85to89",3359,"EDU01","Bachelor of Elementary Education","Education and Sports",15,139,43.105388508484666,0.041381363501041976
+"old","85to89",3359,"EDU02","Bachelor of Secondary Education","Education and Sports",29,140,43.02649598094671,0.041679071152128606
+"old","85to89",3359,"EDU03","Bachelor of Early Childhood Education","Education and Sports",28,170,43.24233402798452,0.0506103006847276
+"old","85to89",3359,"EDU04","Bachelor of Physical Education","Education and Sports",112,351,42.465614766299495,0.10449538553140816
+"old","85to89",3359,"EDU05","BS Exercise and Sports Sciences","Education and Sports",107,322,42.75587972610896,0.0958618636498958
+"old","85to89",3359,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",69,265,42.67907115212861,0.07889252753795772
+"old","85to89",3359,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",50,281,42.30663888061923,0.08365584995534385
+"old","85to89",3359,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",73,263,43.34593629056267,0.07829711223578446
+"old","85to89",3359,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",25,147,43.43524858588866,0.04376302470973504
+"old","85to89",3359,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",22,136,43.007740398928256,0.04048824054778208
+"old","85to89",3359,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",33,147,42.88657338493599,0.04376302470973504
+"old","85to89",3359,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",8,112,42.66716284608514,0.03334325692170289
+"old","85to89",3359,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",22,141,42.99732063114022,0.041976778803215244
+"old","85to89",3359,"SOC06","BA History","Social Sciences, Communication, and Humanities",14,112,42.920809764810954,0.03334325692170289
+"old","85to89",3359,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",15,111,43.07591545102709,0.03304554927061625
+"old","85to89",3359,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",20,151,43.12354867520095,0.044953855314081574
+"old","85to89",3359,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",33,152,42.73027686811551,0.045251562965168204
+"old","85to89",3359,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",60,234,43.173861268234596,0.06966359035427211
+"old","85to89",3359,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",39,168,43.05001488538255,0.05001488538255433
+"old","85to89",3359,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",38,197,42.974099434355466,0.058648407264066685
+"old","85to89",3359,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",30,147,43.748437034831795,0.04376302470973504
+"old","85to89",3359,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",22,169,43.23280738314975,0.05031259303364097
+"old","85to89",3359,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",29,138,42.81810062518607,0.041083655849955346
+"old","85to89",3359,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",22,147,43.68234593629056,0.04376302470973504
+"old","85to89",3359,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",20,145,43.534385233700505,0.04316760940756177
+"old","85to89",3359,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",34,143,43.751116403691576,0.04257219410538851
+"old","85to89",3359,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",34,259,43.173861268234596,0.07710628163143793
+"old","85to89",3359,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",65,242,42.92319142601965,0.07204525156296517
+"old","85to89",3359,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",52,244,42.69544507293838,0.07264066686513844
+"old","85to89",3359,"ART04","BS Interior Design","Arts, Design, and Architecture",40,256,43.08782375707056,0.07621315867817803
+"old","85to89",3359,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",56,253,43.32479904733552,0.07532003572491813
+"old","85to89",3359,"ART06","BS Architecture","Arts, Design, and Architecture",66,258,43.13724322715094,0.07680857398035129
+"old","90to94",3294,"BUS01","BS Accountancy","Business and Management",32,218,43.23254401942926,0.06618093503339405
+"old","90to94",3294,"BUS02","BS Management Accounting","Business and Management",31,196,43.09957498482088,0.05950212507589557
+"old","90to94",3294,"BUS03","BS Accounting Information Systems","Business and Management",59,241,42.79842137219186,0.07316332726168792
+"old","90to94",3294,"BUS04","BS Internal Auditing","Business and Management",26,193,43.16089860352155,0.05859137826350941
+"old","90to94",3294,"BUS05","BS Business Administration","Business and Management",21,181,43.31967213114754,0.05494839101396479
+"old","90to94",3294,"BUS06","BS Entrepreneurship","Business and Management",81,285,43.2037037037037,0.08652094717668488
+"old","90to94",3294,"BUS07","BS Office Administration","Business and Management",46,202,43.10048573163327,0.06132361870066788
+"old","90to94",3294,"BUS08","Economics (BA/BS)","Business and Management",30,196,43.10382513661202,0.05950212507589557
+"old","90to94",3294,"BUS09","BS Tourism Management","Business and Management",53,187,42.947176684881605,0.0567698846387371
+"old","90to94",3294,"BUS10","BS Hospitality Management","Business and Management",28,190,43.18852459016394,0.05768063145112325
+"old","90to94",3294,"ICT01","BS Information Technology","Computing",34,266,43.05616272009715,0.08075288403157256
+"old","90to94",3294,"ICT02","BS Information Systems","Computing",52,254,42.79811778992107,0.07710989678202793
+"old","90to94",3294,"ICT03","BS Computer Science","Computing",47,263,43.030661809350335,0.0798421372191864
+"old","90to94",3294,"ENG01","BS Civil Engineering","Engineering and Technology",24,121,42.99574984820887,0.03673345476624165
+"old","90to94",3294,"ENG02","BS Mechanical Engineering","Engineering and Technology",43,192,43.322404371584696,0.058287795992714025
+"old","90to94",3294,"ENG03","BS Electrical Engineering","Engineering and Technology",23,185,43.32119004250152,0.056162720097146325
+"old","90to94",3294,"ENG04","BS Electronics Engineering","Engineering and Technology",40,239,43.15664845173042,0.07255616272009714
+"old","90to94",3294,"ENG05","BS Computer Engineering","Engineering and Technology",42,244,43.15604128718883,0.07407407407407407
+"old","90to94",3294,"ENG06","BS Chemical Engineering","Engineering and Technology",23,134,43.58287795992714,0.04068002428658166
+"old","90to94",3294,"ENG07","BS Industrial Engineering","Engineering and Technology",78,214,43.133272616879175,0.0649666059502125
+"old","90to94",3294,"ENG08","BS Geodetic Engineering","Engineering and Technology",18,114,42.900728597449906,0.03460837887067395
+"old","90to94",3294,"ENG09","BS Mining Engineering","Engineering and Technology",27,194,44.076502732240435,0.0588949605343048
+"old","90to94",3294,"ENG10","BS Materials Engineering","Engineering and Technology",44,194,43.51123254401943,0.0588949605343048
+"old","90to94",3294,"ENG11","BS Metallurgical Engineering","Engineering and Technology",24,203,43.89799635701275,0.061627200971463264
+"old","90to94",3294,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",78,236,42.883727990285365,0.071645415907711
+"old","90to94",3294,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",30,194,43.89131754705525,0.0588949605343048
+"old","90to94",3294,"ENG14","BS Marine Engineering","Engineering and Technology",34,220,43.114146933819065,0.06678809957498483
+"old","90to94",3294,"ENG15","BS Marine Transportation","Engineering and Technology",57,224,43.29842137219186,0.06800242865816636
+"old","90to94",3294,"SCI01","BS Biology","Science and Mathematics",20,150,42.69550698239223,0.04553734061930783
+"old","90to94",3294,"SCI02","BS Marine Biology","Science and Mathematics",27,245,43.06860959319976,0.07437765634486945
+"old","90to94",3294,"SCI03","BS Chemistry","Science and Mathematics",23,138,42.938372799028535,0.04189435336976321
+"old","90to94",3294,"SCI04","BS Physics","Science and Mathematics",17,133,42.99878567091682,0.04037644201578628
+"old","90to94",3294,"SCI05","BS Applied Physics","Science and Mathematics",22,130,42.66089860352155,0.03946569520340012
+"old","90to94",3294,"SCI06","BS Mathematics","Science and Mathematics",26,143,42.61293260473588,0.043412264723740136
+"old","90to94",3294,"SCI07","BS Applied Mathematics","Science and Mathematics",48,178,42.67880995749848,0.054037644201578625
+"old","90to94",3294,"SCI08","BS Statistics","Science and Mathematics",26,181,42.72768670309654,0.05494839101396479
+"old","90to94",3294,"SCI09","BS Environmental Science","Science and Mathematics",19,222,42.72768670309654,0.06739526411657559
+"old","90to94",3294,"SCI10","BS Geology","Science and Mathematics",27,152,42.96326654523376,0.0461445051608986
+"old","90to94",3294,"SCI11","BS Meteorology","Science and Mathematics",19,134,42.55859137826351,0.04068002428658166
+"old","90to94",3294,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",63,241,43.28020643594414,0.07316332726168792
+"old","90to94",3294,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",38,236,43.11020036429873,0.071645415907711
+"old","90to94",3294,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",34,237,42.99726775956284,0.07194899817850638
+"old","90to94",3294,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",68,287,43.66757741347905,0.08712811171827566
+"old","90to94",3294,"HLT01","BS Nursing","Health and Allied Sciences",30,179,42.750758955676986,0.054341226472374014
+"old","90to94",3294,"HLT02","BS Pharmacy","Health and Allied Sciences",26,154,42.91256830601093,0.046751669702489375
+"old","90to94",3294,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",28,145,42.878567091681845,0.0440194292653309
+"old","90to94",3294,"HLT04","BS Physical Therapy","Health and Allied Sciences",42,176,42.64420157862781,0.05343047965998786
+"old","90to94",3294,"HLT05","BS Occupational Therapy","Health and Allied Sciences",30,188,43.17364905889496,0.05707346690953248
+"old","90to94",3294,"HLT06","BS Radiologic Technology","Health and Allied Sciences",28,148,42.50880388585307,0.044930176077717064
+"old","90to94",3294,"HLT07","BS Public Health","Health and Allied Sciences",21,136,42.52823315118397,0.041287188828172436
+"old","90to94",3294,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",63,269,42.91955069823922,0.08166363084395871
+"old","90to94",3294,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",29,166,42.616272009714635,0.050394656952034
+"old","90to94",3294,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",61,229,42.380692167577415,0.06952034001214329
+"old","90to94",3294,"EDU01","Bachelor of Elementary Education","Education and Sports",29,156,42.59471766848816,0.04735883424408015
+"old","90to94",3294,"EDU02","Bachelor of Secondary Education","Education and Sports",21,138,42.96448087431694,0.04189435336976321
+"old","90to94",3294,"EDU03","Bachelor of Early Childhood Education","Education and Sports",26,120,42.57832422586521,0.03642987249544627
+"old","90to94",3294,"EDU04","Bachelor of Physical Education","Education and Sports",131,351,43.06344869459623,0.10655737704918032
+"old","90to94",3294,"EDU05","BS Exercise and Sports Sciences","Education and Sports",128,346,42.59168184578021,0.1050394656952034
+"old","90to94",3294,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",53,248,43.117789921068606,0.07528840315725562
+"old","90to94",3294,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",59,266,44.22434729811779,0.08075288403157256
+"old","90to94",3294,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",72,268,43.41863995142684,0.08136004857316333
+"old","90to94",3294,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",24,160,42.57377049180328,0.048573163327261686
+"old","90to94",3294,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",22,135,42.81785063752277,0.040983606557377046
+"old","90to94",3294,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",30,152,42.52367941712204,0.0461445051608986
+"old","90to94",3294,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",6,110,42.619307832422585,0.033394049787492414
+"old","90to94",3294,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",25,137,42.499696417729204,0.04159077109896782
+"old","90to94",3294,"SOC06","BA History","Social Sciences, Communication, and Humanities",11,111,42.62750455373406,0.033697632058287796
+"old","90to94",3294,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",17,115,43.202792956891315,0.03491196114146934
+"old","90to94",3294,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",23,148,42.12902246508804,0.044930176077717064
+"old","90to94",3294,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",27,151,42.529143897996356,0.04584092289010322
+"old","90to94",3294,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",73,231,42.99028536733455,0.07012750455373407
+"old","90to94",3294,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",44,168,43.1712204007286,0.051001821493624776
+"old","90to94",3294,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",52,194,43.35610200364299,0.0588949605343048
+"old","90to94",3294,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",27,156,42.81238615664845,0.04735883424408015
+"old","90to94",3294,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",33,154,42.83667273831208,0.046751669702489375
+"old","90to94",3294,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",25,132,42.783849423193686,0.04007285974499089
+"old","90to94",3294,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",28,143,42.93958712811172,0.043412264723740136
+"old","90to94",3294,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",20,152,42.91226472374014,0.0461445051608986
+"old","90to94",3294,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",23,150,42.90862173649059,0.04553734061930783
+"old","90to94",3294,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",25,271,43.07710989678203,0.08227079538554949
+"old","90to94",3294,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",74,253,42.44444444444444,0.07680631451123254
+"old","90to94",3294,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",42,246,43.15452337583485,0.07468123861566485
+"old","90to94",3294,"ART04","BS Interior Design","Arts, Design, and Architecture",37,253,43.33424408014572,0.07680631451123254
+"old","90to94",3294,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",77,253,43.227079538554946,0.07680631451123254
+"old","90to94",3294,"ART06","BS Architecture","Arts, Design, and Architecture",50,225,43.69368548876746,0.06830601092896176
+"old","95to100",3402,"BUS01","BS Accountancy","Business and Management",24,194,43.19400352733686,0.05702527924750147
+"old","95to100",3402,"BUS02","BS Management Accounting","Business and Management",23,202,43.73691945914168,0.059376837154614934
+"old","95to100",3402,"BUS03","BS Accounting Information Systems","Business and Management",52,234,43.50411522633745,0.06878306878306878
+"old","95to100",3402,"BUS04","BS Internal Auditing","Business and Management",30,184,43.274544385655496,0.05408583186360964
+"old","95to100",3402,"BUS05","BS Business Administration","Business and Management",24,192,43.557025279247505,0.0564373897707231
+"old","95to100",3402,"BUS06","BS Entrepreneurship","Business and Management",95,314,42.73486184597296,0.09229864785420341
+"old","95to100",3402,"BUS07","BS Office Administration","Business and Management",46,218,43.10493827160494,0.06407995296884186
+"old","95to100",3402,"BUS08","Economics (BA/BS)","Business and Management",28,172,43.08083480305702,0.05055849500293945
+"old","95to100",3402,"BUS09","BS Tourism Management","Business and Management",53,197,43.13139329805996,0.05790711346266902
+"old","95to100",3402,"BUS10","BS Hospitality Management","Business and Management",30,184,42.98265726043504,0.05408583186360964
+"old","95to100",3402,"ICT01","BS Information Technology","Computing",32,231,43.076719576719576,0.06790123456790123
+"old","95to100",3402,"ICT02","BS Information Systems","Computing",44,229,42.95679012345679,0.06731334509112287
+"old","95to100",3402,"ICT03","BS Computer Science","Computing",57,237,43.42827748383304,0.06966490299823633
+"old","95to100",3402,"ENG01","BS Civil Engineering","Engineering and Technology",22,144,43.50705467372134,0.042328042328042326
+"old","95to100",3402,"ENG02","BS Mechanical Engineering","Engineering and Technology",54,247,42.725161669606116,0.07260435038212816
+"old","95to100",3402,"ENG03","BS Electrical Engineering","Engineering and Technology",28,229,42.60346854791299,0.06731334509112287
+"old","95to100",3402,"ENG04","BS Electronics Engineering","Engineering and Technology",43,258,42.779541446208114,0.07583774250440917
+"old","95to100",3402,"ENG05","BS Computer Engineering","Engineering and Technology",53,244,42.98530276308054,0.07172251616696061
+"old","95to100",3402,"ENG06","BS Chemical Engineering","Engineering and Technology",17,115,43.31422692533803,0.03380364491475603
+"old","95to100",3402,"ENG07","BS Industrial Engineering","Engineering and Technology",68,215,43.21017048794827,0.06319811875367431
+"old","95to100",3402,"ENG08","BS Geodetic Engineering","Engineering and Technology",17,151,43.211934156378604,0.04438565549676661
+"old","95to100",3402,"ENG09","BS Mining Engineering","Engineering and Technology",44,236,42.56025867136978,0.06937095825984715
+"old","95to100",3402,"ENG10","BS Materials Engineering","Engineering and Technology",34,219,42.5679012345679,0.06437389770723104
+"old","95to100",3402,"ENG11","BS Metallurgical Engineering","Engineering and Technology",35,220,42.58318636096414,0.06466784244562022
+"old","95to100",3402,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",76,233,43.143151087595534,0.0684891240446796
+"old","95to100",3402,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",37,246,42.62139917695473,0.07231040564373897
+"old","95to100",3402,"ENG14","BS Marine Engineering","Engineering and Technology",53,214,42.859200470311585,0.06290417401528513
+"old","95to100",3402,"ENG15","BS Marine Transportation","Engineering and Technology",43,212,42.89535567313345,0.06231628453850676
+"old","95to100",3402,"SCI01","BS Biology","Science and Mathematics",26,141,43.030276308054084,0.04144620811287478
+"old","95to100",3402,"SCI02","BS Marine Biology","Science and Mathematics",24,264,42.46766607877719,0.07760141093474426
+"old","95to100",3402,"SCI03","BS Chemistry","Science and Mathematics",14,94,43.26161081716637,0.027630805408583186
+"old","95to100",3402,"SCI04","BS Physics","Science and Mathematics",16,150,42.785714285714285,0.04409171075837742
+"old","95to100",3402,"SCI05","BS Applied Physics","Science and Mathematics",23,138,42.805114638447975,0.04056437389770723
+"old","95to100",3402,"SCI06","BS Mathematics","Science and Mathematics",21,146,43.03968253968254,0.042915931804820694
+"old","95to100",3402,"SCI07","BS Applied Mathematics","Science and Mathematics",43,201,42.57760141093475,0.059082892416225746
+"old","95to100",3402,"SCI08","BS Statistics","Science and Mathematics",38,206,42.93827160493827,0.06055261610817166
+"old","95to100",3402,"SCI09","BS Environmental Science","Science and Mathematics",34,266,42.455026455026456,0.07818930041152264
+"old","95to100",3402,"SCI10","BS Geology","Science and Mathematics",29,135,43.285714285714285,0.03968253968253968
+"old","95to100",3402,"SCI11","BS Meteorology","Science and Mathematics",27,132,43.153145208700764,0.03880070546737213
+"old","95to100",3402,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",67,264,42.98148148148148,0.07760141093474426
+"old","95to100",3402,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",34,279,42.753674309229865,0.082010582010582
+"old","95to100",3402,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",38,267,42.89564961787184,0.07848324514991181
+"old","95to100",3402,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",73,361,43.22251616696061,0.106114050558495
+"old","95to100",3402,"HLT01","BS Nursing","Health and Allied Sciences",30,147,43.694885361552025,0.043209876543209874
+"old","95to100",3402,"HLT02","BS Pharmacy","Health and Allied Sciences",23,149,42.77248677248677,0.04379776601998824
+"old","95to100",3402,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",22,147,42.88977072310406,0.043209876543209874
+"old","95to100",3402,"HLT04","BS Physical Therapy","Health and Allied Sciences",27,153,43.37860082304527,0.04497354497354497
+"old","95to100",3402,"HLT05","BS Occupational Therapy","Health and Allied Sciences",29,143,43.63168724279836,0.042034097589653145
+"old","95to100",3402,"HLT06","BS Radiologic Technology","Health and Allied Sciences",33,147,42.96178718400941,0.043209876543209874
+"old","95to100",3402,"HLT07","BS Public Health","Health and Allied Sciences",24,129,42.99794238683128,0.03791887125220458
+"old","95to100",3402,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",76,340,43.64344503233392,0.09994121105232216
+"old","95to100",3402,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",23,130,43.369194591416814,0.03821281599059377
+"old","95to100",3402,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",85,238,42.97501469723692,0.06995884773662552
+"old","95to100",3402,"EDU01","Bachelor of Elementary Education","Education and Sports",18,127,42.35773074661964,0.03733098177542622
+"old","95to100",3402,"EDU02","Bachelor of Secondary Education","Education and Sports",24,135,42.365373309817755,0.03968253968253968
+"old","95to100",3402,"EDU03","Bachelor of Early Childhood Education","Education and Sports",32,161,41.91769547325103,0.047325102880658436
+"old","95to100",3402,"EDU04","Bachelor of Physical Education","Education and Sports",124,335,43.14638447971781,0.09847148736037625
+"old","95to100",3402,"EDU05","BS Exercise and Sports Sciences","Education and Sports",123,326,43.41534391534392,0.09582598471487361
+"old","95to100",3402,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",53,268,43.10552616108172,0.078777189888301
+"old","95to100",3402,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",66,343,42.76396237507348,0.10082304526748971
+"old","95to100",3402,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",90,317,42.383891828336274,0.09318048206937096
+"old","95to100",3402,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",26,130,42.82892416225749,0.03821281599059377
+"old","95to100",3402,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",13,123,43.383597883597886,0.036155202821869487
+"old","95to100",3402,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",26,151,43.26601998824221,0.04438565549676661
+"old","95to100",3402,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",10,114,42.33392122281011,0.03350970017636684
+"old","95to100",3402,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",22,134,43.05526161081717,0.0393885949441505
+"old","95to100",3402,"SOC06","BA History","Social Sciences, Communication, and Humanities",12,117,42.55731922398589,0.03439153439153439
+"old","95to100",3402,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",21,124,42.87419165196943,0.036449147560258674
+"old","95to100",3402,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",20,145,42.45561434450323,0.04262198706643151
+"old","95to100",3402,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",30,142,42.59817754262199,0.041740152851263965
+"old","95to100",3402,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",60,233,43.22222222222222,0.0684891240446796
+"old","95to100",3402,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",48,167,42.15108759553204,0.04908877131099353
+"old","95to100",3402,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",66,202,43.72927689594356,0.059376837154614934
+"old","95to100",3402,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",35,156,42.81569664902998,0.04585537918871252
+"old","95to100",3402,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",19,147,42.88565549676661,0.043209876543209874
+"old","95to100",3402,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",28,128,43.0896531452087,0.0376249265138154
+"old","95to100",3402,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",24,145,42.994415049970605,0.04262198706643151
+"old","95to100",3402,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",27,163,43.0652557319224,0.047912992357436804
+"old","95to100",3402,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",22,136,43.06466784244562,0.03997648442092887
+"old","95to100",3402,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",38,297,43.379188712522044,0.0873015873015873
+"old","95to100",3402,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",75,282,43.401234567901234,0.08289241622574955
+"old","95to100",3402,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",45,265,43.38242210464433,0.07789535567313345
+"old","95to100",3402,"ART04","BS Interior Design","Arts, Design, and Architecture",40,268,43.22927689594356,0.078777189888301
+"old","95to100",3402,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",58,239,43.193415637860085,0.0702527924750147
+"old","95to100",3402,"ART06","BS Architecture","Arts, Design, and Architecture",66,252,43.289241622574956,0.07407407407407407
+"new","all",20000,"BUS01","BS Accountancy","Business and Management",198,1185,42.8876,0.05925
+"new","all",20000,"BUS02","BS Management Accounting","Business and Management",221,1184,42.7358,0.0592
+"new","all",20000,"BUS03","BS Accounting Information Systems","Business and Management",202,1202,42.82075,0.0601
+"new","all",20000,"BUS04","BS Internal Auditing","Business and Management",207,1261,42.80355,0.06305
+"new","all",20000,"BUS05","BS Business Administration","Business and Management",205,1196,42.7359,0.0598
+"new","all",20000,"BUS06","BS Entrepreneurship","Business and Management",300,1253,42.7104,0.06265
+"new","all",20000,"BUS07","BS Office Administration","Business and Management",311,1279,42.6238,0.06395
+"new","all",20000,"BUS08","Economics (BA/BS)","Business and Management",229,1178,42.80615,0.0589
+"new","all",20000,"BUS09","BS Tourism Management","Business and Management",369,1428,43.1783,0.0714
+"new","all",20000,"BUS10","BS Hospitality Management","Business and Management",334,1345,43.1789,0.06725
+"new","all",20000,"ICT01","BS Information Technology","Computing",205,1261,42.82625,0.06305
+"new","all",20000,"ICT02","BS Information Systems","Computing",283,1205,42.85085,0.06025
+"new","all",20000,"ICT03","BS Computer Science","Computing",193,1163,42.7831,0.05815
+"new","all",20000,"ENG01","BS Civil Engineering","Engineering and Technology",223,1115,43.09755,0.05575
+"new","all",20000,"ENG02","BS Mechanical Engineering","Engineering and Technology",292,1241,42.95425,0.06205
+"new","all",20000,"ENG03","BS Electrical Engineering","Engineering and Technology",297,1308,42.9158,0.0654
+"new","all",20000,"ENG04","BS Electronics Engineering","Engineering and Technology",270,1257,42.72555,0.06285
+"new","all",20000,"ENG05","BS Computer Engineering","Engineering and Technology",208,1201,42.84855,0.06005
+"new","all",20000,"ENG06","BS Chemical Engineering","Engineering and Technology",185,943,43.15555,0.04715
+"new","all",20000,"ENG07","BS Industrial Engineering","Engineering and Technology",264,1126,42.9206,0.0563
+"new","all",20000,"ENG08","BS Geodetic Engineering","Engineering and Technology",150,1055,43.2146,0.05275
+"new","all",20000,"ENG09","BS Mining Engineering","Engineering and Technology",181,1006,43.2748,0.0503
+"new","all",20000,"ENG10","BS Materials Engineering","Engineering and Technology",181,1019,43.119,0.05095
+"new","all",20000,"ENG11","BS Metallurgical Engineering","Engineering and Technology",138,985,43.09255,0.04925
+"new","all",20000,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",192,963,43.13385,0.04815
+"new","all",20000,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",319,1282,42.8889,0.0641
+"new","all",20000,"ENG14","BS Marine Engineering","Engineering and Technology",204,1091,43.1054,0.05455
+"new","all",20000,"ENG15","BS Marine Transportation","Engineering and Technology",338,1221,42.80685,0.06105
+"new","all",20000,"SCI01","BS Biology","Science and Mathematics",148,881,43.26365,0.04405
+"new","all",20000,"SCI02","BS Marine Biology","Science and Mathematics",141,949,43.16775,0.04745
+"new","all",20000,"SCI03","BS Chemistry","Science and Mathematics",141,937,43.1207,0.04685
+"new","all",20000,"SCI04","BS Physics","Science and Mathematics",141,875,43.3161,0.04375
+"new","all",20000,"SCI05","BS Applied Physics","Science and Mathematics",232,951,43.1497,0.04755
+"new","all",20000,"SCI06","BS Mathematics","Science and Mathematics",203,1013,42.77065,0.05065
+"new","all",20000,"SCI07","BS Applied Mathematics","Science and Mathematics",153,989,42.96125,0.04945
+"new","all",20000,"SCI08","BS Statistics","Science and Mathematics",210,1075,42.8442,0.05375
+"new","all",20000,"SCI09","BS Environmental Science","Science and Mathematics",95,842,43.1652,0.0421
+"new","all",20000,"SCI10","BS Geology","Science and Mathematics",127,813,43.2101,0.04065
+"new","all",20000,"SCI11","BS Meteorology","Science and Mathematics",152,870,43.02165,0.0435
+"new","all",20000,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",198,998,43.21415,0.0499
+"new","all",20000,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",118,925,43.21275,0.04625
+"new","all",20000,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",156,982,43.04515,0.0491
+"new","all",20000,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",273,1153,43.0929,0.05765
+"new","all",20000,"HLT01","BS Nursing","Health and Allied Sciences",188,1096,42.9023,0.0548
+"new","all",20000,"HLT02","BS Pharmacy","Health and Allied Sciences",193,982,43.03875,0.0491
+"new","all",20000,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",239,1114,42.8512,0.0557
+"new","all",20000,"HLT04","BS Physical Therapy","Health and Allied Sciences",245,1216,43.1602,0.0608
+"new","all",20000,"HLT05","BS Occupational Therapy","Health and Allied Sciences",229,1218,42.90805,0.0609
+"new","all",20000,"HLT06","BS Radiologic Technology","Health and Allied Sciences",193,1022,42.89375,0.0511
+"new","all",20000,"HLT07","BS Public Health","Health and Allied Sciences",220,1158,42.9018,0.0579
+"new","all",20000,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",307,1250,43.01665,0.0625
+"new","all",20000,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",213,1067,42.9052,0.05335
+"new","all",20000,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",211,992,43.00365,0.0496
+"new","all",20000,"EDU01","Bachelor of Elementary Education","Education and Sports",210,1277,43.13875,0.06385
+"new","all",20000,"EDU02","Bachelor of Secondary Education","Education and Sports",176,1165,43.0458,0.05825
+"new","all",20000,"EDU03","Bachelor of Early Childhood Education","Education and Sports",251,1310,43.12575,0.0655
+"new","all",20000,"EDU04","Bachelor of Physical Education","Education and Sports",323,1451,43.3089,0.07255
+"new","all",20000,"EDU05","BS Exercise and Sports Sciences","Education and Sports",279,1262,43.3963,0.0631
+"new","all",20000,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",305,1334,43.173,0.0667
+"new","all",20000,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",350,1428,43.222,0.0714
+"new","all",20000,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",317,1314,43.35035,0.0657
+"new","all",20000,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",270,1238,43.16825,0.0619
+"new","all",20000,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",216,1235,43.14165,0.06175
+"new","all",20000,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",279,1271,43.21575,0.06355
+"new","all",20000,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",148,1074,43.05685,0.0537
+"new","all",20000,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",214,1206,43.1709,0.0603
+"new","all",20000,"SOC06","BA History","Social Sciences, Communication, and Humanities",132,964,42.8622,0.0482
+"new","all",20000,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",181,1038,42.9326,0.0519
+"new","all",20000,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",215,1176,43.15385,0.0588
+"new","all",20000,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",244,1153,43.0257,0.05765
+"new","all",20000,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",317,1387,42.76865,0.06935
+"new","all",20000,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",399,1453,43.1664,0.07265
+"new","all",20000,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",265,1359,42.7502,0.06795
+"new","all",20000,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",270,1356,42.75795,0.0678
+"new","all",20000,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",282,1399,42.80825,0.06995
+"new","all",20000,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",365,1380,42.95265,0.069
+"new","all",20000,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",236,1356,42.78475,0.0678
+"new","all",20000,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",214,1330,42.78375,0.0665
+"new","all",20000,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",246,1154,42.9652,0.0577
+"new","all",20000,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",281,1492,42.79805,0.0746
+"new","all",20000,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",346,1470,42.9266,0.0735
+"new","all",20000,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",289,1429,42.85515,0.07145
+"new","all",20000,"ART04","BS Interior Design","Arts, Design, and Architecture",315,1479,42.995,0.07395
+"new","all",20000,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",348,1458,42.9586,0.0729
+"new","all",20000,"ART06","BS Architecture","Arts, Design, and Architecture",292,1281,42.9076,0.06405
+"new","below75",3292,"BUS01","BS Accountancy","Business and Management",37,199,42.39611178614824,0.060449574726609966
+"new","below75",3292,"BUS02","BS Management Accounting","Business and Management",36,191,42.98086269744836,0.05801944106925881
+"new","below75",3292,"BUS03","BS Accounting Information Systems","Business and Management",31,186,43.26215066828676,0.056500607533414335
+"new","below75",3292,"BUS04","BS Internal Auditing","Business and Management",29,206,42.54951397326853,0.06257594167679223
+"new","below75",3292,"BUS05","BS Business Administration","Business and Management",30,198,42.53371810449575,0.06014580801944107
+"new","below75",3292,"BUS06","BS Entrepreneurship","Business and Management",68,234,42.46992709599028,0.07108140947752126
+"new","below75",3292,"BUS07","BS Office Administration","Business and Management",55,216,42.52976913730255,0.06561360874848117
+"new","below75",3292,"BUS08","Economics (BA/BS)","Business and Management",42,206,42.99088699878493,0.06257594167679223
+"new","below75",3292,"BUS09","BS Tourism Management","Business and Management",68,252,42.286452004860266,0.07654921020656136
+"new","below75",3292,"BUS10","BS Hospitality Management","Business and Management",62,252,42.77490886998785,0.07654921020656136
+"new","below75",3292,"ICT01","BS Information Technology","Computing",27,190,42.78948967193195,0.057715674362089915
+"new","below75",3292,"ICT02","BS Information Systems","Computing",45,175,43.266099635479954,0.0531591737545565
+"new","below75",3292,"ICT03","BS Computer Science","Computing",32,181,43.13213851761847,0.054981773997569865
+"new","below75",3292,"ENG01","BS Civil Engineering","Engineering and Technology",40,166,43.390340218712026,0.050425273390036454
+"new","below75",3292,"ENG02","BS Mechanical Engineering","Engineering and Technology",48,207,43.15765492102066,0.06287970838396112
+"new","below75",3292,"ENG03","BS Electrical Engineering","Engineering and Technology",41,202,42.82168894289186,0.06136087484811665
+"new","below75",3292,"ENG04","BS Electronics Engineering","Engineering and Technology",36,207,42.78857837181045,0.06287970838396112
+"new","below75",3292,"ENG05","BS Computer Engineering","Engineering and Technology",31,198,42.87332928311057,0.06014580801944107
+"new","below75",3292,"ENG06","BS Chemical Engineering","Engineering and Technology",31,159,43.44653705953827,0.04829890643985419
+"new","below75",3292,"ENG07","BS Industrial Engineering","Engineering and Technology",42,184,42.84052247873633,0.05589307411907655
+"new","below75",3292,"ENG08","BS Geodetic Engineering","Engineering and Technology",20,190,43.50941676792223,0.057715674362089915
+"new","below75",3292,"ENG09","BS Mining Engineering","Engineering and Technology",31,173,43.56136087484812,0.05255164034021871
+"new","below75",3292,"ENG10","BS Materials Engineering","Engineering and Technology",40,205,43.255164034021874,0.06227217496962333
+"new","below75",3292,"ENG11","BS Metallurgical Engineering","Engineering and Technology",31,186,43.547083839611176,0.056500607533414335
+"new","below75",3292,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",33,150,43.5820170109356,0.04556500607533415
+"new","below75",3292,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",59,211,42.81257594167679,0.06409477521263669
+"new","below75",3292,"ENG14","BS Marine Engineering","Engineering and Technology",35,171,43.11573511543135,0.051944106925880924
+"new","below75",3292,"ENG15","BS Marine Transportation","Engineering and Technology",64,220,42.36391251518833,0.06682867557715674
+"new","below75",3292,"SCI01","BS Biology","Science and Mathematics",21,147,43.38791008505468,0.04465370595382746
+"new","below75",3292,"SCI02","BS Marine Biology","Science and Mathematics",20,156,43.34264884568651,0.04738760631834751
+"new","below75",3292,"SCI03","BS Chemistry","Science and Mathematics",19,157,43.132746051032804,0.047691373025516404
+"new","below75",3292,"SCI04","BS Physics","Science and Mathematics",20,158,43.63730255164034,0.0479951397326853
+"new","below75",3292,"SCI05","BS Applied Physics","Science and Mathematics",50,167,43.30558930741191,0.050729040097205344
+"new","below75",3292,"SCI06","BS Mathematics","Science and Mathematics",35,169,43.266099635479954,0.05133657351154314
+"new","below75",3292,"SCI07","BS Applied Mathematics","Science and Mathematics",27,157,43.36269744835966,0.047691373025516404
+"new","below75",3292,"SCI08","BS Statistics","Science and Mathematics",36,170,42.75303766707169,0.05164034021871203
+"new","below75",3292,"SCI09","BS Environmental Science","Science and Mathematics",14,147,43.13304981773997,0.04465370595382746
+"new","below75",3292,"SCI10","BS Geology","Science and Mathematics",21,156,43.53068043742406,0.04738760631834751
+"new","below75",3292,"SCI11","BS Meteorology","Science and Mathematics",25,158,43.202004860267316,0.0479951397326853
+"new","below75",3292,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",29,167,43.528554070473874,0.050729040097205344
+"new","below75",3292,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",20,149,43.193803159173754,0.04526123936816525
+"new","below75",3292,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",28,167,42.86300121506683,0.050729040097205344
+"new","below75",3292,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",48,201,42.91585662211422,0.06105710814094775
+"new","below75",3292,"HLT01","BS Nursing","Health and Allied Sciences",31,195,43.180133657351156,0.059234507897934385
+"new","below75",3292,"HLT02","BS Pharmacy","Health and Allied Sciences",34,172,43.141251518833535,0.05224787363304982
+"new","below75",3292,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",43,211,42.89428918590522,0.06409477521263669
+"new","below75",3292,"HLT04","BS Physical Therapy","Health and Allied Sciences",37,185,43.284933171324425,0.056196840826245445
+"new","below75",3292,"HLT05","BS Occupational Therapy","Health and Allied Sciences",45,210,43.16494532199271,0.0637910085054678
+"new","below75",3292,"HLT06","BS Radiologic Technology","Health and Allied Sciences",31,168,43.330498177399754,0.05103280680437424
+"new","below75",3292,"HLT07","BS Public Health","Health and Allied Sciences",40,187,43.54434993924666,0.05680437424058323
+"new","below75",3292,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",63,226,43.62332928311057,0.06865127582017011
+"new","below75",3292,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",42,171,43.67739975698663,0.051944106925880924
+"new","below75",3292,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",38,162,43.50911300121507,0.049210206561360874
+"new","below75",3292,"EDU01","Bachelor of Elementary Education","Education and Sports",35,212,43.4365127582017,0.06439854191980558
+"new","below75",3292,"EDU02","Bachelor of Secondary Education","Education and Sports",38,206,42.808019441069256,0.06257594167679223
+"new","below75",3292,"EDU03","Bachelor of Early Childhood Education","Education and Sports",41,218,42.786755771567435,0.06622114216281895
+"new","below75",3292,"EDU04","Bachelor of Physical Education","Education and Sports",54,236,42.54951397326853,0.07168894289185905
+"new","below75",3292,"EDU05","BS Exercise and Sports Sciences","Education and Sports",42,195,43.52794653705954,0.059234507897934385
+"new","below75",3292,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",54,223,42.26306196840826,0.06773997569866343
+"new","below75",3292,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",72,266,42.808019441069256,0.08080194410692589
+"new","below75",3292,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",53,222,43.15400972053463,0.06743620899149454
+"new","below75",3292,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",39,196,43.756075334143375,0.05953827460510328
+"new","below75",3292,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",24,200,43.10571081409478,0.060753341433778855
+"new","below75",3292,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",52,227,43.349331713244226,0.068955042527339
+"new","below75",3292,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",22,173,42.96628189550425,0.05255164034021871
+"new","below75",3292,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",32,181,43.38517618469016,0.054981773997569865
+"new","below75",3292,"SOC06","BA History","Social Sciences, Communication, and Humanities",22,162,42.56105710814095,0.049210206561360874
+"new","below75",3292,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",29,175,42.71962332928311,0.0531591737545565
+"new","below75",3292,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",32,180,43.558930741190764,0.054678007290400975
+"new","below75",3292,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",36,193,42.64580801944107,0.0586269744835966
+"new","below75",3292,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",42,202,42.932563791008505,0.06136087484811665
+"new","below75",3292,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",58,247,42.52095990279465,0.0750303766707169
+"new","below75",3292,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",42,218,42.20595382746051,0.06622114216281895
+"new","below75",3292,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",48,205,42.82199270959903,0.06227217496962333
+"new","below75",3292,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",47,208,42.3730255164034,0.06318347509113001
+"new","below75",3292,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",48,209,42.96901579586877,0.06348724179829891
+"new","below75",3292,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",27,181,42.53797083839611,0.054981773997569865
+"new","below75",3292,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",25,202,42.30984204131227,0.06136087484811665
+"new","below75",3292,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",41,188,42.827764277035236,0.05710814094775213
+"new","below75",3292,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",42,222,42.110571081409475,0.06743620899149454
+"new","below75",3292,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",53,226,42.39702308626975,0.06865127582017011
+"new","below75",3292,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",41,216,42.35601458080195,0.06561360874848117
+"new","below75",3292,"ART04","BS Interior Design","Arts, Design, and Architecture",50,223,42.76184690157959,0.06773997569866343
+"new","below75",3292,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",47,215,42.473572296476306,0.06530984204131227
+"new","below75",3292,"ART06","BS Architecture","Arts, Design, and Architecture",43,205,43.086877278250306,0.06227217496962333
+"new","75to79",3383,"BUS01","BS Accountancy","Business and Management",33,204,43.21992314513745,0.06030150753768844
+"new","75to79",3383,"BUS02","BS Management Accounting","Business and Management",40,198,42.44161986402601,0.05852793378657996
+"new","75to79",3383,"BUS03","BS Accounting Information Systems","Business and Management",30,207,42.321608040201006,0.06118829441324269
+"new","75to79",3383,"BUS04","BS Internal Auditing","Business and Management",41,225,43.042565770026606,0.06650901566656814
+"new","75to79",3383,"BUS05","BS Business Administration","Business and Management",40,196,42.55660656222288,0.057936742536210464
+"new","75to79",3383,"BUS06","BS Entrepreneurship","Business and Management",57,235,42.19361513449601,0.06946497191841561
+"new","75to79",3383,"BUS07","BS Office Administration","Business and Management",59,233,41.93585574933491,0.06887378066804611
+"new","75to79",3383,"BUS08","Economics (BA/BS)","Business and Management",47,217,42.65356192728348,0.06414425066509016
+"new","75to79",3383,"BUS09","BS Tourism Management","Business and Management",56,230,43.16316878510198,0.06798699379249187
+"new","75to79",3383,"BUS10","BS Hospitality Management","Business and Management",51,228,43.19627549512267,0.06739580254212238
+"new","75to79",3383,"ICT01","BS Information Technology","Computing",39,220,42.42684008276677,0.0650310375406444
+"new","75to79",3383,"ICT02","BS Information Systems","Computing",56,216,42.183860478864915,0.0638486550399054
+"new","75to79",3383,"ICT03","BS Computer Science","Computing",33,209,42.05527638190955,0.06177948566361218
+"new","75to79",3383,"ENG01","BS Civil Engineering","Engineering and Technology",36,190,42.44368903340231,0.05616316878510198
+"new","75to79",3383,"ENG02","BS Mechanical Engineering","Engineering and Technology",52,196,42.61838604788649,0.057936742536210464
+"new","75to79",3383,"ENG03","BS Electrical Engineering","Engineering and Technology",54,227,42.83624002364765,0.06710020691693763
+"new","75to79",3383,"ENG04","BS Electronics Engineering","Engineering and Technology",44,211,42.373928465858704,0.062370676913981675
+"new","75to79",3383,"ENG05","BS Computer Engineering","Engineering and Technology",38,233,42.264262488915165,0.06887378066804611
+"new","75to79",3383,"ENG06","BS Chemical Engineering","Engineering and Technology",35,165,43.20070942950044,0.048773278155483296
+"new","75to79",3383,"ENG07","BS Industrial Engineering","Engineering and Technology",49,215,42.65001477978126,0.06355305941472066
+"new","75to79",3383,"ENG08","BS Geodetic Engineering","Engineering and Technology",26,180,42.92462311557789,0.05320721253325451
+"new","75to79",3383,"ENG09","BS Mining Engineering","Engineering and Technology",25,159,43.51226721844517,0.046999704404374815
+"new","75to79",3383,"ENG10","BS Materials Engineering","Engineering and Technology",35,167,43.40082766775052,0.04936446940585279
+"new","75to79",3383,"ENG11","BS Metallurgical Engineering","Engineering and Technology",22,167,43.42033697901271,0.04936446940585279
+"new","75to79",3383,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",40,183,43.109074785693174,0.05409399940880875
+"new","75to79",3383,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",53,206,43.57995861661247,0.06089269878805793
+"new","75to79",3383,"ENG14","BS Marine Engineering","Engineering and Technology",29,180,43.552763819095475,0.05320721253325451
+"new","75to79",3383,"ENG15","BS Marine Transportation","Engineering and Technology",57,215,43.482707655926696,0.06355305941472066
+"new","75to79",3383,"SCI01","BS Biology","Science and Mathematics",22,151,43.30387230268992,0.04463493940289684
+"new","75to79",3383,"SCI02","BS Marine Biology","Science and Mathematics",27,173,43.25273425953296,0.05113804315696128
+"new","75to79",3383,"SCI03","BS Chemistry","Science and Mathematics",26,159,43.10434525569021,0.046999704404374815
+"new","75to79",3383,"SCI04","BS Physics","Science and Mathematics",19,146,43.4321608040201,0.0431569612769731
+"new","75to79",3383,"SCI05","BS Applied Physics","Science and Mathematics",27,136,43.81998226426249,0.04020100502512563
+"new","75to79",3383,"SCI06","BS Mathematics","Science and Mathematics",30,155,42.25923736328702,0.04581732190363583
+"new","75to79",3383,"SCI07","BS Applied Mathematics","Science and Mathematics",21,169,42.26721844516701,0.04995566065622229
+"new","75to79",3383,"SCI08","BS Statistics","Science and Mathematics",43,203,42.58705291161691,0.06000591191250369
+"new","75to79",3383,"SCI09","BS Environmental Science","Science and Mathematics",14,161,43.148093408217555,0.04759089565474431
+"new","75to79",3383,"SCI10","BS Geology","Science and Mathematics",28,147,42.95300029559562,0.043452556902157845
+"new","75to79",3383,"SCI11","BS Meteorology","Science and Mathematics",22,134,43.12710611882944,0.039609813774756135
+"new","75to79",3383,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",39,160,43.47561336092226,0.04729530002955956
+"new","75to79",3383,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",23,162,43.19804906887378,0.047886491279929055
+"new","75to79",3383,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",29,170,43.44782737215489,0.05025125628140704
+"new","75to79",3383,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",41,196,43.305350280815844,0.057936742536210464
+"new","75to79",3383,"HLT01","BS Nursing","Health and Allied Sciences",29,180,43.668637304167895,0.05320721253325451
+"new","75to79",3383,"HLT02","BS Pharmacy","Health and Allied Sciences",33,150,43.56429204847768,0.04433934377771209
+"new","75to79",3383,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",30,165,43.289683712681054,0.048773278155483296
+"new","75to79",3383,"HLT04","BS Physical Therapy","Health and Allied Sciences",37,193,43.61661247413538,0.057049955660656224
+"new","75to79",3383,"HLT05","BS Occupational Therapy","Health and Allied Sciences",43,202,43.50901566656813,0.059710316287318946
+"new","75to79",3383,"HLT06","BS Radiologic Technology","Health and Allied Sciences",33,170,43.055867573159915,0.05025125628140704
+"new","75to79",3383,"HLT07","BS Public Health","Health and Allied Sciences",23,165,43.879396984924625,0.048773278155483296
+"new","75to79",3383,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",53,221,43.39166420336979,0.06532663316582915
+"new","75to79",3383,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",28,185,43.63139225539462,0.05468519065917824
+"new","75to79",3383,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",40,170,43.13745196571091,0.05025125628140704
+"new","75to79",3383,"EDU01","Bachelor of Elementary Education","Education and Sports",38,214,43.12769731007981,0.06325746378953591
+"new","75to79",3383,"EDU02","Bachelor of Secondary Education","Education and Sports",26,196,42.91516405557198,0.057936742536210464
+"new","75to79",3383,"EDU03","Bachelor of Early Childhood Education","Education and Sports",38,210,43.230860183269286,0.06207508128879693
+"new","75to79",3383,"EDU04","Bachelor of Physical Education","Education and Sports",54,236,43.690806976056756,0.06976056754360035
+"new","75to79",3383,"EDU05","BS Exercise and Sports Sciences","Education and Sports",50,209,44.19686668637304,0.06177948566361218
+"new","75to79",3383,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",53,224,43.559266922849545,0.06621342004138339
+"new","75to79",3383,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",57,260,42.8371268105232,0.0768548625480343
+"new","75to79",3383,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",51,230,43.16139521135087,0.06798699379249187
+"new","75to79",3383,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",54,217,43.34968962459356,0.06414425066509016
+"new","75to79",3383,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",33,199,43.31835648832397,0.058823529411764705
+"new","75to79",3383,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",57,208,43.187703221992315,0.061483890038427434
+"new","75to79",3383,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",20,181,42.65681347916051,0.053502808158439254
+"new","75to79",3383,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",25,219,42.8604788649128,0.06473544191545966
+"new","75to79",3383,"SOC06","BA History","Social Sciences, Communication, and Humanities",33,161,42.7035175879397,0.04759089565474431
+"new","75to79",3383,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",28,164,42.90925214306828,0.04847768253029855
+"new","75to79",3383,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",36,203,43.340821755838014,0.06000591191250369
+"new","75to79",3383,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",47,189,42.809932013006204,0.055867573159917236
+"new","75to79",3383,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",52,234,42.10818799881762,0.06916937629323086
+"new","75to79",3383,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",62,218,43.329589122080996,0.06443984629027491
+"new","75to79",3383,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",43,227,42.40526160212829,0.06710020691693763
+"new","75to79",3383,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",46,228,42.22199231451375,0.06739580254212238
+"new","75to79",3383,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",50,251,42.5911912503695,0.07419450192137156
+"new","75to79",3383,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",60,221,42.60124150162578,0.06532663316582915
+"new","75to79",3383,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",47,233,42.1918415607449,0.06887378066804611
+"new","75to79",3383,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",35,233,42.65622228791014,0.06887378066804611
+"new","75to79",3383,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",40,196,42.50044339343778,0.057936742536210464
+"new","75to79",3383,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",47,251,43.313035767070645,0.07419450192137156
+"new","75to79",3383,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",56,252,42.9961572568726,0.0744900975465563
+"new","75to79",3383,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",51,232,42.857522908660954,0.06857818504286137
+"new","75to79",3383,"ART04","BS Interior Design","Arts, Design, and Architecture",57,238,43.274312740171446,0.07035175879396985
+"new","75to79",3383,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",50,228,43.246231155778894,0.06739580254212238
+"new","75to79",3383,"ART06","BS Architecture","Arts, Design, and Architecture",50,218,42.664794561040495,0.06443984629027491
+"new","80to84",3375,"BUS01","BS Accountancy","Business and Management",24,203,43.03318518518518,0.060148148148148145
+"new","80to84",3375,"BUS02","BS Management Accounting","Business and Management",44,198,43.18992592592593,0.058666666666666666
+"new","80to84",3375,"BUS03","BS Accounting Information Systems","Business and Management",32,207,43.138962962962964,0.06133333333333333
+"new","80to84",3375,"BUS04","BS Internal Auditing","Business and Management",29,218,43.03940740740741,0.06459259259259259
+"new","80to84",3375,"BUS05","BS Business Administration","Business and Management",33,181,43.39940740740741,0.05362962962962963
+"new","80to84",3375,"BUS06","BS Entrepreneurship","Business and Management",35,202,43.09214814814815,0.05985185185185185
+"new","80to84",3375,"BUS07","BS Office Administration","Business and Management",45,221,43.171851851851855,0.06548148148148149
+"new","80to84",3375,"BUS08","Economics (BA/BS)","Business and Management",35,191,42.98696296296296,0.05659259259259259
+"new","80to84",3375,"BUS09","BS Tourism Management","Business and Management",61,228,43.547259259259256,0.06755555555555555
+"new","80to84",3375,"BUS10","BS Hospitality Management","Business and Management",43,208,43.28059259259259,0.06162962962962963
+"new","80to84",3375,"ICT01","BS Information Technology","Computing",40,211,42.80385185185185,0.06251851851851851
+"new","80to84",3375,"ICT02","BS Information Systems","Computing",58,218,42.718222222222224,0.06459259259259259
+"new","80to84",3375,"ICT03","BS Computer Science","Computing",33,196,42.888,0.05807407407407408
+"new","80to84",3375,"ENG01","BS Civil Engineering","Engineering and Technology",37,183,42.82725925925926,0.05422222222222222
+"new","80to84",3375,"ENG02","BS Mechanical Engineering","Engineering and Technology",55,225,42.611555555555555,0.06666666666666667
+"new","80to84",3375,"ENG03","BS Electrical Engineering","Engineering and Technology",47,216,42.6557037037037,0.064
+"new","80to84",3375,"ENG04","BS Electronics Engineering","Engineering and Technology",43,205,42.71614814814815,0.06074074074074074
+"new","80to84",3375,"ENG05","BS Computer Engineering","Engineering and Technology",39,190,42.80207407407407,0.056296296296296296
+"new","80to84",3375,"ENG06","BS Chemical Engineering","Engineering and Technology",28,166,42.85096296296296,0.049185185185185186
+"new","80to84",3375,"ENG07","BS Industrial Engineering","Engineering and Technology",47,169,43.1522962962963,0.050074074074074076
+"new","80to84",3375,"ENG08","BS Geodetic Engineering","Engineering and Technology",27,191,42.830814814814815,0.05659259259259259
+"new","80to84",3375,"ENG09","BS Mining Engineering","Engineering and Technology",31,174,42.89955555555556,0.051555555555555556
+"new","80to84",3375,"ENG10","BS Materials Engineering","Engineering and Technology",28,170,42.781333333333336,0.05037037037037037
+"new","80to84",3375,"ENG11","BS Metallurgical Engineering","Engineering and Technology",23,168,42.74488888888889,0.049777777777777775
+"new","80to84",3375,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",31,154,43.041185185185185,0.04562962962962963
+"new","80to84",3375,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",56,228,42.65125925925926,0.06755555555555555
+"new","80to84",3375,"ENG14","BS Marine Engineering","Engineering and Technology",35,201,43.01748148148148,0.059555555555555556
+"new","80to84",3375,"ENG15","BS Marine Transportation","Engineering and Technology",67,207,42.67703703703704,0.06133333333333333
+"new","80to84",3375,"SCI01","BS Biology","Science and Mathematics",31,168,43.10488888888889,0.049777777777777775
+"new","80to84",3375,"SCI02","BS Marine Biology","Science and Mathematics",26,166,43.24,0.049185185185185186
+"new","80to84",3375,"SCI03","BS Chemistry","Science and Mathematics",28,165,42.81748148148148,0.04888888888888889
+"new","80to84",3375,"SCI04","BS Physics","Science and Mathematics",28,153,42.7917037037037,0.04533333333333334
+"new","80to84",3375,"SCI05","BS Applied Physics","Science and Mathematics",42,180,42.81037037037037,0.05333333333333334
+"new","80to84",3375,"SCI06","BS Mathematics","Science and Mathematics",41,187,42.6637037037037,0.055407407407407405
+"new","80to84",3375,"SCI07","BS Applied Mathematics","Science and Mathematics",23,178,42.898666666666664,0.05274074074074074
+"new","80to84",3375,"SCI08","BS Statistics","Science and Mathematics",35,186,43.062518518518516,0.05511111111111111
+"new","80to84",3375,"SCI09","BS Environmental Science","Science and Mathematics",15,144,43.22014814814815,0.042666666666666665
+"new","80to84",3375,"SCI10","BS Geology","Science and Mathematics",23,134,42.88711111111111,0.039703703703703706
+"new","80to84",3375,"SCI11","BS Meteorology","Science and Mathematics",30,144,42.775703703703705,0.042666666666666665
+"new","80to84",3375,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",32,158,42.6797037037037,0.046814814814814816
+"new","80to84",3375,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",23,164,43.31140740740741,0.04859259259259259
+"new","80to84",3375,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",30,163,43.11229629629629,0.048296296296296296
+"new","80to84",3375,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",40,194,43.10666666666667,0.05748148148148148
+"new","80to84",3375,"HLT01","BS Nursing","Health and Allied Sciences",35,173,42.709037037037035,0.05125925925925926
+"new","80to84",3375,"HLT02","BS Pharmacy","Health and Allied Sciences",34,167,42.61540740740741,0.04948148148148148
+"new","80to84",3375,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",42,189,42.87407407407407,0.056
+"new","80to84",3375,"HLT04","BS Physical Therapy","Health and Allied Sciences",39,236,42.92711111111111,0.06992592592592592
+"new","80to84",3375,"HLT05","BS Occupational Therapy","Health and Allied Sciences",42,206,42.61303703703704,0.061037037037037035
+"new","80to84",3375,"HLT06","BS Radiologic Technology","Health and Allied Sciences",34,157,42.693629629629626,0.04651851851851852
+"new","80to84",3375,"HLT07","BS Public Health","Health and Allied Sciences",45,213,42.154074074074074,0.06311111111111112
+"new","80to84",3375,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",50,206,43.13955555555555,0.061037037037037035
+"new","80to84",3375,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",32,182,42.62903703703704,0.053925925925925926
+"new","80to84",3375,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",22,169,42.772740740740744,0.050074074074074076
+"new","80to84",3375,"EDU01","Bachelor of Elementary Education","Education and Sports",33,210,43.376296296296296,0.06222222222222222
+"new","80to84",3375,"EDU02","Bachelor of Secondary Education","Education and Sports",32,194,43.20444444444445,0.05748148148148148
+"new","80to84",3375,"EDU03","Bachelor of Early Childhood Education","Education and Sports",46,227,43.301037037037034,0.06725925925925925
+"new","80to84",3375,"EDU04","Bachelor of Physical Education","Education and Sports",54,264,43.14044444444445,0.07822222222222222
+"new","80to84",3375,"EDU05","BS Exercise and Sports Sciences","Education and Sports",58,227,42.91466666666667,0.06725925925925925
+"new","80to84",3375,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",48,229,43.56355555555555,0.06785185185185186
+"new","80to84",3375,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",56,206,43.85303703703703,0.061037037037037035
+"new","80to84",3375,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",50,217,43.03940740740741,0.0642962962962963
+"new","80to84",3375,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",46,217,43.40325925925926,0.0642962962962963
+"new","80to84",3375,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",33,223,42.74311111111111,0.06607407407407408
+"new","80to84",3375,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",39,202,43.35437037037037,0.05985185185185185
+"new","80to84",3375,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",26,186,42.94014814814815,0.05511111111111111
+"new","80to84",3375,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",45,199,43.45037037037037,0.05896296296296296
+"new","80to84",3375,"SOC06","BA History","Social Sciences, Communication, and Humanities",14,168,42.72888888888889,0.049777777777777775
+"new","80to84",3375,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",37,190,43.05540740740741,0.056296296296296296
+"new","80to84",3375,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",34,207,43.04148148148148,0.06133333333333333
+"new","80to84",3375,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",40,179,42.913185185185185,0.053037037037037035
+"new","80to84",3375,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",50,220,43.26814814814815,0.06518518518518518
+"new","80to84",3375,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",77,249,42.83762962962963,0.07377777777777778
+"new","80to84",3375,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",42,214,43.48266666666667,0.06340740740740741
+"new","80to84",3375,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",38,205,43.35407407407408,0.06074074074074074
+"new","80to84",3375,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",57,215,43.37807407407407,0.0637037037037037
+"new","80to84",3375,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",59,232,42.66696296296296,0.06874074074074074
+"new","80to84",3375,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",41,228,43.55466666666667,0.06755555555555555
+"new","80to84",3375,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",41,201,43.30518518518519,0.059555555555555556
+"new","80to84",3375,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",40,184,43.33837037037037,0.05451851851851852
+"new","80to84",3375,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",50,272,42.67437037037037,0.08059259259259259
+"new","80to84",3375,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",47,248,42.90814814814815,0.07348148148148148
+"new","80to84",3375,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",50,230,43.358814814814814,0.06814814814814815
+"new","80to84",3375,"ART04","BS Interior Design","Arts, Design, and Architecture",53,242,42.93985185185185,0.0717037037037037
+"new","80to84",3375,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",62,254,42.89066666666667,0.07525925925925926
+"new","80to84",3375,"ART06","BS Architecture","Arts, Design, and Architecture",49,225,42.85985185185185,0.06666666666666667
+"new","85to89",3277,"BUS01","BS Accountancy","Business and Management",30,182,43.15135794934391,0.055538602380225816
+"new","85to89",3277,"BUS02","BS Management Accounting","Business and Management",35,199,42.833689350015256,0.06072627403112603
+"new","85to89",3277,"BUS03","BS Accounting Information Systems","Business and Management",37,205,42.981690570643885,0.06255721696673787
+"new","85to89",3277,"BUS04","BS Internal Auditing","Business and Management",34,199,42.72322245956668,0.06072627403112603
+"new","85to89",3277,"BUS05","BS Business Administration","Business and Management",42,223,42.30881904180653,0.06805004577357339
+"new","85to89",3277,"BUS06","BS Entrepreneurship","Business and Management",45,198,42.49404943545926,0.06042111687519072
+"new","85to89",3277,"BUS07","BS Office Administration","Business and Management",46,197,42.543484894720784,0.060115959719255416
+"new","85to89",3277,"BUS08","Economics (BA/BS)","Business and Management",36,178,42.82209337808972,0.05431797375648459
+"new","85to89",3277,"BUS09","BS Tourism Management","Business and Management",67,242,43.76167226121453,0.07384803173634422
+"new","85to89",3277,"BUS10","BS Hospitality Management","Business and Management",65,222,43.70521818736649,0.06774488861763808
+"new","85to89",3277,"ICT01","BS Information Technology","Computing",30,201,43.21055843759536,0.06133658834299664
+"new","85to89",3277,"ICT02","BS Information Systems","Computing",42,196,42.99389685688129,0.05981080256332011
+"new","85to89",3277,"ICT03","BS Computer Science","Computing",32,209,43.12999694842844,0.0637778455904791
+"new","85to89",3277,"ENG01","BS Civil Engineering","Engineering and Technology",34,195,42.70033567287153,0.0595056454073848
+"new","85to89",3277,"ENG02","BS Mechanical Engineering","Engineering and Technology",48,200,42.90021361000915,0.061031431187061336
+"new","85to89",3277,"ENG03","BS Electrical Engineering","Engineering and Technology",53,221,43.03722917302411,0.06743973146170278
+"new","85to89",3277,"ENG04","BS Electronics Engineering","Engineering and Technology",50,210,42.77845590479097,0.0640830027464144
+"new","85to89",3277,"ENG05","BS Computer Engineering","Engineering and Technology",24,185,43.424778761061944,0.056454073848031736
+"new","85to89",3277,"ENG06","BS Chemical Engineering","Engineering and Technology",28,149,43.214220323466584,0.045468416234360695
+"new","85to89",3277,"ENG07","BS Industrial Engineering","Engineering and Technology",38,169,42.991760756789745,0.05157155935306683
+"new","85to89",3277,"ENG08","BS Geodetic Engineering","Engineering and Technology",26,155,43.08758010375343,0.047299359169972535
+"new","85to89",3277,"ENG09","BS Mining Engineering","Engineering and Technology",31,162,43.22825755263961,0.04943545926151968
+"new","85to89",3277,"ENG10","BS Materials Engineering","Engineering and Technology",27,159,43.29325602685383,0.04851998779371376
+"new","85to89",3277,"ENG11","BS Metallurgical Engineering","Engineering and Technology",21,148,43.06560878852609,0.04516325907842539
+"new","85to89",3277,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",21,146,42.63808361306073,0.044552944766554775
+"new","85to89",3277,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",62,221,42.411962160512665,0.06743973146170278
+"new","85to89",3277,"ENG14","BS Marine Engineering","Engineering and Technology",35,198,42.279829111992676,0.06042111687519072
+"new","85to89",3277,"ENG15","BS Marine Transportation","Engineering and Technology",53,189,42.61306072627403,0.05767470247177296
+"new","85to89",3277,"SCI01","BS Biology","Science and Mathematics",26,144,42.84925236496796,0.04394263045468416
+"new","85to89",3277,"SCI02","BS Marine Biology","Science and Mathematics",29,151,42.26396093988404,0.04607873054623131
+"new","85to89",3277,"SCI03","BS Chemistry","Science and Mathematics",17,148,43.089411046689044,0.04516325907842539
+"new","85to89",3277,"SCI04","BS Physics","Science and Mathematics",21,151,43.617943240768994,0.04607873054623131
+"new","85to89",3277,"SCI05","BS Applied Physics","Science and Mathematics",39,155,43.00213610009155,0.047299359169972535
+"new","85to89",3277,"SCI06","BS Mathematics","Science and Mathematics",24,152,43.022276472383275,0.046383887702166615
+"new","85to89",3277,"SCI07","BS Applied Mathematics","Science and Mathematics",32,167,43.412572474824536,0.050961245041196215
+"new","85to89",3277,"SCI08","BS Statistics","Science and Mathematics",23,161,43.02807445834605,0.049130302105584375
+"new","85to89",3277,"SCI09","BS Environmental Science","Science and Mathematics",17,138,42.664937442783035,0.04211168751907232
+"new","85to89",3277,"SCI10","BS Geology","Science and Mathematics",25,127,42.73146170277693,0.03875495880378395
+"new","85to89",3277,"SCI11","BS Meteorology","Science and Mathematics",24,131,42.86145865120537,0.039975587427525175
+"new","85to89",3277,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",37,196,42.41287763198047,0.05981080256332011
+"new","85to89",3277,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",17,153,42.2886786695148,0.04668904485810192
+"new","85to89",3277,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",26,182,42.380836130607264,0.055538602380225816
+"new","85to89",3277,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",46,178,42.91760756789747,0.05431797375648459
+"new","85to89",3277,"HLT01","BS Nursing","Health and Allied Sciences",35,186,42.67348184314922,0.05675923100396704
+"new","85to89",3277,"HLT02","BS Pharmacy","Health and Allied Sciences",24,163,43.253280439426305,0.04974061641745499
+"new","85to89",3277,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",51,188,43.10955141898077,0.057369545315837656
+"new","85to89",3277,"HLT04","BS Physical Therapy","Health and Allied Sciences",30,179,43.09368324687214,0.054623130912419895
+"new","85to89",3277,"HLT05","BS Occupational Therapy","Health and Allied Sciences",32,173,42.91241989624657,0.052792187976808055
+"new","85to89",3277,"HLT06","BS Radiologic Technology","Health and Allied Sciences",30,174,42.77540433323161,0.05309734513274336
+"new","85to89",3277,"HLT07","BS Public Health","Health and Allied Sciences",29,198,42.42233750381446,0.06042111687519072
+"new","85to89",3277,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",50,210,42.6335062557217,0.0640830027464144
+"new","85to89",3277,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",38,177,42.34116570033567,0.05401281660054928
+"new","85to89",3277,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",33,181,42.19774183704608,0.05523344522429051
+"new","85to89",3277,"EDU01","Bachelor of Elementary Education","Education and Sports",34,226,42.83857186451022,0.06896551724137931
+"new","85to89",3277,"EDU02","Bachelor of Secondary Education","Education and Sports",25,188,43.169667378700034,0.057369545315837656
+"new","85to89",3277,"EDU03","Bachelor of Early Childhood Education","Education and Sports",45,239,43.1693622215441,0.0729325602685383
+"new","85to89",3277,"EDU04","Bachelor of Physical Education","Education and Sports",54,225,43.99420201403723,0.068660360085444
+"new","85to89",3277,"EDU05","BS Exercise and Sports Sciences","Education and Sports",43,183,42.77906621910284,0.05584375953616112
+"new","85to89",3277,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",48,219,43.785169362221545,0.06682941714983216
+"new","85to89",3277,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",55,219,43.485810192249005,0.06682941714983216
+"new","85to89",3277,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",61,228,43.63411657003357,0.06957583155324992
+"new","85to89",3277,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",43,202,42.977723527616725,0.06164174549893195
+"new","85to89",3277,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",37,191,43.256637168141594,0.058285016783643576
+"new","85to89",3277,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",45,216,43.16905706438816,0.06591394568202624
+"new","85to89",3277,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",33,161,43.70064083002747,0.049130302105584375
+"new","85to89",3277,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",34,187,43.355508086664635,0.05706438815990235
+"new","85to89",3277,"SOC06","BA History","Social Sciences, Communication, and Humanities",17,139,43.57888312480927,0.04241684467500763
+"new","85to89",3277,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",15,151,43.404638388770216,0.04607873054623131
+"new","85to89",3277,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",34,182,43.03844980164785,0.055538602380225816
+"new","85to89",3277,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",43,203,43.69179127250534,0.061946902654867256
+"new","85to89",3277,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",57,240,42.85535550808667,0.0732377174244736
+"new","85to89",3277,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",66,234,43.940494354592616,0.07140677448886176
+"new","85to89",3277,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",44,222,43.05004577357339,0.06774488861763808
+"new","85to89",3277,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",44,229,43.26853829722307,0.06988098870918523
+"new","85to89",3277,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",44,239,42.952395483674096,0.0729325602685383
+"new","85to89",3277,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",74,258,42.92645712541959,0.07873054623130912
+"new","85to89",3277,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",37,251,42.58498626792798,0.07659444613976198
+"new","85to89",3277,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",37,215,43.119926762282574,0.06560878852609094
+"new","85to89",3277,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",38,189,43.091241989624656,0.05767470247177296
+"new","85to89",3277,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",53,239,42.87580103753433,0.0729325602685383
+"new","85to89",3277,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",60,234,43.28013426914861,0.07140677448886176
+"new","85to89",3277,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",42,233,43.24321025328044,0.07110161733292646
+"new","85to89",3277,"ART04","BS Interior Design","Arts, Design, and Architecture",52,259,43.034787915776626,0.07903570338724443
+"new","85to89",3277,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",61,258,42.54989319499542,0.07873054623130912
+"new","85to89",3277,"ART06","BS Architecture","Arts, Design, and Architecture",55,205,42.9169972535856,0.06255721696673787
+"new","90to94",3303,"BUS01","BS Accountancy","Business and Management",37,205,42.58038147138964,0.06206478958522555
+"new","90to94",3303,"BUS02","BS Management Accounting","Business and Management",28,206,42.214956100514684,0.062367544656372995
+"new","90to94",3303,"BUS03","BS Accounting Information Systems","Business and Management",33,198,42.678474114441414,0.05994550408719346
+"new","90to94",3303,"BUS04","BS Internal Auditing","Business and Management",40,223,42.445049954586736,0.0675143808658795
+"new","90to94",3303,"BUS05","BS Business Administration","Business and Management",25,201,42.33151680290645,0.06085376930063579
+"new","90to94",3303,"BUS06","BS Entrepreneurship","Business and Management",47,214,42.73236451710566,0.06478958522555253
+"new","90to94",3303,"BUS07","BS Office Administration","Business and Management",51,203,42.73781410838632,0.06145927944293067
+"new","90to94",3303,"BUS08","Economics (BA/BS)","Business and Management",40,204,42.21768089615501,0.061762034514078114
+"new","90to94",3303,"BUS09","BS Tourism Management","Business and Management",67,253,42.26158038147139,0.07659703300030275
+"new","90to94",3303,"BUS10","BS Hospitality Management","Business and Management",60,210,42.16409324856191,0.06357856494096276
+"new","90to94",3303,"ICT01","BS Information Technology","Computing",31,197,43.25068119891008,0.05964274901604602
+"new","90to94",3303,"ICT02","BS Information Systems","Computing",39,190,42.98516500151378,0.05752346351801393
+"new","90to94",3303,"ICT03","BS Computer Science","Computing",25,164,42.79624583711777,0.04965183166818044
+"new","90to94",3303,"ENG01","BS Civil Engineering","Engineering and Technology",38,176,43.94580684226461,0.05328489252194974
+"new","90to94",3303,"ENG02","BS Mechanical Engineering","Engineering and Technology",37,196,43.11777172267635,0.05933999394489858
+"new","90to94",3303,"ENG03","BS Electrical Engineering","Engineering and Technology",56,205,43.29912201029367,0.06206478958522555
+"new","90to94",3303,"ENG04","BS Electronics Engineering","Engineering and Technology",51,185,43.18104753254617,0.056009688162276715
+"new","90to94",3303,"ENG05","BS Computer Engineering","Engineering and Technology",27,187,43.17983651226158,0.0566151983045716
+"new","90to94",3303,"ENG06","BS Chemical Engineering","Engineering and Technology",27,150,43.40054495912806,0.045413260672116255
+"new","90to94",3303,"ENG07","BS Industrial Engineering","Engineering and Technology",42,183,42.91522858007872,0.055404178019981834
+"new","90to94",3303,"ENG08","BS Geodetic Engineering","Engineering and Technology",24,164,43.86709052376627,0.04965183166818044
+"new","90to94",3303,"ENG09","BS Mining Engineering","Engineering and Technology",26,160,43.76808961550106,0.04844081138359067
+"new","90to94",3303,"ENG10","BS Materials Engineering","Engineering and Technology",27,153,43.62942779291553,0.04632152588555858
+"new","90to94",3303,"ENG11","BS Metallurgical Engineering","Engineering and Technology",16,145,43.31425976385105,0.04389948531637905
+"new","90to94",3303,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",38,161,43.55767484105359,0.04874356645473812
+"new","90to94",3303,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",40,207,43.353012412957916,0.06267029972752043
+"new","90to94",3303,"ENG14","BS Marine Engineering","Engineering and Technology",41,173,43.587344838026034,0.052376627308507416
+"new","90to94",3303,"ENG15","BS Marine Transportation","Engineering and Technology",49,183,42.851952770208904,0.055404178019981834
+"new","90to94",3303,"SCI01","BS Biology","Science and Mathematics",23,127,44.291855888586134,0.0384498940357251
+"new","90to94",3303,"SCI02","BS Marine Biology","Science and Mathematics",25,162,43.901301846805936,0.04904632152588556
+"new","90to94",3303,"SCI03","BS Chemistry","Science and Mathematics",25,143,43.774144716924006,0.04329397517408417
+"new","90to94",3303,"SCI04","BS Physics","Science and Mathematics",24,120,43.85467756584923,0.03633060853769301
+"new","90to94",3303,"SCI05","BS Applied Physics","Science and Mathematics",40,142,43.12079927338783,0.042991220102936725
+"new","90to94",3303,"SCI06","BS Mathematics","Science and Mathematics",35,176,43.06206478958523,0.05328489252194974
+"new","90to94",3303,"SCI07","BS Applied Mathematics","Science and Mathematics",21,151,42.938237965485925,0.0457160157432637
+"new","90to94",3303,"SCI08","BS Statistics","Science and Mathematics",30,175,42.80986981531941,0.052982137450802304
+"new","90to94",3303,"SCI09","BS Environmental Science","Science and Mathematics",17,133,43.87375113533152,0.04026642446260975
+"new","90to94",3303,"SCI10","BS Geology","Science and Mathematics",14,127,44.35906751438087,0.0384498940357251
+"new","90to94",3303,"SCI11","BS Meteorology","Science and Mathematics",28,136,43.35573720859824,0.041174689676052076
+"new","90to94",3303,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",32,156,44.4141689373297,0.047229791099000905
+"new","90to94",3303,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",12,152,44.23160762942779,0.04601877081441114
+"new","90to94",3303,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",23,143,43.62912503784438,0.04329397517408417
+"new","90to94",3303,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",42,180,43.71480472297911,0.05449591280653951
+"new","90to94",3303,"HLT01","BS Nursing","Health and Allied Sciences",27,181,42.919467151074784,0.05479866787768695
+"new","90to94",3303,"HLT02","BS Pharmacy","Health and Allied Sciences",28,149,43.47895852255525,0.04511050560096882
+"new","90to94",3303,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",43,179,42.74447471995156,0.054193157735392065
+"new","90to94",3303,"HLT04","BS Physical Therapy","Health and Allied Sciences",44,212,43.29700272479564,0.06418407508325764
+"new","90to94",3303,"HLT05","BS Occupational Therapy","Health and Allied Sciences",34,223,42.87889797154102,0.0675143808658795
+"new","90to94",3303,"HLT06","BS Radiologic Technology","Health and Allied Sciences",39,185,42.91492582500757,0.056009688162276715
+"new","90to94",3303,"HLT07","BS Public Health","Health and Allied Sciences",42,190,43.11686345746291,0.05752346351801393
+"new","90to94",3303,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",45,194,42.95428398425673,0.058734483802603696
+"new","90to94",3303,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",32,177,42.9349076597033,0.053587647593097185
+"new","90to94",3303,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",43,144,43.59218891916439,0.043596730245231606
+"new","90to94",3303,"EDU01","Bachelor of Elementary Education","Education and Sports",37,211,42.72994247653648,0.06388132001211021
+"new","90to94",3303,"EDU02","Bachelor of Secondary Education","Education and Sports",31,188,42.53739025128671,0.056917953375719046
+"new","90to94",3303,"EDU03","Bachelor of Early Childhood Education","Education and Sports",36,203,42.75386012715713,0.06145927944293067
+"new","90to94",3303,"EDU04","Bachelor of Physical Education","Education and Sports",55,247,42.93369663941871,0.0747805025734181
+"new","90to94",3303,"EDU05","BS Exercise and Sports Sciences","Education and Sports",40,210,43.73599757795943,0.06357856494096276
+"new","90to94",3303,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",51,232,42.12352406902816,0.07023917650620648
+"new","90to94",3303,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",59,244,42.68240993036633,0.07387223735997578
+"new","90to94",3303,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",52,202,43.33484710868907,0.061156524371783226
+"new","90to94",3303,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",40,196,42.524977293369666,0.05933999394489858
+"new","90to94",3303,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",51,213,42.80442022403875,0.06448683015440508
+"new","90to94",3303,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",42,210,42.70632758098698,0.06357856494096276
+"new","90to94",3303,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",26,187,42.21677263094157,0.0566151983045716
+"new","90to94",3303,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",38,215,42.46594005449591,0.06509234029669997
+"new","90to94",3303,"SOC06","BA History","Social Sciences, Communication, and Humanities",24,171,42.32667272176809,0.051771117166212535
+"new","90to94",3303,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",39,189,42.04783530124129,0.05722070844686648
+"new","90to94",3303,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",37,195,42.86285195277021,0.05903723887375113
+"new","90to94",3303,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",38,212,42.101725703905544,0.06418407508325764
+"new","90to94",3303,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",54,250,42.62609748713291,0.07568876778686043
+"new","90to94",3303,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",76,270,42.6745382985165,0.08174386920980926
+"new","90to94",3303,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",37,230,42.67060248259158,0.06963366636391159
+"new","90to94",3303,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",52,237,42.31789282470481,0.07175295186194369
+"new","90to94",3303,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",46,228,42.59763851044505,0.06902815622161672
+"new","90to94",3303,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",61,227,43.255828035119585,0.06872540115046927
+"new","90to94",3303,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",36,220,42.74296094459582,0.06660611565243718
+"new","90to94",3303,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",36,231,42.530729639721464,0.06993642143505904
+"new","90to94",3303,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",48,199,42.59067514380866,0.0602482591583409
+"new","90to94",3303,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",38,276,42.51922494701786,0.08356039963669391
+"new","90to94",3303,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",66,266,42.53708749621556,0.0805328489252195
+"new","90to94",3303,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",56,265,42.18801089918256,0.08023009385407205
+"new","90to94",3303,"ART04","BS Interior Design","Arts, Design, and Architecture",49,261,42.28882833787466,0.07901907356948229
+"new","90to94",3303,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",73,249,43.17680896155011,0.07538601271571299
+"new","90to94",3303,"ART06","BS Architecture","Arts, Design, and Architecture",49,228,42.86648501362398,0.06902815622161672
+"new","95to100",3370,"BUS01","BS Accountancy","Business and Management",37,192,42.93293768545994,0.05697329376854599
+"new","95to100",3370,"BUS02","BS Management Accounting","Business and Management",38,192,42.75222551928783,0.05697329376854599
+"new","95to100",3370,"BUS03","BS Accounting Information Systems","Business and Management",39,199,42.554896142433236,0.05905044510385757
+"new","95to100",3370,"BUS04","BS Internal Auditing","Business and Management",34,190,43.00504451038576,0.05637982195845697
+"new","95to100",3370,"BUS05","BS Business Administration","Business and Management",35,197,43.26053412462908,0.05845697329376855
+"new","95to100",3370,"BUS06","BS Entrepreneurship","Business and Management",48,170,43.27062314540059,0.050445103857566766
+"new","95to100",3370,"BUS07","BS Office Administration","Business and Management",55,209,42.82373887240356,0.06201780415430267
+"new","95to100",3370,"BUS08","Economics (BA/BS)","Business and Management",29,182,43.15905044510386,0.05400593471810089
+"new","95to100",3370,"BUS09","BS Tourism Management","Business and Management",50,223,44.02640949554896,0.06617210682492582
+"new","95to100",3370,"BUS10","BS Hospitality Management","Business and Management",53,225,43.93709198813056,0.06676557863501484
+"new","95to100",3370,"ICT01","BS Information Technology","Computing",38,242,42.49584569732938,0.07181008902077152
+"new","95to100",3370,"ICT02","BS Information Systems","Computing",43,210,42.97685459940653,0.06231454005934718
+"new","95to100",3370,"ICT03","BS Computer Science","Computing",38,204,42.717507418397624,0.060534124629080116
+"new","95to100",3370,"ENG01","BS Civil Engineering","Engineering and Technology",38,205,43.293471810089024,0.06083086053412463
+"new","95to100",3370,"ENG02","BS Mechanical Engineering","Engineering and Technology",52,217,43.328189910979226,0.06439169139465875
+"new","95to100",3370,"ENG03","BS Electrical Engineering","Engineering and Technology",46,237,42.85430267062315,0.07032640949554896
+"new","95to100",3370,"ENG04","BS Electronics Engineering","Engineering and Technology",46,239,42.528486646884275,0.07091988130563798
+"new","95to100",3370,"ENG05","BS Computer Engineering","Engineering and Technology",49,208,42.572403560830864,0.06172106824925816
+"new","95to100",3370,"ENG06","BS Chemical Engineering","Engineering and Technology",36,154,42.833827893175076,0.0456973293768546
+"new","95to100",3370,"ENG07","BS Industrial Engineering","Engineering and Technology",46,206,42.97448071216617,0.06112759643916914
+"new","95to100",3370,"ENG08","BS Geodetic Engineering","Engineering and Technology",27,175,43.08605341246291,0.05192878338278932
+"new","95to100",3370,"ENG09","BS Mining Engineering","Engineering and Technology",37,178,42.69406528189911,0.052818991097922846
+"new","95to100",3370,"ENG10","BS Materials Engineering","Engineering and Technology",24,165,42.37151335311572,0.04896142433234421
+"new","95to100",3370,"ENG11","BS Metallurgical Engineering","Engineering and Technology",25,171,42.47655786350148,0.05074183976261128
+"new","95to100",3370,"ENG12","BS Agricultural and Biosystems Engineering","Engineering and Technology",29,169,42.880415430267064,0.050148367952522255
+"new","95to100",3370,"ENG13","Bachelor of Industrial Technology","Engineering and Technology",49,209,42.51661721068249,0.06201780415430267
+"new","95to100",3370,"ENG14","BS Marine Engineering","Engineering and Technology",29,168,43.0646884272997,0.049851632047477744
+"new","95to100",3370,"ENG15","BS Marine Transportation","Engineering and Technology",48,207,42.8353115727003,0.06142433234421365
+"new","95to100",3370,"SCI01","BS Biology","Science and Mathematics",25,144,42.656083086053414,0.042729970326409496
+"new","95to100",3370,"SCI02","BS Marine Biology","Science and Mathematics",14,141,42.99910979228487,0.04183976261127596
+"new","95to100",3370,"SCI03","BS Chemistry","Science and Mathematics",26,165,42.81899109792285,0.04896142433234421
+"new","95to100",3370,"SCI04","BS Physics","Science and Mathematics",29,147,42.58961424332344,0.04362017804154303
+"new","95to100",3370,"SCI05","BS Applied Physics","Science and Mathematics",34,171,42.83620178041543,0.05074183976261128
+"new","95to100",3370,"SCI06","BS Mathematics","Science and Mathematics",38,174,42.37685459940653,0.05163204747774481
+"new","95to100",3370,"SCI07","BS Applied Mathematics","Science and Mathematics",29,167,42.91216617210682,0.04955489614243323
+"new","95to100",3370,"SCI08","BS Statistics","Science and Mathematics",43,180,42.82759643916914,0.05341246290801187
+"new","95to100",3370,"SCI09","BS Environmental Science","Science and Mathematics",18,119,42.950741839762614,0.03531157270029674
+"new","95to100",3370,"SCI10","BS Geology","Science and Mathematics",16,122,42.81780415430267,0.03620178041543027
+"new","95to100",3370,"SCI11","BS Meteorology","Science and Mathematics",23,167,42.814243323442135,0.04955489614243323
+"new","95to100",3370,"AGR01","BS Agriculture","Agriculture, Fisheries, and Food",29,161,42.782789317507415,0.047774480712166174
+"new","95to100",3370,"AGR02","BS Forestry","Agriculture, Fisheries, and Food",23,145,43.04718100890208,0.04302670623145401
+"new","95to100",3370,"AGR03","BS Fisheries","Agriculture, Fisheries, and Food",20,157,42.82522255192878,0.04658753709198813
+"new","95to100",3370,"AGR04","BS Food Technology","Agriculture, Fisheries, and Food",56,204,42.599703264094956,0.060534124629080116
+"new","95to100",3370,"HLT01","BS Nursing","Health and Allied Sciences",31,181,42.26083086053413,0.05370919881305638
+"new","95to100",3370,"HLT02","BS Pharmacy","Health and Allied Sciences",40,181,42.194955489614244,0.05370919881305638
+"new","95to100",3370,"HLT03","BS Medical Technology / Medical Laboratory Science","Health and Allied Sciences",30,182,42.19940652818991,0.05400593471810089
+"new","95to100",3370,"HLT04","BS Physical Therapy","Health and Allied Sciences",58,211,42.74421364985163,0.06261127596439169
+"new","95to100",3370,"HLT05","BS Occupational Therapy","Health and Allied Sciences",33,204,42.37359050445104,0.060534124629080116
+"new","95to100",3370,"HLT06","BS Radiologic Technology","Health and Allied Sciences",26,168,42.599109792284864,0.049851632047477744
+"new","95to100",3370,"HLT07","BS Public Health","Health and Allied Sciences",41,205,42.29703264094955,0.06083086053412463
+"new","95to100",3370,"HLT08","BS Nutrition and Dietetics","Health and Allied Sciences",46,193,42.358160237388724,0.0572700296735905
+"new","95to100",3370,"HLT09","Doctor of Dental Medicine","Health and Allied Sciences",41,175,42.21780415430267,0.05192878338278932
+"new","95to100",3370,"HLT10","Doctor of Veterinary Medicine","Health and Allied Sciences",35,166,42.81364985163205,0.04925816023738872
+"new","95to100",3370,"EDU01","Bachelor of Elementary Education","Education and Sports",33,204,43.31364985163205,0.060534124629080116
+"new","95to100",3370,"EDU02","Bachelor of Secondary Education","Education and Sports",24,193,43.62818991097923,0.0572700296735905
+"new","95to100",3370,"EDU03","Bachelor of Early Childhood Education","Education and Sports",45,213,43.497922848664686,0.06320474777448071
+"new","95to100",3370,"EDU04","Bachelor of Physical Education","Education and Sports",52,243,43.53738872403561,0.07210682492581602
+"new","95to100",3370,"EDU05","BS Exercise and Sports Sciences","Education and Sports",46,238,43.21364985163205,0.07062314540059347
+"new","95to100",3370,"EDU06","Bachelor of Culture and Arts Education","Education and Sports",51,207,43.71632047477745,0.06142433234421365
+"new","95to100",3370,"EDU07","Bachelor of Technology and Livelihood Education","Education and Sports",51,233,43.65311572700297,0.06913946587537093
+"new","95to100",3370,"EDU08","Bachelor of Technical-Vocational Teacher Education","Education and Sports",50,215,43.782492581602376,0.06379821958456973
+"new","95to100",3370,"SOC01","Psychology (BA/BS)","Social Sciences, Communication, and Humanities",48,210,42.99228486646884,0.06231454005934718
+"new","95to100",3370,"SOC02","BS Social Work","Social Sciences, Communication, and Humanities",38,209,43.61721068249258,0.06201780415430267
+"new","95to100",3370,"SOC03","Bachelor in Human Services","Social Sciences, Communication, and Humanities",44,208,43.519287833827896,0.06172106824925816
+"new","95to100",3370,"SOC04","BA Political Science","Social Sciences, Communication, and Humanities",21,186,43.86112759643917,0.05519287833827893
+"new","95to100",3370,"SOC05","BA Sociology","Social Sciences, Communication, and Humanities",40,205,43.50474777448071,0.06083086053412463
+"new","95to100",3370,"SOC06","BA History","Social Sciences, Communication, and Humanities",22,163,43.27715133531157,0.048367952522255196
+"new","95to100",3370,"SOC07","BA Philosophy","Social Sciences, Communication, and Humanities",33,169,43.44925816023739,0.050148367952522255
+"new","95to100",3370,"SOC08","Anthropology (BA/BS)","Social Sciences, Communication, and Humanities",42,209,43.08041543026706,0.06201780415430267
+"new","95to100",3370,"SOC09","Bachelor of Public Administration","Social Sciences, Communication, and Humanities",40,177,43.983976261127594,0.052522255192878335
+"new","95to100",3370,"SOC10","Bachelor of Library and Information Science","Social Sciences, Communication, and Humanities",62,241,42.826706231454004,0.071513353115727
+"new","95to100",3370,"SOC11","BS Criminology","Social Sciences, Communication, and Humanities",60,235,43.691691394658754,0.06973293768545995
+"new","95to100",3370,"SOC12","BA Communication","Social Sciences, Communication, and Humanities",57,248,42.68100890207715,0.07359050445103858
+"new","95to100",3370,"SOC13","BA Broadcasting","Social Sciences, Communication, and Humanities",42,252,42.57121661721068,0.07477744807121661
+"new","95to100",3370,"SOC14","BA Journalism","Social Sciences, Communication, and Humanities",38,258,42.94688427299703,0.07655786350148368
+"new","95to100",3370,"SOC15","BS Development Communication","Social Sciences, Communication, and Humanities",63,233,43.30385756676558,0.06913946587537093
+"new","95to100",3370,"SOC16","BA English Language Studies","Social Sciences, Communication, and Humanities",48,243,43.08516320474777,0.07210682492581602
+"new","95to100",3370,"SOC17","BA Literature","Social Sciences, Communication, and Humanities",40,248,42.773590504451036,0.07359050445103858
+"new","95to100",3370,"SOC18","BA Filipino","Social Sciences, Communication, and Humanities",39,198,43.43679525222552,0.05875370919881306
+"new","95to100",3370,"ART01","Bachelor of Fine Arts","Arts, Design, and Architecture",51,232,43.27418397626113,0.06884272997032641
+"new","95to100",3370,"ART02","Bachelor of Performing Arts","Arts, Design, and Architecture",64,244,43.43056379821959,0.07240356083086054
+"new","95to100",3370,"ART03","Bachelor of Multimedia Arts","Arts, Design, and Architecture",49,253,43.11246290801187,0.07507418397626113
+"new","95to100",3370,"ART04","BS Interior Design","Arts, Design, and Architecture",54,256,43.651038575667656,0.07596439169139466
+"new","95to100",3370,"ART05","Bachelor of Landscape Architecture","Arts, Design, and Architecture",55,254,43.395252225519286,0.07537091988130563
+"new","95to100",3370,"ART06","BS Architecture","Arts, Design, and Architecture",46,200,43.05519287833828,0.05934718100890208

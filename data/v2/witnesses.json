@@ -1,0 +1,9697 @@
+[
+  {
+    "course": "BUS01",
+    "name": "BS Accountancy",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-02",
+          "ACA-08"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS04",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS01",
+    "name": "BS Accountancy",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "D",
+        "INT-05": "D",
+        "INT-06": "B",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-15"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "BUS04",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS02",
+    "name": "BS Management Accounting",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-08",
+          "ACA-09"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS05",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS02",
+    "name": "BS Management Accounting",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "B",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-18",
+          "ELE-15"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "BUS05",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS03",
+    "name": "BS Accounting Information Systems",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-05",
+        "subjects": [
+          "ACA-01",
+          "ACA-08"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ICT02",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS03",
+    "name": "BS Accounting Information Systems",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-27"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "BUS07",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS04",
+    "name": "BS Internal Auditing",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-07",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-03",
+          "ACA-08"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS01",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS04",
+    "name": "BS Internal Auditing",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-07",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-14",
+          "ELE-15",
+          "ELE-27"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "BUS01",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS05",
+    "name": "BS Business Administration",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-07",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-08",
+          "ACA-09"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS02",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS05",
+    "name": "BS Business Administration",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-07",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-14"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "BUS06",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS06",
+    "name": "BS Entrepreneurship",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-07",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-06",
+        "subjects": [
+          "ACA-09",
+          "ACA-10"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC09",
+    "lead": 19,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS06",
+    "name": "BS Entrepreneurship",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-07",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-18",
+          "ELE-13"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "BUS02",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS07",
+    "name": "BS Office Administration",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-01",
+          "ACA-10"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI08",
+    "lead": 16,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS07",
+    "name": "BS Office Administration",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-17"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "BUS05",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS08",
+    "name": "Economics (BA/BS)",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-03",
+          "ACA-09"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS04",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS08",
+    "name": "Economics (BA/BS)",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-15",
+          "ELE-13",
+          "ELE-27"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SCI08",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS09",
+    "name": "BS Tourism Management",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 5,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-08",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-09",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS10",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS09",
+    "name": "BS Tourism Management",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 5,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-08",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-14",
+          "ELE-58",
+          "ELE-56"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "BUS10",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS10",
+    "name": "BS Hospitality Management",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-07",
+        "CER-08"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-09",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS09",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "BUS10",
+    "name": "BS Hospitality Management",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-07",
+        "CER-08"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-56"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "BUS09",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ICT01",
+    "name": "BS Information Technology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-05",
+        "subjects": [
+          "ACA-01",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG04",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ICT01",
+    "name": "BS Information Technology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-59",
+          "ELE-60",
+          "ELE-28"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ENG05",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ICT02",
+    "name": "BS Information Systems",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-05",
+        "subjects": [
+          "ACA-01",
+          "ACA-09"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS03",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ICT02",
+    "name": "BS Information Systems",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-59",
+          "ELE-28",
+          "ELE-15"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "BUS03",
+    "lead": 8,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ICT03",
+    "name": "BS Computer Science",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "A",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-05",
+        "subjects": [
+          "ACA-01",
+          "ACA-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG05",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ICT03",
+    "name": "BS Computer Science",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-27",
+          "ELE-26"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SCI07",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG01",
+    "name": "BS Civil Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-02",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG08",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG01",
+    "name": "BS Civil Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-22",
+          "ELE-21"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "ENG08",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 3,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG02",
+    "name": "BS Mechanical Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-02",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG13",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG02",
+    "name": "BS Mechanical Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-51",
+          "ELE-48"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "ENG13",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG03",
+    "name": "BS Electrical Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-05",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-04",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG13",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG03",
+    "name": "BS Electrical Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-05",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-24"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "ENG02",
+    "lead": 8,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG04",
+    "name": "BS Electronics Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-05",
+        "subjects": [
+          "ACA-01",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ICT01",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG04",
+    "name": "BS Electronics Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-61",
+          "ELE-64"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "ENG03",
+    "lead": 8,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG05",
+    "name": "BS Computer Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-05",
+        "subjects": [
+          "ACA-01",
+          "ACA-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ICT01",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG05",
+    "name": "BS Computer Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-23",
+          "ELE-60",
+          "ELE-21"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ICT01",
+    "lead": 8,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG06",
+    "name": "BS Chemical Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-02",
+          "ACA-05"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI03",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG06",
+    "name": "BS Chemical Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-20"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SCI03",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG07",
+    "name": "BS Industrial Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-03",
+          "ACA-09"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS02",
+    "lead": 16,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG07",
+    "name": "BS Industrial Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-22",
+          "ELE-24"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "BUS02",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG08",
+    "name": "BS Geodetic Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-02",
+          "ACA-07"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG01",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG08",
+    "name": "BS Geodetic Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-52",
+          "ELE-22",
+          "ELE-24"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ENG01",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG09",
+    "name": "BS Mining Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-05",
+          "ACA-07"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG11",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG09",
+    "name": "BS Mining Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-22",
+          "ELE-24",
+          "ELE-21"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ENG11",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG10",
+    "name": "BS Materials Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-04",
+          "ACA-05"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG11",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG10",
+    "name": "BS Materials Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-24",
+          "ELE-51"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "ENG11",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 2,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG11",
+    "name": "BS Metallurgical Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "D",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-05",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG09",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG11",
+    "name": "BS Metallurgical Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-24",
+          "ELE-25"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "ENG10",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG12",
+    "name": "BS Agricultural and Biosystems Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-04",
+          "ACA-18"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "AGR03",
+    "lead": 13,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG12",
+    "name": "BS Agricultural and Biosystems Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-43",
+          "ELE-19",
+          "ELE-42"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "AGR02",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG13",
+    "name": "Bachelor of Industrial Technology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-04",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG03",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG13",
+    "name": "Bachelor of Industrial Technology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-05",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-67",
+          "ELE-65",
+          "ELE-48"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ENG02",
+    "lead": 15,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG14",
+    "name": "BS Marine Engineering",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-12",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-04",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG13",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG14",
+    "name": "BS Marine Engineering",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-12",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-68",
+          "ELE-21"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "AGR03",
+    "lead": 14,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG15",
+    "name": "BS Marine Transportation",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-03",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-08",
+        "subjects": [
+          "ACA-04",
+          "ACA-07"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG14",
+    "lead": 14,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ENG15",
+    "name": "BS Marine Transportation",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-03",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-24"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "ENG14",
+    "lead": 15,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI01",
+    "name": "BS Biology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-03",
+          "ACA-06"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI03",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI01",
+    "name": "BS Biology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-19",
+          "ELE-22"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SCI03",
+    "lead": 8,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI02",
+    "name": "BS Marine Biology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-06",
+          "ACA-07"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "AGR02",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI02",
+    "name": "BS Marine Biology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-21",
+          "ELE-69",
+          "ELE-19"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "AGR02",
+    "lead": 8,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI03",
+    "name": "BS Chemistry",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-03",
+          "ACA-05"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG06",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI03",
+    "name": "BS Chemistry",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-27",
+          "ELE-20"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "ENG06",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI04",
+    "name": "BS Physics",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-02",
+          "ACA-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI06",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI04",
+    "name": "BS Physics",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-25",
+          "ELE-22",
+          "ELE-23"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SCI03",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI05",
+    "name": "BS Applied Physics",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-04",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI04",
+    "lead": 13,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI05",
+    "name": "BS Applied Physics",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-21",
+          "ELE-67"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SCI04",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI06",
+    "name": "BS Mathematics",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-02",
+          "ACA-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI03",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI06",
+    "name": "BS Mathematics",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-20",
+          "ELE-19",
+          "ELE-23"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ICT03",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI07",
+    "name": "BS Applied Mathematics",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-01",
+          "ACA-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI08",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI07",
+    "name": "BS Applied Mathematics",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-24",
+          "ELE-23",
+          "ELE-27"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SCI06",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI08",
+    "name": "BS Statistics",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-02",
+          "ACA-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS08",
+    "lead": 9,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI08",
+    "name": "BS Statistics",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-15"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "BUS08",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI09",
+    "name": "BS Environmental Science",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-06",
+          "ACA-07"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI02",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI09",
+    "name": "BS Environmental Science",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-19"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SCI02",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI10",
+    "name": "BS Geology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-05",
+          "ACA-07"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI11",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI10",
+    "name": "BS Geology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-22",
+          "ELE-25",
+          "ELE-20"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SCI09",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI11",
+    "name": "BS Meteorology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-04",
+          "ACA-07"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ENG08",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SCI11",
+    "name": "BS Meteorology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "D",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-25"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SCI04",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "AGR01",
+    "name": "BS Agriculture",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-09",
+          "ACA-18"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "AGR03",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "AGR01",
+    "name": "BS Agriculture",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-46",
+          "ELE-43"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "AGR03",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "AGR02",
+    "name": "BS Forestry",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-07",
+          "ACA-18"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI02",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "AGR02",
+    "name": "BS Forestry",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "D",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-25",
+          "ELE-19",
+          "ELE-42"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SCI09",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "AGR03",
+    "name": "BS Fisheries",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-06",
+          "ACA-18"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "AGR01",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "AGR03",
+    "name": "BS Fisheries",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-19"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "AGR01",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 2,
+    "extendedSearch": false
+  },
+  {
+    "course": "AGR04",
+    "name": "BS Food Technology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 5,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-08",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-06",
+        "subjects": [
+          "ACA-05",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU07",
+    "lead": 13,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "AGR04",
+    "name": "BS Food Technology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 5,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-08",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-55",
+          "ELE-45"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "HLT08",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT01",
+    "name": "BS Nursing",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-15",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "HLT05",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT01",
+    "name": "BS Nursing",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-20",
+          "ELE-25",
+          "ELE-37"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "HLT09",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT02",
+    "name": "BS Pharmacy",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-05",
+          "ACA-06"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI03",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT02",
+    "name": "BS Pharmacy",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-25",
+          "ELE-19"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SCI01",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT03",
+    "name": "BS Medical Technology / Medical Laboratory Science",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-05",
+          "ACA-06"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "HLT02",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT03",
+    "name": "BS Medical Technology / Medical Laboratory Science",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-28",
+          "ELE-25",
+          "ELE-26"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "HLT06",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT04",
+    "name": "BS Physical Therapy",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-03",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-06",
+          "ACA-15"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "HLT05",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT04",
+    "name": "BS Physical Therapy",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-03",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-37",
+          "ELE-31"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "HLT05",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 2,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT05",
+    "name": "BS Occupational Therapy",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "D",
+        "INT-05": "D",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-03",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-15",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "HLT04",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT05",
+    "name": "BS Occupational Therapy",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-03",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-39"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "HLT04",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT06",
+    "name": "BS Radiologic Technology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-04",
+          "ACA-06"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SCI05",
+    "lead": 13,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT06",
+    "name": "BS Radiologic Technology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-25",
+          "ELE-28",
+          "ELE-21"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "HLT03",
+    "lead": 15,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT07",
+    "name": "BS Public Health",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-03",
+          "ACA-15"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC02",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT07",
+    "name": "BS Public Health",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-31",
+          "ELE-19"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "HLT08",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT08",
+    "name": "BS Nutrition and Dietetics",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "C",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 5,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-08",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-06",
+        "subjects": [
+          "ACA-15",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "AGR04",
+    "lead": 13,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT08",
+    "name": "BS Nutrition and Dietetics",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 5,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-08",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-31",
+          "ELE-20"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "HLT04",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT09",
+    "name": "Doctor of Dental Medicine",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-05",
+          "ACA-06"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "HLT04",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT09",
+    "name": "Doctor of Dental Medicine",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-20"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "HLT10",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT10",
+    "name": "Doctor of Veterinary Medicine",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-06",
+          "ACA-18"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "AGR03",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "HLT10",
+    "name": "Doctor of Veterinary Medicine",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-20",
+          "ELE-25"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "HLT09",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU01",
+    "name": "Bachelor of Elementary Education",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-11",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU02",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU01",
+    "name": "Bachelor of Elementary Education",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-34",
+          "ELE-06"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "EDU02",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU02",
+    "name": "Bachelor of Secondary Education",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-11",
+          "ACA-12"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC18",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU02",
+    "name": "Bachelor of Secondary Education",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-04"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SOC18",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU03",
+    "name": "Bachelor of Early Childhood Education",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-11",
+          "ACA-14"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU02",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU03",
+    "name": "Bachelor of Early Childhood Education",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-06",
+          "ELE-30",
+          "ELE-07"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "EDU02",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU04",
+    "name": "Bachelor of Physical Education",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-03",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-10",
+        "subjects": [
+          "ACA-06",
+          "ACA-15"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU05",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU04",
+    "name": "Bachelor of Physical Education",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-03",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-35"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "EDU05",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU05",
+    "name": "BS Exercise and Sports Sciences",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-03",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-10",
+        "subjects": [
+          "ACA-06",
+          "ACA-15"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU04",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU05",
+    "name": "BS Exercise and Sports Sciences",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-03",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-36",
+          "ELE-30"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "HLT04",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU06",
+    "name": "Bachelor of Culture and Arts Education",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-09",
+        "subjects": [
+          "ACA-13",
+          "ACA-14"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ART01",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU06",
+    "name": "Bachelor of Culture and Arts Education",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-02",
+          "ELE-08"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "EDU03",
+    "lead": 12,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU07",
+    "name": "Bachelor of Technology and Livelihood Education",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "D",
+        "INT-03": "B",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 5,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-08"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-06",
+        "subjects": [
+          "ACA-16",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "HLT08",
+    "lead": 16,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU07",
+    "name": "Bachelor of Technology and Livelihood Education",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 5,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-08"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-45",
+          "ELE-55",
+          "ELE-07"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "AGR04",
+    "lead": 17,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU08",
+    "name": "Bachelor of Technical-Vocational Teacher Education",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-06",
+        "subjects": [
+          "ACA-16",
+          "ACA-18"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU07",
+    "lead": 17,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "EDU08",
+    "name": "Bachelor of Technical-Vocational Teacher Education",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "B",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-46",
+          "ELE-63",
+          "ELE-38"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ENG02",
+    "lead": 21,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC01",
+    "name": "Psychology (BA/BS)",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-03",
+          "ACA-12"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC05",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC01",
+    "name": "Psychology (BA/BS)",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "B",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-11"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SOC05",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC02",
+    "name": "BS Social Work",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-12",
+          "ACA-15"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "HLT07",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC02",
+    "name": "BS Social Work",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-11"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SOC01",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC03",
+    "name": "Bachelor in Human Services",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-12",
+          "ACA-17"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC02",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC03",
+    "name": "Bachelor in Human Services",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-02",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-39"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SOC02",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC04",
+    "name": "BA Political Science",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-09",
+          "ACA-12"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC06",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC04",
+    "name": "BA Political Science",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-09"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SOC07",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC05",
+    "name": "BA Sociology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-03",
+          "ACA-12"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC01",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC05",
+    "name": "BA Sociology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-11",
+          "ELE-05",
+          "ELE-04"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SOC01",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC06",
+    "name": "BA History",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-12",
+          "ACA-19"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC04",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC06",
+    "name": "BA History",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "D",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-04",
+          "ELE-05"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SOC07",
+    "lead": 3,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC07",
+    "name": "BA Philosophy",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-10",
+          "ACA-12"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC06",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC07",
+    "name": "BA Philosophy",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-06",
+          "ELE-05",
+          "ELE-12"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SOC06",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC08",
+    "name": "Anthropology (BA/BS)",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-06",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-03",
+          "ACA-12"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC05",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC08",
+    "name": "Anthropology (BA/BS)",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "D",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-06",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-08",
+          "ELE-05",
+          "ELE-12"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SOC06",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC09",
+    "name": "Bachelor of Public Administration",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "B",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-07",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-09",
+          "ACA-12"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC04",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC09",
+    "name": "Bachelor of Public Administration",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-07",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-12",
+          "ELE-03"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SOC04",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC10",
+    "name": "Bachelor of Library and Information Science",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-05",
+        "subjects": [
+          "ACA-01",
+          "ACA-10"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "BUS03",
+    "lead": 13,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC10",
+    "name": "Bachelor of Library and Information Science",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-27"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SOC14",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC11",
+    "name": "BS Criminology",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "C",
+        "INT-05": "D",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-03",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-12",
+          "ACA-15"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC09",
+    "lead": 14,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC11",
+    "name": "BS Criminology",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "D",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 5,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-03",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-11"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "EDU04",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC12",
+    "name": "BA Communication",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-10",
+          "ACA-19"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC17",
+    "lead": 17,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC12",
+    "name": "BA Communication",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-62",
+          "ELE-05"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SOC17",
+    "lead": 11,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC13",
+    "name": "BA Broadcasting",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-10",
+          "ACA-14"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC17",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC13",
+    "name": "BA Broadcasting",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-04",
+          "ELE-12",
+          "ELE-05"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "SOC17",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC14",
+    "name": "BA Journalism",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-11",
+          "ACA-19"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC16",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC14",
+    "name": "BA Journalism",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-04"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SOC17",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC15",
+    "name": "BS Development Communication",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-12",
+          "ACA-18"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC06",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC15",
+    "name": "BS Development Communication",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-03",
+          "ELE-43"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SOC02",
+    "lead": 17,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC16",
+    "name": "BA English Language Studies",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-10",
+          "ACA-19"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC17",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC16",
+    "name": "BA English Language Studies",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-05",
+          "ELE-09"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "SOC17",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC17",
+    "name": "BA Literature",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "A",
+        "INT-05": "D",
+        "INT-06": "B",
+        "INT-07": "A",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 5,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-10",
+          "ACA-19"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "SOC16",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC17",
+    "name": "BA Literature",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "C",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 5,
+        "SKL-11": 5,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-04"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "SOC13",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC18",
+    "name": "BA Filipino",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-03",
+        "subjects": [
+          "ACA-11",
+          "ACA-19"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU02",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "SOC18",
+    "name": "BA Filipino",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "D",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 5,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-08",
+          "ELE-04",
+          "ELE-07"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "EDU02",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART01",
+    "name": "Bachelor of Fine Arts",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-09",
+        "subjects": [
+          "ACA-13",
+          "ACA-14"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU06",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART01",
+    "name": "Bachelor of Fine Arts",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-54"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 35,
+    "runnerUp": "ART04",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART02",
+    "name": "Bachelor of Performing Arts",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "D",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-09",
+        "subjects": [
+          "ACA-10",
+          "ACA-14"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ART01",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART02",
+    "name": "Bachelor of Performing Arts",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-10",
+          "ELE-01"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "ART01",
+    "lead": 7,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART03",
+    "name": "Bachelor of Multimedia Arts",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "B",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-09",
+        "subjects": [
+          "ACA-01",
+          "ACA-13"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "EDU06",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART03",
+    "name": "Bachelor of Multimedia Arts",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-54",
+          "ELE-01",
+          "ELE-10"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ART01",
+    "lead": 4,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART04",
+    "name": "BS Interior Design",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "D",
+        "INT-06": "D",
+        "INT-07": "C",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-06",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-09",
+        "subjects": [
+          "ACA-13",
+          "ACA-16"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ART06",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART04",
+    "name": "BS Interior Design",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-06",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-22",
+          "ELE-50",
+          "ELE-54"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ART06",
+    "lead": 14,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART05",
+    "name": "Bachelor of Landscape Architecture",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-06",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-09",
+        "subjects": [
+          "ACA-13",
+          "ACA-18"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ART04",
+    "lead": 13,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART05",
+    "name": "Bachelor of Landscape Architecture",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "D",
+        "INT-07": "D",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-06",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-42",
+          "ELE-01"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 39,
+    "runnerUp": "AGR01",
+    "lead": 14,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART06",
+    "name": "BS Architecture",
+    "flow": "old",
+    "answers": {
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-06",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-09",
+        "subjects": [
+          "ACA-02",
+          "ACA-13"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 38,
+    "runnerUp": "ART04",
+    "lead": 6,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  },
+  {
+    "course": "ART06",
+    "name": "BS Architecture",
+    "flow": "new",
+    "answers": {
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "B",
+        "INT-04": "A",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-06",
+        "CER-12"
+      ],
+      "gwa": 100,
+      "new": {
+        "electives": [
+          "ELE-52",
+          "ELE-21",
+          "ELE-01"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      }
+    },
+    "rank": 1,
+    "score": 43,
+    "runnerUp": "ART04",
+    "lead": 10,
+    "uniqueHighestTotal": true,
+    "hashTieBreakUsed": false,
+    "status": "PASS",
+    "attempts": 1,
+    "extendedSearch": false
+  }
+]

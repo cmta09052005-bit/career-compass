@@ -1,0 +1,1020 @@
+[
+  {
+    "index": 1,
+    "id": "BUS02-old",
+    "course": "BUS02",
+    "name": "BS Management Accounting",
+    "group": "Business and Management",
+    "route": "old",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "C",
+        "INT-03": "A",
+        "INT-04": "B",
+        "INT-05": "C",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 5,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-02",
+        "subjects": [
+          "ACA-08",
+          "ACA-09"
+        ]
+      },
+      "new": {
+        "electives": [],
+        "bestSubjects": []
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": true,
+          "subjects": true
+        },
+        "new": {
+          "electives": false,
+          "bestSubjects": false
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 1",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 2,
+    "id": "ICT01-old",
+    "course": "ICT01",
+    "name": "BS Information Technology",
+    "group": "Computing",
+    "route": "old",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "old",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 5,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-05"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-05",
+        "subjects": [
+          "ACA-01",
+          "ACA-16"
+        ]
+      },
+      "new": {
+        "electives": [],
+        "bestSubjects": []
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": true,
+          "subjects": true
+        },
+        "new": {
+          "electives": false,
+          "bestSubjects": false
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 2",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 3,
+    "id": "ENG01-old",
+    "course": "ENG01",
+    "name": "BS Civil Engineering",
+    "group": "Engineering and Technology",
+    "route": "old",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "B",
+        "INT-04": "B",
+        "INT-05": "B",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 5,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-10"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-01",
+        "subjects": [
+          "ACA-02",
+          "ACA-16"
+        ]
+      },
+      "new": {
+        "electives": [],
+        "bestSubjects": []
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": true,
+          "subjects": true
+        },
+        "new": {
+          "electives": false,
+          "bestSubjects": false
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 3",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 4,
+    "id": "SCI02-old",
+    "course": "SCI02",
+    "name": "BS Marine Biology",
+    "group": "Science and Mathematics",
+    "route": "old",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-06",
+          "ACA-07"
+        ]
+      },
+      "new": {
+        "electives": [],
+        "bestSubjects": []
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": true,
+          "subjects": true
+        },
+        "new": {
+          "electives": false,
+          "bestSubjects": false
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 4",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 5,
+    "id": "AGR01-old",
+    "course": "AGR01",
+    "name": "BS Agriculture",
+    "group": "Agriculture, Fisheries, and Food",
+    "route": "old",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "old",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "C",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "D",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 5,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-10",
+        "CER-13"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-07",
+        "subjects": [
+          "ACA-09",
+          "ACA-18"
+        ]
+      },
+      "new": {
+        "electives": [],
+        "bestSubjects": []
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": true,
+          "subjects": true
+        },
+        "new": {
+          "electives": false,
+          "bestSubjects": false
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 5",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 6,
+    "id": "BUS01-old-GAS-QA",
+    "course": "BUS01",
+    "name": "BS Accountancy",
+    "group": "Business and Management",
+    "route": "old",
+    "qaOnly": true,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "old",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "D",
+        "INT-03": "D",
+        "INT-04": "A",
+        "INT-05": "A",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "A"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": "STR-04",
+        "subjects": [
+          "ACA-02",
+          "ACA-08"
+        ]
+      },
+      "new": {
+        "electives": [],
+        "bestSubjects": []
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": true,
+          "subjects": true
+        },
+        "new": {
+          "electives": false,
+          "bestSubjects": false
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 6",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 7,
+    "id": "HLT01-new",
+    "course": "HLT01",
+    "name": "BS Nursing",
+    "group": "Health and Allied Sciences",
+    "route": "new",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "new",
+      "interests": {
+        "INT-01": "C",
+        "INT-02": "B",
+        "INT-03": "C",
+        "INT-04": "D",
+        "INT-05": "A",
+        "INT-06": "D",
+        "INT-07": "A",
+        "INT-08": "B"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": null,
+        "subjects": []
+      },
+      "new": {
+        "electives": [
+          "ELE-20",
+          "ELE-25",
+          "ELE-37"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": false,
+          "subjects": false
+        },
+        "new": {
+          "electives": true,
+          "bestSubjects": true
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 7",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 8,
+    "id": "EDU01-new",
+    "course": "EDU01",
+    "name": "Bachelor of Elementary Education",
+    "group": "Education and Sports",
+    "route": "new",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "D",
+        "INT-04": "B",
+        "INT-05": "A",
+        "INT-06": "C",
+        "INT-07": "B",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-02"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": null,
+        "subjects": []
+      },
+      "new": {
+        "electives": [
+          "ELE-34",
+          "ELE-06"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": false,
+          "subjects": false
+        },
+        "new": {
+          "electives": true,
+          "bestSubjects": true
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 8",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 9,
+    "id": "SOC01-new",
+    "course": "SOC01",
+    "name": "Psychology (BA/BS)",
+    "group": "Social Sciences, Communication, and Humanities",
+    "route": "new",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "new",
+      "interests": {
+        "INT-01": "B",
+        "INT-02": "A",
+        "INT-03": "C",
+        "INT-04": "B",
+        "INT-05": "D",
+        "INT-06": "C",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 5,
+        "SKL-07": 5,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-09",
+        "CER-11"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": null,
+        "subjects": []
+      },
+      "new": {
+        "electives": [
+          "ELE-11"
+        ],
+        "bestSubjects": [
+          "COR-04"
+        ]
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": false,
+          "subjects": false
+        },
+        "new": {
+          "electives": true,
+          "bestSubjects": true
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 9",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 10,
+    "id": "ART01-new",
+    "course": "ART01",
+    "name": "Bachelor of Fine Arts",
+    "group": "Arts, Design, and Architecture",
+    "route": "new",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "A",
+        "INT-03": "A",
+        "INT-04": "D",
+        "INT-05": "B",
+        "INT-06": "B",
+        "INT-07": "B",
+        "INT-08": "C"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 5,
+        "SKL-10": 5,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-01",
+        "CER-06"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": null,
+        "subjects": []
+      },
+      "new": {
+        "electives": [
+          "ELE-54"
+        ],
+        "bestSubjects": [
+          "COR-03"
+        ]
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": false,
+          "subjects": false
+        },
+        "new": {
+          "electives": true,
+          "bestSubjects": true
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 10",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 11,
+    "id": "BUS01-new",
+    "course": "BUS01",
+    "name": "BS Accountancy",
+    "group": "Business and Management",
+    "route": "new",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "new",
+      "interests": {
+        "INT-01": "A",
+        "INT-02": "C",
+        "INT-03": "D",
+        "INT-04": "D",
+        "INT-05": "D",
+        "INT-06": "B",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 5,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 1,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 1,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 5
+      },
+      "certificates": [
+        "CER-04",
+        "CER-07"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": null,
+        "subjects": []
+      },
+      "new": {
+        "electives": [
+          "ELE-15"
+        ],
+        "bestSubjects": [
+          "COR-01"
+        ]
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": false,
+          "subjects": false
+        },
+        "new": {
+          "electives": true,
+          "bestSubjects": true
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 11",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  },
+  {
+    "index": 12,
+    "id": "SCI01-new",
+    "course": "SCI01",
+    "name": "BS Biology",
+    "group": "Science and Mathematics",
+    "route": "new",
+    "qaOnly": false,
+    "session": {
+      "schemaVersion": 2,
+      "gradeLevel": 12,
+      "pilotSchoolId": null,
+      "route": "new",
+      "interests": {
+        "INT-01": "D",
+        "INT-02": "B",
+        "INT-03": "B",
+        "INT-04": "C",
+        "INT-05": "C",
+        "INT-06": "A",
+        "INT-07": "C",
+        "INT-08": "D"
+      },
+      "skills": {
+        "SKL-01": 1,
+        "SKL-02": 1,
+        "SKL-03": 1,
+        "SKL-04": 1,
+        "SKL-05": 1,
+        "SKL-06": 1,
+        "SKL-07": 1,
+        "SKL-08": 5,
+        "SKL-09": 1,
+        "SKL-10": 1,
+        "SKL-11": 1,
+        "SKL-12": 5,
+        "SKL-13": 1,
+        "SKL-14": 1,
+        "SKL-15": 1
+      },
+      "certificates": [
+        "CER-04",
+        "CER-09"
+      ],
+      "gwa": 100,
+      "old": {
+        "strand": null,
+        "subjects": []
+      },
+      "new": {
+        "electives": [
+          "ELE-19",
+          "ELE-22"
+        ],
+        "bestSubjects": [
+          "COR-02"
+        ]
+      },
+      "valleyProgress": {
+        "gwa": true,
+        "certificates": true,
+        "old": {
+          "strand": false,
+          "subjects": false
+        },
+        "new": {
+          "electives": true,
+          "bestSubjects": true
+        }
+      },
+      "strand": "",
+      "subjects": [],
+      "nickname": "QA replay 12",
+      "yearLevel": "",
+      "avatarId": "wanderer",
+      "reportDownloaded": false,
+      "reportDate": "October 26, 2026",
+      "courseComparison": [],
+      "journalViews": {},
+      "journeyProgress": {
+        "interests": "Completed",
+        "skills": "Completed",
+        "academic": "Completed"
+      }
+    }
+  }
+]

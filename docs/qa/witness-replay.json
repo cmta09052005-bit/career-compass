@@ -1,0 +1,3098 @@
+{
+  "verifiedWitnesses": 170,
+  "additionalQaGas": 1,
+  "cases": 171,
+  "passed": 171,
+  "failed": 0,
+  "gasSearch": {
+    "seed": "career-compass:prompt27:gas-witness:v1",
+    "attempts": 1,
+    "course": "BUS01",
+    "lead": 6
+  },
+  "method": "createEmptySession -> mergeSession / valleyPatch -> normalizeSession -> fromSession -> buildRecommendations -> buildExplorerReport -> real createExplorerReport PDF -> pypdf text extraction. No substitute PDF text model exists; actual emitted PDFs are checked.",
+  "results": [
+    {
+      "id": "BUS01-old",
+      "course": "BUS01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS01-new",
+      "course": "BUS01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS02-old",
+      "course": "BUS02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS02-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS02-new",
+      "course": "BUS02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS02-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS03-old",
+      "course": "BUS03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS03-new",
+      "course": "BUS03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS04-old",
+      "course": "BUS04",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS04-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS04-new",
+      "course": "BUS04",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS04-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS05-old",
+      "course": "BUS05",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS05-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS05-new",
+      "course": "BUS05",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS05-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS06-old",
+      "course": "BUS06",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS06-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS06-new",
+      "course": "BUS06",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS06-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS07-old",
+      "course": "BUS07",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS07-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS07-new",
+      "course": "BUS07",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS07-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS08-old",
+      "course": "BUS08",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS08-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS08-new",
+      "course": "BUS08",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS08-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS09-old",
+      "course": "BUS09",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS09-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS09-new",
+      "course": "BUS09",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS09-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS10-old",
+      "course": "BUS10",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS10-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS10-new",
+      "course": "BUS10",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS10-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ICT01-old",
+      "course": "ICT01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ICT01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ICT01-new",
+      "course": "ICT01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ICT01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ICT02-old",
+      "course": "ICT02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ICT02-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ICT02-new",
+      "course": "ICT02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ICT02-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ICT03-old",
+      "course": "ICT03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ICT03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ICT03-new",
+      "course": "ICT03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ICT03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG01-old",
+      "course": "ENG01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG01-new",
+      "course": "ENG01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG02-old",
+      "course": "ENG02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG02-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG02-new",
+      "course": "ENG02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG02-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG03-old",
+      "course": "ENG03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG03-new",
+      "course": "ENG03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG04-old",
+      "course": "ENG04",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG04-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG04-new",
+      "course": "ENG04",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG04-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG05-old",
+      "course": "ENG05",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG05-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG05-new",
+      "course": "ENG05",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG05-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG06-old",
+      "course": "ENG06",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG06-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG06-new",
+      "course": "ENG06",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG06-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG07-old",
+      "course": "ENG07",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG07-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG07-new",
+      "course": "ENG07",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG07-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG08-old",
+      "course": "ENG08",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG08-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG08-new",
+      "course": "ENG08",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG08-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG09-old",
+      "course": "ENG09",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG09-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG09-new",
+      "course": "ENG09",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG09-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG10-old",
+      "course": "ENG10",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG10-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG10-new",
+      "course": "ENG10",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG10-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG11-old",
+      "course": "ENG11",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG11-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG11-new",
+      "course": "ENG11",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG11-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG12-old",
+      "course": "ENG12",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG12-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG12-new",
+      "course": "ENG12",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG12-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG13-old",
+      "course": "ENG13",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG13-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG13-new",
+      "course": "ENG13",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG13-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG14-old",
+      "course": "ENG14",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG14-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG14-new",
+      "course": "ENG14",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG14-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG15-old",
+      "course": "ENG15",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG15-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ENG15-new",
+      "course": "ENG15",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ENG15-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI01-old",
+      "course": "SCI01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI01-new",
+      "course": "SCI01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI02-old",
+      "course": "SCI02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI02-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true,
+        "careerNotePresent": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI02-new",
+      "course": "SCI02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI02-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true,
+        "careerNotePresent": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI03-old",
+      "course": "SCI03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI03-new",
+      "course": "SCI03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI04-old",
+      "course": "SCI04",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI04-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI04-new",
+      "course": "SCI04",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI04-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI05-old",
+      "course": "SCI05",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI05-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI05-new",
+      "course": "SCI05",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI05-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI06-old",
+      "course": "SCI06",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI06-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI06-new",
+      "course": "SCI06",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI06-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI07-old",
+      "course": "SCI07",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI07-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI07-new",
+      "course": "SCI07",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI07-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI08-old",
+      "course": "SCI08",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI08-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI08-new",
+      "course": "SCI08",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI08-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI09-old",
+      "course": "SCI09",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI09-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI09-new",
+      "course": "SCI09",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI09-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI10-old",
+      "course": "SCI10",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI10-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI10-new",
+      "course": "SCI10",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI10-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI11-old",
+      "course": "SCI11",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI11-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SCI11-new",
+      "course": "SCI11",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SCI11-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "AGR01-old",
+      "course": "AGR01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "AGR01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "AGR01-new",
+      "course": "AGR01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "AGR01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "AGR02-old",
+      "course": "AGR02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "AGR02-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "AGR02-new",
+      "course": "AGR02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "AGR02-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "AGR03-old",
+      "course": "AGR03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "AGR03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "AGR03-new",
+      "course": "AGR03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "AGR03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "AGR04-old",
+      "course": "AGR04",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "AGR04-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "AGR04-new",
+      "course": "AGR04",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "AGR04-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT01-old",
+      "course": "HLT01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT01-new",
+      "course": "HLT01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT02-old",
+      "course": "HLT02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT02-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT02-new",
+      "course": "HLT02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT02-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT03-old",
+      "course": "HLT03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT03-new",
+      "course": "HLT03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT04-old",
+      "course": "HLT04",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT04-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT04-new",
+      "course": "HLT04",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT04-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT05-old",
+      "course": "HLT05",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT05-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT05-new",
+      "course": "HLT05",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT05-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT06-old",
+      "course": "HLT06",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT06-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT06-new",
+      "course": "HLT06",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT06-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT07-old",
+      "course": "HLT07",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT07-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT07-new",
+      "course": "HLT07",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT07-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT08-old",
+      "course": "HLT08",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT08-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT08-new",
+      "course": "HLT08",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT08-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT09-old",
+      "course": "HLT09",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT09-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT09-new",
+      "course": "HLT09",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT09-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT10-old",
+      "course": "HLT10",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT10-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "HLT10-new",
+      "course": "HLT10",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "HLT10-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU01-old",
+      "course": "EDU01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU01-new",
+      "course": "EDU01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU02-old",
+      "course": "EDU02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU02-old",
+        "pages": 7,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU02-new",
+      "course": "EDU02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU02-new",
+        "pages": 7,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU03-old",
+      "course": "EDU03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU03-new",
+      "course": "EDU03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU04-old",
+      "course": "EDU04",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU04-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU04-new",
+      "course": "EDU04",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU04-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU05-old",
+      "course": "EDU05",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU05-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU05-new",
+      "course": "EDU05",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU05-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU06-old",
+      "course": "EDU06",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU06-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU06-new",
+      "course": "EDU06",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU06-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU07-old",
+      "course": "EDU07",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU07-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU07-new",
+      "course": "EDU07",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU07-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU08-old",
+      "course": "EDU08",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU08-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "EDU08-new",
+      "course": "EDU08",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "EDU08-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC01-old",
+      "course": "SOC01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true,
+        "careerNotePresent": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC01-new",
+      "course": "SOC01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true,
+        "careerNotePresent": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC02-old",
+      "course": "SOC02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC02-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC02-new",
+      "course": "SOC02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC02-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC03-old",
+      "course": "SOC03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC03-new",
+      "course": "SOC03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC04-old",
+      "course": "SOC04",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC04-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC04-new",
+      "course": "SOC04",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC04-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC05-old",
+      "course": "SOC05",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC05-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC05-new",
+      "course": "SOC05",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC05-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC06-old",
+      "course": "SOC06",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC06-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC06-new",
+      "course": "SOC06",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC06-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC07-old",
+      "course": "SOC07",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC07-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC07-new",
+      "course": "SOC07",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC07-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC08-old",
+      "course": "SOC08",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC08-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC08-new",
+      "course": "SOC08",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC08-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC09-old",
+      "course": "SOC09",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC09-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC09-new",
+      "course": "SOC09",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC09-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC10-old",
+      "course": "SOC10",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC10-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC10-new",
+      "course": "SOC10",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC10-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC11-old",
+      "course": "SOC11",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC11-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC11-new",
+      "course": "SOC11",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC11-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC12-old",
+      "course": "SOC12",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC12-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC12-new",
+      "course": "SOC12",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC12-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC13-old",
+      "course": "SOC13",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC13-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC13-new",
+      "course": "SOC13",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC13-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC14-old",
+      "course": "SOC14",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC14-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC14-new",
+      "course": "SOC14",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC14-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC15-old",
+      "course": "SOC15",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC15-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC15-new",
+      "course": "SOC15",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC15-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC16-old",
+      "course": "SOC16",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC16-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC16-new",
+      "course": "SOC16",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC16-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC17-old",
+      "course": "SOC17",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC17-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC17-new",
+      "course": "SOC17",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC17-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC18-old",
+      "course": "SOC18",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC18-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "SOC18-new",
+      "course": "SOC18",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "SOC18-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART01-old",
+      "course": "ART01",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART01-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART01-new",
+      "course": "ART01",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART01-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART02-old",
+      "course": "ART02",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART02-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART02-new",
+      "course": "ART02",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART02-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART03-old",
+      "course": "ART03",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART03-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART03-new",
+      "course": "ART03",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART03-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART04-old",
+      "course": "ART04",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART04-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART04-new",
+      "course": "ART04",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART04-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART05-old",
+      "course": "ART05",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART05-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART05-new",
+      "course": "ART05",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART05-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART06-old",
+      "course": "ART06",
+      "route": "old",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART06-old",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "ART06-new",
+      "course": "ART06",
+      "route": "new",
+      "qaOnly": false,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "ART06-new",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    },
+    {
+      "id": "BUS01-old-GAS-QA",
+      "course": "BUS01",
+      "route": "old",
+      "qaOnly": true,
+      "rank": 1,
+      "errors": [],
+      "pdf": {
+        "id": "BUS01-old-GAS-QA",
+        "pages": 6,
+        "missingSections": [],
+        "forbiddenLabels": [],
+        "targetNamePresent": true,
+        "top1NamePresent": true,
+        "ok": true
+      },
+      "ok": true
+    }
+  ]
+}

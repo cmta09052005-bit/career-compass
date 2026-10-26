@@ -251,3 +251,12 @@ body:has(.basecamp) { overflow:hidden; }
 @media(max-height:50rem) {
   .basecamp-step-1 .basecamp-form { gap:7px; margin-top:10px; }
 }
+
+/* Both profile steps use the bounded inner scroller. */
+.basecamp-step-2 .basecamp-inner { display:block; overflow-y:auto; }
+.basecamp-step-1 .basecamp-avatars { flex:none; overflow:visible; max-height:none; margin:8px 0; }
+.basecamp-curriculum { padding-bottom:8px; }
+.basecamp-curriculum .basecamp-choice-face { min-height:54px; border:2px solid #D4A017; background:#F5ECD7; color:#1B2A4A; padding:12px 30px 12px 12px; }
+.basecamp #pilot-school { display:block; width:100%; min-height:48px; margin-top:10px; padding:12px; border:2px solid #D4A017; border-radius:8px; background:#F5ECD7; color:#1B2A4A; font:inherit; }
+.basecamp #pilot-school:focus-visible { outline:3px solid var(--explorer-teal); outline-offset:4px; }
+.basecamp-route-note { padding:12px 16px; border:1px solid #D4A017; border-radius:8px; color:#F5ECD7; font-size:14px; line-height:1.5; }

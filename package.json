@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build && node scripts/build-offline.mjs",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --test lib/*.test.js lib/*.test.mjs lib/i18n/*.test.js lib/scoringV2/*.test.js",
+    "verify": "node scripts/verify-links.mjs && node scripts/verify-reachability.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",

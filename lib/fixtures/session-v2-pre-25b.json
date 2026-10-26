@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 2,
+  "gradeLevel": 12,
+  "pilotSchoolId": null,
+  "nickname": "V2 revision fixture",
+  "avatarId": "navigator",
+  "route": "new",
+  "interests": {
+    "INT-01": "A",
+    "INT-02": "D",
+    "INT-03": "A",
+    "INT-04": "B",
+    "INT-05": "C",
+    "INT-06": "B",
+    "INT-07": "C",
+    "INT-08": "A"
+  },
+  "skills": {
+    "SKL-01": 1,
+    "SKL-02": 1,
+    "SKL-03": 1,
+    "SKL-04": 5,
+    "SKL-05": 5,
+    "SKL-06": 1,
+    "SKL-07": 1,
+    "SKL-08": 1,
+    "SKL-09": 1,
+    "SKL-10": 1,
+    "SKL-11": 1,
+    "SKL-12": 1,
+    "SKL-13": 1,
+    "SKL-14": 1,
+    "SKL-15": 1
+  },
+  "certificates": [
+    "CER-04",
+    "CER-07"
+  ],
+  "gwa": 100,
+  "new": {
+    "electives": [
+      "ELE-18",
+      "ELE-15",
+      "ELE-17"
+    ],
+    "bestSubjects": [
+      "ELE-18",
+      "COR-01",
+      "ELE-16"
+    ],
+    "cluster": "CLU-02"
+  },
+  "old": {
+    "strand": null,
+    "subjects": []
+  },
+  "valleyProgress": {
+    "gwa": true,
+    "certificates": true,
+    "old": {
+      "strand": false,
+      "subjects": false
+    },
+    "new": {
+      "electives": true,
+      "cluster": true,
+      "bestSubjects": true
+    }
+  },
+  "journeyProgress": {
+    "interests": "Completed",
+    "skills": "Completed",
+    "academic": "Completed"
+  }
+}

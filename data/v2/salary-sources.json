@@ -1,0 +1,70 @@
+{
+  "sourceDocument": "College Courses Information.docx",
+  "sourceSha256": "50dad3349797d195bef6bfa653bd8648c638ad9d5ad4dc65b9e70e9f146cbe0d",
+  "heading": "Salary Ranges: Research Sources and Methodology",
+  "methodology": "All amounts are estimated gross monthly salary ranges in Philippine pesos (PHP). They are indicative career-exploration estimates, not guaranteed offers or exact official salary bands. Ranges were built by using typical monthly salary benchmarks published in Jobstreet Philippines' career salary pages for comparable roles and widening those benchmarks to reflect entry-level versus experienced workers, employer size, location, specialization, and differences in job titles. For roles with no directly comparable benchmark, a related occupational family was used as a cautious estimate. Self-employment, freelance work, shipboard work, and roles requiring licensure or advanced training can vary substantially; income may not be regular or directly comparable to employee salaries.",
+  "references": [
+    {
+      "label": "Jobstreet Philippines — Accounting careers and typical monthly salary benchmarks",
+      "url": "https://ph.jobstreet.com/career-advice/browse/accounting",
+      "suffix": ""
+    },
+    {
+      "label": "Jobstreet Philippines — Information & Communication Technology careers and typical monthly salary benchmarks",
+      "url": "https://ph.jobstreet.com/career-advice/browse/information-communication-technology",
+      "suffix": ""
+    },
+    {
+      "label": "Jobstreet Philippines — Engineering careers and typical monthly salary benchmarks",
+      "url": "https://ph.jobstreet.com/career-advice/browse/engineering",
+      "suffix": ""
+    },
+    {
+      "label": "Jobstreet Philippines — Healthcare & Medical careers and typical monthly salary benchmarks",
+      "url": "https://ph.jobstreet.com/career-advice/browse/healthcare-medical",
+      "suffix": ""
+    },
+    {
+      "label": "Jobstreet Philippines — Education & Training careers and typical monthly salary benchmarks",
+      "url": "https://ph.jobstreet.com/career-advice/browse/education-training",
+      "suffix": ""
+    },
+    {
+      "label": "Jobstreet Philippines — High salary careers (cross-industry comparisons)",
+      "url": "https://ph.jobstreet.com/career-advice/browse/high-salary",
+      "suffix": ""
+    },
+    {
+      "label": "Jobstreet Philippines — Accountant salary insights; salary data based on full-time salary ranges disclosed by employers in job ads",
+      "url": "https://ph.jobstreet.com/career-advice/role/accountant/salary",
+      "suffix": ""
+    },
+    {
+      "label": "Jobstreet Philippines — Software Developer salary insights",
+      "url": "https://ph.jobstreet.com/career-advice/role/software-developer/salary",
+      "suffix": ""
+    },
+    {
+      "label": "Indeed Philippines — IT Support Specialist salary data, based on salary reports and job postings",
+      "url": "https://ph.indeed.com/career/it-support-specialist/salaries",
+      "suffix": ""
+    },
+    {
+      "label": "Department of Budget and Management — National Budget Circular No. 601 (2026 tranche of government civilian salary schedule)",
+      "url": "https://www.dbm.gov.ph/index.php/central-office?catid=428&id=3801&view=article",
+      "suffix": ""
+    }
+  ],
+  "interpretationHeading": "How to interpret the estimates",
+  "interpretationNotes": [
+    "The low end is more plausible for entry-level, provincial, smaller-employer, or trainee positions; the high end may reflect experience, specialist skills, larger employers, or higher-paying locations.",
+    "A role listed under a degree program is a possible career path, not a guarantee of employment or salary. Actual pay depends on qualifications, licensure, experience, employer, location, and current market conditions.",
+    "For government positions, the actual salary depends on the position title and salary grade under the applicable government compensation schedule. For regulated professions, verify current licensure and qualification requirements."
+  ],
+  "updateNote": "Salary benchmarks change over time. This guide was updated in October 2026; check the linked salary pages and current job advertisements before making a career or financial decision.",
+  "updatedMonth": "2026-10",
+  "sourceSalaryRangeCount": 463,
+  "sourceCareerSegmentCount": 465,
+  "sourceRangePattern": "₱[\\d,]+–₱[\\d,]+/month",
+  "reviewItemCount": 45
+}

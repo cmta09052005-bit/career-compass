@@ -18,7 +18,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 import "./presentation.css";
-import items from "@/data/items.json";
+import { SKILL_ITEMS } from "@/lib/itemsV2";
+import iconMap from "@/data/v2/icon-map.json";
 import {
   SECTION_STATUS,
   useSessionAnswers,
@@ -28,7 +29,6 @@ import { isValidConfidence } from "@/lib/assessmentValidation";
 
 gsap.registerPlugin(useGSAP);
 
-const SKILL_ITEMS = items.filter((item) => item.section === "Skills");
 const BRIEFING_KEY = "careerCompassForestBriefing";
 
 export default function SkillsPage() {
@@ -37,7 +37,7 @@ export default function SkillsPage() {
   const { session, isReady, updateSession, discardSection } = useSessionAnswers();
   const [activeStatement, setActiveStatement] = useState(null);
   const firstUnanswered = SKILL_ITEMS.findIndex(item => !isValidConfidence(session.skills[item.id]));
-  const statementIndex = activeStatement ?? (firstUnanswered < 0 ? 9 : firstUnanswered);
+  const statementIndex = activeStatement ?? (firstUnanswered < 0 ? SKILL_ITEMS.length - 1 : firstUnanswered);
   function setStatementIndex(next) {
     setActiveStatement(typeof next === "function" ? next(statementIndex) : next);
   }
@@ -77,7 +77,7 @@ export default function SkillsPage() {
       }
     });
   }, { scope: scrollCard, dependencies: [confirming], revertOnUpdate: true });
-  const flavor = statementIndex < 2 ? "Just sprouting" : statementIndex < 5 ? "Taking root" : statementIndex < 8 ? "Branching out" : "In full bloom";
+  const flavor = statementIndex < 4 ? "Just sprouting" : statementIndex < 8 ? "Taking root" : statementIndex < 12 ? "Branching out" : "In full bloom";
   const visibleLeaves = statementIndex + (confirming ? 1 : 0);
 
   function selectConfidence(value) {
@@ -137,14 +137,14 @@ export default function SkillsPage() {
 
   return (
     <JourneyAccess session={session} isReady={isReady} requires={["interests"]}><Localized as="main" className="trail-screen trail-forest game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
-      <div className="forest-light" aria-hidden="true" style={{ opacity: statementIndex / 9 }} />
+      <div className="forest-light" aria-hidden="true" style={{ opacity: statementIndex / (SKILL_ITEMS.length - 1) }} />
       <div className="forest-mist" aria-hidden="true" />
       <Localized as="div" className="forest-fireflies" aria-hidden="true">{Array.from({ length: 12 }, (_, index) => <i key={index} style={{ left: ((index * 29 + 7) % 100) + "%", top: ((index * 17 + 13) % 90) + "%", animationDelay: (-index * 1.7) + "s", animationDuration: (11 + index % 4 * 2) + "s" }} />)}</Localized>
 
       {showBriefing ? <Card ref={scrollCard} className="forest-card forest-briefing relative max-w-3xl">
         {!confirming && <TrailExit onLeave={() => { discardSection("skills"); router.push("/journey"); }} />}
         <Localized as="h1">The Forest</Localized>
-        <Localized as="p">10 statements. Slide to show how confident you feel. There&apos;s no pass or fail here, just be honest with yourself.</Localized>
+        <Localized as="p">15 statements. Slide to show how confident you feel. There&apos;s no pass or fail here, just be honest with yourself.</Localized>
         <Button label="BEGIN" onClick={beginTrail} />
       </Card> : <Card ref={scrollCard} className="forest-card assessment-panel relative max-w-3xl">
         {!confirming && <TrailExit onLeave={() => { discardSection("skills"); router.push("/journey"); }} />}
@@ -152,10 +152,10 @@ export default function SkillsPage() {
         <Localized as="p" className="map-ribbon text-xs font-extrabold tracking-[0.16em] uppercase sm:text-sm">
           The Forest · Statement {statementIndex + 1} of {SKILL_ITEMS.length}
         </Localized>
-        <ForestVine leaves={visibleLeaves} />
+        <ForestVine leaves={visibleLeaves} total={SKILL_ITEMS.length} />
         <Localized as="p" className="forest-flavor">{flavor}</Localized>
 
-        <StatementIcon category={currentItem.category} />
+        <StatementIcon icon={iconMap[currentItem.id]} />
         {/* 35 — Statement text */}
         <Localized as="h1" ref={heading} tabIndex={-1} id="forest-statement" className="mt-8 font-serif text-2xl leading-tight text-balance sm:text-3xl md:text-4xl">
           {currentItem.text}

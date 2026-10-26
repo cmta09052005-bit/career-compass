@@ -20,14 +20,14 @@ const pillars = [
   ["Exploratory", 'No pressure to give the "right" answer. Just discover what fits.', "magnifying-glass"],
   ["Supportive", "Built to guide you, not judge you.", "flag-marker-pin"],
   ["Interactive", "You answer through scenarios and simple sliders, not long, boring forms.", "footprint-trail"],
-  ["Personalized", "Your results are based on you: your interests, your skills, your grades.", "sunburst"],
+  ["Personalized", "Your results are based on you: your interests, skills, subjects, grades and certificates.", "sunburst"],
 ];
 const team = [["Charlene Mae T. Adille", "CA"], ["Juno Alligah B. Romano", "JR"]];
 const faqs = [
   ["Is this an official DepEd tool?", "No. Career Compass is an independent student capstone project, not an official DepEd system. It's meant to support your school's guidance process, not replace it."],
-  ["Will this tell me exactly what course to take?", "No. It gives you a ranked list of course matches to explore based on your answers. The final decision is always yours."],
+  ["Will this tell me exactly what course to take?", "No. It shows your top 5 matches, with all 85 courses to explore. The final decision is always yours."],
   ["Do I need to create an account?", "No. Your progress is saved in this browser on this device, without an account. It's free and open to any Senior High School student."],
-  ["How accurate are the results?", "Career Compass uses a scoring method built with input from real guidance counselors, but it's a guide, not a guarantee. Talk to your counselor, family, or teachers too."],
+  ["How accurate are the results?", "Your matches reflect your answers, but they are a guide, not a guarantee. Talk to your counselor, family, or teachers too."],
 ];
 
 export default function About() {

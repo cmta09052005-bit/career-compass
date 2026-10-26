@@ -18,27 +18,27 @@ import "./how-it-works.css";
 if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const steps = [
-  ["Pick your explorer", "Add your strand and optional name and grade level, then pick an explorer.", "explorer-backpack"],
+  ["Pick your explorer", "Add an optional name and explorer, then choose your grade and curriculum.", "explorer-backpack"],
   ["See the map", "Your journey map shows 3 trails to finish, one at a time. Your compass shows how far you've gone.", "flag-marker-pin"],
-  ["The Mountains", "Answer a few real-life situations about what interests you.", "mountain-peak"],
-  ["The Forest", "Say how confident you feel in different skills.", "pine-branch"],
-  ["The Valley", "Add your grades and best subjects. The last piece of the map.", "ribbon-scroll"],
+  ["The Mountains", "Answer 8 real-life questions about what interests you.", "mountain-peak"],
+  ["The Forest", "Rate your confidence in 15 skill statements.", "pine-branch"],
+  ["The Valley", "Add your subjects, general average and certificates in 4 steps.", "ribbon-scroll"],
   ["Finding your path", "Your answers turn into course matches, in seconds.", "sunburst"],
-  ["The Islands", "See your matches, explore each one, and download your report.", "island-flag"],
+  ["The Islands", "See your top 5 matches, explore all 85 courses, and download your report.", "island-flag"],
 ];
 const trails = [
-  { id: "mountains", name: "The Mountains", type: "Interests", icon: "mountain-peak", format: "8 real-life situations to choose from", description: "There's no right or wrong answer. Every choice tells the system something new about you.", time: "about 3–4 minutes", number: "01" },
-  { id: "forest", name: "The Forest", type: "Skills", icon: "pine-branch", format: '10 quick sliders, from "not really me" to "definitely me"', description: "Covers hands-on, creative, technical, and people skills.", time: "about 2–3 minutes", number: "02" },
-  { id: "valley", name: "The Valley", type: "Academics", icon: "ribbon-scroll", format: "a short step-by-step form", description: "Just your general average and your best subjects.", time: "less than a minute", number: "03" },
+  { id: "mountains", name: "The Mountains", type: "Interests", icon: "mountain-peak", format: "8 real-life questions to choose from", description: "There's no right or wrong answer. Every choice tells the system something new about you.", time: "About 10 to 15 minutes", number: "01" },
+  { id: "forest", name: "The Forest", type: "Skills", icon: "pine-branch", format: '15 skill statements, from "not really me" to "definitely me"', description: "Covers hands-on, creative, technical, and people skills.", time: "About 10 to 15 minutes", number: "02" },
+  { id: "valley", name: "The Valley", type: "Academics", icon: "ribbon-scroll", format: "4 steps, including certificates", description: "Choose subjects for your curriculum, then add your general average and certificates.", time: "About 10 to 15 minutes", number: "03" },
 ];
 const rewards = [["Wayfinder", "mountain-peak"], ["Skillcrafter", "pine-branch"], ["Scholar", "ribbon-scroll"]];
 const outcomes = [
-  ["Up to 24 course matches, ranked just for you", "island-flag"],
-  ["A match score for each one", "sunburst"],
+  ["Top 5 matches, with all 85 courses to explore", "island-flag"],
+  ["Relative compass arcs, with no numeric scores", "sunburst"],
   ["Details for every course, including schools, careers, and tips to get there", "magnifying-glass"],
   ["A downloadable report you can keep or show your guidance counselor", "compass-download"],
 ];
-const trust = [["No login needed", "explorer-backpack"], ["Progress is saved on this device", "fog-mist"], ["Free for all Senior High School students", "sunburst"], ["About 10 minutes, start to finish", "footprint-trail"]];
+const trust = [["No login needed", "explorer-backpack"], ["Progress is saved on this device", "fog-mist"], ["Free for all Senior High School students", "sunburst"], ["About 10 to 15 minutes", "footprint-trail"]];
 function Icon({ name, size = 64, className = "" }) {
   return <Localized as={Image} className={className} src={`/icons/career-compass/${name}.svg`} alt="" width={size} height={size} />;
 }
@@ -133,7 +133,7 @@ export default function HowItWorks() {
           <Card as="div" className="story-panel hiw-trail-paper" {...swipeProps}>
             <div ref={tabPanel} role="tabpanel" id="trail-panel" aria-labelledby={`trail-tab-${trail.id}`} tabIndex={0} className="hiw-tab-content">
               <div className="hiw-trail-art"><Icon name={trail.icon} size={170} /><Localized as="span">TRAIL {trail.number}</Localized></div>
-              <div className="hiw-trail-copy"><Localized as="h3">{trail.name}: {trail.type}</Localized><Localized as="p" className="hiw-format"><Localized as="strong">Format:</Localized> {trail.format}</Localized><Localized as="p">{trail.description}</Localized><Localized as="p" className="hiw-time"><Localized as="span" aria-hidden="true">◷</Localized> Time: {trail.time}</Localized></div>
+              <div className="hiw-trail-copy"><Localized as="h3">{trail.name}: {trail.type}</Localized><Localized as="p" className="hiw-format"><Localized as="strong">Format:</Localized> {trail.format}</Localized><Localized as="p">{trail.description}</Localized><Localized as="p" className="hiw-time"><Localized as="span" aria-hidden="true">◷</Localized> Full journey: {trail.time}</Localized></div>
             </div>
           </Card>
           <Localized as="div" className="carousel-controls" aria-label="Trail carousel controls"><Button className="story-button" label="←" aria-label="Previous trail" onClick={() => slide(-1)} />{trails.map((item, index) => <Localized as="button" key={item.id} type="button" className="carousel-dot" aria-label={`Show ${item.name}`} aria-pressed={selected === index} onClick={() => switchTab(index)} />)}<Button className="story-button" label="→" aria-label="Next trail" onClick={() => slide(1)} /></Localized>

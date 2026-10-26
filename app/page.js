@@ -20,9 +20,9 @@ if (typeof window !== "undefined") gsap.registerPlugin(useGSAP, ScrollTrigger);
 const chapters = [
   { id: "world", name: "The World" },
   { id: "mountains", name: "The Mountains", title: "Discover what pulls you forward.", body: "Pick from real-life situations and find out what interests keep calling you back.", stat: "GUIDED SCENARIOS", count: 8, motif: "mountain-peak", note: "INTERESTS" },
-  { id: "forest", name: "The Forest", title: "Find strength in what you can do.", body: "See how sure you are in different skills, including hands-on, creative, technical, and working with people.", stat: "STRENGTH SIGNALS", count: 10, motif: "pine-branch", note: "SKILLS" },
-  { id: "valley", name: "The Valley", title: "What you've already built matters too.", body: "Add your grades and best subjects. They help complete your journey too.", stat: "A FEW QUICK DETAILS", motif: "ribbon-scroll", note: "ACADEMICS" },
-  { id: "islands", name: "The Islands", title: "See where your journey can take you.", body: "Your interests, strengths, and grades connect to college courses worth checking out.", stat: "POSSIBLE COURSES", count: 24, motif: "island-flag", note: "POSSIBILITIES" },
+  { id: "forest", name: "The Forest", title: "Find strength in what you can do.", body: "See how sure you are in different skills, including hands-on, creative, technical, and working with people.", stat: "STRENGTH SIGNALS", count: 15, motif: "pine-branch", note: "SKILLS" },
+  { id: "valley", name: "The Valley", title: "What you've already built matters too.", body: "Add your subjects, general average and certificates in 4 steps.", stat: "4 STEPS", motif: "ribbon-scroll", note: "ACADEMICS" },
+  { id: "islands", name: "The Islands", title: "See where your journey can take you.", body: "See your top 5 matches, with all 85 courses to explore.", stat: "POSSIBLE COURSES", count: 85, motif: "island-flag", note: "POSSIBILITIES" },
   { id: "ahead", name: "The Journey Ahead" },
 ];
 const explorers = [

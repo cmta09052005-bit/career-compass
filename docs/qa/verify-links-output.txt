@@ -1,0 +1,5 @@
+PASS: 85 unique courses; all referenced IDs exist.
+PASS: every course has 2 interests in different questions, 2 skills, 2 old subjects, 2 certificates, 1 non-GAS strand, 1 core subject, 5 electives.
+PASS: Appendix A strand totals 17/11/20/7/5/7/9/7/2; GAS 0.
+PASS: 425 elective links; all 70 scored rows covered; all 22 Appendix B replacements applied.
+NOTE: 8 interest question prompts are NOT DETERMINED in the supplied rubric; structural verification does not establish content completeness or Rank 1 reachability.

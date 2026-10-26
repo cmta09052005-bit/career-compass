@@ -1,0 +1,3314 @@
+# Course Detail, copy and offline report (Prompt 26)
+
+Branch: v2-rebuild. No commit, staging, deployment or dependency changes. Confidence: high for the implementation and automated checks; real-device and timing limits are listed below.
+
+## Tasks 1 to 4
+
+The pre-change inventory is in docs/copy-inventory.md with file:line references. The detail route now has 85 static parameters from courses-master. Its model reads only courseDataV2, preserves every source salary string and career note, omits null location fields, and groups schools in their stored order: Bicol public, community college, private, then national. Labels and flag notes use the same shared helpers as compare and PDF. No source names, uncoded programs or invented school mappings are displayed.
+
+The six existing tabs, transitions, themed inner scrollbar, arrow-key navigation, comparison toggle and Back to Results remain. Overview includes strengths, group and CHED basis. Study topics are a list; only the last trailing period is removed at display time. Careers retain the peso sign, notes and the separate course career notes. The methodology disclosure uses the one shared source record; all 10 links have target=_blank and rel=noopener noreferrer. Unknown and legacy IDs use notFound, with dynamicParams=false.
+
+Financial Aid, ScholarshipInfoBox, its source footer and the non-course YearLevelTip are unchanged. Their existing financial-aid claims were not researched or revised in this phase. The old category header is replaced by the v2 group, and the watermark uses the existing neutral book icon. No new assets were added.
+
+Landing, How It Works, About, metadata, Journey Guide, tutorial and Results introduction now describe 85 courses, 8 questions, 15 statements, 4 Valley steps with certificates, and top 5 matches with all 85 to explore. Basecamp, map counts, badges and footer already matched the flow; their valid copy was retained. Strand wording remains only for the old route. Relative arcs have no numeric scores or percentages. The existing marketing scroll/parallax behavior is preserved through copy-only edits; no new whole-page scrolling was introduced.
+
+## DRAFT copy
+
+All new UI/metadata strings in the appendix category “new display/metadata copy” and all four school group headings are DRAFT. Numeric count substitutions (15, 85 and 4 STEPS) are also DRAFT. Source course narratives, school names, careers and methodology were copied from existing data without rewriting.
+
+The estimate “About 10 to 15 minutes” is DRAFT. Each trail's timing row now explicitly says “Full journey” so it does not imply this duration per region. A timed learner run remains necessary.
+
+## Tests and verifiers
+
+```text
+ℹ tests 83
+ℹ suites 0
+ℹ pass 82
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 1
+ℹ todo 0
+ℹ duration_ms 2167.8349
+```
+
+The one skip is the pre-existing pilot-school test for the empty user-supplied pilot list. Three new model tests cover all 85 IDs, exact salaries and school order, SCI02/SOC01 careerNotes, BUS02's single school, unknown/legacy IDs and a real community-college derived-location note.
+
+- verify-links: PASS, all 85 course links and rubric structures valid. Its historical note about stems missing from the supplied rubric remains; verify-details separately checks the 8 exact stems copied from the current item bank.
+- verify-details: PASS, 463 salaries/careers, 2 careerNotes, 51 school rows, 297 links, all 85 courses covered; schools per course min 1, max 18. Existing school-source qualifications and ENG04 salary review remain data review items.
+- verify-reachability: PASS 170, WARN 0, TIE 0, FAIL 0; all 170 witnesses re-scored through the real engine. Regenerated witness/report files are byte-identical to the phase baseline.
+- verify-routes: PASS, 96 HTML/RSC route pairs, all corresponding packaged files, matching build/worker manifests and all 85 detail routes.
+- Targeted ESLint on every changed JavaScript file and new model/test/verifier: PASS.
+
+## Build and offline packaging
+
+npm run build includes scripts/build-offline.mjs and passed in 35.4058995 seconds, including offline packaging. Build ID: CdpAwjWI8ZcLQ6-U0-Oca. Packaged route count: 96 (85 details plus 11 existing static routes). Offline resource count: 615; bytes: 51,836,493 (49.44 MiB). Both public/offline-manifest.json and the manifest embedded in public/sw.js contain all 85 course routes. Their packaged HTML and RSC files exist under public/offline-build/. No old course route is present.
+
+The first sandbox build could not resolve the existing Google font host. The approved retry compiled but 11 generation workers exhausted memory. The successful retry used CIRCLE_NODE_TOTAL=2 for that command only; no Next config or font asset was changed. Build time above is the successful attempt only. Next also reports an existing package-lock outside this repository; no unrelated lockfile was changed.
+
+## Browser checks
+
+npm run dev was invoked and detected the existing development server at localhost:3000 (the attempted second instance exited). The existing server was reachable from the in-app browser. Using the saved complete assessment, Results links opened BUS02, SCI02 and ICT01. All six tabs were checked on each, and all three methodology disclosures opened. BUS02 displayed one school. SCI02's non-job note appeared below the five job cards. Original peso salaries and 10 shared source links were verified. Back to Results worked for each course.
+
+The existing comparison dialog for SCI02 and BUS02 showed matching narratives, salaries, note and school labels. Closing comparison and opening BUS02 from Results worked and retained Added to Compare. The dialog has no direct detail link; that pre-existing behavior was preserved. ArrowRight from Overview selected What You'll Study. BSIT-001 displayed “404 / This page could not be found.” Browser error logs were empty before and after the 404 check. Temporary viewport overrides were reset.
+
+Measurements below are actual CSS viewport sizes from the browser, using BUS02. Every row had document horizontal overflow=0 and vertical overflow=0 pixels. Heights refer to the visible role=tabpanel inner region. The salary methodology was expanded for the Careers measurements.
+
+```text
+Viewport   Tab                       clientHeight scrollHeight
+1600x900   Overview                  516          516
+1600x900   Study                     516          516
+1600x900   Schools                   516          516
+1600x900   Careers (expanded)        516          1169
+1600x900   Guidance                  516          516
+1600x900   Financial Aid             516          842
+1280x720   Overview                  336          359
+1280x720   Study                     336          375
+1280x720   Schools                   336          336
+1280x720   Careers (expanded)        336          1169
+1280x720   Guidance                  336          336
+1280x720   Financial Aid             336          842
+950x900    Overview                  519          519
+950x900    Study                     519          519
+950x900    Schools                   519          519
+950x900    Careers (expanded)        519          1345
+950x900    Guidance                  519          519
+950x900    Financial Aid             519          1078
+375x813    Overview                  363          613
+375x813    Study                     363          363
+375x813    Schools                   363          363
+375x813    Careers (expanded)        363          2256
+375x813    Guidance                  363          363
+375x813    Financial Aid             363          2058
+```
+
+## Remaining legacy references, retained for cleanup
+
+- data/explore-courses.json:1: the 24-course detail dataset has no remaining student-screen consumer. Historical translation tests still read it at lib/i18n/translate.test.js:6, and the old PDF utility at tmp/pdfs/verify.mjs:5. Do not delete it in this phase.
+- data/courses.json:1: legacy ranking dataset retained by lib/scoringEngine.integration.test.js:17, lib/scoringEngine.secondarySignals.test.js:16 and lib/scoringEngine.skillBoundary.test.js:17.
+- lib/scoringEngine.js:17 and lib/weightTable.js:13: legacy category engine/weights are unused by active recommendation/detail UI, retained for old tests and scripts/check-strands.mjs:3.
+- lib/reportEvidence.js:1-2,17: unused legacy category evidence helper imports the old item bank and weights; no active import was found.
+- lib/assessmentValidation.js:1,11-15: legacy item-bank helpers remain alongside active v2 section validation, retained for compatibility tests. This module itself remains active, so it is not safe to delete wholesale.
+- data/items.json:1 is still intentionally used by lib/assessmentValidation.test.js:2, lib/i18n/translate.test.js:5, scripts/check-strands.mjs:4 and scripts/verify-details.mjs:17 (original interest-stem comparison). It is not globally unused.
+- Old i18n catalog entries are retained unchanged for the later translation/cleanup phase. No files were deleted.
+
+## NOT DETERMINED and limits
+
+- The DRAFT journey duration has not been measured in a real learner run.
+- Filipino translations are deferred by instruction. Exact full-key gaps are listed below; the existing translator may still substitute known subphrases, producing mixed text. Official course/school names may appropriately remain verbatim, but that decision belongs to the translation phase. Currency ranges, URLs, IDs and CHED citation identifiers are not treated as translation prose.
+- No physical phone, touch interaction, assistive-technology session or real hardware offline-install/airplane-mode run was performed. Offline verification checks generated artifacts and worker manifests, not a fresh service-worker cache on each device.
+- Responsive measurements cover all six BUS02 tabs at all four requested sizes; all 85 courses are covered by model/static-route tests, not individual visual review on each size.
+- Existing financial-aid/source claims, school availability qualifications and the ENG04 salary outlier remain unchanged. No unresolved implementation question was filled with invented data.
+
+## Files and scope
+
+Changed in this phase:
+
+- app/about/About.js
+- app/about/page.js
+- app/how-it-works/HowItWorks.js
+- app/how-it-works/page.js
+- app/journey/page.js
+- app/layout.js
+- app/page.js
+- app/results/[courseId]/FieldJournal.js
+- app/results/[courseId]/journal.css
+- app/results/[courseId]/page.js
+- app/results/page.js
+- components/AtlasTutorial.js
+
+Created:
+
+- lib/courseDetailModel.js
+- lib/courseDetailModel.test.js
+- scripts/verify-routes.mjs
+- docs/copy-inventory.md
+- docs/course-detail-copy-report.md
+
+Regenerated (ignored by the existing .gitignore): public/offline-manifest.json, public/sw.js and public/offline-build/CdpAwjWI8ZcLQ6-U0-Oca/. No file was force-added. SHA-256 comparison against the phase-start snapshot confirms no scoring files, data/v2 content, i18n catalogs, package.json or dependencies changed in this phase. Earlier phase changes were preserved.
+
+Git status at report completion (includes pre-existing work):
+
+```text
+ M app/about/About.js
+ M app/about/page.js
+ M app/how-it-works/HowItWorks.js
+ M app/how-it-works/page.js
+ M app/intake/basecamp.css
+ M app/intake/page.js
+ M app/journey/academic/page.js
+ M app/journey/academic/presentation.css
+ M app/journey/interests/page.js
+ M app/journey/page.js
+ M app/journey/skills/ForestVine.js
+ M app/journey/skills/StatementIcon.js
+ M app/journey/skills/page.js
+ M app/layout.js
+ M app/page.js
+ M app/processing/page.js
+ M app/report/page.js
+ M app/results/CourseMatch.js
+ M app/results/[courseId]/FieldJournal.js
+ M app/results/[courseId]/journal.css
+ M app/results/[courseId]/page.js
+ M app/results/page.js
+ M app/results/results.css
+ M components/AtlasTutorial.js
+ M components/JourneyAccess.js
+ M lib/assessmentValidation.js
+ M lib/assessmentValidation.test.js
+ M lib/browserStorage.js
+ M lib/explorerReport.js
+ M lib/journeyEntry.js
+ M lib/useSessionAnswers.js
+ M package.json
+?? data/v2/
+?? docs/assessment-screens-report.md
+?? docs/copy-inventory.md
+?? docs/data-conversion-report.md
+?? docs/details-schools-report.md
+?? docs/icon-inventory.md
+?? docs/interest-stems-review.md
+?? docs/reachability-report.md
+?? docs/results-pdf-report.md
+?? docs/revision-25b-report.md
+?? docs/rubric-revision-report.md
+?? docs/scoring-v2-report.md
+?? docs/session-flow-report.md
+?? lib/courseDataV2.js
+?? lib/courseDetailModel.js
+?? lib/courseDetailModel.test.js
+?? lib/explainMatch.js
+?? lib/fixtures/
+?? lib/itemIconsV2.js
+?? lib/itemsV2.js
+?? lib/recommendations.js
+?? lib/recommendations.test.js
+?? lib/routeResolution.js
+?? lib/scoringV2/
+?? lib/sessionFlow.test.js
+?? lib/sessionSchema.js
+?? lib/valleySelection.js
+?? lib/valleySelection.test.js
+?? scripts/verify-details.mjs
+?? scripts/verify-links.mjs
+?? scripts/verify-reachability.mjs
+?? scripts/verify-routes.mjs
+?? docs/course-detail-copy-report.md
+!! public/offline-manifest.json
+!! public/sw.js
+```
+
+## Complete English strings lacking a full Filipino counterpart
+
+1545 distinct exact full-key gaps against the combined current Filipino catalogs, with whitespace normalized like the translator. The list includes new display copy and every newly surfaced v2 detail string, including display-only last-topic period removal. Repeated strings are listed once with their origins. This appendix is an inventory, not a translation or a rewrite.
+
+### course content (1379)
+
+- "abnormal psychology"
+  - Origin: SOC01.studyTopics[last] display
+- "abnormal psychology."
+  - Origin: SOC01.studyTopics
+- "abstract algebra"
+  - Origin: SCI06.studyTopics
+- "academic and professional communication"
+  - Origin: SOC16.studyTopics[last] display
+- "academic and professional communication."
+  - Origin: SOC16.studyTopics
+- "academic writing"
+  - Origin: SOC06.studyTopics[last] display; SOC07.studyTopics[last] display
+- "academic writing."
+  - Origin: SOC06.studyTopics; SOC07.studyTopics
+- "Accountant"
+  - Origin: BUS01.careers.title
+- "accounting"
+  - Origin: BUS04.studyTopics
+- "accounting analyst"
+  - Origin: BUS01.careers.title
+- "accounting data analyst"
+  - Origin: BUS03.careers.title
+- "Accounting information systems staff"
+  - Origin: BUS03.careers.title
+- "Accounting principles"
+  - Origin: BUS03.studyTopics
+- "accounting software"
+  - Origin: BUS03.studyTopics
+- "accounting software support"
+  - Origin: BUS03.careers.title
+- "accounting systems"
+  - Origin: BUS01.studyTopics
+- "activity analysis"
+  - Origin: HLT05.studyTopics
+- "actuarial or finance pathway with further preparation"
+  - Origin: SCI07.careers.title
+- "adapted physical education"
+  - Origin: EDU04.studyTopics
+- "Administrative assistant"
+  - Origin: BUS07.careers.title
+- "administrative law"
+  - Origin: SOC09.studyTopics
+- "administrative officer"
+  - Origin: BUS05.careers.title
+- "Administrative officer"
+  - Origin: SOC09.careers.title
+- "advocacy or NGO project assistant"
+  - Origin: SOC02.careers.title
+- "after further preparation."
+  - Origin: HLT09.careers.notes
+- "after meeting applicable education, industry, and certification requirements"
+  - Origin: EDU08.careers.notes
+- "after meeting applicable professional requirements"
+  - Origin: SOC02.careers.notes
+- "after meeting applicable qualification and licensure requirements"
+  - Origin: EDU02.careers.notes; SOC10.careers.notes
+- "after meeting applicable requirements"
+  - Origin: HLT08.careers.notes; EDU03.careers.notes; EDU04.careers.notes; EDU06.careers.notes; EDU07.careers.notes
+- "after meeting applicable teacher qualification and licensure requirements"
+  - Origin: EDU01.careers.notes
+- "after meeting current licensure and registration requirements"
+  - Origin: HLT03.careers.notes
+- "after meeting current licensure requirements"
+  - Origin: HLT02.careers.notes; HLT04.careers.notes; HLT05.careers.notes; HLT06.careers.notes; HLT09.careers.notes; HLT10.careers.notes
+- "after meeting graduation, examination, registration, and employment requirements"
+  - Origin: HLT01.careers.notes
+- "after meeting relevant education and qualification requirements."
+  - Origin: ENG13.careers.notes
+- "after meeting relevant sport-specific requirements."
+  - Origin: EDU04.careers.notes
+- "agricultural economics"
+  - Origin: AGR01.studyTopics
+- "Agricultural engineering staff"
+  - Origin: ENG12.careers.title
+- "agricultural extension assistant"
+  - Origin: AGR01.careers.title
+- "Agricultural machinery"
+  - Origin: ENG12.studyTopics
+- "agricultural project officer"
+  - Origin: ENG12.careers.title
+- "Agricultural technician"
+  - Origin: AGR01.careers.title
+- "Agriculture, Fisheries, and Food"
+  - Origin: AGR01.group; AGR02.group; AGR03.group; AGR04.group
+- "algebra"
+  - Origin: SCI06.studyTopics
+- "algorithms"
+  - Origin: ICT03.studyTopics
+- "Analog and digital electronics"
+  - Origin: ENG04.studyTopics
+- "analytical chemistry"
+  - Origin: SCI03.studyTopics
+- "anatomy"
+  - Origin: HLT06.studyTopics
+- "Anatomy"
+  - Origin: HLT04.studyTopics
+- "anatomy and movement"
+  - Origin: HLT05.studyTopics; EDU04.studyTopics
+- "Animal anatomy and physiology"
+  - Origin: HLT10.studyTopics
+- "animal clinic associate"
+  - Origin: HLT10.careers.title
+- "animal diseases"
+  - Origin: HLT10.studyTopics
+- "animal production"
+  - Origin: HLT10.studyTopics
+- "animal science"
+  - Origin: AGR01.studyTopics
+- "animation"
+  - Origin: ART03.studyTopics
+- "animator"
+  - Origin: ART03.careers.title
+- "announcing"
+  - Origin: SOC13.studyTopics
+- "Anthropology studies human beings, cultures, communities, and societies across time and place. Students learn how people create meaning, organize family and social life, use language, adapt to environments, and understand their own traditions. Depending on the program, it may emphasize cultural, biological, archaeological, or linguistic approaches and often includes field research."
+  - Origin: SOC08.overview
+- "application developer"
+  - Origin: ICT03.careers.title
+- "application support analyst"
+  - Origin: ICT02.careers.title
+- "Applied mechanics"
+  - Origin: SCI05.studyTopics
+- "Applied technical skills"
+  - Origin: ENG13.studyTopics
+- "aquaculture"
+  - Origin: AGR03.studyTopics
+- "aquaculture farm staff"
+  - Origin: AGR03.careers.title
+- "aquaculture or environmental laboratory assistant"
+  - Origin: SCI02.careers.title
+- "aquatic ecology"
+  - Origin: AGR03.studyTopics
+- "archaeology"
+  - Origin: SOC08.studyTopics
+- "Architectural design"
+  - Origin: ART06.studyTopics
+- "Architectural design assistant"
+  - Origin: ART06.careers.title
+- "architectural history"
+  - Origin: ART06.studyTopics
+- "archival research"
+  - Origin: SOC06.studyTopics
+- "archives"
+  - Origin: SOC10.studyTopics
+- "archives or records staff"
+  - Origin: SOC10.careers.title
+- "argument analysis"
+  - Origin: SOC07.studyTopics
+- "art history"
+  - Origin: ART01.studyTopics
+- "art workshop facilitator"
+  - Origin: ART01.careers.title
+- "artificial intelligence concepts"
+  - Origin: ICT03.studyTopics[last] display
+- "artificial intelligence concepts."
+  - Origin: ICT03.studyTopics
+- "arts assessment"
+  - Origin: EDU06.studyTopics
+- "Arts education"
+  - Origin: EDU06.studyTopics
+- "Arts or culture education teacher"
+  - Origin: EDU06.careers.title
+- "arts program assistant"
+  - Origin: EDU06.careers.title
+- "arts program staff"
+  - Origin: ART02.careers.title
+- "Arts, Design, and Architecture"
+  - Origin: ART01.group; ART02.group; ART03.group; ART04.group; ART05.group; ART06.group
+- "Ask about fieldwork, laboratories, farms or community placements, and industry links. Get hands-on experience, follow safety and environmental standards, and check any role-specific registration requirements."
+  - Origin: SOC08.guidanceTips
+- "assessment"
+  - Origin: EDU01.studyTopics; EDU02.studyTopics; EDU04.studyTopics
+- "assessment of practical skills"
+  - Origin: EDU08.studyTopics
+- "assistive devices"
+  - Origin: HLT05.studyTopics
+- "atmospheric instruments"
+  - Origin: SCI11.studyTopics
+- "Atmospheric physics"
+  - Origin: SCI11.studyTopics
+- "audio and video production"
+  - Origin: SOC13.studyTopics
+- "audio or video editor"
+  - Origin: SOC13.careers.title
+- "audit associate"
+  - Origin: BUS01.careers.title
+- "audit evidence"
+  - Origin: BUS04.studyTopics
+- "auditing"
+  - Origin: BUS01.studyTopics
+- "auditing information systems"
+  - Origin: BUS03.studyTopics
+- "audition and portfolio development. Specialization varies by school"
+  - Origin: ART02.studyTopics[last] display
+- "audition and portfolio development. Specialization varies by school."
+  - Origin: ART02.studyTopics
+- "automation support"
+  - Origin: ENG04.careers.title
+- "auxiliary equipment"
+  - Origin: ENG14.studyTopics
+- "BA Broadcasting focuses on producing and presenting audio and video content for radio, television, online platforms, and other broadcast media. Students learn how to research stories, write scripts, operate production equipment, present clearly, edit content, and work as part of a production team. Digital platforms may also be included."
+  - Origin: SOC13.overview
+- "BA Communication studies how messages are created, shared, and understood across people, organizations, media, and communities. Students learn to plan communication, write for different audiences, conduct research, create media content, and understand how communication affects relationships and public opinion."
+  - Origin: SOC12.overview
+- "BA English Language Studies examines how the English language works and how people use it in different settings. Students study language structure, meaning, sound, language learning, and communication across cultures. The course develops strong language analysis and communication skills and may support work in education, writing, research, and language-related services."
+  - Origin: SOC16.overview
+- "BA Filipino studies the Filipino language, its structure and use, Philippine literature, and the role of language in culture and society. Students develop skills in reading, writing, translation, language analysis, and cultural interpretation. The course may support work in education, publishing, communication, research, and language services."
+  - Origin: SOC18.overview
+- "BA History studies past events, people, societies, and ideas by examining records and other evidence. Students learn to ask historical questions, compare sources, understand events in context, and explain how the past relates to the present. The course develops research, writing, careful reading, and evidence-checking skills."
+  - Origin: SOC06.overview
+- "BA Journalism prepares students to find, verify, explain, and present news and public-interest information. Students learn interviewing, research, fact-checking, writing, editing, reporting, and ethical decision-making. The course emphasizes accuracy, fairness, clear language, and protecting sources while working under deadlines."
+  - Origin: SOC14.overview
+- "BA Literature studies written works such as novels, short stories, poetry, drama, and essays to understand their meaning, style, context, and effect. Students learn to interpret texts, compare writers, discuss themes, and write clear arguments supported by evidence. Literature can connect to history, culture, identity, and social issues."
+  - Origin: SOC17.overview
+- "Bachelor of Fine Arts develops students' ability to create and understand visual art. Depending on the school's major, students may work with drawing, painting, sculpture, printmaking, photography, or other forms. They learn artistic techniques, visual communication, art history, critique, and how to develop a personal approach to making art."
+  - Origin: ART01.overview
+- "Bachelor of Industrial Technology is a practical, technology-focused degree that prepares students to apply technical knowledge in industrial and workplace settings. The exact major differs by institution and may involve areas such as manufacturing, electrical technology, electronics, mechanical technology, or other technical fields. Students learn to use tools and equipment, follow safety procedures, troubleshoot problems, and support production or technical services."
+  - Origin: ENG13.overview
+- "Bachelor of Multimedia Arts teaches students to communicate ideas through a mix of visual design, images, sound, animation, video, and digital media. Students learn to plan creative projects, use digital tools, build a portfolio, and design content for audiences and platforms. The exact balance of design, animation, film, and interactive media varies by school."
+  - Origin: ART03.overview
+- "Bachelor of Performing Arts focuses on live performance and the skills needed to create and present work for an audience. Depending on the program, students may specialize in theater, dance, music, or another performance area. They develop technique, interpretation, rehearsal discipline, teamwork, stage awareness, and the ability to communicate ideas through performance."
+  - Origin: ART02.overview
+- "banking or finance staff"
+  - Origin: BUS08.careers.title
+- "based on skills and opportunities"
+  - Origin: SOC13.careers.notes
+- "basic business operations"
+  - Origin: BUS07.studyTopics[last] display
+- "basic business operations."
+  - Origin: BUS07.studyTopics
+- "Becoming a Certified Public Accountant requires meeting current legal and professional requirements, including the applicable licensure examination."
+  - Origin: BUS01.careers.notes
+- "Becoming a licensed architect requires meeting current education, experience, and licensure requirements."
+  - Origin: ART06.careers.notes
+- "behavioral program staff"
+  - Origin: SOC01.careers.title
+- "biodiversity"
+  - Origin: SCI01.studyTopics; AGR02.studyTopics
+- "biodiversity or conservation staff"
+  - Origin: SCI01.careers.title
+- "biology-related roles"
+  - Origin: SCI01.careers.title
+- "biomechanics"
+  - Origin: EDU05.studyTopics
+- "biostatistics"
+  - Origin: HLT07.studyTopics
+- "biosystems"
+  - Origin: ENG12.studyTopics
+- "blood banking"
+  - Origin: HLT03.studyTopics
+- "bridge equipment"
+  - Origin: ENG15.studyTopics
+- "Broadcast writing"
+  - Origin: SOC13.studyTopics
+- "BS Accountancy teaches students how to prepare, examine, explain, and report financial information. Students learn how businesses record money coming in and going out, measure profit and loss, prepare financial statements, follow tax rules, and check whether financial records are correct. The program develops careful judgment, honesty, accuracy, and the ability to explain financial results to managers, owners, government offices, and other users."
+  - Origin: BUS01.overview
+- "BS Accounting Information Systems combines accounting with information technology. Students learn how financial information is collected, processed, stored, protected, and turned into useful reports through computer-based systems. The program looks at both the accuracy of accounting records and the design and control of the systems that handle them."
+  - Origin: BUS03.overview
+- "BS Agricultural and Biosystems Engineering applies engineering to farming, food production, water use, and related biological systems. Students learn to design or improve machines, irrigation, drainage, farm structures, post-harvest systems, and technologies that help agricultural production use resources more effectively and safely."
+  - Origin: ENG12.overview
+- "BS Agriculture studies how to grow crops and manage agricultural production in a productive, safe, and sustainable way. Students learn about soils, plants, pests, farm planning, crop systems, and the business side of agriculture. Depending on the school, students may focus on crops, animal production, soil science, agricultural extension, or related areas."
+  - Origin: AGR01.overview
+- "BS Applied Mathematics uses mathematical models and methods to understand and solve problems from real settings. Students learn to represent situations with equations, analyze data, simulate systems, and compare possible solutions. Applications may include business, engineering, computing, biology, finance, and public planning."
+  - Origin: SCI07.overview
+- "BS Applied Physics uses physics principles to solve practical problems and develop or improve technologies. Students study the same scientific foundations as physics while paying attention to how they are used in devices, materials, measurement, electronics, energy, imaging, and other technical areas. The balance of theory and application depends on the school."
+  - Origin: SCI05.overview
+- "BS Architecture prepares students to plan and design buildings and spaces for the people who use them. Students learn to turn needs into design concepts, draw plans, study building materials and systems, understand site conditions, and consider safety, accessibility, climate, cost, and regulations. Design studio projects combine creativity with technical and practical limits."
+  - Origin: ART06.overview
+- "BS Biology studies living things, including how organisms are built, how they function, how they grow and reproduce, how they evolved, and how they interact with their surroundings. Students learn scientific methods, laboratory techniques, field observation, and how to interpret biological evidence. The program can support work in research, education, environmental projects, and laboratory settings."
+  - Origin: SCI01.overview
+- "BS Business Administration provides a broad understanding of how organizations operate and how people, money, products, and services are managed. Students learn basic principles from several business areas so they can help plan activities, coordinate teams, serve customers, manage resources, and support business goals. Specializations and available subjects vary by school."
+  - Origin: BUS05.overview
+- "BS Chemical Engineering applies chemistry, physics, mathematics, and engineering to turn raw materials into useful products safely and efficiently. Students study how materials are processed at large scale, how heat and fluids move through equipment, how reactions are controlled, and how production quality, cost, and environmental impact are managed."
+  - Origin: ENG06.overview
+- "BS Chemistry studies what substances are made of, how their particles are arranged, and how they change during reactions. Students learn to carry out experiments, measure substances, analyze samples, and explain results. Chemistry is used in areas such as health products, food, materials, energy, environmental testing, and manufacturing."
+  - Origin: SCI03.overview
+- "BS Civil Engineering teaches students to plan, design, build, and maintain structures and infrastructure such as buildings, roads, bridges, drainage systems, and water facilities. Students learn how forces affect structures, how soil and materials behave, how projects are planned, and how to protect public safety. Design work must consider cost, site conditions, environmental effects, and applicable standards."
+  - Origin: ENG01.overview
+- "BS Computer Engineering combines computer hardware and software. Students learn how processors, memory, circuits, and digital systems work, and how software can control or communicate with hardware. The program is useful for designing embedded devices, computer systems, connected products, and other systems where electronics and programming meet."
+  - Origin: ENG05.overview
+- "BS Computer Science studies the principles behind computing and how to create software and algorithms that solve problems. Students learn to break complex tasks into clear steps, analyze how efficiently solutions work, and understand the ideas behind programming languages, data, and computer systems. Compared with more operations-focused IT programs, it usually places stronger emphasis on computation, algorithms, and theory."
+  - Origin: ICT03.overview
+- "BS Criminology studies crime, criminal behavior, the justice system, law enforcement, investigation, and crime prevention. Students learn about criminal law, evidence, public safety, corrections, and the social factors related to crime. The degree does not by itself guarantee entry into a particular uniformed service; recruitment, examinations, fitness, and agency requirements still apply."
+  - Origin: SOC11.overview
+- "BS Development Communication uses communication to support social and community development. Students learn to understand community needs, plan information campaigns, create useful messages, work with different groups, and evaluate whether communication activities help people understand issues or take part in programs."
+  - Origin: SOC15.overview
+- "BS Electrical Engineering studies how electrical energy is generated, transmitted, distributed, controlled, and used. Students learn to design and assess electrical systems, interpret circuit behavior, work with power equipment, and consider safety and reliability. Depending on electives, the program may cover power systems, control, electronics, and energy technologies."
+  - Origin: ENG03.overview
+- "BS Electronics Engineering focuses on electronic circuits and devices that sense, process, transmit, and control signals. Students learn how components work together in communication equipment, embedded devices, instrumentation, automation, and electronic systems. They study both the design of circuits and the testing needed to check that systems work as intended."
+  - Origin: ENG04.overview
+- "BS Entrepreneurship teaches students how to identify a business opportunity and turn it into a workable venture. Students learn to study customer needs, test business ideas, prepare business plans, estimate costs, price products, promote offers, manage daily operations, and assess risks. The program also helps students understand that starting a business involves research, planning, uncertainty, and ongoing adjustment."
+  - Origin: BUS06.overview
+- "BS Environmental Science studies how natural systems work and how human activities affect air, water, land, wildlife, and communities. Students learn to measure environmental conditions, understand pollution and resource use, assess possible impacts, and support conservation or environmental management. The field combines ideas from biology, chemistry, earth science, and social studies."
+  - Origin: SCI09.overview
+- "BS Fisheries studies fish and other aquatic resources and how they can be managed, raised, harvested, and protected. Students learn about aquatic ecosystems, fish biology, aquaculture, fishing methods, resource assessment, and rules designed to support sustainable fisheries and coastal livelihoods."
+  - Origin: AGR03.overview
+- "BS Food Technology applies science and technology to make food safe, good in quality, and suitable for storage, transport, and sale. Students learn how food is processed, preserved, packaged, tested, and developed. They study how to prevent contamination, maintain quality, and improve products while following food safety rules."
+  - Origin: AGR04.overview
+- "BS Forestry focuses on managing forests, trees, watersheds, and forest resources while protecting biodiversity and supporting responsible use. Students learn how forests grow, how to measure and map forest areas, how to restore damaged land, and how to balance conservation with the needs of communities and industries."
+  - Origin: AGR02.overview
+- "BS Geodetic Engineering measures and represents the Earth's surface and the position of points on it. Students learn to collect accurate location and land data, make maps, determine property boundaries, and use surveying instruments and digital mapping tools. The work supports construction, land administration, infrastructure, mapping, and environmental projects."
+  - Origin: ENG08.overview
+- "BS Geology studies the Earth, including rocks, minerals, landforms, earthquakes, volcanoes, and the processes that shape the planet over time. Students learn to read geological maps, examine samples, conduct field surveys, and understand Earth resources and natural hazards. Geology can support mining, construction, water studies, environmental work, and hazard assessment."
+  - Origin: SCI10.overview
+- "BS Hospitality Management teaches students how to manage services that make guests feel welcome and cared for. It commonly covers hotels, restaurants, food and beverage service, guest relations, housekeeping, events, and hospitality operations. Students learn service standards, staff coordination, cost control, safety, and how to respond professionally to guest needs."
+  - Origin: BUS10.overview
+- "BS Industrial Engineering focuses on improving systems that involve people, materials, equipment, information, time, and money. Students learn to study how work is done, find delays or waste, plan production, improve quality, manage supply chains, and use data to make operations more efficient, safe, and reliable."
+  - Origin: ENG07.overview
+- "BS Information Systems connects business needs with computer-based systems. Students learn how to understand an organization's work, identify information problems, design or improve systems, organize data, and help people use technology effectively. The program sits between business and computing: graduates need to understand both how an organization works and how systems can support it."
+  - Origin: ICT02.overview
+- "BS Information Technology focuses on using, building, maintaining, and protecting computer-based solutions for real needs. Students learn to develop websites and applications, manage databases and networks, support users, maintain systems, and apply basic cybersecurity practices. The program often emphasizes putting technology to work in organizations rather than focusing only on the theory behind computing."
+  - Origin: ICT01.overview
+- "BS Interior Design focuses on planning indoor spaces so they are useful, safe, comfortable, and visually appealing. Students learn how people use spaces, how to arrange furniture and lighting, how to select colors and materials, and how to communicate design ideas through drawings, plans, and presentations. Designs must consider access, building rules, budget, and client needs."
+  - Origin: ART04.overview
+- "BS Internal Auditing prepares students to review an organization's processes, records, and controls to see whether work is being done correctly, safely, efficiently, and according to rules. Students learn to identify risks, test evidence, find weaknesses, and recommend improvements. Internal auditors help management protect resources and improve operations; they do not simply look for mistakes or fraud."
+  - Origin: BUS04.overview
+- "BS Management Accounting focuses on using financial information to help an organization plan, control costs, set prices, prepare budgets, and make business decisions. Unlike a program focused mainly on reporting past financial results, it gives strong attention to internal reports that help managers understand performance and choose what to do next. Students learn to connect numbers with business goals."
+  - Origin: BUS02.overview
+- "BS Marine Biology studies life in seas, oceans, coastal waters, and other marine environments. Students examine marine organisms, food webs, habitats such as coral reefs and mangroves, and the effects of pollution, climate, fishing, and coastal development. The program combines biology with fieldwork, laboratory analysis, and conservation."
+  - Origin: SCI02.overview
+- "BS Marine Engineering prepares students to operate, maintain, and troubleshoot the machinery and technical systems on ships. Students study engines, power generation, pumps, fuel and cooling systems, electrical equipment, and shipboard safety. Training commonly includes practical work and sea-service requirements governed by maritime rules and the chosen career path."
+  - Origin: ENG14.overview
+- "BS Marine Transportation prepares students for work related to navigating and operating ships and managing safe voyages. Students learn navigation, chart use, ship handling, cargo operations, weather awareness, maritime communication, and safety procedures. Professional progression depends on required training, sea service, examinations, and maritime certificates."
+  - Origin: ENG15.overview
+- "BS Materials Engineering studies how the structure and properties of materials affect their performance. Students learn why metals, ceramics, polymers, composites, and other materials behave differently, how they are processed, and how to choose or improve materials for products, buildings, electronics, vehicles, and industrial equipment."
+  - Origin: ENG10.overview
+- "BS Mathematics studies patterns, quantities, structures, and logical relationships. Students learn to build proofs, solve abstract problems, and understand mathematical ideas that support science, computing, finance, and many other fields. The program emphasizes clear reasoning and precision rather than only doing routine calculations."
+  - Origin: SCI06.overview
+- "BS Mechanical Engineering focuses on machines, moving parts, energy, heating and cooling, and mechanical systems. Students learn how to design, analyze, build, operate, and maintain equipment used in factories, buildings, transport, energy systems, and many other settings. The course combines scientific principles with design, testing, and practical engineering decisions."
+  - Origin: ENG02.overview
+- "BS Metallurgical Engineering focuses on extracting metals from ores and improving the properties and performance of metals. Students learn how minerals are processed, how metals are produced and refined, and how heat treatment and other methods affect strength, hardness, and durability. The field supports mining, metal production, manufacturing, and materials testing."
+  - Origin: ENG11.overview
+- "BS Meteorology studies the atmosphere and the processes that create weather and climate. Students learn to read weather observations, understand pressure and wind, analyze clouds and rainfall, use forecasting models, and explain weather-related risks. The program combines physics, mathematics, computer tools, and careful interpretation of changing data."
+  - Origin: SCI11.overview
+- "BS Mining Engineering teaches students how to plan and manage the safe and responsible recovery of minerals from the ground. Students study the location and nature of mineral deposits, mine design, drilling and blasting principles, equipment, ventilation, ground stability, and environmental protection. The program emphasizes worker safety and careful management of land and resources."
+  - Origin: ENG09.overview
+- "BS Nursing prepares students to care for people who are ill, recovering, or trying to stay healthy. Students learn to assess patients, provide nursing care, give medicines safely under proper orders, support families, prevent infection, and work with other health professionals. Clinical training helps students apply classroom knowledge in real care settings while following patient safety and professional rules."
+  - Origin: HLT01.overview
+- "BS Nutrition and Dietetics studies how food and nutrients affect health, growth, activity, and recovery from illness. Students learn to assess food intake and nutrition needs, plan balanced meals, support people with special dietary needs, and promote healthy eating in homes, hospitals, schools, and communities."
+  - Origin: HLT08.overview
+- "BS Occupational Therapy helps people take part in daily activities that matter to them, such as dressing, eating, learning, working, playing, and caring for themselves. Students learn how physical, thinking, sensory, emotional, and environmental factors affect everyday tasks. They practice assessing needs and adapting activities, tools, or spaces to support independence and participation."
+  - Origin: HLT05.overview
+- "BS Office Administration prepares students to keep an office organized and help its daily work run smoothly. Students learn to manage documents, schedules, records, meetings, communication, office technology, and basic administrative processes. The program emphasizes professional behavior, confidentiality, accuracy, and service to staff, clients, and visitors."
+  - Origin: BUS07.overview
+- "BS Pharmacy studies medicines: how they are made, how they work in the body, how they are used safely, and how they should be stored and supplied. Students learn to understand prescriptions, explain proper medicine use, identify possible risks, and support safe treatment. The course includes laboratory science and patient-focused pharmacy practice."
+  - Origin: HLT02.overview
+- "BS Physical Therapy prepares students to help people improve movement, strength, balance, and physical function after injury, illness, surgery, or disability. Students learn to assess movement, plan exercises and other treatment, track progress, teach safe movement, and work with patients toward practical daily goals."
+  - Origin: HLT04.overview
+- "BS Physics studies the basic rules that describe matter, energy, motion, forces, light, electricity, and the universe. Students use mathematics, experiments, and models to explain natural events and solve quantitative problems. The program develops a strong base for research and technical work, often requiring further study for specialized scientist positions."
+  - Origin: SCI04.overview
+- "BS Public Health focuses on protecting and improving the health of groups and communities, not only treating one patient at a time. Students learn how diseases spread, how living conditions affect health, how to plan prevention programs, how to use health data, and how public services can reduce health risks and inequalities."
+  - Origin: HLT07.overview
+- "BS Radiologic Technology trains students to produce medical images that help health professionals examine the body. Students learn to position patients, operate imaging equipment, follow radiation safety practices, check image quality, and care for patients during procedures. The program combines anatomy, technology, and safe clinical practice."
+  - Origin: HLT06.overview
+- "BS Social Work prepares students to support individuals, families, groups, and communities facing social, personal, or practical challenges. Students learn how to assess needs, connect people with services, support their rights, help communities organize, and work ethically with people in difficult situations. Field education is an important part of learning."
+  - Origin: SOC02.overview
+- "BS Statistics teaches students how to collect, organize, analyze, and explain data so that decisions are based on evidence. Students learn how to design surveys and experiments, summarize information, measure uncertainty, and decide what conclusions the data can support. The course also teaches the limits of data and why careful methods matter."
+  - Origin: SCI08.overview
+- "BS Tourism Management focuses on planning, promoting, and managing travel and tourism services and destinations. Students learn how trips are organized, how tourism businesses serve visitors, how destinations can attract guests, and how tourism affects local communities, culture, and the environment. The program combines service skills with planning, marketing, and operations."
+  - Origin: BUS09.overview
+- "budget analyst"
+  - Origin: BUS02.careers.title
+- "budget or finance staff"
+  - Origin: BUS01.careers.title
+- "budgeting"
+  - Origin: BUS02.studyTopics
+- "building systems"
+  - Origin: ART04.studyTopics
+- "building technology"
+  - Origin: ART06.studyTopics
+- "business analyst"
+  - Origin: BUS02.careers.title
+- "Business analyst"
+  - Origin: ICT02.careers.title
+- "Business and Management"
+  - Origin: BUS01.group; BUS02.group; BUS03.group; BUS04.group; BUS05.group; BUS06.group; BUS07.group; BUS08.group; BUS09.group; BUS10.group
+- "business communication"
+  - Origin: BUS05.studyTopics; BUS07.studyTopics
+- "business development associate"
+  - Origin: BUS05.careers.title; BUS06.careers.title
+- "business finance"
+  - Origin: BUS02.studyTopics; BUS05.studyTopics
+- "business information systems"
+  - Origin: BUS03.studyTopics
+- "business intelligence assistant"
+  - Origin: ICT02.careers.title
+- "business law"
+  - Origin: BUS01.studyTopics; BUS05.studyTopics[last] display; BUS06.studyTopics[last] display
+- "business law."
+  - Origin: BUS05.studyTopics; BUS06.studyTopics
+- "business or government data support"
+  - Origin: SCI08.careers.title
+- "business planning"
+  - Origin: BUS06.studyTopics
+- "business processes"
+  - Origin: BUS04.studyTopics; ICT02.studyTopics
+- "CAD or BIM staff"
+  - Origin: ART06.careers.title
+- "calculus"
+  - Origin: SCI07.studyTopics
+- "Calculus"
+  - Origin: SCI06.studyTopics
+- "campaign design"
+  - Origin: SOC15.studyTopics
+- "campaign or media project staff"
+  - Origin: SOC12.careers.title
+- "campaign planning"
+  - Origin: SOC12.studyTopics
+- "cargo handling"
+  - Origin: ENG15.studyTopics
+- "case coordination"
+  - Origin: SOC03.studyTopics
+- "case management staff"
+  - Origin: SOC02.careers.title
+- "case support worker"
+  - Origin: SOC03.careers.title
+- "casework"
+  - Origin: SOC02.studyTopics
+- "Cataloging and classification"
+  - Origin: SOC10.studyTopics
+- "Cell biology"
+  - Origin: SCI01.studyTopics
+- "ceramics"
+  - Origin: ENG10.studyTopics
+- "Check laboratory, studio, workshop, and industry-partner access at the school. Build a portfolio of projects, follow safety standards, and verify any required internship, certification, or licensure."
+  - Origin: ENG11.guidanceTips; ENG12.guidanceTips; ENG13.guidanceTips; ENG14.guidanceTips; AGR03.guidanceTips; EDU06.guidanceTips; EDU08.guidanceTips; SOC15.guidanceTips
+- "chemical reactions"
+  - Origin: ENG06.studyTopics; SCI03.studyTopics
+- "chemical testing assistant"
+  - Origin: SCI03.careers.title
+- "Child development"
+  - Origin: EDU01.studyTopics
+- "child development program assistant"
+  - Origin: EDU03.careers.title
+- "child health and safety"
+  - Origin: EDU03.studyTopics
+- "circuits"
+  - Origin: ENG04.studyTopics
+- "Civil engineering staff"
+  - Origin: ENG01.careers.title
+- "Classical mechanics"
+  - Origin: SCI04.studyTopics
+- "classroom management"
+  - Origin: EDU01.studyTopics; EDU02.studyTopics
+- "client services staff"
+  - Origin: SOC03.careers.title
+- "climate"
+  - Origin: SCI11.studyTopics
+- "climate and resources"
+  - Origin: SCI09.studyTopics
+- "climate research assistant"
+  - Origin: SCI11.careers.title
+- "clinic nurse"
+  - Origin: HLT01.careers.title
+- "clinical and community pharmacy"
+  - Origin: HLT02.studyTopics[last] display
+- "clinical and community pharmacy."
+  - Origin: HLT02.studyTopics
+- "clinical and field practice"
+  - Origin: HLT10.studyTopics[last] display
+- "clinical and field practice."
+  - Origin: HLT10.studyTopics
+- "Clinical chemistry"
+  - Origin: HLT03.studyTopics
+- "clinical internship"
+  - Origin: HLT03.studyTopics[last] display; HLT06.studyTopics
+- "clinical internship."
+  - Origin: HLT03.studyTopics
+- "clinical or research assistant"
+  - Origin: HLT04.careers.title
+- "clinical practice"
+  - Origin: HLT01.studyTopics[last] display; HLT04.studyTopics[last] display; HLT08.studyTopics[last] display
+- "clinical practice and ethics"
+  - Origin: HLT09.studyTopics[last] display
+- "clinical practice and ethics."
+  - Origin: HLT09.studyTopics
+- "clinical practice."
+  - Origin: HLT01.studyTopics; HLT04.studyTopics; HLT08.studyTopics
+- "clinical training"
+  - Origin: HLT05.studyTopics[last] display
+- "clinical training."
+  - Origin: HLT05.studyTopics
+- "coach"
+  - Origin: EDU04.careers.title
+- "coaching basics"
+  - Origin: EDU04.studyTopics
+- "coaching support"
+  - Origin: EDU05.careers.title
+- "coastal management assistant"
+  - Origin: AGR03.careers.title
+- "coastal resource project staff"
+  - Origin: SCI02.careers.title
+- "codes"
+  - Origin: ART04.studyTopics; ART06.studyTopics
+- "cognition"
+  - Origin: SOC01.studyTopics
+- "collaboration"
+  - Origin: ART02.studyTopics
+- "color and form"
+  - Origin: ART01.studyTopics
+- "communication"
+  - Origin: ENG15.studyTopics[last] display; SOC03.studyTopics
+- "Communication assistant"
+  - Origin: SOC12.careers.title
+- "communication planning"
+  - Origin: SOC15.studyTopics
+- "communication project assistant"
+  - Origin: SOC15.careers.title
+- "Communication theory"
+  - Origin: SOC12.studyTopics
+- "communication."
+  - Origin: ENG15.studyTopics
+- "communications"
+  - Origin: ENG04.studyTopics
+- "communications staff"
+  - Origin: SOC07.careers.title; SOC16.careers.title; SOC18.careers.title
+- "communications writer"
+  - Origin: SOC14.careers.title
+- "community arts"
+  - Origin: EDU06.studyTopics
+- "community arts educator"
+  - Origin: EDU06.careers.title
+- "community development staff"
+  - Origin: SOC05.careers.title
+- "community development worker"
+  - Origin: SOC02.careers.title
+- "community health"
+  - Origin: HLT01.studyTopics
+- "Community health"
+  - Origin: HLT07.studyTopics
+- "community health nurse"
+  - Origin: HLT01.careers.title
+- "community health project staff"
+  - Origin: HLT07.careers.title
+- "community media"
+  - Origin: SOC15.studyTopics
+- "community nutrition"
+  - Origin: HLT08.studyTopics
+- "community nutrition staff"
+  - Origin: HLT08.careers.title
+- "community or cultural project staff"
+  - Origin: SOC08.careers.title
+- "community or hospital pharmacy staff"
+  - Origin: HLT02.careers.title
+- "community oral health worker in qualified roles"
+  - Origin: HLT09.careers.title
+- "community organizing"
+  - Origin: SOC02.studyTopics
+- "community outreach staff"
+  - Origin: SOC03.careers.title; SOC15.careers.title
+- "community relations assistant"
+  - Origin: SOC12.careers.title
+- "community relations staff"
+  - Origin: SOC04.careers.title
+- "community services"
+  - Origin: SOC03.studyTopics
+- "community studies"
+  - Origin: SOC08.studyTopics
+- "community support roles"
+  - Origin: SOC01.careers.title
+- "community-based care"
+  - Origin: HLT05.studyTopics
+- "comparative politics"
+  - Origin: SOC04.studyTopics
+- "Compare the school’s facilities, supervised practicum or clinical placement, and accreditation. Strengthen communication, careful documentation, and ethical practice; check current registration requirements for regulated roles."
+  - Origin: ENG10.guidanceTips; SCI01.guidanceTips; SCI02.guidanceTips; SCI04.guidanceTips; SCI05.guidanceTips; SCI06.guidanceTips; SCI09.guidanceTips; AGR04.guidanceTips; HLT01.guidanceTips; HLT07.guidanceTips; HLT08.guidanceTips; EDU03.guidanceTips; EDU07.guidanceTips; SOC01.guidanceTips
+- "Compare the school’s practical facilities and industry placement opportunities. Build customer-service, teamwork, language, and problem-solving skills, and gain experience through supervised work or internships."
+  - Origin: SOC06.guidanceTips
+- "competency-based training"
+  - Origin: EDU08.studyTopics
+- "compliance"
+  - Origin: BUS04.studyTopics
+- "compliance associate"
+  - Origin: BUS04.careers.title
+- "composites"
+  - Origin: ENG10.studyTopics
+- "composition"
+  - Origin: ART01.studyTopics
+- "computation"
+  - Origin: SCI04.studyTopics[last] display; SCI07.studyTopics
+- "computation."
+  - Origin: SCI04.studyTopics
+- "computational methods"
+  - Origin: SCI05.studyTopics
+- "computer architecture"
+  - Origin: ICT03.studyTopics; ENG05.studyTopics
+- "Computer engineering staff"
+  - Origin: ENG05.careers.title
+- "computer-aided design"
+  - Origin: ART04.studyTopics; ART06.studyTopics
+- "Computing"
+  - Origin: ICT01.group; ICT02.group; ICT03.group
+- "conservation"
+  - Origin: SCI09.studyTopics
+- "conservation project staff"
+  - Origin: SCI09.careers.title
+- "conservation worker"
+  - Origin: SCI02.careers.title; AGR02.careers.title
+- "constitutional systems"
+  - Origin: SOC04.studyTopics
+- "construction documentation staff"
+  - Origin: ART06.careers.title
+- "construction management"
+  - Origin: ENG01.studyTopics
+- "construction materials"
+  - Origin: ENG01.studyTopics
+- "content creator"
+  - Origin: ART03.careers.title
+- "content editor"
+  - Origin: SOC16.careers.title
+- "content writer"
+  - Origin: SOC12.careers.title
+- "control"
+  - Origin: ENG04.studyTopics
+- "control systems"
+  - Origin: ENG02.studyTopics[last] display; ENG03.studyTopics
+- "control systems."
+  - Origin: ENG02.studyTopics
+- "copy editor"
+  - Origin: SOC14.careers.title
+- "coral reefs and mangroves"
+  - Origin: SCI02.studyTopics
+- "corporate communications staff"
+  - Origin: SOC12.careers.title
+- "corrections"
+  - Origin: SOC11.studyTopics
+- "corrections support"
+  - Origin: SOC11.careers.title
+- "corrosion"
+  - Origin: ENG11.studyTopics
+- "corrosion or failure analysis assistant"
+  - Origin: ENG11.careers.title
+- "Cost accounting"
+  - Origin: BUS02.studyTopics
+- "cost analyst"
+  - Origin: BUS02.careers.title
+- "cost and management accounting"
+  - Origin: BUS01.studyTopics
+- "counseling"
+  - Origin: HLT08.studyTopics
+- "counseling skills"
+  - Origin: SOC02.studyTopics
+- "creative practice"
+  - Origin: EDU06.studyTopics
+- "creative workshop facilitator"
+  - Origin: EDU06.careers.title
+- "creative writing"
+  - Origin: SOC17.studyTopics
+- "crime prevention"
+  - Origin: SOC11.studyTopics
+- "crime research assistant"
+  - Origin: SOC11.careers.title
+- "Criminal law"
+  - Origin: SOC11.studyTopics
+- "criminalistics"
+  - Origin: SOC11.studyTopics
+- "criminological theory"
+  - Origin: SOC11.studyTopics
+- "Criminology-related roles and public safety career pathways"
+  - Origin: SOC11.careers.title
+- "crisis support"
+  - Origin: SOC02.studyTopics
+- "critique"
+  - Origin: ART01.studyTopics
+- "crop production"
+  - Origin: AGR01.studyTopics
+- "Crop science"
+  - Origin: AGR01.studyTopics
+- "cultural and social history"
+  - Origin: SOC06.studyTopics
+- "Cultural anthropology"
+  - Origin: SOC08.studyTopics
+- "cultural context"
+  - Origin: SOC17.studyTopics
+- "cultural project staff"
+  - Origin: EDU06.careers.title
+- "cultural studies"
+  - Origin: EDU06.studyTopics
+- "cultural tourism support"
+  - Origin: SOC06.careers.title
+- "culture"
+  - Origin: SOC05.studyTopics; SOC18.studyTopics
+- "curriculum support staff"
+  - Origin: EDU02.careers.title
+- "customer relations staff"
+  - Origin: BUS05.careers.title
+- "customer service"
+  - Origin: BUS07.studyTopics; BUS09.studyTopics
+- "cybersecurity support analyst"
+  - Origin: ICT01.careers.title
+- "dance or performance instructor with suitable qualifications"
+  - Origin: ART02.careers.title
+- "data analysis"
+  - Origin: BUS08.studyTopics[last] display; SCI09.studyTopics[last] display
+- "data analysis."
+  - Origin: BUS08.studyTopics; SCI09.studyTopics
+- "data analyst"
+  - Origin: BUS08.careers.title; SCI08.careers.title
+- "Data analyst"
+  - Origin: SCI07.careers.title
+- "data and reporting"
+  - Origin: ICT02.studyTopics
+- "data management"
+  - Origin: SCI08.studyTopics
+- "data or actuarial pathway with additional relevant training"
+  - Origin: SCI06.careers.title
+- "data or technical roles"
+  - Origin: SCI04.careers.title
+- "data security"
+  - Origin: BUS03.studyTopics[last] display
+- "data security."
+  - Origin: BUS03.studyTopics
+- "data structures"
+  - Origin: ICT03.studyTopics
+- "database concepts"
+  - Origin: BUS03.studyTopics
+- "database support staff"
+  - Origin: ICT01.careers.title
+- "databases"
+  - Origin: ICT01.studyTopics; ICT02.studyTopics; ICT03.studyTopics; SOC10.studyTopics
+- "decision support"
+  - Origin: BUS02.studyTopics[last] display
+- "decision support."
+  - Origin: BUS02.studyTopics
+- "Deck cadet"
+  - Origin: ENG15.careers.title
+- "dental clinic associate"
+  - Origin: HLT09.careers.title
+- "dental materials"
+  - Origin: HLT09.studyTopics
+- "dental research or education"
+  - Origin: HLT09.careers.title
+- "Dentist"
+  - Origin: HLT09.careers.title
+- "depending on additional skills and experience."
+  - Origin: BUS08.careers.notes
+- "depending on portfolio and opportunities."
+  - Origin: ART01.careers.notes
+- "design engineer assistant"
+  - Origin: ENG02.careers.title
+- "design principles"
+  - Origin: ART04.studyTopics
+- "design standards"
+  - Origin: ENG01.studyTopics[last] display
+- "design standards."
+  - Origin: ENG01.studyTopics
+- "design studio"
+  - Origin: ART04.studyTopics[last] display; ART06.studyTopics[last] display
+- "design studio assistant"
+  - Origin: ART06.careers.title
+- "design studio staff"
+  - Origin: ART04.careers.title
+- "design studio."
+  - Origin: ART04.studyTopics; ART06.studyTopics
+- "destination management"
+  - Origin: BUS09.studyTopics
+- "destination marketing assistant"
+  - Origin: BUS09.careers.title
+- "Detail-oriented students who enjoy numbers, organized records, problem-solving, and following clear rules. Helpful strengths include patience, accuracy, integrity, and communication."
+  - Origin: BUS01.interestsStrengths
+- "Develop research, ethical judgment, writing, and communication skills. Join supervised fieldwork, internships, or community projects, and verify any additional graduate study, certification, or licensure needed for your intended role."
+  - Origin: SOC03.guidanceTips; SOC04.guidanceTips; SOC14.guidanceTips; ART01.guidanceTips
+- "development"
+  - Origin: BUS08.studyTopics
+- "Development communication staff"
+  - Origin: SOC15.careers.title
+- "Development theory"
+  - Origin: SOC15.studyTopics
+- "developmental psychology"
+  - Origin: SOC01.studyTopics
+- "diagnostics"
+  - Origin: HLT10.studyTopics
+- "diet therapy"
+  - Origin: HLT08.studyTopics
+- "Dietitian or nutrition-related professional"
+  - Origin: HLT08.careers.title
+- "differential equations"
+  - Origin: SCI06.studyTopics; SCI07.studyTopics
+- "digital broadcasting"
+  - Origin: SOC13.studyTopics[last] display
+- "digital broadcasting."
+  - Origin: SOC13.studyTopics
+- "digital content producer"
+  - Origin: SOC13.careers.title
+- "digital illustration"
+  - Origin: ART03.studyTopics
+- "digital libraries"
+  - Origin: SOC10.studyTopics
+- "Digital logic"
+  - Origin: ENG05.studyTopics
+- "digital media"
+  - Origin: SOC12.studyTopics
+- "disaster-risk and environmental project support"
+  - Origin: SCI11.careers.title
+- "discourse"
+  - Origin: SOC16.studyTopics
+- "discrete mathematics"
+  - Origin: ICT03.studyTopics
+- "disease prevention"
+  - Origin: HLT07.studyTopics
+- "dispensing"
+  - Origin: HLT02.studyTopics
+- "Doctor of Dental Medicine prepares students to prevent, identify, and treat problems involving the teeth, gums, mouth, and related areas. Students study oral health, disease, dental materials, patient assessment, and treatment methods, then develop practical skills through supervised clinical training. The course requires careful hand skills, attention to detail, and respectful patient care."
+  - Origin: HLT09.overview
+- "Doctor of Veterinary Medicine prepares students to protect animal health and welfare and to help prevent diseases that can affect both animals and people. Students learn to examine animals, understand diseases, use diagnostic methods, provide treatment, support animal production, and follow public health and food safety practices."
+  - Origin: HLT10.overview
+- "document controller"
+  - Origin: BUS07.careers.title
+- "document preparation"
+  - Origin: BUS07.studyTopics
+- "drama"
+  - Origin: SOC17.studyTopics
+- "Drawing"
+  - Origin: ART01.studyTopics
+- "drawing and visualization"
+  - Origin: ART05.studyTopics
+- "drilling and blasting"
+  - Origin: ENG09.studyTopics
+- "drilling operations staff"
+  - Origin: ENG09.careers.title
+- "during training or as permitted by law"
+  - Origin: HLT01.careers.notes
+- "Early child development"
+  - Origin: EDU03.studyTopics
+- "Early childhood teacher or educator"
+  - Origin: EDU03.careers.title
+- "early learning center coordinator trainee"
+  - Origin: EDU03.careers.title
+- "early literacy and numeracy"
+  - Origin: EDU03.studyTopics
+- "ecology"
+  - Origin: SCI01.studyTopics; ART05.studyTopics
+- "Ecology"
+  - Origin: SCI09.studyTopics
+- "economic history"
+  - Origin: BUS08.studyTopics
+- "economic or policy analyst assistant"
+  - Origin: BUS08.careers.title
+- "Economics studies how people, businesses, and governments make choices when resources are limited. Students examine prices, jobs, production, trade, inflation, poverty, public spending, and economic growth. They learn to use data and economic ideas to explain patterns, compare policies, and understand how decisions affect households, businesses, and society. BA and BS versions may differ in emphasis, especially in mathematics and quantitative analysis."
+  - Origin: BUS08.overview
+- "editing"
+  - Origin: SOC13.studyTopics; SOC14.studyTopics; SOC18.studyTopics[last] display
+- "editing."
+  - Origin: SOC18.studyTopics
+- "editorial assistant"
+  - Origin: SOC14.careers.title
+- "Editorial assistant"
+  - Origin: SOC17.careers.title
+- "Education and Sports"
+  - Origin: EDU01.group; EDU02.group; EDU03.group; EDU04.group; EDU05.group; EDU06.group; EDU07.group; EDU08.group
+- "education pathway"
+  - Origin: SOC07.careers.title
+- "education program assistant"
+  - Origin: EDU01.careers.title; EDU02.careers.title
+- "educational psychology"
+  - Origin: EDU02.studyTopics
+- "educational technology"
+  - Origin: EDU01.studyTopics; EDU02.studyTopics; EDU07.studyTopics
+- "Electric circuits"
+  - Origin: ENG03.studyTopics
+- "electrical design"
+  - Origin: ENG03.studyTopics
+- "electrical design staff"
+  - Origin: ENG03.careers.title
+- "Electrical engineering staff"
+  - Origin: ENG03.careers.title
+- "electrical machines"
+  - Origin: ENG03.studyTopics
+- "electrical systems"
+  - Origin: ENG14.studyTopics
+- "electricity and magnetism"
+  - Origin: SCI04.studyTopics
+- "electronics"
+  - Origin: ENG05.studyTopics; SCI05.studyTopics
+- "electronics design or test assistant"
+  - Origin: ENG04.careers.title
+- "Electronics engineering staff"
+  - Origin: ENG04.careers.title
+- "electronics testing"
+  - Origin: ENG04.studyTopics[last] display
+- "electronics testing."
+  - Origin: ENG04.studyTopics
+- "Elementary school teacher"
+  - Origin: EDU01.careers.title
+- "embedded programming"
+  - Origin: ENG05.studyTopics
+- "embedded systems"
+  - Origin: ENG04.studyTopics
+- "embedded systems developer"
+  - Origin: ENG04.careers.title; ENG05.careers.title
+- "energy or device applications"
+  - Origin: SCI05.studyTopics
+- "energy systems"
+  - Origin: ENG02.studyTopics
+- "engine-room operations"
+  - Origin: ENG14.studyTopics
+- "engine-room rating or officer pathway"
+  - Origin: ENG14.careers.title
+- "Engineering and Technology"
+  - Origin: ENG01.group; ENG02.group; ENG03.group; ENG04.group; ENG05.group; ENG06.group; ENG07.group; ENG08.group; ENG09.group; ENG10.group; ENG11.group; ENG12.group; ENG13.group; ENG14.group; ENG15.group
+- "engineering mathematics"
+  - Origin: ENG01.studyTopics
+- "English teaching pathway with the appropriate education qualifications"
+  - Origin: SOC16.careers.title
+- "enterprise systems"
+  - Origin: ICT02.studyTopics
+- "entrepreneurship"
+  - Origin: BUS05.studyTopics; EDU07.studyTopics
+- "environmental and safety practices"
+  - Origin: ENG11.studyTopics[last] display
+- "environmental and safety practices."
+  - Origin: ENG11.studyTopics
+- "environmental assessment"
+  - Origin: SCI09.studyTopics
+- "environmental chemistry"
+  - Origin: SCI09.studyTopics
+- "environmental compliance staff"
+  - Origin: ENG09.careers.title
+- "environmental consultant support"
+  - Origin: SCI09.careers.title
+- "environmental design"
+  - Origin: ART06.studyTopics
+- "environmental design staff"
+  - Origin: ART05.careers.title
+- "environmental engineering"
+  - Origin: ENG06.studyTopics[last] display
+- "environmental engineering."
+  - Origin: ENG06.studyTopics
+- "environmental health"
+  - Origin: HLT07.studyTopics
+- "environmental laboratory or field technician"
+  - Origin: SCI09.careers.title
+- "environmental management"
+  - Origin: ENG09.studyTopics[last] display
+- "environmental management."
+  - Origin: ENG09.studyTopics
+- "environmental monitoring staff"
+  - Origin: SCI09.careers.title
+- "Environmental officer assistant"
+  - Origin: SCI09.careers.title
+- "environmental planning"
+  - Origin: ART05.studyTopics[last] display
+- "environmental planning."
+  - Origin: ART05.studyTopics
+- "environmental policy"
+  - Origin: SCI09.studyTopics
+- "environmental program staff"
+  - Origin: AGR02.careers.title
+- "environmental project assistant"
+  - Origin: SCI01.careers.title
+- "environmental protection"
+  - Origin: ENG12.studyTopics[last] display
+- "environmental protection."
+  - Origin: ENG12.studyTopics
+- "epidemiology"
+  - Origin: HLT07.studyTopics
+- "epidemiology or research assistant"
+  - Origin: HLT07.careers.title
+- "equipment operation"
+  - Origin: ENG13.studyTopics
+- "equipment or field service staff"
+  - Origin: ENG12.careers.title
+- "ergonomics"
+  - Origin: ENG07.studyTopics
+- "ERP or CRM support"
+  - Origin: ICT02.careers.title
+- "ERP support staff"
+  - Origin: BUS03.careers.title
+- "ethics"
+  - Origin: SOC02.studyTopics[last] display; SOC03.studyTopics; SOC07.studyTopics; SOC11.studyTopics[last] display
+- "ethics and professional practice"
+  - Origin: BUS01.studyTopics[last] display
+- "ethics and professional practice."
+  - Origin: BUS01.studyTopics
+- "ethics or policy support"
+  - Origin: SOC07.careers.title
+- "ethics."
+  - Origin: SOC02.studyTopics; SOC11.studyTopics
+- "ethnography"
+  - Origin: SOC08.studyTopics
+- "events"
+  - Origin: BUS09.studyTopics; BUS10.studyTopics
+- "events assistant"
+  - Origin: BUS09.careers.title
+- "events coordinator"
+  - Origin: BUS10.careers.title
+- "evolution"
+  - Origin: SCI01.studyTopics
+- "executive assistant"
+  - Origin: BUS07.careers.title
+- "exercise and fitness"
+  - Origin: EDU04.studyTopics
+- "Exercise physiology"
+  - Origin: EDU05.studyTopics
+- "experimental design"
+  - Origin: SCI08.studyTopics
+- "exploration staff"
+  - Origin: SCI10.careers.title
+- "extension"
+  - Origin: AGR01.studyTopics
+- "extension communication"
+  - Origin: SOC15.studyTopics
+- "Extractive metallurgy"
+  - Origin: ENG11.studyTopics
+- "fact-checking"
+  - Origin: SOC14.studyTopics
+- "fact-checking or content research staff"
+  - Origin: SOC14.careers.title
+- "failure analysis"
+  - Origin: ENG10.studyTopics
+- "failure analysis assistant"
+  - Origin: ENG10.careers.title
+- "family and community"
+  - Origin: SOC05.studyTopics
+- "family engagement"
+  - Origin: EDU03.studyTopics
+- "family-business manager"
+  - Origin: BUS06.careers.title
+- "farm entrepreneur"
+  - Origin: AGR01.careers.title
+- "farm input or sales representative"
+  - Origin: AGR01.careers.title
+- "farm machinery specialist"
+  - Origin: ENG12.careers.title
+- "farm management"
+  - Origin: AGR01.studyTopics
+- "farm or crop production supervisor trainee"
+  - Origin: AGR01.careers.title
+- "farm structures"
+  - Origin: ENG12.studyTopics
+- "field mapping"
+  - Origin: SCI10.studyTopics
+- "field practice"
+  - Origin: SOC02.studyTopics
+- "field sampling"
+  - Origin: SCI09.studyTopics
+- "fieldwork"
+  - Origin: SOC03.studyTopics[last] display
+- "fieldwork."
+  - Origin: SOC03.studyTopics
+- "Filipino grammar"
+  - Origin: SOC18.studyTopics
+- "Filipino teaching pathway"
+  - Origin: SOC18.careers.title
+- "finance and costing"
+  - Origin: BUS06.studyTopics
+- "finance associate"
+  - Origin: BUS02.careers.title
+- "Financial accounting"
+  - Origin: BUS01.studyTopics
+- "financial analysis"
+  - Origin: BUS02.studyTopics
+- "financial planning staff"
+  - Origin: BUS02.careers.title
+- "financial reporting"
+  - Origin: BUS01.studyTopics
+- "financial reporting staff"
+  - Origin: BUS01.careers.title
+- "firmware developer"
+  - Origin: ENG05.careers.title
+- "Fish biology"
+  - Origin: AGR03.studyTopics
+- "fish capture and gear"
+  - Origin: AGR03.studyTopics
+- "fish health"
+  - Origin: AGR03.studyTopics
+- "fish quality or post-harvest staff"
+  - Origin: AGR03.careers.title
+- "fisheries management"
+  - Origin: AGR03.studyTopics
+- "fisheries resource project staff"
+  - Origin: AGR03.careers.title
+- "Fisheries technician"
+  - Origin: AGR03.careers.title
+- "fisheries-related biology"
+  - Origin: SCI02.studyTopics
+- "fitness assessment"
+  - Origin: EDU05.studyTopics
+- "fitness or recreation staff within qualifications"
+  - Origin: EDU04.careers.title
+- "Fitness trainer or exercise program staff"
+  - Origin: EDU05.careers.title
+- "fluid mechanics"
+  - Origin: ENG02.studyTopics
+- "food and beverage service"
+  - Origin: BUS10.studyTopics
+- "food and beverage staff"
+  - Origin: BUS10.careers.title
+- "Food chemistry"
+  - Origin: AGR04.studyTopics
+- "food laboratory analyst"
+  - Origin: AGR04.careers.title
+- "food microbiology"
+  - Origin: AGR04.studyTopics
+- "food processing supervisor trainee"
+  - Origin: AGR04.careers.title
+- "Food quality assurance staff"
+  - Origin: AGR04.careers.title
+- "food regulations"
+  - Origin: AGR04.studyTopics[last] display
+- "food regulations."
+  - Origin: AGR04.studyTopics
+- "food safety"
+  - Origin: AGR04.studyTopics
+- "food safety assistant"
+  - Origin: AGR04.careers.title
+- "food science"
+  - Origin: HLT08.studyTopics
+- "food service management"
+  - Origin: BUS10.studyTopics
+- "food service supervisor trainee"
+  - Origin: HLT08.careers.title
+- "food service systems"
+  - Origin: HLT08.studyTopics
+- "forecasting"
+  - Origin: SCI11.studyTopics
+- "forensic basics"
+  - Origin: SOC11.studyTopics
+- "Forest ecology"
+  - Origin: AGR02.studyTopics
+- "forest inventory"
+  - Origin: AGR02.studyTopics
+- "forest inventory technician"
+  - Origin: AGR02.careers.title
+- "forest or watershed project assistant"
+  - Origin: AGR02.careers.title
+- "forest policy"
+  - Origin: AGR02.studyTopics
+- "forest protection"
+  - Origin: AGR02.studyTopics
+- "Forestry field staff"
+  - Origin: AGR02.careers.title
+- "freelance artist"
+  - Origin: ART01.careers.title
+- "front office"
+  - Origin: BUS10.studyTopics
+- "front office staff"
+  - Origin: BUS10.careers.title
+- "furniture"
+  - Origin: ART04.studyTopics
+- "furniture or materials consultant"
+  - Origin: ART04.careers.title
+- "further study can lead to specialized research roles."
+  - Origin: SCI02.careerNotes
+- "further study is generally needed for specialized psychology and clinical roles."
+  - Origin: SOC01.careerNotes
+- "gallery or arts project staff"
+  - Origin: ART01.careers.title
+- "game developer"
+  - Origin: ICT03.careers.title
+- "General psychology"
+  - Origin: SOC01.studyTopics
+- "genetics"
+  - Origin: SCI01.studyTopics
+- "geodesy"
+  - Origin: ENG08.studyTopics
+- "geographic information systems"
+  - Origin: ENG08.studyTopics
+- "geological hazards"
+  - Origin: SCI10.studyTopics[last] display
+- "geological hazards."
+  - Origin: SCI10.studyTopics
+- "geological survey staff"
+  - Origin: SCI10.careers.title
+- "Geology field or laboratory assistant"
+  - Origin: SCI10.careers.title
+- "geometry"
+  - Origin: SCI06.studyTopics
+- "geomorphology"
+  - Origin: SCI10.studyTopics
+- "geophysics"
+  - Origin: SCI10.studyTopics
+- "geospatial technician"
+  - Origin: ENG08.careers.title
+- "geotechnical engineering"
+  - Origin: ENG01.studyTopics
+- "geotechnical or environmental project assistant"
+  - Origin: SCI10.careers.title
+- "governance"
+  - Origin: BUS04.studyTopics; SOC04.studyTopics[last] display
+- "governance support staff"
+  - Origin: BUS04.careers.title
+- "governance."
+  - Origin: SOC04.studyTopics
+- "government budgeting"
+  - Origin: SOC09.studyTopics
+- "Government or legislative staff"
+  - Origin: SOC04.careers.title
+- "government program assistant"
+  - Origin: SOC09.careers.title
+- "Grammar and language structure"
+  - Origin: SOC16.studyTopics
+- "Graphic design"
+  - Origin: ART03.studyTopics
+- "graphic designer"
+  - Origin: ART03.careers.title
+- "groundwater"
+  - Origin: SCI10.studyTopics
+- "group work"
+  - Origin: SOC02.studyTopics
+- "guest relations associate"
+  - Origin: BUS10.careers.title
+- "hardware design"
+  - Origin: ENG05.studyTopics
+- "hardware test engineer assistant"
+  - Origin: ENG05.careers.title
+- "hatchery assistant"
+  - Origin: AGR03.careers.title
+- "hazard or groundwater research assistant"
+  - Origin: SCI10.careers.title
+- "Health and Allied Sciences"
+  - Origin: HLT01.group; HLT02.group; HLT03.group; HLT04.group; HLT05.group; HLT06.group; HLT07.group; HLT08.group; HLT09.group; HLT10.group
+- "health assessment"
+  - Origin: HLT01.studyTopics
+- "health education"
+  - Origin: EDU04.studyTopics
+- "health policy"
+  - Origin: HLT07.studyTopics
+- "health policy support"
+  - Origin: HLT07.careers.title
+- "health promotion"
+  - Origin: HLT07.studyTopics
+- "health promotion staff"
+  - Origin: HLT07.careers.title
+- "heat treatment"
+  - Origin: ENG11.studyTopics
+- "heating, ventilation and air conditioning"
+  - Origin: ENG02.studyTopics
+- "helping skills"
+  - Origin: SOC03.studyTopics
+- "hematology"
+  - Origin: HLT03.studyTopics
+- "heritage"
+  - Origin: EDU06.studyTopics
+- "heritage or museum assistant"
+  - Origin: SOC08.careers.title
+- "heritage project staff"
+  - Origin: SOC06.careers.title
+- "historical methods"
+  - Origin: SOC06.studyTopics
+- "historiography"
+  - Origin: SOC06.studyTopics
+- "history educator after appropriate qualifications"
+  - Origin: SOC06.careers.title
+- "history of philosophy"
+  - Origin: SOC07.studyTopics
+- "hospitality entrepreneur"
+  - Origin: BUS10.careers.title
+- "hospitality marketing"
+  - Origin: BUS10.studyTopics
+- "Hotel operations"
+  - Origin: BUS10.studyTopics
+- "Hotel or restaurant supervisor trainee"
+  - Origin: BUS10.careers.title
+- "housekeeping"
+  - Origin: BUS10.studyTopics
+- "Human anatomy and physiology"
+  - Origin: HLT01.studyTopics
+- "Human behavior"
+  - Origin: SOC02.studyTopics
+- "Human development"
+  - Origin: HLT05.studyTopics; SOC03.studyTopics
+- "human diversity"
+  - Origin: SOC08.studyTopics[last] display
+- "human diversity."
+  - Origin: SOC08.studyTopics
+- "human evolution"
+  - Origin: SOC08.studyTopics
+- "Human nutrition"
+  - Origin: HLT08.studyTopics
+- "human resources"
+  - Origin: BUS05.studyTopics; SOC09.studyTopics
+- "human resources assistant"
+  - Origin: BUS05.careers.title
+- "Human resources assistant"
+  - Origin: SOC01.careers.title
+- "human resources or market research support"
+  - Origin: SOC05.careers.title
+- "Human services assistant"
+  - Origin: SOC03.careers.title
+- "Human Services focuses on helping people find and use services that support their well-being. Students learn about human needs, community resources, communication, service coordination, and ways to support people facing personal or social difficulties. The exact focus and professional scope can vary by institution and local employer requirements."
+  - Origin: SOC03.overview
+- "HVAC staff"
+  - Origin: ENG02.careers.title
+- "hydraulics"
+  - Origin: ENG01.studyTopics
+- "illustrator"
+  - Origin: ART01.careers.title
+- "image evaluation"
+  - Origin: HLT06.studyTopics
+- "imaging applications support"
+  - Origin: HLT06.careers.title
+- "imaging department staff in hospitals and diagnostic centers"
+  - Origin: HLT06.careers.title
+- "imaging equipment"
+  - Origin: HLT06.studyTopics
+- "imaging physics"
+  - Origin: HLT06.studyTopics
+- "immunology"
+  - Origin: HLT03.studyTopics
+- "in hospitals, clinics, public health, research, or diagnostic centers"
+  - Origin: HLT03.careers.notes
+- "inclusive education"
+  - Origin: EDU01.studyTopics; EDU02.studyTopics
+- "inclusive learning"
+  - Origin: EDU03.studyTopics
+- "independent artist"
+  - Origin: ART02.careers.title
+- "Industrial engineer trainee"
+  - Origin: ENG07.careers.title
+- "information literacy"
+  - Origin: SOC10.studyTopics
+- "information or advocacy officer"
+  - Origin: SOC15.careers.title
+- "information organization"
+  - Origin: SOC10.studyTopics
+- "information security"
+  - Origin: ICT01.studyTopics
+- "information specialist"
+  - Origin: SOC10.careers.title
+- "innovation"
+  - Origin: BUS06.studyTopics
+- "innovation project assistant"
+  - Origin: BUS06.careers.title
+- "inorganic chemistry"
+  - Origin: SCI03.studyTopics
+- "institutions"
+  - Origin: SOC05.studyTopics
+- "instructional materials developer"
+  - Origin: EDU08.careers.title
+- "instructional methods"
+  - Origin: EDU08.studyTopics
+- "instrumentation"
+  - Origin: ENG03.studyTopics; ENG04.studyTopics; SCI03.studyTopics; SCI05.studyTopics
+- "Instrumentation or testing assistant"
+  - Origin: SCI05.careers.title
+- "instrumentation support"
+  - Origin: SCI04.careers.title
+- "instrumentation technician"
+  - Origin: ENG04.careers.title
+- "interactive media"
+  - Origin: ART03.studyTopics
+- "Interior design assistant"
+  - Origin: ART04.careers.title
+- "Internal audit associate"
+  - Origin: BUS04.careers.title
+- "Internal audit methods"
+  - Origin: BUS04.studyTopics
+- "internal controls"
+  - Origin: BUS03.studyTopics; BUS04.studyTopics
+- "international relations"
+  - Origin: SOC04.studyTopics
+- "international trade"
+  - Origin: BUS08.studyTopics
+- "interpretation"
+  - Origin: ART02.studyTopics
+- "interviewing"
+  - Origin: SOC14.studyTopics
+- "investigation"
+  - Origin: SOC11.studyTopics
+- "investigation or security staff"
+  - Origin: SOC11.careers.title
+- "investigative methods"
+  - Origin: SOC14.studyTopics
+- "IoT developer"
+  - Origin: ENG05.careers.title
+- "irrigation and drainage"
+  - Origin: ENG12.studyTopics
+- "irrigation project assistant"
+  - Origin: ENG12.careers.title
+- "IT audit associate"
+  - Origin: BUS03.careers.title
+- "IT governance"
+  - Origin: ICT02.studyTopics[last] display
+- "IT governance."
+  - Origin: ICT02.studyTopics
+- "IT project coordinator"
+  - Origin: ICT02.careers.title
+- "IT support"
+  - Origin: ICT01.studyTopics
+- "IT support specialist"
+  - Origin: ICT01.careers.title
+- "junior software developer"
+  - Origin: ICT01.careers.title
+- "kinesiology"
+  - Origin: HLT04.studyTopics
+- "knowledge and reality"
+  - Origin: SOC07.studyTopics
+- "laboratory analyst"
+  - Origin: SCI05.careers.title
+- "Laboratory analyst"
+  - Origin: SCI03.careers.title
+- "laboratory management"
+  - Origin: HLT03.studyTopics
+- "laboratory methods"
+  - Origin: SCI01.studyTopics; SCI04.studyTopics
+- "Laboratory or research assistant"
+  - Origin: SCI04.careers.title
+- "laboratory research"
+  - Origin: SCI05.studyTopics[last] display
+- "laboratory research."
+  - Origin: SCI05.studyTopics
+- "laboratory safety"
+  - Origin: SCI03.studyTopics
+- "laboratory staff"
+  - Origin: HLT03.careers.title
+- "Land and engineering surveying"
+  - Origin: ENG08.studyTopics
+- "land laws and boundary work"
+  - Origin: ENG08.studyTopics[last] display
+- "land laws and boundary work."
+  - Origin: ENG08.studyTopics
+- "land survey team member"
+  - Origin: ENG08.careers.title
+- "landform"
+  - Origin: ART05.studyTopics
+- "Landscape Architecture teaches students to plan and design outdoor spaces such as parks, gardens, campuses, public areas, and landscape settings around buildings. Students learn how people use outdoor places and how plants, land shape, water, climate, and built features work together. Designs aim to be useful, attractive, safe, and environmentally responsible."
+  - Origin: ART05.overview
+- "landscape construction"
+  - Origin: ART05.studyTopics
+- "landscape construction coordinator"
+  - Origin: ART05.careers.title
+- "Landscape design"
+  - Origin: ART05.studyTopics
+- "Landscape design assistant"
+  - Origin: ART05.careers.title
+- "language acquisition"
+  - Origin: SOC16.studyTopics
+- "language and culture"
+  - Origin: SOC08.studyTopics
+- "Language or research assistant"
+  - Origin: SOC16.careers.title
+- "language planning"
+  - Origin: SOC18.studyTopics
+- "language support roles"
+  - Origin: SOC16.careers.title
+- "law enforcement administration"
+  - Origin: SOC11.studyTopics
+- "law school pathway"
+  - Origin: SOC04.careers.title; SOC07.careers.title
+- "learning resources"
+  - Origin: EDU08.studyTopics
+- "learning support staff"
+  - Origin: EDU01.careers.title
+- "lesson planning"
+  - Origin: EDU01.studyTopics; EDU02.studyTopics; EDU06.studyTopics; EDU07.studyTopics
+- "Librarian"
+  - Origin: SOC10.careers.title
+- "library assistant"
+  - Origin: SOC10.careers.title
+- "Licensure may be required for professional practice."
+  - Origin: ENG02.careers.notes; ENG04.careers.notes; ENG06.careers.notes
+- "lighting"
+  - Origin: ART04.studyTopics
+- "linguistics"
+  - Origin: SOC18.studyTopics
+- "literacy and numeracy"
+  - Origin: EDU01.studyTopics
+- "Literary analysis"
+  - Origin: SOC17.studyTopics
+- "literary or cultural project assistant"
+  - Origin: SOC17.careers.title
+- "literary theory"
+  - Origin: SOC17.studyTopics
+- "livelihood project staff"
+  - Origin: EDU07.careers.title
+- "livestock or poultry health staff"
+  - Origin: HLT10.careers.title
+- "local governance"
+  - Origin: SOC09.studyTopics
+- "local government staff"
+  - Origin: SOC09.careers.title
+- "logic"
+  - Origin: SCI06.studyTopics
+- "Logic"
+  - Origin: SOC07.studyTopics
+- "logistics analyst"
+  - Origin: ENG07.careers.title
+- "Look for quality classroom observation and supervised teaching practice. Develop clear lesson planning, communication, and inclusive teaching skills, and verify current teacher qualification and licensure requirements."
+  - Origin: ENG15.guidanceTips; EDU04.guidanceTips; SOC05.guidanceTips; SOC07.guidanceTips; SOC16.guidanceTips; SOC17.guidanceTips; SOC18.guidanceTips
+- "machine design"
+  - Origin: ENG02.studyTopics
+- "machine learning or data roles"
+  - Origin: ICT03.careers.title
+- "macroeconomics"
+  - Origin: BUS08.studyTopics
+- "maintenance"
+  - Origin: ENG13.studyTopics; ENG14.studyTopics
+- "maintenance engineer trainee"
+  - Origin: ENG02.careers.title; ENG03.careers.title
+- "Management"
+  - Origin: BUS05.studyTopics
+- "Management accounting staff"
+  - Origin: BUS02.careers.title
+- "management reporting analyst"
+  - Origin: BUS02.careers.title
+- "management reports"
+  - Origin: BUS02.studyTopics
+- "Management trainee"
+  - Origin: BUS05.careers.title
+- "manufacturing"
+  - Origin: ENG02.studyTopics; ENG10.studyTopics
+- "manufacturing or quality engineer"
+  - Origin: ENG02.careers.title
+- "manufacturing staff"
+  - Origin: ENG10.careers.title
+- "mapping"
+  - Origin: ENG08.studyTopics
+- "mapping and field methods"
+  - Origin: AGR02.studyTopics[last] display
+- "mapping and field methods."
+  - Origin: AGR02.studyTopics
+- "mapping or GIS analyst"
+  - Origin: ENG08.careers.title
+- "marine conservation"
+  - Origin: SCI02.studyTopics
+- "Marine diesel engines"
+  - Origin: ENG14.studyTopics
+- "Marine ecology"
+  - Origin: SCI02.studyTopics
+- "marine education staff"
+  - Origin: SCI02.careers.title
+- "Marine engineering cadet"
+  - Origin: ENG14.careers.title
+- "Marine research assistant"
+  - Origin: SCI02.careers.title
+- "maritime law"
+  - Origin: ENG15.studyTopics
+- "maritime operations staff"
+  - Origin: ENG15.careers.title
+- "maritime regulations"
+  - Origin: ENG14.studyTopics[last] display
+- "maritime regulations."
+  - Origin: ENG14.studyTopics
+- "market research staff"
+  - Origin: BUS08.careers.title
+- "marketing"
+  - Origin: BUS05.studyTopics; BUS06.studyTopics
+- "Material and energy balances"
+  - Origin: ENG06.studyTopics
+- "material properties"
+  - Origin: ENG10.studyTopics
+- "material selection"
+  - Origin: ENG10.studyTopics[last] display
+- "material selection."
+  - Origin: ENG10.studyTopics
+- "Material structure"
+  - Origin: ENG10.studyTopics
+- "materials"
+  - Origin: ENG02.studyTopics; SCI05.studyTopics; ART06.studyTopics
+- "materials and finishes"
+  - Origin: ART04.studyTopics
+- "Materials engineer trainee"
+  - Origin: ENG10.careers.title
+- "materials laboratory staff"
+  - Origin: ENG10.careers.title
+- "materials or electronics testing roles"
+  - Origin: SCI05.careers.title
+- "materials or quality control staff"
+  - Origin: ENG01.careers.title
+- "materials testing analyst"
+  - Origin: ENG11.careers.title
+- "maternal and child health"
+  - Origin: HLT01.studyTopics
+- "Mathematical modeling"
+  - Origin: SCI07.studyTopics
+- "mathematical physics"
+  - Origin: SCI04.studyTopics
+- "mathematical proof"
+  - Origin: SCI06.studyTopics
+- "Mathematics tutor or educator after suitable qualifications"
+  - Origin: SCI06.careers.title
+- "meal planning"
+  - Origin: HLT08.studyTopics
+- "measurement"
+  - Origin: SCI05.studyTopics
+- "Mechanical engineering staff"
+  - Origin: ENG02.careers.title
+- "Mechanics"
+  - Origin: ENG02.studyTopics
+- "media law and ethics"
+  - Origin: SOC13.studyTopics; SOC14.studyTopics
+- "media studies"
+  - Origin: SOC12.studyTopics
+- "medical information associate"
+  - Origin: HLT02.careers.title
+- "Medical laboratory professional"
+  - Origin: HLT03.careers.title
+- "medical-surgical nursing"
+  - Origin: HLT01.studyTopics
+- "medication safety"
+  - Origin: HLT02.studyTopics
+- "meeting support"
+  - Origin: BUS07.studyTopics
+- "mental health"
+  - Origin: HLT01.studyTopics; HLT05.studyTopics
+- "metal production"
+  - Origin: ENG11.studyTopics
+- "metal production staff"
+  - Origin: ENG11.careers.title
+- "metal testing"
+  - Origin: ENG11.studyTopics
+- "Metallurgical engineer trainee"
+  - Origin: ENG11.careers.title
+- "metals and alloys"
+  - Origin: ENG10.studyTopics
+- "meteorological data analyst"
+  - Origin: SCI11.careers.title
+- "meteorology"
+  - Origin: ENG15.studyTopics
+- "microbiology"
+  - Origin: SCI01.studyTopics; HLT03.studyTopics
+- "microcontrollers"
+  - Origin: ENG05.studyTopics
+- "Microeconomics"
+  - Origin: BUS08.studyTopics
+- "microprocessors"
+  - Origin: ENG04.studyTopics
+- "Mine planning"
+  - Origin: ENG09.studyTopics
+- "mine planning assistant"
+  - Origin: ENG09.careers.title
+- "mine survey assistant"
+  - Origin: ENG09.careers.title
+- "mine surveying"
+  - Origin: ENG09.studyTopics
+- "mine ventilation"
+  - Origin: ENG09.studyTopics
+- "mineral deposits"
+  - Origin: ENG09.studyTopics
+- "mineral economics"
+  - Origin: ENG09.studyTopics
+- "mineral processing"
+  - Origin: ENG11.studyTopics
+- "mineral processing staff"
+  - Origin: ENG11.careers.title
+- "Mineralogy"
+  - Origin: SCI10.studyTopics
+- "Mining engineer trainee"
+  - Origin: ENG09.careers.title
+- "modeling or simulation staff"
+  - Origin: SCI07.careers.title
+- "monitoring and evaluation"
+  - Origin: SOC15.studyTopics[last] display
+- "monitoring and evaluation assistant"
+  - Origin: HLT07.careers.title
+- "monitoring and evaluation staff"
+  - Origin: SCI08.careers.title
+- "monitoring and evaluation."
+  - Origin: SOC15.studyTopics
+- "motion graphics"
+  - Origin: ART03.studyTopics
+- "motion graphics assistant"
+  - Origin: ART03.careers.title
+- "movement assessment"
+  - Origin: HLT04.studyTopics
+- "movement or voice"
+  - Origin: ART02.studyTopics
+- "Multimedia artist"
+  - Origin: ART03.careers.title
+- "multimedia journalism"
+  - Origin: SOC14.studyTopics
+- "multimedia journalist"
+  - Origin: SOC14.careers.title
+- "museum or archive assistant"
+  - Origin: SOC06.careers.title
+- "Navigation"
+  - Origin: ENG15.studyTopics
+- "network technician"
+  - Origin: ICT01.careers.title
+- "networking"
+  - Origin: ICT01.studyTopics
+- "networks"
+  - Origin: ENG05.studyTopics
+- "news and program production"
+  - Origin: SOC13.studyTopics
+- "news researcher"
+  - Origin: SOC14.careers.title
+- "News writing"
+  - Origin: SOC14.studyTopics
+- "newsroom practice"
+  - Origin: SOC14.studyTopics[last] display
+- "newsroom practice."
+  - Origin: SOC14.studyTopics
+- "NGO administration staff"
+  - Origin: SOC09.careers.title
+- "NGO or government program staff"
+  - Origin: SOC15.careers.title
+- "NGO program assistant"
+  - Origin: SOC04.careers.title
+- "NGO project assistant"
+  - Origin: SOC03.careers.title
+- "NGO project staff"
+  - Origin: SOC05.careers.title
+- "numerical methods"
+  - Origin: SCI07.studyTopics
+- "numerical models"
+  - Origin: SCI11.studyTopics
+- "nursing assistant roles"
+  - Origin: HLT01.careers.title
+- "nursing skills"
+  - Origin: HLT01.studyTopics
+- "nutrition assessment"
+  - Origin: HLT08.studyTopics
+- "nutrition research assistant"
+  - Origin: HLT08.careers.title
+- "observation"
+  - Origin: EDU03.studyTopics
+- "Occupational therapist"
+  - Origin: HLT05.careers.title
+- "ocean conditions"
+  - Origin: SCI02.studyTopics
+- "ocean life"
+  - Origin: SCI02.studyTopics
+- "office coordinator"
+  - Origin: BUS07.careers.title
+- "Office procedures"
+  - Origin: BUS07.studyTopics
+- "office software"
+  - Origin: BUS07.studyTopics
+- "office staff"
+  - Origin: BUS07.careers.title
+- "often strengthened by specialization or graduate study."
+  - Origin: SCI05.careers.notes
+- "operating systems"
+  - Origin: ICT03.studyTopics; ENG05.studyTopics
+- "operational audit staff"
+  - Origin: BUS04.careers.title
+- "operations"
+  - Origin: BUS05.studyTopics; BUS06.studyTopics
+- "operations analyst"
+  - Origin: ENG07.careers.title
+- "operations coordinator"
+  - Origin: BUS05.careers.title
+- "operations or technical analyst"
+  - Origin: SCI06.careers.title
+- "Operations research"
+  - Origin: ENG07.studyTopics
+- "operations research assistant"
+  - Origin: SCI07.careers.title
+- "Opportunity identification"
+  - Origin: BUS06.studyTopics
+- "optics"
+  - Origin: SCI05.studyTopics
+- "optimization"
+  - Origin: SCI07.studyTopics
+- "Oral anatomy"
+  - Origin: HLT09.studyTopics
+- "oral pathology"
+  - Origin: HLT09.studyTopics
+- "oral surgery"
+  - Origin: HLT09.studyTopics
+- "Organic chemistry"
+  - Origin: SCI03.studyTopics
+- "organizational communication"
+  - Origin: SOC12.studyTopics
+- "packaging"
+  - Origin: AGR04.studyTopics
+- "painting"
+  - Origin: ART01.studyTopics
+- "paleontology"
+  - Origin: SCI10.studyTopics
+- "parasitology"
+  - Origin: HLT03.studyTopics
+- "parks and open-space project assistant"
+  - Origin: ART05.careers.title
+- "participatory communication"
+  - Origin: SOC15.studyTopics
+- "patient assessment"
+  - Origin: HLT09.studyTopics
+- "patient care"
+  - Origin: HLT04.studyTopics; HLT06.studyTopics
+- "patient counseling"
+  - Origin: HLT02.studyTopics
+- "pediatric and adult practice"
+  - Origin: HLT05.studyTopics
+- "performance analysis"
+  - Origin: EDU05.studyTopics
+- "performance history"
+  - Origin: ART02.studyTopics
+- "performance measurement"
+  - Origin: BUS02.studyTopics
+- "Performance technique"
+  - Origin: ART02.studyTopics
+- "Performer"
+  - Origin: ART02.careers.title
+- "periodontics"
+  - Origin: HLT09.studyTopics
+- "personality"
+  - Origin: SOC01.studyTopics
+- "petrology"
+  - Origin: SCI10.studyTopics
+- "Pharmaceutical chemistry"
+  - Origin: HLT02.studyTopics
+- "pharmaceutical industry quality or regulatory staff"
+  - Origin: HLT02.careers.title
+- "pharmaceutics"
+  - Origin: HLT02.studyTopics
+- "Pharmacist"
+  - Origin: HLT02.careers.title
+- "pharmacology"
+  - Origin: HLT01.studyTopics; HLT02.studyTopics; HLT10.studyTopics
+- "pharmacy law and ethics"
+  - Origin: HLT02.studyTopics
+- "Philippine and world history"
+  - Origin: SOC06.studyTopics
+- "Philippine government"
+  - Origin: SOC04.studyTopics
+- "Philippine literature"
+  - Origin: SOC18.studyTopics
+- "Philosophy explores basic questions about knowledge, truth, right and wrong, reality, reasoning, and human life. Students learn to examine arguments, define ideas clearly, identify weak reasoning, and consider difficult questions from different perspectives. The course emphasizes careful thinking and clear writing rather than memorizing one set of answers."
+  - Origin: SOC07.overview
+- "philosophy of science"
+  - Origin: SOC07.studyTopics
+- "phonetics and phonology"
+  - Origin: SOC16.studyTopics
+- "photogrammetry"
+  - Origin: ENG08.studyTopics
+- "photography"
+  - Origin: ART03.studyTopics
+- "physical agents"
+  - Origin: HLT04.studyTopics
+- "physical chemistry"
+  - Origin: SCI03.studyTopics
+- "Physical education methods"
+  - Origin: EDU04.studyTopics
+- "Physical education teacher"
+  - Origin: EDU04.careers.title
+- "physical metallurgy"
+  - Origin: ENG11.studyTopics
+- "Physical therapist"
+  - Origin: HLT04.careers.title
+- "physiology"
+  - Origin: SCI01.studyTopics; HLT04.studyTopics
+- "planning and control"
+  - Origin: BUS02.studyTopics
+- "planning officer"
+  - Origin: BUS08.careers.title
+- "planning support"
+  - Origin: ART06.careers.title
+- "plant operations"
+  - Origin: ENG06.studyTopics
+- "plant operations staff"
+  - Origin: ENG06.careers.title
+- "plant protection"
+  - Origin: AGR01.studyTopics
+- "planting design"
+  - Origin: ART05.studyTopics
+- "planting or site planning staff"
+  - Origin: ART05.careers.title
+- "play-based learning"
+  - Origin: EDU03.studyTopics
+- "poetry and prose"
+  - Origin: SOC17.studyTopics
+- "policy or planning assistant"
+  - Origin: SOC09.careers.title
+- "policy research assistant"
+  - Origin: SOC04.careers.title
+- "political or public affairs staff"
+  - Origin: SOC04.careers.title
+- "political philosophy"
+  - Origin: SOC07.studyTopics
+- "political research"
+  - Origin: SOC04.studyTopics
+- "Political Science studies power, government, public institutions, political ideas, laws, elections, and relationships between countries. Students learn to compare political systems, read policy arguments, evaluate evidence, and understand how decisions are made and how they affect people. It develops skills useful in public service, research, communication, and law-related pathways."
+  - Origin: SOC04.overview
+- "Political theory"
+  - Origin: SOC04.studyTopics
+- "pollution control"
+  - Origin: SCI09.studyTopics
+- "pollution prevention"
+  - Origin: ENG14.studyTopics
+- "polymers"
+  - Origin: ENG10.studyTopics
+- "population studies"
+  - Origin: SOC05.studyTopics
+- "portfolio development. Exact subjects depend on the major"
+  - Origin: ART01.studyTopics[last] display
+- "portfolio development. Exact subjects depend on the major."
+  - Origin: ART01.studyTopics
+- "portfolio projects"
+  - Origin: ART03.studyTopics[last] display
+- "portfolio projects."
+  - Origin: ART03.studyTopics
+- "positioning systems"
+  - Origin: ENG08.studyTopics
+- "post-harvest handling"
+  - Origin: AGR03.studyTopics
+- "post-harvest systems"
+  - Origin: ENG12.studyTopics
+- "post-harvest systems staff"
+  - Origin: ENG12.careers.title
+- "power generation and distribution"
+  - Origin: ENG03.studyTopics
+- "power systems assistant"
+  - Origin: ENG03.careers.title
+- "practical assessment"
+  - Origin: EDU07.studyTopics
+- "Practice explaining decisions with evidence, spreadsheets, and clear writing. Seek internships, case competitions, or a small project/business experience, and check whether your target role values a specific certification."
+  - Origin: BUS02.guidanceTips; BUS04.guidanceTips; BUS05.guidanceTips; BUS06.guidanceTips; BUS09.guidanceTips; BUS10.guidanceTips; SOC02.guidanceTips; SOC09.guidanceTips; ART02.guidanceTips
+- "practice teaching"
+  - Origin: EDU01.studyTopics[last] display; EDU02.studyTopics[last] display; EDU03.studyTopics[last] display; EDU04.studyTopics[last] display; EDU06.studyTopics[last] display; EDU07.studyTopics[last] display
+- "practice teaching."
+  - Origin: EDU01.studyTopics; EDU02.studyTopics; EDU03.studyTopics; EDU04.studyTopics; EDU06.studyTopics; EDU07.studyTopics
+- "Practice through small projects and build a portfolio that shows your process and results. Keep learning current tools, protect data responsibly, and look for internships or supervised projects to gain experience."
+  - Origin: BUS03.guidanceTips; BUS07.guidanceTips; BUS08.guidanceTips; ICT01.guidanceTips; ICT02.guidanceTips; ENG07.guidanceTips; SCI07.guidanceTips; SCI08.guidanceTips; SCI11.guidanceTips; SOC12.guidanceTips; SOC13.guidanceTips; ART03.guidanceTips; ART04.guidanceTips
+- "preschool staff"
+  - Origin: EDU03.careers.title
+- "presentation skills"
+  - Origin: SOC12.studyTopics[last] display
+- "presentation skills."
+  - Origin: SOC12.studyTopics
+- "presenter or reporter pathway"
+  - Origin: SOC13.careers.title
+- "prevention"
+  - Origin: HLT09.studyTopics
+- "primary sources"
+  - Origin: SOC06.studyTopics
+- "probability"
+  - Origin: SCI07.studyTopics
+- "Probability"
+  - Origin: SCI08.studyTopics
+- "probability and statistics"
+  - Origin: SCI06.studyTopics[last] display
+- "probability and statistics."
+  - Origin: SCI06.studyTopics
+- "process control"
+  - Origin: ENG06.studyTopics; ENG11.studyTopics
+- "process design"
+  - Origin: ENG06.studyTopics
+- "Process engineer trainee"
+  - Origin: ENG06.careers.title
+- "process improvement analyst"
+  - Origin: ENG07.careers.title
+- "process safety assistant"
+  - Origin: ENG06.careers.title
+- "processing and preservation"
+  - Origin: AGR04.studyTopics
+- "product development"
+  - Origin: BUS06.studyTopics; AGR04.studyTopics
+- "product development assistant"
+  - Origin: ENG10.careers.title; AGR04.careers.title
+- "product or sales coordinator"
+  - Origin: BUS06.careers.title
+- "production artist"
+  - Origin: ART03.careers.title
+- "Production assistant"
+  - Origin: SOC13.careers.title
+- "production engineer"
+  - Origin: ENG02.careers.title
+- "production methods"
+  - Origin: ENG13.studyTopics
+- "production or environmental laboratory staff"
+  - Origin: SCI03.careers.title
+- "production or maintenance staff"
+  - Origin: ENG13.careers.title
+- "production or safety staff"
+  - Origin: ENG09.careers.title
+- "production planner"
+  - Origin: ENG07.careers.title
+- "production planning"
+  - Origin: ENG07.studyTopics
+- "production staff"
+  - Origin: ENG06.careers.title; AGR04.careers.title
+- "Professional criminologist practice requires applicable licensure."
+  - Origin: SOC11.careers.notes
+- "professional ethics"
+  - Origin: BUS04.studyTopics[last] display
+- "professional ethics."
+  - Origin: BUS04.studyTopics
+- "Professional practice may require applicable registration."
+  - Origin: ART05.careers.notes
+- "Professional practice may require licensure."
+  - Origin: ENG03.careers.notes; ENG09.careers.notes; AGR02.careers.notes
+- "Professional practice may require meeting applicable registration rules."
+  - Origin: ART04.careers.notes
+- "Professional practice may require passing the applicable licensure examination."
+  - Origin: ENG01.careers.notes
+- "program coordinator assistant"
+  - Origin: SOC03.careers.title
+- "program monitoring assistant"
+  - Origin: SOC05.careers.title
+- "program planning"
+  - Origin: HLT07.studyTopics; SOC03.studyTopics
+- "program planning and evaluation"
+  - Origin: SOC09.studyTopics[last] display
+- "program planning and evaluation."
+  - Origin: SOC09.studyTopics
+- "program researcher"
+  - Origin: SOC13.careers.title
+- "Programming"
+  - Origin: ICT01.studyTopics; ICT03.studyTopics
+- "programming fundamentals"
+  - Origin: ICT02.studyTopics
+- "project coordinator"
+  - Origin: SOC09.careers.title
+- "project engineer trainee"
+  - Origin: ENG01.careers.title
+- "project management"
+  - Origin: ICT02.studyTopics; ENG07.studyTopics[last] display
+- "project management."
+  - Origin: ENG07.studyTopics
+- "project work"
+  - Origin: ICT01.studyTopics[last] display
+- "project work."
+  - Origin: ICT01.studyTopics
+- "protection"
+  - Origin: ENG03.studyTopics
+- "psychological testing"
+  - Origin: SOC01.studyTopics
+- "Psychology studies how people think, feel, learn, develop, and behave. Students learn to examine behavior using scientific ideas and research rather than relying only on personal opinion. They explore human development, thinking, emotion, personality, social relationships, and mental health. Professional practice as a psychologist or other regulated role requires further education and applicable credentials."
+  - Origin: SOC01.overview
+- "Public Administration studies how government offices and public programs are organized, funded, managed, and evaluated. Students learn about public policy, budgeting, personnel, public service ethics, local government, and how agencies deliver services. The course focuses on making public programs responsive, accountable, and well managed."
+  - Origin: SOC09.overview
+- "public economics"
+  - Origin: BUS08.studyTopics
+- "public finance"
+  - Origin: SOC09.studyTopics
+- "public health"
+  - Origin: HLT10.studyTopics
+- "Public health program assistant"
+  - Origin: HLT07.careers.title
+- "Public management"
+  - Origin: SOC09.studyTopics
+- "public policy"
+  - Origin: SOC04.studyTopics; SOC09.studyTopics
+- "public relations"
+  - Origin: SOC12.studyTopics
+- "public relations staff"
+  - Origin: SOC12.careers.title
+- "publishing or content staff"
+  - Origin: SOC17.careers.title
+- "publishing staff"
+  - Origin: SOC18.careers.title
+- "QA tester"
+  - Origin: ICT01.careers.title
+- "quality analyst"
+  - Origin: SCI08.careers.title
+- "quality assurance"
+  - Origin: AGR04.studyTopics; HLT03.studyTopics
+- "quality assurance analyst"
+  - Origin: ENG06.careers.title
+- "quality assurance reviewer"
+  - Origin: BUS04.careers.title
+- "quality assurance staff"
+  - Origin: ENG07.careers.title
+- "quality control"
+  - Origin: ENG07.studyTopics; HLT02.studyTopics
+- "quality control staff"
+  - Origin: ENG11.careers.title; SCI03.careers.title
+- "quality control technician"
+  - Origin: ENG13.careers.title
+- "quality or testing engineer"
+  - Origin: ENG10.careers.title
+- "quality procedures. Exact subjects depend on the school's specialization"
+  - Origin: ENG13.studyTopics[last] display
+- "quality procedures. Exact subjects depend on the school's specialization."
+  - Origin: ENG13.studyTopics
+- "quantitative analyst trainee"
+  - Origin: SCI06.careers.title
+- "quantitative research assistant"
+  - Origin: SCI07.careers.title
+- "quantum physics"
+  - Origin: SCI04.studyTopics
+- "radiation protection"
+  - Origin: HLT06.studyTopics
+- "radio or television staff"
+  - Origin: SOC13.careers.title
+- "Radiographic positioning"
+  - Origin: HLT06.studyTopics
+- "Radiologic technologist"
+  - Origin: HLT06.careers.title
+- "real analysis"
+  - Origin: SCI06.studyTopics
+- "receptionist"
+  - Origin: BUS07.careers.title
+- "records management"
+  - Origin: BUS07.studyTopics; SOC10.studyTopics[last] display
+- "records management."
+  - Origin: SOC10.studyTopics
+- "records officer"
+  - Origin: BUS07.careers.title
+- "recruitment staff"
+  - Origin: SOC01.careers.title
+- "reference services"
+  - Origin: SOC10.studyTopics
+- "reforestation coordinator"
+  - Origin: AGR02.careers.title
+- "regression"
+  - Origin: SCI08.studyTopics
+- "rehabilitation"
+  - Origin: HLT04.studyTopics; HLT05.studyTopics
+- "rehabilitation service staff"
+  - Origin: HLT05.careers.title
+- "rehabilitation staff"
+  - Origin: HLT04.careers.title
+- "rehearsal"
+  - Origin: ART02.studyTopics
+- "relevant imaging methods"
+  - Origin: HLT06.studyTopics[last] display
+- "relevant imaging methods."
+  - Origin: HLT06.studyTopics
+- "remote sensing"
+  - Origin: ENG08.studyTopics; SCI11.studyTopics
+- "remote sensing assistant"
+  - Origin: ENG08.careers.title
+- "renewable energy"
+  - Origin: ENG12.studyTopics
+- "Reporter"
+  - Origin: SOC14.careers.title
+- "reporting"
+  - Origin: SOC14.studyTopics
+- "research"
+  - Origin: EDU05.studyTopics[last] display; SOC12.studyTopics; SOC15.studyTopics; SOC16.studyTopics; SOC18.studyTopics
+- "research and criticism"
+  - Origin: SOC17.studyTopics[last] display
+- "research and criticism."
+  - Origin: SOC17.studyTopics
+- "research and development assistant"
+  - Origin: SCI05.careers.title
+- "research and statistics"
+  - Origin: SCI01.studyTopics[last] display
+- "research and statistics."
+  - Origin: SCI01.studyTopics
+- "research assistant"
+  - Origin: SCI03.careers.title; SCI06.careers.title; SCI08.careers.title; AGR01.careers.title; HLT02.careers.title; HLT05.careers.title; HLT10.careers.title; SOC01.careers.title; SOC17.careers.title; SOC18.careers.title
+- "Research assistant"
+  - Origin: BUS08.careers.title; SOC06.careers.title; SOC08.careers.title
+- "research methods"
+  - Origin: BUS08.studyTopics; SCI02.studyTopics[last] display; SCI03.studyTopics[last] display; SCI08.studyTopics; HLT07.studyTopics[last] display; SOC01.studyTopics; SOC05.studyTopics; SOC08.studyTopics
+- "research methods."
+  - Origin: SCI02.studyTopics; SCI03.studyTopics; HLT07.studyTopics
+- "research or data assistant"
+  - Origin: ICT03.careers.title
+- "Research or editorial assistant"
+  - Origin: SOC07.careers.title
+- "research or laboratory assistant"
+  - Origin: ENG06.careers.title
+- "Research or laboratory assistant"
+  - Origin: SCI01.careers.title
+- "research support"
+  - Origin: SOC10.studyTopics
+- "research support staff"
+  - Origin: SOC10.careers.title
+- "research."
+  - Origin: EDU05.studyTopics
+- "reservations agent"
+  - Origin: BUS10.careers.title
+- "resource conservation"
+  - Origin: AGR03.studyTopics[last] display
+- "resource conservation."
+  - Origin: AGR03.studyTopics
+- "restoration"
+  - Origin: AGR02.studyTopics
+- "restorative dentistry"
+  - Origin: HLT09.studyTopics
+- "Review the official curriculum and current Philippine licensure or certification requirements before enrolling. Build strong study habits early, complete required practical training, and confirm which roles require a license."
+  - Origin: BUS01.guidanceTips; ICT03.guidanceTips; ENG01.guidanceTips; ENG02.guidanceTips; ENG03.guidanceTips; ENG04.guidanceTips; ENG05.guidanceTips; ENG06.guidanceTips; ENG08.guidanceTips; ENG09.guidanceTips; SCI03.guidanceTips; SCI10.guidanceTips; AGR01.guidanceTips; AGR02.guidanceTips; HLT02.guidanceTips; HLT03.guidanceTips; HLT04.guidanceTips; HLT05.guidanceTips; HLT06.guidanceTips; HLT09.guidanceTips; HLT10.guidanceTips; EDU01.guidanceTips; EDU02.guidanceTips; EDU05.guidanceTips; SOC10.guidanceTips; SOC11.guidanceTips; ART05.guidanceTips; ART06.guidanceTips
+- "risk and controls analyst"
+  - Origin: BUS04.careers.title
+- "risk management"
+  - Origin: BUS04.studyTopics
+- "rock mechanics"
+  - Origin: ENG09.studyTopics
+- "safety"
+  - Origin: ENG06.studyTopics; ENG09.studyTopics; ENG13.studyTopics; ENG14.studyTopics
+- "safety and emergency response"
+  - Origin: ENG15.studyTopics
+- "safety and sanitation"
+  - Origin: BUS10.studyTopics[last] display
+- "safety and sanitation."
+  - Origin: BUS10.studyTopics
+- "safety codes"
+  - Origin: ENG03.studyTopics[last] display
+- "safety codes."
+  - Origin: ENG03.studyTopics
+- "sales or marketing associate"
+  - Origin: BUS05.careers.title
+- "sampling"
+  - Origin: SCI02.studyTopics
+- "scheduling"
+  - Origin: BUS07.studyTopics
+- "school or community program roles within professional qualifications"
+  - Origin: HLT05.careers.title
+- "Science and Mathematics"
+  - Origin: SCI01.group; SCI02.group; SCI03.group; SCI04.group; SCI05.group; SCI06.group; SCI07.group; SCI08.group; SCI09.group; SCI10.group; SCI11.group
+- "science educator after appropriate qualifications"
+  - Origin: SCI01.careers.title; SCI04.careers.title
+- "seafarer career pathway toward deck officer or ship captain"
+  - Origin: ENG15.careers.title
+- "Secondary school teacher"
+  - Origin: EDU02.careers.title
+- "semantics"
+  - Origin: SOC16.studyTopics
+- "sensory evaluation"
+  - Origin: AGR04.studyTopics
+- "service quality"
+  - Origin: BUS10.studyTopics
+- "severe weather analysis"
+  - Origin: SCI11.studyTopics[last] display
+- "severe weather analysis."
+  - Origin: SCI11.studyTopics
+- "ship machinery"
+  - Origin: ENG14.studyTopics
+- "ship maintenance staff"
+  - Origin: ENG14.careers.title
+- "ship stability"
+  - Origin: ENG15.studyTopics
+- "signals"
+  - Origin: ENG04.studyTopics
+- "silviculture"
+  - Origin: AGR02.studyTopics
+- "simulation"
+  - Origin: SCI07.studyTopics[last] display
+- "simulation."
+  - Origin: SCI07.studyTopics
+- "site analysis"
+  - Origin: ART05.studyTopics
+- "site engineer trainee"
+  - Origin: ENG01.careers.title
+- "site planning"
+  - Origin: ART05.studyTopics; ART06.studyTopics
+- "skills assessment support"
+  - Origin: EDU08.careers.title
+- "skills program coordinator"
+  - Origin: EDU07.careers.title
+- "small-business management"
+  - Origin: BUS06.studyTopics
+- "Small-business owner"
+  - Origin: BUS06.careers.title
+- "social change"
+  - Origin: SOC05.studyTopics[last] display
+- "social change."
+  - Origin: SOC05.studyTopics
+- "social development project staff"
+  - Origin: SOC08.careers.title
+- "social inequality"
+  - Origin: SOC05.studyTopics
+- "social policy"
+  - Origin: SOC02.studyTopics
+- "social psychology"
+  - Origin: SOC01.studyTopics
+- "Social research assistant"
+  - Origin: SOC05.careers.title
+- "Social Sciences, Communication, and Humanities"
+  - Origin: SOC01.group; SOC02.group; SOC03.group; SOC04.group; SOC05.group; SOC06.group; SOC07.group; SOC08.group; SOC09.group; SOC10.group; SOC11.group; SOC12.group; SOC13.group; SOC14.group; SOC15.group; SOC16.group; SOC17.group; SOC18.group
+- "Social theory"
+  - Origin: SOC05.studyTopics
+- "social welfare"
+  - Origin: SOC02.studyTopics
+- "social welfare program staff"
+  - Origin: SOC02.careers.title
+- "social welfare systems"
+  - Origin: SOC03.studyTopics
+- "Social worker"
+  - Origin: SOC02.careers.title
+- "sociolinguistics"
+  - Origin: SOC16.studyTopics
+- "Sociology studies how people live in groups and how family, education, work, culture, social class, institutions, and social change shape everyday life. Students learn to identify patterns in society, ask research questions, collect information, and explain social problems using evidence and sociological ideas."
+  - Origin: SOC05.overview
+- "Software developer"
+  - Origin: ICT03.careers.title
+- "software development"
+  - Origin: ENG05.studyTopics[last] display
+- "software development."
+  - Origin: ENG05.studyTopics
+- "software engineering"
+  - Origin: ICT03.studyTopics
+- "software QA engineer"
+  - Origin: ICT03.careers.title
+- "soil and water engineering"
+  - Origin: ENG12.studyTopics
+- "soil science"
+  - Origin: AGR01.studyTopics
+- "Some professional roles require further qualifications or licensure."
+  - Origin: SCI10.careers.notes
+- "Some professional roles require licensure."
+  - Origin: AGR01.careers.notes
+- "Some professional services require licensure and authorization."
+  - Origin: ENG08.careers.notes
+- "Some roles and professional practice require specific qualifications or licensure."
+  - Origin: SCI03.careers.notes
+- "sound"
+  - Origin: ART03.studyTopics
+- "Space planning"
+  - Origin: ART04.studyTopics
+- "space planning staff"
+  - Origin: ART04.careers.title
+- "specimen handling"
+  - Origin: HLT03.studyTopics
+- "sports nutrition"
+  - Origin: EDU05.studyTopics
+- "sports or wellness support roles"
+  - Origin: HLT04.careers.title
+- "sports performance assistant"
+  - Origin: EDU05.careers.title
+- "sports program assistant"
+  - Origin: EDU04.careers.title
+- "sports psychology"
+  - Origin: EDU05.studyTopics
+- "sports science research assistant"
+  - Origin: EDU05.careers.title
+- "sports skills"
+  - Origin: EDU04.studyTopics
+- "Staff nurse"
+  - Origin: HLT01.careers.title
+- "stage crew"
+  - Origin: ART02.careers.title
+- "stage production"
+  - Origin: ART02.studyTopics
+- "startup team member"
+  - Origin: BUS06.careers.title
+- "statistical computing"
+  - Origin: SCI08.studyTopics
+- "statistical inference"
+  - Origin: SCI08.studyTopics
+- "Statistician assistant"
+  - Origin: SCI08.careers.title
+- "statistics"
+  - Origin: BUS08.studyTopics; ENG07.studyTopics; SCI07.studyTopics; SCI11.studyTopics; SOC01.studyTopics; SOC05.studyTopics
+- "storytelling"
+  - Origin: ART03.studyTopics
+- "strategy"
+  - Origin: BUS05.studyTopics
+- "strength and conditioning"
+  - Origin: EDU05.studyTopics
+- "Structural analysis"
+  - Origin: ENG01.studyTopics
+- "structural design assistant"
+  - Origin: ENG01.careers.title
+- "structural geology"
+  - Origin: SCI10.studyTopics
+- "structures"
+  - Origin: ART06.studyTopics
+- "Students interested in both business numbers and computers, especially those who enjoy organizing information, checking details, and improving digital processes."
+  - Origin: BUS03.interestsStrengths
+- "Students who are caring, observant, responsible, calm under pressure, able to communicate, and willing to work shifts and provide hands-on care."
+  - Origin: HLT01.interestsStrengths
+- "Students who are curious about human behavior, listen carefully, think critically, respect privacy, and are interested in research or helping people."
+  - Origin: SOC01.interestsStrengths
+- "Students who are curious about people and cultures, respectful of different ways of life, observant, and willing to learn through reading and fieldwork."
+  - Origin: SOC08.interestsStrengths
+- "Students who are curious about plants, animals, people, microbes, ecosystems, and scientific investigation. Careful observation and patience with lab work are useful."
+  - Origin: SCI01.interestsStrengths
+- "Students who are curious about society, enjoy reading and discussion, notice social patterns, and want to understand issues from more than one viewpoint."
+  - Origin: SOC05.interestsStrengths
+- "Students who are curious, ask good questions, read widely, write clearly, verify information, and can work carefully under time pressure."
+  - Origin: SOC14.interestsStrengths
+- "Students who are curious, creative, willing to learn from feedback, comfortable solving open-ended problems, and interested in building or improving a business."
+  - Origin: BUS06.interestsStrengths
+- "Students who are interested in health science, precise hands-on work, problem-solving, and helping people maintain oral health."
+  - Origin: HLT09.interestsStrengths
+- "Students who are interested in public safety, careful observation, law and justice, physical readiness where required, and following procedures."
+  - Origin: SOC11.interestsStrengths
+- "Students who are interested in public service, organizing work, understanding government, writing reports, and improving services for communities."
+  - Origin: SOC09.interestsStrengths
+- "Students who are observant, fair-minded, organized, curious about how systems work, and comfortable asking questions and checking evidence."
+  - Origin: BUS04.interestsStrengths
+- "Students who are organized, dependable, careful with details, comfortable using computers, and able to communicate politely and clearly."
+  - Origin: BUS07.interestsStrengths
+- "Students who are patient, creative, observant, interested in human development, and enjoy finding practical ways to make daily activities easier for others."
+  - Origin: HLT05.interestsStrengths
+- "Students who care about animals, enjoy biology and science, can work carefully under pressure, and are prepared for hands-on clinical and field duties."
+  - Origin: HLT10.interestsStrengths
+- "Students who care about community well-being, enjoy working with people and data, and want to prevent health problems through education, planning, and services."
+  - Origin: HLT07.interestsStrengths
+- "Students who care about nature and community well-being, enjoy science and fieldwork, and want to understand or address environmental problems."
+  - Origin: SCI09.interestsStrengths
+- "Students who care about people and fairness, communicate respectfully, can listen without judging, and want to help people access support and services."
+  - Origin: SOC02.interestsStrengths
+- "Students who enjoy a subject area, explaining ideas, guiding teenagers, public speaking, and helping learners build knowledge and confidence."
+  - Origin: EDU02.interestsStrengths
+- "Students who enjoy a technical trade or applied subject and want to teach others through demonstrations, practice, and clear step-by-step guidance."
+  - Origin: EDU08.interestsStrengths
+- "Students who enjoy aquatic life, biology, coastal or freshwater environments, food production, and protecting aquatic resources."
+  - Origin: AGR03.interestsStrengths
+- "Students who enjoy asking deep questions, reading, discussion, reasoning, and examining whether arguments are clear and well supported."
+  - Origin: SOC07.interestsStrengths
+- "Students who enjoy biology and chemistry, laboratory work, careful measurement, following procedures, and producing accurate results."
+  - Origin: HLT03.interestsStrengths
+- "Students who enjoy biology, food, health education, planning, and helping people make realistic food choices."
+  - Origin: HLT08.interestsStrengths
+- "Students who enjoy both electronics and programming, logical problem-solving, building devices, and understanding how computers work internally."
+  - Origin: ENG05.interestsStrengths
+- "Students who enjoy chemistry and biology, careful procedures, health science, helping people use medicines safely, and learning detailed information."
+  - Origin: HLT02.interestsStrengths
+- "Students who enjoy chemistry, mathematics, physics, understanding how products are made, and solving problems involving processes and materials."
+  - Origin: ENG06.interestsStrengths
+- "Students who enjoy chemistry, physics, materials science, industrial processes, and finding out how metals are made and improved."
+  - Origin: ENG11.interestsStrengths
+- "Students who enjoy communication and community work, can listen to different groups, and want to use media and information to support practical change."
+  - Origin: SOC15.interestsStrengths
+- "Students who enjoy computers, troubleshooting, logical thinking, learning new tools, and building practical digital solutions. Persistence is important when solving technical problems."
+  - Origin: ICT01.interestsStrengths
+- "Students who enjoy creating images or objects, observing details, experimenting with materials, and expressing ideas visually. Practice and openness to feedback are important."
+  - Origin: ART01.interestsStrengths
+- "Students who enjoy creativity, visual storytelling, digital tools, experimenting with media, and combining art with technology."
+  - Origin: ART03.interestsStrengths
+- "Students who enjoy current affairs, debate, reading, writing, understanding institutions, and analyzing different viewpoints fairly."
+  - Origin: SOC04.interestsStrengths
+- "Students who enjoy design, drawing, organizing spaces, visual details, practical problem-solving, and understanding how people use indoor environments."
+  - Origin: ART04.interestsStrengths
+- "Students who enjoy design, drawing, problem-solving, buildings, spatial thinking, and combining creative ideas with technical requirements."
+  - Origin: ART06.interestsStrengths
+- "Students who enjoy Earth science, outdoor investigation, maps, rocks, and understanding natural hazards and resources."
+  - Origin: SCI10.interestsStrengths
+- "Students who enjoy engineering and technology, practical problem-solving, agriculture, environmental issues, and improving how food is produced or handled."
+  - Origin: ENG12.interestsStrengths
+- "Students who enjoy engines, mechanical systems, practical troubleshooting, teamwork, and disciplined work. They should be prepared for shipboard training and time away from home."
+  - Origin: ENG14.interestsStrengths
+- "Students who enjoy exercise, sports, biology, coaching, measuring progress, and helping people improve fitness or performance."
+  - Origin: EDU05.interestsStrengths
+- "Students who enjoy experiments, careful measurement, solving science problems, and understanding the substances found in everyday products and nature."
+  - Origin: SCI03.interestsStrengths
+- "Students who enjoy explaining ideas, working with children, preparing activities, communicating clearly, and being patient and fair."
+  - Origin: EDU01.interestsStrengths
+- "Students who enjoy Filipino language and literature, writing, reading, cultural topics, translation, and explaining ideas clearly."
+  - Origin: SOC18.interestsStrengths
+- "Students who enjoy geography, navigation, practical decision-making, teamwork, and structured safety procedures. They should be comfortable with shipboard training and time away from home."
+  - Origin: ENG15.interestsStrengths
+- "Students who enjoy geology, mathematics, physics, technical planning, fieldwork, and solving safety-focused problems in challenging environments."
+  - Origin: ENG09.interestsStrengths
+- "Students who enjoy health science and technology, careful procedures, attention to detail, and working respectfully with patients."
+  - Origin: HLT06.interestsStrengths
+- "Students who enjoy helping people, organizing information, communicating with care, and working with community or support services."
+  - Origin: SOC03.interestsStrengths
+- "Students who enjoy helping people, teamwork, practical tasks, organization, communication, and working in a service-focused environment."
+  - Origin: BUS10.interestsStrengths
+- "Students who enjoy human biology, movement, exercise, problem-solving, and working patiently with people over time."
+  - Origin: HLT04.interestsStrengths
+- "Students who enjoy languages, reading, writing, analyzing how people communicate, and learning how language changes across situations."
+  - Origin: SOC16.interestsStrengths
+- "Students who enjoy logic, puzzles, mathematics, programming, and solving difficult problems step by step. Curiosity and persistence are valuable."
+  - Origin: ICT03.interestsStrengths
+- "Students who enjoy logical puzzles, patterns, abstract thinking, careful reasoning, and working patiently through difficult problems."
+  - Origin: SCI06.interestsStrengths
+- "Students who enjoy marine life, coastal environments, science, outdoor fieldwork, and protecting natural resources. Field activities may involve travel and work in wet or hot conditions."
+  - Origin: SCI02.interestsStrengths
+- "Students who enjoy mathematics and want to use it to answer practical questions, analyze systems, or improve decisions."
+  - Origin: SCI07.interestsStrengths
+- "Students who enjoy mathematics, asking how the physical world works, testing ideas, and working through challenging problems."
+  - Origin: SCI04.interestsStrengths
+- "Students who enjoy mathematics, maps, outdoor fieldwork, measurement, technology, and careful handling of location data."
+  - Origin: ENG08.interestsStrengths
+- "Students who enjoy mathematics, physics, circuits, energy systems, and careful technical work. Safety awareness and precision are essential."
+  - Origin: ENG03.interestsStrengths
+- "Students who enjoy mathematics, physics, drawing or design, practical problem-solving, and understanding how structures and infrastructure work."
+  - Origin: ENG01.interestsStrengths
+- "Students who enjoy meeting people, learning about places and cultures, organizing activities, communicating, and solving guest concerns."
+  - Origin: BUS09.interestsStrengths
+- "Students who enjoy movement, sports, health, teaching, teamwork, and encouraging others to take part in physical activity."
+  - Origin: EDU04.interestsStrengths
+- "Students who enjoy nature, trees, outdoor work, environmental protection, mapping, and long-term planning for natural resources."
+  - Origin: AGR02.interestsStrengths
+- "Students who enjoy numbers, patterns, asking questions with data, and explaining findings clearly. Attention to detail and logical thinking are important."
+  - Origin: SCI08.interestsStrengths
+- "Students who enjoy organizing information, helping people research, using digital tools, and working carefully with records and learning resources."
+  - Origin: SOC10.interestsStrengths
+- "Students who enjoy organizing tasks, working with people, solving practical problems, communicating, and understanding how businesses function."
+  - Origin: BUS05.interestsStrengths
+- "Students who enjoy performing, practicing regularly, working with a team, expressing emotion or ideas, and responding to direction and feedback."
+  - Origin: ART02.interestsStrengths
+- "Students who enjoy physics, circuit building, troubleshooting, technology, and understanding how devices communicate or respond to signals."
+  - Origin: ENG04.interestsStrengths
+- "Students who enjoy plants, farming, biology, outdoor work, practical problem-solving, and helping improve food production or farm livelihoods."
+  - Origin: AGR01.interestsStrengths
+- "Students who enjoy plants, outdoor spaces, design, drawing, environmental issues, and balancing beauty with practical needs."
+  - Origin: ART05.interestsStrengths
+- "Students who enjoy practical skills, demonstrations, making or fixing things, planning activities, and helping learners prepare for work or daily life."
+  - Origin: EDU07.interestsStrengths
+- "Students who enjoy reading, researching, writing, visiting historical places, and examining how different sources support or challenge a claim."
+  - Origin: SOC06.interestsStrengths
+- "Students who enjoy reading, writing, storytelling, interpreting ideas, discussing human experiences, and examining how language creates meaning."
+  - Origin: SOC17.interestsStrengths
+- "Students who enjoy science, experiments, understanding why things break or last, and improving the materials used in products and structures."
+  - Origin: ENG10.interestsStrengths
+- "Students who enjoy science, food, experiments, careful procedures, and improving products people use every day."
+  - Origin: AGR04.interestsStrengths
+- "Students who enjoy storytelling, speaking, current events, audio or video tools, teamwork, and working to deadlines."
+  - Origin: SOC13.interestsStrengths
+- "Students who enjoy the arts, culture, creative projects, explaining ideas, and helping others express themselves."
+  - Origin: EDU06.interestsStrengths
+- "Students who enjoy weather, physics, mathematics, maps, data, and explaining how atmospheric conditions change."
+  - Origin: SCI11.interestsStrengths
+- "Students who enjoy working with young children, are patient and creative, and understand the importance of safety, play, routines, and family partnership."
+  - Origin: EDU03.interestsStrengths
+- "Students who enjoy writing, speaking, teamwork, storytelling, understanding audiences, and choosing the right message for a purpose."
+  - Origin: SOC12.interestsStrengths
+- "Students who like analyzing processes, organizing work, using data, solving practical problems, and finding ways to save time or resources."
+  - Origin: ENG07.interestsStrengths
+- "Students who like asking why things happen, comparing evidence, reading about society and business, and using logical or mathematical reasoning."
+  - Origin: BUS08.interestsStrengths
+- "Students who like both business and technology, communicating with users, mapping processes, organizing information, and finding ways to make work more effective."
+  - Origin: ICT02.interestsStrengths
+- "Students who like mathematics and physics, understanding machines, designing things, troubleshooting, and improving how equipment works."
+  - Origin: ENG02.interestsStrengths
+- "Students who like numbers, planning, comparing options, finding ways to save money, and explaining what figures mean. Logical thinking and clear communication are useful."
+  - Origin: BUS02.interestsStrengths
+- "Students who like physics and mathematics and also want to connect scientific ideas to equipment, products, experiments, or technology."
+  - Origin: SCI05.interestsStrengths
+- "Students who prefer hands-on learning, making or repairing things, working with tools, and solving practical technical problems."
+  - Origin: ENG13.interestsStrengths
+- "studio assistant"
+  - Origin: ART01.careers.title
+- "studio operations"
+  - Origin: SOC13.studyTopics
+- "studio practice"
+  - Origin: ART01.studyTopics
+- "subject to applicable requirements"
+  - Origin: BUS09.careers.notes
+- "subject to employer requirements"
+  - Origin: SCI11.careers.notes
+- "subject to recruitment rules"
+  - Origin: SOC11.careers.notes
+- "subject to relevant credentials"
+  - Origin: EDU05.careers.notes
+- "subject to required education, certification, examinations, and sea service"
+  - Origin: ENG15.careers.notes
+- "subject to training, certification, sea service, and applicable maritime requirements"
+  - Origin: ENG14.careers.notes
+- "subject tutor"
+  - Origin: EDU02.careers.title
+- "supply chain coordinator"
+  - Origin: ENG07.careers.title
+- "supply chain management"
+  - Origin: ENG07.studyTopics
+- "surgery"
+  - Origin: HLT10.studyTopics
+- "survey analyst"
+  - Origin: SCI08.careers.title
+- "survey sampling"
+  - Origin: SCI08.studyTopics
+- "surveying"
+  - Origin: ENG01.studyTopics
+- "Surveying staff"
+  - Origin: ENG08.careers.title
+- "sustainability assistant"
+  - Origin: SCI09.careers.title
+- "sustainable agriculture"
+  - Origin: AGR01.studyTopics[last] display
+- "sustainable agriculture."
+  - Origin: AGR01.studyTopics
+- "sustainable tourism"
+  - Origin: BUS09.studyTopics[last] display
+- "sustainable tourism."
+  - Origin: BUS09.studyTopics
+- "systems administration"
+  - Origin: ICT01.studyTopics
+- "systems administrator"
+  - Origin: ICT01.careers.title
+- "systems analysis"
+  - Origin: BUS03.studyTopics; ICT01.studyTopics
+- "Systems analysis and design"
+  - Origin: ICT02.studyTopics
+- "systems analyst trainee"
+  - Origin: ICT02.careers.title
+- "systems design"
+  - Origin: ENG07.studyTopics
+- "systems implementation staff"
+  - Origin: ICT02.careers.title
+- "systems integration staff"
+  - Origin: ENG05.careers.title
+- "systems or business analyst"
+  - Origin: BUS03.careers.title
+- "systems programmer"
+  - Origin: ICT03.careers.title
+- "tax associate"
+  - Origin: BUS01.careers.title
+- "taxation"
+  - Origin: BUS01.studyTopics
+- "Teaching major subject"
+  - Origin: EDU02.studyTopics
+- "teaching methods"
+  - Origin: EDU01.studyTopics; EDU06.studyTopics; EDU07.studyTopics
+- "teaching pathway"
+  - Origin: SOC17.careers.title
+- "teaching practice"
+  - Origin: EDU08.studyTopics[last] display
+- "teaching practice."
+  - Origin: EDU08.studyTopics
+- "teaching strategies"
+  - Origin: EDU02.studyTopics
+- "technical analyst"
+  - Origin: SCI07.careers.title
+- "Technical and livelihood specialization"
+  - Origin: EDU07.studyTopics
+- "technical drawing"
+  - Origin: ENG13.studyTopics; ART04.studyTopics
+- "technical instructor"
+  - Origin: ENG13.careers.title
+- "technical service assistant"
+  - Origin: ENG13.careers.title
+- "Technical specialization"
+  - Origin: EDU08.studyTopics
+- "technical support engineer"
+  - Origin: ENG05.careers.title
+- "technical support staff"
+  - Origin: SCI05.careers.title
+- "technical testing staff"
+  - Origin: SCI04.careers.title
+- "technical training assistant"
+  - Origin: EDU07.careers.title
+- "Technical-vocational instructor"
+  - Origin: EDU08.careers.title
+- "Technician"
+  - Origin: ENG13.careers.title
+- "Technology and livelihood education teacher"
+  - Origin: EDU07.careers.title
+- "telecommunications staff"
+  - Origin: ENG04.careers.title
+- "testing"
+  - Origin: ENG10.studyTopics
+- "testing or commissioning staff"
+  - Origin: ENG03.careers.title
+- "theater or production assistant"
+  - Origin: ART02.careers.title
+- "therapeutic exercise"
+  - Origin: HLT04.studyTopics
+- "thermodynamics"
+  - Origin: ENG02.studyTopics; ENG06.studyTopics; SCI04.studyTopics
+- "This degree focuses on learning and development during the early years of childhood. Students learn how young children develop language, movement, thinking, social skills, and emotional understanding. They practice creating safe, playful, age-appropriate learning experiences and working with families to support each child's growth."
+  - Origin: EDU03.overview
+- "This degree prepares students to organize information and help people find, evaluate, and use it. Students learn how libraries and information centers manage books, digital resources, records, research tools, and user services. The field now includes digital information, databases, information literacy, and the organization of knowledge beyond traditional libraries."
+  - Origin: SOC10.overview
+- "This degree prepares students to teach children in the elementary years. Students learn how children develop, how to explain lessons clearly, how to plan activities, how to check learning, and how to manage a safe and supportive classroom. Teaching practice helps students connect education theories with real classroom work."
+  - Origin: EDU01.overview
+- "This degree prepares students to teach culture and the arts while helping learners understand creative expression and cultural heritage. Students may study areas such as visual art, music, dance, theater, and local traditions, depending on the program. They learn to design creative lessons, guide arts activities, and assess both artistic work and learning."
+  - Origin: EDU06.overview
+- "This degree prepares students to teach learners in junior or senior high school. Students develop knowledge in a chosen teaching subject and learn how to plan lessons, explain more advanced ideas, assess student progress, manage a classroom, and support learners with different needs. The specific teaching major depends on the school and program."
+  - Origin: EDU02.overview
+- "This degree prepares students to teach physical education and help learners develop movement skills, fitness, teamwork, and healthy habits. Students learn how to plan safe physical activities, teach sports and movement skills, assess performance, and adapt activities for different abilities and ages."
+  - Origin: EDU04.overview
+- "This degree prepares students to teach practical subjects that build technical, home, livelihood, and work-related skills. Students develop knowledge in a chosen specialization and learn how to teach hands-on tasks safely, plan lessons, assess practical performance, and connect classroom learning with everyday life and work."
+  - Origin: EDU07.overview
+- "This degree prepares students to teach technical and vocational skills in training centers, technical schools, and related learning settings. Students build expertise in a technical field and learn how to demonstrate procedures, develop competency-based lessons, assess practical skills, and maintain safe training environments."
+  - Origin: EDU08.overview
+- "This degree studies how the human body responds to exercise and how training can support fitness, health, and sports performance. Students learn about movement, exercise testing, training plans, performance, and injury prevention. The course may support work in fitness, sports development, wellness, and exercise research; it is not the same as a licensed physical therapy degree."
+  - Origin: EDU05.overview
+- "This program trains students to perform and understand laboratory tests that help detect, diagnose, monitor, and prevent disease. Students learn how to collect or handle specimens, use laboratory equipment, follow strict safety procedures, check test quality, and report accurate results to authorized health professionals. Much of the work supports patient care without requiring constant direct contact with patients."
+  - Origin: HLT03.overview
+- "tour coordinator"
+  - Origin: BUS09.careers.title
+- "tour guide"
+  - Origin: BUS09.careers.title
+- "tour guiding"
+  - Origin: BUS09.studyTopics
+- "Tour planning"
+  - Origin: BUS09.studyTopics
+- "tourism law"
+  - Origin: BUS09.studyTopics
+- "tourism marketing"
+  - Origin: BUS09.studyTopics
+- "tourism officer"
+  - Origin: BUS09.careers.title
+- "training design"
+  - Origin: EDU08.studyTopics
+- "training methods"
+  - Origin: EDU05.studyTopics
+- "training officer assistant"
+  - Origin: EDU08.careers.title
+- "translation"
+  - Origin: SOC18.studyTopics
+- "translation assistant"
+  - Origin: SOC18.careers.title
+- "transport processes"
+  - Origin: ENG06.studyTopics
+- "transportation"
+  - Origin: ENG01.studyTopics
+- "Travel consultant"
+  - Origin: BUS09.careers.title
+- "travel services"
+  - Origin: BUS09.studyTopics
+- "UI or digital design assistant"
+  - Origin: ART03.careers.title
+- "user research or community engagement support"
+  - Origin: SOC08.careers.title
+- "Veterinarian"
+  - Origin: HLT10.careers.title
+- "veterinary medicine"
+  - Origin: HLT10.studyTopics
+- "veterinary public health support"
+  - Origin: HLT10.careers.title
+- "video editor"
+  - Origin: ART03.careers.title
+- "video production"
+  - Origin: ART03.studyTopics
+- "visitor services staff"
+  - Origin: BUS09.careers.title
+- "Visual artist"
+  - Origin: ART01.careers.title
+- "visual merchandising assistant"
+  - Origin: ART04.careers.title
+- "visual research"
+  - Origin: ART01.studyTopics
+- "visualization"
+  - Origin: SCI08.studyTopics[last] display
+- "visualization."
+  - Origin: SCI08.studyTopics
+- "voyage planning"
+  - Origin: ENG15.studyTopics
+- "watershed management"
+  - Origin: AGR02.studyTopics
+- "waves and optics"
+  - Origin: SCI04.studyTopics
+- "Weather observation or forecasting support"
+  - Origin: SCI11.careers.title
+- "weather services staff"
+  - Origin: SCI11.careers.title
+- "weather systems"
+  - Origin: SCI11.studyTopics
+- "web and mobile development"
+  - Origin: ICT01.studyTopics
+- "web developer"
+  - Origin: ICT01.careers.title
+- "wellness educator"
+  - Origin: HLT08.careers.title
+- "wellness program staff"
+  - Origin: EDU05.careers.title
+- "with additional training."
+  - Origin: SCI04.careers.notes; HLT06.careers.notes
+- "with appropriate education qualifications."
+  - Origin: SOC18.careers.notes
+- "with appropriate qualifications"
+  - Origin: SOC07.careers.notes
+- "with appropriate qualifications."
+  - Origin: SOC17.careers.notes
+- "with further study and experience."
+  - Origin: ICT03.careers.notes
+- "with further study where needed."
+  - Origin: SCI01.careers.notes
+- "with further study."
+  - Origin: SOC04.careers.notes; SOC07.careers.notes
+- "with relevant portfolio skills."
+  - Origin: ART03.careers.notes
+- "within the scope of qualifications"
+  - Origin: HLT04.careers.notes
+- "work study"
+  - Origin: ENG07.studyTopics
+- "workshop or laboratory safety"
+  - Origin: EDU07.studyTopics
+- "workshop practice"
+  - Origin: ENG13.studyTopics
+- "workshop safety"
+  - Origin: EDU08.studyTopics
+- "workshop supervisor trainee"
+  - Origin: ENG13.careers.title
+- "world and Philippine literature"
+  - Origin: SOC17.studyTopics
+- "writer"
+  - Origin: SOC17.careers.title
+- "writer or editor"
+  - Origin: SOC06.careers.title
+- "Writer or editor"
+  - Origin: SOC18.careers.title
+- "writing"
+  - Origin: SOC12.studyTopics; SOC18.studyTopics
+- "writing or publishing staff"
+  - Origin: SOC16.careers.title
+
+### new display/metadata copy (32)
+
+- "1 of 4 · The Mountains. Answer 8 questions about your interests."
+  - Origin: components/AtlasTutorial.js:9
+- "15 skill statements, from \"not really me\" to \"definitely me\""
+  - Origin: app/how-it-works/HowItWorks.js:31
+- "2 of 4 · The Forest. Rate 15 skill statements."
+  - Origin: components/AtlasTutorial.js:10
+- "3 of 4 · The Valley. Complete 4 steps, including certificates."
+  - Origin: components/AtlasTutorial.js:11
+- "4 of 4 · The Islands. See your top 5 matches and explore all 85 courses."
+  - Origin: components/AtlasTutorial.js:12
+- "4 STEPS"
+  - Origin: app/page.js:24
+- "4 steps, including certificates"
+  - Origin: app/how-it-works/HowItWorks.js:32
+- "8 real-life questions to choose from"
+  - Origin: app/how-it-works/HowItWorks.js:30
+- "About 10 to 15 minutes"
+  - Origin: app/how-it-works/HowItWorks.js:30; app/how-it-works/HowItWorks.js:31; app/how-it-works/HowItWorks.js:32; app/how-it-works/HowItWorks.js:41
+- "Add an optional name and explorer, then choose your grade and curriculum."
+  - Origin: app/how-it-works/HowItWorks.js:21
+- "Add your subjects, general average and certificates in 4 steps."
+  - Origin: app/how-it-works/HowItWorks.js:25; app/page.js:24
+- "Answer 8 real-life questions about what interests you."
+  - Origin: app/how-it-works/HowItWorks.js:23
+- "CHED basis:"
+  - Origin: app/results/[courseId]/page.js:23
+- "Choose subjects for your curriculum, then add your general average and certificates."
+  - Origin: app/how-it-works/HowItWorks.js:32
+- "Explore 85 college courses through 8 interest questions, 15 skill statements and 4 academic steps. See your top 5 matches and explore every course."
+  - Origin: app/layout.js:25
+- "Finish 8 Mountains questions, 15 Forest statements and 4 Valley steps, in order."
+  - Origin: app/journey/page.js:663
+- "Full journey:"
+  - Origin: app/how-it-works/HowItWorks.js:136
+- "How these salaries were estimated"
+  - Origin: app/results/[courseId]/page.js:39
+- "Interests and strengths"
+  - Origin: app/results/[courseId]/page.js:20
+- "Meet the student researchers behind Career Compass and learn how this guidance tool helps you explore 85 college courses."
+  - Origin: app/about/page.js:2
+- "No. It shows your top 5 matches, with all 85 courses to explore. The final decision is always yours."
+  - Origin: app/about/About.js:28
+- "Rate your confidence in 15 skill statements."
+  - Origin: app/how-it-works/HowItWorks.js:24
+- "Relative compass arcs, with no numeric scores"
+  - Origin: app/how-it-works/HowItWorks.js:37
+- "Salary estimates: Jobstreet Philippines career salary benchmarks. Updated October 2026."
+  - Origin: app/results/[courseId]/page.js:38
+- "School lists are not complete. Confirm programs, campus availability and admission requirements with the school."
+  - Origin: app/results/[courseId]/page.js:32
+- "See the three assessment trails, your top 5 matches and all 85 courses you can explore with Career Compass."
+  - Origin: app/how-it-works/page.js:5
+- "See your top 5 matches, explore all 85 courses, and download your report."
+  - Origin: app/how-it-works/HowItWorks.js:27
+- "See your top 5 matches, with all 85 courses to explore."
+  - Origin: app/page.js:25
+- "Start with your top 5 matches, with all 85 courses to explore."
+  - Origin: app/results/page.js:141
+- "Top 5 matches, with all 85 courses to explore"
+  - Origin: app/how-it-works/HowItWorks.js:36
+- "Your matches reflect your answers, but they are a guide, not a guarantee. Talk to your counselor, family, or teachers too."
+  - Origin: app/about/About.js:30
+- "Your results are based on you: your interests, skills, subjects, grades and certificates."
+  - Origin: app/about/About.js:23
+
+### official course name (may stay verbatim) (63)
+
+- "Anthropology (BA/BS)"
+  - Origin: SOC08.name
+- "BA Broadcasting"
+  - Origin: SOC13.name
+- "BA Communication"
+  - Origin: SOC12.name
+- "BA English Language Studies"
+  - Origin: SOC16.name
+- "BA Filipino"
+  - Origin: SOC18.name
+- "BA History"
+  - Origin: SOC06.name
+- "BA Journalism"
+  - Origin: SOC14.name
+- "BA Literature"
+  - Origin: SOC17.name
+- "BA Philosophy"
+  - Origin: SOC07.name
+- "BA Political Science"
+  - Origin: SOC04.name
+- "BA Sociology"
+  - Origin: SOC05.name
+- "Bachelor in Human Services"
+  - Origin: SOC03.name
+- "Bachelor of Culture and Arts Education"
+  - Origin: EDU06.name
+- "Bachelor of Early Childhood Education"
+  - Origin: EDU03.name
+- "Bachelor of Industrial Technology"
+  - Origin: ENG13.name
+- "Bachelor of Landscape Architecture"
+  - Origin: ART05.name
+- "Bachelor of Library and Information Science"
+  - Origin: SOC10.name
+- "Bachelor of Multimedia Arts"
+  - Origin: ART03.name
+- "Bachelor of Performing Arts"
+  - Origin: ART02.name
+- "Bachelor of Public Administration"
+  - Origin: SOC09.name
+- "Bachelor of Technical-Vocational Teacher Education"
+  - Origin: EDU08.name
+- "BS Accounting Information Systems"
+  - Origin: BUS03.name
+- "BS Agricultural and Biosystems Engineering"
+  - Origin: ENG12.name
+- "BS Agriculture"
+  - Origin: AGR01.name
+- "BS Applied Mathematics"
+  - Origin: SCI07.name
+- "BS Applied Physics"
+  - Origin: SCI05.name
+- "BS Biology"
+  - Origin: SCI01.name
+- "BS Chemical Engineering"
+  - Origin: ENG06.name
+- "BS Chemistry"
+  - Origin: SCI03.name
+- "BS Criminology"
+  - Origin: SOC11.name
+- "BS Development Communication"
+  - Origin: SOC15.name
+- "BS Environmental Science"
+  - Origin: SCI09.name
+- "BS Exercise and Sports Sciences"
+  - Origin: EDU05.name
+- "BS Fisheries"
+  - Origin: AGR03.name
+- "BS Food Technology"
+  - Origin: AGR04.name
+- "BS Forestry"
+  - Origin: AGR02.name
+- "BS Geodetic Engineering"
+  - Origin: ENG08.name
+- "BS Geology"
+  - Origin: SCI10.name
+- "BS Industrial Engineering"
+  - Origin: ENG07.name
+- "BS Internal Auditing"
+  - Origin: BUS04.name
+- "BS Management Accounting"
+  - Origin: BUS02.name
+- "BS Marine Biology"
+  - Origin: SCI02.name
+- "BS Marine Engineering"
+  - Origin: ENG14.name
+- "BS Marine Transportation"
+  - Origin: ENG15.name
+- "BS Materials Engineering"
+  - Origin: ENG10.name
+- "BS Mathematics"
+  - Origin: SCI06.name
+- "BS Medical Technology / Medical Laboratory Science"
+  - Origin: HLT03.name
+- "BS Metallurgical Engineering"
+  - Origin: ENG11.name
+- "BS Meteorology"
+  - Origin: SCI11.name
+- "BS Mining Engineering"
+  - Origin: ENG09.name
+- "BS Nutrition and Dietetics"
+  - Origin: HLT08.name
+- "BS Occupational Therapy"
+  - Origin: HLT05.name
+- "BS Office Administration"
+  - Origin: BUS07.name
+- "BS Physical Therapy"
+  - Origin: HLT04.name
+- "BS Physics"
+  - Origin: SCI04.name
+- "BS Public Health"
+  - Origin: HLT07.name
+- "BS Social Work"
+  - Origin: SOC02.name
+- "BS Statistics"
+  - Origin: SCI08.name
+- "BS Tourism Management"
+  - Origin: BUS09.name
+- "Doctor of Dental Medicine"
+  - Origin: HLT09.name
+- "Doctor of Veterinary Medicine"
+  - Origin: HLT10.name
+- "Economics (BA/BS)"
+  - Origin: BUS08.name
+- "Psychology (BA/BS)"
+  - Origin: SOC01.name
+
+### official school/address (may stay verbatim) (49)
+
+- "Aroroy Municipal College - Aroroy, Masbate"
+  - Origin: BUS06.SCH-037; EDU08.SCH-037
+- "Ateneo de Davao University"
+  - Origin: BUS04.SCH-046
+- "Ateneo de Manila University"
+  - Origin: SCI09.SCH-043
+- "Ateneo de Naga University - Naga City - Camarines Sur"
+  - Origin: BUS01.SCH-019; BUS05.SCH-019; BUS06.SCH-019; ICT02.SCH-019; ICT03.SCH-019; ENG01.SCH-019; ENG04.SCH-019; ENG05.SCH-019; EDU01.SCH-019
+- "Baao Community College (ngayon Rinconada State College) - Baao, Camarines Sur"
+  - Origin: ICT02.SCH-030; ENG13.SCH-030; EDU01.SCH-030; EDU02.SCH-030
+- "Bicol University - Daraga - Albay"
+  - Origin: BUS01.SCH-003; BUS05.SCH-003; BUS06.SCH-003; BUS08.SCH-003; SOC01.SCH-003; SOC02.SCH-003; SOC04.SCH-003; SOC05.SCH-003; SOC07.SCH-003
+- "Bicol University - Gubat (Sorsogon) - Sorsogon"
+  - Origin: BUS05.SCH-006; BUS06.SCH-006; EDU01.SCH-006; EDU02.SCH-006
+- "Bicol University - Guinobatan - Albay"
+  - Origin: ENG12.SCH-004; AGR01.SCH-004; AGR02.SCH-004; AGR04.SCH-004; HLT10.SCH-004; EDU08.SCH-004; SOC15.SCH-004
+- "Bicol University - Legazpi - East - Albay"
+  - Origin: ENG01.SCH-002; ENG02.SCH-002; ENG03.SCH-002; ENG06.SCH-002; ENG08.SCH-002; ENG09.SCH-002; ENG13.SCH-002; AGR04.SCH-002; EDU08.SCH-002; ART06.SCH-002
+- "Bicol University - Legazpi - West - Albay"
+  - Origin: ICT01.SCH-001; ICT03.SCH-001; SCI01.SCH-001; SCI03.SCH-001; SCI11.SCH-001; HLT01.SCH-001; HLT09.SCH-001; EDU01.SCH-001; EDU02.SCH-001; EDU03.SCH-001; EDU04.SCH-001; EDU05.SCH-001; EDU06.SCH-001; SOC09.SCH-001; SOC12.SCH-001; SOC13.SCH-001; SOC14.SCH-001; SOC16.SCH-001; SOC17.SCH-001; ART02.SCH-001
+- "Bicol University - Polangui - Albay"
+  - Origin: BUS06.SCH-007; ICT01.SCH-007; ICT02.SCH-007; ICT03.SCH-007; ENG04.SCH-007; ENG05.SCH-007; ENG13.SCH-007; HLT01.SCH-007; EDU01.SCH-007; EDU02.SCH-007; EDU07.SCH-007
+- "Bicol University - Tabaco - Albay"
+  - Origin: BUS06.SCH-005; AGR03.SCH-005; AGR04.SCH-005; HLT01.SCH-005; EDU02.SCH-005; SOC02.SCH-005
+- "Calabanga Community College - Calabanga, Camarines Sur"
+  - Origin: BUS06.SCH-031; EDU02.SCH-031; EDU03.SCH-031; EDU04.SCH-031
+- "Camarines Sur Polytechnic Colleges (CSPC) / Polytechnic State University of Bicol (PSUB) - Nabua, Camarines Sur"
+  - Origin: BUS05.SCH-012; BUS06.SCH-012; BUS07.SCH-012; BUS09.SCH-012; BUS10.SCH-012; ICT01.SCH-012; ICT02.SCH-012; ICT03.SCH-012; ENG01.SCH-012; ENG02.SCH-012; ENG03.SCH-012; ENG04.SCH-012; ENG05.SCH-012; SCI06.SCH-012; SCI07.SCH-012; HLT01.SCH-012; EDU04.SCH-012; EDU06.SCH-012; EDU08.SCH-012; SOC03.SCH-012; SOC09.SCH-012; SOC10.SCH-012; SOC15.SCH-012; SOC16.SCH-012; ART06.SCH-012
+- "Caramoan Community College - Caramoan, Camarines Sur"
+  - Origin: EDU01.SCH-035; EDU02.SCH-035; SOC04.SCH-035
+- "Catanduanes State University (CatSU) - Virac, Catanduanes"
+  - Origin: BUS01.SCH-014; BUS03.SCH-014; BUS04.SCH-014; BUS05.SCH-014; BUS06.SCH-014; BUS07.SCH-014; BUS08.SCH-014; ICT01.SCH-014; ICT02.SCH-014; ICT03.SCH-014; ENG01.SCH-014; ENG04.SCH-014; ENG05.SCH-014; ENG13.SCH-014; SCI01.SCH-014; SCI06.SCH-014; SCI09.SCH-014; AGR01.SCH-014; AGR03.SCH-014; HLT01.SCH-014; HLT08.SCH-014; EDU01.SCH-014; EDU02.SCH-014; EDU04.SCH-014; EDU06.SCH-014; EDU08.SCH-014; SOC04.SCH-014; SOC09.SCH-014; SOC10.SCH-014; SOC16.SCH-014; ART06.SCH-014
+- "Central Bicol State University of Agriculture (CBSUA) - Pili (main), Calabanga, Pasacao, Sipocot"
+  - Origin: ICT01.SCH-015; SCI01.SCH-015; SCI09.SCH-015; AGR01.SCH-015; AGR04.SCH-015; HLT10.SCH-015; EDU01.SCH-015; EDU02.SCH-015; SOC11.SCH-015
+- "Community College of Manito - Manito, Albay"
+  - Origin: EDU01.SCH-028; EDU02.SCH-028; EDU05.SCH-028
+- "Daraga Community College - Daraga, Albay"
+  - Origin: BUS06.SCH-021; EDU01.SCH-021; EDU02.SCH-021; EDU04.SCH-021; EDU06.SCH-021; EDU08.SCH-021
+- "Davao Doctors College"
+  - Origin: HLT04.SCH-048; HLT05.SCH-048; HLT06.SCH-048
+- "De La Salle University"
+  - Origin: SOC03.SCH-045
+- "De La Salle-College of Saint Benilde"
+  - Origin: ART03.SCH-044
+- "Donsol Community College - Donsol, Sorsogon"
+  - Origin: EDU08.SCH-029
+- "Far Eastern University, Philippine Women's University, University of San Carlos"
+  - Origin: HLT08.SCH-050
+- "GMVCC - Garchitorena - Camarines Sur"
+  - Origin: BUS06.SCH-033; EDU08.SCH-033
+- "GMVCC - Siruma - Camarines Sur"
+  - Origin: AGR03.SCH-034; EDU08.SCH-034
+- "Gov. Mariano E. Villafuerte Community College (GMVCC) - Libmanan - Camarines Sur"
+  - Origin: EDU08.SCH-032
+- "Libon Community College - Libon, Albay"
+  - Origin: EDU01.SCH-024; EDU03.SCH-024
+- "Ligao Community College - Ligao City, Albay"
+  - Origin: BUS08.SCH-022; EDU01.SCH-022; EDU02.SCH-022; EDU03.SCH-022
+- "Mariners' Polytechnic Colleges - Naga, Canaman, Legazpi"
+  - Origin: ENG14.SCH-018; ENG15.SCH-018
+- "Northwestern University - Laoag - Ilocos Norte"
+  - Origin: BUS02.SCH-047; BUS07.SCH-047; BUS09.SCH-047; BUS10.SCH-047; ENG14.SCH-047; ENG15.SCH-047; HLT03.SCH-047; HLT04.SCH-047; SOC11.SCH-047
+- "Oas Community College - Oas, Albay"
+  - Origin: EDU01.SCH-025; EDU02.SCH-025
+- "Partido State University (ParSU) - Goa, Camarines Sur"
+  - Origin: BUS01.SCH-013; BUS05.SCH-013; BUS06.SCH-013; BUS07.SCH-013; BUS08.SCH-013; BUS09.SCH-013; BUS10.SCH-013; ICT01.SCH-013; ICT03.SCH-013; ENG01.SCH-013; SCI01.SCH-013; SCI02.SCH-013; SCI06.SCH-013; SCI09.SCH-013; SCI10.SCH-013; AGR02.SCH-013; AGR03.SCH-013; HLT08.SCH-013; EDU01.SCH-013; EDU02.SCH-013; SOC09.SCH-013; SOC11.SCH-013; SOC12.SCH-013
+- "Philippine Merchant Marine Academy"
+  - Origin: ENG14.SCH-049; ENG15.SCH-049
+- "Polangui Community College - Polangui, Albay"
+  - Origin: BUS06.SCH-023; EDU02.SCH-023; EDU04.SCH-023; EDU07.SCH-023; EDU08.SCH-023; SOC09.SCH-023
+- "San Jose Community College - Malilipot, Albay"
+  - Origin: EDU01.SCH-027; EDU06.SCH-027
+- "Sorsogon State University - Bulan - Sorsogon"
+  - Origin: BUS01.SCH-008; BUS03.SCH-008; BUS06.SCH-008; ICT01.SCH-008; ICT02.SCH-008; ICT03.SCH-008; EDU08.SCH-008; SOC09.SCH-008
+- "Sorsogon State University - Castilla - Sorsogon"
+  - Origin: AGR01.SCH-011
+- "Sorsogon State University - Magallanes"
+  - Origin: SCI02.SCH-009
+- "Sorsogon State University - Sorsogon City - Sorsogon"
+  - Origin: EDU02.SCH-010
+- "Tarlac State University, Eastern Visayas State University, St. Alexius College"
+  - Origin: SOC03.SCH-051
+- "Tiwi Community College - Tiwi, Albay"
+  - Origin: BUS07.SCH-026; EDU01.SCH-026; EDU02.SCH-026
+- "University of Camarines Norte (UCN, dating CNSC) - Daet, Camarines Norte"
+  - Origin: BUS01.SCH-016; BUS05.SCH-016; BUS06.SCH-016; BUS07.SCH-016; BUS10.SCH-016; ENG01.SCH-016; ENG02.SCH-016; ENG03.SCH-016; SCI01.SCH-016; SCI07.SCH-016; SCI09.SCH-016; AGR01.SCH-016; AGR03.SCH-016; EDU01.SCH-016; EDU02.SCH-016; EDU04.SCH-016; EDU07.SCH-016; SOC01.SCH-016; SOC05.SCH-016; SOC09.SCH-016; SOC15.SCH-016; SOC16.SCH-016
+- "University of Nueva Caceres - Naga City - Camarines Sur"
+  - Origin: ICT01.SCH-020; HLT01.SCH-020; SOC11.SCH-020; ART06.SCH-020
+- "University of Santo Tomas - Manila"
+  - Origin: SOC10.SCH-042; ART01.SCH-042; ART04.SCH-042
+- "UP Diliman - Diliman"
+  - Origin: ENG09.SCH-039; ENG10.SCH-039; ENG11.SCH-039; SCI04.SCH-039; SCI05.SCH-039; SCI10.SCH-039; SOC06.SCH-039; SOC08.SCH-039; SOC10.SCH-039; SOC18.SCH-039; ART05.SCH-039; ART06.SCH-039
+- "UP Los Banos - Los Banos - Laguna"
+  - Origin: ENG07.SCH-040; SCI06.SCH-040; SCI07.SCH-040; SCI08.SCH-040; HLT10.SCH-040
+- "UP Manila - Manila"
+  - Origin: HLT04.SCH-041; HLT05.SCH-041; HLT06.SCH-041; HLT07.SCH-041
+- "UST-Legazpi - Albay"
+  - Origin: HLT01.SCH-017; HLT02.SCH-017; HLT03.SCH-017
+
+### school group heading (4)
+
+- "Bicol community colleges"
+  - Origin: lib/courseDetailModel.js
+- "Bicol private schools"
+  - Origin: lib/courseDetailModel.js
+- "Bicol public universities and colleges"
+  - Origin: lib/courseDetailModel.js
+- "National schools"
+  - Origin: lib/courseDetailModel.js
+
+### school note (6)
+
+- "Confirm program availability"
+  - Origin: BUS01.SCH-003.notes; BUS01.SCH-008.notes; BUS01.SCH-016.notes; BUS02.SCH-047.notes; BUS03.SCH-008.notes; BUS04.SCH-046.notes; BUS05.SCH-003.notes; BUS05.SCH-006.notes; BUS05.SCH-016.notes; BUS06.SCH-003.notes; BUS06.SCH-005.notes; BUS06.SCH-006.notes; BUS06.SCH-007.notes; BUS06.SCH-008.notes; BUS06.SCH-016.notes; BUS07.SCH-016.notes; BUS07.SCH-047.notes; BUS08.SCH-003.notes; BUS09.SCH-047.notes; BUS10.SCH-016.notes; BUS10.SCH-047.notes; ICT01.SCH-001.notes; ICT01.SCH-007.notes; ICT01.SCH-008.notes; ICT01.SCH-015.notes; ICT02.SCH-007.notes; ICT02.SCH-008.notes; ICT03.SCH-001.notes; ICT03.SCH-007.notes; ICT03.SCH-008.notes; ENG01.SCH-002.notes; ENG01.SCH-016.notes; ENG02.SCH-002.notes; ENG02.SCH-016.notes; ENG03.SCH-002.notes; ENG03.SCH-016.notes; ENG04.SCH-007.notes; ENG05.SCH-007.notes; ENG06.SCH-002.notes; ENG07.SCH-040.notes; ENG08.SCH-002.notes; ENG09.SCH-002.notes; ENG09.SCH-039.notes; ENG10.SCH-039.notes; ENG11.SCH-039.notes; ENG12.SCH-004.notes; ENG13.SCH-002.notes; ENG13.SCH-007.notes; ENG14.SCH-018.notes; ENG14.SCH-047.notes; ENG14.SCH-049.notes; ENG15.SCH-018.notes; ENG15.SCH-047.notes; ENG15.SCH-049.notes; SCI01.SCH-001.notes; SCI01.SCH-015.notes; SCI01.SCH-016.notes; SCI02.SCH-009.notes; SCI03.SCH-001.notes; SCI04.SCH-039.notes; SCI05.SCH-039.notes; SCI06.SCH-040.notes; SCI07.SCH-016.notes; SCI07.SCH-040.notes; SCI08.SCH-040.notes; SCI09.SCH-015.notes; SCI09.SCH-016.notes; SCI09.SCH-043.notes; SCI10.SCH-039.notes; SCI11.SCH-001.notes; AGR01.SCH-004.notes; AGR01.SCH-015.notes; AGR01.SCH-016.notes; AGR02.SCH-004.notes; AGR03.SCH-005.notes; AGR03.SCH-016.notes; AGR04.SCH-002.notes; AGR04.SCH-004.notes; AGR04.SCH-005.notes; AGR04.SCH-015.notes; HLT01.SCH-001.notes; HLT01.SCH-005.notes; HLT01.SCH-007.notes; HLT01.SCH-017.notes; HLT02.SCH-017.notes; HLT03.SCH-017.notes; HLT03.SCH-047.notes; HLT04.SCH-041.notes; HLT04.SCH-047.notes; HLT04.SCH-048.notes; HLT05.SCH-041.notes; HLT05.SCH-048.notes; HLT06.SCH-041.notes; HLT06.SCH-048.notes; HLT07.SCH-041.notes; HLT08.SCH-050.notes; HLT09.SCH-001.notes; HLT10.SCH-004.notes; HLT10.SCH-015.notes; HLT10.SCH-040.notes; EDU01.SCH-001.notes; EDU01.SCH-006.notes; EDU01.SCH-007.notes; EDU01.SCH-015.notes; EDU01.SCH-016.notes; EDU01.SCH-025.notes; EDU01.SCH-027.notes; EDU02.SCH-001.notes; EDU02.SCH-005.notes; EDU02.SCH-006.notes; EDU02.SCH-007.notes; EDU02.SCH-010.notes; EDU02.SCH-015.notes; EDU02.SCH-016.notes; EDU02.SCH-025.notes; EDU03.SCH-001.notes; EDU04.SCH-001.notes; EDU04.SCH-016.notes; EDU05.SCH-001.notes; EDU06.SCH-001.notes; EDU06.SCH-027.notes; EDU07.SCH-007.notes; EDU07.SCH-016.notes; EDU08.SCH-002.notes; EDU08.SCH-004.notes; EDU08.SCH-008.notes; SOC01.SCH-003.notes; SOC01.SCH-016.notes; SOC02.SCH-003.notes; SOC02.SCH-005.notes; SOC03.SCH-045.notes; SOC03.SCH-051.notes; SOC04.SCH-003.notes; SOC05.SCH-003.notes; SOC05.SCH-016.notes; SOC06.SCH-039.notes; SOC07.SCH-003.notes; SOC08.SCH-039.notes; SOC09.SCH-001.notes; SOC09.SCH-008.notes; SOC09.SCH-016.notes; SOC10.SCH-039.notes; SOC10.SCH-042.notes; SOC11.SCH-015.notes; SOC11.SCH-047.notes; SOC12.SCH-001.notes; SOC13.SCH-001.notes; SOC14.SCH-001.notes; SOC15.SCH-004.notes; SOC15.SCH-016.notes; SOC16.SCH-001.notes; SOC16.SCH-016.notes; SOC17.SCH-001.notes; SOC18.SCH-039.notes; ART01.SCH-042.notes; ART02.SCH-001.notes; ART03.SCH-044.notes; ART04.SCH-042.notes; ART05.SCH-039.notes; ART06.SCH-002.notes; ART06.SCH-039.notes
+- "Information may be outdated"
+  - Origin: BUS01.SCH-016.notes; BUS05.SCH-016.notes; BUS06.SCH-016.notes; BUS07.SCH-016.notes; BUS10.SCH-016.notes; ICT01.SCH-015.notes; ENG01.SCH-016.notes; ENG02.SCH-016.notes; ENG03.SCH-016.notes; SCI01.SCH-015.notes; SCI01.SCH-016.notes; SCI07.SCH-016.notes; SCI09.SCH-015.notes; SCI09.SCH-016.notes; AGR01.SCH-015.notes; AGR01.SCH-016.notes; AGR03.SCH-016.notes; AGR03.SCH-034.notes; AGR04.SCH-015.notes; HLT10.SCH-015.notes; EDU01.SCH-015.notes; EDU01.SCH-016.notes; EDU01.SCH-027.notes; EDU02.SCH-015.notes; EDU02.SCH-016.notes; EDU04.SCH-016.notes; EDU06.SCH-027.notes; EDU07.SCH-016.notes; EDU08.SCH-034.notes; SOC01.SCH-016.notes; SOC05.SCH-016.notes; SOC09.SCH-016.notes; SOC11.SCH-015.notes; SOC15.SCH-016.notes; SOC16.SCH-016.notes
+- "Limited source reliability"
+  - Origin: BUS04.SCH-046.notes; ENG14.SCH-018.notes; ENG15.SCH-018.notes; EDU01.SCH-025.notes; EDU01.SCH-027.notes; EDU02.SCH-025.notes; EDU06.SCH-027.notes
+- "Location inferred from the town name"
+  - Origin: BUS06.SCH-021.notes; BUS06.SCH-023.notes; BUS06.SCH-031.notes; BUS06.SCH-033.notes; BUS06.SCH-037.notes; BUS07.SCH-026.notes; BUS08.SCH-022.notes; ICT02.SCH-030.notes; ENG13.SCH-030.notes; AGR03.SCH-034.notes; EDU01.SCH-021.notes; EDU01.SCH-022.notes; EDU01.SCH-024.notes; EDU01.SCH-025.notes; EDU01.SCH-026.notes; EDU01.SCH-027.notes; EDU01.SCH-028.notes; EDU01.SCH-030.notes; EDU01.SCH-035.notes; EDU02.SCH-021.notes; EDU02.SCH-022.notes; EDU02.SCH-023.notes; EDU02.SCH-025.notes; EDU02.SCH-026.notes; EDU02.SCH-028.notes; EDU02.SCH-030.notes; EDU02.SCH-031.notes; EDU02.SCH-035.notes; EDU03.SCH-022.notes; EDU03.SCH-024.notes; EDU03.SCH-031.notes; EDU04.SCH-021.notes; EDU04.SCH-023.notes; EDU04.SCH-031.notes; EDU05.SCH-028.notes; EDU06.SCH-021.notes; EDU06.SCH-027.notes; EDU07.SCH-023.notes; EDU08.SCH-021.notes; EDU08.SCH-023.notes; EDU08.SCH-029.notes; EDU08.SCH-032.notes; EDU08.SCH-033.notes; EDU08.SCH-034.notes; EDU08.SCH-037.notes; SOC04.SCH-035.notes; SOC09.SCH-023.notes
+- "New program; confirm availability"
+  - Origin: BUS06.SCH-021.notes; ICT01.SCH-015.notes; SCI01.SCH-015.notes; SCI09.SCH-015.notes; AGR01.SCH-011.notes; AGR01.SCH-015.notes; AGR04.SCH-015.notes; HLT04.SCH-041.notes; HLT05.SCH-041.notes; HLT06.SCH-041.notes; HLT07.SCH-041.notes; HLT10.SCH-015.notes; EDU01.SCH-015.notes; EDU01.SCH-021.notes; EDU02.SCH-015.notes; EDU02.SCH-021.notes; EDU04.SCH-021.notes; EDU06.SCH-021.notes; EDU08.SCH-021.notes; SOC11.SCH-015.notes
+- "Partial program list"
+  - Origin: BUS01.SCH-013.notes; BUS01.SCH-016.notes; BUS01.SCH-019.notes; BUS05.SCH-012.notes; BUS05.SCH-013.notes; BUS05.SCH-016.notes; BUS05.SCH-019.notes; BUS06.SCH-012.notes; BUS06.SCH-013.notes; BUS06.SCH-016.notes; BUS06.SCH-019.notes; BUS07.SCH-012.notes; BUS07.SCH-013.notes; BUS07.SCH-016.notes; BUS08.SCH-013.notes; BUS09.SCH-012.notes; BUS09.SCH-013.notes; BUS10.SCH-012.notes; BUS10.SCH-013.notes; BUS10.SCH-016.notes; ICT01.SCH-012.notes; ICT01.SCH-013.notes; ICT01.SCH-015.notes; ICT01.SCH-020.notes; ICT02.SCH-012.notes; ICT02.SCH-019.notes; ICT03.SCH-012.notes; ICT03.SCH-013.notes; ICT03.SCH-019.notes; ENG01.SCH-012.notes; ENG01.SCH-013.notes; ENG01.SCH-016.notes; ENG01.SCH-019.notes; ENG02.SCH-012.notes; ENG02.SCH-016.notes; ENG03.SCH-012.notes; ENG03.SCH-016.notes; ENG04.SCH-012.notes; ENG04.SCH-019.notes; ENG05.SCH-012.notes; ENG05.SCH-019.notes; SCI01.SCH-013.notes; SCI01.SCH-015.notes; SCI01.SCH-016.notes; SCI02.SCH-013.notes; SCI06.SCH-012.notes; SCI06.SCH-013.notes; SCI07.SCH-012.notes; SCI07.SCH-016.notes; SCI09.SCH-013.notes; SCI09.SCH-015.notes; SCI09.SCH-016.notes; SCI10.SCH-013.notes; AGR01.SCH-015.notes; AGR01.SCH-016.notes; AGR02.SCH-013.notes; AGR03.SCH-013.notes; AGR03.SCH-016.notes; AGR04.SCH-015.notes; HLT01.SCH-012.notes; HLT01.SCH-020.notes; HLT08.SCH-013.notes; HLT10.SCH-015.notes; EDU01.SCH-013.notes; EDU01.SCH-015.notes; EDU01.SCH-016.notes; EDU01.SCH-024.notes; EDU01.SCH-025.notes; EDU01.SCH-027.notes; EDU01.SCH-019.notes; EDU02.SCH-010.notes; EDU02.SCH-013.notes; EDU02.SCH-015.notes; EDU02.SCH-016.notes; EDU02.SCH-025.notes; EDU03.SCH-024.notes; EDU04.SCH-012.notes; EDU04.SCH-016.notes; EDU06.SCH-012.notes; EDU06.SCH-027.notes; EDU07.SCH-016.notes; EDU08.SCH-012.notes; SOC01.SCH-016.notes; SOC03.SCH-012.notes; SOC05.SCH-016.notes; SOC09.SCH-012.notes; SOC09.SCH-013.notes; SOC09.SCH-016.notes; SOC10.SCH-012.notes; SOC11.SCH-013.notes; SOC11.SCH-015.notes; SOC11.SCH-020.notes; SOC12.SCH-013.notes; SOC15.SCH-012.notes; SOC15.SCH-016.notes; SOC16.SCH-012.notes; SOC16.SCH-016.notes; ART06.SCH-012.notes; ART06.SCH-020.notes
+
+### shared salary source (12)
+
+- "All amounts are estimated gross monthly salary ranges in Philippine pesos (PHP). They are indicative career-exploration estimates, not guaranteed offers or exact official salary bands. Ranges were built by using typical monthly salary benchmarks published in Jobstreet Philippines' career salary pages for comparable roles and widening those benchmarks to reflect entry-level versus experienced workers, employer size, location, specialization, and differences in job titles. For roles with no directly comparable benchmark, a related occupational family was used as a cautious estimate. Self-employment, freelance work, shipboard work, and roles requiring licensure or advanced training can vary substantially; income may not be regular or directly comparable to employee salaries."
+  - Origin: shared salary methodology
+- "Department of Budget and Management — National Budget Circular No. 601 (2026 tranche of government civilian salary schedule)"
+  - Origin: shared salary source label
+- "Indeed Philippines — IT Support Specialist salary data, based on salary reports and job postings"
+  - Origin: shared salary source label
+- "Jobstreet Philippines — Accountant salary insights; salary data based on full-time salary ranges disclosed by employers in job ads"
+  - Origin: shared salary source label
+- "Jobstreet Philippines — Accounting careers and typical monthly salary benchmarks"
+  - Origin: shared salary source label
+- "Jobstreet Philippines — Education & Training careers and typical monthly salary benchmarks"
+  - Origin: shared salary source label
+- "Jobstreet Philippines — Engineering careers and typical monthly salary benchmarks"
+  - Origin: shared salary source label
+- "Jobstreet Philippines — Healthcare & Medical careers and typical monthly salary benchmarks"
+  - Origin: shared salary source label
+- "Jobstreet Philippines — High salary careers (cross-industry comparisons)"
+  - Origin: shared salary source label
+- "Jobstreet Philippines — Information & Communication Technology careers and typical monthly salary benchmarks"
+  - Origin: shared salary source label
+- "Jobstreet Philippines — Software Developer salary insights"
+  - Origin: shared salary source label
+- "Salary benchmarks change over time. This guide was updated in October 2026; check the linked salary pages and current job advertisements before making a career or financial decision."
+  - Origin: shared salary update note
