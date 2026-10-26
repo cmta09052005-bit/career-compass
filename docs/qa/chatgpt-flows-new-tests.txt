@@ -1,0 +1,585 @@
+
+> career-compass@0.1.0 test
+> node --test lib/*.test.js lib/*.test.mjs lib/i18n/*.test.js lib/scoringV2/*.test.js
+
+(node:147656) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/assessmentValidation.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Assessment validation: subject counts 0–4, invalid answers, and restored progression passed.
+✔ lib\assessmentValidation.test.js (291.5237ms)
+(node:148560) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/browserStorage.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ legacy progress, preferences and journey notices migrate together (20.0165ms)
+✔ existing local journey wins without mixing old tab notices (3.9943ms)
+✔ an interrupted migration resumes its remaining journey keys (3.9091ms)
+✔ reset removes journey records, preserves preferences and unrelated storage, and prevents legacy resurrection (10.2059ms)
+✔ closing and reopening with fresh session storage retains local data (11.0769ms)
+✔ failed writes keep the newest in-memory answer and retry successfully (4.3629ms)
+✔ failed deletion stays cleared in memory and can be retried (4.1843ms)
+✔ storage subscribers see same-page updates and cross-tab resets (5.0172ms)
+✔ blocked storage retains legacy answers without deleting them (5.222ms)
+✔ quota failure during migration retains legacy answers even when reads still work (4.7383ms)
+(node:148588) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseComparison.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ a third course never replaces either selected course (4.8961ms)
+✔ either selection can be removed and its slot reused (0.4712ms)
+(node:145360) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseDetailModel.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ all 85 detail models have complete source fields and preserve original salaries and school order (30.8753ms)
+✔ careerNotes, one-school model and unknown/legacy IDs (0.6643ms)
+✔ a real community-college row shows derived location and never major-only (1.9292ms)
+(node:144756) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseSearch.render.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ actual card info renders safe student strings with query/filter combinations and true ranks (164.7516ms)
+✔ missing-school info is a neutral non-link and source titles are not shortened (1.6809ms)
+(node:150292) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseSearch.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ word-prefix AND search uses source names, groups, careers and topics (75.8996ms)
+✔ all eight filter combination types use AND across categories and OR within them (0.9276ms)
+✔ filter options are exactly the recorded values and never infer national ownership (1.7468ms)
+✔ search combines with every active-filter combination using AND (11.2752ms)
+✔ card info preserves source text and chooses a matching school on the same record (79.9112ms)
+✔ search, filters and all sorts preserve personal ranks, totals and source order (66.3994ms)
+(node:150516) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/i18n/translate.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ all assessment prompts and options have translations or standard academic names (7.3379ms)
+✔ all course narratives and notes are translated; proper names remain intact (3.3911ms)
+✔ English source is unchanged except requested em dash removal (1.9283ms)
+✔ dynamic labels preserve factual values and personal names (0.8153ms)
+✔ catalog has no em dashes, emoji, or missing values (2.6612ms)
+(node:108992) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/i18n/v2.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ real-source T1 and T2 translation inventory has no gaps (456.1783ms)
+✔ draft translations retain placeholders, numeric values, percentages and URLs (6.625ms)
+✔ all protected source terms stay English and unknown copy silently falls back (4.8917ms)
+✔ both route PDF models localize without changing course names or adding match scores (63.81ms)
+✔ offline pages, RSC and optimized image requests resolve entirely from the completed copy (157.8951ms)
+✔ a failed replacement is removed while the ready previous build survives (10.2063ms)
+✔ old builds survive preparation and are deleted only after the complete replacement activates (12.9055ms)
+✔ an update is blocked by any assessment client, and disabling stops interception (6.1801ms)
+✔ limited connections defer background downloads but an explicit update is allowed (18.8547ms)
+✔ quota failures roll back and cross-origin or POST requests are never intercepted (4.133ms)
+(node:148928) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/recommendations.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ shared old recommendations equal real ranking and exact matched evidence (22.3701ms)
+✔ shared new recommendations equal real ranking and exact matched evidence (6.6811ms)
+✔ invalid sessions return errors without ranking (0.3857ms)
+✔ arcs use fixed rank-one/five anchors and remain stable on expansion (2.2343ms)
+✔ rendered result labels contain no percentages or numeric scores (43.3891ms)
+✔ compare data is complete for five courses, preserving careerNotes and single-school order (1.0327ms)
+✔ English old report preserves ranking/profile and excludes score fields (136.205ms)
+✔ English new report preserves ranking/profile and excludes score fields (25.4248ms)
+✔ school display suppresses disallowed notes and repeated location segments (0.8737ms)
+(node:149428) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.integration.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: GAS has zero category and course strand bonuses.
+PASS: TEST CASE 1 — IT-leaning student
+{
+  "c1": {
+    "category": "C1",
+    "label": "Information Technology & Computing",
+    "percentage": 84,
+    "rawPercentage": 84
+  },
+  "topFour": [
+    {
+      "courseId": "BSIT-001",
+      "courseName": "BS Information Technology",
+      "categoryCode": "C1",
+      "categoryName": "Information Technology & Computing",
+      "categoryMatchPercent": 84,
+      "scaledCategoryBase": 73.92,
+      "componentA": 6,
+      "componentB": 2,
+      "componentC": 2,
+      "componentD": 0,
+      "courseBonusPoints": 10,
+      "rawScoreBeforeRounding": 83.92,
+      "calculatedCourseMatchPercent": 84,
+      "finalCourseMatchPercent": 84,
+      "displayTieAdjustment": 0
+    },
+    {
+      "courseId": "BSCpE-001",
+      "courseName": "BS Computer Engineering",
+      "categoryCode": "C1",
+      "categoryName": "Information Technology & Computing",
+      "categoryMatchPercent": 84,
+      "scaledCategoryBase": 73.92,
+      "componentA": 0,
+      "componentB": 2,
+      "componentC": 2,
+      "componentD": 0,
+      "courseBonusPoints": 4,
+      "rawScoreBeforeRounding": 77.92,
+      "calculatedCourseMatchPercent": 78,
+      "finalCourseMatchPercent": 78,
+      "displayTieAdjustment": 0
+    },
+    {
+      "courseId": "BSCS-001",
+      "courseName": "BS Computer Science",
+      "categoryCode": "C1",
+      "categoryName": "Information Technology & Computing",
+      "categoryMatchPercent": 84,
+      "scaledCategoryBase": 73.92,
+      "componentA": 0,
+      "componentB": 2,
+      "componentC": 2,
+      "componentD": 0,
+      "courseBonusPoints": 4,
+      "rawScoreBeforeRounding": 77.92,
+      "calculatedCourseMatchPercent": 78,
+      "finalCourseMatchPercent": 77.99,
+      "displayTieAdjustment": -0.01
+    },
+    {
+      "courseId": "BSIS-001",
+      "courseName": "BS Information Systems",
+      "categoryCode": "C1",
+      "categoryName": "Information Technology & Computing",
+      "categoryMatchPercent": 84,
+      "scaledCategoryBase": 73.92,
+      "componentA": 0,
+      "componentB": 2,
+      "componentC": 2,
+      "componentD": 0,
+      "courseBonusPoints": 4,
+      "rawScoreBeforeRounding": 77.92,
+      "calculatedCourseMatchPercent": 78,
+      "finalCourseMatchPercent": 77.98,
+      "displayTieAdjustment": -0.02
+    }
+  ]
+}
+PASS: TEST CASE 2 — Health-leaning, max-signal student
+{
+  "c5": {
+    "category": "C5",
+    "label": "Medical & Allied Health Sciences",
+    "percentage": 97,
+    "rawPercentage": 96.66666666666667
+  },
+  "topFour": [
+    {
+      "courseId": "BSN-001",
+      "courseName": "BS Nursing",
+      "categoryCode": "C5",
+      "categoryName": "Medical & Allied Health Sciences",
+      "categoryMatchPercent": 97,
+      "scaledCategoryBase": 85.06666666666668,
+      "componentA": 6,
+      "componentB": 2,
+      "componentC": 1,
+      "componentD": 2,
+      "courseBonusPoints": 11,
+      "rawScoreBeforeRounding": 96.06666666666668,
+      "calculatedCourseMatchPercent": 96,
+      "finalCourseMatchPercent": 96,
+      "displayTieAdjustment": 0
+    },
+    {
+      "courseId": "BSPharma-001",
+      "courseName": "BS Pharmacy",
+      "categoryCode": "C5",
+      "categoryName": "Medical & Allied Health Sciences",
+      "categoryMatchPercent": 97,
+      "scaledCategoryBase": 85.06666666666668,
+      "componentA": 6,
+      "componentB": 2,
+      "componentC": 1,
+      "componentD": 2,
+      "courseBonusPoints": 11,
+      "rawScoreBeforeRounding": 96.06666666666668,
+      "calculatedCourseMatchPercent": 96,
+      "finalCourseMatchPercent": 95.99,
+      "displayTieAdjustment": -0.01
+    },
+    {
+      "courseId": "BSMLS-001",
+      "courseName": "BS Medical Laboratory Science",
+      "categoryCode": "C5",
+      "categoryName": "Medical & Allied Health Sciences",
+      "categoryMatchPercent": 97,
+      "scaledCategoryBase": 85.06666666666668,
+      "componentA": 6,
+      "componentB": 2,
+      "componentC": 1,
+      "componentD": 0,
+      "courseBonusPoints": 9,
+      "rawScoreBeforeRounding": 94.06666666666668,
+      "calculatedCourseMatchPercent": 94,
+      "finalCourseMatchPercent": 94,
+      "displayTieAdjustment": 0
+    },
+    {
+      "courseId": "BSRT-001",
+      "courseName": "BS Radiologic Technology",
+      "categoryCode": "C5",
+      "categoryName": "Medical & Allied Health Sciences",
+      "categoryMatchPercent": 97,
+      "scaledCategoryBase": 85.06666666666668,
+      "componentA": 6,
+      "componentB": 2,
+      "componentC": 1,
+      "componentD": 0,
+      "courseBonusPoints": 9,
+      "rawScoreBeforeRounding": 94.06666666666668,
+      "calculatedCourseMatchPercent": 94,
+      "finalCourseMatchPercent": 93.99,
+      "displayTieAdjustment": -0.01
+    }
+  ]
+}
+PASS: TEST CASE 3 — Realistic partial-signal Architecture/Fine Arts student
+{
+  "controlledCategoryMatchPercent": 64,
+  "rankedCourses": [
+    {
+      "courseId": "BFA-001",
+      "courseName": "Bachelor of Fine Arts",
+      "categoryCode": "C6",
+      "categoryName": "Architecture, Fine Arts & Design",
+      "categoryMatchPercent": 64,
+      "scaledCategoryBase": 56.32,
+      "componentA": 6,
+      "componentB": 2,
+      "componentC": 0,
+      "componentD": 1,
+      "courseBonusPoints": 9,
+      "rawScoreBeforeRounding": 65.32,
+      "calculatedCourseMatchPercent": 65,
+      "finalCourseMatchPercent": 65,
+      "displayTieAdjustment": 0
+    },
+    {
+      "courseId": "BSID-001",
+      "courseName": "BS Interior Design",
+      "categoryCode": "C6",
+      "categoryName": "Architecture, Fine Arts & Design",
+      "categoryMatchPercent": 64,
+      "scaledCategoryBase": 56.32,
+      "componentA": 6,
+      "componentB": 2,
+      "componentC": 0,
+      "componentD": 0,
+      "courseBonusPoints": 8,
+      "rawScoreBeforeRounding": 64.32,
+      "calculatedCourseMatchPercent": 64,
+      "finalCourseMatchPercent": 64,
+      "displayTieAdjustment": 0
+    },
+    {
+      "courseId": "BSMA-001",
+      "courseName": "BS Multimedia Arts",
+      "categoryCode": "C6",
+      "categoryName": "Architecture, Fine Arts & Design",
+      "categoryMatchPercent": 64,
+      "scaledCategoryBase": 56.32,
+      "componentA": 4,
+      "componentB": 2,
+      "componentC": 0,
+      "componentD": 0,
+      "courseBonusPoints": 6,
+      "rawScoreBeforeRounding": 62.32,
+      "calculatedCourseMatchPercent": 62,
+      "finalCourseMatchPercent": 62,
+      "displayTieAdjustment": 0
+    },
+    {
+      "courseId": "BSArch-001",
+      "courseName": "BS Architecture",
+      "categoryCode": "C6",
+      "categoryName": "Architecture, Fine Arts & Design",
+      "categoryMatchPercent": 64,
+      "scaledCategoryBase": 56.32,
+      "componentA": 0,
+      "componentB": 2,
+      "componentC": 0,
+      "componentD": 0,
+      "courseBonusPoints": 2,
+      "rawScoreBeforeRounding": 58.32,
+      "calculatedCourseMatchPercent": 58,
+      "finalCourseMatchPercent": 58,
+      "displayTieAdjustment": 0
+    }
+  ]
+}
+PASS: REGRESSION — multiple course tie-breakers within one category can fire simultaneously and legitimately tie at the cap
+{
+  "c2": {
+    "category": "C2",
+    "label": "Engineering & Technology",
+    "percentage": 100,
+    "rawPercentage": 100
+  },
+  "tieBreakers": [
+    {
+      "courseId": "BSCE-001",
+      "condition": "SKL-08 >= 4"
+    },
+    {
+      "courseId": "BSEE-001",
+      "condition": "subjects includes \"Physics\""
+    },
+    {
+      "courseId": "BSECE-001",
+      "condition": "subjects includes \"TVL-Industrial Arts\""
+    },
+    {
+      "courseId": "BSME-001",
+      "condition": "SKL-02 >= 4"
+    }
+  ],
+  "finalOrder": [
+    {
+      "courseId": "BSCE-001",
+      "courseName": "BS Civil Engineering",
+      "rawScoreBeforeRounding": 100,
+      "finalCourseMatchPercent": 100
+    },
+    {
+      "courseId": "BSEE-001",
+      "courseName": "BS Electrical Engineering",
+      "rawScoreBeforeRounding": 100,
+      "finalCourseMatchPercent": 99.99
+    },
+    {
+      "courseId": "BSME-001",
+      "courseName": "BS Mechanical Engineering",
+      "rawScoreBeforeRounding": 100,
+      "finalCourseMatchPercent": 99.98
+    },
+    {
+      "courseId": "BSECE-001",
+      "courseName": "BS Electronics Engineering",
+      "rawScoreBeforeRounding": 98,
+      "finalCourseMatchPercent": 98
+    }
+  ]
+}
+
+Integration summary: 4/4 passed.
+✔ lib\scoringEngine.integration.test.js (367.2329ms)
+(node:147112) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.secondarySignals.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: complete sample profile matches all 24 expected course percentages.
+PASS: sample profile's top five displayed percentages are all distinct.
+PASS: even five identical zero scores receive unique top-five display percentages while their calculated scores remain unchanged.
+✔ lib\scoringEngine.secondarySignals.test.js (371.9117ms)
+(node:148644) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.skillBoundary.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: SKL-01=4 adds 2 to CategoryScore(C1) and gives BSIS-001 componentA=4.
+PASS: secondary-signal formula produces C1=88%, BSIT=87%, BSIS=84%, BSCpE=82%, BSCS=80%.
+PASS: SKL-01 through SKL-10 all trigger category and course effects at exactly 4.
+✔ lib\scoringEngine.skillBoundary.test.js (368.7314ms)
+(node:140996) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+============================================================
+Student A ("IT-leaning")
+============================================================
+Raw category scores: { C1: 25, C2: 11, C3: 0, C4: 6, C5: 8, C6: 0 }
+
+Ranked categories:
+  C1  100%  (raw 100.00%)  Information Technology & Computing  ← Top Match
+  C2  46%  (raw 45.83%)  Engineering & Technology
+  C5  27%  (raw 26.67%)  Medical & Allied Health Sciences
+  C4  21%  (raw 21.43%)  Education Science & Teacher Training
+  C6  0%  (raw 0.00%)  Architecture, Fine Arts & Design
+  C3  0%  (raw 0.00%)  Business Administration & Related
+
+Course matches in C1:
+  BSIT-001      100%  BS Information Technology
+  BSCpE-001      98%  BS Computer Engineering
+  BSCS-001       98%  BS Computer Science
+  BSIS-001       98%  BS Information Systems
+
+C1 secondary-evidence check:
+  BSIT receives its secondary signal while category-mates do not: PASS (100/98/98/98)
+  NOTE: exact remaining ties use raw score and alphabetical order: [BSIT-001, BSCpE-001, BSCS-001, BSIS-001].
+
+>>> PASS: top category C1 (expected C1), 100% (expected ~100%)
+
+============================================================
+Student B ("Health-leaning")
+============================================================
+Raw category scores: { C1: 1, C2: 1, C3: 3, C4: 3, C5: 29, C6: 0 }
+
+Ranked categories:
+  C5  97%  (raw 96.67%)  Medical & Allied Health Sciences  ← Top Match
+  C3  12%  (raw 12.00%)  Business Administration & Related
+  C4  11%  (raw 10.71%)  Education Science & Teacher Training
+  C2  4%  (raw 4.17%)  Engineering & Technology
+  C1  4%  (raw 4.00%)  Information Technology & Computing
+  C6  0%  (raw 0.00%)  Architecture, Fine Arts & Design
+
+Course matches in C5:
+  BSN-001        96%  BS Nursing
+  BSPharma-001   96%  BS Pharmacy
+  BSMLS-001      94%  BS Medical Laboratory Science
+  BSRT-001       94%  BS Radiologic Technology
+
+C5 finalized tie-breaker result. Distinct displayed % values: [96, 94].
+
+>>> PASS: top category C5 (expected C5), 97% (expected ~97%)
+
+============================================================
+Student C ("Business/Arts mix")
+============================================================
+Raw category scores: { C1: 0, C2: 0, C3: 22, C4: 0, C5: 0, C6: 16 }
+
+Ranked categories:
+  C3  88%  (raw 88.00%)  Business Administration & Related  ← Top Match
+  C6  62%  (raw 61.54%)  Architecture, Fine Arts & Design
+  C4  0%  (raw 0.00%)  Education Science & Teacher Training
+  C2  0%  (raw 0.00%)  Engineering & Technology
+  C1  0%  (raw 0.00%)  Information Technology & Computing
+  C5  0%  (raw 0.00%)  Medical & Allied Health Sciences
+
+Course matches in C3:
+  BSA-001        87%  BS Accountancy
+  BSBA-001       87%  BS Business Administration
+  BSENT-001      87%  BS Entrepreneurship
+  BSHRM-001      85%  BS Hospitality Management
+
+C3 finalized tie-breaker result. Distinct displayed % values: [87, 85].
+
+>>> PASS: top category C3 (expected C3), 88% (expected ~88%)
+    2nd category C6 (expected C6): PASS
+
+============================================================
+Edge 1 — Empty answers
+============================================================
+Raw category scores: { C1: 0, C2: 0, C3: 0, C4: 0, C5: 0, C6: 0 }
+Expected:            { C1: 0, C2: 0, C3: 0, C4: 0, C5: 0, C6: 0 }
+
+>>> PASS: got {"C1":0,"C2":0,"C3":0,"C4":0,"C5":0,"C6":0}
+
+============================================================
+Edge 2 — Partial answers (3 interests, 4 skills)
+============================================================
+Raw category scores: { C1: 8, C2: 3, C3: 2, C4: 0, C5: 2, C6: 2 }
+Expected:            { C1: 8, C2: 3, C3: 2, C4: 0, C5: 2, C6: 2 }
+
+>>> PASS: got {"C1":8,"C2":3,"C3":2,"C4":0,"C5":2,"C6":2}
+
+============================================================
+Edge 3 — Invalid / unrecognized values
+============================================================
+Raw category scores: { C1: 3, C2: 0, C3: 0, C4: 0, C5: 0, C6: 0 }
+Expected:            { C1: 3, C2: 0, C3: 0, C4: 0, C5: 0, C6: 0 }
+
+>>> PASS: got {"C1":3,"C2":0,"C3":0,"C4":0,"C5":0,"C6":0}
+
+>>> PASS: C2 evidence differentiates BSCE-001 at 66% (BSCE-001=66%, BSME-001=63%, BSEE-001=62%, BSECE-001=62%)
+
+>>> PASS: C3 evidence differentiates BSBA-001 at 66% (BSBA-001=66%, BSENT-001=63%, BSA-001=62%, BSHRM-001=62%)
+
+>>> PASS: C4 evidence differentiates BEED-001 at 66% (BEED-001=66%, BSED-001=63%, BPED-001=62%, BTLE-001=62%)
+
+>>> PASS: C5 evidence differentiates BSN-001 at 66% (BSN-001=66%, BSMLS-001=62%, BSPharma-001=62%, BSRT-001=62%)
+
+>>> PASS: C6 evidence differentiates BFA-001 at 68% (BFA-001=68%, BSArch-001=62%, BSID-001=62%, BSMA-001=62%)
+
+============================================================
+SUMMARY: all 3 personas PASS top category + percentage checks.
+SUMMARY: all 3 edge cases PASS (empty / partial / invalid).
+SUMMARY: all 5 new C2–C6 tie-breaker checks PASS.
+SUMMARY: all-course matching returns 24 complete Option C results with isolated bonuses and the 100% cap.
+SUMMARY: all Option C component, rounding, and cap unit checks PASS.
+SUMMARY: all-course ranking resolves displayed ties by raw score, then course name.
+SUMMARY: recommendation DTO leads with 24 ranked topCourses and keeps category as supplementary context.
+✔ lib\scoringEngine.test.js (311.6097ms)
+(node:137512) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringV2/engine.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ GWA 0 gives 0 without rounding in both routes (8.2337ms)
+✔ GWA 74.99 gives 0 without rounding in both routes (1.1009ms)
+✔ GWA 75 gives 2 without rounding in both routes (0.7443ms)
+✔ GWA 79.99 gives 2 without rounding in both routes (0.5458ms)
+✔ GWA 80 gives 3 without rounding in both routes (1.2002ms)
+✔ GWA 84.99 gives 3 without rounding in both routes (0.7708ms)
+✔ GWA 85 gives 4 without rounding in both routes (0.5845ms)
+✔ GWA 89.99 gives 4 without rounding in both routes (0.4009ms)
+✔ GWA 90 gives 5 without rounding in both routes (1.6511ms)
+✔ GWA 94.5 gives 5 without rounding in both routes (1.0427ms)
+✔ GWA 94.99 gives 5 without rounding in both routes (0.5868ms)
+✔ GWA 95 gives 6 without rounding in both routes (0.4782ms)
+✔ GWA 100 gives 6 without rounding in both routes (0.4848ms)
+✔ all 85 old-course maxima are 38 and all new-course maxima are 43, with exact breakdowns (25.819ms)
+✔ GAS removes all strand and GWA awards, retaining subject evidence (2.0354ms)
+✔ empty certificates and electives award zero (1.5381ms)
+✔ matched electives and the linked core award separately; GWA is given once (5.9483ms)
+✔ GWA requires an elective or core match; no cluster award exists (1.5119ms)
+✔ SHA-256 known vectors, padding boundaries and UTF-8 match independent Node crypto (80.5427ms)
+✔ ranking obeys all four comparators, including ascending hash within exact ties (5.5244ms)
+✔ deterministic ranking ignores input key order, array order and metadata (21.5362ms)
+✔ hash uses GWA tier and active-route scoring fields only (1.2753ms)
+✔ validator rejects malformed objects, unknown IDs, duplicates and out-of-range values (3.0783ms)
+✔ production scoring has no cap or percentage transformation (18.1137ms)
+✔ inherited scoring properties cannot bypass canonicalization (0.3646ms)
+✔ browser-like VM with no crypto, window or Node APIs produces identical ranking (17.8369ms)
+(node:137512) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringV2/index.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ real module worker without Web Crypto produces identical ranking (115.6901ms)
+(node:150696) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/sessionFlow.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Grade 11 automatically uses new, including after restore and an incompatible route patch (5.2302ms)
+﹣ Grade 12 pilot route is locked new; test-only list is never production school data (0.2153ms) # SKIP
+✔ Grade 12 chooses either route without a school question (2.2203ms)
+✔ full production-v1 saved fixture retains identity and clears all scoring and completion (1.2019ms)
+✔ route/context changes clear only the branch that became inactive, retaining shared answers (1.2395ms)
+✔ empty/nullable answers need explicit Valley confirmation, not merely valid canonical values (1.0031ms)
+✔ partial validators do not demand unrelated sections, but reject unknown IDs and extra questions (0.4838ms)
+✔ sequential guards do not trust stored completion flags (0.5001ms)
+✔ adapter emits only canonical scoring fields, excludes inactive answers and validates with the real engine (0.7209ms)
+✔ readSessionRecord migrates local and legacy serialized v1 fixtures, clearing notices and preserving preferences (10.888ms)
+✔ 25b migration drops retired fields, preserves core selections and reopens empty core answers (1.0709ms)
+✔ 25b storage cleanup persists a normalized v2 record and removes the retired step (3.8892ms)
+(node:150704) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/valleySelection.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Valley max picks, deselect and exclusive none confirmation (2.8964ms)
+✔ Valley route step lists, flags and exact UI GWA (3.219ms)
+✔ full old journey from a real reachability witness validates through adapter (2.5176ms)
+✔ full new journey from a real reachability witness validates through adapter (0.6841ms)
+ℹ tests 95
+ℹ suites 0
+ℹ pass 94
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 1
+ℹ todo 0
+ℹ duration_ms 2849.7584

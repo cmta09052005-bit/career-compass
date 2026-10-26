@@ -1,0 +1,62 @@
+[
+  {
+    "name": "browser-1-en",
+    "pages": 1,
+    "checks": {
+      "one_or_two_pages": true,
+      "no_avatar_or_images": true,
+      "no_percent_or_numeric_scores": true,
+      "all_five_names": true,
+      "accented_name": true,
+      "no_broken_glyphs": true,
+      "profile_before_results": true,
+      "no_removed_sections": true
+    },
+    "pass": true
+  },
+  {
+    "name": "browser-1-fil",
+    "pages": 1,
+    "checks": {
+      "one_or_two_pages": true,
+      "no_avatar_or_images": true,
+      "no_percent_or_numeric_scores": true,
+      "all_five_names": true,
+      "accented_name": true,
+      "no_broken_glyphs": true,
+      "profile_before_results": true,
+      "no_removed_sections": true
+    },
+    "pass": true
+  },
+  {
+    "name": "browser-7-en",
+    "pages": 1,
+    "checks": {
+      "one_or_two_pages": true,
+      "no_avatar_or_images": true,
+      "no_percent_or_numeric_scores": true,
+      "all_five_names": true,
+      "accented_name": true,
+      "no_broken_glyphs": true,
+      "profile_before_results": true,
+      "no_removed_sections": true
+    },
+    "pass": true
+  },
+  {
+    "name": "browser-7-fil",
+    "pages": 1,
+    "checks": {
+      "one_or_two_pages": true,
+      "no_avatar_or_images": true,
+      "no_percent_or_numeric_scores": true,
+      "all_five_names": true,
+      "accented_name": true,
+      "no_broken_glyphs": true,
+      "profile_before_results": true,
+      "no_removed_sections": true
+    },
+    "pass": true
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "changedExisting": [
+    "app/journey/academic/page.js",
+    "app/report/page.js",
+    "app/results/ResultsControls.js",
+    "app/results/page.js",
+    "app/results/results.css",
+    "components/Localized.js",
+    "lib/explorerReport.js",
+    "lib/i18n/patterns.js",
+    "lib/i18n/translate.js",
+    "lib/i18n/translate.test.js"
+  ],
+  "protectedCount": 26,
+  "protectedChanged": [],
+  "head": "b8d9fad"
+}

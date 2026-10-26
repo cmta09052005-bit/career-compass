@@ -1,0 +1,557 @@
+{
+  "route": "NEW",
+  "date": "2026-10-26",
+  "passed": 85,
+  "failed": 0,
+  "smallestLead": 3,
+  "gwaTierCounts": {
+    "95 to 100": 15,
+    "90 up to but not including 95": 14,
+    "85 up to but not including 90": 14,
+    "80 up to but not including 85": 14,
+    "75 up to but not including 80": 14,
+    "Below 75": 14
+  },
+  "electiveCounts": {
+    "3": 27,
+    "2": 27,
+    "1": 27,
+    "0": 4
+  },
+  "certificateCounts": {
+    "0": 8,
+    "2": 38,
+    "1": 39
+  },
+  "specialHandling": [
+    {
+      "courseId": "BUS01",
+      "preferredElectives": 0,
+      "preferredCertificates": 0,
+      "usedElectives": 3,
+      "usedCertificates": 0
+    }
+  ],
+  "search": [
+    {
+      "courseId": "BUS01",
+      "batches": 2,
+      "candidatesEvaluated": 12000
+    },
+    {
+      "courseId": "BUS02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "BUS03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "BUS04",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "BUS05",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "BUS06",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "BUS07",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "BUS08",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "BUS09",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "BUS10",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ICT01",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ICT02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ICT03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG01",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG04",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG05",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG06",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG07",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG08",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG09",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG10",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG11",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG12",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG13",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG14",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ENG15",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI01",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI04",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI05",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI06",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI07",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI08",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI09",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI10",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SCI11",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "AGR01",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "AGR02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "AGR03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "AGR04",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT01",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT04",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT05",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT06",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT07",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT08",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT09",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "HLT10",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "EDU01",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "EDU02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "EDU03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "EDU04",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "EDU05",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "EDU06",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "EDU07",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "EDU08",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC01",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC04",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC05",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC06",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC07",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC08",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC09",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC10",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC11",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC12",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC13",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC14",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC15",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC16",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC17",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "SOC18",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ART01",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ART02",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ART03",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ART04",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ART05",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    },
+    {
+      "courseId": "ART06",
+      "batches": 1,
+      "candidatesEvaluated": 6000
+    }
+  ],
+  "sourceSha256": {
+    "data/v2/items.json": "155c484d88820a4123c19fd5cdc355f184df91b5c48a085b934081df9fc7e7f8",
+    "data/v2/links.json": "a41587c23ae0a8768f1c107c30a4668da247789b3f6e94e5667c8f81bd72caa2",
+    "data/v2/courses-master.json": "85fa2eb93f50a0772c661a2aa025d0fc3fbdec127e03126d8e77bd6b4f983d1b",
+    "data/v2/applied-changes.json": "f016a4f41964d200ad2190db0f09d0cb2ff0a1a7eb20cc5741a014be898d2df7"
+  },
+  "pdfPages": 92,
+  "minimumFlowFontSize": 10.0,
+  "flowPages": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87
+  ]
+}

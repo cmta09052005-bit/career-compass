@@ -1,0 +1,18 @@
+{
+  "version": "ZK56bnkmi93M-T21fU86B",
+  "resources": 624,
+  "routes": 96,
+  "bytes": 67591908,
+  "logos": [
+    "/brand/compass-v2-transparent-master.png",
+    "/brand/compass-v2-transparent-32.png",
+    "/brand/compass-v2-transparent-96.png",
+    "/brand/compass-v2-transparent-180.png",
+    "/brand/compass-v2-transparent-192.png",
+    "/brand/compass-v2-transparent-512.png",
+    "/brand/compass-v2-transparent-1024.png",
+    "/icon.png",
+    "/apple-icon.png"
+  ],
+  "pass": true
+}

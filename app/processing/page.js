@@ -101,7 +101,7 @@ export default function ProcessingPage() {
         {/* 48 — Staged status text */}
         <div className="mt-8" role="status" aria-live="polite" aria-atomic="true">
           <Localized as="p" key={statusIndex} className="course-status text-sm font-semibold text-gold sm:text-base">
-            {statusIndex === 2 ? <StatementIcon icon="forest-C4" /> : <Localized as={Image} src={statusIndex === 3 ? "/landing-compass.png" : `/icons/career-compass/${statusIndex === 0 ? "mountain-peak" : "pine-branch"}.svg`} width={32} height={32} alt="" />}
+            {statusIndex === 2 ? <StatementIcon icon="forest-C4" /> : <Localized as={Image} src={statusIndex === 3 ? "/brand/compass-v2-transparent-96.png" : `/icons/career-compass/${statusIndex === 0 ? "mountain-peak" : "pine-branch"}.svg`} width={32} height={32} alt="" />}
             {isReady ? STATUS_MESSAGES[statusIndex] : "Restoring your trail..."}
           </Localized>
           <Localized as="div" className="mx-auto mt-4 flex w-fit gap-2" aria-hidden="true">

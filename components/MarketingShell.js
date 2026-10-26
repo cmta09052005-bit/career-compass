@@ -42,10 +42,11 @@ export default function MarketingShell({ children }) {
   const marketing = routes.includes(pathname);
   const assessment = pathname === "/intake" || pathname === "/journey" || pathname.startsWith("/journey/") || pathname === "/processing" || pathname === "/results" || pathname.startsWith("/results/") || pathname === "/report";
   useEffect(() => {
-    const update = () => setScrolled(window.scrollY > 80);
+    const scroller = content.current;
+    const update = () => setScrolled((scroller?.scrollTop || 0) > 80);
     update();
-    window.addEventListener("scroll", update, { passive: true });
-    return () => window.removeEventListener("scroll", update);
+    scroller?.addEventListener("scroll", update, { passive: true });
+    return () => scroller?.removeEventListener("scroll", update);
   }, [pathname]);
   const { contextSafe } = useGSAP(() => {
     switching.current = false;
@@ -56,7 +57,7 @@ export default function MarketingShell({ children }) {
     if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     if (href === pathname) {
       event.preventDefault();
-      window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+      content.current?.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
       return;
     }
     event.preventDefault();
@@ -77,6 +78,6 @@ export default function MarketingShell({ children }) {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     if (marketing && pathname !== "/intake" && event.target.closest('a[href="/intake"]')) { event.preventDefault(); event.stopPropagation(); if (entry.href !== "/intake") { router.push(entry.href); return; } setPortal(true); router.prefetch("/intake"); }
   };
-  return <Localized as="div" className={`${marketing ? "story-home marketing-shell" : ""} ${marketingFonts} ${assessment ? "assessment-frame" : ""}`} onClickCapture={startJourney}>{saveFailed && <Localized as="p" role="alert" className="fixed inset-x-0 top-0 z-[100] bg-navy px-4 py-3 text-center text-sm text-beige">Your latest changes could not be saved on this device. Keep this page open and allow browser storage before leaving.</Localized>}{marketing && pathname !== "/intake" && <MarketingNavbar entry={entry} solid={pathname !== "/" || scrolled} active={pathname} onNavigate={navigate} />}<Localized as="div" ref={content} className={marketing ? "marketing-content" : undefined}>{children}</Localized>{portal && <JourneyPortal celebration icon={portal === "success" ? "/icons/career-compass/explorer-backpack.svg" : "/landing-compass.png"} title={portal === "success" ? "Explorer Created!" : "Welcome, Explorer!"} description={portal === "success" ? "Your profile is ready. Your map awaits." : "Your journey begins now."} notice={portal === "success" && autoAssignedAvatar ? "We randomly assigned your explorer avatar. It does not affect your assessment results or scoring." : undefined} destinationSelector={portal === "success" ? ".explorer-map-screen" : ".basecamp"} onCancel={() => setPortal(false)} onEnter={() => router.push(portal === "success" ? "/journey" : "/intake")} onComplete={() => setPortal(false)} />}</Localized>;
+  return <Localized as="div" className={`${marketing ? "story-home marketing-shell" : ""} ${marketingFonts} ${assessment ? "assessment-frame" : ""}`} onClickCapture={startJourney}>{saveFailed && <Localized as="p" role="alert" className="fixed inset-x-0 top-0 z-[100] bg-navy px-4 py-3 text-center text-sm text-beige">Your latest changes could not be saved on this device. Keep this page open and allow browser storage before leaving.</Localized>}{marketing && pathname !== "/intake" && <MarketingNavbar entry={entry} solid={pathname !== "/" || scrolled} active={pathname} onNavigate={navigate} />}<Localized as="div" ref={content} className={marketing ? "marketing-content" : undefined}>{children}</Localized>{portal && <JourneyPortal celebration icon={portal === "success" ? "/icons/career-compass/explorer-backpack.svg" : "/brand/compass-v2-transparent-512.png"} title={portal === "success" ? "Explorer Created!" : "Welcome, Explorer!"} description={portal === "success" ? "Your profile is ready. Your map awaits." : "Your journey begins now."} notice={portal === "success" && autoAssignedAvatar ? "We randomly assigned your explorer avatar. It does not affect your assessment results or scoring." : undefined} destinationSelector={portal === "success" ? ".explorer-map-screen" : ".basecamp"} onCancel={() => setPortal(false)} onEnter={() => router.push(portal === "success" ? "/journey" : "/intake")} onComplete={() => setPortal(false)} />}</Localized>;
 }
 

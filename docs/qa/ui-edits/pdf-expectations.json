@@ -1,0 +1,158 @@
+[
+  {
+    "name": "old-en",
+    "route": "old",
+    "language": "en",
+    "pages": 1,
+    "courses": [
+      "BS Management Accounting",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Hospitality Management",
+      "BS Statistics"
+    ],
+    "profile": [
+      [
+        "Grade level",
+        "Grade 12"
+      ],
+      [
+        "Curriculum",
+        "Old curriculum - strand"
+      ],
+      [
+        "Strand",
+        "Academic ABM"
+      ],
+      [
+        "Subjects",
+        "Accounting / Business Math; Economics / Business Organization / Entrepreneurship"
+      ],
+      [
+        "GWA",
+        "100"
+      ],
+      [
+        "Certificates",
+        "Math, science, research, and invention contests (quiz bee, olympiad, science fair); Business, accounting, office, and records (business fair, accounting contest, library club, office assistant)"
+      ]
+    ]
+  },
+  {
+    "name": "old-fil",
+    "route": "old",
+    "language": "fil",
+    "pages": 1,
+    "courses": [
+      "BS Management Accounting",
+      "BS Business Administration",
+      "BS Accountancy",
+      "BS Hospitality Management",
+      "BS Statistics"
+    ],
+    "profile": [
+      [
+        "Grade",
+        "Grade 12"
+      ],
+      [
+        "Curriculum",
+        "Dating curriculum - strand"
+      ],
+      [
+        "Strand",
+        "Akademiko ABM"
+      ],
+      [
+        "Mga Asignatura",
+        "Accounting / Matematika sa Negosyo; Ekonomiks / Organisasyon ng Negosyo / Entrepreneurship"
+      ],
+      [
+        "GWA",
+        "100"
+      ],
+      [
+        "Mga Sertipiko",
+        "Mga paligsahan sa math, agham, pananaliksik, at imbensyon (quiz bee, olympiad, science fair); Negosyo, accounting, opisina, at mga tala (business fair, paligsahan sa accounting, library club, office assistant)"
+      ]
+    ]
+  },
+  {
+    "name": "new-en",
+    "route": "new",
+    "language": "en",
+    "pages": 1,
+    "courses": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "profile": [
+      [
+        "Grade level",
+        "Grade 12"
+      ],
+      [
+        "Curriculum",
+        "New curriculum - electives"
+      ],
+      [
+        "Electives",
+        "Chemistry 1, 2, 3, 4; General Science 3, 4; Safety and First Aid"
+      ],
+      [
+        "Core subjects",
+        "General Science"
+      ],
+      [
+        "GWA",
+        "100"
+      ],
+      [
+        "Certificates",
+        "Health and medical lab (first aid, Red Cross, health volunteer, medical lab club); Community service, outreach, and heritage (social work volunteer, history, culture, or anthropology club)"
+      ]
+    ]
+  },
+  {
+    "name": "new-fil",
+    "route": "new",
+    "language": "fil",
+    "pages": 1,
+    "courses": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "profile": [
+      [
+        "Grade",
+        "Grade 12"
+      ],
+      [
+        "Curriculum",
+        "Bagong curriculum - mga elective"
+      ],
+      [
+        "Mga elective",
+        "Chemistry 1, 2, 3, 4; General Science 3, 4; Safety and First Aid"
+      ],
+      [
+        "Mga core subject",
+        "General Science"
+      ],
+      [
+        "GWA",
+        "100"
+      ],
+      [
+        "Mga Sertipiko",
+        "Kalusugan at medical lab (paunang lunas, Red Cross, health volunteer, medical lab club); Paglilingkod sa komunidad, outreach, at pamana (social work volunteer, history, culture, o anthropology club)"
+      ]
+    ]
+  }
+]

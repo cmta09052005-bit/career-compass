@@ -26,7 +26,7 @@ export default function ResultsControls({ query, onQuery, filters, onFilter, sor
     <div className="results-filter-panels" id="results-filter-panels" data-expanded={expanded}>
       {[["groups", "Course group"], ["schoolTypes", "School type on our list"], ["locations", "Location on our list"]].map(([key, label]) => <details key={key} open={menu === key} className="results-filter-group">
         <Localized as="summary" data-filter={key} onClick={event => { event.preventDefault(); setMenu(menu === key ? null : key); }}>{label}{filters[key].length ? ` (${filters[key].length})` : ""}</Localized>
-        <div className="results-filter-menu" role="group" aria-label={label}>{options[key].map((option, i) => <Localized as="label" key={option.id} htmlFor={`results-${key}-${i}`}><input id={`results-${key}-${i}`} type="checkbox" checked={filters[key].includes(option.id)} onChange={() => onFilter(key, option.id)} />{option.label}</Localized>)}</div>
+        <Localized as="div" className="results-filter-menu" role="group" aria-label={label}>{options[key].map((option, i) => <Localized as="label" key={option.id} htmlFor={`results-${key}-${i}`}><input id={`results-${key}-${i}`} type="checkbox" checked={filters[key].includes(option.id)} onChange={() => onFilter(key, option.id)} />{option.label}</Localized>)}</Localized>
       </details>)}
     </div>
     <div className="results-filter-status"><Localized as="p" role="status" aria-live="polite" aria-atomic="true">{countLabel(count)}{topFiveShown ? ", top 5 shown" : ""}</Localized>{summary && <Localized as="p" className="results-active-filters" title={summary}>{summary}</Localized>}</div>

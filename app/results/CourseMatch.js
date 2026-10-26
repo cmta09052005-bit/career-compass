@@ -43,7 +43,7 @@ export default function CourseMatch({ course, rank, strength, selected, onCompar
         </div>
         <Localized as="div" className="course-strength" role="img" aria-label={labels.arc} data-tooltip={labels.tooltip} tabIndex={0}>
           <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="35" fill="none" stroke="#cbb891" strokeWidth="5" /><circle cx="40" cy="40" r="35" fill="none" stroke="#98701c" strokeWidth="5" pathLength="100" strokeDasharray={`${strength} 100`} strokeLinecap="round" transform="rotate(-90 40 40)" /></svg>
-          <Localized as={Image} src="/landing-compass.png" width={42} height={48} style={{ height: "auto" }} alt="" />
+          <Localized as={Image} src="/brand/compass-v2-transparent-96.png" width={42} height={48} style={{ height: "auto" }} alt="" />
         </Localized>
       </div>
       <CourseInfo course={course} info={course.info} hint={showHint ? course.searchMatch?.hint : null} onLeave={onLeave} t={t} />

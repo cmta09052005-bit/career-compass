@@ -1,6 +1,8 @@
 "use client";
 
 import Localized from "@/components/Localized";
+import { useSessionAnswers } from "@/lib/useSessionAnswers";
+import { journeyEntry, journeyLabel } from "@/lib/journeyEntry";
 
 import { useRef, useState } from "react";
 import Image from "next/image";
@@ -32,13 +34,15 @@ const faqs = [
 
 export default function About() {
   const root = useRef(null);
+  const { session } = useSessionAnswers();
+  const entry = journeyEntry(session);
   const [flipped, setFlipped] = useState([false, false]);
   const [openFAQ, setOpenFAQ] = useState(null);
   const { contextSafe } = useGSAP(() => {
     const mm = gsap.matchMedia();
     mm.add("(prefers-reduced-motion: no-preference)", () => {
-      gsap.from(".pillar-card", { opacity: 0, y: 30, duration: 0.6, stagger: 0.15, scrollTrigger: { trigger: ".pillars-section", start: "top 80%" } });
-      gsap.from(".team-card", { rotationY: 90, opacity: 0, duration: 0.7, stagger: 0.2, ease: "power2.out", scrollTrigger: { trigger: ".team-section", start: "top 75%" } });
+      gsap.from(".pillar-card", { opacity: 0, y: 30, duration: 0.6, stagger: 0.15, scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: ".pillars-section", start: "top 80%" } });
+      gsap.from(".team-card", { rotationY: 90, opacity: 0, duration: 0.7, stagger: 0.2, ease: "power2.out", scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: ".team-section", start: "top 75%" } });
       gsap.to(".about-start", { scale: 1.03, ease: "sine.inOut", boxShadow: "0 0 20px rgba(212,160,23,0.6)", repeat: -1, yoyo: true, duration: 1.8 });
     });
     return () => mm.revert();
@@ -70,7 +74,7 @@ export default function About() {
       <div className="hiw-watermark" aria-hidden="true" />
       <div className="about-container">
         <section id="about-intro" className="about-intro" aria-labelledby="about-title">
-          <Localized as={Image} src="/landing-compass.png" alt="" width={76} height={76} priority />
+          <Localized as={Image} src="/brand/compass-v2-transparent-192.png" alt="" width={76} height={76} priority />
           <Localized as="p" className="hiw-label">About</Localized><Localized as="h1" id="about-title">Why Career<br />Compass exists.</Localized>
           <Localized as="p">A lot of Senior High School students end up guessing when it&apos;s time to pick a college course. This was built to make that choice a little less confusing, and a lot less scary.</Localized>
         </section>
@@ -91,7 +95,7 @@ export default function About() {
             <Localized as="button" className="about-team-button" type="button" onClick={() => flipCard(index)} aria-label={`${flipped[index] ? "Show front" : "Read biography"}: ${name}`} aria-pressed={flipped[index]}>
               <span className="team-card-inner">
                 <span className="team-face team-front" aria-hidden={flipped[index]}><Localized as="span" className="team-portrait" aria-label="Initials in place of a portrait photo"><Localized as="span" className="team-initials">{initials}</Localized><Localized as={Image} src="/icons/career-compass/wax-seal-frame.svg" alt="" width={185} height={185} /></Localized><Localized as="span" className="team-name">{name}</Localized><Localized as="span" className="team-role">BSIT Student Researcher</Localized><Localized as="span" className="team-school">Bicol University Polangui</Localized><Localized as="span" className="team-flip-hint">Read bio <Localized as="span" aria-hidden="true">↗</Localized></Localized></span>
-                <span className="team-face team-back" aria-hidden={!flipped[index]}><Localized as={Image} src="/landing-compass.png" alt="" width={58} height={58} /><Localized as="span" className="team-name">{name}</Localized><Localized as="span" className="team-role">BSIT Student Researcher</Localized><Localized as="span" className="team-bio">Co-created Career Compass as part of a BSIT capstone project at Bicol University Polangui, from early research through system design and development.<Localized as="span" className="team-thanks">“Thank you for exploring what we built.”</Localized></Localized><Localized as="span" className="team-flip-hint">Back to front <Localized as="span" aria-hidden="true">↶</Localized></Localized></span>
+                <span className="team-face team-back" aria-hidden={!flipped[index]}><Localized as={Image} src="/brand/compass-v2-transparent-192.png" alt="" width={58} height={58} /><Localized as="span" className="team-name">{name}</Localized><Localized as="span" className="team-role">BSIT Student Researcher</Localized><Localized as="span" className="team-bio">Co-created Career Compass as part of a BSIT capstone project at Bicol University Polangui, from early research through system design and development.<Localized as="span" className="team-thanks">“Thank you for exploring what we built.”</Localized></Localized><Localized as="span" className="team-flip-hint">Back to front <Localized as="span" aria-hidden="true">↶</Localized></Localized></span>
               </span>
             </Localized>
           </div>)}</Localized>
@@ -100,9 +104,9 @@ export default function About() {
           <Localized as="p">Character avatars in Career Compass were generated using Anthropic and curated by the development team.</Localized>
         </section>
         <section className="about-faq" aria-labelledby="faq-title"><Localized as="p" className="hiw-label">A few honest answers</Localized><Localized as="h2" id="faq-title">Questions you might have</Localized><Localized as="div" className="faq-list">{faqs.map(([question, answer], index) => <div className="faq-item" key={question} onPointerEnter={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(index); }} onPointerLeave={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(null); }}><h3><button type="button" id={`faq-question-${index}`} aria-expanded={openFAQ === index} aria-controls={`faq-answer-${index}`} onClick={() => showFAQ(openFAQ === index ? null : index)}><Localized as="span">{question}</Localized><span className="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="m5 9 7 7 7-7" /></svg></span></button></h3><div id={`faq-answer-${index}`} className="faq-answer" role="region" aria-labelledby={`faq-question-${index}`} aria-hidden={openFAQ !== index}><Localized as="p">{answer}</Localized></div></div>)}</Localized></section>
-        <section className="hiw-closing" aria-labelledby="about-closing-title"><Localized as="h2" id="about-closing-title">Ready to start exploring?</Localized><Button href="/intake" className="story-button about-start" label="Start Your Journey ↗" /><Localized as={Link} href="/how-it-works" className="story-text-link">How It Works ↗</Localized></section>
+        <section className="hiw-closing" aria-labelledby="about-closing-title"><Localized as="h2" id="about-closing-title">Ready to start exploring?</Localized><Button href="/intake" className="story-button about-start" label={journeyLabel(entry, "about")} /><Localized as={Link} href="/how-it-works" className="story-text-link">How It Works ↗</Localized></section>
       </div>
-      <footer className="story-footer"><Localized as={Link} className="story-brand" href="/"><Localized as={Image} src="/landing-compass.png" width={32} height={32} alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#about-intro">Back to top ↑</Localized></footer>
+      <footer className="story-footer"><Localized as={Link} className="story-brand" href="/"><Localized as={Image} src="/brand/compass-v2-transparent-96.png" width={32} height={32} alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#about-intro">Back to top ↑</Localized></footer>
     </main>
   );
 }

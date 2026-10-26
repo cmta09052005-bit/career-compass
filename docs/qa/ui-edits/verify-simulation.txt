@@ -1,0 +1,1 @@
+PASS: 40,000 uniform profiles, all 12 GWA strata, 153,000 persona profiles, 510 course/route/p cells, rank/count/cap invariants and four byte-identical JSON/CSV hashes.

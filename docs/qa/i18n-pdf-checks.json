@@ -1,0 +1,46 @@
+{
+  "reports": [
+    {
+      "route": "old",
+      "pages": 2,
+      "checks": {
+        "Ulat ng Manlalakbay": true,
+        "Profile": true,
+        "Mga Sertipiko": true,
+        "Mga Sagot na Batayan": true,
+        "one_or_two_pages": true,
+        "no_avatar": true,
+        "no_removed_sections": true,
+        "no_percent": true,
+        "no_numeric_scores": true,
+        "no_replacement_glyph": true,
+        "all_sections": true,
+        "course_names_preserved": true,
+        "route_profile_labels": true
+      },
+      "pass": true
+    },
+    {
+      "route": "new",
+      "pages": 1,
+      "checks": {
+        "Ulat ng Manlalakbay": true,
+        "Profile": true,
+        "Mga Sertipiko": true,
+        "Mga Sagot na Batayan": true,
+        "one_or_two_pages": true,
+        "no_avatar": true,
+        "no_removed_sections": true,
+        "no_percent": true,
+        "no_numeric_scores": true,
+        "no_replacement_glyph": true,
+        "all_sections": true,
+        "course_names_preserved": true,
+        "route_profile_labels": true
+      },
+      "pass": true
+    }
+  ],
+  "glyphProbe": true,
+  "method": "pypdf extraction; bundled PDFium rendering; built-in Helvetica normal and bold, no font assets added."
+}

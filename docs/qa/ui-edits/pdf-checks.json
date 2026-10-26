@@ -1,0 +1,62 @@
+[
+  {
+    "name": "old-en",
+    "pages": 1,
+    "checks": {
+      "one_or_two_pages": true,
+      "no_avatar_or_images": true,
+      "no_percent_or_numeric_scores": true,
+      "all_five_names": true,
+      "accented_name": true,
+      "no_broken_glyphs": true,
+      "profile_before_results": true,
+      "no_removed_sections": true
+    },
+    "pass": true
+  },
+  {
+    "name": "old-fil",
+    "pages": 1,
+    "checks": {
+      "one_or_two_pages": true,
+      "no_avatar_or_images": true,
+      "no_percent_or_numeric_scores": true,
+      "all_five_names": true,
+      "accented_name": true,
+      "no_broken_glyphs": true,
+      "profile_before_results": true,
+      "no_removed_sections": true
+    },
+    "pass": true
+  },
+  {
+    "name": "new-en",
+    "pages": 1,
+    "checks": {
+      "one_or_two_pages": true,
+      "no_avatar_or_images": true,
+      "no_percent_or_numeric_scores": true,
+      "all_five_names": true,
+      "accented_name": true,
+      "no_broken_glyphs": true,
+      "profile_before_results": true,
+      "no_removed_sections": true
+    },
+    "pass": true
+  },
+  {
+    "name": "new-fil",
+    "pages": 1,
+    "checks": {
+      "one_or_two_pages": true,
+      "no_avatar_or_images": true,
+      "no_percent_or_numeric_scores": true,
+      "all_five_names": true,
+      "accented_name": true,
+      "no_broken_glyphs": true,
+      "profile_before_results": true,
+      "no_removed_sections": true
+    },
+    "pass": true
+  }
+]

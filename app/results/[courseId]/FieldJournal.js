@@ -8,7 +8,6 @@ import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Button from "@/components/Button";
-import StatementIcon from "@/app/journey/skills/StatementIcon";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 import { COMPARISON_LIMIT_NOTICE, toggleCourseComparison } from "@/lib/courseComparison";
 import { playSound } from "@/lib/sound";
@@ -96,7 +95,6 @@ export default function FieldJournal({ course, children }) {
         </Localized>)}
       </Localized>
       <Localized as="div" className="journal-pages">
-        <div className="journal-watermark" aria-hidden="true"><StatementIcon icon="neutral" /></div>
         {TABS.map((tab, index) => <Localized as="section" ref={element => { pages.current[index] = element; }} key={tab.id} id={`journal-panel-${tab.id}`} className="journal-page" role="tabpanel" aria-labelledby={`journal-tab-${tab.id}`} tabIndex={0} hidden={active !== index}>{panels[index]}</Localized>)}
       </Localized>
       <footer className="journal-footer"><Button label="Back to Results" href="/results" variant="secondary" /><Localized as="button" type="button" className="journal-aid-link" onClick={() => openTab(5, true)}>Need help with school expenses?</Localized></footer>

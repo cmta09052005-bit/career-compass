@@ -16,8 +16,6 @@
 .field-journal .journal-tabs button[aria-selected=true] { color:#1b2a4a; background:#fff6e3; box-shadow:inset 0 3px #a67c24; font-weight:700; }
 .field-journal .journal-tabs :is(svg,img) { width:1.625rem; height:28px; object-fit:contain; flex-shrink:0; }
 .field-journal .journal-pages { flex:1; min-height:0; position:relative; isolation:isolate; perspective:1000px; background:#f5ecd7; }
-.field-journal .journal-watermark { position:absolute; right:3%; bottom:3%; width:min(32%,15rem); opacity:.045; pointer-events:none; z-index:-1; color:#1b2a4a; }
-.field-journal .journal-watermark svg { width:100%; height:auto; }
 .field-journal .journal-page { height:100%; overflow:auto; overscroll-behavior:contain; scrollbar-gutter:stable; padding:24px 28px; scrollbar-width:thin; scrollbar-color:#b89552 #eadcc1; }
 .field-journal .journal-page[hidden] { display:none; }
 .field-journal .journal-page::-webkit-scrollbar { width:0.5rem; }
@@ -62,3 +60,5 @@
 .field-journal .journal-salary-method summary { cursor:pointer; font-weight:600; }
 .field-journal .journal-salary-method :is(summary,a):focus-visible { outline:3px solid #287b72; outline-offset:3px; }
 .field-journal .journal-salary-method a { overflow-wrap:anywhere; }
+
+.field-journal .journal-tabs button span { min-width:0; overflow-wrap:anywhere; }

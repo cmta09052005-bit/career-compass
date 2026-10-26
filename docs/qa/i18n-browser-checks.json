@@ -1,0 +1,3157 @@
+{
+  "method": "Loaded saved witness answers through the normal storage loader, not typed. Language changed with normal settings UI. Source fixtures old BUS02 and new HLT01. Old nickname edited only for glyph coverage.",
+  "requestedSizes": [
+    [
+      1600,
+      900
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      950,
+      900
+    ],
+    [
+      375,
+      813
+    ]
+  ],
+  "actualSizes": [
+    [
+      1600,
+      900
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      950,
+      900
+    ],
+    [
+      375,
+      814
+    ]
+  ],
+  "actions": [
+    {
+      "action": "search",
+      "query": "nurse",
+      "courses": [
+        {
+          "name": "BS Nursing",
+          "rank": "1"
+        }
+      ],
+      "hint": "Nagtugma sa trabaho: Staff nurse",
+      "status": "1 kurso"
+    },
+    {
+      "action": "search",
+      "query": "teacher",
+      "courses": [
+        {
+          "name": "Bachelor of Elementary Education",
+          "rank": "41"
+        },
+        {
+          "name": "Bachelor of Physical Education",
+          "rank": "44"
+        },
+        {
+          "name": "Bachelor of Culture and Arts Education",
+          "rank": "52"
+        },
+        {
+          "name": "Bachelor of Technical-Vocational Teacher Education",
+          "rank": "53"
+        },
+        {
+          "name": "Bachelor of Technology and Livelihood Education",
+          "rank": "64"
+        },
+        {
+          "name": "Bachelor of Secondary Education",
+          "rank": "75"
+        },
+        {
+          "name": "Bachelor of Early Childhood Education",
+          "rank": "85"
+        }
+      ],
+      "hint": "Nagtugma sa trabaho: Elementary school teacher",
+      "status": "7 kurso"
+    },
+    {
+      "action": "group filter",
+      "summary": "10 kurso"
+    },
+    {
+      "action": "combined filters",
+      "status": "3 kurso",
+      "summary": "Nasa listahan namin: Pangkat ng kurso: Kalusugan at mga Kaugnay na Agham; Uri ng paaralan: Pampublikong SUC; Lokasyon: Albay"
+    },
+    {
+      "action": "sort",
+      "sort": "lowest",
+      "count": "85 kurso",
+      "first": [
+        {
+          "name": "Bachelor of Early Childhood Education",
+          "rank": "85"
+        },
+        {
+          "name": "BS Information Systems",
+          "rank": "84"
+        },
+        {
+          "name": "BA Political Science",
+          "rank": "83"
+        }
+      ]
+    },
+    {
+      "action": "sort",
+      "sort": "az",
+      "count": "85 kurso",
+      "first": [
+        {
+          "name": "Anthropology (BA/BS)",
+          "rank": "39"
+        },
+        {
+          "name": "BA Broadcasting",
+          "rank": "80"
+        },
+        {
+          "name": "BA Communication",
+          "rank": "78"
+        }
+      ]
+    }
+  ],
+  "infoLinks": [
+    {
+      "expected": "overview",
+      "active": "journal-tab-overview",
+      "heading": "BS Nursing",
+      "url": "/results/HLT01#overview"
+    },
+    {
+      "expected": "schools",
+      "active": "journal-tab-schools",
+      "heading": "BS Nursing",
+      "url": "/results/HLT01#schools"
+    },
+    {
+      "expected": "careers",
+      "active": "journal-tab-careers",
+      "heading": "BS Nursing",
+      "url": "/results/HLT01#careers"
+    }
+  ],
+  "rankEquality": {
+    "english": 85,
+    "filipino": 85,
+    "identical": true,
+    "uniqueRanks": 85
+  },
+  "finalLogStart": "2026-10-26T15:10:20.935Z",
+  "finalConsole": [],
+  "measurements": [
+    {
+      "label": "old Basecamp step 2",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/intake?step=2",
+      "width": 1600
+    },
+    {
+      "label": "old Basecamp step 2",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/intake?step=2",
+      "width": 1280
+    },
+    {
+      "label": "old Basecamp step 2",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/intake?step=2",
+      "width": 950
+    },
+    {
+      "label": "old Basecamp step 2",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/intake?step=2",
+      "width": 375
+    },
+    {
+      "label": "old Basecamp settled mobile",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/intake?step=2",
+      "width": 375
+    },
+    {
+      "label": "old Valley strand",
+      "headings": [
+        "Anong strand ang kinukuha mo?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/academic",
+      "width": 1600
+    },
+    {
+      "label": "old Valley strand",
+      "headings": [
+        "Anong strand ang kinukuha mo?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/academic",
+      "width": 1280
+    },
+    {
+      "label": "old Valley strand",
+      "headings": [
+        "Anong strand ang kinukuha mo?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/academic",
+      "width": 950
+    },
+    {
+      "label": "old Valley strand",
+      "headings": [
+        "Anong strand ang kinukuha mo?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/academic",
+      "width": 375
+    },
+    {
+      "label": "old Valley subjects",
+      "headings": [
+        "Sa aling mga asignatura ka pinakamahusay?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/academic?step=subjects",
+      "width": 1600
+    },
+    {
+      "label": "old Valley subjects",
+      "headings": [
+        "Sa aling mga asignatura ka pinakamahusay?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/academic?step=subjects",
+      "width": 1280
+    },
+    {
+      "label": "old Valley subjects",
+      "headings": [
+        "Sa aling mga asignatura ka pinakamahusay?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/academic?step=subjects",
+      "width": 950
+    },
+    {
+      "label": "old Valley subjects",
+      "headings": [
+        "Sa aling mga asignatura ka pinakamahusay?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/academic?step=subjects",
+      "width": 375
+    },
+    {
+      "label": "old Valley GWA",
+      "headings": [
+        "Ano ang iyong general average?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/academic?step=gwa",
+      "width": 1600
+    },
+    {
+      "label": "old Valley GWA",
+      "headings": [
+        "Ano ang iyong general average?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/academic?step=gwa",
+      "width": 1280
+    },
+    {
+      "label": "old Valley GWA",
+      "headings": [
+        "Ano ang iyong general average?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/academic?step=gwa",
+      "width": 950
+    },
+    {
+      "label": "old Valley GWA",
+      "headings": [
+        "Ano ang iyong general average?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/academic?step=gwa",
+      "width": 375
+    },
+    {
+      "label": "old Valley certificates",
+      "headings": [
+        "Anong mga sertipiko o parangal ang mayroon ka?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/academic?step=certificates",
+      "width": 1600
+    },
+    {
+      "label": "old Valley certificates",
+      "headings": [
+        "Anong mga sertipiko o parangal ang mayroon ka?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/academic?step=certificates",
+      "width": 1280
+    },
+    {
+      "label": "old Valley certificates",
+      "headings": [
+        "Anong mga sertipiko o parangal ang mayroon ka?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/academic?step=certificates",
+      "width": 950
+    },
+    {
+      "label": "old Valley certificates",
+      "headings": [
+        "Anong mga sertipiko o parangal ang mayroon ka?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/academic?step=certificates",
+      "width": 375
+    },
+    {
+      "label": "old Basecamp identity",
+      "headings": [
+        "Piliin ang Iyong Manlalakbay"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/intake?step=1",
+      "width": 1600
+    },
+    {
+      "label": "old Basecamp identity",
+      "headings": [
+        "Piliin ang Iyong Manlalakbay"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/intake?step=1",
+      "width": 1280
+    },
+    {
+      "label": "old Basecamp identity",
+      "headings": [
+        "Piliin ang Iyong Manlalakbay"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/intake?step=1",
+      "width": 950
+    },
+    {
+      "label": "old Basecamp identity",
+      "headings": [
+        "Piliin ang Iyong Manlalakbay"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/intake?step=1",
+      "width": 375
+    },
+    {
+      "label": "old Mountains",
+      "headings": [
+        "Isang malakas na bagyo ang tumama sa inyong komunidad. Paano ka tutulong?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/interests",
+      "width": 1600
+    },
+    {
+      "label": "old Mountains",
+      "headings": [
+        "Isang malakas na bagyo ang tumama sa inyong komunidad. Paano ka tutulong?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/interests",
+      "width": 1280
+    },
+    {
+      "label": "old Mountains",
+      "headings": [
+        "Isang malakas na bagyo ang tumama sa inyong komunidad. Paano ka tutulong?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/interests",
+      "width": 950
+    },
+    {
+      "label": "old Mountains",
+      "headings": [
+        "Isang malakas na bagyo ang tumama sa inyong komunidad. Paano ka tutulong?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/interests",
+      "width": 375
+    },
+    {
+      "label": "old Forest",
+      "headings": [
+        "Maingat kong sinusunod ang mga tuntunin, hakbang sa kaligtasan, at pamamaraan, at pinananatili ko ang kaayusan."
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/skills",
+      "width": 1600
+    },
+    {
+      "label": "old Forest",
+      "headings": [
+        "Maingat kong sinusunod ang mga tuntunin, hakbang sa kaligtasan, at pamamaraan, at pinananatili ko ang kaayusan."
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/skills",
+      "width": 1280
+    },
+    {
+      "label": "old Forest",
+      "headings": [
+        "Maingat kong sinusunod ang mga tuntunin, hakbang sa kaligtasan, at pamamaraan, at pinananatili ko ang kaayusan."
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/skills",
+      "width": 950
+    },
+    {
+      "label": "old Forest",
+      "headings": [
+        "Maingat kong sinusunod ang mga tuntunin, hakbang sa kaligtasan, at pamamaraan, at pinananatili ko ang kaayusan."
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/skills",
+      "width": 375
+    },
+    {
+      "label": "old Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "old Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "old Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "old Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "old Results settled",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "old Results settled",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "old Results settled",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "old Results settled",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "old Results search",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "old Results search",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "old Results search",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "old Results search",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "old Results lowest sort",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "old Results lowest sort",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "old Results lowest sort",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "old Results lowest sort",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "old Results filters",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "old Results filters",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "old Results filters",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "old Results filters",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "old Results comparison",
+      "headings": [
+        "Ihambing ang iyong mga landas",
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "old Results comparison",
+      "headings": [
+        "Ihambing ang iyong mga landas",
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "old Results comparison",
+      "headings": [
+        "Ihambing ang iyong mga landas",
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "old Results comparison",
+      "headings": [
+        "Ihambing ang iyong mga landas",
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "old Course Detail overview",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/BUS02",
+      "width": 1600
+    },
+    {
+      "label": "old Course Detail overview",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/BUS02",
+      "width": 1280
+    },
+    {
+      "label": "old Course Detail overview",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/BUS02",
+      "width": 950
+    },
+    {
+      "label": "old Course Detail overview",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/BUS02",
+      "width": 375
+    },
+    {
+      "label": "old Detail hydration observation",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/BUS02",
+      "width": 375
+    },
+    {
+      "label": "old Detail Pangkalahatang-ideya",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/BUS02",
+      "width": 1600
+    },
+    {
+      "label": "old Detail Pangkalahatang-ideya",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/BUS02",
+      "width": 1280
+    },
+    {
+      "label": "old Detail Pangkalahatang-ideya",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/BUS02",
+      "width": 950
+    },
+    {
+      "label": "old Detail Pangkalahatang-ideya",
+      "headings": [
+        "BS Management Accounting",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/BUS02",
+      "width": 375
+    },
+    {
+      "label": "old Detail Ang Pag-aaralan Mo",
+      "headings": [
+        "BS Management Accounting",
+        "Ang Pag-aaralan Mo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/BUS02",
+      "width": 1600
+    },
+    {
+      "label": "old Detail Ang Pag-aaralan Mo",
+      "headings": [
+        "BS Management Accounting",
+        "Ang Pag-aaralan Mo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/BUS02",
+      "width": 1280
+    },
+    {
+      "label": "old Detail Ang Pag-aaralan Mo",
+      "headings": [
+        "BS Management Accounting",
+        "Ang Pag-aaralan Mo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/BUS02",
+      "width": 950
+    },
+    {
+      "label": "old Detail Ang Pag-aaralan Mo",
+      "headings": [
+        "BS Management Accounting",
+        "Ang Pag-aaralan Mo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/BUS02",
+      "width": 375
+    },
+    {
+      "label": "old Detail Saan Ka Maaaring Mag-aral",
+      "headings": [
+        "BS Management Accounting",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/BUS02",
+      "width": 1600
+    },
+    {
+      "label": "old Detail Saan Ka Maaaring Mag-aral",
+      "headings": [
+        "BS Management Accounting",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/BUS02",
+      "width": 1280
+    },
+    {
+      "label": "old Detail Saan Ka Maaaring Mag-aral",
+      "headings": [
+        "BS Management Accounting",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/BUS02",
+      "width": 950
+    },
+    {
+      "label": "old Detail Saan Ka Maaaring Mag-aral",
+      "headings": [
+        "BS Management Accounting",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/BUS02",
+      "width": 375
+    },
+    {
+      "label": "old Detail Saan Maaaring Humantong ang Landas na Ito",
+      "headings": [
+        "BS Management Accounting",
+        "Saan Maaaring Humantong ang Landas na Ito?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/BUS02",
+      "width": 1600
+    },
+    {
+      "label": "old Detail Saan Maaaring Humantong ang Landas na Ito",
+      "headings": [
+        "BS Management Accounting",
+        "Saan Maaaring Humantong ang Landas na Ito?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/BUS02",
+      "width": 1280
+    },
+    {
+      "label": "old Detail Saan Maaaring Humantong ang Landas na Ito",
+      "headings": [
+        "BS Management Accounting",
+        "Saan Maaaring Humantong ang Landas na Ito?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/BUS02",
+      "width": 950
+    },
+    {
+      "label": "old Detail Saan Maaaring Humantong ang Landas na Ito",
+      "headings": [
+        "BS Management Accounting",
+        "Saan Maaaring Humantong ang Landas na Ito?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/BUS02",
+      "width": 375
+    },
+    {
+      "label": "old Detail Mga Payo",
+      "headings": [
+        "BS Management Accounting",
+        "Mga Payo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/BUS02",
+      "width": 1600
+    },
+    {
+      "label": "old Detail Mga Payo",
+      "headings": [
+        "BS Management Accounting",
+        "Mga Payo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/BUS02",
+      "width": 1280
+    },
+    {
+      "label": "old Detail Mga Payo",
+      "headings": [
+        "BS Management Accounting",
+        "Mga Payo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/BUS02",
+      "width": 950
+    },
+    {
+      "label": "old Detail Mga Payo",
+      "headings": [
+        "BS Management Accounting",
+        "Mga Payo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/BUS02",
+      "width": 375
+    },
+    {
+      "label": "old Detail Tulong Pinansiyal",
+      "headings": [
+        "BS Management Accounting",
+        "Mga Posibleng Scholarship at Tulong-Pinansiyal"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/BUS02",
+      "width": 1600
+    },
+    {
+      "label": "old Detail Tulong Pinansiyal",
+      "headings": [
+        "BS Management Accounting",
+        "Mga Posibleng Scholarship at Tulong-Pinansiyal"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/BUS02",
+      "width": 1280
+    },
+    {
+      "label": "old Detail Tulong Pinansiyal",
+      "headings": [
+        "BS Management Accounting",
+        "Mga Posibleng Scholarship at Tulong-Pinansiyal"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/BUS02",
+      "width": 950
+    },
+    {
+      "label": "old Detail Tulong Pinansiyal",
+      "headings": [
+        "BS Management Accounting",
+        "Mga Posibleng Scholarship at Tulong-Pinansiyal"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/BUS02",
+      "width": 375
+    },
+    {
+      "label": "new Basecamp identity",
+      "headings": [
+        "Piliin ang Iyong Manlalakbay"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/intake?step=1",
+      "width": 1600
+    },
+    {
+      "label": "new Basecamp identity",
+      "headings": [
+        "Piliin ang Iyong Manlalakbay"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/intake?step=1",
+      "width": 1280
+    },
+    {
+      "label": "new Basecamp identity",
+      "headings": [
+        "Piliin ang Iyong Manlalakbay"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/intake?step=1",
+      "width": 950
+    },
+    {
+      "label": "new Basecamp identity",
+      "headings": [
+        "Piliin ang Iyong Manlalakbay"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/intake?step=1",
+      "width": 375
+    },
+    {
+      "label": "new Basecamp curriculum",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/intake?step=2",
+      "width": 1600
+    },
+    {
+      "label": "new Basecamp curriculum",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/intake?step=2",
+      "width": 1280
+    },
+    {
+      "label": "new Basecamp curriculum",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/intake?step=2",
+      "width": 950
+    },
+    {
+      "label": "new Basecamp curriculum",
+      "headings": [
+        "Piliin ang iyong curriculum"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/intake?step=2",
+      "width": 375
+    },
+    {
+      "label": "new Mountains",
+      "headings": [
+        "Isang malakas na bagyo ang tumama sa inyong komunidad. Paano ka tutulong?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/interests",
+      "width": 1600
+    },
+    {
+      "label": "new Mountains",
+      "headings": [
+        "Isang malakas na bagyo ang tumama sa inyong komunidad. Paano ka tutulong?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/interests",
+      "width": 1280
+    },
+    {
+      "label": "new Mountains",
+      "headings": [
+        "Isang malakas na bagyo ang tumama sa inyong komunidad. Paano ka tutulong?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/interests",
+      "width": 950
+    },
+    {
+      "label": "new Mountains",
+      "headings": [
+        "Isang malakas na bagyo ang tumama sa inyong komunidad. Paano ka tutulong?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/interests",
+      "width": 375
+    },
+    {
+      "label": "new Forest",
+      "headings": [
+        "Maingat kong sinusunod ang mga tuntunin, hakbang sa kaligtasan, at pamamaraan, at pinananatili ko ang kaayusan."
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/skills",
+      "width": 1600
+    },
+    {
+      "label": "new Forest",
+      "headings": [
+        "Maingat kong sinusunod ang mga tuntunin, hakbang sa kaligtasan, at pamamaraan, at pinananatili ko ang kaayusan."
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/skills",
+      "width": 1280
+    },
+    {
+      "label": "new Forest",
+      "headings": [
+        "Maingat kong sinusunod ang mga tuntunin, hakbang sa kaligtasan, at pamamaraan, at pinananatili ko ang kaayusan."
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/skills",
+      "width": 950
+    },
+    {
+      "label": "new Forest",
+      "headings": [
+        "Maingat kong sinusunod ang mga tuntunin, hakbang sa kaligtasan, at pamamaraan, at pinananatili ko ang kaayusan."
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/skills",
+      "width": 375
+    },
+    {
+      "label": "new Valley electives",
+      "headings": [
+        "Aling mga elective ang kinukuha mo at sa tingin mo ay pinakakaya mo?",
+        "Academic: Arts, Social Sciences, and Humanities",
+        "Academic: Business and Entrepreneurship",
+        "Academic: STEM",
+        "Academic: Sports, Health, and Wellness",
+        "TechPro: Aesthetic, Wellness, and Human Care",
+        "TechPro: Agri-Fishery Business and Food Innovation",
+        "TechPro: Artisanry and Creative Enterprise",
+        "TechPro: Automotive and Small Engine Technologies",
+        "TechPro: Construction and Building Technologies",
+        "TechPro: Creative Arts and Design Technologies",
+        "TechPro: Hospitality and Tourism",
+        "TechPro: ICT Support and Computer Programming Technologies",
+        "TechPro: Industrial Technologies",
+        "TechPro: Maritime Transport"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/academic?step=electives",
+      "width": 1600
+    },
+    {
+      "label": "new Valley electives",
+      "headings": [
+        "Aling mga elective ang kinukuha mo at sa tingin mo ay pinakakaya mo?",
+        "Academic: Arts, Social Sciences, and Humanities",
+        "Academic: Business and Entrepreneurship",
+        "Academic: STEM",
+        "Academic: Sports, Health, and Wellness",
+        "TechPro: Aesthetic, Wellness, and Human Care",
+        "TechPro: Agri-Fishery Business and Food Innovation",
+        "TechPro: Artisanry and Creative Enterprise",
+        "TechPro: Automotive and Small Engine Technologies",
+        "TechPro: Construction and Building Technologies",
+        "TechPro: Creative Arts and Design Technologies",
+        "TechPro: Hospitality and Tourism",
+        "TechPro: ICT Support and Computer Programming Technologies",
+        "TechPro: Industrial Technologies",
+        "TechPro: Maritime Transport"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/academic?step=electives",
+      "width": 1280
+    },
+    {
+      "label": "new Valley electives",
+      "headings": [
+        "Aling mga elective ang kinukuha mo at sa tingin mo ay pinakakaya mo?",
+        "Academic: Arts, Social Sciences, and Humanities",
+        "Academic: Business and Entrepreneurship",
+        "Academic: STEM",
+        "Academic: Sports, Health, and Wellness",
+        "TechPro: Aesthetic, Wellness, and Human Care",
+        "TechPro: Agri-Fishery Business and Food Innovation",
+        "TechPro: Artisanry and Creative Enterprise",
+        "TechPro: Automotive and Small Engine Technologies",
+        "TechPro: Construction and Building Technologies",
+        "TechPro: Creative Arts and Design Technologies",
+        "TechPro: Hospitality and Tourism",
+        "TechPro: ICT Support and Computer Programming Technologies",
+        "TechPro: Industrial Technologies",
+        "TechPro: Maritime Transport"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/academic?step=electives",
+      "width": 950
+    },
+    {
+      "label": "new Valley electives",
+      "headings": [
+        "Aling mga elective ang kinukuha mo at sa tingin mo ay pinakakaya mo?",
+        "Academic: Arts, Social Sciences, and Humanities",
+        "Academic: Business and Entrepreneurship",
+        "Academic: STEM",
+        "Academic: Sports, Health, and Wellness",
+        "TechPro: Aesthetic, Wellness, and Human Care",
+        "TechPro: Agri-Fishery Business and Food Innovation",
+        "TechPro: Artisanry and Creative Enterprise",
+        "TechPro: Automotive and Small Engine Technologies",
+        "TechPro: Construction and Building Technologies",
+        "TechPro: Creative Arts and Design Technologies",
+        "TechPro: Hospitality and Tourism",
+        "TechPro: ICT Support and Computer Programming Technologies",
+        "TechPro: Industrial Technologies",
+        "TechPro: Maritime Transport"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/academic?step=electives",
+      "width": 375
+    },
+    {
+      "label": "new Valley bestSubjects",
+      "headings": [
+        "Sa aling mga asignatura ka pinakamahusay?",
+        "Mga core subject"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/academic?step=bestSubjects",
+      "width": 1600
+    },
+    {
+      "label": "new Valley bestSubjects",
+      "headings": [
+        "Sa aling mga asignatura ka pinakamahusay?",
+        "Mga core subject"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/academic?step=bestSubjects",
+      "width": 1280
+    },
+    {
+      "label": "new Valley bestSubjects",
+      "headings": [
+        "Sa aling mga asignatura ka pinakamahusay?",
+        "Mga core subject"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/academic?step=bestSubjects",
+      "width": 950
+    },
+    {
+      "label": "new Valley bestSubjects",
+      "headings": [
+        "Sa aling mga asignatura ka pinakamahusay?",
+        "Mga core subject"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/academic?step=bestSubjects",
+      "width": 375
+    },
+    {
+      "label": "new Valley gwa",
+      "headings": [
+        "Ano ang iyong general average?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/academic?step=gwa",
+      "width": 1600
+    },
+    {
+      "label": "new Valley gwa",
+      "headings": [
+        "Ano ang iyong general average?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/academic?step=gwa",
+      "width": 1280
+    },
+    {
+      "label": "new Valley gwa",
+      "headings": [
+        "Ano ang iyong general average?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/academic?step=gwa",
+      "width": 950
+    },
+    {
+      "label": "new Valley gwa",
+      "headings": [
+        "Ano ang iyong general average?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/academic?step=gwa",
+      "width": 375
+    },
+    {
+      "label": "new Valley certificates",
+      "headings": [
+        "Anong mga sertipiko o parangal ang mayroon ka?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/journey/academic?step=certificates",
+      "width": 1600
+    },
+    {
+      "label": "new Valley certificates",
+      "headings": [
+        "Anong mga sertipiko o parangal ang mayroon ka?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/journey/academic?step=certificates",
+      "width": 1280
+    },
+    {
+      "label": "new Valley certificates",
+      "headings": [
+        "Anong mga sertipiko o parangal ang mayroon ka?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/journey/academic?step=certificates",
+      "width": 950
+    },
+    {
+      "label": "new Valley certificates",
+      "headings": [
+        "Anong mga sertipiko o parangal ang mayroon ka?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/journey/academic?step=certificates",
+      "width": 375
+    },
+    {
+      "label": "new Processing",
+      "headings": [
+        "Binubuo ang Iyong Landas"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/processing",
+      "width": 1600
+    },
+    {
+      "label": "new Processing",
+      "headings": [
+        "Binubuo ang Iyong Landas"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/processing",
+      "width": 1280
+    },
+    {
+      "label": "new Processing",
+      "headings": [
+        "Binubuo ang Iyong Landas"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/processing",
+      "width": 950
+    },
+    {
+      "label": "new Processing",
+      "headings": [
+        "Binubuo ang Iyong Landas"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/processing",
+      "width": 375
+    },
+    {
+      "label": "new Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "new Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "new Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "new Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "new Results search",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "new Results search",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "new Results search",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "new Results search",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "new Results A to Z",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "new Results A to Z",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "new Results A to Z",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "new Results A to Z",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results default",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results search nurse",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results search nurse",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results search nurse",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results search nurse",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results search teacher",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results search teacher",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results search teacher",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results search teacher",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results group filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results group filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results group filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results group filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results school type filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results school type filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results school type filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results school type filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results location filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results location filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results location filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results location filter",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results sort lowest",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results sort lowest",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results sort lowest",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results sort lowest",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results sort az",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results sort az",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results sort az",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results sort az",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Tugma sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Results compare",
+      "headings": [
+        "Ihambing ang iyong mga landas",
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b new Results compare",
+      "headings": [
+        "Ihambing ang iyong mga landas",
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b new Results compare",
+      "headings": [
+        "Ihambing ang iyong mga landas",
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b new Results compare",
+      "headings": [
+        "Ihambing ang iyong mga landas",
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b final Results wrapped info label",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b final Results wrapped info label",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b final Results wrapped info label",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b final Results wrapped info label",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b info link overview",
+      "headings": [
+        "BS Nursing",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/HLT01",
+      "width": 1600
+    },
+    {
+      "label": "29b info link overview",
+      "headings": [
+        "BS Nursing",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/HLT01",
+      "width": 1280
+    },
+    {
+      "label": "29b info link overview",
+      "headings": [
+        "BS Nursing",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/HLT01",
+      "width": 950
+    },
+    {
+      "label": "29b info link overview",
+      "headings": [
+        "BS Nursing",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/HLT01",
+      "width": 375
+    },
+    {
+      "label": "29b info link schools",
+      "headings": [
+        "BS Nursing",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/HLT01",
+      "width": 1600
+    },
+    {
+      "label": "29b info link schools",
+      "headings": [
+        "BS Nursing",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/HLT01",
+      "width": 1280
+    },
+    {
+      "label": "29b info link schools",
+      "headings": [
+        "BS Nursing",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/HLT01",
+      "width": 950
+    },
+    {
+      "label": "29b info link schools",
+      "headings": [
+        "BS Nursing",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/HLT01",
+      "width": 375
+    },
+    {
+      "label": "29b info link careers",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results",
+      "width": 1600
+    },
+    {
+      "label": "29b info link careers",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results",
+      "width": 1280
+    },
+    {
+      "label": "29b info link careers",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results",
+      "width": 950
+    },
+    {
+      "label": "29b info link careers",
+      "headings": [
+        "Ang Iyong Mapa ng Karera",
+        "Mga Kursong Pinakaangkop sa Iyo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results",
+      "width": 375
+    },
+    {
+      "label": "29b new Detail Pangkalahatang-ideya",
+      "headings": [
+        "BS Nursing",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/HLT01",
+      "width": 1600
+    },
+    {
+      "label": "29b new Detail Pangkalahatang-ideya",
+      "headings": [
+        "BS Nursing",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/HLT01",
+      "width": 1280
+    },
+    {
+      "label": "29b new Detail Pangkalahatang-ideya",
+      "headings": [
+        "BS Nursing",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/HLT01",
+      "width": 950
+    },
+    {
+      "label": "29b new Detail Pangkalahatang-ideya",
+      "headings": [
+        "BS Nursing",
+        "Pangkalahatang-ideya"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/HLT01",
+      "width": 375
+    },
+    {
+      "label": "29b new Detail Ang Pag-aaralan Mo",
+      "headings": [
+        "BS Nursing",
+        "Ang Pag-aaralan Mo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/HLT01",
+      "width": 1600
+    },
+    {
+      "label": "29b new Detail Ang Pag-aaralan Mo",
+      "headings": [
+        "BS Nursing",
+        "Ang Pag-aaralan Mo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/HLT01",
+      "width": 1280
+    },
+    {
+      "label": "29b new Detail Ang Pag-aaralan Mo",
+      "headings": [
+        "BS Nursing",
+        "Ang Pag-aaralan Mo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/HLT01",
+      "width": 950
+    },
+    {
+      "label": "29b new Detail Ang Pag-aaralan Mo",
+      "headings": [
+        "BS Nursing",
+        "Ang Pag-aaralan Mo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/HLT01",
+      "width": 375
+    },
+    {
+      "label": "29b new Detail Saan Ka Maaaring Mag-aral",
+      "headings": [
+        "BS Nursing",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/HLT01",
+      "width": 1600
+    },
+    {
+      "label": "29b new Detail Saan Ka Maaaring Mag-aral",
+      "headings": [
+        "BS Nursing",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/HLT01",
+      "width": 1280
+    },
+    {
+      "label": "29b new Detail Saan Ka Maaaring Mag-aral",
+      "headings": [
+        "BS Nursing",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/HLT01",
+      "width": 950
+    },
+    {
+      "label": "29b new Detail Saan Ka Maaaring Mag-aral",
+      "headings": [
+        "BS Nursing",
+        "Saan Ka Maaaring Mag-aral?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/HLT01",
+      "width": 375
+    },
+    {
+      "label": "29b new Detail Saan Maaaring Humantong ang Landas na Ito",
+      "headings": [
+        "BS Nursing",
+        "Saan Maaaring Humantong ang Landas na Ito?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/HLT01",
+      "width": 1600
+    },
+    {
+      "label": "29b new Detail Saan Maaaring Humantong ang Landas na Ito",
+      "headings": [
+        "BS Nursing",
+        "Saan Maaaring Humantong ang Landas na Ito?"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/HLT01",
+      "width": 1280
+    },
+    {
+      "label": "29b new Detail Saan Maaaring Humantong ang Landas na Ito",
+      "headings": [
+        "BS Nursing",
+        "Saan Maaaring Humantong ang Landas na Ito?"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/HLT01",
+      "width": 950
+    },
+    {
+      "label": "29b new Detail Saan Maaaring Humantong ang Landas na Ito",
+      "headings": [
+        "BS Nursing",
+        "Saan Maaaring Humantong ang Landas na Ito?"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/HLT01",
+      "width": 375
+    },
+    {
+      "label": "29b new Detail Mga Payo",
+      "headings": [
+        "BS Nursing",
+        "Mga Payo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/HLT01",
+      "width": 1600
+    },
+    {
+      "label": "29b new Detail Mga Payo",
+      "headings": [
+        "BS Nursing",
+        "Mga Payo"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/HLT01",
+      "width": 1280
+    },
+    {
+      "label": "29b new Detail Mga Payo",
+      "headings": [
+        "BS Nursing",
+        "Mga Payo"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/HLT01",
+      "width": 950
+    },
+    {
+      "label": "29b new Detail Mga Payo",
+      "headings": [
+        "BS Nursing",
+        "Mga Payo"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/HLT01",
+      "width": 375
+    },
+    {
+      "label": "29b new Detail Tulong Pinansiyal",
+      "headings": [
+        "BS Nursing",
+        "Mga Posibleng Scholarship at Tulong-Pinansiyal"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/results/HLT01",
+      "width": 1600
+    },
+    {
+      "label": "29b new Detail Tulong Pinansiyal",
+      "headings": [
+        "BS Nursing",
+        "Mga Posibleng Scholarship at Tulong-Pinansiyal"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/results/HLT01",
+      "width": 1280
+    },
+    {
+      "label": "29b new Detail Tulong Pinansiyal",
+      "headings": [
+        "BS Nursing",
+        "Mga Posibleng Scholarship at Tulong-Pinansiyal"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/results/HLT01",
+      "width": 950
+    },
+    {
+      "label": "29b new Detail Tulong Pinansiyal",
+      "headings": [
+        "BS Nursing",
+        "Mga Posibleng Scholarship at Tulong-Pinansiyal"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/results/HLT01",
+      "width": 375
+    },
+    {
+      "label": "29b old Processing",
+      "headings": [
+        "Binubuo ang Iyong Landas"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 1600,
+      "url": "/processing",
+      "width": 1600
+    },
+    {
+      "label": "29b old Processing",
+      "headings": [
+        "Binubuo ang Iyong Landas"
+      ],
+      "height": 720,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 720,
+      "scrollWidth": 1280,
+      "url": "/processing",
+      "width": 1280
+    },
+    {
+      "label": "29b old Processing",
+      "headings": [
+        "Binubuo ang Iyong Landas"
+      ],
+      "height": 900,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 900,
+      "scrollWidth": 950,
+      "url": "/processing",
+      "width": 950
+    },
+    {
+      "label": "29b old Processing",
+      "headings": [
+        "Binubuo ang Iyong Landas"
+      ],
+      "height": 814,
+      "lang": "fil",
+      "offscreen": [],
+      "scrollHeight": 814,
+      "scrollWidth": 375,
+      "url": "/processing",
+      "width": 375
+    }
+  ]
+}

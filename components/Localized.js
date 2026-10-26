@@ -14,7 +14,17 @@ const Localized = forwardRef(function Localized({ as = "span", children, ...prop
   for (const key of TEXT_ATTRIBUTES) {
     if (typeof translated[key] === "string") translated[key] = t(translated[key]);
   }
-  const text = child => typeof child === "string" ? t(child) : Array.isArray(child) ? Children.map(child, text) : isValidElement(child) && child.type === Fragment ? cloneElement(child, {}, text(child.props.children)) : child;
+  const text = child => {
+    if (typeof child === "string") return t(child);
+    if (Array.isArray(child)) return Children.map(child, text);
+    if (!isValidElement(child) || child.props.translate === "no") return child;
+    if (child.type === Fragment || typeof child.type === "string") {
+      const attributes = {};
+      for (const key of TEXT_ATTRIBUTES) if (typeof child.props[key] === "string") attributes[key] = t(child.props[key]);
+      return cloneElement(child, attributes, text(child.props.children));
+    }
+    return child;
+  };
   return createElement(as, translated, text(children));
 });
 

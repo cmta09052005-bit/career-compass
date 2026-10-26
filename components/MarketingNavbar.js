@@ -12,7 +12,7 @@ export default function MarketingNavbar({ solid = false, active, onNavigate, ent
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header data-landing={active === "/" || active === "/about" || active === "/how-it-works" ? true : undefined} data-menu-open={menuOpen} onKeyDown={(event) => { if (event.key === "Escape") setMenuOpen(false); }} className={`story-navbar ${solid ? "is-solid" : ""}`}>
-      <Link className="story-brand" href="/" onClick={(event) => onNavigate?.(event, "/")}><Localized as={Image} src="/landing-compass.png" alt="" width={40} height={40} /><Localized as="span">CAREER COMPASS</Localized></Link>
+      <Link className="story-brand" href="/" onClick={(event) => onNavigate?.(event, "/")}><Localized as={Image} src="/brand/compass-v2-transparent-96.png" alt="" width={40} height={40} /><Localized as="span">CAREER COMPASS</Localized></Link>
       <Localized as="button" type="button" className="story-menu-toggle" aria-expanded={menuOpen} aria-controls="marketing-navigation" onClick={() => setMenuOpen((value) => !value)}>Menu {menuOpen ? "−" : "+"}</Localized>
       <Localized as="nav" id="marketing-navigation" aria-label="Main navigation" onClick={() => setMenuOpen(false)}>
         <Localized as={Link} href="/" aria-current={active === "/" ? "page" : undefined} onClick={(event) => onNavigate?.(event, "/")}>Home</Localized>

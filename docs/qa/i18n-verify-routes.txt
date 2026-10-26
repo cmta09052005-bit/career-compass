@@ -1,0 +1,2 @@
+Offline manifest: 96 routes, 615 files, 52059519 bytes, build WtnpLBoZ8FM2Jx7Tx-kV8.
+PASS: 96 routes (85 v2 details + 11 static), each with HTML/RSC; worker contains all 85 detail routes.

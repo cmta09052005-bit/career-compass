@@ -1,0 +1,3827 @@
+[
+  {
+    "id": 17695,
+    "name": "Bonaventure Colleges of Sorsogon Inc.",
+    "type": "Private",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Irosin",
+    "address": "Irosin, Sorsogon",
+    "website": [],
+    "email": [
+      "bonaventurecollegessorsogon@gmail.com"
+    ],
+    "contact": [
+      "9761553762"
+    ],
+    "president": "N/A",
+    "founded": "2024",
+    "description": "BCSI",
+    "programs": []
+  },
+  {
+    "id": 17531,
+    "name": "Sto. Domingo Community College",
+    "type": "LUC",
+    "lat": "13.26135406",
+    "lng": "123.78499746",
+    "location": "Santo Domingo",
+    "address": "Santo Domingo, Albay",
+    "website": [
+      "https://www.facebook.com/1strong.sdcc"
+    ],
+    "email": [
+      "stodomingocollege@gmail.com"
+    ],
+    "contact": [
+      "0915-836-4249"
+    ],
+    "president": "N/A",
+    "founded": "2024",
+    "description": "SDCC",
+    "programs": []
+  },
+  {
+    "id": 17529,
+    "name": "Colegio de San Rafael Arcangel",
+    "type": "Private",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Pili",
+    "address": "Pili, Camarines Sur",
+    "website": [],
+    "email": [
+      "cdsraregistrar@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "",
+    "description": "CSRA",
+    "programs": []
+  },
+  {
+    "id": 17530,
+    "name": "Genesis Colleges, Inc.",
+    "type": "Private",
+    "lat": "13.59337145",
+    "lng": "123.26379061",
+    "location": "Pili",
+    "address": "Pili, Camarines Sur",
+    "website": [
+      "https://www.facebook.com/camsurcampus"
+    ],
+    "email": [
+      "genesiscolleges.caroyroyan@gmail.com"
+    ],
+    "contact": [
+      "09810456988",
+      "09275211071"
+    ],
+    "president": "N/A",
+    "founded": "2005",
+    "description": "GCI",
+    "programs": []
+  },
+  {
+    "id": 17532,
+    "name": "iConnect Global Institute, Inc.",
+    "type": "Private",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Ocampo",
+    "address": "Ocampo, Camarines Sur",
+    "website": [],
+    "email": [
+      "iconnect121213@gmail.com"
+    ],
+    "contact": [
+      "0548847088"
+    ],
+    "president": "N/A",
+    "founded": "2013",
+    "description": "ICGI",
+    "programs": []
+  },
+  {
+    "id": 17533,
+    "name": "Blessed Name of Mary College, Inc",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32647419",
+    "location": "Pili",
+    "address": "Pili, Camarines Sur",
+    "website": [
+      "https://fb.com/bnomls.2006"
+    ],
+    "email": [
+      "bnomls2006@gmail.com"
+    ],
+    "contact": [
+      "09171564543"
+    ],
+    "president": "N/A",
+    "founded": "2006",
+    "description": "BNOMCI",
+    "programs": []
+  },
+  {
+    "id": 17527,
+    "name": "Asia Pacific International College Inc",
+    "type": "Private",
+    "lat": "13.03570771",
+    "lng": "123.44216824",
+    "location": "Pio Duran",
+    "address": "Pio Duran, Albay",
+    "website": [],
+    "email": [
+      "apic.registrar23@gmail.com"
+    ],
+    "contact": [
+      "0527428230"
+    ],
+    "president": "N/A",
+    "founded": "2023",
+    "description": "APIC",
+    "programs": []
+  },
+  {
+    "id": 17528,
+    "name": "Camarines Sur Polytechnic Colleges - Buhi Campus",
+    "type": "SUC",
+    "lat": "13.41116156",
+    "lng": "123.51212796",
+    "location": "Buhi",
+    "address": "Buhi, Camarines Sur",
+    "website": [
+      "https://cspc.edu.ph"
+    ],
+    "email": [
+      "buhicampus@cspc.edu.ph"
+    ],
+    "contact": [
+      "054",
+      "884",
+      "8890"
+    ],
+    "president": "N/A",
+    "founded": "2008",
+    "description": "CSPC Buhi Campus",
+    "programs": []
+  },
+  {
+    "id": 17525,
+    "name": "Cawayan Community College",
+    "type": "LUC",
+    "lat": "11.93613508",
+    "lng": "123.77817392",
+    "location": "Cawayan",
+    "address": "Cawayan, Masbate",
+    "website": [
+      "http://www.facebook.com/cawayancommunitycollege"
+    ],
+    "email": [
+      "cawayancommunitycollege@gmail.com"
+    ],
+    "contact": [
+      "09350655020",
+      "09816639294"
+    ],
+    "president": "N/A",
+    "founded": "2023",
+    "description": "CCC",
+    "programs": []
+  },
+  {
+    "id": 17526,
+    "name": "Dr. Emilio B. Espinosa, Sr. Memorial State College of Agriculture and Technology- Cawayan Campus",
+    "type": "SUC",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Cawayan",
+    "address": "Cawayan, Masbate",
+    "website": [],
+    "email": [],
+    "contact": [],
+    "president": "N/A",
+    "founded": "",
+    "description": "DEBESMSCAT- Cawayan Campus",
+    "programs": []
+  },
+  {
+    "id": 17524,
+    "name": "Castilla Colleges",
+    "type": "LUC",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Castilla",
+    "address": "Castilla, Sorsogon",
+    "website": [],
+    "email": [
+      "castillacolleges@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "2022",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16709,
+    "name": "De Vera Institute of Technology",
+    "type": "Private",
+    "lat": "13.14102402",
+    "lng": "123.72955084",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "http://n/a"
+    ],
+    "email": [
+      "devera_office@yahoo.com"
+    ],
+    "contact": [
+      "(052) 820-1945"
+    ],
+    "president": "N/A",
+    "founded": "1967",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16710,
+    "name": "Ago Medical and Educational Center",
+    "type": "Private",
+    "lat": "13.13973762",
+    "lng": "123.73084500",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "https://amec-bccm.education/"
+    ],
+    "email": [
+      "amec.bccm@yahoo.com"
+    ],
+    "contact": [
+      "(052) 820-5877",
+      "(052) 481-1155",
+      "(052) 481-3777"
+    ],
+    "president": "N/A",
+    "founded": "1975",
+    "description": "AMEC",
+    "programs": []
+  },
+  {
+    "id": 16708,
+    "name": "Annunciation College of Bacon Sorsogon Unit",
+    "type": "Private",
+    "lat": "12.97798311",
+    "lng": "124.00742769",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [],
+    "email": [
+      "acbsui_sorcity@yahoo.com"
+    ],
+    "contact": [
+      "09999922936"
+    ],
+    "president": "N/A",
+    "founded": "1961",
+    "description": "ACBSUI",
+    "programs": []
+  },
+  {
+    "id": 16711,
+    "name": "Aemilianum College",
+    "type": "Private",
+    "lat": "12.97018372",
+    "lng": "124.00335073",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [
+      "https://www.aemilianum.edu.com"
+    ],
+    "email": [
+      "aemilianumcollege@gmail.com"
+    ],
+    "contact": [
+      "(056) 211-6012"
+    ],
+    "president": "N/A",
+    "founded": "1985",
+    "description": "ACI",
+    "programs": []
+  },
+  {
+    "id": 16705,
+    "name": "Bicol College",
+    "type": "Private",
+    "lat": "13.14814938",
+    "lng": "123.71961594",
+    "location": "Daraga",
+    "address": "Daraga, Albay",
+    "website": "https://bicolcollege.edu.ph",
+    "email": "bicolcollege1941@gmail.com",
+    "contact": "431-1002",
+    "president": "N/A",
+    "founded": "1941",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16707,
+    "name": "University of Santo Tomas-Legazpi",
+    "type": "Private",
+    "lat": "13.16430080",
+    "lng": "123.75036478",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": "http://www.ust-legazpi.edu.ph",
+    "email": "orp@ust-legazpi.edu.ph",
+    "contact": "(052) 482-0540",
+    "president": "N/A",
+    "founded": "1948",
+    "description": "UST-Legazpi",
+    "programs": []
+  },
+  {
+    "id": 16704,
+    "name": "Bicol State College of Applied Sciences and Technology",
+    "type": "SUC",
+    "lat": "13.62671881",
+    "lng": "123.19473982",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": [
+      "https://www.biscast.edu.ph"
+    ],
+    "email": [
+      "president@biscast.edu.ph"
+    ],
+    "contact": [
+      "8812231"
+    ],
+    "president": "N/A",
+    "founded": "1911",
+    "description": "BISCAST",
+    "programs": []
+  },
+  {
+    "id": 16706,
+    "name": "Ateneo de Naga University",
+    "type": "Private",
+    "lat": "13.63043074",
+    "lng": "123.18478346",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": "http://www.adnu.edu.ph",
+    "email": "president@gbox.adnu.edu.ph",
+    "contact": "(054) 881-2368,(054) 881-4102",
+    "president": "N/A",
+    "founded": "1940",
+    "description": "ADNU",
+    "programs": []
+  },
+  {
+    "id": 16698,
+    "name": "Bicol University-Tabaco",
+    "type": "SUC",
+    "lat": "13.18312538",
+    "lng": "123.71223450",
+    "location": "Tabaco City",
+    "address": "Tabaco City, Albay",
+    "website": [],
+    "email": [
+      "butcreg@bicol-u.edu.ph"
+    ],
+    "contact": [
+      "(052) 487-5247"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16699,
+    "name": "Bicol University Guinobatan (formerly Bicol University-College of Agriculture and Forestry)",
+    "type": "SUC",
+    "lat": "13.19660047",
+    "lng": "123.60784292",
+    "location": "Guinobatan",
+    "address": "Guinobatan, Albay",
+    "website": [],
+    "email": [
+      "bucaf100@yahoo.com",
+      "bucaf-dean@bicol-u.edu.ph"
+    ],
+    "contact": [
+      "(052) 484-6336"
+    ],
+    "president": "N/A",
+    "founded": "1912",
+    "description": "BU Guinobatan (formerly BUCAF)",
+    "programs": []
+  },
+  {
+    "id": 16700,
+    "name": "Bicol University-Daraga",
+    "type": "SUC",
+    "lat": "13.14816244",
+    "lng": "123.71804684",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "https://bicol-u.edu.ph/"
+    ],
+    "email": [
+      "bucbemreg@bicol-u.edu.ph"
+    ],
+    "contact": [
+      "(052) 483-4335",
+      "483-4360",
+      "(052) 483-4406",
+      "483-4401",
+      "(052) 480-0167",
+      "09068532283"
+    ],
+    "president": "N/A",
+    "founded": "1969",
+    "description": "BUCBEM",
+    "programs": []
+  },
+  {
+    "id": 16701,
+    "name": "Bicol University-Main",
+    "type": "SUC",
+    "lat": "13.14207050",
+    "lng": "123.72312120",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": "https://www.bicol-u.edu.ph",
+    "email": "op@bicol-u.edu.ph",
+    "contact": "(052) 480-0179",
+    "president": "N/A",
+    "founded": "1969",
+    "description": "BU",
+    "programs": []
+  },
+  {
+    "id": 16703,
+    "name": "Central Bicol State University of Agriculture-Sipocot",
+    "type": "SUC",
+    "lat": "11.66007506",
+    "lng": "117.32653856",
+    "location": "Sipocot",
+    "address": "Sipocot, Camarines Sur",
+    "website": [],
+    "email": [
+      "cbsuasipocot@yahoo.com"
+    ],
+    "contact": [
+      "(054) 256-6147",
+      "(054) 450-6108"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "CBSUA-Sipocot",
+    "programs": []
+  },
+  {
+    "id": 16702,
+    "name": "Bicol Merchant Marine College",
+    "type": "Private",
+    "lat": "12.98057588",
+    "lng": "123.98292303",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [],
+    "email": [
+      "bmmci02@yahoo.com"
+    ],
+    "contact": [
+      "(056) 311-8263 (056) 311-8632",
+      "(056) 421-5948"
+    ],
+    "president": "N/A",
+    "founded": "1993",
+    "description": "BMMCI",
+    "programs": []
+  },
+  {
+    "id": 16696,
+    "name": "Camarines Norte State College-Main",
+    "type": "SUC",
+    "lat": "14.10919087",
+    "lng": "122.95510054",
+    "location": "Daet",
+    "address": "Daet, Camarines Norte",
+    "website": [
+      "https://www.cnsc.edu.ph"
+    ],
+    "email": [
+      "president@cnsc.edu.ph"
+    ],
+    "contact": [
+      "(054) 440-1199"
+    ],
+    "president": "N/A",
+    "founded": "1992",
+    "description": "CNSC-Main Campus",
+    "programs": []
+  },
+  {
+    "id": 16697,
+    "name": "Camarines Norte College",
+    "type": "Private",
+    "lat": "14.15322263",
+    "lng": "122.83349320",
+    "location": "Labo",
+    "address": "Labo, Camarines Norte",
+    "website": [
+      "https://www.facebook.com/cnc1946collegedepartmentofficialfbpage"
+    ],
+    "email": [
+      "cncollege1946@gmail.com"
+    ],
+    "contact": [
+      "054-885-3058",
+      "09502437262"
+    ],
+    "president": "N/A",
+    "founded": "1945",
+    "description": "CNC",
+    "programs": []
+  },
+  {
+    "id": 16692,
+    "name": "Caramoan Community College",
+    "type": "LUC",
+    "lat": "13.77286872",
+    "lng": "123.86435050",
+    "location": "Caramoan",
+    "address": "Caramoan, Camarines Sur",
+    "website": [
+      "https://www.facebook.com/ccc4429"
+    ],
+    "email": [
+      "caramoancommunitycollege4429@gmail.com",
+      "irdnacion.ccc@gmail.com"
+    ],
+    "contact": [
+      "09519849686"
+    ],
+    "president": "N/A",
+    "founded": "1977",
+    "description": "CCC",
+    "programs": []
+  },
+  {
+    "id": 16693,
+    "name": "Central Bicol State University of Agriculture-Main",
+    "type": "SUC",
+    "lat": "13.72206334",
+    "lng": "123.22407246",
+    "location": "Pili",
+    "address": "Pili, Camarines Sur",
+    "website": "http://www.cbsua.edu.ph",
+    "email": "registrar.pili@cbsua.edu.ph,op@cbsua.edu.ph",
+    "contact": "(054) 475-6699,(054) 477-3341,(054) 475-6699 loc 101",
+    "president": "N/A",
+    "founded": "1918",
+    "description": "CBSUA",
+    "programs": []
+  },
+  {
+    "id": 16694,
+    "name": "Camarines Sur Polytechnic Colleges",
+    "type": "SUC",
+    "lat": "13.40576540",
+    "lng": "123.37572455",
+    "location": "Nabua",
+    "address": "Nabua, Camarines Sur",
+    "website": [
+      "https://cspc.edu.ph/index.php"
+    ],
+    "email": [
+      "mail@cspc.edu.ph"
+    ],
+    "contact": [
+      "(054) 288-4422 to 25",
+      "(054) 288-4425 loc. 101"
+    ],
+    "president": "N/A",
+    "founded": "1985",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16695,
+    "name": "City College of Naga",
+    "type": "LUC",
+    "lat": "13.61161342",
+    "lng": "123.21156430",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": [],
+    "email": [
+      "ccn@naga.gov.ph"
+    ],
+    "contact": [
+      "(054) 205-2980 local 3180"
+    ],
+    "president": "N/A",
+    "founded": "1973",
+    "description": "CCN",
+    "programs": []
+  },
+  {
+    "id": 16687,
+    "name": "CEGUERA TECHNOLOGICAL COLLEGES",
+    "type": "Private",
+    "lat": "13.41790275",
+    "lng": "123.40172052",
+    "location": "Iriga City",
+    "address": "Iriga City, Camarines Sur",
+    "website": [],
+    "email": [
+      "ceguerairiga@gmail.com"
+    ],
+    "contact": [
+      "(054) 299-2224",
+      "(054)299-7434"
+    ],
+    "president": "N/A",
+    "founded": "1984",
+    "description": "CTC",
+    "programs": []
+  },
+  {
+    "id": 16688,
+    "name": "Catanduanes State University-Main",
+    "type": "SUC",
+    "lat": "11.66007506",
+    "lng": "117.32653856",
+    "location": "Virac",
+    "address": "Virac, Catanduanes",
+    "website": [
+      "https://catsu.edu.ph"
+    ],
+    "email": [
+      "catsu1961@catsu.edu.ph"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "1961",
+    "description": "CatSU",
+    "programs": []
+  },
+  {
+    "id": 16689,
+    "name": "Catanduanes Colleges",
+    "type": "Private",
+    "lat": "13.58231719",
+    "lng": "124.23333406",
+    "location": "Virac",
+    "address": "Virac, Catanduanes",
+    "website": [],
+    "email": [
+      "catanduanes.colleges@yahoo.com"
+    ],
+    "contact": [
+      "0939-2301380",
+      "052-7410092"
+    ],
+    "president": "N/A",
+    "founded": "1937",
+    "description": "CC",
+    "programs": []
+  },
+  {
+    "id": 16690,
+    "name": "Catanduanes State University-Panganiban",
+    "type": "SUC",
+    "lat": "13.90637925",
+    "lng": "124.30779960",
+    "location": "Panganiban",
+    "address": "Panganiban, Catanduanes",
+    "website": [
+      "https://catsu.edu.ph/"
+    ],
+    "email": [
+      "catsateuniversity2012@gmail.com",
+      "catanduanes_state_colleges@yahoo.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "1947",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16691,
+    "name": "Cataingan Municipal College",
+    "type": "LUC",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Cataingan",
+    "address": "Cataingan, Masbate",
+    "website": [],
+    "email": [
+      "cmcreg.office1986@gmail.com"
+    ],
+    "contact": [
+      "0910-6362805",
+      "0565331466"
+    ],
+    "president": "N/A",
+    "founded": "1986",
+    "description": "CMC",
+    "programs": []
+  },
+  {
+    "id": 16686,
+    "name": "St. Louise De Marillac College of Sorsogon, Inc.",
+    "type": "Private",
+    "lat": "11.66007506",
+    "lng": "117.32651711",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [],
+    "email": [
+      "marillac_sor@yahoo.com"
+    ],
+    "contact": [
+      "(056) 421-5556"
+    ],
+    "president": "N/A",
+    "founded": "1937",
+    "description": "SLMCSI",
+    "programs": []
+  },
+  {
+    "id": 16681,
+    "name": "Divine Word College of Legazpi, Inc.",
+    "type": "Private",
+    "lat": "13.13825009",
+    "lng": "123.73676598",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "http://www.dwc-legazpi.edu"
+    ],
+    "email": [
+      "dwclinfo@gmail.com"
+    ],
+    "contact": [
+      "(052) 480-1239",
+      "(052) 480-2148",
+      "(052) 820-0524",
+      "(052) 480-3925"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "DWCL",
+    "programs": []
+  },
+  {
+    "id": 16682,
+    "name": "Daniel B. Peña Memorial College Foundation, Inc.",
+    "type": "Private",
+    "lat": "13.36045628",
+    "lng": "123.72895002",
+    "location": "Tabaco City",
+    "address": "Tabaco City, Albay",
+    "website": [],
+    "email": [
+      "dbpmcf@yahoo.com"
+    ],
+    "contact": [
+      "(052)742-4764"
+    ],
+    "president": "N/A",
+    "founded": "1999",
+    "description": "DBPMCF, Inc.",
+    "programs": []
+  },
+  {
+    "id": 16684,
+    "name": "Computer Arts and Technological College",
+    "type": "Private",
+    "lat": "13.16613963",
+    "lng": "123.74177480",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [],
+    "email": [
+      "catcollege_registrar@yahoo.com"
+    ],
+    "contact": [
+      "(052) 480-1645",
+      "(052) 742-2500"
+    ],
+    "president": "N/A",
+    "founded": "1988",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16685,
+    "name": "Universidad de Sta. Isabel de Naga, Inc.",
+    "type": "Private",
+    "lat": "13.63000000",
+    "lng": "123.19000000",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": "https://www.usi.edu.ph",
+    "email": "officeofthepresident@usi.edu.ph",
+    "contact": "(054)2050147",
+    "president": "N/A",
+    "founded": "",
+    "description": "USI",
+    "programs": []
+  },
+  {
+    "id": 16680,
+    "name": "Dr. Emilio B. Espinosa, Sr. Memorial State College of Agriculture and Technology",
+    "type": "SUC",
+    "lat": "12.28125994",
+    "lng": "123.35786104",
+    "location": "Mandaon",
+    "address": "Mandaon, Masbate",
+    "website": [
+      "http://www.debesmscat.edu.ph"
+    ],
+    "email": [
+      "debesmscat.masbate@gmail.com"
+    ],
+    "contact": [
+      "(056) 583-0218",
+      "0939-926-4033"
+    ],
+    "president": "N/A",
+    "founded": "1995",
+    "description": "DEBESMSCAT",
+    "programs": []
+  },
+  {
+    "id": 16674,
+    "name": "Immaculate Conception College-Albay",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Daraga",
+    "address": "Daraga, Albay",
+    "website": [
+      "http://www.icca-bbfi@yahoo.com"
+    ],
+    "email": [
+      "icc_albay@yahoo.com"
+    ],
+    "contact": [
+      "(052) 431-0347"
+    ],
+    "president": "N/A",
+    "founded": "1947",
+    "description": "ICCA",
+    "programs": []
+  },
+  {
+    "id": 16675,
+    "name": "Holy Trinity College of Camarines Sur",
+    "type": "Private",
+    "lat": "13.35638524",
+    "lng": "123.37219477",
+    "location": "Bato",
+    "address": "Bato, Camarines Sur",
+    "website": [],
+    "email": [
+      "htca_1964@ymail.com"
+    ],
+    "contact": [
+      "(054) 277-4296"
+    ],
+    "president": "N/A",
+    "founded": "1966",
+    "description": "HTCCamSur",
+    "programs": []
+  },
+  {
+    "id": 16676,
+    "name": "Holy Rosary Major Seminary",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": [
+      "http://www.holyrosarymajorsem.ph"
+    ],
+    "email": [
+      "hrmsregistrum@gmail.com"
+    ],
+    "contact": [
+      "(054) 475-6294",
+      "(054) 475-7155"
+    ],
+    "president": "N/A",
+    "founded": "1964",
+    "description": "HRMS",
+    "programs": []
+  },
+  {
+    "id": 16677,
+    "name": "Fatima School of Science and Technology, INC",
+    "type": "Private",
+    "lat": "13.69600537",
+    "lng": "123.48244429",
+    "location": "Goa",
+    "address": "Goa, Camarines Sur",
+    "website": [],
+    "email": [
+      "fatimaschoolcamsur@gmail.com"
+    ],
+    "contact": [
+      "542061359"
+    ],
+    "president": "N/A",
+    "founded": "1989",
+    "description": "FSSTI",
+    "programs": []
+  },
+  {
+    "id": 16678,
+    "name": "Alfelor Sr. Memorial College",
+    "type": "Private",
+    "lat": "13.92047245",
+    "lng": "122.59283602",
+    "location": "Del Gallego",
+    "address": "Del Gallego, Camarines Sur",
+    "website": [],
+    "email": [
+      "asmc1985@gmail.com",
+      "asmc1985@yahoo.com"
+    ],
+    "contact": [
+      "(054) 238-4958",
+      "0998-5765128",
+      "0917-5901671"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16679,
+    "name": "Felix O. Alfelor Sr. Foundation College, Inc",
+    "type": "Private",
+    "lat": "13.76553428",
+    "lng": "122.97642142",
+    "location": "Sipocot",
+    "address": "Sipocot, Camarines Sur",
+    "website": [],
+    "email": [
+      "fafcInc_28@yahoo.com",
+      "fafcregistrar@gmail.com"
+    ],
+    "contact": [
+      "(054) 450-6578",
+      "09638010753",
+      "09209638598"
+    ],
+    "president": "N/A",
+    "founded": "1986",
+    "description": "FAFC",
+    "programs": []
+  },
+  {
+    "id": 16669,
+    "name": "Ligao Community College",
+    "type": "LUC",
+    "lat": "13.23727191",
+    "lng": "123.52956533",
+    "location": "Ligao City",
+    "address": "Ligao City, Albay",
+    "website": [
+      "https://www.facebook.com/profile.php?id=100064217282522"
+    ],
+    "email": [
+      "ligaocommunitycollege@gmail.com"
+    ],
+    "contact": [
+      "0524314124"
+    ],
+    "president": "N/A",
+    "founded": "1993",
+    "description": "LiComCo",
+    "programs": []
+  },
+  {
+    "id": 16668,
+    "name": "Mabini Colleges",
+    "type": "Private",
+    "lat": "14.11576685",
+    "lng": "122.95969248",
+    "location": "Daet",
+    "address": "Daet, Camarines Norte",
+    "website": [
+      "https://mabinicolleges.edu.ph"
+    ],
+    "email": [
+      "mcregistrar@hotmail.com"
+    ],
+    "contact": [
+      "(054) 721-5733",
+      "(054) 721-1281"
+    ],
+    "president": "N/A",
+    "founded": "1924",
+    "description": "MC",
+    "programs": []
+  },
+  {
+    "id": 16672,
+    "name": "La Consolacion College-Daet",
+    "type": "Private",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Daet",
+    "address": "Daet, Camarines Norte",
+    "website": [
+      "https://www.facebook.com/search/top?q=la%20consolacion%20college%20daet"
+    ],
+    "email": [
+      "lccdaet@yahoo.com",
+      "registrar@lcc-daet.edu.ph"
+    ],
+    "contact": [
+      "(054) 440-2002",
+      "(054) 571-2237",
+      "(054) 571-3467",
+      "99090595930"
+    ],
+    "president": "N/A",
+    "founded": "1948",
+    "description": "LCCD",
+    "programs": []
+  },
+  {
+    "id": 16667,
+    "name": "Mariners' Polytechnic Colleges Foundation of Canaman (Cam. Sur), Inc.",
+    "type": "Private",
+    "lat": "13.65370192",
+    "lng": "123.17650080",
+    "location": "Canaman",
+    "address": "Canaman, Camarines Sur",
+    "website": [
+      "http://www.marinerscanaman.edu.ph"
+    ],
+    "email": [
+      "marinerscanaman.edu@gmail.com",
+      "mpcfcanamanregistrar@gmail.com"
+    ],
+    "contact": [
+      "(054)",
+      "871-6930"
+    ],
+    "president": "N/A",
+    "founded": "1984",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16673,
+    "name": "La Consolacion College of Iriga-Iriga City",
+    "type": "Private",
+    "lat": "11.66261785",
+    "lng": "117.32645273",
+    "location": "Iriga City",
+    "address": "Iriga City, Camarines Sur",
+    "website": [
+      "http://www.lcci.edu.ph"
+    ],
+    "email": [
+      "lcci_2004@yahoo.com"
+    ],
+    "contact": [
+      "(054) 299-2340",
+      "(054) 299-7077"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16670,
+    "name": "Liceo de San Jacinto Foundation, Inc.",
+    "type": "Private",
+    "lat": "12.57045999",
+    "lng": "123.72452974",
+    "location": "San Jacinto",
+    "address": "San Jacinto, Masbate",
+    "website": [
+      "http://www.liceodesanjacinto.foundation"
+    ],
+    "email": [
+      "lsjfi@yahoo.com",
+      "lsjfi_registrar@yahoo.com"
+    ],
+    "contact": [
+      "09308804162",
+      "09176772413"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "LSJFI",
+    "programs": []
+  },
+  {
+    "id": 16671,
+    "name": "Liceo de Masbate Colleges Inc.",
+    "type": "Private",
+    "lat": "12.36890674",
+    "lng": "123.61857176",
+    "location": "Masbate City",
+    "address": "Masbate City, Masbate",
+    "website": [
+      "http://www.dioceseofmasbate/liceodemasbate.com"
+    ],
+    "email": [
+      "liceodemasbateofficial@gmail.com"
+    ],
+    "contact": [
+      "(056) 333-2276"
+    ],
+    "president": "N/A",
+    "founded": "1948",
+    "description": "LDM, LdeM",
+    "programs": []
+  },
+  {
+    "id": 16663,
+    "name": "Mater Salutis College Seminary",
+    "type": "Private",
+    "lat": "13.13297902",
+    "lng": "123.71500254",
+    "location": "Daraga",
+    "address": "Daraga, Albay",
+    "website": [],
+    "email": [
+      "mscs.leg@gmail.com"
+    ],
+    "contact": [
+      "(052)483-37-45"
+    ],
+    "president": "N/A",
+    "founded": "1988",
+    "description": "MSCS",
+    "programs": []
+  },
+  {
+    "id": 16665,
+    "name": "Mariners' Polytechnic Colleges Foundation of Legazpi City",
+    "type": "Private",
+    "lat": "13.16992117",
+    "lng": "123.75135183",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "https://www.marinerslegazpi.edu.ph"
+    ],
+    "email": [
+      "mpcflc.reg@gmail.com"
+    ],
+    "contact": [
+      "(052) 482-0997",
+      "(052) 480-1019",
+      "(052) 482-0166"
+    ],
+    "president": "N/A",
+    "founded": "1974",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16662,
+    "name": "Naga College Foundation, Inc.",
+    "type": "Private",
+    "lat": "13.63312080",
+    "lng": "123.19289446",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": "https://www.ncf.edu.ph",
+    "email": "ncfpresident@yahoo.com",
+    "contact": "(054) 472-7525 to 29,(054) 472-7531,(054) 472-4011,(054)472-7525",
+    "president": "N/A",
+    "founded": "1947",
+    "description": "NCF",
+    "programs": []
+  },
+  {
+    "id": 16666,
+    "name": "Mariners' Polytechnic Colleges, Inc. of Naga City",
+    "type": "Private",
+    "lat": "13.62550930",
+    "lng": "123.19227219",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": [
+      "http://www.mariners.edu.ph"
+    ],
+    "email": [
+      "registrar@marinersnaga.edu.ph"
+    ],
+    "contact": [
+      "(054) 473-1434",
+      "(054) 473-5280",
+      "N",
+      "A"
+    ],
+    "president": "N/A",
+    "founded": "1974",
+    "description": "MPCI",
+    "programs": []
+  },
+  {
+    "id": 16664,
+    "name": "Masbate Colleges",
+    "type": "Private",
+    "lat": "12.36790067",
+    "lng": "123.62350702",
+    "location": "Masbate City",
+    "address": "Masbate City, Masbate",
+    "website": [],
+    "email": [
+      "masbatecolleges_0218@yahoo.com"
+    ],
+    "contact": [
+      "(056) 333-2103",
+      "(056) 333-5717"
+    ],
+    "president": "N/A",
+    "founded": "1964",
+    "description": "MC",
+    "programs": []
+  },
+  {
+    "id": 16656,
+    "name": "Perpetual Help Paramedical School",
+    "type": "Private",
+    "lat": "13.32563105",
+    "lng": "123.65097284",
+    "location": "Tabaco City",
+    "address": "Tabaco City, Albay",
+    "website": [],
+    "email": [
+      "perpetualcollege1993@gmail.com"
+    ],
+    "contact": [
+      "(052) 487-5819"
+    ],
+    "president": "N/A",
+    "founded": "1993",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16660,
+    "name": "Our Lady of Lourdes College Foundation",
+    "type": "Private",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Daet",
+    "address": "Daet, Camarines Norte",
+    "website": [
+      "https://ollcf.edu.ph"
+    ],
+    "email": [
+      "elvievillaflores29@gmail.com"
+    ],
+    "contact": [
+      "09637667868"
+    ],
+    "president": "N/A",
+    "founded": "1977",
+    "description": "OLLCF Daet",
+    "programs": []
+  },
+  {
+    "id": 16657,
+    "name": "Partido State University-Main",
+    "type": "SUC",
+    "lat": "13.66733826",
+    "lng": "123.47810984",
+    "location": "Goa",
+    "address": "Goa, Camarines Sur",
+    "website": [
+      "http://www.parsu.edu.ph"
+    ],
+    "email": [
+      "op@parsu.edu.ph"
+    ],
+    "contact": [
+      "09696087792"
+    ],
+    "president": "N/A",
+    "founded": "1940",
+    "description": "ParSU-Goa",
+    "programs": []
+  },
+  {
+    "id": 16658,
+    "name": "Partido College",
+    "type": "Private",
+    "lat": "13.69337856",
+    "lng": "123.48918200",
+    "location": "Goa",
+    "address": "Goa, Camarines Sur",
+    "website": [],
+    "email": [
+      "partidocollege@yahoo.com",
+      "parcoregistrar@gmail.com"
+    ],
+    "contact": [
+      "(054) 453- 0278",
+      "(054) 453-2110",
+      "(054) 456-0673"
+    ],
+    "president": "N/A",
+    "founded": "1979",
+    "description": "PC",
+    "programs": []
+  },
+  {
+    "id": 16661,
+    "name": "Osmeña Colleges",
+    "type": "Private",
+    "lat": "12.37180439",
+    "lng": "123.62027228",
+    "location": "Masbate City",
+    "address": "Masbate City, Masbate",
+    "website": [
+      "https://www.facebook.com/mccolleges/"
+    ],
+    "email": [
+      "osmenacolleges@yahoo.com.ph"
+    ],
+    "contact": [
+      "(056) 333-2778",
+      "(056) 333-4444"
+    ],
+    "president": "N/A",
+    "founded": "1948",
+    "description": "OC",
+    "programs": []
+  },
+  {
+    "id": 16659,
+    "name": "Our Lady of Peñafrancia Seminary",
+    "type": "Private",
+    "lat": "12.99077943",
+    "lng": "124.01446581",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [],
+    "email": [
+      "olpsphilosophy@gmail.com"
+    ],
+    "contact": [
+      "0921-2498289",
+      "056"
+    ],
+    "president": "N/A",
+    "founded": "1945",
+    "description": "OLPS",
+    "programs": []
+  },
+  {
+    "id": 16650,
+    "name": "Republic Colleges of Guinobatan",
+    "type": "Private",
+    "lat": "13.18922582",
+    "lng": "123.60471010",
+    "location": "Guinobatan",
+    "address": "Guinobatan, Albay",
+    "website": [],
+    "email": [
+      "republiccolleges@yahoo.com"
+    ],
+    "contact": [
+      "0946-419-3153"
+    ],
+    "president": "N/A",
+    "founded": "1947",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16653,
+    "name": "Polytechnic Institute of Tabaco",
+    "type": "Private",
+    "lat": "13.35584243",
+    "lng": "123.72440100",
+    "location": "Tabaco City",
+    "address": "Tabaco City, Albay",
+    "website": [],
+    "email": [
+      "pita.educ.888@gmail.com"
+    ],
+    "contact": [
+      "(052)742-9688"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "PITA",
+    "programs": []
+  },
+  {
+    "id": 16654,
+    "name": "Polangui Community College",
+    "type": "LUC",
+    "lat": "13.28875426",
+    "lng": "123.50272179",
+    "location": "Polangui",
+    "address": "Polangui, Albay",
+    "website": [],
+    "email": [
+      "pcc_albay@yahoo.com"
+    ],
+    "contact": [
+      "0968-400-1400"
+    ],
+    "president": "N/A",
+    "founded": "1968",
+    "description": "PCC",
+    "programs": []
+  },
+  {
+    "id": 16652,
+    "name": "Naga View Adventist College",
+    "type": "Private",
+    "lat": "13.65768448",
+    "lng": "123.31348658",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": [],
+    "email": [
+      "nvac.registrar@yahoo.com"
+    ],
+    "contact": [
+      "0999-8802285",
+      "0919-9943863",
+      "0917-5438151"
+    ],
+    "president": "N/A",
+    "founded": "1965",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16655,
+    "name": "Pili Capital College",
+    "type": "Private",
+    "lat": "40.41679616",
+    "lng": "-3.70378733",
+    "location": "Pili",
+    "address": "Pili, Camarines Sur",
+    "website": [],
+    "email": [
+      "pcci2007@gmail.com"
+    ],
+    "contact": [
+      "(054) 205-8485",
+      "0939-9065518"
+    ],
+    "president": "N/A",
+    "founded": "1988",
+    "description": "PCCI",
+    "programs": []
+  },
+  {
+    "id": 16651,
+    "name": "R.G. de Castro Colleges",
+    "type": "Private",
+    "lat": "12.66596464",
+    "lng": "123.87589216",
+    "location": "Bulan",
+    "address": "Bulan, Sorsogon",
+    "website": [],
+    "email": [
+      "rgccbulan@yahoo.com"
+    ],
+    "contact": [
+      "(056) 555-2504"
+    ],
+    "president": "N/A",
+    "founded": "1950",
+    "description": "RGCC",
+    "programs": []
+  },
+  {
+    "id": 16648,
+    "name": "Bicol University Polangui",
+    "type": "SUC",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Polangui",
+    "address": "Polangui, Albay",
+    "website": [
+      "https://bicol-u.edu.ph"
+    ],
+    "email": [
+      "bicol_u_pc@yahoo.com"
+    ],
+    "contact": [
+      "(052) 486-1220",
+      "none"
+    ],
+    "president": "N/A",
+    "founded": "2000",
+    "description": "BUP",
+    "programs": []
+  },
+  {
+    "id": 16649,
+    "name": "San Jose Community College",
+    "type": "LUC",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Malilipot",
+    "address": "Malilipot, Albay",
+    "website": [],
+    "email": [
+      "sanjosecommunitycollege@gmail.com"
+    ],
+    "contact": [
+      "(052) 558-1209",
+      "0951383825"
+    ],
+    "president": "N/A",
+    "founded": "1993",
+    "description": "SJCC",
+    "programs": []
+  },
+  {
+    "id": 16644,
+    "name": "Southern Masbate Roosevelt College, Inc.",
+    "type": "Private",
+    "lat": "11.86915682",
+    "lng": "123.91292810",
+    "location": "Placer",
+    "address": "Placer, Masbate",
+    "website": [],
+    "email": [
+      "sch.smrc246@yahoo.com",
+      "ruby.cartin456@gmail.com"
+    ],
+    "contact": [
+      "09060286819",
+      "09425298152"
+    ],
+    "president": "N/A",
+    "founded": "1955",
+    "description": "SMRC",
+    "programs": []
+  },
+  {
+    "id": 16646,
+    "name": "Southern Bicol Colleges",
+    "type": "Private",
+    "lat": "11.65736413",
+    "lng": "117.32709646",
+    "location": "Masbate City",
+    "address": "Masbate City, Masbate",
+    "website": [],
+    "email": [
+      "registrar.scbmasbate@gmail.com"
+    ],
+    "contact": [
+      "0563332734"
+    ],
+    "president": "N/A",
+    "founded": "1993",
+    "description": "SBC",
+    "programs": []
+  },
+  {
+    "id": 16645,
+    "name": "Southern Luzon Institute",
+    "type": "Private",
+    "lat": "12.67314542",
+    "lng": "123.87447596",
+    "location": "Bulan",
+    "address": "Bulan, Sorsogon",
+    "website": [],
+    "email": [
+      "slikrams@yahoo.com"
+    ],
+    "contact": [
+      "0908-1087911",
+      "0917-8167718",
+      "09293453097"
+    ],
+    "president": "N/A",
+    "founded": "1924",
+    "description": "SLI",
+    "programs": []
+  },
+  {
+    "id": 16647,
+    "name": "Sorsogon State University-Main",
+    "type": "SUC",
+    "lat": "12.97660307",
+    "lng": "124.00736332",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": "http://www.sorsu.edu.ph",
+    "email": "ssc@sorsogonstatecollege.edu.ph,ssc_records@sorsu.edu.ph",
+    "contact": "(056)211-0103",
+    "president": "N/A",
+    "founded": "1907",
+    "description": "SorSU",
+    "programs": []
+  },
+  {
+    "id": 16642,
+    "name": "Tanchuling College, Inc.",
+    "type": "Private",
+    "lat": "13.14407479",
+    "lng": "123.75341177",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "https://www.tanchuling.edu.ph"
+    ],
+    "email": [
+      "registrar@tanchuling.edu.ph"
+    ],
+    "contact": [
+      "+63966-1935-231"
+    ],
+    "president": "N/A",
+    "founded": "1976",
+    "description": "TCI",
+    "programs": []
+  },
+  {
+    "id": 16643,
+    "name": "Tabaco College",
+    "type": "Private",
+    "lat": "13.35690718",
+    "lng": "123.72624636",
+    "location": "Tabaco City",
+    "address": "Tabaco City, Albay",
+    "website": [
+      "https://www.facebook.com/tabacocollegeofficial/"
+    ],
+    "email": [
+      "tabcol82@yahoo.com"
+    ],
+    "contact": [
+      "(052) 487-5443"
+    ],
+    "president": "N/A",
+    "founded": "1982",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16639,
+    "name": "UNIVERSITY OF SAINT ANTHONY",
+    "type": "Private",
+    "lat": "13.42255715",
+    "lng": "483.41077566",
+    "location": "Iriga City",
+    "address": "Iriga City, Camarines Sur",
+    "website": [
+      "http://www.usant.edu.ph"
+    ],
+    "email": [
+      "registrar@usant.edu.ph"
+    ],
+    "contact": [
+      "(054)205-123"
+    ],
+    "president": "N/A",
+    "founded": "1947",
+    "description": "USANT",
+    "programs": []
+  },
+  {
+    "id": 16640,
+    "name": "University of Nueva Caceres",
+    "type": "Private",
+    "lat": "13.62000384",
+    "lng": "123.18001986",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": "http://www.unc.edu.ph",
+    "email": "uncpres@unc.edu.ph",
+    "contact": "(054) 473-7881,054",
+    "president": "N/A",
+    "founded": "1948",
+    "description": "NA",
+    "programs": []
+  },
+  {
+    "id": 16641,
+    "name": "University of Northeastern Philippines",
+    "type": "Private",
+    "lat": "13.42232756",
+    "lng": "123.41077566",
+    "location": "Iriga City",
+    "address": "Iriga City, Camarines Sur",
+    "website": [
+      "https://unep4431@yahoo.com.ph"
+    ],
+    "email": [
+      "unep4431@yahoo.com.ph"
+    ],
+    "contact": [
+      "(054) 456-0807",
+      "(054) 456-0294",
+      "(054) 299-2698"
+    ],
+    "president": "N/A",
+    "founded": "1948",
+    "description": "UNEP",
+    "programs": []
+  },
+  {
+    "id": 16638,
+    "name": "Veritas College of Irosin",
+    "type": "Private",
+    "lat": "12.69577505",
+    "lng": "124.02997971",
+    "location": "Irosin",
+    "address": "Irosin, Sorsogon",
+    "website": [],
+    "email": [
+      "vci_registraroffice@yahoo.com",
+      "frilles.josephinem@gmail.com"
+    ],
+    "contact": [
+      "09086124723",
+      "19988526913"
+    ],
+    "president": "N/A",
+    "founded": "1985",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16633,
+    "name": "Camarines Norte State College-Panganiban Campus",
+    "type": "SUC",
+    "lat": "14.30414174",
+    "lng": "122.69602060",
+    "location": "Jose Panganiban",
+    "address": "Jose Panganiban, Camarines Norte",
+    "website": [
+      "https://cnsc.edu.ph/cnsc-website/"
+    ],
+    "email": [
+      "registrar.cott@cnsc.edu.ph"
+    ],
+    "contact": [
+      "(054)731-1817",
+      "(054) 721-4545"
+    ],
+    "president": "N/A",
+    "founded": "1948",
+    "description": "CNSC-COTT",
+    "programs": []
+  },
+  {
+    "id": 16634,
+    "name": "Camarines Norte State College-Mercedes Campus",
+    "type": "SUC",
+    "lat": "14.11643276",
+    "lng": "122.99372435",
+    "location": "Mercedes",
+    "address": "Mercedes, Camarines Norte",
+    "website": [
+      "http://cnsc.edu.gov.ph"
+    ],
+    "email": [],
+    "contact": [],
+    "president": "N/A",
+    "founded": "1992",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16635,
+    "name": "Camarines Norte State College-Labo Campus",
+    "type": "SUC",
+    "lat": "14.18657142",
+    "lng": "122.79361010",
+    "location": "Labo",
+    "address": "Labo, Camarines Norte",
+    "website": [
+      "http://cnsc.educ.gov.ph"
+    ],
+    "email": [
+      "labocampus@cnsc.edu.ph"
+    ],
+    "contact": [
+      "0998-5470483",
+      "0918-6148033",
+      "054-2120378"
+    ],
+    "president": "N/A",
+    "founded": "1960",
+    "description": "CNSC-LABO",
+    "programs": []
+  },
+  {
+    "id": 16632,
+    "name": "Central Bicol State University of Agriculture-Calabanga",
+    "type": "SUC",
+    "lat": "13.71849878",
+    "lng": "123.23160410",
+    "location": "Calabanga",
+    "address": "Calabanga, Camarines Sur",
+    "website": [],
+    "email": [
+      "cssac_calabanga@yahoo.com"
+    ],
+    "contact": [
+      "(054) 881-3258"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16631,
+    "name": "STI College Legazpi",
+    "type": "Private",
+    "lat": "11.66007506",
+    "lng": "117.32651711",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "http://www.sti.edu"
+    ],
+    "email": [
+      "mayanne.vasquez@legazpi.sti.edu.ph"
+    ],
+    "contact": [
+      "(052)826-0621"
+    ],
+    "president": "N/A",
+    "founded": "1996",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16628,
+    "name": "Partido State University-San Jose Campus",
+    "type": "SUC",
+    "lat": "13.70096703",
+    "lng": "123.52224827",
+    "location": "San Jose",
+    "address": "San Jose, Camarines Sur",
+    "website": [
+      "http://www.parsu.edu.ph"
+    ],
+    "email": [
+      "sanjose.campus@parsu.edu.ph"
+    ],
+    "contact": [
+      "0930-0768543"
+    ],
+    "president": "N/A",
+    "founded": "1977",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16629,
+    "name": "Lower Isarog Foundation Exponent,Inc.",
+    "type": "Private",
+    "lat": "13.60774122",
+    "lng": "123.47965479",
+    "location": "Tigaon",
+    "address": "Tigaon, Camarines Sur",
+    "website": [],
+    "email": [
+      "life14330@yahoo.com",
+      "Lowerisarogfoundation1995@gmail.com"
+    ],
+    "contact": [
+      "0909-6735973",
+      "0921-4443193",
+      "0956-1780553",
+      "(02)842-9898"
+    ],
+    "president": "N/A",
+    "founded": "1995",
+    "description": "LIFE,INC.",
+    "programs": []
+  },
+  {
+    "id": 16630,
+    "name": "Partido State University-Sagnay Campus",
+    "type": "SUC",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Sagñay",
+    "address": "Sagñay, Camarines Sur",
+    "website": [
+      "http://www.parsu.edu.ph"
+    ],
+    "email": [
+      "sagnay.campus@parsu.edu.ph"
+    ],
+    "contact": [
+      "0927-4378008",
+      "(054) 453-1811"
+    ],
+    "president": "N/A",
+    "founded": "1977",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16626,
+    "name": "Sorsogon State University-Magallanes Campus",
+    "type": "SUC",
+    "lat": "12.82412493",
+    "lng": "123.84293318",
+    "location": "Magallanes",
+    "address": "Magallanes, Sorsogon",
+    "website": [
+      "https://www.sorsu.edu.ph"
+    ],
+    "email": [
+      "ssc@sorsogonstatecollege.edu.ph",
+      "magallanescampus@sorsu.edu.ph"
+    ],
+    "contact": [
+      "0563115437"
+    ],
+    "president": "N/A",
+    "founded": "1907",
+    "description": "SorSU-Magallanes",
+    "programs": []
+  },
+  {
+    "id": 16627,
+    "name": "Sorsogon State University-Bulan Campus",
+    "type": "SUC",
+    "lat": "12.66644616",
+    "lng": "123.88228655",
+    "location": "Bulan",
+    "address": "Bulan, Sorsogon",
+    "website": [
+      "http://www.sorsogonstatecollege.edu.ph"
+    ],
+    "email": [
+      "ssc@sorsogonstatecollege.edu.ph",
+      "ssc@sorsu.edu.ph"
+    ],
+    "contact": [
+      "0563119800"
+    ],
+    "president": "N/A",
+    "founded": "1907",
+    "description": "SorSU-Bulan",
+    "programs": []
+  },
+  {
+    "id": 16619,
+    "name": "Computer Communication Development Institute-Legazpi City",
+    "type": "Private",
+    "lat": "13.13809860",
+    "lng": "123.73671770",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [],
+    "email": [
+      "ccdilegazpibranch2@gmail.com"
+    ],
+    "contact": [
+      "(052)",
+      "742-5462",
+      "052",
+      "74725462"
+    ],
+    "president": "N/A",
+    "founded": "1996",
+    "description": "CCDI",
+    "programs": []
+  },
+  {
+    "id": 16620,
+    "name": "Colegio De Sta. Monica of Polangui",
+    "type": "Private",
+    "lat": "13.29739972",
+    "lng": "123.48068476",
+    "location": "Polangui",
+    "address": "Polangui, Albay",
+    "website": [],
+    "email": [
+      "colegiodestamonica.polangui@gmail.com"
+    ],
+    "contact": [
+      "(052) 486-2245",
+      "09177771262"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "CSMP",
+    "programs": []
+  },
+  {
+    "id": 16621,
+    "name": "Zamora Memorial College, Inc.",
+    "type": "Private",
+    "lat": "13.29215818",
+    "lng": "123.79508257",
+    "location": "Bacacay",
+    "address": "Bacacay, Albay",
+    "website": [
+      "https://www.facebook.com/zamora.memorial"
+    ],
+    "email": [
+      "zmc10241948@gmail.com",
+      "zmcregistrar@gmail.com"
+    ],
+    "contact": [
+      "09175037892",
+      "09277687583"
+    ],
+    "president": "N/A",
+    "founded": "1948",
+    "description": "ZMC",
+    "programs": []
+  },
+  {
+    "id": 16622,
+    "name": "Tiwi Community College",
+    "type": "LUC",
+    "lat": "13.46091598",
+    "lng": "123.66125107",
+    "location": "Tiwi",
+    "address": "Tiwi, Albay",
+    "website": [],
+    "email": [
+      "tiwicollege.94@gmail.com"
+    ],
+    "contact": [
+      "(052) 488-5071"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "TCC",
+    "programs": []
+  },
+  {
+    "id": 16623,
+    "name": "Partido State University-Tinambac Campus",
+    "type": "SUC",
+    "lat": "13.81766086",
+    "lng": "123.34760427",
+    "location": "Tinambac",
+    "address": "Tinambac, Camarines Sur",
+    "website": [
+      "http://www.parsu.edu.ph"
+    ],
+    "email": [
+      "op_parsu@yahoo.com",
+      "tinambac.campus@parsu.edu.ph"
+    ],
+    "contact": [
+      "0949-7809367",
+      "(054) 453-1811",
+      "0963-0891900"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "ParSU-CESD",
+    "programs": []
+  },
+  {
+    "id": 16624,
+    "name": "Speed Computer College",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [
+      "https://speedcomputercollege.online"
+    ],
+    "email": [
+      "speedcomputercollege.17@gmail.com",
+      "speedcomputercollegesorsogon@gmail.com"
+    ],
+    "contact": [
+      "(056) 255-0479",
+      "09088848535"
+    ],
+    "president": "N/A",
+    "founded": "1991",
+    "description": "SCCI",
+    "programs": []
+  },
+  {
+    "id": 16625,
+    "name": "Sorsogon State University-Castilla Campus",
+    "type": "SUC",
+    "lat": "12.96002114",
+    "lng": "123.79581213",
+    "location": "Castilla",
+    "address": "Castilla, Sorsogon",
+    "website": [
+      "http://sorsu.edu.ph"
+    ],
+    "email": [
+      "regcastilla@sorsu.edu.ph",
+      "castilla.campus@sorsu.edu.ph"
+    ],
+    "contact": [
+      "056-211-0103"
+    ],
+    "president": "N/A",
+    "founded": "1972",
+    "description": "SorSU Castilla Campus",
+    "programs": []
+  },
+  {
+    "id": 16613,
+    "name": "PLT College of Guinobatan",
+    "type": "Private",
+    "lat": "13.18940764",
+    "lng": "123.60601774",
+    "location": "Guinobatan",
+    "address": "Guinobatan, Albay",
+    "website": [],
+    "email": [
+      "pltcollegeofguinobataninc@gmail.com"
+    ],
+    "contact": [
+      "(052) 484-6250"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16614,
+    "name": "Dr. Carlos S. Lanting College-Dr. Ruby Lanting Casaul Educational Foundation",
+    "type": "Private",
+    "lat": "13.35596770",
+    "lng": "123.72210503",
+    "location": "Tabaco City",
+    "address": "Tabaco City, Albay",
+    "website": [
+      "http://none"
+    ],
+    "email": [
+      "casaul.lanting.college@gmail.com"
+    ],
+    "contact": [
+      "(052) 203-0244",
+      "(052)431-3783"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "DCLC-DRLCEFI",
+    "programs": []
+  },
+  {
+    "id": 16618,
+    "name": "Rapu-Rapu Community College",
+    "type": "LUC",
+    "lat": "13.24107341",
+    "lng": "124.04261827",
+    "location": "Rapu-Rapu",
+    "address": "Rapu-Rapu, Albay",
+    "website": [],
+    "email": [
+      "rrcc.cofeduc2k18@gmail.com"
+    ],
+    "contact": [
+      "0917-1035665",
+      "0919-2222810",
+      "09994720072"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "RRCC",
+    "programs": []
+  },
+  {
+    "id": 16612,
+    "name": "Holy Trinity College Seminary",
+    "type": "Private",
+    "lat": "14.13740796",
+    "lng": "122.85203934",
+    "location": "Labo",
+    "address": "Labo, Camarines Norte",
+    "website": [],
+    "email": [
+      "holytrinitycollegeseminary@gmail.com"
+    ],
+    "contact": [
+      "09088-696255",
+      "0917-7791755"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "HTCS",
+    "programs": []
+  },
+  {
+    "id": 16616,
+    "name": "St. Peter Baptist College Foundation",
+    "type": "Private",
+    "lat": "13.79138050",
+    "lng": "122.91231408",
+    "location": "Lupi",
+    "address": "Lupi, Camarines Sur",
+    "website": [],
+    "email": [
+      "spbcf_lupi@yahoo.com"
+    ],
+    "contact": [
+      "(054) 811-1037",
+      "0917-7920570"
+    ],
+    "president": "N/A",
+    "founded": "1965",
+    "description": "SPBCF",
+    "programs": []
+  },
+  {
+    "id": 16617,
+    "name": "Sorsogon College of Criminology, Inc.",
+    "type": "Private",
+    "lat": "12.97139651",
+    "lng": "123.99498224",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [
+      "https://www.facebook.com/1998scci"
+    ],
+    "email": [
+      "sorcollgeofcriminology@gmail.com"
+    ],
+    "contact": [
+      "(056) 211-0017",
+      "(056) 421-5417",
+      "09303071199"
+    ],
+    "president": "N/A",
+    "founded": "1998",
+    "description": "SCCI",
+    "programs": []
+  },
+  {
+    "id": 16606,
+    "name": "Oas Community College",
+    "type": "LUC",
+    "lat": "13.24984589",
+    "lng": "123.51656199",
+    "location": "Oas",
+    "address": "Oas, Albay",
+    "website": [
+      "http://n/a"
+    ],
+    "email": [
+      "oascommunitycollege19@gmail.com"
+    ],
+    "contact": [
+      "09392998111"
+    ],
+    "president": "N/A",
+    "founded": "2000",
+    "description": "OCC",
+    "programs": []
+  },
+  {
+    "id": 16607,
+    "name": "West Coast College",
+    "type": "Private",
+    "lat": "13.23209174",
+    "lng": "483.31930161",
+    "location": "Pio Duran",
+    "address": "Pio Duran, Albay",
+    "website": [],
+    "email": [
+      "wcc_pdrn@yahoo.com"
+    ],
+    "contact": [
+      "09175-256880",
+      "0917-111451"
+    ],
+    "president": "N/A",
+    "founded": "2000",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16610,
+    "name": "Camarines Norte School of Law, Arts and Sciences, Inc.",
+    "type": "Private",
+    "lat": "14.13002108",
+    "lng": "122.92999506",
+    "location": "Talisay",
+    "address": "Talisay, Camarines Norte",
+    "website": [
+      "http://n/a"
+    ],
+    "email": [
+      "camarinesnorteschooloflaw@gmail.com"
+    ],
+    "contact": [
+      "(054)",
+      "731-0074"
+    ],
+    "president": "N/A",
+    "founded": "2000",
+    "description": "CNSLASI",
+    "programs": []
+  },
+  {
+    "id": 16608,
+    "name": "The Lewis College",
+    "type": "Private",
+    "lat": "12.97641489",
+    "lng": "124.00948763",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [
+      "http://www.thelewiscollege.edu.ph"
+    ],
+    "email": [
+      "info@thelewiscollege.edu.ph",
+      "rizadogillo@thelewiscollege.edu.ph"
+    ],
+    "contact": [
+      "(056) 421-5806",
+      "(056) 211-3446"
+    ],
+    "president": "N/A",
+    "founded": "2000",
+    "description": "TLC",
+    "programs": []
+  },
+  {
+    "id": 16609,
+    "name": "Solis Institute of Technology",
+    "type": "Private",
+    "lat": "12.67008384",
+    "lng": "123.87943268",
+    "location": "Bulan",
+    "address": "Bulan, Sorsogon",
+    "website": [
+      "http://www.sit-bula@wixsite.com"
+    ],
+    "email": [
+      "sitbulan@yahoo.com"
+    ],
+    "contact": [
+      "(056) 555-2642"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "SIT",
+    "programs": []
+  },
+  {
+    "id": 16605,
+    "name": "Libon Community College",
+    "type": "LUC",
+    "lat": "11.66030622",
+    "lng": "117.32679605",
+    "location": "Libon",
+    "address": "Libon, Albay",
+    "website": [],
+    "email": [
+      "liboncommunitycollege.edu2001@gmail.com"
+    ],
+    "contact": [
+      "0917-6249625"
+    ],
+    "president": "N/A",
+    "founded": "2001",
+    "description": "LICOM",
+    "programs": []
+  },
+  {
+    "id": 16604,
+    "name": "STA. ELENA (CAM. NORTE) COLLEGE, INC.",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Santa Elena",
+    "address": "Santa Elena, Camarines Norte",
+    "website": [],
+    "email": [
+      "sta.elenacollege@yahoo.com"
+    ],
+    "contact": [
+      "(054) 885-0700",
+      "(054) 885-0764"
+    ],
+    "president": "N/A",
+    "founded": "1995",
+    "description": "SECNCI",
+    "programs": []
+  },
+  {
+    "id": 16599,
+    "name": "Partido State University-Lagonoy Campus",
+    "type": "SUC",
+    "lat": "13.74369969",
+    "lng": "123.54419947",
+    "location": "Lagonoy",
+    "address": "Lagonoy, Camarines Sur",
+    "website": [
+      "http://www.parsu.edu.ph"
+    ],
+    "email": [
+      "op_parsu@yahoo.com"
+    ],
+    "contact": [
+      "0939-9264033",
+      "(054) 453-1811",
+      "(054) 453-7248"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16600,
+    "name": "Partido State University-Caramoan Campus",
+    "type": "SUC",
+    "lat": "13.78213158",
+    "lng": "123.85795355",
+    "location": "Caramoan",
+    "address": "Caramoan, Camarines Sur",
+    "website": [
+      "http://www.parsu.edu.ph"
+    ],
+    "email": [
+      "parsu_op@yahoo.com",
+      "caramoan.campus@parsu.edu.ph"
+    ],
+    "contact": [
+      "(054) 453-1811"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "ParSU-Caramoan",
+    "programs": []
+  },
+  {
+    "id": 16601,
+    "name": "Partido State University-Salogon Campus",
+    "type": "SUC",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "San Jose",
+    "address": "San Jose, Camarines Sur",
+    "website": [
+      "http://www.parsu.edu.ph"
+    ],
+    "email": [
+      "salogon.campus@parsu.edu.ph"
+    ],
+    "contact": [
+      "(+63)09813863814"
+    ],
+    "president": "N/A",
+    "founded": "2001",
+    "description": "ParSU Salogon",
+    "programs": []
+  },
+  {
+    "id": 16603,
+    "name": "Baao Community College",
+    "type": "LUC",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Baao",
+    "address": "Baao, Camarines Sur",
+    "website": [],
+    "email": [
+      "baaocommunitycollege.2024@gmail.com"
+    ],
+    "contact": [
+      "871-6522"
+    ],
+    "president": "N/A",
+    "founded": "2000",
+    "description": "BCC",
+    "programs": []
+  },
+  {
+    "id": 16594,
+    "name": "Daraga Community College",
+    "type": "LUC",
+    "lat": "13.17729639",
+    "lng": "123.67781639",
+    "location": "Daraga",
+    "address": "Daraga, Albay",
+    "website": [],
+    "email": [
+      "dcomc2003@gmail.com",
+      "registrar.dcomc@gmail.com"
+    ],
+    "contact": [
+      "(052)742-1348"
+    ],
+    "president": "N/A",
+    "founded": "2003",
+    "description": "DComC",
+    "programs": []
+  },
+  {
+    "id": 16595,
+    "name": "Our Lady of Salvation College",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Tiwi",
+    "address": "Tiwi, Albay",
+    "website": [],
+    "email": [
+      "ourladyofsalvationcollege@gmail.com"
+    ],
+    "contact": [
+      "052-7429178"
+    ],
+    "president": "N/A",
+    "founded": "2000",
+    "description": "OLSC",
+    "programs": []
+  },
+  {
+    "id": 16596,
+    "name": "Southern Luzon Technological College Foundation-Legazpi",
+    "type": "Private",
+    "lat": "13.15069857",
+    "lng": "123.75474215",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "https://www.sltcfi.com.ph"
+    ],
+    "email": [
+      "registrar@sltcfi.com"
+    ],
+    "contact": [
+      "(052) 742-1829"
+    ],
+    "president": "N/A",
+    "founded": "1990",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16597,
+    "name": "Capalonga College Inc.",
+    "type": "Private",
+    "lat": "14.32732412",
+    "lng": "122.49509096",
+    "location": "Capalonga",
+    "address": "Capalonga, Camarines Norte",
+    "website": [],
+    "email": [
+      "capalongacollege2002@yahoo.com"
+    ],
+    "contact": [
+      "09685311157"
+    ],
+    "president": "N/A",
+    "founded": "2002",
+    "description": "CCI",
+    "programs": []
+  },
+  {
+    "id": 16593,
+    "name": "Aeronautical Academy of the Philippines",
+    "type": "Private",
+    "lat": "13.65363936",
+    "lng": "123.18070650",
+    "location": "Canaman",
+    "address": "Canaman, Camarines Sur",
+    "website": [],
+    "email": [
+      "aapinc98@yahoo.com"
+    ],
+    "contact": [
+      "(054) 472-9866",
+      "0912-7376304",
+      "0975-1784894"
+    ],
+    "president": "N/A",
+    "founded": "1998",
+    "description": "AAP",
+    "programs": []
+  },
+  {
+    "id": 16598,
+    "name": "Calabanga Community College",
+    "type": "LUC",
+    "lat": "13.71818610",
+    "lng": "123.23426485",
+    "location": "Calabanga",
+    "address": "Calabanga, Camarines Sur",
+    "website": [],
+    "email": [
+      "calabanga.community@yahoo.com"
+    ],
+    "contact": [
+      "(054) 881-9410"
+    ],
+    "president": "N/A",
+    "founded": "",
+    "description": "ccc",
+    "programs": []
+  },
+  {
+    "id": 16592,
+    "name": "COMPUTER COMMUNICATION DEVELOPMENT INSTITUTE",
+    "type": "Private",
+    "lat": "13.00866725",
+    "lng": "123.99751900",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [
+      "https://ccdisorsogon.edu.ph"
+    ],
+    "email": [
+      "ccdisorsogonshs@gmail.com",
+      "leahsantadetera2019@gmail.com"
+    ],
+    "contact": [
+      "(056) 421-5575",
+      "(056) 255-0759",
+      "09171025998"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "CCDI",
+    "programs": []
+  },
+  {
+    "id": 16591,
+    "name": "Amando Cope College",
+    "type": "Private",
+    "lat": "13.35557103",
+    "lng": "123.72663260",
+    "location": "Tabaco City",
+    "address": "Tabaco City, Albay",
+    "website": [],
+    "email": [
+      "amandocopecollege2004@gmail.com"
+    ],
+    "contact": [
+      "7327499"
+    ],
+    "president": "N/A",
+    "founded": "2004",
+    "description": "ACC",
+    "programs": []
+  },
+  {
+    "id": 16586,
+    "name": "Camarines Norte State College-Entienza Campus",
+    "type": "SUC",
+    "lat": "14.06519353",
+    "lng": "122.36308336",
+    "location": "Santa Elena",
+    "address": "Santa Elena, Camarines Norte",
+    "website": [
+      "http://www.cnsc.edu.ph"
+    ],
+    "email": [
+      "registrar.entienza@cnsc.edu.ph"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "2007",
+    "description": "CNSC-Entienza Campus",
+    "programs": []
+  },
+  {
+    "id": 16588,
+    "name": "Siena College Tigaon, Inc.",
+    "type": "Private",
+    "lat": "13.63541463",
+    "lng": "123.49875212",
+    "location": "Tigaon",
+    "address": "Tigaon, Camarines Sur",
+    "website": [
+      "http://none"
+    ],
+    "email": [
+      "sienacol_tigaon@yahoo.com"
+    ],
+    "contact": [
+      "(054) 881-9484",
+      "8818898"
+    ],
+    "president": "N/A",
+    "founded": "1948",
+    "description": "SCT",
+    "programs": []
+  },
+  {
+    "id": 16589,
+    "name": "Regina Mondi College, Inc.",
+    "type": "Private",
+    "lat": "13.41775665",
+    "lng": "123.39850187",
+    "location": "Iriga City",
+    "address": "Iriga City, Camarines Sur",
+    "website": [],
+    "email": [
+      "regina_mondi@yahoo.com"
+    ],
+    "contact": [
+      "639617276968"
+    ],
+    "president": "N/A",
+    "founded": "2003",
+    "description": "RMCI",
+    "programs": []
+  },
+  {
+    "id": 16590,
+    "name": "Luis H. Dilanco Sr. Foundation College, Inc.",
+    "type": "Private",
+    "lat": "13.67238392",
+    "lng": "123.03713322",
+    "location": "Libmanan",
+    "address": "Libmanan, Camarines Sur",
+    "website": [
+      "http://lhdsfci.com"
+    ],
+    "email": [
+      "lhdsfcollege@yahoo.com"
+    ],
+    "contact": [
+      "(054) 511-9155"
+    ],
+    "president": "N/A",
+    "founded": "2003",
+    "description": "LHDSFCI",
+    "programs": []
+  },
+  {
+    "id": 16587,
+    "name": "Balud Municipal College",
+    "type": "LUC",
+    "lat": "12.03938351",
+    "lng": "123.19195032",
+    "location": "Balud",
+    "address": "Balud, Masbate",
+    "website": [
+      "https://www.facebook.com/profile.php?id=100093110166772&mibextid=zbwkwl"
+    ],
+    "email": [
+      "baludmunicipalcollege@gmail.com"
+    ],
+    "contact": [
+      "0950-4909687"
+    ],
+    "president": "N/A",
+    "founded": "2006",
+    "description": "BMC",
+    "programs": []
+  },
+  {
+    "id": 16582,
+    "name": "Forbes College",
+    "type": "Private",
+    "lat": "13.14791953",
+    "lng": "123.75530005",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [
+      "https://www.forbes.edu.ph"
+    ],
+    "email": [
+      "forbescollege.edu@gmail.com"
+    ],
+    "contact": [
+      "052-742-0317"
+    ],
+    "president": "N/A",
+    "founded": "2007",
+    "description": "FC",
+    "programs": []
+  },
+  {
+    "id": 16579,
+    "name": "ACLC College of Daet",
+    "type": "SUC",
+    "lat": "14.11695300",
+    "lng": "122.95711756",
+    "location": "Daet",
+    "address": "Daet, Camarines Norte",
+    "website": [
+      "https://www.aclc.edu.ph/"
+    ],
+    "email": [
+      "bhogs001@yahoo.com"
+    ],
+    "contact": [
+      "(054)6050143"
+    ],
+    "president": "N/A",
+    "founded": "1998",
+    "description": "ACLCC-DAET",
+    "programs": []
+  },
+  {
+    "id": 16580,
+    "name": "Shepherdville College",
+    "type": "Private",
+    "lat": "13.62822027",
+    "lng": "123.49600554",
+    "location": "Tigaon",
+    "address": "Tigaon, Camarines Sur",
+    "website": [],
+    "email": [
+      "lovingshepherdtigaon@yahoo.com"
+    ],
+    "contact": [
+      "(054) 884-9536",
+      "0920-9497039"
+    ],
+    "president": "N/A",
+    "founded": "2009",
+    "description": "SVC",
+    "programs": []
+  },
+  {
+    "id": 16584,
+    "name": "Our Lady of the Most Holy Trinity College Seminary",
+    "type": "Private",
+    "lat": "13.62873118",
+    "lng": "123.23841691",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": [
+      "https://www.solt.net"
+    ],
+    "email": [
+      "soltcollegeseminary@gmail.com",
+      "olmhtcsregistrar@gmail.com"
+    ],
+    "contact": [
+      "09569502430",
+      "09176510812"
+    ],
+    "president": "N/A",
+    "founded": "2009",
+    "description": "OLMHTCS",
+    "programs": []
+  },
+  {
+    "id": 16583,
+    "name": "Christian Polytechnic Institute of Catanduanes",
+    "type": "Private",
+    "lat": "13.58513817",
+    "lng": "124.23578560",
+    "location": "Virac",
+    "address": "Virac, Catanduanes",
+    "website": [],
+    "email": [
+      "cpicvirac@gmail.com"
+    ],
+    "contact": [
+      "(052) 811-4230",
+      "09637250562",
+      "09203146190"
+    ],
+    "president": "N/A",
+    "founded": "1999",
+    "description": "CPIC",
+    "programs": []
+  },
+  {
+    "id": 16581,
+    "name": "Bicol University Gubat Campus",
+    "type": "SUC",
+    "lat": "11.73933181",
+    "lng": "125.22763968",
+    "location": "Gubat",
+    "address": "Gubat, Sorsogon",
+    "website": [
+      "https://bicol-u.edu.ph"
+    ],
+    "email": [
+      "bugep_dir@yahoo.com"
+    ],
+    "contact": [
+      "(056) 311-1145"
+    ],
+    "president": "N/A",
+    "founded": "1969",
+    "description": "BUGC",
+    "programs": []
+  },
+  {
+    "id": 16585,
+    "name": "Estenias Science Foundation School",
+    "type": "Private",
+    "lat": "12.84998373",
+    "lng": "124.01433706",
+    "location": "Casiguran",
+    "address": "Casiguran, Sorsogon",
+    "website": [],
+    "email": [
+      "estenias@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "1980",
+    "description": "ESFS",
+    "programs": []
+  },
+  {
+    "id": 16574,
+    "name": "Southern Luzon Technological College Foundation-Pioduran",
+    "type": "Private",
+    "lat": "13.02939441",
+    "lng": "123.44652414",
+    "location": "Pio Duran",
+    "address": "Pio Duran, Albay",
+    "website": [],
+    "email": [
+      "registrar.sltcfpdi@gmail.com",
+      "registrar.pioduran@sltcfi.com"
+    ],
+    "contact": [
+      "0908-6760717"
+    ],
+    "president": "N/A",
+    "founded": "2010",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16576,
+    "name": "Infotech Development Systems Colleges, Inc.",
+    "type": "Private",
+    "lat": "13.23886458",
+    "lng": "123.53967726",
+    "location": "Ligao City",
+    "address": "Ligao City, Albay",
+    "website": [],
+    "email": [
+      "idscollegesinc@gmail.com"
+    ],
+    "contact": [
+      "(052) 202-0020",
+      "(052) 431-0473",
+      "09178812638"
+    ],
+    "president": "N/A",
+    "founded": "2008",
+    "description": "IDS Colleges",
+    "programs": []
+  },
+  {
+    "id": 16572,
+    "name": "Central Bicol State University of Agriculture-Pasacao",
+    "type": "SUC",
+    "lat": "13.52182252",
+    "lng": "123.04457903",
+    "location": "Pasacao",
+    "address": "Pasacao, Camarines Sur",
+    "website": [
+      "https://cbsua.edu.ph"
+    ],
+    "email": [
+      "mail@cbsua.edu.ph",
+      "ca.pasacao@cbsua.edu.ph"
+    ],
+    "contact": [
+      "(054) 513-9519"
+    ],
+    "president": "N/A",
+    "founded": "2002",
+    "description": "CBSUA-Pasacao Campus",
+    "programs": []
+  },
+  {
+    "id": 16577,
+    "name": "STI College-Naga City",
+    "type": "Private",
+    "lat": "13.61808524",
+    "lng": "123.19081306",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": [
+      "https://www.sti.edu"
+    ],
+    "email": [
+      "jefthy.balug@naga.sti.edu"
+    ],
+    "contact": [
+      "(054) 473-4557",
+      "(054) 473-4557 local 122",
+      "09511330071"
+    ],
+    "president": "N/A",
+    "founded": "1983",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16575,
+    "name": "Southern Luzon Technological College Foundation-Pilar",
+    "type": "Private",
+    "lat": "12.93731068",
+    "lng": "123.65556479",
+    "location": "Pilar",
+    "address": "Pilar, Sorsogon",
+    "website": [
+      "https://picc-pilarsorsogon-edu.ph"
+    ],
+    "email": [
+      "sltcfi@yahoo.com"
+    ],
+    "contact": [
+      "(052) 480-8939"
+    ],
+    "president": "N/A",
+    "founded": "1990",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16578,
+    "name": "ACLC College of Sorsogon",
+    "type": "Private",
+    "lat": "12.98801035",
+    "lng": "124.01061013",
+    "location": "Sorsogon City",
+    "address": "Sorsogon City, Sorsogon",
+    "website": [],
+    "email": [
+      "aclcsorsogon@yahoo.com"
+    ],
+    "contact": [
+      "(056) 255-0848",
+      "421-5233",
+      "0917-8784770",
+      "0917-8784770"
+    ],
+    "president": "N/A",
+    "founded": "1998",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16567,
+    "name": "Computer Arts and Technological College-Ligao City, Inc.",
+    "type": "Private",
+    "lat": "13.24368430",
+    "lng": "123.53514433",
+    "location": "Ligao City",
+    "address": "Ligao City, Albay",
+    "website": [
+      "https://www.catcollege.edu.ph"
+    ],
+    "email": [
+      "catcollege.ligao@gmail.com"
+    ],
+    "contact": [
+      "0920-5091210",
+      "(052) 480-1645"
+    ],
+    "president": "N/A",
+    "founded": "2009",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16568,
+    "name": "Computer Arts and Technological College-Polangui Campus",
+    "type": "Private",
+    "lat": "13.28917192",
+    "lng": "123.48742247",
+    "location": "Polangui",
+    "address": "Polangui, Albay",
+    "website": [
+      "https://www.catcollege.edu.ph"
+    ],
+    "email": [
+      "catcollege.polangui@gmail.com"
+    ],
+    "contact": [
+      "(052) 486-2088",
+      "(052) 480-1645",
+      "09305561828"
+    ],
+    "president": "N/A",
+    "founded": "2012",
+    "description": "CAT College, Polangui Campus, Inc.",
+    "programs": []
+  },
+  {
+    "id": 16571,
+    "name": "Belen B. Francisco Foundation-Albay",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Daraga",
+    "address": "Daraga, Albay",
+    "website": [],
+    "email": [
+      "bbffinc@gmail.com"
+    ],
+    "contact": [
+      "(052) 431-0347"
+    ],
+    "president": "N/A",
+    "founded": "2000",
+    "description": "BBFFI",
+    "programs": []
+  },
+  {
+    "id": 16570,
+    "name": "Camarines Norte College of Arts and Business",
+    "type": "Private",
+    "lat": "14.25059484",
+    "lng": "122.55817652",
+    "location": "Labo",
+    "address": "Labo, Camarines Norte",
+    "website": [],
+    "email": [
+      "felipaallago@yahoo.com.ph"
+    ],
+    "contact": [
+      "0906-4242618",
+      "9171182569"
+    ],
+    "president": "N/A",
+    "founded": "2009",
+    "description": "CANCAB",
+    "programs": []
+  },
+  {
+    "id": 16566,
+    "name": "Mountview College",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Naga City",
+    "address": "Naga City, Camarines Sur",
+    "website": [],
+    "email": [
+      "mountviewcollegeinc@gmail.com"
+    ],
+    "contact": [
+      "(054) 205-0242",
+      "(054) 473-2250",
+      "09237356102"
+    ],
+    "president": "N/A",
+    "founded": "2012",
+    "description": "MVC",
+    "programs": []
+  },
+  {
+    "id": 16569,
+    "name": "ACLC College of Iriga City",
+    "type": "Private",
+    "lat": "13.41600339",
+    "lng": "123.40221405",
+    "location": "Iriga City",
+    "address": "Iriga City, Camarines Sur",
+    "website": [],
+    "email": [
+      "ama_iriga@yahoo.com"
+    ],
+    "contact": [
+      "(054) 299-5884",
+      "(054) 456-0400"
+    ],
+    "president": "N/A",
+    "founded": "1997",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16564,
+    "name": "Computer Systems Institute, Inc.",
+    "type": "Private",
+    "lat": "13.14662402",
+    "lng": "123.75036478",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [],
+    "email": [
+      "csilegazpi@gmail.com"
+    ],
+    "contact": [
+      "(052) 481-1534",
+      "(052) 742-1570"
+    ],
+    "president": "N/A",
+    "founded": "2005",
+    "description": "CSI",
+    "programs": []
+  },
+  {
+    "id": 16563,
+    "name": "SPJ International Technology Institute",
+    "type": "Private",
+    "lat": "13.81707744",
+    "lng": "123.32805634",
+    "location": "Tinambac",
+    "address": "Tinambac, Camarines Sur",
+    "website": [],
+    "email": [
+      "spjinternationaltcs@gmail.com"
+    ],
+    "contact": [
+      "(054) 881-6476",
+      "0929-6153677"
+    ],
+    "president": "N/A",
+    "founded": "2013",
+    "description": "SPJITI",
+    "programs": []
+  },
+  {
+    "id": 16559,
+    "name": "San Pascual Polytechnic College",
+    "type": "LUC",
+    "lat": "13.12771306",
+    "lng": "122.97788858",
+    "location": "San Pascual",
+    "address": "San Pascual, Masbate",
+    "website": [],
+    "email": [
+      "sanpascualpolytechniccollege@gmail.com"
+    ],
+    "contact": [
+      "0998-5364877",
+      "9690279507"
+    ],
+    "president": "N/A",
+    "founded": "2007",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16561,
+    "name": "Masbate Polytechnic and Development College",
+    "type": "Private",
+    "lat": "12.36341720",
+    "lng": "123.62080470",
+    "location": "Baleno",
+    "address": "Baleno, Masbate",
+    "website": [],
+    "email": [
+      "mpdc.baleno@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "2009",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16562,
+    "name": "Cataingan Polytechnic Institute",
+    "type": "Private",
+    "lat": "12.00387337",
+    "lng": "124.00008917",
+    "location": "Cataingan",
+    "address": "Cataingan, Masbate",
+    "website": [],
+    "email": [
+      "catainganpitesda@gmail.com"
+    ],
+    "contact": [
+      "0950-4904969"
+    ],
+    "president": "N/A",
+    "founded": "2009",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16565,
+    "name": "Aroroy Municipal College",
+    "type": "LUC",
+    "lat": "12.50005990",
+    "lng": "123.40039015",
+    "location": "Aroroy",
+    "address": "Aroroy, Masbate",
+    "website": [
+      "http://www.aroroy.masbate.gov.ph"
+    ],
+    "email": [
+      "aroroymunicipalcollege@gmail.com"
+    ],
+    "contact": [
+      "09237220574"
+    ],
+    "president": "N/A",
+    "founded": "2015",
+    "description": "AMC",
+    "programs": []
+  },
+  {
+    "id": 16560,
+    "name": "Donsol Community College",
+    "type": "LUC",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Donsol",
+    "address": "Donsol, Sorsogon",
+    "website": [],
+    "email": [
+      "dcc.registrarsoffice@gmail.com"
+    ],
+    "contact": [
+      "09494475834"
+    ],
+    "president": "N/A",
+    "founded": "2015",
+    "description": "DCC",
+    "programs": []
+  },
+  {
+    "id": 16556,
+    "name": "Bicol Training and Technological College (BTTC), Inc.",
+    "type": "Private",
+    "lat": "11.66005405",
+    "lng": "117.32651711",
+    "location": "Bacacay",
+    "address": "Bacacay, Albay",
+    "website": [],
+    "email": [
+      "techvocbttci@gmail.com"
+    ],
+    "contact": [
+      "0919-477-6752"
+    ],
+    "president": "N/A",
+    "founded": "2010",
+    "description": "BTTCI",
+    "programs": []
+  },
+  {
+    "id": 16555,
+    "name": "St. Francis Carraciolo Culinary Academy",
+    "type": "Private",
+    "lat": "14.14084122",
+    "lng": "122.89461136",
+    "location": "Vinzons",
+    "address": "Vinzons, Camarines Norte",
+    "website": [],
+    "email": [
+      "sfcculinaryacademy@gmail.com",
+      "info@sfcculinary.com"
+    ],
+    "contact": [
+      "(054)875-5455"
+    ],
+    "president": "N/A",
+    "founded": "2014",
+    "description": "SFCCA",
+    "programs": []
+  },
+  {
+    "id": 16557,
+    "name": "Camarines Norte State College-Abaño Campus",
+    "type": "SUC",
+    "lat": "14.10656875",
+    "lng": "122.95585155",
+    "location": "Daet",
+    "address": "Daet, Camarines Norte",
+    "website": [
+      "https://www.cnsc.edu.ph"
+    ],
+    "email": [
+      "registrar.coed@cnsc.edu.ph"
+    ],
+    "contact": [
+      "none"
+    ],
+    "president": "N/A",
+    "founded": "1992",
+    "description": "CNSC-COED",
+    "programs": []
+  },
+  {
+    "id": 16554,
+    "name": "Governor Mariano E. Villafuerte Community College-Garchitorena",
+    "type": "LUC",
+    "lat": "13.88551610",
+    "lng": "123.70204210",
+    "location": "Garchitorena",
+    "address": "Garchitorena, Camarines Sur",
+    "website": [
+      "https://m.facebook.com/garchicollege"
+    ],
+    "email": [
+      "gmvcc_garchitorena2017@yahoo.com",
+      "gmvcc.garchitorena2017@gmail.com"
+    ],
+    "contact": [
+      "0918-7657310",
+      "0909-5462215"
+    ],
+    "president": "N/A",
+    "founded": "2014",
+    "description": "GMVCC-Garchi",
+    "programs": []
+  },
+  {
+    "id": 16558,
+    "name": "Masbate Central Technical Institute",
+    "type": "Private",
+    "lat": "12.36327066",
+    "lng": "123.62361633",
+    "location": "Masbate City",
+    "address": "Masbate City, Masbate",
+    "website": [],
+    "email": [
+      "mcti.1966@yahoo.com"
+    ],
+    "contact": [
+      "0912-8637491"
+    ],
+    "president": "N/A",
+    "founded": "1966",
+    "description": "MCTI",
+    "programs": []
+  },
+  {
+    "id": 16547,
+    "name": "Bacacay Community College",
+    "type": "LUC",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "Bacacay",
+    "address": "Bacacay, Albay",
+    "website": [],
+    "email": [
+      "bcomcregistrar2025@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "2024",
+    "description": "BComC",
+    "programs": []
+  },
+  {
+    "id": 16548,
+    "name": "Guinobatan Community College",
+    "type": "LUC",
+    "lat": "13.14802401",
+    "lng": "123.59913111",
+    "location": "Guinobatan",
+    "address": "Guinobatan, Albay",
+    "website": [],
+    "email": [
+      "gcomcregistrar@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "2024",
+    "description": "",
+    "programs": []
+  },
+  {
+    "id": 16550,
+    "name": "Governor Mariano E. Villafuerte Community College-Tinambac",
+    "type": "LUC",
+    "lat": "13.82154240",
+    "lng": "123.32564480",
+    "location": "Tinambac",
+    "address": "Tinambac, Camarines Sur",
+    "website": [],
+    "email": [
+      "gmvcctinambac@gmail.com"
+    ],
+    "contact": [
+      "09498982823"
+    ],
+    "president": "N/A",
+    "founded": "2019",
+    "description": "GMVCC-Tinambac",
+    "programs": []
+  },
+  {
+    "id": 16551,
+    "name": "BST Grace College",
+    "type": "Private",
+    "lat": "11.66007506",
+    "lng": "117.32649565",
+    "location": "San Fernando",
+    "address": "San Fernando, Camarines Sur",
+    "website": [],
+    "email": [
+      "bstgracecollege@gmail.com"
+    ],
+    "contact": [
+      "(054)811-7558"
+    ],
+    "president": "N/A",
+    "founded": "2016",
+    "description": "BSTGC",
+    "programs": []
+  },
+  {
+    "id": 16552,
+    "name": "Governor Mariano E. Villafuerte Community College-Siruma",
+    "type": "LUC",
+    "lat": "11.66005405",
+    "lng": "117.32649565",
+    "location": "Siruma",
+    "address": "Siruma, Camarines Sur",
+    "website": [],
+    "email": [
+      "gmvcc.siruma@gmail.com"
+    ],
+    "contact": [
+      "0919-2157175",
+      "0949-4419757",
+      "09192157175"
+    ],
+    "president": "N/A",
+    "founded": "2014",
+    "description": "GMVCC-Siruma",
+    "programs": []
+  },
+  {
+    "id": 16553,
+    "name": "Governor Mariano E. Villafuerte Community College-Libmanan",
+    "type": "LUC",
+    "lat": "13.68526864",
+    "lng": "123.04133892",
+    "location": "Libmanan",
+    "address": "Libmanan, Camarines Sur",
+    "website": [],
+    "email": [
+      "gmvcclibmanan2023@gmail.com"
+    ],
+    "contact": [
+      "09915210894",
+      "09190996620"
+    ],
+    "president": "N/A",
+    "founded": "2016",
+    "description": "GMVCC-LIBMANAN",
+    "programs": []
+  },
+  {
+    "id": 16544,
+    "name": "Northills College of Asia (NCA), Inc.",
+    "type": "Private",
+    "lat": "14.15607178",
+    "lng": "122.86781073",
+    "location": "Labo",
+    "address": "Labo, Camarines Norte",
+    "website": [
+      "http://n/a"
+    ],
+    "email": [
+      "northills2009@gmail.com",
+      "northillscollegeofasiainc@gmail.com",
+      "urbanonova81@gmail.com"
+    ],
+    "contact": [
+      "09182050673",
+      "09199671471"
+    ],
+    "president": "N/A",
+    "founded": "2009",
+    "description": "NCA",
+    "programs": []
+  },
+  {
+    "id": 16545,
+    "name": "LYCEUM OF ST DOMINIC INC.",
+    "type": "Private",
+    "lat": "14.18155778",
+    "lng": "122.38921881",
+    "location": "Santa Elena",
+    "address": "Santa Elena, Camarines Norte",
+    "website": [],
+    "email": [
+      "lyceumlsdi@gmail.com"
+    ],
+    "contact": [
+      "9496923641"
+    ],
+    "president": "N/A",
+    "founded": "2019",
+    "description": "LSDI",
+    "programs": []
+  },
+  {
+    "id": 16540,
+    "name": "1MRDA Academic Center",
+    "type": "Private",
+    "lat": "13.70303088",
+    "lng": "123.21778536",
+    "location": "Calabanga",
+    "address": "Calabanga, Camarines Sur",
+    "website": [],
+    "email": [
+      "409817.mrda.3@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "2018",
+    "description": "MRDA ACI",
+    "programs": []
+  },
+  {
+    "id": 16541,
+    "name": "Goa Community College",
+    "type": "LUC",
+    "lat": "13.69408739",
+    "lng": "123.49437475",
+    "location": "Goa",
+    "address": "Goa, Camarines Sur",
+    "website": [
+      "https://www.facebook.com/goacommunitycollege/"
+    ],
+    "email": [
+      "goacommunitycollege@gmail.com"
+    ],
+    "contact": [
+      "054-884-8926"
+    ],
+    "president": "N/A",
+    "founded": "2022",
+    "description": "GCC",
+    "programs": []
+  },
+  {
+    "id": 16542,
+    "name": "Buhi St. Joseph Academy, Inc.",
+    "type": "Private",
+    "lat": "13.42823414",
+    "lng": "123.51772070",
+    "location": "Buhi",
+    "address": "Buhi, Camarines Sur",
+    "website": [
+      "https://www.facebook.com/bsjai1947"
+    ],
+    "email": [
+      "bsjai1947@gmail.com",
+      "bsjai.cte@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "1947",
+    "description": "BSJAI",
+    "programs": []
+  },
+  {
+    "id": 16543,
+    "name": "King Thomas Learning Academy, Inc.",
+    "type": "Private",
+    "lat": "13.76908545",
+    "lng": "122.98466921",
+    "location": "Sipocot",
+    "address": "Sipocot, Camarines Sur",
+    "website": [],
+    "email": [
+      "registrar@ktla.edu.ph"
+    ],
+    "contact": [
+      "09190022050",
+      "09109466264"
+    ],
+    "president": "N/A",
+    "founded": "2011",
+    "description": "KTLA",
+    "programs": []
+  },
+  {
+    "id": 16546,
+    "name": "Pilar Community College",
+    "type": "LUC",
+    "lat": "13.56823270",
+    "lng": "123.26319060",
+    "location": "Pilar",
+    "address": "Pilar, Sorsogon",
+    "website": [],
+    "email": [
+      "picc2020.pilarsor@gmail.com",
+      "ueiablyzzr@gmail.com"
+    ],
+    "contact": [],
+    "president": "N/A",
+    "founded": "2020",
+    "description": "PiCC",
+    "programs": []
+  },
+  {
+    "id": 16538,
+    "name": "Camo Integrated School",
+    "type": "Private",
+    "lat": "13.55914330",
+    "lng": "123.26823235",
+    "location": "Pili",
+    "address": "Pili, Camarines Sur",
+    "website": [],
+    "email": [
+      "cisacc89@gmail.com"
+    ],
+    "contact": [
+      "8841562",
+      "09099641804"
+    ],
+    "president": "N/A",
+    "founded": "2016",
+    "description": "CIS",
+    "programs": []
+  },
+  {
+    "id": 15201,
+    "name": "Community College of Manito",
+    "type": "LUC",
+    "lat": "13.12631586",
+    "lng": "123.86915390",
+    "location": "Manito",
+    "address": "Manito, Albay",
+    "website": [],
+    "email": [
+      "communitycollegeofmanito@gmail.com"
+    ],
+    "contact": [
+      "0966-3966746",
+      "0930-8946721"
+    ],
+    "president": "N/A",
+    "founded": "2009",
+    "description": "CCM",
+    "programs": []
+  },
+  {
+    "id": 15202,
+    "name": "Bicol Christian College of Medicine",
+    "type": "Private",
+    "lat": "13.13956758",
+    "lng": "123.73088076",
+    "location": "Legazpi City",
+    "address": "Legazpi City, Albay",
+    "website": [],
+    "email": [
+      "amec.bccm@yahoo.com",
+      "bccmregistrar@gmail.com"
+    ],
+    "contact": [
+      "(052) 820-5877",
+      "(052) 481-1155",
+      "(052) 481-3777"
+    ],
+    "president": "N/A",
+    "founded": "1980",
+    "description": "BCCM",
+    "programs": []
+  },
+  {
+    "id": 15148,
+    "name": "Polytechnic University of the Philippines-Ragay",
+    "type": "SUC",
+    "lat": "13.81870270",
+    "lng": "122.79742956",
+    "location": "Ragay",
+    "address": "Ragay, Camarines Sur",
+    "website": [
+      "http://www.pup.edu.ph"
+    ],
+    "email": [
+      "ragay@pup.edu.ph",
+      "vsalmase@pup.edu.ph"
+    ],
+    "contact": [
+      "(054) 714-1074"
+    ],
+    "president": "N/A",
+    "founded": "1993",
+    "description": "PUP-Ragay Campus",
+    "programs": []
+  }
+]

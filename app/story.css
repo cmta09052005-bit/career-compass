@@ -34,7 +34,6 @@
 .story-text-link { font-size:9px; color:#694923; padding:12px 0; }
 .story-compass-stage { position:relative; flex:1; text-align:center; color:#fff0cc; filter:drop-shadow(0 18px 20px #23120866); }
 .story-compass { display:block; width:100%; height:auto; object-fit:contain; }
-.story-compass-caption { display:block; margin-top:25px; font:600 9px var(--story-label),sans-serif; letter-spacing:.2em; }
 .story-orbit { position:absolute; inset:15% -10% 8%; border:1px dashed #ffebae66; border-radius:50%; }
 .story-scroll { position:absolute; bottom:30px; left:50%; transform:translateX(-50%); color:#f5ecd7; font-size:9px; text-align:center; }.story-scroll span { display:block; margin-top:8px; font-size:21px; }
 .story-explorers { position:relative; margin:30px 0 60px; padding:65px 0 65px 12%; color:#f5ecd7; background:linear-gradient(90deg,#1b2a4af5,#1b2a4aeb); border-top:3px solid #ab8153; border-bottom:3px solid #ab8153; box-shadow:0 12px 35px #20150977; scroll-margin-top:88px; }

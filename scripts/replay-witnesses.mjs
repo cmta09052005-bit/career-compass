@@ -38,7 +38,7 @@ for(const [index,w]of all.entries()){
     }
     for(const text of visible)if(banned.test(text))errors.push(`Forbidden student string: ${text}`);
     const pdf=createExplorerReport(report),file=path.join(pdfDir,`${index}.pdf`);await writeFile(file,Buffer.from(pdf.output("arraybuffer")));
-    pdfRows.push({id,path:file,name:report.details.name,careerNote:report.details.careerNotes[0]?.text});
+    pdfRows.push({id,path:file,name:report.topCourses[0].name});
     results.push({id,course:w.course,route:w.flow,qaOnly:Boolean(w.qaOnly),rank:recommendations.ranked.findIndex(c=>c.id===w.course)+1,errors});
   }catch(error){results.push({id,course:w.course,route:w.flow,errors:[...errors,String(error)]});}
 }

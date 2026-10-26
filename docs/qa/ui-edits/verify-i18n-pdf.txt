@@ -1,0 +1,2 @@
+PDF model checks: old BUS02 and new HLT01; Filipino profile and headings. Font probe: ñ Ñ á é í ó ú Á É Í Ó Ú ü Ü.
+Non-Latin-1 catalog characters (including existing symbols): ↗ ↓ “ ” ↑ – → ← ✓ … ↔ ’ ₱. PDF text extraction checks actual use separately.

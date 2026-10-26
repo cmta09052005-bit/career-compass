@@ -260,3 +260,11 @@ body:has(.basecamp) { overflow:hidden; }
 .basecamp #pilot-school { display:block; width:100%; min-height:48px; margin-top:10px; padding:12px; border:2px solid #D4A017; border-radius:8px; background:#F5ECD7; color:#1B2A4A; font:inherit; }
 .basecamp #pilot-school:focus-visible { outline:3px solid var(--explorer-teal); outline-offset:4px; }
 .basecamp-route-note { padding:12px 16px; border:1px solid #D4A017; border-radius:8px; color:#F5ECD7; font-size:14px; line-height:1.5; }
+
+/* Keep both steps in the same frame, with curriculum sized to its content. */
+.basecamp-avatars>legend { float:none; margin-bottom:7px; }
+.basecamp-step-2 { align-items:center; }
+.basecamp-step-2 .basecamp-shell.game-panel { width:min(100%,48rem); height:auto; }
+.basecamp-step-2 .basecamp-inner { display:block; flex:initial; overflow:auto; }
+
+.basecamp .basecamp-explorer-note { grid-column:1 / -1; margin:0 0 2px; }

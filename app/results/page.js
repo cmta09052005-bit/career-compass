@@ -1,6 +1,7 @@
 "use client";
 
 import Localized from "@/components/Localized";
+import { useLanguage } from "@/components/LanguageProvider";
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -26,6 +27,7 @@ const SEARCH_INDEX = buildSearchIndex();
 const FILTER_OPTIONS = filterOptions();
 
 export default function ResultsPage() {
+  const { language, t } = useLanguage();
   const router = useRouter();
   const mapDialog = useRef(null);
   const [confirmMap, setConfirmMap] = usePopupState(false, ".results-map-dialog .popup-card");
@@ -85,7 +87,7 @@ export default function ResultsPage() {
     playSound("badge", { volume: .48 });
     setDownloadError("");
     try {
-      const report = buildExplorerReport(session);
+      const report = buildExplorerReport(session, language);
       const celebrationBeat = new Promise(resolve => window.setTimeout(resolve, 950));
       if (!mounted.current) return;
       await downloadExplorerReport(report);
@@ -131,9 +133,9 @@ export default function ResultsPage() {
             <Localized as="h3">{course.name}</Localized><Localized as="p">{course.group}</Localized>
             <Localized as="p" className="comparison-score">Rank #{course.rank}</Localized>
             <Localized as="h4">Overview</Localized><Localized as="p">{course.details.overview}</Localized>
-            <Localized as="h4">Careers</Localized><ul>{course.details.careers.map((career, index) => <li key={index}>{career.jobTitle}: {career.salaryRange}{career.notes ? ` (${career.notes})` : ""}</li>)}</ul>
+            <Localized as="h4">Careers</Localized><ul>{course.details.careers.map((career, index) => <li key={index}>{career.jobTitle}: {career.salaryRange}{career.notes ? ` (${t(career.notes)})` : ""}</li>)}</ul>
             {course.details.careerNotes.map((note,index) => <p key={index}>{note.text}</p>)}
-            <Localized as="h4">Schools</Localized><ul>{course.details.schools.map(school => <li key={school.id}>{schoolLabel(school)}{schoolNotes(school).length > 0 && <small>{schoolNotes(school).join("; ")}</small>}</li>)}</ul><p>School lists are not complete. Confirm programs with the school.</p>
+            <Localized as="h4">Schools</Localized><ul>{course.details.schools.map(school => <li key={school.id}>{schoolLabel(school)}{schoolNotes(school).length > 0 && <small>{schoolNotes(school).map(t).join("; ")}</small>}</li>)}</ul><p>School lists are not complete. Confirm programs with the school.</p>
           </Localized>)}</Localized>
         </Card>
       </dialog>
@@ -170,7 +172,7 @@ export default function ResultsPage() {
         <section className="mt-8" aria-labelledby="recommended-paths-heading">
           <Localized as="h2"
             id="recommended-paths-heading"
-            className="text-center font-serif text-2xl sm:text-3xl"
+            className="text-left font-serif text-2xl sm:text-3xl"
           >
             {exploring || showAllCourses ? "Your Course Matches" : "Your Top Course Matches"}
           </Localized>

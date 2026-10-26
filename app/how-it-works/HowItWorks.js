@@ -1,6 +1,8 @@
 "use client";
 
 import Localized from "@/components/Localized";
+import { useSessionAnswers } from "@/lib/useSessionAnswers";
+import { journeyEntry, journeyLabel } from "@/lib/journeyEntry";
 
 import { useRef, useState } from "react";
 import Image from "next/image";
@@ -45,13 +47,15 @@ function Icon({ name, size = 64, className = "" }) {
 
 export default function HowItWorks() {
   const root = useRef(null);
+  const { session } = useSessionAnswers();
+  const entry = journeyEntry(session);
   const tabPanel = useRef(null);
   const carousel = useRef(null);
   const { selected, select: switchTab, step: slide, swipeProps } = useCardCarousel(carousel, tabPanel, trails.length);
   const [activeStep, setActiveStep] = useState(0);
   useGSAP(() => {
     root.current.querySelectorAll(".hiw-step").forEach((step, index) => {
-      ScrollTrigger.create({ trigger: step, start: "top 60%", end: "bottom 60%", onEnter: () => setActiveStep(index), onEnterBack: () => setActiveStep(index) });
+      ScrollTrigger.create({ scroller: root.current.closest(".marketing-content"), trigger: step, start: "top 60%", end: "bottom 60%", onEnter: () => setActiveStep(index), onEnterBack: () => setActiveStep(index) });
     });
     const mm = gsap.matchMedia();
     mm.add("(prefers-reduced-motion: no-preference)", () => {
@@ -72,12 +76,12 @@ export default function HowItWorks() {
         path.style.strokeDasharray = path.getTotalLength();
       };
       measure();
-      const draw = gsap.fromTo(path, { strokeDashoffset: () => path.getTotalLength() }, { strokeDashoffset: 0, ease: "none", scrollTrigger: { trigger: timeline, start: "top 70%", end: "bottom 70%", scrub: 1, invalidateOnRefresh: true, onRefreshInit: measure } });
+      const draw = gsap.fromTo(path, { strokeDashoffset: () => path.getTotalLength() }, { strokeDashoffset: 0, ease: "none", scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: timeline, start: "top 70%", end: "bottom 70%", scrub: 1, invalidateOnRefresh: true, onRefreshInit: measure } });
       const resize = new ResizeObserver(() => { measure(); draw.invalidate(); ScrollTrigger.refresh(); });
       resize.observe(timeline);
-      gsap.from(".step-node", { scale: 0, opacity: 0, duration: 0.5, stagger: 0.15, ease: "back.out(2)", scrollTrigger: { trigger: timeline, start: "top 65%" } });
-      gsap.from(".badge-preview", { scale: 0, rotation: -10, opacity: 0, duration: 0.4, stagger: 0.2, ease: "back.out(3)", scrollTrigger: { trigger: ".badge-row", start: "top 80%" } });
-      gsap.from(".trust-card", { opacity: 0, y: 20, duration: 0.5, stagger: 0.1, scrollTrigger: { trigger: ".trust-strip", start: "top 85%" } });
+      gsap.from(".step-node", { scale: 0, opacity: 0, duration: 0.5, stagger: 0.15, ease: "back.out(2)", scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: timeline, start: "top 65%" } });
+      gsap.from(".badge-preview", { scale: 0, rotation: -10, opacity: 0, duration: 0.4, stagger: 0.2, ease: "back.out(3)", scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: ".badge-row", start: "top 80%" } });
+      gsap.from(".trust-card", { opacity: 0, y: 20, duration: 0.5, stagger: 0.1, scrollTrigger: { scroller: root.current.closest(".marketing-content"), trigger: ".trust-strip", start: "top 85%" } });
       gsap.to(".hiw-start", { scale: 1.03, ease: "sine.inOut", boxShadow: "0 0 20px rgba(212,160,23,0.6)", repeat: -1, yoyo: true, duration: 1.8 });
       return () => resize.disconnect();
     });
@@ -107,7 +111,7 @@ export default function HowItWorks() {
           <Localized as="p" className="hiw-label">How It Works</Localized>
           <Localized as="h1" id="hiw-title">Here&apos;s exactly<br />what happens.</Localized>
           <Localized as="p">Answer questions about yourself, then compare college courses that fit your answers.</Localized>
-          <Localized as={Image} className="hiw-intro-compass" src="/landing-compass.png" alt="" width={145} height={170} priority />
+          <Localized as={Image} className="hiw-intro-compass" src="/brand/compass-v2-transparent-512.png" alt="" width={145} height={170} priority />
         </section>
 
         <section className="hiw-path-section" aria-labelledby="path-heading">
@@ -151,9 +155,9 @@ export default function HowItWorks() {
         </section>
 
         <section className="hiw-trust" aria-labelledby="trust-heading"><Localized as="h2" id="trust-heading" className="hiw-label">Good to Know</Localized><Localized as="div" className="trust-strip">{trust.map(([copy, icon]) => <Card as="div" className="trust-card" key={copy}><Icon name={icon} size={45} /><Localized as="p">{copy}</Localized></Card>)}</Localized></section>
-        <section className="hiw-closing" aria-labelledby="closing-heading"><Localized as="h2" id="closing-heading">Ready to see your map?</Localized><Button href="/intake" className="story-button hiw-start" label="Start Your Journey ↗" /><Localized as={Link} href="/#world-chapter" className="story-text-link">Explore the Story ↗</Localized></section>
+        <section className="hiw-closing" aria-labelledby="closing-heading"><Localized as="h2" id="closing-heading">Ready to see your map?</Localized><Button href="/intake" className="story-button hiw-start" label={journeyLabel(entry, "how")} /><Localized as={Link} href="/#world-chapter" className="story-text-link">Explore the Story ↗</Localized></section>
       </div>
-      <footer className="story-footer"><Localized as={Link} className="story-brand" href="/"><Localized as={Image} src="/landing-compass.png" width={32} height={32} alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#hiw-intro">Back to top ↑</Localized></footer>
+      <footer className="story-footer"><Localized as={Link} className="story-brand" href="/"><Localized as={Image} src="/brand/compass-v2-transparent-96.png" width={32} height={32} alt="" />CAREER COMPASS</Localized><Localized as="p">A web-based decision support system for Senior High School career guidance.</Localized><Localized as="a" href="#hiw-intro">Back to top ↑</Localized></footer>
     </main>
   );
 }

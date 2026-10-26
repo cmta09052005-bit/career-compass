@@ -10,7 +10,7 @@ import "./JourneyPortal.css";
 import "./celebrations.css";
 import CelebrationEffects from "./CelebrationEffects";
 
-export default function JourneyPortal({ onEnter, onCancel, onComplete, title, description, notice, destinationSelector, celebration = true, icon = "/landing-compass.png" }) {
+export default function JourneyPortal({ onEnter, onCancel, onComplete, title, description, notice, destinationSelector, celebration = true, icon = "/brand/compass-v2-transparent-512.png" }) {
   const dialog = useRef(null);
   const advance = useRef(() => {});
   const handoff = useRef(false);
