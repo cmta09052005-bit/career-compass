@@ -1,9 +1,8 @@
 "use client";
 
 import Localized from "@/components/Localized";
-import { useLanguage } from "@/components/LanguageProvider";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import CourseMatch from "./CourseMatch";
@@ -16,18 +15,17 @@ import { buildExplorerReport, downloadExplorerReport } from "@/lib/explorerRepor
 import Button from "@/components/Button";
 import JourneyAccess from "@/components/JourneyAccess";
 import Card from "@/components/Card";
-import courses from "@/data/courses.json";
-import StatementIcon from "@/app/journey/skills/StatementIcon";
-import {
-  calculateCategoryScores,
-  calculateMatchPercentages,
-  createRecommendationResult,
-} from "@/lib/scoringEngine";
+import { getCourseData, schoolNotes, schoolLabel } from "@/lib/courseDataV2";
+import { buildRecommendations, arcStrength } from "@/lib/recommendations";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 import { COMPARISON_LIMIT_NOTICE, toggleCourseComparison } from "@/lib/courseComparison";
+import { buildSearchIndex, searchCourses, filterOptions, activeFilterLabel, hasFilters, words, EMPTY_FILTERS } from "@/lib/courseSearch";
+import ResultsControls from "./ResultsControls";
+
+const SEARCH_INDEX = buildSearchIndex();
+const FILTER_OPTIONS = filterOptions();
 
 export default function ResultsPage() {
-  const { language } = useLanguage();
   const router = useRouter();
   const mapDialog = useRef(null);
   const [confirmMap, setConfirmMap] = usePopupState(false, ".results-map-dialog .popup-card");
@@ -36,6 +34,19 @@ export default function ResultsPage() {
     else mapDialog.current?.close();
   }, [confirmMap]);
   const [showAllCourses, setShowAllCourses] = useState(false);
+  const [query, setQuery] = useState("");
+  const [filters, setFilters] = useState(EMPTY_FILTERS);
+  const [sort, setSort] = useState("best");
+  const [controlsKey, setControlsKey] = useState(0);
+  const resultsScroll = useRef(null);
+  function clearExploration() { setQuery(""); setFilters(EMPTY_FILTERS); setSort("best"); setShowAllCourses(false); }
+  function leaveResults() { clearExploration(); setControlsKey(current => current + 1); }
+  useEffect(() => {
+    const restore = event => { if (event.persisted) { setQuery(""); setFilters(EMPTY_FILTERS); setSort("best"); setShowAllCourses(false); setControlsKey(current => current + 1); } };
+    window.addEventListener("pageshow", restore);
+    return () => window.removeEventListener("pageshow", restore);
+  }, []);
+  useEffect(() => { resultsScroll.current?.scrollTo({ top: 0, behavior: "instant" }); }, [query, filters, sort]);
   const [comparisonNotice, setComparisonNotice] = useState("");
   const [compareOpen, setCompareOpen] = usePopupState(false, ".results-compare-dialog .popup-card");
   const compareDialog = useRef(null);
@@ -47,33 +58,23 @@ export default function ResultsPage() {
     if (compareOpen) compareDialog.current?.showModal();
     else if (compareDialog.current?.open) { compareDialog.current.close(); compareButton.current?.focus(); }
   }, [compareOpen]);
-  const { session, answers, isReady, updateSession } = useSessionAnswers();
+  const { session, isReady, updateSession } = useSessionAnswers();
   const comparison = session.courseComparison || [];
   const [downloading, setDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState("");
   const downloadPending = useRef(false);
-  const categoryScores = calculateCategoryScores(answers);
-  const categoryPercentages = calculateMatchPercentages(categoryScores);
-  const result = createRecommendationResult(
-    categoryPercentages,
-    answers,
-    courses,
-  );
-  const topCourses = result.topCourses.map((match) => ({
-    ...match,
-    details: courses.find((course) => course.courseId === match.courseId),
-  }));
-  const displayedCourses = showAllCourses
-    ? topCourses
-    : topCourses.slice(0, 4);
-  const strongest = displayedCourses[0]?.calculatedCourseMatchPercent || 0;
-  const weakest = displayedCourses.at(-1)?.calculatedCourseMatchPercent || 0;
-  const comparedCourses = comparison.map(id => topCourses.find(course => course.courseId === id)).filter(Boolean);
+  const result = useMemo(() => buildRecommendations(session), [session]);
+  const topCourses = result.ranked;
+  const matchingCourses = useMemo(() => searchCourses(topCourses, SEARCH_INDEX, { query, filters, sort }), [topCourses, query, filters, sort]);
+  const exploring = words(query).length > 0 || hasFilters(filters) || sort !== "best";
+  const displayedCourses = exploring || showAllCourses ? matchingCourses : matchingCourses.slice(0, 5);
+  const activeComparison = comparison.filter(id => topCourses.some(course => course.id === id));
+  const comparedCourses = activeComparison.map(id => ({ ...topCourses.find(course => course.id === id), details: getCourseData(id) }));
 
   function toggleComparison(id) {
-    if (!comparison.includes(id) && comparison.length >= 2) { setComparisonNotice(COMPARISON_LIMIT_NOTICE); return; }
+    if (!activeComparison.includes(id) && activeComparison.length >= 2) { setComparisonNotice(COMPARISON_LIMIT_NOTICE); return; }
     setComparisonNotice("");
-    updateSession({ courseComparison: toggleCourseComparison(comparison, id) });
+    updateSession({ courseComparison: toggleCourseComparison(activeComparison, id) });
   }
 
   async function downloadReport() {
@@ -84,13 +85,14 @@ export default function ResultsPage() {
     playSound("badge", { volume: .48 });
     setDownloadError("");
     try {
-      const report = buildExplorerReport(session, answers, result, language);
+      const report = buildExplorerReport(session);
       const celebrationBeat = new Promise(resolve => window.setTimeout(resolve, 950));
       if (!mounted.current) return;
       await downloadExplorerReport(report);
       updateSession({ reportDownloaded: true, reportDate: report.date });
       await celebrationBeat;
       if (!mounted.current) return;
+      leaveResults();
       router.push("/report");
     } catch {
       setDownloadError("Your report could not be downloaded. Please try again.");
@@ -118,21 +120,24 @@ export default function ResultsPage() {
           <Localized as="h2" id="results-map-title">Go back to your map?</Localized>
           <Localized as="p">Your results are saved in this browser on this device until you restart your journey or clear this site&apos;s browser data.</Localized>
           {!session.reportDownloaded && <Localized as="p" className="mt-3 text-sm">You haven&apos;t downloaded your report yet.</Localized>}
-          <div className="popup-actions"><Button label="Stay" autoFocus variant="secondary" onClick={() => setConfirmMap(false)} /><Button label="Back to Map" onClick={() => setConfirmMap(false, () => router.push("/journey"))} /></div>
+          <div className="popup-actions"><Button label="Stay" autoFocus variant="secondary" onClick={() => setConfirmMap(false)} /><Button label="Back to Map" onClick={() => setConfirmMap(false, () => { leaveResults(); router.push("/journey"); })} /></div>
         </Card>
       </dialog>
       <dialog ref={compareDialog} className="trail-exit-dialog results-compare-dialog" aria-labelledby="compare-title" onCancel={event => { event.preventDefault(); setCompareOpen(false); }}>
         <Card variant="popup" className="popup-card">
           <Localized as="button" className="popup-close" aria-label="Close comparison" autoFocus onClick={() => setCompareOpen(false)}>×</Localized>
           <Localized as="h2" id="compare-title">Compare your paths</Localized>
-          <Localized as="div" className="course-comparison">{comparedCourses.map(course => <Localized as="section" key={course.courseId}>
-            <Localized as="h3">{course.courseName}</Localized><Localized as="p">{course.categoryName}</Localized>
-            <Localized as="p" className="comparison-score">Rank #{topCourses.findIndex(match => match.courseId === course.courseId) + 1}</Localized>
-            {course.details?.overview && <Localized as="p">{course.details.overview}</Localized>}
+          <Localized as="div" className="course-comparison">{comparedCourses.map(course => <Localized as="section" key={course.id}>
+            <Localized as="h3">{course.name}</Localized><Localized as="p">{course.group}</Localized>
+            <Localized as="p" className="comparison-score">Rank #{course.rank}</Localized>
+            <Localized as="h4">Overview</Localized><Localized as="p">{course.details.overview}</Localized>
+            <Localized as="h4">Careers</Localized><ul>{course.details.careers.map((career, index) => <li key={index}>{career.jobTitle}: {career.salaryRange}{career.notes ? ` (${career.notes})` : ""}</li>)}</ul>
+            {course.details.careerNotes.map((note,index) => <p key={index}>{note.text}</p>)}
+            <Localized as="h4">Schools</Localized><ul>{course.details.schools.map(school => <li key={school.id}>{schoolLabel(school)}{schoolNotes(school).length > 0 && <small>{schoolNotes(school).join("; ")}</small>}</li>)}</ul><p>School lists are not complete. Confirm programs with the school.</p>
           </Localized>)}</Localized>
         </Card>
       </dialog>
-      {comparison.length === 2 && <div className="results-compare-bar"><Button ref={compareButton} label="Compare selected courses" onClick={() => setCompareOpen(true)} /><Localized as="span" role="status">2 courses selected</Localized></div>}
+      {activeComparison.length === 2 && <div className="results-compare-bar"><Button ref={compareButton} label="Compare selected courses" onClick={() => setCompareOpen(true)} /><Localized as="span" role="status">2 courses selected</Localized></div>}
       {comparisonNotice && <Localized as="p" className="results-comparison-notice" role="alert">{comparisonNotice}</Localized>}
       {downloadCelebration && <div className="results-download-seal" role="status"><CelebrationEffects><Localized as={Image} src="/icons/career-compass/compass-download.svg" width={116} height={116} alt="" /></CelebrationEffects><Localized as="p">Your journey, ready to keep</Localized></div>}
       <div
@@ -144,20 +149,22 @@ export default function ResultsPage() {
         }}
       />
 
-      <Localized as="div" className="assessment-scroll relative mx-auto max-w-6xl" role="region" aria-label="Your course recommendations" tabIndex={0}>
+      <Localized as="div" ref={resultsScroll} className="assessment-scroll relative mx-auto max-w-6xl" role="region" aria-label="Your course recommendations" tabIndex={0}>
         <Localized as="button" className="trail-exit popup-close" aria-label="Close results" onClick={() => setConfirmMap(true)}>×</Localized>
         <Localized as="header" className="mx-auto max-w-3xl text-center">
           {/* 49 — Heading */}
           <Localized as="h1" className="font-serif text-4xl leading-tight text-balance sm:text-5xl md:text-6xl">
             Your Career Map
           </Localized>
-          {session.strand === "Academic-GAS" && <Localized as="p" className="results-strand"><StatementIcon category="Academic-GAS" />Academic – GAS (General Academic)</Localized>}
+          {session.route === "old" && session.old.strand === "STR-04" && <Localized as="p" className="results-strand">GAS has no linked courses. Your matches come from your interests, skills, subjects and certificates.</Localized>}
 
           {/* 50 — Supporting subtext */}
           <Localized as="p" className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-beige/75 sm:text-base">
-            These courses match your answers most closely. Open a course to see what you would study.
+            Start with your top 5 matches, with all 85 courses to explore.
           </Localized>
         </Localized>
+
+        <ResultsControls key={controlsKey} query={query} onQuery={setQuery} filters={filters} onFilter={(key, id) => setFilters(current => ({ ...current, [key]: current[key].includes(id) ? current[key].filter(value => value !== id) : [...current[key], id] }))} sort={sort} onSort={setSort} onClear={clearExploration} options={FILTER_OPTIONS} count={matchingCourses.length} summary={activeFilterLabel(filters, FILTER_OPTIONS)} topFiveShown={!exploring && !showAllCourses} />
 
         {/* 52 — Ranked course card list */}
         <section className="mt-8" aria-labelledby="recommended-paths-heading">
@@ -165,24 +172,25 @@ export default function ResultsPage() {
             id="recommended-paths-heading"
             className="text-center font-serif text-2xl sm:text-3xl"
           >
-            Your Top Course Matches
+            {exploring || showAllCourses ? "Your Course Matches" : "Your Top Course Matches"}
           </Localized>
-          <Localized as="p" className="course-strength-note">The compass arcs show relative match strength within this list.</Localized>
+          <Localized as="p" className="course-strength-note">The compass arcs show relative match strength.</Localized>
           <Localized as="div" className="mt-5 grid grid-cols-1 gap-4">
-            {displayedCourses.map((course, index) => (
-              <CourseMatch key={course.courseId} course={course} rank={index + 1}
-                strength={strongest === weakest ? 95 : 30 + 65 * (course.calculatedCourseMatchPercent - weakest) / (strongest - weakest)}
-                selected={comparison.includes(course.courseId)} onCompare={() => toggleComparison(course.courseId)} />
+            {displayedCourses.map((course) => (
+              <CourseMatch key={course.id} course={course} rank={course.rank}
+                strength={arcStrength(course, topCourses)}
+                selected={activeComparison.includes(course.id)} onCompare={() => toggleComparison(course.id)} onLeave={leaveResults} showHint={words(query).length > 0} />
             ))}
           </Localized>
-          <div className="mt-6 flex justify-center">
+          {!displayedCourses.length && <Localized as="p" className="results-empty">No courses on our list match. Try another search or clear the filters.</Localized>}
+          {!exploring && <div className="mt-6 flex justify-center">
             <Button
-              label={showAllCourses ? "Show Top 4 Only" : `See All ${topCourses.length} Courses`}
+              label={showAllCourses ? "Show top 5 only" : "Show all 85 courses"}
               onClick={() => setShowAllCourses(current => !current)}
               variant="secondary"
               className="inline-flex w-full items-center justify-center sm:w-auto"
             />
-          </div>
+          </div>}
         </section>
 
         {/* 53 — Guidance disclaimer */}

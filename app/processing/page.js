@@ -11,8 +11,8 @@ import JourneyAccess from "@/components/JourneyAccess";
 import Card from "@/components/Card";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 import { playSound } from "@/lib/sound";
-import { calculateCategoryScores, calculateMatchPercentages, createRecommendationResult } from "@/lib/scoringEngine";
-import courses from "@/data/courses.json";
+import { buildRecommendations } from "@/lib/recommendations";
+import Button from "@/components/Button";
 import StatementIcon from "@/app/journey/skills/StatementIcon";
 import "./processing.css";
 
@@ -31,8 +31,9 @@ export default function ProcessingPage() {
   const [statusIndex, setStatusIndex] = useState(0);
   const [sequenceComplete, setSequenceComplete] = useState(false);
   const compass = useRef(null);
-  const canProcess = isReady && Boolean(session.strand) && Object.values(session.journeyProgress).every(value => value === "Completed");
-  const resultsReady = useMemo(() => canProcess && createRecommendationResult(calculateMatchPercentages(calculateCategoryScores(session)), session, courses).topCourses.length > 0, [canProcess, session]);
+  const result = useMemo(() => buildRecommendations(session), [session]);
+  const canProcess = isReady && result.ok;
+  const resultsReady = canProcess;
 
   useGSAP(() => {
     if (!canProcess) return;
@@ -66,7 +67,7 @@ export default function ProcessingPage() {
         className="absolute inset-0 -z-10 opacity-30 [background-image:repeating-radial-gradient(circle_at_center,transparent_0,transparent_54px,rgba(212,160,23,0.16)_55px,transparent_56px)]"
       />
 
-      <Card variant="processing" className="map-paper rounded-2xl p-8 sm:p-12">
+      {isReady && !result.ok ? <Card variant="processing" className="map-paper"><h1>Check your journey</h1><p>Complete your saved assessment answers before opening your matches.</p><Button label="Back to Journey Map" href="/journey" /></Card> : <Card variant="processing" className="map-paper rounded-2xl p-8 sm:p-12">
         {/* 45 — Heading */}
         <Localized as="h1" className="font-serif text-4xl leading-tight text-[#3b261c] sm:text-5xl md:text-6xl">
           Charting Your Course
@@ -100,7 +101,7 @@ export default function ProcessingPage() {
         {/* 48 — Staged status text */}
         <div className="mt-8" role="status" aria-live="polite" aria-atomic="true">
           <Localized as="p" key={statusIndex} className="course-status text-sm font-semibold text-gold sm:text-base">
-            {statusIndex === 2 ? <StatementIcon category="C4" /> : <Localized as={Image} src={statusIndex === 3 ? "/landing-compass.png" : `/icons/career-compass/${statusIndex === 0 ? "mountain-peak" : "pine-branch"}.svg`} width={32} height={32} alt="" />}
+            {statusIndex === 2 ? <StatementIcon icon="forest-C4" /> : <Localized as={Image} src={statusIndex === 3 ? "/landing-compass.png" : `/icons/career-compass/${statusIndex === 0 ? "mountain-peak" : "pine-branch"}.svg`} width={32} height={32} alt="" />}
             {isReady ? STATUS_MESSAGES[statusIndex] : "Restoring your trail..."}
           </Localized>
           <Localized as="div" className="mx-auto mt-4 flex w-fit gap-2" aria-hidden="true">
@@ -113,7 +114,7 @@ export default function ProcessingPage() {
             ))}
           </Localized>
         </div>
-      </Card>
+      </Card>}
     </main></JourneyAccess>
   );
 }

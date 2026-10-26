@@ -1,0 +1,9 @@
+{
+  "baselineFiles": 320,
+  "changedExistingFiles": [],
+  "allowedNewPaths": [
+    "scripts/",
+    "docs/"
+  ],
+  "stagedChanges": "none"
+}

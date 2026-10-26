@@ -115,3 +115,29 @@
 .trail-valley .valley-basket-drawing { width:40px; height:40px; margin:0; }
 .trail-valley .valley-basket-items { display:none; }
 .trail-valley .valley-basket p { margin:0; }
+/* V2 Valley: fixed shell with only bounded inner regions scrolling. */
+.assessment-frame .trail-valley > .valley-v2 { height:calc(100dvh - 48px); max-height:850px; min-height:0; overflow:hidden; display:flex; }
+.valley-v2 > form { display:flex; flex-direction:column; width:100%; min-height:0; }
+.valley-v2 header { flex-shrink:0; padding-right:20px; }
+.trail-valley .valley-v2 h1 { font-size:clamp(1.3rem,3vw,1.9rem); line-height:1.25; margin:8px 0 12px; }
+.valley-route { font-size:12px; color:#6b5740; margin-top:5px; }
+.valley-v2-inner { flex:1; min-height:0; overflow-y:auto; overflow-x:hidden; padding:8px 6px 20px; overscroll-behavior:contain; scrollbar-color:#987127 #edddbb; }
+.valley-choice-group h2 { color:#503d24; font-size:16px; line-height:1.45; margin-top:22px; font-weight:700; }
+.valley-pick-help { color:#63503b; font-size:14px; margin-bottom:12px; }
+.trail-valley .valley-v2 .valley-crop { width:100%; text-align:left; color:#453a29; }
+.valley-v2 .valley-crop:focus-visible,.valley-tray-picks button:focus-visible { outline:3px solid #287b72; outline-offset:2px; }
+.trail-valley .valley-v2 .valley-none { width:auto; min-height:44px; padding:10px 16px; }
+.valley-v2-footer { flex-shrink:0; border-top:1px solid #b99c67; padding-top:10px; }
+.valley-selected-tray { max-height:145px; overflow-y:auto; padding:2px 4px; color:#503d24; }
+.valley-tray-label { position:relative; display:flex; align-items:center; gap:8px; font-size:13px; }
+.valley-tray-picks { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
+.valley-tray-picks button { max-width:100%; border:1px solid #987127; border-radius:8px; padding:6px 9px; font-size:12px; text-align:left; color:#453a29; background:#f7ebd3; overflow-wrap:anywhere; min-height:36px; }
+.valley-v2-actions { display:flex; justify-content:space-between; gap:12px; }
+.valley-v2-error { max-height:55px; overflow:auto; font-size:13px; margin:4px 0; }
+@media(max-width:48rem) {
+ .assessment-frame .trail-valley > .valley-v2 { height:calc(100dvh - 66px); }
+ .trail-valley .valley-v2 .valley-crops { grid-template-columns:1fr; }
+ .trail-valley .valley-v2 .valley-crop { flex-direction:row; min-height:64px; text-align:left; }
+ .valley-selected-tray { max-height:130px; }
+ .valley-v2-actions > button { flex:1; }
+}

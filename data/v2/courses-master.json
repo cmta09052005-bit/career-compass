@@ -1,0 +1,512 @@
+[
+  {
+    "id": "BUS01",
+    "name": "BS Accountancy",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 27, s. 2017"
+  },
+  {
+    "id": "BUS02",
+    "name": "BS Management Accounting",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 28, s. 2017"
+  },
+  {
+    "id": "BUS03",
+    "name": "BS Accounting Information Systems",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 30, s. 2017"
+  },
+  {
+    "id": "BUS04",
+    "name": "BS Internal Auditing",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 29, s. 2017"
+  },
+  {
+    "id": "BUS05",
+    "name": "BS Business Administration",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 17, s. 2017"
+  },
+  {
+    "id": "BUS06",
+    "name": "BS Entrepreneurship",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 18, s. 2017"
+  },
+  {
+    "id": "BUS07",
+    "name": "BS Office Administration",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 19, s. 2017"
+  },
+  {
+    "id": "BUS08",
+    "name": "Economics (BA/BS)",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 32, s. 2017"
+  },
+  {
+    "id": "BUS09",
+    "name": "BS Tourism Management",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 62, s. 2017"
+  },
+  {
+    "id": "BUS10",
+    "name": "BS Hospitality Management",
+    "group": "Business and Management",
+    "chedBasis": "CMO No. 62, s. 2017"
+  },
+  {
+    "id": "ICT01",
+    "name": "BS Information Technology",
+    "group": "Computing",
+    "chedBasis": "CMO No. 25, s. 2015"
+  },
+  {
+    "id": "ICT02",
+    "name": "BS Information Systems",
+    "group": "Computing",
+    "chedBasis": "CMO No. 25, s. 2015"
+  },
+  {
+    "id": "ICT03",
+    "name": "BS Computer Science",
+    "group": "Computing",
+    "chedBasis": "CMO No. 25, s. 2015"
+  },
+  {
+    "id": "ENG01",
+    "name": "BS Civil Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 92, s. 2017"
+  },
+  {
+    "id": "ENG02",
+    "name": "BS Mechanical Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 97, s. 2017"
+  },
+  {
+    "id": "ENG03",
+    "name": "BS Electrical Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 88, s. 2017"
+  },
+  {
+    "id": "ENG04",
+    "name": "BS Electronics Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 101, s. 2017"
+  },
+  {
+    "id": "ENG05",
+    "name": "BS Computer Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 87, s. 2017"
+  },
+  {
+    "id": "ENG06",
+    "name": "BS Chemical Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 91, s. 2017"
+  },
+  {
+    "id": "ENG07",
+    "name": "BS Industrial Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 96, s. 2017"
+  },
+  {
+    "id": "ENG08",
+    "name": "BS Geodetic Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 89, s. 2017"
+  },
+  {
+    "id": "ENG09",
+    "name": "BS Mining Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 99, s. 2017"
+  },
+  {
+    "id": "ENG10",
+    "name": "BS Materials Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 95, s. 2017"
+  },
+  {
+    "id": "ENG11",
+    "name": "BS Metallurgical Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 100, s. 2017"
+  },
+  {
+    "id": "ENG12",
+    "name": "BS Agricultural and Biosystems Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 94, s. 2017"
+  },
+  {
+    "id": "ENG13",
+    "name": "Bachelor of Industrial Technology",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 13, s. 2023"
+  },
+  {
+    "id": "ENG14",
+    "name": "BS Marine Engineering",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 67, s. 2017"
+  },
+  {
+    "id": "ENG15",
+    "name": "BS Marine Transportation",
+    "group": "Engineering and Technology",
+    "chedBasis": "CMO No. 67, s. 2017"
+  },
+  {
+    "id": "SCI01",
+    "name": "BS Biology",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 49, s. 2017"
+  },
+  {
+    "id": "SCI02",
+    "name": "BS Marine Biology",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 46, s. 2017"
+  },
+  {
+    "id": "SCI03",
+    "name": "BS Chemistry",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 47, s. 2017"
+  },
+  {
+    "id": "SCI04",
+    "name": "BS Physics",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 13, s. 2024"
+  },
+  {
+    "id": "SCI05",
+    "name": "BS Applied Physics",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 13, s. 2024"
+  },
+  {
+    "id": "SCI06",
+    "name": "BS Mathematics",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 48, s. 2017"
+  },
+  {
+    "id": "SCI07",
+    "name": "BS Applied Mathematics",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 48, s. 2017"
+  },
+  {
+    "id": "SCI08",
+    "name": "BS Statistics",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 42, s. 2017"
+  },
+  {
+    "id": "SCI09",
+    "name": "BS Environmental Science",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 35, s. 2005"
+  },
+  {
+    "id": "SCI10",
+    "name": "BS Geology",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 35, s. 2008"
+  },
+  {
+    "id": "SCI11",
+    "name": "BS Meteorology",
+    "group": "Science and Mathematics",
+    "chedBasis": "CMO No. 3, s. 2024"
+  },
+  {
+    "id": "AGR01",
+    "name": "BS Agriculture",
+    "group": "Agriculture, Fisheries, and Food",
+    "chedBasis": "CMO No. 23, s. 2021"
+  },
+  {
+    "id": "AGR02",
+    "name": "BS Forestry",
+    "group": "Agriculture, Fisheries, and Food",
+    "chedBasis": "CMO No. 6, s. 2019"
+  },
+  {
+    "id": "AGR03",
+    "name": "BS Fisheries",
+    "group": "Agriculture, Fisheries, and Food",
+    "chedBasis": "CMO No. 33, s. 2021"
+  },
+  {
+    "id": "AGR04",
+    "name": "BS Food Technology",
+    "group": "Agriculture, Fisheries, and Food",
+    "chedBasis": "CMO No. 7, s. 2019"
+  },
+  {
+    "id": "HLT01",
+    "name": "BS Nursing",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 15, s. 2017"
+  },
+  {
+    "id": "HLT02",
+    "name": "BS Pharmacy",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 25, s. 2021"
+  },
+  {
+    "id": "HLT03",
+    "name": "BS Medical Technology / Medical Laboratory Science",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 13, s. 2017"
+  },
+  {
+    "id": "HLT04",
+    "name": "BS Physical Therapy",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 55, s. 2017"
+  },
+  {
+    "id": "HLT05",
+    "name": "BS Occupational Therapy",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 52, s. 2017"
+  },
+  {
+    "id": "HLT06",
+    "name": "BS Radiologic Technology",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 7, s. 2018"
+  },
+  {
+    "id": "HLT07",
+    "name": "BS Public Health",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 1, s. 2024"
+  },
+  {
+    "id": "HLT08",
+    "name": "BS Nutrition and Dietetics",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 14, s. 2017"
+  },
+  {
+    "id": "HLT09",
+    "name": "Doctor of Dental Medicine",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 3, s. 2018"
+  },
+  {
+    "id": "HLT10",
+    "name": "Doctor of Veterinary Medicine",
+    "group": "Health and Allied Sciences",
+    "chedBasis": "CMO No. 1, s. 2018"
+  },
+  {
+    "id": "EDU01",
+    "name": "Bachelor of Elementary Education",
+    "group": "Education and Sports",
+    "chedBasis": "CMO No. 74, s. 2017"
+  },
+  {
+    "id": "EDU02",
+    "name": "Bachelor of Secondary Education",
+    "group": "Education and Sports",
+    "chedBasis": "CMO No. 75, s. 2017"
+  },
+  {
+    "id": "EDU03",
+    "name": "Bachelor of Early Childhood Education",
+    "group": "Education and Sports",
+    "chedBasis": "CMO No. 76, s. 2017"
+  },
+  {
+    "id": "EDU04",
+    "name": "Bachelor of Physical Education",
+    "group": "Education and Sports",
+    "chedBasis": "CMO No. 80, s. 2017"
+  },
+  {
+    "id": "EDU05",
+    "name": "BS Exercise and Sports Sciences",
+    "group": "Education and Sports",
+    "chedBasis": "CMO No. 81, s. 2017"
+  },
+  {
+    "id": "EDU06",
+    "name": "Bachelor of Culture and Arts Education",
+    "group": "Education and Sports",
+    "chedBasis": "CMO No. 82, s. 2017"
+  },
+  {
+    "id": "EDU07",
+    "name": "Bachelor of Technology and Livelihood Education",
+    "group": "Education and Sports",
+    "chedBasis": "CMO No. 78, s. 2017"
+  },
+  {
+    "id": "EDU08",
+    "name": "Bachelor of Technical-Vocational Teacher Education",
+    "group": "Education and Sports",
+    "chedBasis": "CMO No. 79, s. 2017"
+  },
+  {
+    "id": "SOC01",
+    "name": "Psychology (BA/BS)",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 34, s. 2017"
+  },
+  {
+    "id": "SOC02",
+    "name": "BS Social Work",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 39, s. 2017"
+  },
+  {
+    "id": "SOC03",
+    "name": "Bachelor in Human Services",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 33, s. 2017"
+  },
+  {
+    "id": "SOC04",
+    "name": "BA Political Science",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 51, s. 2017"
+  },
+  {
+    "id": "SOC05",
+    "name": "BA Sociology",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 40, s. 2017"
+  },
+  {
+    "id": "SOC06",
+    "name": "BA History",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 38, s. 2017"
+  },
+  {
+    "id": "SOC07",
+    "name": "BA Philosophy",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 26, s. 2017"
+  },
+  {
+    "id": "SOC08",
+    "name": "Anthropology (BA/BS)",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 31, s. 2017"
+  },
+  {
+    "id": "SOC09",
+    "name": "Bachelor of Public Administration",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 6, s. 2010"
+  },
+  {
+    "id": "SOC10",
+    "name": "Bachelor of Library and Information Science",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 24, s. 2015"
+  },
+  {
+    "id": "SOC11",
+    "name": "BS Criminology",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 5, s. 2018"
+  },
+  {
+    "id": "SOC12",
+    "name": "BA Communication",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 35, s. 2017"
+  },
+  {
+    "id": "SOC13",
+    "name": "BA Broadcasting",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 37, s. 2017"
+  },
+  {
+    "id": "SOC14",
+    "name": "BA Journalism",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 41, s. 2017"
+  },
+  {
+    "id": "SOC15",
+    "name": "BS Development Communication",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 36, s. 2017"
+  },
+  {
+    "id": "SOC16",
+    "name": "BA English Language Studies",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 24, s. 2017"
+  },
+  {
+    "id": "SOC17",
+    "name": "BA Literature",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 21, s. 2017"
+  },
+  {
+    "id": "SOC18",
+    "name": "BA Filipino",
+    "group": "Social Sciences, Communication, and Humanities",
+    "chedBasis": "CMO No. 22, s. 2017"
+  },
+  {
+    "id": "ART01",
+    "name": "Bachelor of Fine Arts",
+    "group": "Arts, Design, and Architecture",
+    "chedBasis": "CMO No. 43, s. 2017"
+  },
+  {
+    "id": "ART02",
+    "name": "Bachelor of Performing Arts",
+    "group": "Arts, Design, and Architecture",
+    "chedBasis": "CMO No. 25, s. 2017"
+  },
+  {
+    "id": "ART03",
+    "name": "Bachelor of Multimedia Arts",
+    "group": "Arts, Design, and Architecture",
+    "chedBasis": "CMO No. 20, s. 2017"
+  },
+  {
+    "id": "ART04",
+    "name": "BS Interior Design",
+    "group": "Arts, Design, and Architecture",
+    "chedBasis": "CMO No. 44, s. 2017"
+  },
+  {
+    "id": "ART05",
+    "name": "Bachelor of Landscape Architecture",
+    "group": "Arts, Design, and Architecture",
+    "chedBasis": "CMO No. 45, s. 2017"
+  },
+  {
+    "id": "ART06",
+    "name": "BS Architecture",
+    "group": "Arts, Design, and Architecture",
+    "chedBasis": "CMO No. 61, s. 2017"
+  }
+]

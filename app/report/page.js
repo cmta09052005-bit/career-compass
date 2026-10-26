@@ -1,39 +1,24 @@
 "use client";
 
 import Localized from "@/components/Localized";
-import { useLanguage } from "@/components/LanguageProvider";
 
 import { useRef, useState } from "react";
 import Button from "@/components/Button";
 import JourneyAccess from "@/components/JourneyAccess";
 import Card from "@/components/Card";
-import courses from "@/data/courses.json";
 import {
   buildExplorerReport,
   downloadExplorerReport,
   printExplorerReport,
 } from "@/lib/explorerReport";
-import {
-  calculateCategoryScores,
-  calculateMatchPercentages,
-  createRecommendationResult,
-} from "@/lib/scoringEngine";
 import { useSessionAnswers } from "@/lib/useSessionAnswers";
 
 export default function ReportPage() {
-  const { language } = useLanguage();
-  const { session, answers, isReady, updateSession } = useSessionAnswers();
+  const { session, isReady, updateSession } = useSessionAnswers();
   const [downloading, setDownloading] = useState(false);
   const [downloadError, setDownloadError] = useState("");
   const pending = useRef(false);
-  const categoryScores = calculateCategoryScores(answers);
-  const categoryPercentages = calculateMatchPercentages(categoryScores);
-  const result = createRecommendationResult(
-    categoryPercentages,
-    answers,
-    courses,
-  );
-  const report = buildExplorerReport(session, answers, result, language);
+  const report = buildExplorerReport(session);
 
   async function downloadAgain() {
     if (!isReady || pending.current) return;
@@ -85,7 +70,7 @@ export default function ReportPage() {
           <Button
             label={downloading ? "Preparing your report…" : "Download Again"}
             onClick={downloadAgain}
-            disabled={!isReady || downloading}
+            disabled={!isReady || downloading || !report.ok}
             className="inline-flex w-full items-center justify-center disabled:cursor-not-allowed disabled:opacity-40"
           />
           {/* 67 — Print Report button */}
@@ -93,7 +78,7 @@ export default function ReportPage() {
             label="Print Report"
             variant="secondary"
             onClick={() => printExplorerReport(report)}
-            disabled={!isReady}
+            disabled={!isReady || !report.ok}
             className="inline-flex w-full items-center justify-center"
           />
         </Localized>

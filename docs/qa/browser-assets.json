@@ -1,0 +1,16 @@
+{
+  "initialHarnessMissingRoutes": [
+    "/icon.png",
+    "/_next/image"
+  ],
+  "initialMissingRequestCount": "NOT DETERMINED: repeated server logs, not a retained request trace",
+  "repair": "QA harness only: serve existing app/icon.png and original public images, without resizing or Next optimization",
+  "postFixCase": "BUS02-old",
+  "processingObserved": true,
+  "rank1": "BUS02",
+  "imageElements": 12,
+  "completeWithPositiveNaturalWidth": 12,
+  "consoleErrors": [],
+  "iconHref": "/icon.png?icon.27wpi2wn5c78c.png",
+  "scope": "Separate asset smoke check; does not replace, retune or enlarge the 12-case rank/PDF sample."
+}

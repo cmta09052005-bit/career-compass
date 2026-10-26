@@ -1,0 +1,1959 @@
+[
+  {
+    "id": "SCH-001",
+    "school": "Bicol University",
+    "campus": "Legazpi - West",
+    "location": "Legazpi",
+    "province": "Albay",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "EDU06",
+      "EDU03",
+      "EDU01",
+      "EDU02",
+      "SOC13",
+      "SOC12",
+      "SOC16",
+      "SOC14",
+      "ART02",
+      "SOC17",
+      "HLT01",
+      "SCI01",
+      "SCI03",
+      "ICT03",
+      "ICT01",
+      "SCI11",
+      "EDU04",
+      "EDU05",
+      "SOC09",
+      "HLT09"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "Campuses - Official Website of Bicol University"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified",
+      "major-only"
+    ],
+    "programText": "College of Education: Culture and Arts Education (EDU06), Early Childhood Education (EDU03), Elementary Education (EDU01), Secondary Education (EDU02). College of Arts and Letters: BA Broadcasting (SOC13), Communication (SOC12), English Language (SOC16), Journalism (SOC14), Bachelor of Performing Arts - Theater (ART02), BA Literature (SOC17). College of Nursing: BS Nursing (HLT01). College of Science: BS Biology (SCI01), Chemistry (SCI03), Computer Science (ICT03), Information Technology (ICT01), Meteorology (SCI11). IPESR: Bachelor of Physical Education (EDU04), BS Exercise and Sports Sciences (EDU05). Robredo Institute: Bachelor of Public Administration (SOC09). College of Dental Medicine: DMD (HLT09).",
+    "sourcePage": 1,
+    "sourceRow": 1,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Legazpi - West",
+      "location": null,
+      "programs": "College of Education: Culture and Arts Education (EDU06), Early Childhood Education\n(EDU03), Elementary Education (EDU01), Secondary Education (EDU02).\nCollege of Arts and Letters: BA Broadcasting (SOC13), Communication (SOC12), English\nLanguage (SOC16), Journalism (SOC14), Bachelor of Performing Arts - Theater (ART02), BA\nLiterature (SOC17).\nCollege of Nursing: BS Nursing (HLT01).\nCollege of Science: BS Biology (SCI01), Chemistry (SCI03), Computer Science (ICT03),\nInformation Technology (ICT01), Meteorology (SCI11).\nIPESR: Bachelor of Physical Education (EDU04), BS Exercise and Sports Sciences (EDU05).\nRobredo Institute: Bachelor of Public Administration (SOC09).\nCollege of Dental Medicine: DMD (HLT09).",
+      "sources": "Campuses - Official\nWebsite of Bicol\nUniversity"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-002",
+    "school": "Bicol University",
+    "campus": "Legazpi - East",
+    "location": "Legazpi",
+    "province": "Albay",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "ENG06",
+      "ENG01",
+      "ENG03",
+      "ENG08",
+      "ENG02",
+      "ENG09",
+      "ART06",
+      "ENG13",
+      "AGR04",
+      "EDU08"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "Campuses - Official Website of Bicol University"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified"
+    ],
+    "programText": "College of Engineering: Chemical (ENG06), Civil (ENG01), Electrical (ENG03), Geodetic (ENG08), Mechanical (ENG02), Mining (ENG09). Institute of Design and Architecture: BS Architecture (ART06). College of Industrial Technology: Bachelor of Industrial Technology (ENG13), BS Food Technology (AGR04), Technical-Vocational Teacher Education (EDU08).",
+    "sourcePage": 1,
+    "sourceRow": 2,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Legazpi - East",
+      "location": null,
+      "programs": "College of Engineering: Chemical (ENG06), Civil (ENG01), Electrical (ENG03), Geodetic\n(ENG08), Mechanical (ENG02), Mining (ENG09).\nInstitute of Design and Architecture: BS Architecture (ART06).\nCollege of Industrial Technology: Bachelor of Industrial Technology (ENG13), BS Food\nTechnology (AGR04), Technical-Vocational Teacher Education (EDU08).",
+      "sources": "Campuses - Official\nWebsite of Bicol\nUniversity"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-003",
+    "school": "Bicol University",
+    "campus": "Daraga",
+    "location": "Daraga",
+    "province": "Albay",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "SOC07",
+      "SOC04",
+      "SOC05",
+      "SOC01",
+      "SOC02",
+      "BUS01",
+      "BUS08",
+      "BUS06",
+      "BUS05"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "bicol-u"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified"
+    ],
+    "programText": "CSSP: BA Philosophy (SOC07), Political Science (SOC04), Sociology (SOC05), BS Psychology (SOC01), BS Social Work (SOC02). CBEM: BS Accountancy (BUS01), Economics (BUS08), Entrepreneurship (BUS06), BSBA (BUS05).",
+    "sourcePage": 1,
+    "sourceRow": 3,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Daraga",
+      "location": null,
+      "programs": "CSSP: BA Philosophy (SOC07), Political Science (SOC04), Sociology (SOC05), BS Psychology\n(SOC01), BS Social Work (SOC02).\nCBEM: BS Accountancy (BUS01), Economics (BUS08), Entrepreneurship (BUS06), BSBA\n(BUS05).",
+      "sources": "bicol-u"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-004",
+    "school": "Bicol University",
+    "campus": "Guinobatan",
+    "location": "Guinobatan",
+    "province": "Albay",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "AGR01",
+      "AGR02",
+      "ENG12",
+      "SOC15",
+      "AGR04",
+      "HLT10",
+      "EDU08"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "bicol-u"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified"
+    ],
+    "programText": "BS Agriculture (AGR01), Forestry (AGR02), Agricultural and Biosystems Engineering (ENG12), Development Communication (SOC15), Food Technology (AGR04), Doctor of Veterinary Medicine (HLT10), TVTEd (EDU08).",
+    "sourcePage": 1,
+    "sourceRow": 4,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Guinobatan",
+      "location": null,
+      "programs": "BS Agriculture (AGR01), Forestry (AGR02), Agricultural and Biosystems Engineering (ENG12),\nDevelopment Communication (SOC15), Food Technology (AGR04), Doctor of Veterinary\nMedicine (HLT10), TVTEd (EDU08).",
+      "sources": "bicol-u"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-005",
+    "school": "Bicol University",
+    "campus": "Tabaco",
+    "location": "Tabaco",
+    "province": "Albay",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "EDU02",
+      "BUS06",
+      "AGR03",
+      "AGR04",
+      "HLT01",
+      "SOC02"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "bicol-u"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified",
+      "major-only"
+    ],
+    "programText": "BSEd Science and Math (EDU02), BS Entrepreneurship (BUS06), Fisheries (AGR03), Food Technology (AGR04), Nursing (HLT01), Social Work (SOC02).",
+    "sourcePage": 1,
+    "sourceRow": 5,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Tabaco",
+      "location": null,
+      "programs": "BSEd Science and Math (EDU02), BS Entrepreneurship (BUS06), Fisheries (AGR03), Food\nTechnology (AGR04), Nursing (HLT01), Social Work (SOC02).",
+      "sources": "bicol-u"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-006",
+    "school": "Bicol University",
+    "campus": "Gubat (Sorsogon)",
+    "location": "Gubat (Sorsogon)",
+    "province": "Sorsogon",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "EDU01",
+      "EDU02",
+      "BUS06",
+      "BUS05"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "bicol-u"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "unverified",
+      "major-only"
+    ],
+    "programText": "Elementary Education (EDU01), BSEd Filipino and Social Studies (EDU02), BS Entrepreneurship (BUS06), BSBA Microfinance (BUS05).",
+    "sourcePage": 1,
+    "sourceRow": 6,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Gubat (Sorsogon)",
+      "location": null,
+      "programs": "Elementary Education (EDU01), BSEd Filipino and Social Studies (EDU02), BS Entrepreneurship\n(BUS06), BSBA Microfinance (BUS05).",
+      "sources": "bicol-u"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-007",
+    "school": "Bicol University",
+    "campus": "Polangui",
+    "location": "Polangui",
+    "province": "Albay",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "EDU01",
+      "EDU02",
+      "ENG05",
+      "ICT03",
+      "ENG04",
+      "BUS06",
+      "ICT02",
+      "ICT01",
+      "HLT01",
+      "EDU07",
+      "ENG13"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "bicol-u"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified",
+      "major-only"
+    ],
+    "programText": "Elementary Education (EDU01), BSEd English and Math (EDU02), BS Computer Engineering (ENG05), Computer Science (ICT03), Electronics Engineering (ENG04), Entrepreneurship (BUS06), Information System (ICT02), Information Technology (ICT01), Nursing (HLT01), BTLE ICT and Home Economics (EDU07), technology programs (ENG13).",
+    "sourcePage": 1,
+    "sourceRow": 7,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Polangui",
+      "location": null,
+      "programs": "Elementary Education (EDU01), BSEd English and Math (EDU02), BS Computer Engineering\n(ENG05), Computer Science (ICT03), Electronics Engineering (ENG04), Entrepreneurship\n(BUS06), Information System (ICT02), Information Technology (ICT01), Nursing (HLT01), BTLE\nICT and Home Economics (EDU07), technology programs (ENG13).",
+      "sources": "bicol-u"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-008",
+    "school": "Sorsogon State University",
+    "campus": "Bulan",
+    "location": "Bulan",
+    "province": "Sorsogon",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "ICT03",
+      "ICT01",
+      "ICT02",
+      "BUS01",
+      "BUS03",
+      "SOC09",
+      "BUS06",
+      "EDU08"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "sorsu"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified"
+    ],
+    "programText": "BS Computer Science (ICT03), Information Technology (ICT01), Information Systems (ICT02), Accountancy (BUS01), Accounting Information System (BUS03), Public Administration (SOC09), Entrepreneurship (BUS06), BTVTED (EDU08).",
+    "sourcePage": 1,
+    "sourceRow": 1,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Bulan",
+      "location": null,
+      "programs": "BS Computer Science (ICT03), Information Technology (ICT01), Information Systems (ICT02),\nAccountancy (BUS01), Accounting Information System (BUS03), Public Administration (SOC09),\nEntrepreneurship (BUS06), BTVTED (EDU08).",
+      "sources": "sorsu"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-009",
+    "school": "Sorsogon State University",
+    "campus": "Magallanes",
+    "location": "Magallanes",
+    "province": null,
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "SCI02"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "sorsu"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "BS Marine Biology (SCI02).",
+    "sourcePage": 1,
+    "sourceRow": 2,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Magallanes",
+      "location": null,
+      "programs": "BS Marine Biology (SCI02).",
+      "sources": "sorsu"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-010",
+    "school": "Sorsogon State University",
+    "campus": "Sorsogon City",
+    "location": "Sorsogon City",
+    "province": "Sorsogon",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "EDU02"
+    ],
+    "programNotes": [
+      "isang undergraduate program sa special needs education",
+      "hindi na-confirm ang mismong Midwifery program kahit nasa pangalan ng college."
+    ],
+    "sourceNames": [
+      "sorsu.edu.ph (Sorsogon City Campus page)"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "partial",
+      "unverified",
+      "major-only"
+    ],
+    "programText": "College of Teacher Education and Midwifery: BSEd (secondary level, may mga major) (EDU02) at isang undergraduate program sa special needs education. Partial lang ito: hindi lumabas ang buong list ng ibang colleges ng campus, at hindi na-confirm ang mismong Midwifery program kahit nasa pangalan ng college.",
+    "sourcePage": 1,
+    "sourceRow": 3,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Sorsogon City",
+      "location": null,
+      "programs": "College of Teacher Education and Midwifery: BSEd (secondary level, may mga major)\n(EDU02) at isang undergraduate program sa special needs education. Partial lang ito: hindi\nlumabas ang buong list ng ibang colleges ng campus, at hindi na-confirm ang mismong Midwifery\nprogram kahit nasa pangalan ng college.",
+      "sources": "sorsu.edu.ph\n(Sorsogon City\nCampus page)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-011",
+    "school": "Sorsogon State University",
+    "campus": "Castilla",
+    "location": "Castilla",
+    "province": "Sorsogon",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "AGR01"
+    ],
+    "programNotes": [
+      "Bachelor of Agricultural Technology",
+      "BS Agribusiness (bagong program mula AY 2023-2024, CHED ROV Order No. 09 s. 2023)."
+    ],
+    "sourceNames": [
+      "sorsu.edu.ph (Castilla Campus at COA pages)"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "major-only",
+      "new-program"
+    ],
+    "programText": "BS Agriculture (AGR01) na may majors sa Agricultural Education, Animal Science at Crop Science; Bachelor of Agricultural Technology; BS Agribusiness (bagong program mula AY 2023-2024, CHED ROV Order No. 09 s. 2023).",
+    "sourcePage": 1,
+    "sourceRow": 4,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Castilla",
+      "location": null,
+      "programs": "BS Agriculture (AGR01) na may majors sa Agricultural Education, Animal Science at Crop\nScience; Bachelor of Agricultural Technology; BS Agribusiness (bagong program mula AY\n2023-2024, CHED ROV Order No. 09 s. 2023).",
+      "sources": "sorsu.edu.ph\n(Castilla Campus at\nCOA pages)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-012",
+    "school": "Camarines Sur Polytechnic Colleges (CSPC) / Polytechnic State University of Bicol (PSUB)",
+    "campus": null,
+    "location": "Nabua, Camarines Sur",
+    "province": "Camarines Sur",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "ICT01",
+      "ICT03",
+      "ICT02",
+      "SOC10",
+      "ENG01",
+      "ENG02",
+      "ENG03",
+      "ENG04",
+      "ENG05",
+      "ART06",
+      "BUS07",
+      "BUS10",
+      "BUS06",
+      "BUS09",
+      "BUS05",
+      "HLT01",
+      "EDU04",
+      "EDU06",
+      "EDU08",
+      "SOC16",
+      "SCI06",
+      "SCI07",
+      "SOC15",
+      "SOC09",
+      "SOC03"
+    ],
+    "programNotes": [
+      "BS Midwifery",
+      "Special Needs Education"
+    ],
+    "sourceNames": [
+      "Wikipedia (CSPC/PSUB) na sumasangguni sa cspc.edu.ph",
+      "topuniversities.com"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "partial",
+      "major-only"
+    ],
+    "programText": "BSIT (ICT01), BS Computer Science (ICT03), BS Information Systems (ICT02), Bachelor of Library and Information Science (SOC10); BS Civil Engineering (ENG01), Mechanical (ENG02), Electrical (ENG03), Electronics (ENG04), Computer Engineering (ENG05), BS Architecture (ART06); BS Office Administration (BUS07), Hospitality Management (BUS10), Entrepreneurship (BUS06), Tourism Management (BUS09), BSBA major in Financial Management (BUS05); BS Nursing (HLT01), BS Midwifery; Bachelor of Physical Education (EDU04), Culture and Arts Education (EDU06), Special Needs Education, BTVTEd (EDU08) na may majors sa Fish Processing, Food Service Management at Electronics Technology; BA English Language Studies (SOC16), BS Mathematics (SCI06), Applied Mathematics (SCI07), Development Communication (SOC15), Public Administration (SOC09), Bachelor in Human Services (SOC03).",
+    "sourcePage": 2,
+    "sourceRow": 1,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Camarines Sur\nPolytechnic Colleges\n(CSPC) / Polytechnic\nState University of\nBicol (PSUB) -\nNabua, Camarines\nSur (may Buhi\nCampus)",
+      "location": null,
+      "programs": "BSIT (ICT01), BS Computer Science (ICT03), BS Information Systems (ICT02), Bachelor of\nLibrary and Information Science (SOC10); BS Civil Engineering (ENG01), Mechanical (ENG02),\nElectrical (ENG03), Electronics (ENG04), Computer Engineering (ENG05), BS Architecture\n(ART06); BS Office Administration (BUS07), Hospitality Management (BUS10), Entrepreneurship\n(BUS06), Tourism Management (BUS09), BSBA major in Financial Management (BUS05); BS\nNursing (HLT01), BS Midwifery; Bachelor of Physical Education (EDU04), Culture and Arts\nEducation (EDU06), Special Needs Education, BTVTEd (EDU08) na may majors sa Fish\nProcessing, Food Service Management at Electronics Technology; BA English Language Studies\n(SOC16), BS Mathematics (SCI06), Applied Mathematics (SCI07), Development Communication\n(SOC15), Public Administration (SOC09), Bachelor in Human Services (SOC03).",
+      "sources": "Wikipedia\n(CSPC/PSUB) na\nsumasangguni sa\ncspc.edu.ph;\ntopuniversities.com"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-013",
+    "school": "Partido State University (ParSU)",
+    "campus": null,
+    "location": "Goa, Camarines Sur",
+    "province": "Camarines Sur",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "EDU01",
+      "EDU02",
+      "BUS01",
+      "BUS05",
+      "BUS07",
+      "BUS06",
+      "BUS08",
+      "ENG01",
+      "ICT03",
+      "SCI06",
+      "ICT01",
+      "SOC12",
+      "SOC09",
+      "SCI01",
+      "SCI10",
+      "BUS10",
+      "BUS09",
+      "HLT08",
+      "SOC11",
+      "AGR03",
+      "SCI02",
+      "SCI09",
+      "AGR02"
+    ],
+    "programNotes": [
+      "Sanitary Engineering",
+      "Automotive Technology",
+      "Engineering Technology (Electrical at Mechanical)",
+      "Industrial Security Management",
+      "Agribusiness, Community Development.",
+      "Environmental Planning"
+    ],
+    "sourceNames": [
+      "parsu.edu.ph (Program Offerings)"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "partial"
+    ],
+    "programText": "Goa: Elementary Education (EDU01), Secondary Education (EDU02), BS Accountancy (BUS01), BSBA Financial Management (BUS05), Office Administration (BUS07), Entrepreneurship (BUS06), Economics (BUS08), Civil Engineering (ENG01), Sanitary Engineering, Computer Science (ICT03), Mathematics (SCI06), Information Technology (ICT01), Automotive Technology, Engineering Technology (Electrical at Mechanical), BA Communication (SOC12), Public Administration (SOC09), BS Biology (SCI01), Geology (SCI10). Caramoan: Hospitality Management (BUS10), Biology (Conservation and Restoration Ecology) (SCI01), Tourism Management (Ecotourism) (BUS09). Lagonoy: Nutrition and Dietetics (HLT08), Criminology (SOC11), Industrial Security Management. Sagnay: Fisheries (AGR03), Marine Biology (SCI02). Salogon: Agribusiness, Community Development. San Jose: Hospitality Management (BUS10), Tourism Management (BUS09). Tinambac: Environmental Science (SCI09), Environmental Planning, Forestry (AGR02).",
+    "sourcePage": 2,
+    "sourceRow": 2,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Partido State\nUniversity (ParSU) -\nGoa, Camarines Sur,\nmay campuses sa\nCaramoan, Lagonoy,\nSagnay, Salogon,\nSan Jose at\nTinambac",
+      "location": null,
+      "programs": "Goa: Elementary Education (EDU01), Secondary Education (EDU02), BS Accountancy (BUS01),\nBSBA Financial Management (BUS05), Office Administration (BUS07), Entrepreneurship\n(BUS06), Economics (BUS08), Civil Engineering (ENG01), Sanitary Engineering, Computer\nScience (ICT03), Mathematics (SCI06), Information Technology (ICT01), Automotive Technology,\nEngineering Technology (Electrical at Mechanical), BA Communication (SOC12), Public\nAdministration (SOC09), BS Biology (SCI01), Geology (SCI10).\nCaramoan: Hospitality Management (BUS10), Biology (Conservation and Restoration Ecology)\n(SCI01), Tourism Management (Ecotourism) (BUS09).\nLagonoy: Nutrition and Dietetics (HLT08), Criminology (SOC11), Industrial Security\nManagement.\nSagnay: Fisheries (AGR03), Marine Biology (SCI02).\nSalogon: Agribusiness, Community Development.\nSan Jose: Hospitality Management (BUS10), Tourism Management (BUS09).\nTinambac: Environmental Science (SCI09), Environmental Planning, Forestry (AGR02).",
+      "sources": "parsu.edu.ph\n(Program Offerings)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-014",
+    "school": "Catanduanes State University (CatSU)",
+    "campus": null,
+    "location": "Virac, Catanduanes",
+    "province": "Catanduanes",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "ENG01",
+      "ENG05",
+      "ENG04",
+      "ART06",
+      "SCI01",
+      "SCI09",
+      "SCI06",
+      "SOC04",
+      "BUS08",
+      "SOC09",
+      "SOC16",
+      "BUS01",
+      "BUS03",
+      "BUS05",
+      "BUS06",
+      "BUS04",
+      "BUS07",
+      "HLT01",
+      "HLT08",
+      "ENG13",
+      "AGR01",
+      "AGR03",
+      "EDU01",
+      "EDU02",
+      "EDU08",
+      "EDU06",
+      "EDU04",
+      "ICT02",
+      "ICT01",
+      "ICT03",
+      "SOC10"
+    ],
+    "programNotes": [
+      "Agri-Business",
+      "Entertainment and Multimedia Computing"
+    ],
+    "sourceNames": [
+      "catsu.edu.ph/progra ms.php"
+    ],
+    "sourceLevel": "official",
+    "flags": [],
+    "programText": "Civil Engineering (ENG01), Computer Engineering (ENG05), Electronics and Communication Engineering (ENG04), BS Architecture (ART06); BS Biology (SCI01), Environmental Science (SCI09), Mathematics (SCI06); BA Political Science (SOC04), BA Economics (BUS08), Public Administration (SOC09), BA English Language (SOC16); BS Accountancy (BUS01), Accounting Information System (BUS03), BSBA (BUS05), Entrepreneurship (BUS06), Internal Auditing (BUS04), Office Administration (BUS07); BS Nursing (HLT01), Nutrition and Dietetics (HLT08); Industrial Technology (ENG13); BS Agriculture (AGR01), Agri-Business, Fisheries (AGR03); Elementary Education (EDU01), Secondary Education (EDU02), Technical-Vocational Teacher Education (EDU08), Culture and Arts Education (EDU06), Physical Education (EDU04); BS Information Systems (ICT02), Information Technology (ICT01), Computer Science (ICT03), Entertainment and Multimedia Computing, Library and Information Science (SOC10).",
+    "sourcePage": 2,
+    "sourceRow": 3,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Catanduanes State\nUniversity (CatSU) -\nVirac, Catanduanes",
+      "location": null,
+      "programs": "Civil Engineering (ENG01), Computer Engineering (ENG05), Electronics and Communication\nEngineering (ENG04), BS Architecture (ART06); BS Biology (SCI01), Environmental Science\n(SCI09), Mathematics (SCI06); BA Political Science (SOC04), BA Economics (BUS08), Public\nAdministration (SOC09), BA English Language (SOC16); BS Accountancy (BUS01), Accounting\nInformation System (BUS03), BSBA (BUS05), Entrepreneurship (BUS06), Internal Auditing\n(BUS04), Office Administration (BUS07); BS Nursing (HLT01), Nutrition and Dietetics (HLT08);\nIndustrial Technology (ENG13); BS Agriculture (AGR01), Agri-Business, Fisheries (AGR03);\nElementary Education (EDU01), Secondary Education (EDU02), Technical-Vocational Teacher\nEducation (EDU08), Culture and Arts Education (EDU06), Physical Education (EDU04); BS\nInformation Systems (ICT02), Information Technology (ICT01), Computer Science (ICT03),\nEntertainment and Multimedia Computing, Library and Information Science (SOC10).",
+      "sources": "catsu.edu.ph/progra\nms.php"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-015",
+    "school": "Central Bicol State University of Agriculture (CBSUA)",
+    "campus": "Pili (main), Calabanga, Pasacao, Sipocot",
+    "location": null,
+    "province": null,
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "HLT10",
+      "AGR04",
+      "EDU01",
+      "EDU02",
+      "AGR01",
+      "SCI01",
+      "SOC11",
+      "ICT01",
+      "SCI09"
+    ],
+    "programNotes": [
+      "BS Agricultural Engineering (kaugnay ng ENG12; hindi sigurado kung pareho ang pangalan ng program)",
+      "Agroforestry",
+      "Agricultural Technology",
+      "Agri-ecotourism Management",
+      "Agribusiness",
+      "Industrial Education",
+      "BS Fisheries (Calabanga)"
+    ],
+    "sourceNames": [
+      "cbsua.edu.ph (graduates article)",
+      "topuniversities.com"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "partial",
+      "unverified",
+      "outdated",
+      "new-program"
+    ],
+    "programText": "Doctor of Veterinary Medicine (HLT10), BS Agricultural Engineering (kaugnay ng ENG12; hindi sigurado kung pareho ang pangalan ng program), Food Technology (AGR04), Elementary Education (EDU01), Secondary Education (EDU02), BS Agriculture (AGR01), Agroforestry, Agricultural Technology, Agri-ecotourism Management, Agribusiness, Biology (SCI01), Criminology (SOC11), Information Technology (ICT01), Industrial Education. Kamakailan ding idinagdag: BS Fisheries (Calabanga) at BS Environmental Science (SCI09). Paalala: batay ito sa program ng mga nagtapos SY 2020-2021, kaya maaaring may mga bago nang program.",
+    "sourcePage": 2,
+    "sourceRow": 4,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Central Bicol State\nUniversity of\nAgriculture (CBSUA)\n- Pili (main),\nCalabanga, Pasacao,\nSipocot",
+      "location": null,
+      "programs": "Doctor of Veterinary Medicine (HLT10), BS Agricultural Engineering (kaugnay ng ENG12; hindi\nsigurado kung pareho ang pangalan ng program), Food Technology (AGR04), Elementary\nEducation (EDU01), Secondary Education (EDU02), BS Agriculture (AGR01), Agroforestry,\nAgricultural Technology, Agri-ecotourism Management, Agribusiness, Biology (SCI01),\nCriminology (SOC11), Information Technology (ICT01), Industrial Education. Kamakailan ding\nidinagdag: BS Fisheries (Calabanga) at BS Environmental Science (SCI09).\nPaalala: batay ito sa program ng mga nagtapos SY 2020-2021, kaya maaaring may mga bago\nnang program.",
+      "sources": "cbsua.edu.ph\n(graduates article);\ntopuniversities.com"
+    },
+    "excludedMappings": [
+      {
+        "courseId": "ENG12",
+        "rawText": "BS Agricultural Engineering (kaugnay ng ENG12; hindi sigurado kung pareho ang pangalan ng program)",
+        "reasonCode": "uncertain-equivalence"
+      }
+    ]
+  },
+  {
+    "id": "SCH-016",
+    "school": "University of Camarines Norte (UCN, dating CNSC)",
+    "campus": null,
+    "location": "Daet, Camarines Norte",
+    "province": "Camarines Norte",
+    "type": "public-suc",
+    "group": "bicol",
+    "courseIds": [
+      "SOC15",
+      "SCI07",
+      "SOC01",
+      "SCI01",
+      "SOC16",
+      "SOC05",
+      "SOC09",
+      "BUS10",
+      "BUS01",
+      "BUS07",
+      "BUS06",
+      "BUS05",
+      "EDU02",
+      "EDU01",
+      "EDU07",
+      "EDU04",
+      "ENG01",
+      "ENG03",
+      "ENG02",
+      "AGR01",
+      "SCI09",
+      "AGR03"
+    ],
+    "programNotes": [
+      "Agricultural Technology",
+      "Agricultural Engineering"
+    ],
+    "sourceNames": [
+      "cnsc.edu.ph (Admission page)",
+      "ucn.edu.ph (student manual)"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "partial",
+      "unverified",
+      "outdated"
+    ],
+    "programText": "Arts and Sciences: Development Communication (SOC15), Applied Mathematics (SCI07), Psychology (SOC01), Biology (SCI01), BA English Language Studies (SOC16), BA Sociology (SOC05). Business and Public Administration: Public Administration (SOC09), Hospitality Management (BUS10), Accountancy (BUS01), Office Administration (BUS07), Entrepreneurship (BUS06), BSBA (BUS05). Education (Abano): Secondary Education (EDU02), Elementary Education (EDU01), Technology and Livelihood Education (EDU07), Physical Education (EDU04). Engineering: Civil (ENG01), Electrical (ENG03), Mechanical (ENG02). Labo: BS Agriculture (AGR01), Agricultural Technology, Environmental Science (SCI09), Agricultural Engineering. Mercedes: BS Fisheries (AGR03). Partial: ang College of Computing and Multimedia Studies at College of Trades and Technology ay hindi lumabas ang program list. Ang Engineering at Labo/Mercedes ay galing sa mas lumang student manual.",
+    "sourcePage": 2,
+    "sourceRow": 5,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "University of\nCamarines Norte\n(UCN, dating CNSC) -\nDaet, Camarines\nNorte",
+      "location": null,
+      "programs": "Arts and Sciences: Development Communication (SOC15), Applied Mathematics (SCI07),\nPsychology (SOC01), Biology (SCI01), BA English Language Studies (SOC16), BA Sociology\n(SOC05).\nBusiness and Public Administration: Public Administration (SOC09), Hospitality Management\n(BUS10), Accountancy (BUS01), Office Administration (BUS07), Entrepreneurship (BUS06),\nBSBA (BUS05).\nEducation (Abano): Secondary Education (EDU02), Elementary Education (EDU01),\nTechnology and Livelihood Education (EDU07), Physical Education (EDU04).\nEngineering: Civil (ENG01), Electrical (ENG03), Mechanical (ENG02).\nLabo: BS Agriculture (AGR01), Agricultural Technology, Environmental Science (SCI09),\nAgricultural Engineering. Mercedes: BS Fisheries (AGR03).\nPartial: ang College of Computing and Multimedia Studies at College of Trades and Technology\nay hindi lumabas ang program list. Ang Engineering at Labo/Mercedes ay galing sa mas lumang\nstudent manual.",
+      "sources": "cnsc.edu.ph\n(Admission page);\nucn.edu.ph (student\nmanual)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-017",
+    "school": "UST-Legazpi",
+    "campus": null,
+    "location": null,
+    "province": "Albay",
+    "type": "private",
+    "group": "bicol",
+    "courseIds": [
+      "HLT02",
+      "HLT03",
+      "HLT01"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "ust-legazpi"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified"
+    ],
+    "programText": "BS Pharmacy (HLT02) at BS Medical Technology (HLT03), supervised ng UST-Manila. Nursing (HLT01) sa College of Health Sciences.",
+    "sourcePage": 3,
+    "sourceRow": 1,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "UST-Legazpi",
+      "location": null,
+      "programs": "BS Pharmacy (HLT02) at BS Medical Technology (HLT03), supervised ng UST-Manila. Nursing\n(HLT01) sa College of Health Sciences.",
+      "sources": "ust-legazpi"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-018",
+    "school": "Mariners' Polytechnic Colleges",
+    "campus": "Naga, Canaman, Legazpi",
+    "location": null,
+    "province": null,
+    "type": "private",
+    "group": "bicol",
+    "courseIds": [
+      "ENG15",
+      "ENG14"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "duckdns"
+    ],
+    "sourceLevel": "weak",
+    "flags": [
+      "weak-source",
+      "unverified"
+    ],
+    "programText": "BS Marine Transportation (ENG15) mula 1977; may Marine Engineering (ENG14) facilities sa Canaman.",
+    "sourcePage": 3,
+    "sourceRow": 2,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Mariners'\nPolytechnic Colleges\n(Naga, Canaman,\nLegazpi)",
+      "location": null,
+      "programs": "BS Marine Transportation (ENG15) mula 1977; may Marine Engineering (ENG14) facilities sa\nCanaman.",
+      "sources": "duckdns"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-019",
+    "school": "Ateneo de Naga University",
+    "campus": null,
+    "location": "Naga City",
+    "province": "Camarines Sur",
+    "type": "private",
+    "group": "bicol",
+    "courseIds": [
+      "BUS01",
+      "BUS05",
+      "BUS06",
+      "ENG01",
+      "ENG05",
+      "ENG04",
+      "ICT03",
+      "ICT02",
+      "EDU01"
+    ],
+    "programNotes": [
+      "BS Digital Illustration and Animation."
+    ],
+    "sourceNames": [
+      "paascu.org.ph (Ateneo de Naga page)"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "partial"
+    ],
+    "programText": "Accountancy (BUS01), Business Administration (BUS05), Entrepreneurship (BUS06), Civil Engineering (ENG01), Computer Engineering (ENG05), Electronics Engineering (ENG04), Computer Science (ICT03), Information Systems (ICT02), Elementary Education (EDU01), BS Digital Illustration and Animation. Partial: PAASCU accredited programs lang ang lumabas; hindi ito ang buong list.",
+    "sourcePage": 3,
+    "sourceRow": 3,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Ateneo de Naga\nUniversity (Naga\nCity)",
+      "location": null,
+      "programs": "Accountancy (BUS01), Business Administration (BUS05), Entrepreneurship (BUS06), Civil\nEngineering (ENG01), Computer Engineering (ENG05), Electronics Engineering (ENG04),\nComputer Science (ICT03), Information Systems (ICT02), Elementary Education (EDU01), BS\nDigital Illustration and Animation.\nPartial: PAASCU accredited programs lang ang lumabas; hindi ito ang buong list.",
+      "sources": "paascu.org.ph\n(Ateneo de Naga\npage)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-020",
+    "school": "University of Nueva Caceres",
+    "campus": null,
+    "location": "Naga City",
+    "province": "Camarines Sur",
+    "type": "private",
+    "group": "bicol",
+    "courseIds": [
+      "HLT01",
+      "ICT01",
+      "ART06",
+      "SOC11"
+    ],
+    "programNotes": [
+      "May Juris Doctor din sa graduate level."
+    ],
+    "sourceNames": [
+      "unc.edu.ph (Academic Programs)"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "partial"
+    ],
+    "programText": "BS Nursing (HLT01), Information Technology (ICT01), Architecture (ART06), Criminology (SOC11), at iba pa. May Juris Doctor din sa graduate level. Partial: apat lang ang pinangalanan ng website; wala pang buong list.",
+    "sourcePage": 3,
+    "sourceRow": 4,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "University of Nueva\nCaceres (Naga City)",
+      "location": null,
+      "programs": "BS Nursing (HLT01), Information Technology (ICT01), Architecture (ART06), Criminology\n(SOC11), at iba pa. May Juris Doctor din sa graduate level.\nPartial: apat lang ang pinangalanan ng website; wala pang buong list.",
+      "sources": "unc.edu.ph\n(Academic\nPrograms)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-021",
+    "school": "Daraga Community College",
+    "campus": null,
+    "location": "Daraga, Albay",
+    "province": "Albay",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "BUS06",
+      "EDU08",
+      "EDU01",
+      "EDU04",
+      "EDU06",
+      "EDU02"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "CHED RO V directory (opisyal)",
+      "DComC student handbook"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "major-only",
+      "new-program"
+    ],
+    "programText": "BS Entrepreneurship (BUS06); BTVTEd major sa Food Service and Management at Garments, Fashion and Design (EDU08); Elementary Education (EDU01); Physical Education (EDU04); Culture and Arts Education (EDU06); BSEd majors sa English, Filipino, Mathematics, Science, Social Studies at Values Education (EDU02). Kabuuang 12 program sa CHED directory. Ayon sa student handbook, bago ang BTVTEd mula AY 2023-2024.",
+    "sourcePage": 3,
+    "sourceRow": 1,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Daraga Community\nCollege",
+      "location": "Daraga, Albay",
+      "programs": "BS Entrepreneurship (BUS06); BTVTEd major sa Food Service and\nManagement at Garments, Fashion and Design (EDU08); Elementary\nEducation (EDU01); Physical Education (EDU04); Culture and Arts\nEducation (EDU06); BSEd majors sa English, Filipino, Mathematics,\nScience, Social Studies at Values Education (EDU02). Kabuuang 12\nprogram sa CHED directory. Ayon sa student handbook, bago ang BTVTEd\nmula AY 2023-2024.",
+      "sources": "CHED RO V directory\n(opisyal); DComC\nstudent handbook"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-022",
+    "school": "Ligao Community College",
+    "campus": null,
+    "location": "Ligao City, Albay",
+    "province": "Albay",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "BUS08",
+      "EDU03",
+      "EDU01",
+      "EDU02"
+    ],
+    "programNotes": [
+      "May TESDA course din sa Computer Hardware Servicing NC II."
+    ],
+    "sourceNames": [
+      "classmate.ph (secondary)",
+      "thepost.net.ph",
+      "tesdacourse.com"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "BA Economics (BUS08), Early Childhood Education (EDU03), Elementary Education (EDU01), BSEd majors sa English, Filipino, Mathematics, Social Studies at Values Education (EDU02). May TESDA course din sa Computer Hardware Servicing NC II.",
+    "sourcePage": 3,
+    "sourceRow": 2,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Ligao Community\nCollege",
+      "location": "Ligao City,\nAlbay",
+      "programs": "BA Economics (BUS08), Early Childhood Education (EDU03), Elementary\nEducation (EDU01), BSEd majors sa English, Filipino, Mathematics, Social\nStudies at Values Education (EDU02). May TESDA course din sa Computer\nHardware Servicing NC II.",
+      "sources": "classmate.ph\n(secondary);\nthepost.net.ph;\ntesdacourse.com"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-023",
+    "school": "Polangui Community College",
+    "campus": null,
+    "location": "Polangui, Albay",
+    "province": "Albay",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU07",
+      "EDU08",
+      "EDU04",
+      "EDU02",
+      "SOC09",
+      "BUS06"
+    ],
+    "programNotes": [
+      "BS Agribusiness"
+    ],
+    "sourceNames": [
+      "schools.jobs180.com (secondary)"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "Bachelor of Technology and Livelihood Education (Home Economics) (EDU07); BTVTEd major sa Garments, Fashion and Design at Food Service and Management (EDU08); Physical Education (EDU04); BSEd majors sa Filipino, English at Social Studies (EDU02); BS Agribusiness; Public Administration (SOC09); Entrepreneurship (BUS06).",
+    "sourcePage": 3,
+    "sourceRow": 3,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Polangui Community\nCollege",
+      "location": "Polangui,\nAlbay",
+      "programs": "Bachelor of Technology and Livelihood Education (Home Economics)\n(EDU07); BTVTEd major sa Garments, Fashion and Design at Food Service\nand Management (EDU08); Physical Education (EDU04); BSEd majors sa\nFilipino, English at Social Studies (EDU02); BS Agribusiness; Public\nAdministration (SOC09); Entrepreneurship (BUS06).",
+      "sources": "schools.jobs180.com\n(secondary)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-024",
+    "school": "Libon Community College",
+    "campus": null,
+    "location": "Libon, Albay",
+    "province": "Albay",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU03",
+      "EDU01"
+    ],
+    "programNotes": [
+      "BSEd na may mga major (English, Filipino, Mathematics, Social Studies, Values Education, Science)",
+      "BS Agribusiness",
+      "BTVTEd na may major sa Food and Service Management at isa pang major na naka-abbreviate lang na \"AT\" sa source."
+    ],
+    "sourceNames": [
+      "LICOM student handbook at course modules (Studocu/Course Hero, secondary)"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "partial",
+      "major-only"
+    ],
+    "programText": "Early Childhood Education (EDU03), Elementary Education (EDU01), BSEd na may mga major (English, Filipino, Mathematics, Social Studies, Values Education, Science), BS Agribusiness, at BTVTEd na may major sa Food and Service Management at isa pang major na naka-abbreviate lang na \"AT\" sa source. Lumang source ang nagsasabing BEEd lang ang offer, kaya mas pinaniwalaan ko ang mas bagong student handbook at modules.",
+    "sourcePage": 3,
+    "sourceRow": 4,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Libon Community\nCollege",
+      "location": "Libon, Albay",
+      "programs": "Early Childhood Education (EDU03), Elementary Education (EDU01), BSEd\nna may mga major (English, Filipino, Mathematics, Social Studies, Values\nEducation, Science), BS Agribusiness, at BTVTEd na may major sa Food\nand Service Management at isa pang major na naka-abbreviate lang na \"AT\"\nsa source. Lumang source ang nagsasabing BEEd lang ang offer, kaya mas\npinaniwalaan ko ang mas bagong student handbook at modules.",
+      "sources": "LICOM student\nhandbook at course\nmodules\n(Studocu/Course Hero,\nsecondary)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-025",
+    "school": "Oas Community College",
+    "campus": null,
+    "location": "Oas, Albay",
+    "province": "Albay",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU01",
+      "EDU02"
+    ],
+    "programNotes": [
+      "May TESDA courses din sa Bartending, Bookkeeping at Food and Beverage Services."
+    ],
+    "sourceNames": [
+      "Studocu modules (mahinang source)",
+      "tes datrainingcourses.com"
+    ],
+    "sourceLevel": "weak",
+    "flags": [
+      "derived-location",
+      "weak-source",
+      "unverified",
+      "partial",
+      "major-only"
+    ],
+    "programText": "Mahina ang source. Mga course module lang ang nakita ko para sa Elementary Education (EDU01) at BSEd major sa Science (EDU02). Hindi kumpirmado ang buong list. May TESDA courses din sa Bartending, Bookkeeping at Food and Beverage Services.",
+    "sourcePage": 3,
+    "sourceRow": 5,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Oas Community\nCollege",
+      "location": "Oas, Albay",
+      "programs": "Mahina ang source. Mga course module lang ang nakita ko para sa\nElementary Education (EDU01) at BSEd major sa Science (EDU02). Hindi\nkumpirmado ang buong list. May TESDA courses din sa Bartending,\nBookkeeping at Food and Beverage Services.",
+      "sources": "Studocu modules\n(mahinang source); tes\ndatrainingcourses.com"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-026",
+    "school": "Tiwi Community College",
+    "campus": null,
+    "location": "Tiwi, Albay",
+    "province": "Albay",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU01",
+      "EDU02",
+      "BUS07"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "ijisrt.com research paper (2025)",
+      "Course Hero module"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location"
+    ],
+    "programText": "Elementary Education (EDU01), Secondary Education (EDU02) at Office Administration (BUS07). Ayon ito sa research paper tungkol sa 1994 na simula ng college at sa course module na nakalista ang BSEd, BEEd at BSOA.",
+    "sourcePage": 3,
+    "sourceRow": 6,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Tiwi Community\nCollege",
+      "location": "Tiwi, Albay",
+      "programs": "Elementary Education (EDU01), Secondary Education (EDU02) at Office\nAdministration (BUS07). Ayon ito sa research paper tungkol sa 1994 na\nsimula ng college at sa course module na nakalista ang BSEd, BEEd at\nBSOA.",
+      "sources": "ijisrt.com research\npaper (2025); Course\nHero module"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-027",
+    "school": "San Jose Community College",
+    "campus": null,
+    "location": "Malilipot, Albay",
+    "province": "Albay",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU01",
+      "EDU06"
+    ],
+    "programNotes": [
+      "BSEd",
+      "may College of Business Administration na hindi pinangalanan ang mga program.",
+      "unang dalawang taon ng BSEd, BEEd, BA at Diploma in Agricultural Technology."
+    ],
+    "sourceNames": [
+      "albay.gov.ph",
+      "DepEd DO 56 s.1993",
+      "Studocu"
+    ],
+    "sourceLevel": "weak",
+    "flags": [
+      "derived-location",
+      "weak-source",
+      "unverified",
+      "partial",
+      "outdated"
+    ],
+    "programText": "Partial lang: BSEd, Elementary Education (EDU01), Culture and Arts Education (EDU06), at may College of Business Administration na hindi pinangalanan ang mga program. Noong 1993, pinahintulutan ng DepEd ang unang dalawang taon ng BSEd, BEEd, BA at Diploma in Agricultural Technology.",
+    "sourcePage": 4,
+    "sourceRow": 1,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "San Jose Community\nCollege",
+      "location": "Malilipot,\nAlbay",
+      "programs": "Partial lang: BSEd, Elementary Education (EDU01), Culture and Arts\nEducation (EDU06), at may College of Business Administration na hindi\npinangalanan ang mga program. Noong 1993, pinahintulutan ng DepEd ang\nunang dalawang taon ng BSEd, BEEd, BA at Diploma in Agricultural\nTechnology.",
+      "sources": "albay.gov.ph; DepEd\nDO 56 s.1993;\nStudocu"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-028",
+    "school": "Community College of Manito",
+    "campus": null,
+    "location": "Manito, Albay",
+    "province": "Albay",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU02",
+      "EDU01",
+      "EDU05"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "CHED RO V directory (opisyal)"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "BSEd majors sa Mathematics, Filipino at English (EDU02); Elementary Education (EDU01); BS Exercise and Sports Science major sa Fitness and Sports Coaching (EDU05). Kabuuang 5 program.",
+    "sourcePage": 4,
+    "sourceRow": 2,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Community College of\nManito",
+      "location": "Manito, Albay",
+      "programs": "BSEd majors sa Mathematics, Filipino at English (EDU02); Elementary\nEducation (EDU01); BS Exercise and Sports Science major sa Fitness and\nSports Coaching (EDU05). Kabuuang 5 program.",
+      "sources": "CHED RO V directory\n(opisyal)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-029",
+    "school": "Donsol Community College",
+    "campus": null,
+    "location": "Donsol, Sorsogon",
+    "province": "Sorsogon",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU08"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "classmate.ph (secondary)"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "Bachelor of Technical-Vocational Teacher Education (EDU08) na may major sa Garments, Fashion and Design; Food Service and Management; Electronics Technology; Automotive Technology; at Electrical Technology.",
+    "sourcePage": 4,
+    "sourceRow": 3,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Donsol Community\nCollege",
+      "location": "Donsol,\nSorsogon",
+      "programs": "Bachelor of Technical-Vocational Teacher Education (EDU08) na may major\nsa Garments, Fashion and Design; Food Service and Management;\nElectronics Technology; Automotive Technology; at Electrical Technology.",
+      "sources": "classmate.ph\n(secondary)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-030",
+    "school": "Baao Community College (ngayon Rinconada State College)",
+    "campus": null,
+    "location": "Baao, Camarines Sur",
+    "province": "Camarines Sur",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU02",
+      "EDU01",
+      "ICT02",
+      "ENG13"
+    ],
+    "programNotes": [
+      "Bachelor of Engineering Technology (Automotive at Electronics)",
+      "Associate in Computer Technology."
+    ],
+    "sourceNames": [
+      "camarinessur.gov.ph (LGU press release, June 2026)",
+      "RA 12294"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "BSEd majors sa English, Science, Filipino, Values Education, Social Studies at Mathematics (EDU02); Elementary Education (EDU01); BS Information Systems (ICT02); Bachelor of Engineering Technology (Automotive at Electronics); BS Industrial Technology (Automotive at Electronics) (ENG13); Associate in Computer Technology. Ginawang Rinconada State College ng RA 12294 (Sept 15, 2025), pero magiging epektibo lang ito kapag idineklara ng CHED na pasado na sa requirements.",
+    "sourcePage": 4,
+    "sourceRow": 4,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Baao Community\nCollege (ngayon\nRinconada State\nCollege)",
+      "location": "Baao,\nCamarines\nSur",
+      "programs": "BSEd majors sa English, Science, Filipino, Values Education, Social Studies\nat Mathematics (EDU02); Elementary Education (EDU01); BS Information\nSystems (ICT02); Bachelor of Engineering Technology (Automotive at\nElectronics); BS Industrial Technology (Automotive at Electronics) (ENG13);\nAssociate in Computer Technology. Ginawang Rinconada State College ng\nRA 12294 (Sept 15, 2025), pero magiging epektibo lang ito kapag idineklara\nng CHED na pasado na sa requirements.",
+      "sources": "camarinessur.gov.ph\n(LGU press release,\nJune 2026); RA 12294"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-031",
+    "school": "Calabanga Community College",
+    "campus": null,
+    "location": "Calabanga, Camarines Sur",
+    "province": "Camarines Sur",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU02",
+      "BUS06",
+      "EDU03",
+      "EDU04"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "schools.jobs180.com (history ng college)"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "BSEd majors sa Biological Science, English, Social Studies at Mathematics (EDU02); BS Entrepreneurship (BUS06); Early Childhood Education (EDU03); Physical Education (EDU04).",
+    "sourcePage": 4,
+    "sourceRow": 5,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Calabanga\nCommunity College",
+      "location": "Calabanga,\nCamarines\nSur",
+      "programs": "BSEd majors sa Biological Science, English, Social Studies at Mathematics\n(EDU02); BS Entrepreneurship (BUS06); Early Childhood Education\n(EDU03); Physical Education (EDU04).",
+      "sources": "schools.jobs180.com\n(history ng college)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-032",
+    "school": "Gov. Mariano E. Villafuerte Community College (GMVCC)",
+    "campus": "Libmanan",
+    "location": "Libmanan, Camarines Sur",
+    "province": "Camarines Sur",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU08"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "camarinessur.gov.ph (press release 2022)",
+      "course syllabus"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "BTVTEd (EDU08) na may major sa Automotive, Electrical at Electronics Technology.",
+    "sourcePage": 4,
+    "sourceRow": 6,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Gov. Mariano E.\nVillafuerte Community\nCollege (GMVCC) -\nLibmanan",
+      "location": "Libmanan,\nCamarines\nSur",
+      "programs": "BTVTEd (EDU08) na may major sa Automotive, Electrical at Electronics\nTechnology.",
+      "sources": "camarinessur.gov.ph\n(press release 2022);\ncourse syllabus"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-033",
+    "school": "GMVCC",
+    "campus": "Garchitorena",
+    "location": "Garchitorena, Camarines Sur",
+    "province": "Camarines Sur",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU08",
+      "BUS06"
+    ],
+    "programNotes": [
+      "BS Agribusiness"
+    ],
+    "sourceNames": [
+      "camarinessur.gov.ph (press release, July 2025)"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "BS Agribusiness; BTVTEd (EDU08) na may major sa Computer Hardware Servicing at Automotive Technology; BS Entrepreneurship (BUS06).",
+    "sourcePage": 4,
+    "sourceRow": 7,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "GMVCC -\nGarchitorena",
+      "location": "Garchitorena,\nCamarines\nSur",
+      "programs": "BS Agribusiness; BTVTEd (EDU08) na may major sa Computer Hardware\nServicing at Automotive Technology; BS Entrepreneurship (BUS06).",
+      "sources": "camarinessur.gov.ph\n(press release, July\n2025)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-034",
+    "school": "GMVCC",
+    "campus": "Siruma",
+    "location": "Siruma, Camarines Sur",
+    "province": "Camarines Sur",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "AGR03",
+      "EDU08"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "bicolmail.net (balita, 2018)"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "outdated",
+      "major-only"
+    ],
+    "programText": "Noong pagbubukas nito (2018): BS Fisheries (AGR03) at BTVTEd (EDU08) na may major sa Automotive, Heating and Ventilating, Computer Hardware Servicing at Computer Programming. Lumang impormasyon ito, maaaring nagbago na.",
+    "sourcePage": 4,
+    "sourceRow": 8,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "GMVCC - Siruma",
+      "location": "Siruma,\nCamarines\nSur",
+      "programs": "Noong pagbubukas nito (2018): BS Fisheries (AGR03) at BTVTEd (EDU08)\nna may major sa Automotive, Heating and Ventilating, Computer Hardware\nServicing at Computer Programming. Lumang impormasyon ito, maaaring\nnagbago na.",
+      "sources": "bicolmail.net (balita,\n2018)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-035",
+    "school": "Caramoan Community College",
+    "campus": null,
+    "location": "Caramoan, Camarines Sur",
+    "province": "Camarines Sur",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU01",
+      "EDU02",
+      "SOC04"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "Wikipedia (Caramoan Community College)"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "Elementary Education (EDU01), BSEd major sa English (EDU02), BA Political Science (SOC04).",
+    "sourcePage": 4,
+    "sourceRow": 9,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Caramoan Community\nCollege",
+      "location": "Caramoan,\nCamarines\nSur",
+      "programs": "Elementary Education (EDU01), BSEd major sa English (EDU02), BA\nPolitical Science (SOC04).",
+      "sources": "Wikipedia (Caramoan\nCommunity College)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-036",
+    "school": "City College of Naga",
+    "campus": null,
+    "location": "Naga City",
+    "province": "Camarines Sur",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [],
+    "programNotes": [
+      "Kilala sa Midwifery program. May TESDA courses sa Automotive Servicing NC I at NC II at Slaughtering Operations (Swine) NC II. Wala akong nakitang kumpletong list ng iba pang degree program."
+    ],
+    "sourceNames": [
+      "naga.gov.ph",
+      "edukasyon.ph"
+    ],
+    "sourceLevel": "weak",
+    "flags": [
+      "derived-location",
+      "weak-source",
+      "unverified",
+      "partial"
+    ],
+    "programText": "Kilala sa Midwifery program. May TESDA courses sa Automotive Servicing NC I at NC II at Slaughtering Operations (Swine) NC II. Wala akong nakitang kumpletong list ng iba pang degree program.",
+    "sourcePage": 4,
+    "sourceRow": 10,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "City College of Naga",
+      "location": "Naga City",
+      "programs": "Kilala sa Midwifery program. May TESDA courses sa Automotive Servicing\nNC I at NC II at Slaughtering Operations (Swine) NC II. Wala akong nakitang\nkumpletong list ng iba pang degree program.",
+      "sources": "naga.gov.ph;\nedukasyon.ph"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-037",
+    "school": "Aroroy Municipal College",
+    "campus": null,
+    "location": "Aroroy, Masbate",
+    "province": "Masbate",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [
+      "EDU08",
+      "BUS06"
+    ],
+    "programNotes": [
+      "Teacher Certificate Program (AY 2022-2023)."
+    ],
+    "sourceNames": [
+      "classmate.ph (secondary)"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "major-only"
+    ],
+    "programText": "BTVTEd (EDU08) major sa Civil and Construction Technology; BS Entrepreneurship (BUS06); Teacher Certificate Program (AY 2022-2023).",
+    "sourcePage": 4,
+    "sourceRow": 11,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Aroroy Municipal\nCollege",
+      "location": "Aroroy,\nMasbate",
+      "programs": "BTVTEd (EDU08) major sa Civil and Construction Technology; BS\nEntrepreneurship (BUS06); Teacher Certificate Program (AY 2022-2023).",
+      "sources": "classmate.ph\n(secondary)"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-038",
+    "school": "San Pascual Polytechnic College",
+    "campus": null,
+    "location": "San Pascual, Masbate",
+    "province": "Masbate",
+    "type": "community-college",
+    "group": "bicol",
+    "courseIds": [],
+    "programNotes": [
+      "Walang degree program na nakita. TESDA short courses lang ang lumabas (Bread and Pastry Production NC II at Hilot NC II). Kailangan itong i-confirm sa CHED RO V."
+    ],
+    "sourceNames": [
+      "tesdatrainingcourses.c om"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "derived-location",
+      "unverified"
+    ],
+    "programText": "Walang degree program na nakita. TESDA short courses lang ang lumabas (Bread and Pastry Production NC II at Hilot NC II). Kailangan itong i-confirm sa CHED RO V.",
+    "sourcePage": 4,
+    "sourceRow": 12,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "San Pascual\nPolytechnic College",
+      "location": "San Pascual,\nMasbate",
+      "programs": "Walang degree program na nakita. TESDA short courses lang ang lumabas\n(Bread and Pastry Production NC II at Hilot NC II). Kailangan itong i-confirm\nsa CHED RO V.",
+      "sources": "tesdatrainingcourses.c\nom"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-039",
+    "school": "UP Diliman",
+    "campus": "Diliman",
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "SCI04",
+      "SCI05",
+      "SCI10",
+      "SOC06",
+      "SOC08",
+      "ART05",
+      "ART06",
+      "ENG10",
+      "ENG11",
+      "ENG09",
+      "SOC18",
+      "SOC10"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "upcat.up.edu.ph +3"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "BS Physics (SCI04), Applied Physics (SCI05), Geology (SCI10), BA History (SOC06), Anthropology (SOC08), Landscape Architecture (ART05), Architecture (ART06). Materials Engineering (ENG10), Metallurgical Engineering (ENG11), Mining Engineering (ENG09). BA Filipino (SOC18). UP SLIS: Bachelor of Library and Information Science (SOC10).",
+    "sourcePage": 5,
+    "sourceRow": 1,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "UP Diliman",
+      "location": null,
+      "programs": "BS Physics (SCI04), Applied Physics (SCI05), Geology (SCI10), BA History (SOC06),\nAnthropology (SOC08), Landscape Architecture (ART05), Architecture (ART06). Materials\nEngineering (ENG10), Metallurgical Engineering (ENG11), Mining Engineering (ENG09). BA\nFilipino (SOC18). UP SLIS: Bachelor of Library and Information Science (SOC10).",
+      "sources": "upcat.up.edu.ph +3"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-040",
+    "school": "UP Los Banos",
+    "campus": "Los Banos",
+    "location": null,
+    "province": "Laguna",
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "SCI07",
+      "SCI06",
+      "SCI08",
+      "ENG07",
+      "HLT10"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "uplb"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified"
+    ],
+    "programText": "BS Applied Mathematics (SCI07), Mathematics (SCI06), Statistics (SCI08), Industrial Engineering (ENG07), Doctor of Veterinary Medicine (HLT10), at iba pa.",
+    "sourcePage": 5,
+    "sourceRow": 2,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "UP Los Banos",
+      "location": null,
+      "programs": "BS Applied Mathematics (SCI07), Mathematics (SCI06), Statistics (SCI08), Industrial Engineering\n(ENG07), Doctor of Veterinary Medicine (HLT10), at iba pa.",
+      "sources": "uplb"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-041",
+    "school": "UP Manila",
+    "campus": "Manila",
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "HLT05",
+      "HLT04",
+      "HLT07",
+      "HLT06"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "upm"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "unverified",
+      "new-program"
+    ],
+    "programText": "BS Occupational Therapy (HLT05), Physical Therapy (HLT04), Public Health (HLT07). BS Radiologic Technology (HLT06), bagong bukas.",
+    "sourcePage": 5,
+    "sourceRow": 3,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "UP Manila",
+      "location": null,
+      "programs": "BS Occupational Therapy (HLT05), Physical Therapy (HLT04), Public Health (HLT07). BS\nRadiologic Technology (HLT06), bagong bukas.",
+      "sources": "upm"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-042",
+    "school": "University of Santo Tomas",
+    "campus": "Manila",
+    "location": "Manila",
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "ART01",
+      "ART04",
+      "SOC10"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "Wikipedia, bachelorsportal"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "Bachelor of Fine Arts (ART01), BS Interior Design (ART04). Bachelor of Library and Information Science (SOC10).",
+    "sourcePage": 5,
+    "sourceRow": 4,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "University of Santo\nTomas (Manila)",
+      "location": null,
+      "programs": "Bachelor of Fine Arts (ART01), BS Interior Design (ART04). Bachelor of Library and Information\nScience (SOC10).",
+      "sources": "Wikipedia,\nbachelorsportal"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-043",
+    "school": "Ateneo de Manila University",
+    "campus": null,
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "SCI09"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "ateneo"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "BS Environmental Science (SCI09).",
+    "sourcePage": 5,
+    "sourceRow": 5,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Ateneo de Manila\nUniversity",
+      "location": null,
+      "programs": "BS Environmental Science (SCI09).",
+      "sources": "ateneo"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-044",
+    "school": "De La Salle-College of Saint Benilde",
+    "campus": null,
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "ART03"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "benilde"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "BA Multimedia Arts (ART03).",
+    "sourcePage": 5,
+    "sourceRow": 6,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "De La Salle-College\nof Saint Benilde",
+      "location": null,
+      "programs": "BA Multimedia Arts (ART03).",
+      "sources": "benilde"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-045",
+    "school": "De La Salle University",
+    "campus": null,
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "SOC03"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "dlsu"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "Bachelor in Human Services (SOC03).",
+    "sourcePage": 5,
+    "sourceRow": 7,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "De La Salle\nUniversity",
+      "location": null,
+      "programs": "Bachelor in Human Services (SOC03).",
+      "sources": "dlsu"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-046",
+    "school": "Ateneo de Davao University",
+    "campus": null,
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "BUS04"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "adzu"
+    ],
+    "sourceLevel": "weak",
+    "flags": [
+      "weak-source",
+      "unverified"
+    ],
+    "programText": "BS Internal Auditing (BUS04).",
+    "sourcePage": 5,
+    "sourceRow": 8,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Ateneo de Davao\nUniversity",
+      "location": null,
+      "programs": "BS Internal Auditing (BUS04).",
+      "sources": "adzu"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-047",
+    "school": "Northwestern University",
+    "campus": "Laoag",
+    "location": "Laoag",
+    "province": "Ilocos Norte",
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "BUS02",
+      "BUS07",
+      "BUS09",
+      "BUS10",
+      "SOC11",
+      "HLT03",
+      "HLT04",
+      "ENG14",
+      "ENG15"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "nwu"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "derived-location",
+      "unverified"
+    ],
+    "programText": "BS Management Accounting (BUS02), Office Administration (BUS07), Tourism Management (BUS09), Hospitality Management (BUS10), Criminology (SOC11), Medical Laboratory Science (HLT03), Physical Therapy (HLT04), Marine Engineering (ENG14), Marine Transportation (ENG15).",
+    "sourcePage": 5,
+    "sourceRow": 9,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Northwestern\nUniversity (Laoag)",
+      "location": null,
+      "programs": "BS Management Accounting (BUS02), Office Administration (BUS07), Tourism Management\n(BUS09), Hospitality Management (BUS10), Criminology (SOC11), Medical Laboratory Science\n(HLT03), Physical Therapy (HLT04), Marine Engineering (ENG14), Marine Transportation\n(ENG15).",
+      "sources": "nwu"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-048",
+    "school": "Davao Doctors College",
+    "campus": null,
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "HLT06",
+      "HLT05",
+      "HLT04"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "Wikipedia"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "BS Radiologic Technology (HLT06), Occupational Therapy (HLT05), Physical Therapy (HLT04).",
+    "sourcePage": 5,
+    "sourceRow": 10,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Davao Doctors\nCollege",
+      "location": null,
+      "programs": "BS Radiologic Technology (HLT06), Occupational Therapy (HLT05), Physical Therapy (HLT04).",
+      "sources": "Wikipedia"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-049",
+    "school": "Philippine Merchant Marine Academy",
+    "campus": null,
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "ENG15",
+      "ENG14"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "Wikipedia"
+    ],
+    "sourceLevel": "secondary",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "BS Marine Transportation (ENG15), Marine Engineering (ENG14).",
+    "sourcePage": 5,
+    "sourceRow": 11,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Philippine Merchant\nMarine Academy",
+      "location": null,
+      "programs": "BS Marine Transportation (ENG15), Marine Engineering (ENG14).",
+      "sources": "Wikipedia"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-050",
+    "school": "Far Eastern University, Philippine Women's University, University of San Carlos",
+    "campus": null,
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "HLT08"
+    ],
+    "programNotes": [],
+    "sourceNames": [
+      "feu"
+    ],
+    "sourceLevel": "official",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "Parehong nag-aalok ng BS Nutrition and Dietetics (HLT08). Sa FEU: four-year BSND program na sumusunod sa CMO 14 s.2017.",
+    "sourcePage": 5,
+    "sourceRow": 12,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Far Eastern\nUniversity, Philippine\nWomen's University,\nUniversity of San\nCarlos",
+      "location": null,
+      "programs": "Parehong nag-aalok ng BS Nutrition and Dietetics (HLT08). Sa FEU: four-year BSND program na\nsumusunod sa CMO 14 s.2017.",
+      "sources": "feu"
+    },
+    "excludedMappings": []
+  },
+  {
+    "id": "SCH-051",
+    "school": "Tarlac State University, Eastern Visayas State University, St. Alexius College",
+    "campus": null,
+    "location": null,
+    "province": null,
+    "type": "national",
+    "group": "national",
+    "courseIds": [
+      "SOC03"
+    ],
+    "programNotes": [],
+    "sourceNames": [],
+    "sourceLevel": "none",
+    "flags": [
+      "unverified"
+    ],
+    "programText": "Bachelor in Human Services (SOC03).",
+    "sourcePage": 5,
+    "sourceRow": 13,
+    "sourceHeader": "Bersyon 3 - na-update noong October 25, 2026.",
+    "sourceCells": {
+      "schoolCampus": "Tarlac State\nUniversity, Eastern\nVisayas State\nUniversity, St.\nAlexius College",
+      "location": null,
+      "programs": "Bachelor in Human Services (SOC03).",
+      "sources": ""
+    },
+    "excludedMappings": []
+  }
+]

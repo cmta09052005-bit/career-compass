@@ -25,7 +25,7 @@ const TABS = [
   { id: "aid", label: "Financial Aid", asset: "/icons/career-compass/course-aid-purse.svg" },
 ];
 
-export default function FieldJournal({ course, categoryCode, children }) {
+export default function FieldJournal({ course, children }) {
   const [active, setActive] = useState(0);
   const [comparisonNotice, setComparisonNotice] = useState("");
   const journal = useRef(null);
@@ -38,9 +38,16 @@ export default function FieldJournal({ course, categoryCode, children }) {
   const panels = Children.toArray(children);
 
   useEffect(() => {
-    if (!isReady || session.journalViews?.[course.courseId]?.includes(0)) return;
-    updateSession({ journalViews: { ...session.journalViews, [course.courseId]: [0, ...(session.journalViews?.[course.courseId] || [])] } });
-  }, [isReady, session.journalViews, course.courseId, updateSession]);
+    const selectLinkedTab = () => setActive(({ overview: 0, schools: 2, careers: 3 })[window.location.hash.slice(1)] ?? 0);
+    selectLinkedTab();
+    window.addEventListener("hashchange", selectLinkedTab);
+    return () => window.removeEventListener("hashchange", selectLinkedTab);
+  }, [course.courseId]);
+
+  useEffect(() => {
+    if (!isReady || session.journalViews?.[course.courseId]?.includes(active)) return;
+    updateSession({ journalViews: { ...session.journalViews, [course.courseId]: [active, ...(session.journalViews?.[course.courseId] || [])] } });
+  }, [isReady, session.journalViews, course.courseId, updateSession, active]);
 
   useGSAP(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -76,7 +83,7 @@ export default function FieldJournal({ course, categoryCode, children }) {
       <Localized as="header" className="journal-header">
         <Localized as="p" className="map-ribbon">Discovered Career Path</Localized>
         <Localized as="h1">{course.courseName}</Localized>
-        <Localized as="p" className="journal-category">{course.category} · {course.courseId}</Localized>
+        <Localized as="p" className="journal-category">{course.group} · {course.courseId}</Localized>
         <div className="journal-tools">
           <Localized as="button" type="button" className="journal-compare" disabled={!isReady} aria-pressed={selected} onClick={toggleComparison}>{selected ? "Added to Compare" : "Add to Compare"}</Localized>
           <Localized as="div" className="journal-bookmark" role="status" aria-label={`${viewed.length} of 6 tabs viewed`}><Localized as="span">{viewed.length} of 6 explored</Localized><Localized as="div" aria-hidden="true">{TABS.map((tab, index) => <i key={tab.id} data-viewed={viewed.includes(index)} />)}</Localized></Localized>
@@ -89,7 +96,7 @@ export default function FieldJournal({ course, categoryCode, children }) {
         </Localized>)}
       </Localized>
       <Localized as="div" className="journal-pages">
-        <div className="journal-watermark" aria-hidden="true"><StatementIcon category={categoryCode} /></div>
+        <div className="journal-watermark" aria-hidden="true"><StatementIcon icon="neutral" /></div>
         {TABS.map((tab, index) => <Localized as="section" ref={element => { pages.current[index] = element; }} key={tab.id} id={`journal-panel-${tab.id}`} className="journal-page" role="tabpanel" aria-labelledby={`journal-tab-${tab.id}`} tabIndex={0} hidden={active !== index}>{panels[index]}</Localized>)}
       </Localized>
       <footer className="journal-footer"><Button label="Back to Results" href="/results" variant="secondary" /><Localized as="button" type="button" className="journal-aid-link" onClick={() => openTab(5, true)}>Need help with school expenses?</Localized></footer>

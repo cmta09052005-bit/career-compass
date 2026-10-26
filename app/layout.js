@@ -22,7 +22,7 @@ const playfair = Playfair_Display({
 export const metadata = {
   title: "Career Compass",
   description:
-    "A web-based decision support system to help Senior High School students explore college courses and career paths.",
+    "Explore 85 college courses through 8 interest questions, 15 skill statements and 4 academic steps. See your top 5 matches and explore every course.",
 };
 
 export default function RootLayout({ children }) {

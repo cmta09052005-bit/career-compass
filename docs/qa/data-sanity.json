@@ -1,0 +1,4165 @@
+{
+  "courses": 85,
+  "careers": 463,
+  "duplicateCareerTitles": [],
+  "salaryFlags": [
+    {
+      "course": "ICT03",
+      "title": "machine learning or data roles",
+      "salaryRange": "₱55,000–₱132,000/month",
+      "low": 55000,
+      "high": 132000,
+      "ratio": 2.4,
+      "flags": [
+        "high-exceeds-100000"
+      ]
+    },
+    {
+      "course": "ENG04",
+      "title": "automation support",
+      "salaryRange": "₱53,000–₱127,000/month",
+      "low": 53000,
+      "high": 127000,
+      "ratio": 2.3962264150943398,
+      "flags": [
+        "high-exceeds-100000"
+      ]
+    },
+    {
+      "course": "ENG15",
+      "title": "seafarer career pathway toward deck officer or ship captain",
+      "salaryRange": "₱52,000–₱124,000/month",
+      "low": 52000,
+      "high": 124000,
+      "ratio": 2.3846153846153846,
+      "flags": [
+        "high-exceeds-100000"
+      ]
+    }
+  ],
+  "unparsedSalaries": [],
+  "careerCountOutliers": [
+    {
+      "course": "ENG14",
+      "careers": 3
+    },
+    {
+      "course": "ENG15",
+      "careers": 3
+    },
+    {
+      "course": "HLT03",
+      "careers": 2
+    },
+    {
+      "course": "HLT06",
+      "careers": 3
+    },
+    {
+      "course": "EDU01",
+      "careers": 3
+    }
+  ],
+  "requiredDetailEmpty": [],
+  "encodingCandidates": [],
+  "emptyFields": {
+    "count": 603,
+    "byFile": {
+      "course-details.json": {
+        "null": 403,
+        "empty-string": 0,
+        "empty-array": 0,
+        "empty-object": 0
+      },
+      "items.json": {
+        "null": 11,
+        "empty-string": 0,
+        "empty-array": 0,
+        "empty-object": 0
+      },
+      "pilot-schools.json": {
+        "null": 0,
+        "empty-string": 0,
+        "empty-array": 1,
+        "empty-object": 0
+      },
+      "salary-sources.json": {
+        "null": 0,
+        "empty-string": 10,
+        "empty-array": 0,
+        "empty-object": 0
+      },
+      "schools.json": {
+        "null": 91,
+        "empty-string": 1,
+        "empty-array": 86,
+        "empty-object": 0
+      }
+    },
+    "rows": [
+      {
+        "file": "course-details.json",
+        "path": "$.BUS01.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS01.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS01.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS02.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS02.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS02.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS02.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS03.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS03.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS03.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS03.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS03.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS03.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS04.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS04.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS04.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS04.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS04.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS04.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS05.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS05.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS05.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS05.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS05.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS05.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS05.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS06.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS06.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS06.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS06.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS06.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS06.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS07.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS07.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS07.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS07.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS07.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS07.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS07.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS08.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS08.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS08.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS08.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS08.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS09.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS09.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS09.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS09.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS09.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS09.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS10.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS10.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS10.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS10.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS10.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS10.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.BUS10.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT01.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT01.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT01.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT01.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT01.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT01.careers.7.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT02.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT02.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT02.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT02.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT03.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT03.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT03.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT03.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT03.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ICT03.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG01.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG01.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG02.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG02.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG03.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG03.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG03.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG03.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG04.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG04.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG04.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG04.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG04.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG05.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG05.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG05.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG05.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG05.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG05.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG05.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG06.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG06.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG06.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG06.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG06.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG07.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG07.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG07.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG07.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG07.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG07.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG07.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG08.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG08.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG08.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG08.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG09.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG09.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG09.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG09.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG09.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG10.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG10.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG10.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG10.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG10.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG10.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG11.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG11.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG11.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG11.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG11.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG11.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG12.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG12.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG12.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG12.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG12.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG12.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG13.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG13.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG13.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG13.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG13.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG14.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG14.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG15.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ENG15.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI01.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI01.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI02.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI02.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI03.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI03.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI03.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI03.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI04.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI04.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI04.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI04.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI05.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI05.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI05.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI05.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI06.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI06.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI06.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI06.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI06.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI07.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI07.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI07.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI07.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI07.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI07.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI08.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI08.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI08.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI08.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI08.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI08.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI08.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI09.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI09.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI09.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI09.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI09.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI09.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI10.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI10.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI10.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI10.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI11.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI11.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI11.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SCI11.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR01.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR01.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR01.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR02.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR02.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR03.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR03.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR03.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR03.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR03.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR03.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR04.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR04.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR04.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR04.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR04.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.AGR04.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT02.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT04.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT04.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT05.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT05.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT05.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT06.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT07.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT07.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT07.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT07.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT07.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT07.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT08.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT08.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT08.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT08.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT09.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT09.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT10.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT10.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT10.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.HLT10.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU03.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU03.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU03.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU04.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU04.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU05.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU05.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU05.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU05.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU06.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU06.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU06.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU06.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU07.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU07.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU07.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU08.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU08.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.EDU08.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC01.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC01.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC01.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC02.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC03.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC03.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC03.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC03.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC03.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC03.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC04.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC04.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC04.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC04.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC04.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC05.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC05.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC05.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC05.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC05.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC06.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC06.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC06.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC06.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC06.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC06.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC07.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC07.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC07.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC08.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC08.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC08.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC08.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC08.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC09.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC09.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC09.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC09.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC09.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC09.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC10.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC10.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC10.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC10.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC11.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC11.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC12.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC12.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC12.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC12.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC12.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC12.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC13.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC13.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC13.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC13.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC13.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC14.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC14.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC14.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC14.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC14.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC14.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC14.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC15.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC15.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC15.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC15.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC15.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC16.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC16.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC16.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC16.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC16.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC16.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC17.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC17.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC17.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC17.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC17.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC18.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC18.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC18.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC18.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.SOC18.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART01.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART01.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART01.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART01.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART01.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART02.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART02.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART02.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART02.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART02.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART02.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART03.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART03.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART03.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART03.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART03.careers.4.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART03.careers.5.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART03.careers.6.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART04.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART04.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART04.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART04.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART05.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART05.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART05.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART05.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART06.careers.0.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART06.careers.1.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART06.careers.2.notes",
+        "kind": "null"
+      },
+      {
+        "file": "course-details.json",
+        "path": "$.ART06.careers.3.notes",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.interests.0.question",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.interests.1.question",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.interests.2.question",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.interests.3.question",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.interests.4.question",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.interests.5.question",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.interests.6.question",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.interests.7.question",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.electives.70.section",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.electives.70.group",
+        "kind": "null"
+      },
+      {
+        "file": "items.json",
+        "path": "$.gwaTiers.5.lowerInclusive",
+        "kind": "null"
+      },
+      {
+        "file": "pilot-schools.json",
+        "path": "$",
+        "kind": "empty-array"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.0.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.1.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.2.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.3.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.4.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.5.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.6.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.7.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.8.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "salary-sources.json",
+        "path": "$.references.9.suffix",
+        "kind": "empty-string"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.0.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.0.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.0.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.1.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.1.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.1.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.2.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.2.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.2.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.3.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.3.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.3.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.4.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.4.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.4.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.5.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.5.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.5.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.6.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.6.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.6.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.7.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.7.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.7.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.8.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.8.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.8.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.8.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.9.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.9.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.10.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.10.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.11.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.11.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.11.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.12.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.12.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.12.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.13.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.13.flags",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.13.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.13.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.14.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.14.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.14.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.15.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.15.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.15.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.16.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.16.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.16.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.16.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.16.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.17.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.17.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.17.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.17.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.17.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.18.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.18.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.18.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.19.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.19.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.19.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.20.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.20.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.20.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.21.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.21.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.22.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.22.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.23.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.23.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.24.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.24.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.25.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.25.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.25.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.26.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.26.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.27.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.27.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.27.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.28.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.28.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.28.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.29.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.29.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.30.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.30.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.30.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.31.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.31.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.32.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.33.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.33.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.34.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.34.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.34.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.35.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.35.courseIds",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.35.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.36.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.36.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.37.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.37.courseIds",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.37.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.38.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.38.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.38.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.38.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.38.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.39.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.39.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.39.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.39.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.40.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.40.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.40.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.40.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.40.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.41.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.41.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.41.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.41.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.42.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.42.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.42.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.42.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.42.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.42.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.43.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.43.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.43.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.43.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.43.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.43.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.44.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.44.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.44.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.44.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.44.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.44.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.45.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.45.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.45.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.45.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.45.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.45.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.46.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.46.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.46.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.47.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.47.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.47.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.47.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.47.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.47.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.48.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.48.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.48.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.48.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.48.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.48.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.49.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.49.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.49.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.49.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.49.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.49.excludedMappings",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.50.campus",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.50.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.50.province",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.50.programNotes",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.50.sourceNames",
+        "kind": "empty-array"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.50.sourceCells.location",
+        "kind": "null"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.50.sourceCells.sources",
+        "kind": "empty-string"
+      },
+      {
+        "file": "schools.json",
+        "path": "$.50.excludedMappings",
+        "kind": "empty-array"
+      }
+    ],
+    "interpretation": "Inventory, not errors: optional career notes, nullable locations, intentionally empty source metadata, explicit None answers and audit records are included. Required detail fields are checked separately."
+  },
+  "schoolStructuralFlags": [],
+  "schoolInventory": [
+    {
+      "id": "SCH-001",
+      "school": "Bicol University",
+      "campus": "Legazpi - West",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU06",
+        "EDU03",
+        "EDU01",
+        "EDU02",
+        "SOC13",
+        "SOC12",
+        "SOC16",
+        "SOC14",
+        "ART02",
+        "SOC17",
+        "HLT01",
+        "SCI01",
+        "SCI03",
+        "ICT03",
+        "ICT01",
+        "SCI11",
+        "EDU04",
+        "EDU05",
+        "SOC09",
+        "HLT09"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Social Sciences, Communication, and Humanities",
+        "Arts, Design, and Architecture",
+        "Health and Allied Sciences",
+        "Science and Mathematics",
+        "Computing"
+      ]
+    },
+    {
+      "id": "SCH-002",
+      "school": "Bicol University",
+      "campus": "Legazpi - East",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Albay",
+      "codedCourses": [
+        "ENG06",
+        "ENG01",
+        "ENG03",
+        "ENG08",
+        "ENG02",
+        "ENG09",
+        "ART06",
+        "ENG13",
+        "AGR04",
+        "EDU08"
+      ],
+      "courseGroups": [
+        "Engineering and Technology",
+        "Arts, Design, and Architecture",
+        "Agriculture, Fisheries, and Food",
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-003",
+      "school": "Bicol University",
+      "campus": "Daraga",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Albay",
+      "codedCourses": [
+        "SOC07",
+        "SOC04",
+        "SOC05",
+        "SOC01",
+        "SOC02",
+        "BUS01",
+        "BUS08",
+        "BUS06",
+        "BUS05"
+      ],
+      "courseGroups": [
+        "Social Sciences, Communication, and Humanities",
+        "Business and Management"
+      ]
+    },
+    {
+      "id": "SCH-004",
+      "school": "Bicol University",
+      "campus": "Guinobatan",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Albay",
+      "codedCourses": [
+        "AGR01",
+        "AGR02",
+        "ENG12",
+        "SOC15",
+        "AGR04",
+        "HLT10",
+        "EDU08"
+      ],
+      "courseGroups": [
+        "Agriculture, Fisheries, and Food",
+        "Engineering and Technology",
+        "Social Sciences, Communication, and Humanities",
+        "Health and Allied Sciences",
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-005",
+      "school": "Bicol University",
+      "campus": "Tabaco",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU02",
+        "BUS06",
+        "AGR03",
+        "AGR04",
+        "HLT01",
+        "SOC02"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Business and Management",
+        "Agriculture, Fisheries, and Food",
+        "Health and Allied Sciences",
+        "Social Sciences, Communication, and Humanities"
+      ]
+    },
+    {
+      "id": "SCH-006",
+      "school": "Bicol University",
+      "campus": "Gubat (Sorsogon)",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Sorsogon",
+      "codedCourses": [
+        "EDU01",
+        "EDU02",
+        "BUS06",
+        "BUS05"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Business and Management"
+      ]
+    },
+    {
+      "id": "SCH-007",
+      "school": "Bicol University",
+      "campus": "Polangui",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU01",
+        "EDU02",
+        "ENG05",
+        "ICT03",
+        "ENG04",
+        "BUS06",
+        "ICT02",
+        "ICT01",
+        "HLT01",
+        "EDU07",
+        "ENG13"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Engineering and Technology",
+        "Computing",
+        "Business and Management",
+        "Health and Allied Sciences"
+      ]
+    },
+    {
+      "id": "SCH-008",
+      "school": "Sorsogon State University",
+      "campus": "Bulan",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Sorsogon",
+      "codedCourses": [
+        "ICT03",
+        "ICT01",
+        "ICT02",
+        "BUS01",
+        "BUS03",
+        "SOC09",
+        "BUS06",
+        "EDU08"
+      ],
+      "courseGroups": [
+        "Computing",
+        "Business and Management",
+        "Social Sciences, Communication, and Humanities",
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-009",
+      "school": "Sorsogon State University",
+      "campus": "Magallanes",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": null,
+      "codedCourses": [
+        "SCI02"
+      ],
+      "courseGroups": [
+        "Science and Mathematics"
+      ]
+    },
+    {
+      "id": "SCH-010",
+      "school": "Sorsogon State University",
+      "campus": "Sorsogon City",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Sorsogon",
+      "codedCourses": [
+        "EDU02"
+      ],
+      "courseGroups": [
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-011",
+      "school": "Sorsogon State University",
+      "campus": "Castilla",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Sorsogon",
+      "codedCourses": [
+        "AGR01"
+      ],
+      "courseGroups": [
+        "Agriculture, Fisheries, and Food"
+      ]
+    },
+    {
+      "id": "SCH-012",
+      "school": "Camarines Sur Polytechnic Colleges (CSPC) / Polytechnic State University of Bicol (PSUB)",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "ICT01",
+        "ICT03",
+        "ICT02",
+        "SOC10",
+        "ENG01",
+        "ENG02",
+        "ENG03",
+        "ENG04",
+        "ENG05",
+        "ART06",
+        "BUS07",
+        "BUS10",
+        "BUS06",
+        "BUS09",
+        "BUS05",
+        "HLT01",
+        "EDU04",
+        "EDU06",
+        "EDU08",
+        "SOC16",
+        "SCI06",
+        "SCI07",
+        "SOC15",
+        "SOC09",
+        "SOC03"
+      ],
+      "courseGroups": [
+        "Computing",
+        "Social Sciences, Communication, and Humanities",
+        "Engineering and Technology",
+        "Arts, Design, and Architecture",
+        "Business and Management",
+        "Health and Allied Sciences",
+        "Education and Sports",
+        "Science and Mathematics"
+      ]
+    },
+    {
+      "id": "SCH-013",
+      "school": "Partido State University (ParSU)",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "EDU01",
+        "EDU02",
+        "BUS01",
+        "BUS05",
+        "BUS07",
+        "BUS06",
+        "BUS08",
+        "ENG01",
+        "ICT03",
+        "SCI06",
+        "ICT01",
+        "SOC12",
+        "SOC09",
+        "SCI01",
+        "SCI10",
+        "BUS10",
+        "BUS09",
+        "HLT08",
+        "SOC11",
+        "AGR03",
+        "SCI02",
+        "SCI09",
+        "AGR02"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Business and Management",
+        "Engineering and Technology",
+        "Computing",
+        "Science and Mathematics",
+        "Social Sciences, Communication, and Humanities",
+        "Health and Allied Sciences",
+        "Agriculture, Fisheries, and Food"
+      ]
+    },
+    {
+      "id": "SCH-014",
+      "school": "Catanduanes State University (CatSU)",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Catanduanes",
+      "codedCourses": [
+        "ENG01",
+        "ENG05",
+        "ENG04",
+        "ART06",
+        "SCI01",
+        "SCI09",
+        "SCI06",
+        "SOC04",
+        "BUS08",
+        "SOC09",
+        "SOC16",
+        "BUS01",
+        "BUS03",
+        "BUS05",
+        "BUS06",
+        "BUS04",
+        "BUS07",
+        "HLT01",
+        "HLT08",
+        "ENG13",
+        "AGR01",
+        "AGR03",
+        "EDU01",
+        "EDU02",
+        "EDU08",
+        "EDU06",
+        "EDU04",
+        "ICT02",
+        "ICT01",
+        "ICT03",
+        "SOC10"
+      ],
+      "courseGroups": [
+        "Engineering and Technology",
+        "Arts, Design, and Architecture",
+        "Science and Mathematics",
+        "Social Sciences, Communication, and Humanities",
+        "Business and Management",
+        "Health and Allied Sciences",
+        "Agriculture, Fisheries, and Food",
+        "Education and Sports",
+        "Computing"
+      ]
+    },
+    {
+      "id": "SCH-015",
+      "school": "Central Bicol State University of Agriculture (CBSUA)",
+      "campus": "Pili (main), Calabanga, Pasacao, Sipocot",
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": null,
+      "codedCourses": [
+        "HLT10",
+        "AGR04",
+        "EDU01",
+        "EDU02",
+        "AGR01",
+        "SCI01",
+        "SOC11",
+        "ICT01",
+        "SCI09"
+      ],
+      "courseGroups": [
+        "Health and Allied Sciences",
+        "Agriculture, Fisheries, and Food",
+        "Education and Sports",
+        "Science and Mathematics",
+        "Social Sciences, Communication, and Humanities",
+        "Computing"
+      ]
+    },
+    {
+      "id": "SCH-016",
+      "school": "University of Camarines Norte (UCN, dating CNSC)",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "public-suc",
+      "province": "Camarines Norte",
+      "codedCourses": [
+        "SOC15",
+        "SCI07",
+        "SOC01",
+        "SCI01",
+        "SOC16",
+        "SOC05",
+        "SOC09",
+        "BUS10",
+        "BUS01",
+        "BUS07",
+        "BUS06",
+        "BUS05",
+        "EDU02",
+        "EDU01",
+        "EDU07",
+        "EDU04",
+        "ENG01",
+        "ENG03",
+        "ENG02",
+        "AGR01",
+        "SCI09",
+        "AGR03"
+      ],
+      "courseGroups": [
+        "Social Sciences, Communication, and Humanities",
+        "Science and Mathematics",
+        "Business and Management",
+        "Education and Sports",
+        "Engineering and Technology",
+        "Agriculture, Fisheries, and Food"
+      ]
+    },
+    {
+      "id": "SCH-017",
+      "school": "UST-Legazpi",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "private",
+      "province": "Albay",
+      "codedCourses": [
+        "HLT02",
+        "HLT03",
+        "HLT01"
+      ],
+      "courseGroups": [
+        "Health and Allied Sciences"
+      ]
+    },
+    {
+      "id": "SCH-018",
+      "school": "Mariners' Polytechnic Colleges",
+      "campus": "Naga, Canaman, Legazpi",
+      "geographicGroup": "bicol",
+      "type": "private",
+      "province": null,
+      "codedCourses": [
+        "ENG15",
+        "ENG14"
+      ],
+      "courseGroups": [
+        "Engineering and Technology"
+      ]
+    },
+    {
+      "id": "SCH-019",
+      "school": "Ateneo de Naga University",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "private",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "BUS01",
+        "BUS05",
+        "BUS06",
+        "ENG01",
+        "ENG05",
+        "ENG04",
+        "ICT03",
+        "ICT02",
+        "EDU01"
+      ],
+      "courseGroups": [
+        "Business and Management",
+        "Engineering and Technology",
+        "Computing",
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-020",
+      "school": "University of Nueva Caceres",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "private",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "HLT01",
+        "ICT01",
+        "ART06",
+        "SOC11"
+      ],
+      "courseGroups": [
+        "Health and Allied Sciences",
+        "Computing",
+        "Arts, Design, and Architecture",
+        "Social Sciences, Communication, and Humanities"
+      ]
+    },
+    {
+      "id": "SCH-021",
+      "school": "Daraga Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Albay",
+      "codedCourses": [
+        "BUS06",
+        "EDU08",
+        "EDU01",
+        "EDU04",
+        "EDU06",
+        "EDU02"
+      ],
+      "courseGroups": [
+        "Business and Management",
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-022",
+      "school": "Ligao Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Albay",
+      "codedCourses": [
+        "BUS08",
+        "EDU03",
+        "EDU01",
+        "EDU02"
+      ],
+      "courseGroups": [
+        "Business and Management",
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-023",
+      "school": "Polangui Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU07",
+        "EDU08",
+        "EDU04",
+        "EDU02",
+        "SOC09",
+        "BUS06"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Social Sciences, Communication, and Humanities",
+        "Business and Management"
+      ]
+    },
+    {
+      "id": "SCH-024",
+      "school": "Libon Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU03",
+        "EDU01"
+      ],
+      "courseGroups": [
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-025",
+      "school": "Oas Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU01",
+        "EDU02"
+      ],
+      "courseGroups": [
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-026",
+      "school": "Tiwi Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU01",
+        "EDU02",
+        "BUS07"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Business and Management"
+      ]
+    },
+    {
+      "id": "SCH-027",
+      "school": "San Jose Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU01",
+        "EDU06"
+      ],
+      "courseGroups": [
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-028",
+      "school": "Community College of Manito",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Albay",
+      "codedCourses": [
+        "EDU02",
+        "EDU01",
+        "EDU05"
+      ],
+      "courseGroups": [
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-029",
+      "school": "Donsol Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Sorsogon",
+      "codedCourses": [
+        "EDU08"
+      ],
+      "courseGroups": [
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-030",
+      "school": "Baao Community College (ngayon Rinconada State College)",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "EDU02",
+        "EDU01",
+        "ICT02",
+        "ENG13"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Computing",
+        "Engineering and Technology"
+      ]
+    },
+    {
+      "id": "SCH-031",
+      "school": "Calabanga Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "EDU02",
+        "BUS06",
+        "EDU03",
+        "EDU04"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Business and Management"
+      ]
+    },
+    {
+      "id": "SCH-032",
+      "school": "Gov. Mariano E. Villafuerte Community College (GMVCC)",
+      "campus": "Libmanan",
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "EDU08"
+      ],
+      "courseGroups": [
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-033",
+      "school": "GMVCC",
+      "campus": "Garchitorena",
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "EDU08",
+        "BUS06"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Business and Management"
+      ]
+    },
+    {
+      "id": "SCH-034",
+      "school": "GMVCC",
+      "campus": "Siruma",
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "AGR03",
+        "EDU08"
+      ],
+      "courseGroups": [
+        "Agriculture, Fisheries, and Food",
+        "Education and Sports"
+      ]
+    },
+    {
+      "id": "SCH-035",
+      "school": "Caramoan Community College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Camarines Sur",
+      "codedCourses": [
+        "EDU01",
+        "EDU02",
+        "SOC04"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Social Sciences, Communication, and Humanities"
+      ]
+    },
+    {
+      "id": "SCH-036",
+      "school": "City College of Naga",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Camarines Sur",
+      "codedCourses": [],
+      "courseGroups": []
+    },
+    {
+      "id": "SCH-037",
+      "school": "Aroroy Municipal College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Masbate",
+      "codedCourses": [
+        "EDU08",
+        "BUS06"
+      ],
+      "courseGroups": [
+        "Education and Sports",
+        "Business and Management"
+      ]
+    },
+    {
+      "id": "SCH-038",
+      "school": "San Pascual Polytechnic College",
+      "campus": null,
+      "geographicGroup": "bicol",
+      "type": "community-college",
+      "province": "Masbate",
+      "codedCourses": [],
+      "courseGroups": []
+    },
+    {
+      "id": "SCH-039",
+      "school": "UP Diliman",
+      "campus": "Diliman",
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "SCI04",
+        "SCI05",
+        "SCI10",
+        "SOC06",
+        "SOC08",
+        "ART05",
+        "ART06",
+        "ENG10",
+        "ENG11",
+        "ENG09",
+        "SOC18",
+        "SOC10"
+      ],
+      "courseGroups": [
+        "Science and Mathematics",
+        "Social Sciences, Communication, and Humanities",
+        "Arts, Design, and Architecture",
+        "Engineering and Technology"
+      ]
+    },
+    {
+      "id": "SCH-040",
+      "school": "UP Los Banos",
+      "campus": "Los Banos",
+      "geographicGroup": "national",
+      "type": "national",
+      "province": "Laguna",
+      "codedCourses": [
+        "SCI07",
+        "SCI06",
+        "SCI08",
+        "ENG07",
+        "HLT10"
+      ],
+      "courseGroups": [
+        "Science and Mathematics",
+        "Engineering and Technology",
+        "Health and Allied Sciences"
+      ]
+    },
+    {
+      "id": "SCH-041",
+      "school": "UP Manila",
+      "campus": "Manila",
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "HLT05",
+        "HLT04",
+        "HLT07",
+        "HLT06"
+      ],
+      "courseGroups": [
+        "Health and Allied Sciences"
+      ]
+    },
+    {
+      "id": "SCH-042",
+      "school": "University of Santo Tomas",
+      "campus": "Manila",
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "ART01",
+        "ART04",
+        "SOC10"
+      ],
+      "courseGroups": [
+        "Arts, Design, and Architecture",
+        "Social Sciences, Communication, and Humanities"
+      ]
+    },
+    {
+      "id": "SCH-043",
+      "school": "Ateneo de Manila University",
+      "campus": null,
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "SCI09"
+      ],
+      "courseGroups": [
+        "Science and Mathematics"
+      ]
+    },
+    {
+      "id": "SCH-044",
+      "school": "De La Salle-College of Saint Benilde",
+      "campus": null,
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "ART03"
+      ],
+      "courseGroups": [
+        "Arts, Design, and Architecture"
+      ]
+    },
+    {
+      "id": "SCH-045",
+      "school": "De La Salle University",
+      "campus": null,
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "SOC03"
+      ],
+      "courseGroups": [
+        "Social Sciences, Communication, and Humanities"
+      ]
+    },
+    {
+      "id": "SCH-046",
+      "school": "Ateneo de Davao University",
+      "campus": null,
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "BUS04"
+      ],
+      "courseGroups": [
+        "Business and Management"
+      ]
+    },
+    {
+      "id": "SCH-047",
+      "school": "Northwestern University",
+      "campus": "Laoag",
+      "geographicGroup": "national",
+      "type": "national",
+      "province": "Ilocos Norte",
+      "codedCourses": [
+        "BUS02",
+        "BUS07",
+        "BUS09",
+        "BUS10",
+        "SOC11",
+        "HLT03",
+        "HLT04",
+        "ENG14",
+        "ENG15"
+      ],
+      "courseGroups": [
+        "Business and Management",
+        "Social Sciences, Communication, and Humanities",
+        "Health and Allied Sciences",
+        "Engineering and Technology"
+      ]
+    },
+    {
+      "id": "SCH-048",
+      "school": "Davao Doctors College",
+      "campus": null,
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "HLT06",
+        "HLT05",
+        "HLT04"
+      ],
+      "courseGroups": [
+        "Health and Allied Sciences"
+      ]
+    },
+    {
+      "id": "SCH-049",
+      "school": "Philippine Merchant Marine Academy",
+      "campus": null,
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "ENG15",
+        "ENG14"
+      ],
+      "courseGroups": [
+        "Engineering and Technology"
+      ]
+    },
+    {
+      "id": "SCH-050",
+      "school": "Far Eastern University, Philippine Women's University, University of San Carlos",
+      "campus": null,
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "HLT08"
+      ],
+      "courseGroups": [
+        "Health and Allied Sciences"
+      ]
+    },
+    {
+      "id": "SCH-051",
+      "school": "Tarlac State University, Eastern Visayas State University, St. Alexius College",
+      "campus": null,
+      "geographicGroup": "national",
+      "type": "national",
+      "province": null,
+      "codedCourses": [
+        "SOC03"
+      ],
+      "courseGroups": [
+        "Social Sciences, Communication, and Humanities"
+      ]
+    }
+  ],
+  "schoolAcademicScope": {
+    "status": "NOT DETERMINED",
+    "question": "School.group is bicol/national geography, not an academic course group. No school academic-scope whitelist exists. Do not infer scope from names or fabricate inconsistency judgments.",
+    "provided": "All school IDs, geographic group/type, coded course IDs and academic group sets are listed for review. Only explicit structural inconsistencies can be flagged."
+  },
+  "limits": "Duplicate titles use case/whitespace normalization only. Encoding patterns detect obvious candidates, not all possible corruption. Salary flags are arithmetic review items, not proof that a salary is wrong."
+}

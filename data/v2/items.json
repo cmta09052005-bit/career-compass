@@ -1,0 +1,1285 @@
+{
+  "interests": [
+    {
+      "id": "INT-01",
+      "prompt": "You have free time this weekend. What would you most like to do?",
+      "question": null,
+      "questionStatus": "NOT DETERMINED: question prompt absent from supplied rubric",
+      "options": [
+        {
+          "id": "INT-01-A",
+          "text": "Plan how your barkada can raise and spend money"
+        },
+        {
+          "id": "INT-01-B",
+          "text": "Help a sibling or neighbor with schoolwork"
+        },
+        {
+          "id": "INT-01-C",
+          "text": "Volunteer at a community first-aid activity"
+        },
+        {
+          "id": "INT-01-D",
+          "text": "Draw or redesign a room"
+        }
+      ]
+    },
+    {
+      "id": "INT-02",
+      "prompt": "Your class is doing a project for the school. Which task would you choose?",
+      "question": null,
+      "questionStatus": "NOT DETERMINED: question prompt absent from supplied rubric",
+      "options": [
+        {
+          "id": "INT-02-A",
+          "text": "Make a simple app or online form"
+        },
+        {
+          "id": "INT-02-B",
+          "text": "Build something with tools, wires, or a small model"
+        },
+        {
+          "id": "INT-02-C",
+          "text": "Write and present a report or news article"
+        },
+        {
+          "id": "INT-02-D",
+          "text": "Run the event or booth and take care of the guests"
+        }
+      ]
+    },
+    {
+      "id": "INT-03",
+      "prompt": "Your group wants to improve your community. How would you help?",
+      "question": null,
+      "questionStatus": "NOT DETERMINED: question prompt absent from supplied rubric",
+      "options": [
+        {
+          "id": "INT-03-A",
+          "text": "Make an app or spreadsheet to keep track of information"
+        },
+        {
+          "id": "INT-03-B",
+          "text": "Build a small model, like a drainage system"
+        },
+        {
+          "id": "INT-03-C",
+          "text": "Clean up the area and plant trees or crops"
+        },
+        {
+          "id": "INT-03-D",
+          "text": "Organize a barangay program and talk with the residents"
+        }
+      ]
+    },
+    {
+      "id": "INT-04",
+      "prompt": "You can enter an idea in a school competition. What would you make?",
+      "question": null,
+      "questionStatus": "NOT DETERMINED: question prompt absent from supplied rubric",
+      "options": [
+        {
+          "id": "INT-04-A",
+          "text": "A useful gadget or machine"
+        },
+        {
+          "id": "INT-04-B",
+          "text": "A small business plan with ways to find customers"
+        },
+        {
+          "id": "INT-04-C",
+          "text": "A science experiment or investigation"
+        },
+        {
+          "id": "INT-04-D",
+          "text": "An art, fashion, or performance piece"
+        }
+      ]
+    },
+    {
+      "id": "INT-05",
+      "prompt": "What do you usually like watching in your free time?",
+      "question": null,
+      "questionStatus": "NOT DETERMINED: question prompt absent from supplied rubric",
+      "options": [
+        {
+          "id": "INT-05-A",
+          "text": "Videos about apps and how to code"
+        },
+        {
+          "id": "INT-05-B",
+          "text": "Documentaries about nature, farming, the ocean, or ships"
+        },
+        {
+          "id": "INT-05-C",
+          "text": "Sports and fitness videos"
+        },
+        {
+          "id": "INT-05-D",
+          "text": "History, politics, or crime investigation shows"
+        }
+      ]
+    },
+    {
+      "id": "INT-06",
+      "prompt": "For Career Day, you can act as someone doing a job. Who would you choose?",
+      "question": null,
+      "questionStatus": "NOT DETERMINED: question prompt absent from supplied rubric",
+      "options": [
+        {
+          "id": "INT-06-A",
+          "text": "An engineer or scientist"
+        },
+        {
+          "id": "INT-06-B",
+          "text": "An accountant or banker"
+        },
+        {
+          "id": "INT-06-C",
+          "text": "A teacher or coach"
+        },
+        {
+          "id": "INT-06-D",
+          "text": "A doctor, nurse, or therapist"
+        }
+      ]
+    },
+    {
+      "id": "INT-07",
+      "prompt": "Your class is running a fair. Which booth would you like to manage?",
+      "question": null,
+      "questionStatus": "NOT DETERMINED: question prompt absent from supplied rubric",
+      "options": [
+        {
+          "id": "INT-07-A",
+          "text": "A store where you sell things and handle money"
+        },
+        {
+          "id": "INT-07-B",
+          "text": "A food or tour-guide booth"
+        },
+        {
+          "id": "INT-07-C",
+          "text": "A health booth with basic checkups"
+        },
+        {
+          "id": "INT-07-D",
+          "text": "A stage booth with music, dance, or photo and video"
+        }
+      ]
+    },
+    {
+      "id": "INT-08",
+      "prompt": "A strong typhoon hits your community. How would you help?",
+      "question": null,
+      "questionStatus": "NOT DETERMINED: question prompt absent from supplied rubric",
+      "options": [
+        {
+          "id": "INT-08-A",
+          "text": "Research it and gather data or run tests"
+        },
+        {
+          "id": "INT-08-B",
+          "text": "Help with rescue, transport, or keeping order"
+        },
+        {
+          "id": "INT-08-C",
+          "text": "Make a campaign or lessons to spread awareness"
+        },
+        {
+          "id": "INT-08-D",
+          "text": "Talk with affected families and help them cope"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "SKL-01",
+      "text": "I can learn new apps, websites, and computers on my own, and I enjoy solving problems with logic or code."
+    },
+    {
+      "id": "SKL-02",
+      "text": "I enjoy taking apart, fixing, or assembling machines and gadgets, and I am comfortable with wires, circuits, and electrical or electronic parts."
+    },
+    {
+      "id": "SKL-03",
+      "text": "I am good at math, numbers, and patterns, and I can read, draw, or measure plans and layouts accurately."
+    },
+    {
+      "id": "SKL-04",
+      "text": "I can keep track of money, records, budgets, files, books, and schedules carefully."
+    },
+    {
+      "id": "SKL-05",
+      "text": "I can lead, organize, and persuade people, and I am comfortable speaking or presenting in front of others."
+    },
+    {
+      "id": "SKL-06",
+      "text": "I can explain a topic patiently so others understand it."
+    },
+    {
+      "id": "SKL-07",
+      "text": "I stay calm and want to help when someone is sick or hurt, and I listen well when people have problems."
+    },
+    {
+      "id": "SKL-08",
+      "text": "I like lab work, experiments, and precise measuring, and I am curious about chemicals, materials, and how things are made."
+    },
+    {
+      "id": "SKL-09",
+      "text": "I can show ideas through drawing, design, or digital media, make things by hand, or learn a hands-on trade."
+    },
+    {
+      "id": "SKL-10",
+      "text": "I enjoy singing, dancing, acting, or playing music in front of others."
+    },
+    {
+      "id": "SKL-11",
+      "text": "I can write stories, articles, or speeches, and I like researching, analyzing issues, and debating ideas."
+    },
+    {
+      "id": "SKL-12",
+      "text": "I enjoy plants, animals, farming, fishing, and outdoor fieldwork such as surveying, rocks, weather, or the sea."
+    },
+    {
+      "id": "SKL-13",
+      "text": "I stay active and enjoy sports, fitness, or coaching others."
+    },
+    {
+      "id": "SKL-14",
+      "text": "I enjoy cooking, hosting guests, or serving customers."
+    },
+    {
+      "id": "SKL-15",
+      "text": "I follow rules, safety steps, and procedures carefully and keep order."
+    }
+  ],
+  "certificates": [
+    {
+      "id": "CER-01",
+      "text": "Writing, speech, and media (essay, campus journalism, debate, oratory, broadcasting, photo/video)",
+      "scored": true
+    },
+    {
+      "id": "CER-02",
+      "text": "Teaching and tutoring (Batang Guro, peer tutoring, reading volunteer)",
+      "scored": true
+    },
+    {
+      "id": "CER-03",
+      "text": "Sports (competition, coaching, officiating)",
+      "scored": true
+    },
+    {
+      "id": "CER-04",
+      "text": "Math, science, research, and invention contests (quiz bee, olympiad, science fair)",
+      "scored": true
+    },
+    {
+      "id": "CER-05",
+      "text": "Coding, robotics, and ICT contests",
+      "scored": true
+    },
+    {
+      "id": "CER-06",
+      "text": "Arts and performance (poster, art, and design contests; music, dance, theater)",
+      "scored": true
+    },
+    {
+      "id": "CER-07",
+      "text": "Business, accounting, office, and records (business fair, accounting contest, library club, office assistant)",
+      "scored": true
+    },
+    {
+      "id": "CER-08",
+      "text": "Culinary, hospitality, tourism (including TESDA NC)",
+      "scored": true
+    },
+    {
+      "id": "CER-09",
+      "text": "Health and medical lab (first aid, Red Cross, health volunteer, medical lab club)",
+      "scored": true
+    },
+    {
+      "id": "CER-10",
+      "text": "Agriculture, environment, and earth science (fishery, scouts conservation, weather or geology club)",
+      "scored": true
+    },
+    {
+      "id": "CER-11",
+      "text": "Community service, outreach, and heritage (social work volunteer, history, culture, or anthropology club)",
+      "scored": true
+    },
+    {
+      "id": "CER-12",
+      "text": "Trade skills (welding, electrical, automotive, drafting)",
+      "scored": true
+    },
+    {
+      "id": "CER-13",
+      "text": "Leadership and uniformed service (student government, scouting, CAT/ROTC, peace and order, seafarer, lifesaving)",
+      "scored": true
+    },
+    {
+      "id": "CER-NONE",
+      "text": "None yet",
+      "scored": false
+    }
+  ],
+  "oldSubjects": [
+    {
+      "id": "ACA-01",
+      "text": "Computer / ICT"
+    },
+    {
+      "id": "ACA-02",
+      "text": "Math (General Math, Pre-Calculus, Trigonometry, Calculus)"
+    },
+    {
+      "id": "ACA-03",
+      "text": "Statistics and Research"
+    },
+    {
+      "id": "ACA-04",
+      "text": "Physics"
+    },
+    {
+      "id": "ACA-05",
+      "text": "Chemistry"
+    },
+    {
+      "id": "ACA-06",
+      "text": "Biology"
+    },
+    {
+      "id": "ACA-07",
+      "text": "Earth and Space Science"
+    },
+    {
+      "id": "ACA-08",
+      "text": "Accounting / Business Math"
+    },
+    {
+      "id": "ACA-09",
+      "text": "Economics / Business Organization / Entrepreneurship"
+    },
+    {
+      "id": "ACA-10",
+      "text": "English / Communication"
+    },
+    {
+      "id": "ACA-11",
+      "text": "Filipino"
+    },
+    {
+      "id": "ACA-12",
+      "text": "Social Science / History / Philosophy / Politics"
+    },
+    {
+      "id": "ACA-13",
+      "text": "Visual Arts / Design"
+    },
+    {
+      "id": "ACA-14",
+      "text": "Music / Dance / Theater"
+    },
+    {
+      "id": "ACA-15",
+      "text": "PE and Health"
+    },
+    {
+      "id": "ACA-16",
+      "text": "TVL Industrial Arts (electronics, welding, automotive, carpentry, drafting)"
+    },
+    {
+      "id": "ACA-17",
+      "text": "TVL Home Economics (cooking, caregiving, hospitality)"
+    },
+    {
+      "id": "ACA-18",
+      "text": "TVL Agri-Fishery"
+    },
+    {
+      "id": "ACA-19",
+      "text": "Creative Writing / Literature"
+    }
+  ],
+  "coreSubjects": [
+    {
+      "id": "COR-01",
+      "text": "General Mathematics"
+    },
+    {
+      "id": "COR-02",
+      "text": "General Science"
+    },
+    {
+      "id": "COR-03",
+      "text": "Effective Communication / Mabisang Komunikasyon"
+    },
+    {
+      "id": "COR-04",
+      "text": "Pag-aaral ng Kasaysayan at Lipunang Pilipino"
+    }
+  ],
+  "electives": [
+    {
+      "id": "ELE-01",
+      "text": "Arts 1 (Visual, Literary, Media, Applied, Traditional Art)",
+      "labels": [
+        "Arts 1 (Visual, Literary, Media, Applied, Traditional Art)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-02",
+      "text": "Arts 2 (Music, Dance, Theater)",
+      "labels": [
+        "Arts 2 (Music, Dance, Theater)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-03",
+      "text": "Citizenship and Civic Engagement",
+      "labels": [
+        "Citizenship and Civic Engagement"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-04",
+      "text": "Contemporary Literature 1 and 2",
+      "labels": [
+        "Contemporary Literature 1",
+        "Contemporary Literature 2"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-05",
+      "text": "Creative Composition 1 and 2; Malikhaing Pagsulat",
+      "labels": [
+        "Creative Composition 1 and 2",
+        "Malikhaing Pagsulat"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-06",
+      "text": "Filipino 1 (Wika at Komunikasyon sa Akademikong Filipino)",
+      "labels": [
+        "Filipino 1 (Wika at Komunikasyon sa Akademikong Filipino)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-07",
+      "text": "Filipino 2 (Larang Teknikal-Propesyonal / Isports / Sining at Disenyo)",
+      "labels": [
+        "Filipino 2 (Larang Teknikal-Propesyonal / Isports / Sining at Disenyo)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-08",
+      "text": "Filipino Identity Through the Arts",
+      "labels": [
+        "Filipino Identity Through the Arts"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-09",
+      "text": "Introduction to Philosophy",
+      "labels": [
+        "Introduction to Philosophy"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-10",
+      "text": "Leadership and Management in the Arts",
+      "labels": [
+        "Leadership and Management in the Arts"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-11",
+      "text": "Philippine Governance",
+      "labels": [
+        "Philippine Governance"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-12",
+      "text": "Social Sciences (Theory and Practice)",
+      "labels": [
+        "Social Sciences (Theory and Practice)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Arts, Social Sciences, and Humanities"
+    },
+    {
+      "id": "ELE-13",
+      "text": "Business 1 (Basic Accounting)",
+      "labels": [
+        "Business 1 (Basic Accounting)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Business and Entrepreneurship"
+    },
+    {
+      "id": "ELE-14",
+      "text": "Introduction to Organization and Management",
+      "labels": [
+        "Introduction to Organization and Management"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Business and Entrepreneurship"
+    },
+    {
+      "id": "ELE-15",
+      "text": "Business 2 (Business Finance and Income Taxation)",
+      "labels": [
+        "Business 2 (Business Finance and Income Taxation)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Business and Entrepreneurship"
+    },
+    {
+      "id": "ELE-16",
+      "text": "Business 3 (Business Economics)",
+      "labels": [
+        "Business 3 (Business Economics)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Business and Entrepreneurship"
+    },
+    {
+      "id": "ELE-17",
+      "text": "Contemporary Marketing",
+      "labels": [
+        "Contemporary Marketing"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Business and Entrepreneurship"
+    },
+    {
+      "id": "ELE-18",
+      "text": "Entrepreneurship",
+      "labels": [
+        "Entrepreneurship"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Business and Entrepreneurship"
+    },
+    {
+      "id": "ELE-19",
+      "text": "Biology 1, 2, 3, 4",
+      "labels": [
+        "Biology 1",
+        "Biology 2",
+        "Biology 3",
+        "Biology 4"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-20",
+      "text": "Chemistry 1, 2, 3, 4",
+      "labels": [
+        "Chemistry 1",
+        "Chemistry 2",
+        "Chemistry 3",
+        "Chemistry 4"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-21",
+      "text": "Physics 1, 2, 3, 4",
+      "labels": [
+        "Physics 1",
+        "Physics 2",
+        "Physics 3",
+        "Physics 4"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-22",
+      "text": "Earth and Space Science 1, 2, 3, 4",
+      "labels": [
+        "Earth and Space Science 1",
+        "Earth and Space Science 2",
+        "Earth and Space Science 3",
+        "Earth and Space Science 4"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-23",
+      "text": "Finite Mathematics 1, 2",
+      "labels": [
+        "Finite Mathematics 1",
+        "Finite Mathematics 2"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-24",
+      "text": "Advanced Mathematics 1, 2; Pre-calculus 1, 2; Trigonometry 1, 2",
+      "labels": [
+        "Advanced Mathematics 1",
+        "Advanced Mathematics 2",
+        "Pre-calculus 1",
+        "Pre-calculus 2",
+        "Trigonometry 1",
+        "Trigonometry 2"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-25",
+      "text": "General Science 3, 4",
+      "labels": [
+        "General Science 3",
+        "General Science 4"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-26",
+      "text": "Empowerment Technologies",
+      "labels": [
+        "Empowerment Technologies"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-27",
+      "text": "Fundamentals in Data Analytics",
+      "labels": [
+        "Fundamentals in Data Analytics"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-28",
+      "text": "Database Management",
+      "labels": [
+        "Database Management"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "STEM"
+    },
+    {
+      "id": "ELE-29",
+      "text": "Human Movement 1 (Basic Anatomy in Sports and Exercise)",
+      "labels": [
+        "Human Movement 1 (Basic Anatomy in Sports and Exercise)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-30",
+      "text": "Human Movement 2 (Motor Skills Development)",
+      "labels": [
+        "Human Movement 2 (Motor Skills Development)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-31",
+      "text": "Physical Education 1 (Fitness and Recreation)",
+      "labels": [
+        "Physical Education 1 (Fitness and Recreation)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-32",
+      "text": "Physical Education 2 (Sports and Dance)",
+      "labels": [
+        "Physical Education 2 (Sports and Dance)"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-33",
+      "text": "Sports Activity Management",
+      "labels": [
+        "Sports Activity Management"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-34",
+      "text": "Sports Coaching",
+      "labels": [
+        "Sports Coaching"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-35",
+      "text": "Sports Officiating",
+      "labels": [
+        "Sports Officiating"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-36",
+      "text": "Exercise and Sports Programming",
+      "labels": [
+        "Exercise and Sports Programming"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-37",
+      "text": "Safety and First Aid",
+      "labels": [
+        "Safety and First Aid"
+      ],
+      "section": "Academic",
+      "scored": true,
+      "group": "Sports, Health, and Wellness"
+    },
+    {
+      "id": "ELE-38",
+      "text": "Aesthetic Services (Beauty Care); Barbering Services; Hairdressing Services",
+      "labels": [
+        "Aesthetic Services (Beauty Care)",
+        "Barbering Services",
+        "Hairdressing Services"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Aesthetic, Wellness, and Human Care"
+    },
+    {
+      "id": "ELE-39",
+      "text": "Caregiving (Adult Care)",
+      "labels": [
+        "Caregiving (Adult Care)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Aesthetic, Wellness, and Human Care"
+    },
+    {
+      "id": "ELE-40",
+      "text": "Caregiving (Child Care)",
+      "labels": [
+        "Caregiving (Child Care)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Aesthetic, Wellness, and Human Care"
+    },
+    {
+      "id": "ELE-41",
+      "text": "Wellness Services (Hilot/Massage)",
+      "labels": [
+        "Wellness Services (Hilot/Massage)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Aesthetic, Wellness, and Human Care"
+    },
+    {
+      "id": "ELE-42",
+      "text": "Agricultural Crops Production; Organic Agriculture Production",
+      "labels": [
+        "Agricultural Crops Production",
+        "Organic Agriculture Production"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Agri-Fishery Business and Food Innovation"
+    },
+    {
+      "id": "ELE-43",
+      "text": "Agro-Entrepreneurship",
+      "labels": [
+        "Agro-Entrepreneurship"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Agri-Fishery Business and Food Innovation"
+    },
+    {
+      "id": "ELE-44",
+      "text": "Aquaculture; Fish Capture Operation",
+      "labels": [
+        "Aquaculture",
+        "Fish Capture Operation"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Agri-Fishery Business and Food Innovation"
+    },
+    {
+      "id": "ELE-45",
+      "text": "Food Processing",
+      "labels": [
+        "Food Processing"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Agri-Fishery Business and Food Innovation"
+    },
+    {
+      "id": "ELE-46",
+      "text": "Poultry Production (Chicken); Ruminants Production; Swine Production",
+      "labels": [
+        "Poultry Production (Chicken)",
+        "Ruminants Production",
+        "Swine Production"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Agri-Fishery Business and Food Innovation"
+    },
+    {
+      "id": "ELE-47",
+      "text": "Garments Artisanry; Handicrafts (Weaving)",
+      "labels": [
+        "Garments Artisanry",
+        "Handicrafts (Weaving)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Artisanry and Creative Enterprise"
+    },
+    {
+      "id": "ELE-48",
+      "text": "Driving and Automotive Servicing; Automotive Servicing (Engine and Chassis Repairs); Motorcycle and Small Engine Servicing",
+      "labels": [
+        "Driving and Automotive Servicing",
+        "Automotive Servicing (Engine and Chassis Repairs)",
+        "Motorcycle and Small Engine Servicing"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Automotive and Small Engine Technologies"
+    },
+    {
+      "id": "ELE-49",
+      "text": "Automotive Servicing (Electrical Repair)",
+      "labels": [
+        "Automotive Servicing (Electrical Repair)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Automotive and Small Engine Technologies"
+    },
+    {
+      "id": "ELE-50",
+      "text": "Carpentry; Construction Operation",
+      "labels": [
+        "Carpentry",
+        "Construction Operation"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Construction and Building Technologies"
+    },
+    {
+      "id": "ELE-51",
+      "text": "Manual Metal Arc Welding",
+      "labels": [
+        "Manual Metal Arc Welding"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Construction and Building Technologies"
+    },
+    {
+      "id": "ELE-52",
+      "text": "Technical Drafting",
+      "labels": [
+        "Technical Drafting"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Construction and Building Technologies"
+    },
+    {
+      "id": "ELE-53",
+      "text": "Animation; Illustration",
+      "labels": [
+        "Animation",
+        "Illustration"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Creative Arts and Design Technologies"
+    },
+    {
+      "id": "ELE-54",
+      "text": "Visual Graphic Design",
+      "labels": [
+        "Visual Graphic Design"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Creative Arts and Design Technologies"
+    },
+    {
+      "id": "ELE-55",
+      "text": "Bakery Operation; Kitchen Operation; Food and Beverage Operation",
+      "labels": [
+        "Bakery Operation",
+        "Kitchen Operation",
+        "Food and Beverage Operation"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Hospitality and Tourism"
+    },
+    {
+      "id": "ELE-56",
+      "text": "Events Management Services",
+      "labels": [
+        "Events Management Services"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Hospitality and Tourism"
+    },
+    {
+      "id": "ELE-57",
+      "text": "Hotel Operation (Front Office); Hotel Operation (Housekeeping)",
+      "labels": [
+        "Hotel Operation (Front Office)",
+        "Hotel Operation (Housekeeping)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Hospitality and Tourism"
+    },
+    {
+      "id": "ELE-58",
+      "text": "Tourism Services",
+      "labels": [
+        "Tourism Services"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Hospitality and Tourism"
+    },
+    {
+      "id": "ELE-59",
+      "text": "Computer Programming (Java; .NET; Oracle Database)",
+      "labels": [
+        "Computer Programming (Java; .NET; Oracle Database)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "ICT Support and Computer Programming Technologies"
+    },
+    {
+      "id": "ELE-60",
+      "text": "Computer Systems Servicing",
+      "labels": [
+        "Computer Systems Servicing"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "ICT Support and Computer Programming Technologies"
+    },
+    {
+      "id": "ELE-61",
+      "text": "Broadband Installation",
+      "labels": [
+        "Broadband Installation"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "ICT Support and Computer Programming Technologies"
+    },
+    {
+      "id": "ELE-62",
+      "text": "Contact Center Services",
+      "labels": [
+        "Contact Center Services"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "ICT Support and Computer Programming Technologies"
+    },
+    {
+      "id": "ELE-63",
+      "text": "Domestic Refrigeration and Air-Conditioning Servicing; Commercial Air-Conditioning Installation and Servicing",
+      "labels": [
+        "Domestic Refrigeration and Air-Conditioning Servicing",
+        "Commercial Air-Conditioning Installation and Servicing"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Industrial Technologies"
+    },
+    {
+      "id": "ELE-64",
+      "text": "Electrical Installation Maintenance",
+      "labels": [
+        "Electrical Installation Maintenance"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Industrial Technologies"
+    },
+    {
+      "id": "ELE-65",
+      "text": "Electronics Product Assembly and Servicing",
+      "labels": [
+        "Electronics Product Assembly and Servicing"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Industrial Technologies"
+    },
+    {
+      "id": "ELE-66",
+      "text": "Mechatronics",
+      "labels": [
+        "Mechatronics"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Industrial Technologies"
+    },
+    {
+      "id": "ELE-67",
+      "text": "Photovoltaic Systems Installation",
+      "labels": [
+        "Photovoltaic Systems Installation"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Industrial Technologies"
+    },
+    {
+      "id": "ELE-68",
+      "text": "Marine Engineering (Support Level)",
+      "labels": [
+        "Marine Engineering (Support Level)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Maritime Transport"
+    },
+    {
+      "id": "ELE-69",
+      "text": "Marine Transportation (Support Level)",
+      "labels": [
+        "Marine Transportation (Support Level)"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Maritime Transport"
+    },
+    {
+      "id": "ELE-70",
+      "text": "Ships Catering Services",
+      "labels": [
+        "Ships Catering Services"
+      ],
+      "section": "TechPro",
+      "scored": true,
+      "group": "Maritime Transport"
+    },
+    {
+      "id": "ELE-WORK-IMMERSION",
+      "text": "Work Immersion",
+      "labels": [
+        "Work Immersion"
+      ],
+      "section": null,
+      "scored": false,
+      "group": null
+    }
+  ],
+  "gwaTiers": [
+    {
+      "id": "GWA-01",
+      "text": "95 to 100",
+      "lowerInclusive": 95,
+      "upperExclusive": 100,
+      "includes100": true,
+      "bonus": 6,
+      "upperInclusive": true
+    },
+    {
+      "id": "GWA-02",
+      "text": "90 up to but not including 95",
+      "lowerInclusive": 90,
+      "upperExclusive": 95,
+      "includes100": false,
+      "bonus": 5
+    },
+    {
+      "id": "GWA-03",
+      "text": "85 up to but not including 90",
+      "lowerInclusive": 85,
+      "upperExclusive": 90,
+      "includes100": false,
+      "bonus": 4
+    },
+    {
+      "id": "GWA-04",
+      "text": "80 up to but not including 85",
+      "lowerInclusive": 80,
+      "upperExclusive": 85,
+      "includes100": false,
+      "bonus": 3
+    },
+    {
+      "id": "GWA-05",
+      "text": "75 up to but not including 80",
+      "lowerInclusive": 75,
+      "upperExclusive": 80,
+      "includes100": false,
+      "bonus": 2
+    },
+    {
+      "id": "GWA-06",
+      "text": "Below 75",
+      "lowerInclusive": null,
+      "upperExclusive": 75,
+      "includes100": false,
+      "bonus": 0
+    }
+  ],
+  "strands": [
+    {
+      "id": "STR-01",
+      "text": "Academic STEM",
+      "scored": true
+    },
+    {
+      "id": "STR-02",
+      "text": "Academic ABM",
+      "scored": true
+    },
+    {
+      "id": "STR-03",
+      "text": "Academic HUMSS",
+      "scored": true
+    },
+    {
+      "id": "STR-04",
+      "text": "Academic GAS",
+      "scored": false
+    },
+    {
+      "id": "STR-05",
+      "text": "TVL ICT",
+      "scored": true
+    },
+    {
+      "id": "STR-06",
+      "text": "TVL Home Economics",
+      "scored": true
+    },
+    {
+      "id": "STR-07",
+      "text": "TVL Agri-Fishery Arts",
+      "scored": true
+    },
+    {
+      "id": "STR-08",
+      "text": "TVL Industrial Arts",
+      "scored": true
+    },
+    {
+      "id": "STR-09",
+      "text": "Arts and Design",
+      "scored": true
+    },
+    {
+      "id": "STR-10",
+      "text": "Sports",
+      "scored": true
+    }
+  ],
+  "bestSubjects": {
+    "coreSubjectIds": [
+      "COR-01",
+      "COR-02",
+      "COR-03",
+      "COR-04"
+    ]
+  }
+}

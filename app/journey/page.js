@@ -17,7 +17,7 @@ import usePopupState from "@/components/usePopupState";
 import Toggle from "@/components/Toggle";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { SECTION_STATUS, SESSION_STORAGE_KEY, useSessionAnswers } from "@/lib/useSessionAnswers";
-import { isValidStrand } from "@/lib/assessmentValidation";
+import { isBasecampComplete, isSectionValid } from "@/lib/assessmentValidation";
 import "./atlas.css";
 
 const GUIDE_KEY = "careerCompassJourneyGuideSeen";
@@ -38,8 +38,8 @@ const ROAD = "M80 520 C85 465 105 425 135 420 C148 417 157.2 421 164.24 429.32 C
 const AVATARS = ["wanderer", "trailblazer", "scout", "cartographer", "ranger", "navigator"];
 const REGIONS = [
   { id: "interests", name: "The Mountains", subject: "Interests", description: "Discover what pulls you forward.", detail: "8 scenarios", icon: "mountain-peak", badge: "Wayfinder", badgeIcon: "mountain-peak", left: 35.009543884317914, top: 40.717392281471724 },
-  { id: "skills", name: "The Forest", subject: "Skills", description: "Find strength in what you can do.", detail: "10 statements", icon: "pine-branch", badge: "Skillcrafter", badgeIcon: "pine-branch", left: 50.03756870392547, top: 66.59883517680692 },
-  { id: "academic", name: "The Valley", subject: "Academics", description: "What you've already built matters too.", detail: "Academic details", icon: "ribbon-scroll", badge: "Scholar", badgeIcon: "ribbon-scroll", left: 62, top: 55 },
+  { id: "skills", name: "The Forest", subject: "Skills", description: "Find strength in what you can do.", detail: "15 statements", icon: "pine-branch", badge: "Skillcrafter", badgeIcon: "pine-branch", left: 50.03756870392547, top: 66.59883517680692 },
+  { id: "academic", name: "The Valley", subject: "Academics", description: "What you've already built matters too.", detail: "4 steps", icon: "ribbon-scroll", badge: "Scholar", badgeIcon: "ribbon-scroll", left: 62, top: 55 },
 ];
 const BADGE_DETAILS = {
   basecamp: { title: "Basecamp", description: "Your explorer profile is complete and your journey has begun." },
@@ -119,14 +119,15 @@ export default function JourneyPage() {
   const leaving = useRef(false);
   const entering = useRef(false);
   const progress = session.journeyProgress;
-  const count = REGIONS.filter(({ id }) => progress[id] === SECTION_STATUS.COMPLETED).length;
-  const complete = count === 3;
+  const basecampReady = isBasecampComplete(session);
+  const count = REGIONS.filter(({ id }) => progress[id] === SECTION_STATUS.COMPLETED && isSectionValid(session, id)).length;
+  const complete = basecampReady && count === 3;
   const started = REGIONS.some(({ id }) => progress[id] !== SECTION_STATUS.NOT_STARTED);
   const next = REGIONS.findIndex((_, index) => regionState(index, progress) === "active");
   const current = position || "basecamp";
   const actionReady = isReady && sequenceReady && !walking && !badgeToast.length && !tourWaiting && !tour && !(unlocking === "interests" && !started);
   const checkpoints = [
-    { id: "basecamp", name: "Basecamp", icon: "explorer-backpack", mapped: isReady && isValidStrand(session.strand) },
+    { id: "basecamp", name: "Basecamp", icon: "explorer-backpack", mapped: isReady && basecampReady },
     ...REGIONS.map(region => ({ ...region, mapped: progress[region.id] === SECTION_STATUS.COMPLETED })),
     { ...ISLANDS, icon: "island-flag", mapped: complete && current === "islands" && !walking },
   ];
@@ -148,19 +149,19 @@ export default function JourneyPage() {
     if (!isReady) return;
     const recover = () => {
       if (leaving.current) return;
-      let missing = !isValidStrand(session.strand);
-      try { const stored = JSON.parse(browserStorage.getItem(SESSION_STORAGE_KEY)); missing = missing || !stored?.strand; } catch { missing = true; }
+      let missing = !basecampReady;
+      try { const stored = JSON.parse(browserStorage.getItem(SESSION_STORAGE_KEY)); missing = missing || !isBasecampComplete(stored); } catch { missing = true; }
       if (missing) { leaving.current = true; router.replace("/intake?session=ended"); }
     };
     recover();
     window.addEventListener("focus", recover);
     window.addEventListener("pageshow", recover);
     return () => { window.removeEventListener("focus", recover); window.removeEventListener("pageshow", recover); };
-  }, [isReady, session.strand, router]);
+  }, [isReady, basecampReady, router]);
 
   /* eslint-disable react-hooks/set-state-in-effect -- Restore locally saved map position before the badge's first paint. */
   useLayoutEffect(() => {
-    if (!isReady || !isValidStrand(session.strand) || initialized.current) return;
+    if (!isReady || !basecampReady || initialized.current) return;
     initialized.current = true;
     let firstWalk = browserStorage.getItem(FIRST_WALK_KEY);
     const seenTour = browserStorage.getItem(TOUR_KEY) === "true";
@@ -197,7 +198,7 @@ export default function JourneyPage() {
         setSequenceReady(true);
       }
     }
-  }, [isReady, progress, session.strand, setBadgeToast, complete, next, started]);
+  }, [isReady, progress, basecampReady, setBadgeToast, complete, next, started]);
   /* eslint-enable react-hooks/set-state-in-effect */
 
   function closeBadge() {
@@ -469,7 +470,7 @@ export default function JourneyPage() {
   }
 
   useEffect(() => {
-    if (!isReady || !session.strand) return;
+    if (!isReady || !basecampReady) return;
     let timer;
     let handled = false;
     let noticesReady = false;
@@ -488,7 +489,7 @@ export default function JourneyPage() {
     observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ["open"] });
     timer = setTimeout(() => { noticesReady = true; showWelcome(); }, 400);
     return () => { clearTimeout(timer); observer.disconnect(); };
-  }, [isReady, complete, session.strand, setCelebrate, sequenceReady, walking, unlocking, started, tour, tourWaiting, panel]);
+  }, [isReady, complete, basecampReady, setCelebrate, sequenceReady, walking, unlocking, started, tour, tourWaiting, panel]);
 
   useEffect(() => {
     if (panel !== null && !dialog.current?.open) dialog.current?.showModal();
@@ -659,7 +660,7 @@ export default function JourneyPage() {
           <Localized as="button" className="atlas-close" aria-label="Close dialog" onClick={closePanel}>×</Localized>
           {panel !== "offline" && <Icon className="atlas-dialog-icon" name={(panel === "next" ? REGIONS[next]?.icon : badgeDetail?.badgeIcon || badgeDetail?.icon) || (panel === "settings" ? "settings-gear" : panel === "guide" ? "journey-guide" : "compass")} />}
           {panel === "next" && REGIONS[next] && <><Localized as="p" className="atlas-eyebrow">NEXT ASSESSMENT UNLOCKED</Localized><Localized as="h2" id="atlas-dialog-title">{REGIONS[next].name}</Localized><Localized as="p">Finish {REGIONS[next].name} to earn the {REGIONS[next].badge} badge.</Localized><Button label="Continue" onClick={() => enter(next)} /></>}
-          {panel === "guide" && <><Localized as="p" className="atlas-eyebrow">JOURNEY GUIDE</Localized><Localized as="h2" id="atlas-dialog-title">Welcome to The Atlas</Localized><ul className="atlas-guide-steps"><li><Icon name="ribbon-scroll" /><Localized as="span">This is your map. Drag it left or right to look around.</Localized></li><li><Icon name="mountain-peak" /><Localized as="span">Finish regions in order: Mountains, then Forest, then Valley.</Localized></li><li><Icon name="sunburst" /><Localized as="span">A glowing region means it&apos;s ready. Tap it to start.</Localized></li><li><Icon name="flag-marker-pin" /><Localized as="span">Lost? Tap Locate Me anytime to find your spot again.</Localized></li></ul><Localized as="div" className="atlas-guide-path">Mountains <Localized as="span">···</Localized> Forest <Localized as="span">···</Localized> Valley</Localized><Button label="Got it" onClick={closePanel} /><Button label="Replay tutorial" variant="secondary" onClick={replayTour} /></>}
+          {panel === "guide" && <><Localized as="p" className="atlas-eyebrow">JOURNEY GUIDE</Localized><Localized as="h2" id="atlas-dialog-title">Welcome to The Atlas</Localized><ul className="atlas-guide-steps"><li><Icon name="ribbon-scroll" /><Localized as="span">This is your map. Drag it left or right to look around.</Localized></li><li><Icon name="mountain-peak" /><Localized as="span">Finish 8 Mountains questions, 15 Forest statements and 4 Valley steps, in order.</Localized></li><li><Icon name="sunburst" /><Localized as="span">A glowing region means it&apos;s ready. Tap it to start.</Localized></li><li><Icon name="flag-marker-pin" /><Localized as="span">Lost? Tap Locate Me anytime to find your spot again.</Localized></li></ul><Localized as="div" className="atlas-guide-path">Mountains <Localized as="span">···</Localized> Forest <Localized as="span">···</Localized> Valley</Localized><Button label="Got it" onClick={closePanel} /><Button label="Replay tutorial" variant="secondary" onClick={replayTour} /></>}
           {panel === "list" && <><Localized as="p" className="atlas-eyebrow">YOUR ASSESSMENTS</Localized><Localized as="h2" id="atlas-dialog-title">Journey list</Localized><Localized as="ul" className="atlas-region-list">{journeyRows.map(row => <li key={row.id}><div><Localized as="strong">{row.name}</Localized><Localized as="span">{row.status}</Localized></div><Button label={row.action === "badge" ? "View Badge" : row.action === "enter" ? "Enter Assessment" : "Locked"} disabled={row.action === "locked" || !actionReady} onClick={() => row.action === "badge" ? setPanel(`badge-${row.id}`) : enter(row.regionIndex)} /></li>)}</Localized></>}
           {panel === "settings" && <><Localized as="p" className="atlas-eyebrow">YOUR SESSION</Localized><Localized as="h2" id="atlas-dialog-title">Journey Settings</Localized>
             <section className="settings-group" aria-labelledby="settings-preferences"><Localized as="h3" id="settings-preferences">Preferences</Localized><Card variant="popup" className="settings-preferences"><Toggle label="Sound" enabled={sound} onClick={toggleSound} className="atlas-sound settings-row" data-tooltip={sound ? "Turn journey sound effects off" : "Turn journey sound effects on"} /><LanguageSwitcher /><OfflineSettingsRow onOpen={() => setPanel("offline")} /></Card></section>

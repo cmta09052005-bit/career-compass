@@ -17,7 +17,9 @@ import { playSound } from "@/lib/sound";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import "./presentation.css";
-import items from "@/data/items.json";
+import { INTEREST_ITEMS } from "@/lib/itemsV2";
+import iconMap from "@/data/v2/icon-map.json";
+import { ICON_PATHS } from "@/lib/itemIconsV2";
 import {
   SECTION_STATUS,
   useSessionAnswers,
@@ -25,18 +27,9 @@ import {
 import { isValidInterest } from "@/lib/assessmentValidation";
 
 gsap.registerPlugin(useGSAP);
-const INTEREST_ITEMS = items.filter((item) => item.section === "Interests");
 const ACKNOWLEDGMENTS = ["Choice noted.", "Got it.", "That one's in.", "All right, moving on.", "Noted for now.", "On it.", "Thanks for that.", "Ready for the next part."];
 const SCENE_LABELS = ["Weekend plans", "Project tasks", "Tools for the community", "An idea to share", "Your content feed", "Career Day roles", "Class fair booths", "Around your community"];
 const BRIEFING_KEY = "careerCompassMountainsBriefing";
-const CATEGORY_ICONS = {
-  C1: "M18 18h64v44H18z M10 72h80 M40 62v10 M60 62v10 M43 30l-9 9 9 9 M57 30l9 9-9 9",
-  C2: "M30 18l14 14-12 12-14-14v20l18 12 30-30 16 16V28L64 16 50 30 M36 62l22 22 12-12-22-22",
-  C3: "M20 76V50h14v26 M43 76V36h14v40 M66 76V20h14v56 M16 30l22-12 14 8 28-14",
-  C4: "M50 28Q30 14 14 22v50q18-8 36 6 18-14 36-6V22q-16-8-36 6v50 M24 34l16 5 M24 46l16 5 M60 39l16-5 M60 51l16-5",
-  C5: "M50 22c-10-16-32-8-32 12 0 24 32 44 32 44s32-20 32-44c0-20-22-28-32-12z M50 38v22 M39 49h22",
-  C6: "M48 16c-22 4-34 22-30 42 3 16 16 26 32 24 6-.8 8-6 6-11-3-7 4-10 12-9 16 2 24-10 20-24C84 20 66 12 48 16z M34 36a5 5 0 110 10 5 5 0 010-10 M56 30a5 5 0 110 10 5 5 0 010-10 M44 54a5 5 0 110 10 5 5 0 010-10 M70 46a5 5 0 110 10 5 5 0 010-10",
-};
 const MOUNTAIN_PEAKS = [
   "M2 112 L18 86 L34 112 Z",
   "M20 112 L38 74 L56 112 Z",
@@ -72,6 +65,7 @@ export default function InterestsPage() {
   useEffect(() => {
     if (scrollCard.current) scrollCard.current.scrollTop = 0;
   }, [questionIndex, dismissedBriefing]);
+  const [reviewing, setReviewing] = useState(false);
   const [settling, setSettling] = useState(false);
   const advancing = useRef(false);
   const heading = useRef(null);
@@ -114,6 +108,8 @@ export default function InterestsPage() {
   function selectOption(key, card) {
     contextSafe(() => {
     if (advancing.current || !isReady || !isValidInterest(currentItem, key)) return;
+    if (selectedKey === key) { updateSession({ interests: { [currentItem.id]: null }, journeyProgress: { interests: SECTION_STATUS.IN_PROGRESS } }); return; }
+    setReviewing(false);
     advancing.current = true;
     setActiveQuestion(questionIndex);
     setSettling(true);
@@ -152,6 +148,7 @@ export default function InterestsPage() {
       router.push("/journey");
       return;
     }
+    setReviewing(true);
     setQuestionIndex((index) => index - 1);
   }
 
@@ -252,7 +249,7 @@ export default function InterestsPage() {
               >
                 {isSelected && <Badge variant="icon" size="small" state="unlocked" className="mountain-selection-stamp" aria-hidden="true" icon={<Localized as="span" className="mountain-selection-check">✓</Localized>} />}
                 {isSelected && settling && <span className="mountain-card-dust" aria-hidden="true"><CelebrationEffects /></span>}
-                <span className="scenario-thumbnail" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d={CATEGORY_ICONS[option.category]} /></svg></span>
+                <span className="scenario-thumbnail" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d={ICON_PATHS[iconMap[option.id]] || ICON_PATHS.neutral} /></svg></span>
                 <span className="mountain-option-copy flex items-start gap-4">
                   <Localized as="span"
                     className={`flex size-9 shrink-0 items-center justify-center rounded-full border text-sm font-bold ${
@@ -283,7 +280,7 @@ export default function InterestsPage() {
             className="w-full sm:w-auto"
           />
           {/* Saved answers can be reviewed without selecting them again. */}
-          {isValidInterest(currentItem, selectedKey) && !settling && <Button
+          {reviewing && isValidInterest(currentItem, selectedKey) && !settling && <Button
             label={
               questionIndex === INTEREST_ITEMS.length - 1
                 ? "Complete Interests"

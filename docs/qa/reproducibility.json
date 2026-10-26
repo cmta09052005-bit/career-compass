@@ -1,0 +1,32 @@
+{
+  "fullRunsPerSimulation": 2,
+  "finalUniformProfilesPerRun": 40000,
+  "personaProfilesPerRun": 153000,
+  "notes": "One preliminary uniform run preceded the approved metric labels; the two final runs below use the identical final script and method. No timings or timestamps enter simulation outputs.",
+  "files": [
+    {
+      "file": "docs/qa/uniform-profiles.json",
+      "firstSha256": "8854843b3d10bc49a457e58c6c6e912e5ee30b6ef087f92dc7e98047d6276cef",
+      "repeatSha256": "8854843b3d10bc49a457e58c6c6e912e5ee30b6ef087f92dc7e98047d6276cef",
+      "identical": true
+    },
+    {
+      "file": "docs/qa/uniform-profiles.csv",
+      "firstSha256": "60b94a2ac5e7cc6d736050f1977215712645bbab054e0f987c8b7fd90befcb7d",
+      "repeatSha256": "60b94a2ac5e7cc6d736050f1977215712645bbab054e0f987c8b7fd90befcb7d",
+      "identical": true
+    },
+    {
+      "file": "docs/qa/recoverability.json",
+      "firstSha256": "cc263d57bef00319b5a177a80702b71a37cc7d8afa3cca37103daca47c3854a1",
+      "repeatSha256": "cc263d57bef00319b5a177a80702b71a37cc7d8afa3cca37103daca47c3854a1",
+      "identical": true
+    },
+    {
+      "file": "docs/qa/recoverability.csv",
+      "firstSha256": "7aa47af983ee476ac2c14a94c392ed960e09b24b97544d87927a9829d821b852",
+      "repeatSha256": "7aa47af983ee476ac2c14a94c392ed960e09b24b97544d87927a9829d821b852",
+      "identical": true
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "interests": {
+    "INT-01": "A",
+    "INT-02": "D",
+    "INT-03": "C",
+    "INT-04": "B",
+    "INT-05": "A",
+    "INT-06": "D",
+    "INT-07": "C",
+    "INT-08": "B"
+  },
+  "skills": {
+    "SKL-01": 1,
+    "SKL-02": 2,
+    "SKL-03": 3,
+    "SKL-04": 4,
+    "SKL-05": 5,
+    "SKL-06": 1,
+    "SKL-07": 2,
+    "SKL-08": 3,
+    "SKL-09": 4,
+    "SKL-10": 5
+  },
+  "strand": "Academic-STEM",
+  "gwa": 75,
+  "subjects": [
+    "Computer/ICT",
+    "TVL-Industrial Arts",
+    "Filipino/Araling Panlipunan"
+  ],
+  "nickname": "Migration fixture",
+  "yearLevel": "Grade 12",
+  "avatarId": "navigator",
+  "journeyProgress": {
+    "interests": "Completed",
+    "skills": "Completed",
+    "academic": "Completed"
+  }
+}

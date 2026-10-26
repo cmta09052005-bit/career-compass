@@ -1,0 +1,2297 @@
+{
+  "BUS01": {
+    "interests": [
+      "INT-01-A",
+      "INT-06-B"
+    ],
+    "skills": [
+      "SKL-04",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-08"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-07"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-13",
+      "ELE-15",
+      "ELE-16",
+      "ELE-22",
+      "ELE-23"
+    ]
+  },
+  "BUS02": {
+    "interests": [
+      "INT-04-B",
+      "INT-06-B"
+    ],
+    "skills": [
+      "SKL-04",
+      "SKL-05"
+    ],
+    "oldSubjects": [
+      "ACA-08",
+      "ACA-09"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-07"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-13",
+      "ELE-15",
+      "ELE-16",
+      "ELE-17",
+      "ELE-18"
+    ]
+  },
+  "BUS03": {
+    "interests": [
+      "INT-03-A",
+      "INT-06-B"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-04"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-08"
+    ],
+    "certificates": [
+      "CER-05",
+      "CER-07"
+    ],
+    "strand": "STR-05",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-13",
+      "ELE-15",
+      "ELE-26",
+      "ELE-27",
+      "ELE-28"
+    ]
+  },
+  "BUS04": {
+    "interests": [
+      "INT-01-A",
+      "INT-06-B"
+    ],
+    "skills": [
+      "SKL-04",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-08"
+    ],
+    "certificates": [
+      "CER-07",
+      "CER-13"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-13",
+      "ELE-15",
+      "ELE-27",
+      "ELE-16",
+      "ELE-14"
+    ]
+  },
+  "BUS05": {
+    "interests": [
+      "INT-01-A",
+      "INT-04-B"
+    ],
+    "skills": [
+      "SKL-04",
+      "SKL-05"
+    ],
+    "oldSubjects": [
+      "ACA-08",
+      "ACA-09"
+    ],
+    "certificates": [
+      "CER-07",
+      "CER-13"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-14",
+      "ELE-15",
+      "ELE-16",
+      "ELE-17",
+      "ELE-18"
+    ]
+  },
+  "BUS06": {
+    "interests": [
+      "INT-04-B",
+      "INT-07-A"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-09",
+      "ACA-10"
+    ],
+    "certificates": [
+      "CER-07",
+      "CER-13"
+    ],
+    "strand": "STR-06",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-13",
+      "ELE-14",
+      "ELE-15",
+      "ELE-17",
+      "ELE-18"
+    ]
+  },
+  "BUS07": {
+    "interests": [
+      "INT-03-A",
+      "INT-07-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-04"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-10"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-07"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-14",
+      "ELE-17",
+      "ELE-18",
+      "ELE-57",
+      "ELE-62"
+    ]
+  },
+  "BUS08": {
+    "interests": [
+      "INT-01-A",
+      "INT-06-B"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-04"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-09"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-07"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-12",
+      "ELE-13",
+      "ELE-15",
+      "ELE-16",
+      "ELE-27"
+    ]
+  },
+  "BUS09": {
+    "interests": [
+      "INT-02-D",
+      "INT-07-B"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-14"
+    ],
+    "oldSubjects": [
+      "ACA-09",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-08",
+      "CER-11"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-14",
+      "ELE-17",
+      "ELE-18",
+      "ELE-56",
+      "ELE-58"
+    ]
+  },
+  "BUS10": {
+    "interests": [
+      "INT-02-D",
+      "INT-07-B"
+    ],
+    "skills": [
+      "SKL-04",
+      "SKL-05"
+    ],
+    "oldSubjects": [
+      "ACA-09",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-07",
+      "CER-08"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-14",
+      "ELE-16",
+      "ELE-18",
+      "ELE-56",
+      "ELE-57"
+    ]
+  },
+  "ICT01": {
+    "interests": [
+      "INT-02-A",
+      "INT-05-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-02"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-05"
+    ],
+    "strand": "STR-05",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-26",
+      "ELE-28",
+      "ELE-59",
+      "ELE-60",
+      "ELE-61"
+    ]
+  },
+  "ICT02": {
+    "interests": [
+      "INT-02-A",
+      "INT-03-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-05"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-09"
+    ],
+    "certificates": [
+      "CER-05",
+      "CER-07"
+    ],
+    "strand": "STR-05",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-15",
+      "ELE-26",
+      "ELE-27",
+      "ELE-28",
+      "ELE-59"
+    ]
+  },
+  "ICT03": {
+    "interests": [
+      "INT-02-A",
+      "INT-05-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-03"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-02"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-05"
+    ],
+    "strand": "STR-05",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-23",
+      "ELE-26",
+      "ELE-27",
+      "ELE-28",
+      "ELE-60"
+    ]
+  },
+  "ENG01": {
+    "interests": [
+      "INT-03-B",
+      "INT-06-A"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-10"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-21",
+      "ELE-22",
+      "ELE-23",
+      "ELE-50",
+      "ELE-52"
+    ]
+  },
+  "ENG02": {
+    "interests": [
+      "INT-02-B",
+      "INT-04-A"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-03"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-05",
+      "CER-12"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-21",
+      "ELE-48",
+      "ELE-51",
+      "ELE-63",
+      "ELE-68"
+    ]
+  },
+  "ENG03": {
+    "interests": [
+      "INT-02-B",
+      "INT-04-A"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-05",
+      "CER-12"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-21",
+      "ELE-24",
+      "ELE-49",
+      "ELE-64",
+      "ELE-66"
+    ]
+  },
+  "ENG04": {
+    "interests": [
+      "INT-04-A",
+      "INT-05-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-02"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-05",
+      "CER-12"
+    ],
+    "strand": "STR-05",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-21",
+      "ELE-49",
+      "ELE-61",
+      "ELE-64",
+      "ELE-65"
+    ]
+  },
+  "ENG05": {
+    "interests": [
+      "INT-02-A",
+      "INT-04-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-02"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-02"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-05"
+    ],
+    "strand": "STR-05",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-21",
+      "ELE-23",
+      "ELE-24",
+      "ELE-59",
+      "ELE-60"
+    ]
+  },
+  "ENG06": {
+    "interests": [
+      "INT-03-B",
+      "INT-06-A"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-08"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-05"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-09"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-20",
+      "ELE-21",
+      "ELE-22",
+      "ELE-24",
+      "ELE-25"
+    ]
+  },
+  "ENG07": {
+    "interests": [
+      "INT-04-B",
+      "INT-06-A"
+    ],
+    "skills": [
+      "SKL-04",
+      "SKL-05"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-09"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-07"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-21",
+      "ELE-22",
+      "ELE-23",
+      "ELE-24",
+      "ELE-14"
+    ]
+  },
+  "ENG08": {
+    "interests": [
+      "INT-03-B",
+      "INT-08-A"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-07"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-10"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-21",
+      "ELE-22",
+      "ELE-24",
+      "ELE-52",
+      "ELE-23"
+    ]
+  },
+  "ENG09": {
+    "interests": [
+      "INT-03-B",
+      "INT-04-A"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-08"
+    ],
+    "oldSubjects": [
+      "ACA-05",
+      "ACA-07"
+    ],
+    "certificates": [
+      "CER-10",
+      "CER-12"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-21",
+      "ELE-22",
+      "ELE-23",
+      "ELE-24",
+      "ELE-20"
+    ]
+  },
+  "ENG10": {
+    "interests": [
+      "INT-04-A",
+      "INT-06-A"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-08"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-05"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-12"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-20",
+      "ELE-21",
+      "ELE-24",
+      "ELE-51",
+      "ELE-25"
+    ]
+  },
+  "ENG11": {
+    "interests": [
+      "INT-03-B",
+      "INT-04-A"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-08"
+    ],
+    "oldSubjects": [
+      "ACA-05",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-12"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-20",
+      "ELE-21",
+      "ELE-24",
+      "ELE-51",
+      "ELE-25"
+    ]
+  },
+  "ENG12": {
+    "interests": [
+      "INT-03-C",
+      "INT-06-A"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-18"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-10"
+    ],
+    "strand": "STR-07",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-21",
+      "ELE-24",
+      "ELE-42",
+      "ELE-43"
+    ]
+  },
+  "ENG13": {
+    "interests": [
+      "INT-02-B",
+      "INT-04-A"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-09"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-05",
+      "CER-12"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-48",
+      "ELE-49",
+      "ELE-50",
+      "ELE-65",
+      "ELE-67"
+    ]
+  },
+  "ENG14": {
+    "interests": [
+      "INT-05-B",
+      "INT-08-B"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-12",
+      "CER-13"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-21",
+      "ELE-22",
+      "ELE-51",
+      "ELE-68",
+      "ELE-69"
+    ]
+  },
+  "ENG15": {
+    "interests": [
+      "INT-05-B",
+      "INT-08-B"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-07"
+    ],
+    "certificates": [
+      "CER-03",
+      "CER-13"
+    ],
+    "strand": "STR-08",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-24",
+      "ELE-68",
+      "ELE-69",
+      "ELE-70"
+    ]
+  },
+  "SCI01": {
+    "interests": [
+      "INT-04-C",
+      "INT-06-A"
+    ],
+    "skills": [
+      "SKL-08",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-06"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-09"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-22",
+      "ELE-23",
+      "ELE-25",
+      "ELE-27"
+    ]
+  },
+  "SCI02": {
+    "interests": [
+      "INT-03-C",
+      "INT-05-B"
+    ],
+    "skills": [
+      "SKL-08",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-06",
+      "ACA-07"
+    ],
+    "certificates": [
+      "CER-10",
+      "CER-13"
+    ],
+    "strand": "STR-07",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-21",
+      "ELE-44",
+      "ELE-69",
+      "ELE-22"
+    ]
+  },
+  "SCI03": {
+    "interests": [
+      "INT-04-C",
+      "INT-06-A"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-08"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-05"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-09"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-20",
+      "ELE-22",
+      "ELE-23",
+      "ELE-25",
+      "ELE-27"
+    ]
+  },
+  "SCI04": {
+    "interests": [
+      "INT-04-C",
+      "INT-08-A"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-08"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-04"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-10"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-21",
+      "ELE-22",
+      "ELE-23",
+      "ELE-24",
+      "ELE-25"
+    ]
+  },
+  "SCI05": {
+    "interests": [
+      "INT-02-B",
+      "INT-08-A"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-03"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-12"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-21",
+      "ELE-22",
+      "ELE-23",
+      "ELE-24",
+      "ELE-67"
+    ]
+  },
+  "SCI06": {
+    "interests": [
+      "INT-04-C",
+      "INT-08-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-03"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-03"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-05"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-19",
+      "ELE-20",
+      "ELE-22",
+      "ELE-23",
+      "ELE-24"
+    ]
+  },
+  "SCI07": {
+    "interests": [
+      "INT-02-A",
+      "INT-08-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-03"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-03"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-05"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-22",
+      "ELE-23",
+      "ELE-24",
+      "ELE-27",
+      "ELE-21"
+    ]
+  },
+  "SCI08": {
+    "interests": [
+      "INT-03-A",
+      "INT-08-A"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-04"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-03"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-07"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-13",
+      "ELE-15",
+      "ELE-23",
+      "ELE-24",
+      "ELE-27"
+    ]
+  },
+  "SCI09": {
+    "interests": [
+      "INT-03-C",
+      "INT-05-B"
+    ],
+    "skills": [
+      "SKL-08",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-06",
+      "ACA-07"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-10"
+    ],
+    "strand": "STR-07",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-22",
+      "ELE-25",
+      "ELE-42",
+      "ELE-20"
+    ]
+  },
+  "SCI10": {
+    "interests": [
+      "INT-04-C",
+      "INT-05-B"
+    ],
+    "skills": [
+      "SKL-08",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-05",
+      "ACA-07"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-10"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-20",
+      "ELE-22",
+      "ELE-24",
+      "ELE-21",
+      "ELE-25"
+    ]
+  },
+  "SCI11": {
+    "interests": [
+      "INT-05-B",
+      "INT-08-A"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-07"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-10"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-20",
+      "ELE-22",
+      "ELE-24",
+      "ELE-21",
+      "ELE-25"
+    ]
+  },
+  "AGR01": {
+    "interests": [
+      "INT-03-C",
+      "INT-04-C"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-09",
+      "ACA-18"
+    ],
+    "certificates": [
+      "CER-10",
+      "CER-13"
+    ],
+    "strand": "STR-07",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-25",
+      "ELE-42",
+      "ELE-43",
+      "ELE-46"
+    ]
+  },
+  "AGR02": {
+    "interests": [
+      "INT-03-C",
+      "INT-05-B"
+    ],
+    "skills": [
+      "SKL-08",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-07",
+      "ACA-18"
+    ],
+    "certificates": [
+      "CER-10",
+      "CER-13"
+    ],
+    "strand": "STR-07",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-22",
+      "ELE-42",
+      "ELE-43",
+      "ELE-25"
+    ]
+  },
+  "AGR03": {
+    "interests": [
+      "INT-03-C",
+      "INT-05-B"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-06",
+      "ACA-18"
+    ],
+    "certificates": [
+      "CER-10",
+      "CER-13"
+    ],
+    "strand": "STR-07",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-25",
+      "ELE-42",
+      "ELE-43",
+      "ELE-44"
+    ]
+  },
+  "AGR04": {
+    "interests": [
+      "INT-04-C",
+      "INT-07-B"
+    ],
+    "skills": [
+      "SKL-08",
+      "SKL-14"
+    ],
+    "oldSubjects": [
+      "ACA-05",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-08",
+      "CER-09"
+    ],
+    "strand": "STR-06",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-20",
+      "ELE-45",
+      "ELE-55",
+      "ELE-25"
+    ]
+  },
+  "HLT01": {
+    "interests": [
+      "INT-01-C",
+      "INT-06-D"
+    ],
+    "skills": [
+      "SKL-07",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-15",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-09",
+      "CER-11"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-20",
+      "ELE-25",
+      "ELE-29",
+      "ELE-37"
+    ]
+  },
+  "HLT02": {
+    "interests": [
+      "INT-04-C",
+      "INT-07-C"
+    ],
+    "skills": [
+      "SKL-08",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-05",
+      "ACA-06"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-09"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-20",
+      "ELE-23",
+      "ELE-25",
+      "ELE-37"
+    ]
+  },
+  "HLT03": {
+    "interests": [
+      "INT-06-D",
+      "INT-08-A"
+    ],
+    "skills": [
+      "SKL-04",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-05",
+      "ACA-06"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-09"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-20",
+      "ELE-25",
+      "ELE-26",
+      "ELE-28"
+    ]
+  },
+  "HLT04": {
+    "interests": [
+      "INT-05-C",
+      "INT-06-D"
+    ],
+    "skills": [
+      "SKL-07",
+      "SKL-13"
+    ],
+    "oldSubjects": [
+      "ACA-06",
+      "ACA-15"
+    ],
+    "certificates": [
+      "CER-03",
+      "CER-09"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-30",
+      "ELE-31",
+      "ELE-36",
+      "ELE-37",
+      "ELE-41"
+    ]
+  },
+  "HLT05": {
+    "interests": [
+      "INT-01-C",
+      "INT-06-D"
+    ],
+    "skills": [
+      "SKL-07",
+      "SKL-13"
+    ],
+    "oldSubjects": [
+      "ACA-15",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-03",
+      "CER-09"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-29",
+      "ELE-30",
+      "ELE-37",
+      "ELE-39",
+      "ELE-41"
+    ]
+  },
+  "HLT06": {
+    "interests": [
+      "INT-02-B",
+      "INT-06-D"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-02"
+    ],
+    "oldSubjects": [
+      "ACA-04",
+      "ACA-06"
+    ],
+    "certificates": [
+      "CER-04",
+      "CER-09"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-20",
+      "ELE-21",
+      "ELE-25",
+      "ELE-26",
+      "ELE-28"
+    ]
+  },
+  "HLT07": {
+    "interests": [
+      "INT-03-D",
+      "INT-07-C"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-07"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-15"
+    ],
+    "certificates": [
+      "CER-09",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-25",
+      "ELE-29",
+      "ELE-31",
+      "ELE-37"
+    ]
+  },
+  "HLT08": {
+    "interests": [
+      "INT-01-C",
+      "INT-07-C"
+    ],
+    "skills": [
+      "SKL-07",
+      "SKL-14"
+    ],
+    "oldSubjects": [
+      "ACA-15",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-08",
+      "CER-09"
+    ],
+    "strand": "STR-06",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-20",
+      "ELE-31",
+      "ELE-36",
+      "ELE-55"
+    ]
+  },
+  "HLT09": {
+    "interests": [
+      "INT-06-D",
+      "INT-07-C"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-07"
+    ],
+    "oldSubjects": [
+      "ACA-05",
+      "ACA-06"
+    ],
+    "certificates": [
+      "CER-09",
+      "CER-12"
+    ],
+    "strand": "STR-01",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-20",
+      "ELE-25",
+      "ELE-29",
+      "ELE-37"
+    ]
+  },
+  "HLT10": {
+    "interests": [
+      "INT-05-B",
+      "INT-06-D"
+    ],
+    "skills": [
+      "SKL-07",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-06",
+      "ACA-18"
+    ],
+    "certificates": [
+      "CER-09",
+      "CER-10"
+    ],
+    "strand": "STR-07",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-19",
+      "ELE-20",
+      "ELE-25",
+      "ELE-29",
+      "ELE-46"
+    ]
+  },
+  "EDU01": {
+    "interests": [
+      "INT-01-B",
+      "INT-06-C"
+    ],
+    "skills": [
+      "SKL-06",
+      "SKL-07"
+    ],
+    "oldSubjects": [
+      "ACA-11",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-02"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-06",
+      "ELE-07",
+      "ELE-34",
+      "ELE-35",
+      "ELE-40"
+    ]
+  },
+  "EDU02": {
+    "interests": [
+      "INT-01-B",
+      "INT-06-C"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-06"
+    ],
+    "oldSubjects": [
+      "ACA-11",
+      "ACA-12"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-02"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-04",
+      "ELE-06",
+      "ELE-07",
+      "ELE-34",
+      "ELE-35"
+    ]
+  },
+  "EDU03": {
+    "interests": [
+      "INT-01-B",
+      "INT-06-C"
+    ],
+    "skills": [
+      "SKL-06",
+      "SKL-10"
+    ],
+    "oldSubjects": [
+      "ACA-11",
+      "ACA-14"
+    ],
+    "certificates": [
+      "CER-02",
+      "CER-06"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-06",
+      "ELE-07",
+      "ELE-30",
+      "ELE-34",
+      "ELE-40"
+    ]
+  },
+  "EDU04": {
+    "interests": [
+      "INT-05-C",
+      "INT-06-C"
+    ],
+    "skills": [
+      "SKL-13",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-06",
+      "ACA-15"
+    ],
+    "certificates": [
+      "CER-03",
+      "CER-13"
+    ],
+    "strand": "STR-10",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-31",
+      "ELE-33",
+      "ELE-34",
+      "ELE-35",
+      "ELE-36"
+    ]
+  },
+  "EDU05": {
+    "interests": [
+      "INT-05-C",
+      "INT-06-C"
+    ],
+    "skills": [
+      "SKL-07",
+      "SKL-13"
+    ],
+    "oldSubjects": [
+      "ACA-06",
+      "ACA-15"
+    ],
+    "certificates": [
+      "CER-03",
+      "CER-13"
+    ],
+    "strand": "STR-10",
+    "coreSubject": "COR-02",
+    "electives": [
+      "ELE-30",
+      "ELE-31",
+      "ELE-33",
+      "ELE-35",
+      "ELE-36"
+    ]
+  },
+  "EDU06": {
+    "interests": [
+      "INT-01-B",
+      "INT-04-D"
+    ],
+    "skills": [
+      "SKL-09",
+      "SKL-10"
+    ],
+    "oldSubjects": [
+      "ACA-13",
+      "ACA-14"
+    ],
+    "certificates": [
+      "CER-02",
+      "CER-06"
+    ],
+    "strand": "STR-09",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-01",
+      "ELE-02",
+      "ELE-08",
+      "ELE-10",
+      "ELE-32"
+    ]
+  },
+  "EDU07": {
+    "interests": [
+      "INT-01-B",
+      "INT-06-C"
+    ],
+    "skills": [
+      "SKL-09",
+      "SKL-14"
+    ],
+    "oldSubjects": [
+      "ACA-16",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-02",
+      "CER-08"
+    ],
+    "strand": "STR-06",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-07",
+      "ELE-38",
+      "ELE-45",
+      "ELE-47",
+      "ELE-55"
+    ]
+  },
+  "EDU08": {
+    "interests": [
+      "INT-01-B",
+      "INT-02-B"
+    ],
+    "skills": [
+      "SKL-02",
+      "SKL-06"
+    ],
+    "oldSubjects": [
+      "ACA-16",
+      "ACA-18"
+    ],
+    "certificates": [
+      "CER-02",
+      "CER-10"
+    ],
+    "strand": "STR-06",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-38",
+      "ELE-42",
+      "ELE-46",
+      "ELE-47",
+      "ELE-63"
+    ]
+  },
+  "SOC01": {
+    "interests": [
+      "INT-05-D",
+      "INT-08-D"
+    ],
+    "skills": [
+      "SKL-06",
+      "SKL-07"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-12"
+    ],
+    "certificates": [
+      "CER-09",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-09",
+      "ELE-11",
+      "ELE-12"
+    ]
+  },
+  "SOC02": {
+    "interests": [
+      "INT-03-D",
+      "INT-08-D"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-07"
+    ],
+    "oldSubjects": [
+      "ACA-12",
+      "ACA-15"
+    ],
+    "certificates": [
+      "CER-09",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-03",
+      "ELE-11",
+      "ELE-12",
+      "ELE-39",
+      "ELE-40"
+    ]
+  },
+  "SOC03": {
+    "interests": [
+      "INT-03-D",
+      "INT-08-D"
+    ],
+    "skills": [
+      "SKL-04",
+      "SKL-07"
+    ],
+    "oldSubjects": [
+      "ACA-12",
+      "ACA-17"
+    ],
+    "certificates": [
+      "CER-02",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-03",
+      "ELE-12",
+      "ELE-39",
+      "ELE-40",
+      "ELE-11"
+    ]
+  },
+  "SOC04": {
+    "interests": [
+      "INT-03-D",
+      "INT-05-D"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-09",
+      "ACA-12"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-13"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-03",
+      "ELE-09",
+      "ELE-11",
+      "ELE-12",
+      "ELE-14"
+    ]
+  },
+  "SOC05": {
+    "interests": [
+      "INT-05-D",
+      "INT-08-D"
+    ],
+    "skills": [
+      "SKL-07",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-12"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-03",
+      "ELE-04",
+      "ELE-05",
+      "ELE-11",
+      "ELE-12"
+    ]
+  },
+  "SOC06": {
+    "interests": [
+      "INT-03-D",
+      "INT-05-D"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-12",
+      "ACA-19"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-08",
+      "ELE-09",
+      "ELE-12"
+    ]
+  },
+  "SOC07": {
+    "interests": [
+      "INT-05-D",
+      "INT-08-C"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-10",
+      "ACA-12"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-06",
+      "ELE-09",
+      "ELE-12"
+    ]
+  },
+  "SOC08": {
+    "interests": [
+      "INT-03-D",
+      "INT-05-D"
+    ],
+    "skills": [
+      "SKL-07",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-03",
+      "ACA-12"
+    ],
+    "certificates": [
+      "CER-06",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-08",
+      "ELE-09",
+      "ELE-12"
+    ]
+  },
+  "SOC09": {
+    "interests": [
+      "INT-03-D",
+      "INT-08-B"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-09",
+      "ACA-12"
+    ],
+    "certificates": [
+      "CER-07",
+      "CER-13"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-03",
+      "ELE-11",
+      "ELE-12",
+      "ELE-14",
+      "ELE-09"
+    ]
+  },
+  "SOC10": {
+    "interests": [
+      "INT-02-C",
+      "INT-03-A"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-10"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-07"
+    ],
+    "strand": "STR-05",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-09",
+      "ELE-11",
+      "ELE-26",
+      "ELE-27",
+      "ELE-28"
+    ]
+  },
+  "SOC11": {
+    "interests": [
+      "INT-05-D",
+      "INT-08-B"
+    ],
+    "skills": [
+      "SKL-13",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-12",
+      "ACA-15"
+    ],
+    "certificates": [
+      "CER-03",
+      "CER-13"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-12",
+      "ELE-37",
+      "ELE-03",
+      "ELE-11",
+      "ELE-31"
+    ]
+  },
+  "SOC12": {
+    "interests": [
+      "INT-02-C",
+      "INT-07-D"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-10",
+      "ACA-19"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-06"
+    ],
+    "strand": "STR-02",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-02",
+      "ELE-05",
+      "ELE-06",
+      "ELE-07",
+      "ELE-62"
+    ]
+  },
+  "SOC13": {
+    "interests": [
+      "INT-02-C",
+      "INT-07-D"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-10"
+    ],
+    "oldSubjects": [
+      "ACA-10",
+      "ACA-14"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-06"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-06",
+      "ELE-09",
+      "ELE-12"
+    ]
+  },
+  "SOC14": {
+    "interests": [
+      "INT-02-C",
+      "INT-08-C"
+    ],
+    "skills": [
+      "SKL-11",
+      "SKL-15"
+    ],
+    "oldSubjects": [
+      "ACA-11",
+      "ACA-19"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-06",
+      "ELE-07",
+      "ELE-09"
+    ]
+  },
+  "SOC15": {
+    "interests": [
+      "INT-03-D",
+      "INT-08-C"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-12",
+      "ACA-18"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-11"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-03",
+      "ELE-05",
+      "ELE-07",
+      "ELE-12",
+      "ELE-43"
+    ]
+  },
+  "SOC16": {
+    "interests": [
+      "INT-02-C",
+      "INT-08-C"
+    ],
+    "skills": [
+      "SKL-06",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-10",
+      "ACA-19"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-02"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-06",
+      "ELE-07",
+      "ELE-09"
+    ]
+  },
+  "SOC17": {
+    "interests": [
+      "INT-02-C",
+      "INT-08-C"
+    ],
+    "skills": [
+      "SKL-10",
+      "SKL-11"
+    ],
+    "oldSubjects": [
+      "ACA-10",
+      "ACA-19"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-06"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-06",
+      "ELE-09",
+      "ELE-12"
+    ]
+  },
+  "SOC18": {
+    "interests": [
+      "INT-02-C",
+      "INT-08-C"
+    ],
+    "skills": [
+      "SKL-05",
+      "SKL-06"
+    ],
+    "oldSubjects": [
+      "ACA-11",
+      "ACA-19"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-02"
+    ],
+    "strand": "STR-03",
+    "coreSubject": "COR-04",
+    "electives": [
+      "ELE-04",
+      "ELE-05",
+      "ELE-06",
+      "ELE-07",
+      "ELE-08"
+    ]
+  },
+  "ART01": {
+    "interests": [
+      "INT-01-D",
+      "INT-04-D"
+    ],
+    "skills": [
+      "SKL-09",
+      "SKL-10"
+    ],
+    "oldSubjects": [
+      "ACA-13",
+      "ACA-14"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-06"
+    ],
+    "strand": "STR-09",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-01",
+      "ELE-08",
+      "ELE-10",
+      "ELE-53",
+      "ELE-54"
+    ]
+  },
+  "ART02": {
+    "interests": [
+      "INT-04-D",
+      "INT-07-D"
+    ],
+    "skills": [
+      "SKL-06",
+      "SKL-10"
+    ],
+    "oldSubjects": [
+      "ACA-10",
+      "ACA-14"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-06"
+    ],
+    "strand": "STR-09",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-01",
+      "ELE-02",
+      "ELE-08",
+      "ELE-10",
+      "ELE-32"
+    ]
+  },
+  "ART03": {
+    "interests": [
+      "INT-04-D",
+      "INT-07-D"
+    ],
+    "skills": [
+      "SKL-01",
+      "SKL-09"
+    ],
+    "oldSubjects": [
+      "ACA-01",
+      "ACA-13"
+    ],
+    "certificates": [
+      "CER-01",
+      "CER-06"
+    ],
+    "strand": "STR-09",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-01",
+      "ELE-10",
+      "ELE-26",
+      "ELE-53",
+      "ELE-54"
+    ]
+  },
+  "ART04": {
+    "interests": [
+      "INT-01-D",
+      "INT-04-D"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-09"
+    ],
+    "oldSubjects": [
+      "ACA-13",
+      "ACA-16"
+    ],
+    "certificates": [
+      "CER-06",
+      "CER-12"
+    ],
+    "strand": "STR-09",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-01",
+      "ELE-22",
+      "ELE-52",
+      "ELE-54",
+      "ELE-50"
+    ]
+  },
+  "ART05": {
+    "interests": [
+      "INT-01-D",
+      "INT-03-C"
+    ],
+    "skills": [
+      "SKL-09",
+      "SKL-12"
+    ],
+    "oldSubjects": [
+      "ACA-13",
+      "ACA-18"
+    ],
+    "certificates": [
+      "CER-06",
+      "CER-10"
+    ],
+    "strand": "STR-09",
+    "coreSubject": "COR-03",
+    "electives": [
+      "ELE-08",
+      "ELE-10",
+      "ELE-52",
+      "ELE-01",
+      "ELE-42"
+    ]
+  },
+  "ART06": {
+    "interests": [
+      "INT-01-D",
+      "INT-03-B"
+    ],
+    "skills": [
+      "SKL-03",
+      "SKL-09"
+    ],
+    "oldSubjects": [
+      "ACA-02",
+      "ACA-13"
+    ],
+    "certificates": [
+      "CER-06",
+      "CER-12"
+    ],
+    "strand": "STR-09",
+    "coreSubject": "COR-01",
+    "electives": [
+      "ELE-21",
+      "ELE-24",
+      "ELE-50",
+      "ELE-52",
+      "ELE-01"
+    ]
+  }
+}
