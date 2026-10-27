@@ -22,7 +22,7 @@ const pillars = [
   ["Exploratory", 'No pressure to give the "right" answer. Just discover what fits.', "magnifying-glass"],
   ["Supportive", "Built to guide you, not judge you.", "flag-marker-pin"],
   ["Interactive", "You answer through scenarios and simple sliders, not long, boring forms.", "footprint-trail"],
-  ["Personalized", "Your results are based on you: your interests, skills, subjects, grades and certificates.", "sunburst"],
+  ["Personalized", "Your results are based on you: your interests, skills, subjects, grades and certificates & achievements.", "sunburst"],
 ];
 const team = [["Charlene Mae T. Adille", "CA"], ["Juno Alligah B. Romano", "JR"]];
 const faqs = [

@@ -1,0 +1,618 @@
+[
+  {
+    "lang": "en",
+    "note": "Your name and explorer do not affect your assessment results.",
+    "noteAboveOptions": true,
+    "noteClipped": false,
+    "noteCount": 1,
+    "noteUnderLabel": true,
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "intake",
+    "viewport": [
+      1600,
+      900
+    ]
+  },
+  {
+    "lang": "fil",
+    "note": "Hindi nakaaapekto ang iyong pangalan at napiling manlalakbay sa resulta ng iyong pagsusuri.",
+    "noteAboveOptions": true,
+    "noteClipped": false,
+    "noteCount": 1,
+    "noteUnderLabel": true,
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "intake",
+    "viewport": [
+      1600,
+      900
+    ]
+  },
+  {
+    "lang": "en",
+    "note": "Your name and explorer do not affect your assessment results.",
+    "noteAboveOptions": true,
+    "noteClipped": false,
+    "noteCount": 1,
+    "noteUnderLabel": true,
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "intake",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "lang": "fil",
+    "note": "Hindi nakaaapekto ang iyong pangalan at napiling manlalakbay sa resulta ng iyong pagsusuri.",
+    "noteAboveOptions": true,
+    "noteClipped": false,
+    "noteCount": 1,
+    "noteUnderLabel": true,
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "intake",
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "lang": "en",
+    "note": "Your name and explorer do not affect your assessment results.",
+    "noteAboveOptions": true,
+    "noteClipped": false,
+    "noteCount": 1,
+    "noteUnderLabel": true,
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "intake",
+    "viewport": [
+      950,
+      900
+    ]
+  },
+  {
+    "lang": "fil",
+    "note": "Hindi nakaaapekto ang iyong pangalan at napiling manlalakbay sa resulta ng iyong pagsusuri.",
+    "noteAboveOptions": true,
+    "noteClipped": false,
+    "noteCount": 1,
+    "noteUnderLabel": true,
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "intake",
+    "viewport": [
+      950,
+      900
+    ]
+  },
+  {
+    "lang": "en",
+    "note": "Your name and explorer do not affect your assessment results.",
+    "noteAboveOptions": true,
+    "noteClipped": false,
+    "noteCount": 1,
+    "noteUnderLabel": true,
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "intake",
+    "viewport": [
+      375,
+      814
+    ]
+  },
+  {
+    "lang": "fil",
+    "note": "Hindi nakaaapekto ang iyong pangalan at napiling manlalakbay sa resulta ng iyong pagsusuri.",
+    "noteAboveOptions": true,
+    "noteClipped": false,
+    "noteCount": 1,
+    "noteUnderLabel": true,
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "intake",
+    "viewport": [
+      375,
+      814
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "en",
+    "names": [
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Accounting Information Systems"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 2,
+    "sameLeftEdge": true,
+    "schools": [
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Sorsogon State University - Bulan - Sorsogon"
+    ],
+    "viewport": [
+      1600,
+      900
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "en",
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 7,
+    "sameLeftEdge": true,
+    "schools": [
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Legazpi - West - Albay",
+      "Private, UST-Legazpi - Albay",
+      "Public SUC, Bicol University - Guinobatan - Albay",
+      "Private, UST-Legazpi - Albay"
+    ],
+    "viewport": [
+      1600,
+      900
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "fil",
+    "names": [
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Accounting Information Systems"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 2,
+    "sameLeftEdge": true,
+    "schools": [
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Sorsogon State University - Bulan - Sorsogon"
+    ],
+    "viewport": [
+      1600,
+      900
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "fil",
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 7,
+    "sameLeftEdge": true,
+    "schools": [
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Legazpi - West - Albay",
+      "Pribado, UST-Legazpi - Albay",
+      "Pampublikong SUC, Bicol University - Guinobatan - Albay",
+      "Pribado, UST-Legazpi - Albay"
+    ],
+    "viewport": [
+      1600,
+      900
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "en",
+    "names": [
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Accounting Information Systems"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 2,
+    "sameLeftEdge": true,
+    "schools": [
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Sorsogon State University - Bulan - Sorsogon"
+    ],
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "en",
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 7,
+    "sameLeftEdge": true,
+    "schools": [
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Legazpi - West - Albay",
+      "Private, UST-Legazpi - Albay",
+      "Public SUC, Bicol University - Guinobatan - Albay",
+      "Private, UST-Legazpi - Albay"
+    ],
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "fil",
+    "names": [
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Accounting Information Systems"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 2,
+    "sameLeftEdge": true,
+    "schools": [
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Sorsogon State University - Bulan - Sorsogon"
+    ],
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "fil",
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 7,
+    "sameLeftEdge": true,
+    "schools": [
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Legazpi - West - Albay",
+      "Pribado, UST-Legazpi - Albay",
+      "Pampublikong SUC, Bicol University - Guinobatan - Albay",
+      "Pribado, UST-Legazpi - Albay"
+    ],
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "en",
+    "names": [
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Accounting Information Systems"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 2,
+    "sameLeftEdge": true,
+    "schools": [
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Sorsogon State University - Bulan - Sorsogon"
+    ],
+    "viewport": [
+      950,
+      900
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "en",
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 7,
+    "sameLeftEdge": true,
+    "schools": [
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Legazpi - West - Albay",
+      "Private, UST-Legazpi - Albay",
+      "Public SUC, Bicol University - Guinobatan - Albay",
+      "Private, UST-Legazpi - Albay"
+    ],
+    "viewport": [
+      950,
+      900
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "fil",
+    "names": [
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Accounting Information Systems"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 2,
+    "sameLeftEdge": true,
+    "schools": [
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Sorsogon State University - Bulan - Sorsogon"
+    ],
+    "viewport": [
+      950,
+      900
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "fil",
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 7,
+    "sameLeftEdge": true,
+    "schools": [
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Legazpi - West - Albay",
+      "Pribado, UST-Legazpi - Albay",
+      "Pampublikong SUC, Bicol University - Guinobatan - Albay",
+      "Pribado, UST-Legazpi - Albay"
+    ],
+    "viewport": [
+      950,
+      900
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "en",
+    "names": [
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Accounting Information Systems"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 2,
+    "sameLeftEdge": true,
+    "schools": [
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Sorsogon State University - Bulan - Sorsogon"
+    ],
+    "viewport": [
+      375,
+      814
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "en",
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 7,
+    "sameLeftEdge": true,
+    "schools": [
+      "Public SUC, Bicol University - Polangui - Albay",
+      "Public SUC, Bicol University - Legazpi - West - Albay",
+      "Private, UST-Legazpi - Albay",
+      "Public SUC, Bicol University - Guinobatan - Albay",
+      "Private, UST-Legazpi - Albay"
+    ],
+    "viewport": [
+      375,
+      814
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "fil",
+    "names": [
+      "BS Information Technology",
+      "BS Electronics Engineering",
+      "BS Computer Engineering",
+      "BS Computer Science",
+      "BS Accounting Information Systems"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 2,
+    "sameLeftEdge": true,
+    "schools": [
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Sorsogon State University - Bulan - Sorsogon"
+    ],
+    "viewport": [
+      375,
+      814
+    ]
+  },
+  {
+    "headingAlign": "left",
+    "lang": "fil",
+    "names": [
+      "BS Nursing",
+      "Doctor of Dental Medicine",
+      "BS Pharmacy",
+      "Doctor of Veterinary Medicine",
+      "BS Medical Technology / Medical Laboratory Science"
+    ],
+    "noteAlign": "left",
+    "overflow": [
+      0,
+      0
+    ],
+    "page": "results",
+    "qaCase": 7,
+    "sameLeftEdge": true,
+    "schools": [
+      "Pampublikong SUC, Bicol University - Polangui - Albay",
+      "Pampublikong SUC, Bicol University - Legazpi - West - Albay",
+      "Pribado, UST-Legazpi - Albay",
+      "Pampublikong SUC, Bicol University - Guinobatan - Albay",
+      "Pribado, UST-Legazpi - Albay"
+    ],
+    "viewport": [
+      375,
+      814
+    ]
+  }
+]

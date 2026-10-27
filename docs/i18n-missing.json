@@ -3,7 +3,7 @@
   "counts": {
     "T1": {
       "total": 772,
-      "missing": 1
+      "missing": 0
     },
     "T2": {
       "total": 312,
@@ -14,16 +14,7 @@
       "missing": 0
     }
   },
-  "missing": [
-    {
-      "text": "© OpenStreetMap contributors",
-      "tier": "T1",
-      "origins": [
-        "app/results/[courseId]/page.js:34"
-      ],
-      "coverage": "missing"
-    }
-  ],
+  "missing": [],
   "entries": [
     {
       "text": ", top 5 shown",
@@ -143,7 +134,7 @@
       "origins": [
         "app/results/[courseId]/page.js:34"
       ],
-      "coverage": "missing"
+      "coverage": "catalog"
     },
     {
       "text": "← Back",
@@ -235,12 +226,12 @@
       "coverage": "dynamic"
     },
     {
-      "text": "3 of 4 · The Valley. Complete 4 steps, including certificates.",
+      "text": "3 of 4 · The Valley. Complete 4 steps, including certificates & achievements.",
       "tier": "T1",
       "origins": [
         "components/AtlasTutorial.js:11"
       ],
-      "coverage": "dynamic"
+      "coverage": "catalog"
     },
     {
       "text": "4 of 4 · The Islands. See your top 5 matches and explore all 85 courses.",
@@ -1241,7 +1232,7 @@
       "text": "Career Compass | Page {0} of {1}",
       "tier": "T1",
       "origins": [
-        "lib/explorerReport.js:111"
+        "lib/explorerReport.js:117"
       ],
       "coverage": "catalog"
     },
@@ -1288,7 +1279,7 @@
       "coverage": "catalog"
     },
     {
-      "text": "Certificates",
+      "text": "Certificates & Achievements",
       "tier": "T1",
       "origins": [
         "lib/explorerReport.js:43"
@@ -1472,7 +1463,7 @@
       "coverage": "catalog"
     },
     {
-      "text": "Choose subjects for your curriculum, then add your general average and certificates.",
+      "text": "Choose subjects for your curriculum, then add your general average and certificates & achievements.",
       "tier": "T1",
       "origins": [
         "app/how-it-works/HowItWorks.js:34"
@@ -2538,7 +2529,7 @@
       "coverage": "catalog"
     },
     {
-      "text": "GAS has no linked courses. Your matches come from your interests, skills, subjects and certificates.",
+      "text": "GAS has no linked courses. Your matches come from your interests, skills, subjects and certificates & achievements.",
       "tier": "T1",
       "origins": [
         "app/results/page.js:161"
@@ -2565,7 +2556,7 @@
       "text": "Generated on {0}",
       "tier": "T1",
       "origins": [
-        "lib/explorerReport.js:111"
+        "lib/explorerReport.js:117"
       ],
       "coverage": "catalog"
     },
@@ -4442,7 +4433,7 @@
       "text": "Report exceeds the two-page layout. Review the content before downloading.",
       "tier": "T1",
       "origins": [
-        "lib/explorerReport.js:98"
+        "lib/explorerReport.js:104"
       ],
       "coverage": "catalog"
     },
@@ -5093,7 +5084,7 @@
       "coverage": "catalog"
     },
     {
-      "text": "steps. Add your subjects, general average, and certificates.",
+      "text": "steps. Add your subjects, general average, and certificates & achievements.",
       "tier": "T1",
       "origins": [
         "app/journey/academic/page.js:145"
@@ -6086,7 +6077,7 @@
       "coverage": "catalog"
     },
     {
-      "text": "Which certificates or awards do you have?",
+      "text": "Which certificates & achievements do you have?",
       "tier": "T1",
       "origins": [
         "app/journey/academic/page.js:27"
@@ -6559,7 +6550,7 @@
       "coverage": "catalog"
     },
     {
-      "text": "Your results are based on you: your interests, skills, subjects, grades and certificates.",
+      "text": "Your results are based on you: your interests, skills, subjects, grades and certificates & achievements.",
       "tier": "T1",
       "origins": [
         "app/about/About.js:25"

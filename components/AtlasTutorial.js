@@ -8,7 +8,7 @@ import Localized from "./Localized";
 const STOPS = [
   "1 of 4 · The Mountains. Answer 8 questions about your interests.",
   "2 of 4 · The Forest. Rate 15 skill statements.",
-  "3 of 4 · The Valley. Complete 4 steps, including certificates.",
+  "3 of 4 · The Valley. Complete 4 steps, including certificates & achievements.",
   "4 of 4 · The Islands. See your top 5 matches and explore all 85 courses.",
 ];
 const STEPS = [

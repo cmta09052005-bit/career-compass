@@ -24,7 +24,7 @@ import "./presentation.css";
 gsap.registerPlugin(useGSAP);
 const STEP_KEY = "careerCompassValleyStep";
 const BRIEFING_KEY = "careerCompassValleyBriefing";
-const TITLES = { strand: "Which strand are you taking?", subjects: "Which subjects are you strongest in?", electives: "Which electives do you take and feel strongest in?", bestSubjects: "Which subjects are you strongest in?", gwa: "What is your general average?", certificates: "Which certificates or awards do you have?" };
+const TITLES = { strand: "Which strand are you taking?", subjects: "Which subjects are you strongest in?", electives: "Which electives do you take and feel strongest in?", bestSubjects: "Which subjects are you strongest in?", gwa: "What is your general average?", certificates: "Which certificates & achievements do you have?" };
 const ALL_CARDS = [...STRANDS, ...OLD_SUBJECTS, ...CORE_SUBJECTS, ...ELECTIVES, ...CERTIFICATES];
 const electiveGroups = [...new Set(ELECTIVES.map(item => `${item.section}: ${item.group}`))].map(name => ({ name, items: ELECTIVES.filter(item => `${item.section}: ${item.group}` === name) }));
 
@@ -142,7 +142,7 @@ export default function AcademicPage() {
   const groups = step === "electives" ? electiveGroups : step === "bestSubjects" ? [{ name: "Core subjects", items: CORE_SUBJECTS }] : [{ name: null, items: step === "strand" ? STRANDS : step === "subjects" ? OLD_SUBJECTS : CERTIFICATES }];
   return <JourneyAccess session={session} isReady={isReady} requires={["interests", "skills"]}><main className="trail-screen trail-valley game-ui-screen explorer-map-screen relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10 text-beige sm:px-6">
     <div className="valley-light" aria-hidden="true" /><div className="valley-pollen" aria-hidden="true">{Array.from({ length: 10 }, (_, i) => <i key={i} style={{ left: `${(i * 29 + 7) % 100}%`, top: `${(i * 17 + 13) % 90}%`, animationDelay: `${-i * 2.7}s` }} />)}</div>
-    {showBriefing ? <Card className="valley-briefing relative"><TrailExit onLeave={() => { discardSection("academic"); browserStorage.removeItem(STEP_KEY); router.push("/journey"); }} /><h1>The Valley</h1><p>{steps.length} steps. Add your subjects, general average, and certificates.</p><Button label="BEGIN" onClick={beginTrail} /></Card> : <Card ref={card} className="valley-card valley-v2 assessment-panel relative">
+    {showBriefing ? <Card className="valley-briefing relative"><TrailExit onLeave={() => { discardSection("academic"); browserStorage.removeItem(STEP_KEY); router.push("/journey"); }} /><h1>The Valley</h1><p>{steps.length} steps. Add your subjects, general average, and certificates & achievements.</p><Button label="BEGIN" onClick={beginTrail} /></Card> : <Card ref={card} className="valley-card valley-v2 assessment-panel relative">
       <TrailExit onLeave={() => { discardSection("academic"); browserStorage.removeItem(STEP_KEY); router.push("/journey"); }} />
       <form onSubmit={advance} noValidate>
         <header><p className="map-ribbon">The Valley · Step {index + 1} of {steps.length}</p><p className="valley-route">{ROUTE_LABELS[session.route]}</p><h1 ref={heading} tabIndex={-1}>{TITLES[step]}</h1></header>

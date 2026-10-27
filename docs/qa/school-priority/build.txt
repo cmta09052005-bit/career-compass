@@ -1,0 +1,45 @@
+
+> career-compass@0.1.0 build
+> next build && node scripts/build-offline.mjs
+
+▲ Next.js 16.3.1 (Turbopack)
+✓ Running next.config.mjs took 92ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 27.8s
+  Running TypeScript ...
+  Finished TypeScript in 14ms ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/100) ...
+  Generating static pages using 11 workers (25/100) 
+  Generating static pages using 11 workers (50/100) 
+  Generating static pages using 11 workers (75/100) 
+✓ Generating static pages using 11 workers (100/100) in 3.9s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /apple-icon.png
+├ ○ /how-it-works
+├ ○ /icon.png
+├ ○ /intake
+├ ○ /journey
+├ ○ /journey/academic
+├ ○ /journey/interests
+├ ○ /journey/skills
+├ ○ /processing
+├ ○ /report
+├ ○ /results
+└   /results/[courseId]
+  ├ ● /results/BUS01
+  ├ ● /results/BUS02
+  ├ ● /results/BUS03
+  └ ● [+82 more paths]
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+Offline copy: 624 resources, 64.94 MiB, 96 routes, build g-l6ZoNAxYUXMOVUk9k85

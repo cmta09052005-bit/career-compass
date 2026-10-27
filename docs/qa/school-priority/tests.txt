@@ -2,93 +2,105 @@
 > career-compass@0.1.0 test
 > node --test lib/*.test.js lib/*.test.mjs lib/i18n/*.test.js lib/scoringV2/*.test.js
 
-(node:115544) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/assessmentValidation.test.js is not specified and it doesn't parse as CommonJS.
+(node:116276) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/assessmentValidation.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
 Assessment validation: subject counts 0–4, invalid answers, and restored progression passed.
-✔ lib\assessmentValidation.test.js (225.9184ms)
-(node:115556) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/browserStorage.test.js is not specified and it doesn't parse as CommonJS.
+✔ lib\assessmentValidation.test.js (263.0686ms)
+(node:126568) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/browserStorage.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ legacy progress, preferences and journey notices migrate together (16.206ms)
-✔ existing local journey wins without mixing old tab notices (3.5599ms)
-✔ an interrupted migration resumes its remaining journey keys (3.8872ms)
-✔ reset removes journey records, preserves preferences and unrelated storage, and prevents legacy resurrection (8.9844ms)
-✔ closing and reopening with fresh session storage retains local data (7.7877ms)
-✔ failed writes keep the newest in-memory answer and retry successfully (3.8085ms)
-✔ failed deletion stays cleared in memory and can be retried (5.3391ms)
-✔ storage subscribers see same-page updates and cross-tab resets (5.4069ms)
-✔ blocked storage retains legacy answers without deleting them (3.722ms)
-✔ quota failure during migration retains legacy answers even when reads still work (3.9205ms)
-(node:115576) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseComparison.test.js is not specified and it doesn't parse as CommonJS.
+✔ legacy progress, preferences and journey notices migrate together (16.4151ms)
+✔ existing local journey wins without mixing old tab notices (4.123ms)
+✔ an interrupted migration resumes its remaining journey keys (3.939ms)
+✔ reset removes journey records, preserves preferences and unrelated storage, and prevents legacy resurrection (9.1722ms)
+✔ closing and reopening with fresh session storage retains local data (8.2674ms)
+✔ failed writes keep the newest in-memory answer and retry successfully (6.7882ms)
+✔ failed deletion stays cleared in memory and can be retried (5.4892ms)
+✔ storage subscribers see same-page updates and cross-tab resets (6.1331ms)
+✔ blocked storage retains legacy answers without deleting them (4.6375ms)
+✔ quota failure during migration retains legacy answers even when reads still work (9.2397ms)
+(node:103520) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseComparison.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ a third course never replaces either selected course (3.0898ms)
-✔ either selection can be removed and its slot reused (0.6061ms)
-(node:115600) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseDetailModel.test.js is not specified and it doesn't parse as CommonJS.
+✔ a third course never replaces either selected course (2.6594ms)
+✔ either selection can be removed and its slot reused (0.7518ms)
+(node:124056) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseDetailModel.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ all 85 detail models have complete source fields and preserve original salaries and use the shared distance order (23.8248ms)
-✔ careerNotes, one-school model and unknown/legacy IDs (0.6272ms)
-✔ a real community-college row shows derived location and never major-only (1.6107ms)
-(node:115664) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseSearch.render.test.js is not specified and it doesn't parse as CommonJS.
+✔ all 85 detail models have complete source fields and preserve original salaries and use the shared distance order (37.1653ms)
+✔ careerNotes, one-school model and unknown/legacy IDs (0.826ms)
+✔ a real community-college row shows derived location and never major-only (1.7484ms)
+(node:124588) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseSearch.render.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ actual card info renders safe student strings with query/filter combinations and true ranks (154.6039ms)
-✔ missing-school info is a neutral non-link and source titles are not shortened (1.8463ms)
-(node:113932) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseSearch.test.js is not specified and it doesn't parse as CommonJS.
+✔ actual card info renders safe student strings with query/filter combinations and true ranks (317.1052ms)
+✔ missing-school info is a neutral non-link and source titles are not shortened (1.9281ms)
+(node:126884) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/courseSearch.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ word-prefix AND search uses source names, groups, careers and topics (27.5678ms)
-✔ all eight filter combination types use AND across categories and OR within them (1.0877ms)
-✔ filter options are exactly the recorded values and never infer national ownership (1.705ms)
-✔ search combines with every active-filter combination using AND (11.7966ms)
-✔ card info preserves source text and chooses a matching school on the same record (47.1048ms)
-✔ search, filters and all sorts preserve personal ranks, totals and source order (27.6376ms)
-(node:114720) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/i18n/translate.test.js is not specified and it doesn't parse as CommonJS.
+✔ word-prefix AND search uses source names, groups, careers and topics (38.8286ms)
+✔ all eight filter combination types use AND across categories and OR within them (0.9512ms)
+✔ filter options are exactly the recorded values and never infer national ownership (1.3736ms)
+✔ search combines with every active-filter combination using AND (12.3511ms)
+✔ card info preserves source text and chooses a matching school on the same record (153.6465ms)
+✔ search, filters and all sorts preserve personal ranks, totals and source order (79.5081ms)
+(node:127036) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/i18n/translate.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ all assessment prompts and options have translations or standard academic names (7.2456ms)
-✔ all course narratives and notes are translated; proper names remain intact (2.9519ms)
-✔ English source is unchanged except requested em dash removal (1.7612ms)
-✔ dynamic labels preserve factual values and personal names (3.0212ms)
-✔ catalog has no em dashes, emoji, or missing values (2.5479ms)
-(node:114864) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/i18n/v2.test.js is not specified and it doesn't parse as CommonJS.
+✔ all assessment prompts and options have translations or standard academic names (7.8395ms)
+✔ all course narratives and notes are translated; proper names remain intact (3.5441ms)
+✔ English source is unchanged except requested em dash removal (2.7016ms)
+✔ dynamic labels preserve factual values and personal names (1.0321ms)
+✔ catalog has no em dashes, emoji, or missing values (2.9783ms)
+(node:127100) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/i18n/v2.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✖ real-source T1 and T2 translation inventory has no gaps (474.4419ms)
-✔ draft translations retain placeholders, numeric values, percentages and URLs (13.2783ms)
-✔ all protected source terms stay English and unknown copy silently falls back (4.2541ms)
-✔ Prompt 28 runtime counts, filters, hints and ARIA copy have faithful coverage (287.374ms)
-✔ both route PDF models localize without changing course names or adding match scores (52.0021ms)
-✔ offline pages, RSC and optimized image requests resolve entirely from the completed copy (123.8192ms)
-✔ a failed replacement is removed while the ready previous build survives (14.9185ms)
-✔ old builds survive preparation and are deleted only after the complete replacement activates (8.7939ms)
-✔ an update is blocked by any assessment client, and disabling stops interception (4.7437ms)
-✔ limited connections defer background downloads but an explicit update is allowed (9.5869ms)
-✔ quota failures roll back and cross-origin or POST requests are never intercepted (3.7901ms)
-(node:114968) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/recommendations.test.js is not specified and it doesn't parse as CommonJS.
+✔ real-source T1 and T2 translation inventory has no gaps (1158.7752ms)
+✔ draft translations retain placeholders, numeric values, percentages and URLs (14.5929ms)
+✔ all protected source terms stay English and unknown copy silently falls back (3.4158ms)
+✔ Prompt 28 runtime counts, filters, hints and ARIA copy have faithful coverage (352.7329ms)
+✔ both route PDF models localize without changing course names or adding match scores (62.5913ms)
+✔ offline pages, RSC and optimized image requests resolve entirely from the completed copy (206.3036ms)
+✔ a failed replacement is removed while the ready previous build survives (12.6726ms)
+✔ old builds survive preparation and are deleted only after the complete replacement activates (13.385ms)
+✔ an update is blocked by any assessment client, and disabling stops interception (6.6998ms)
+✔ limited connections defer background downloads but an explicit update is allowed (62.0699ms)
+✔ quota failures roll back and cross-origin or POST requests are never intercepted (9.21ms)
+(node:127200) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/recommendations.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ shared old recommendations equal real ranking and exact matched evidence (21.437ms)
-✔ shared new recommendations equal real ranking and exact matched evidence (6.1284ms)
-✔ invalid sessions return errors without ranking (0.6171ms)
-✔ arcs use fixed rank-one/five anchors and remain stable on expansion (3.0353ms)
-✔ rendered result labels contain no percentages or numeric scores (43.3152ms)
-✔ compare data is complete for five courses, preserving careerNotes and single-school order (1.3554ms)
-✔ English old report preserves ranking/profile and excludes score fields (85.9021ms)
-✔ English new report preserves ranking/profile and excludes score fields (17.6403ms)
-✔ school display suppresses disallowed notes and repeated location segments (0.6376ms)
-(node:114976) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.integration.test.js is not specified and it doesn't parse as CommonJS.
+✔ shared old recommendations equal real ranking and exact matched evidence (22.0678ms)
+✔ shared new recommendations equal real ranking and exact matched evidence (6.8911ms)
+✔ invalid sessions return errors without ranking (0.6679ms)
+✔ arcs use fixed rank-one/five anchors and remain stable on expansion (20.3337ms)
+✔ rendered result labels contain no percentages or numeric scores (58.3809ms)
+✔ compare data is complete for five courses, preserving careerNotes and single-school order (1.458ms)
+✔ English old report preserves ranking/profile and excludes score fields (122.2829ms)
+✔ English new report preserves ranking/profile and excludes score fields (22.7149ms)
+✔ school display suppresses disallowed notes and repeated location segments (1.0708ms)
+(node:127240) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/reportFooter.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ generation dates follow the Manila day boundary and never use a saved report date (297.3243ms)
+✔ each footer reserves room below content and the brand header is centered (25.7378ms)
+(node:127296) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/schoolProximity.test.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ great-circle distance handles known distances, invalid coordinates and stable ties (5.2031ms)
+✔ every course retains exactly its source school links, ordered by unrounded distance with unknowns last (150.6355ms)
+(node:127324) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.integration.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
@@ -380,24 +392,24 @@ PASS: REGRESSION — multiple course tie-breakers within one category can fire s
 }
 
 Integration summary: 4/4 passed.
-✔ lib\scoringEngine.integration.test.js (225.7215ms)
-(node:115076) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.secondarySignals.test.js is not specified and it doesn't parse as CommonJS.
+✔ lib\scoringEngine.integration.test.js (752.3267ms)
+(node:127376) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.secondarySignals.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
 PASS: complete sample profile matches all 24 expected course percentages.
 PASS: sample profile's top five displayed percentages are all distinct.
 PASS: even five identical zero scores receive unique top-five display percentages while their calculated scores remain unchanged.
-✔ lib\scoringEngine.secondarySignals.test.js (239.0895ms)
-(node:115164) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.skillBoundary.test.js is not specified and it doesn't parse as CommonJS.
+✔ lib\scoringEngine.secondarySignals.test.js (659.1737ms)
+(node:127480) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.skillBoundary.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
 PASS: SKL-01=4 adds 2 to CategoryScore(C1) and gives BSIS-001 componentA=4.
 PASS: secondary-signal formula produces C1=88%, BSIT=87%, BSIS=84%, BSCpE=82%, BSCS=80%.
 PASS: SKL-01 through SKL-10 all trigger category and course effects at exactly 4.
-✔ lib\scoringEngine.skillBoundary.test.js (244.2757ms)
-(node:115216) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.test.js is not specified and it doesn't parse as CommonJS.
+✔ lib\scoringEngine.skillBoundary.test.js (633.9579ms)
+(node:127640) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringEngine.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
@@ -516,96 +528,77 @@ SUMMARY: all-course matching returns 24 complete Option C results with isolated 
 SUMMARY: all Option C component, rounding, and cap unit checks PASS.
 SUMMARY: all-course ranking resolves displayed ties by raw score, then course name.
 SUMMARY: recommendation DTO leads with 24 ranked topCourses and keeps category as supplementary context.
-✔ lib\scoringEngine.test.js (249.8736ms)
-(node:113856) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringV2/engine.test.js is not specified and it doesn't parse as CommonJS.
+✔ lib\scoringEngine.test.js (605.1489ms)
+(node:127652) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringV2/engine.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ GWA 0 gives 0 without rounding in both routes (5.9985ms)
-✔ GWA 74.99 gives 0 without rounding in both routes (0.7566ms)
-✔ GWA 75 gives 2 without rounding in both routes (0.8533ms)
-✔ GWA 79.99 gives 2 without rounding in both routes (0.9804ms)
-✔ GWA 80 gives 3 without rounding in both routes (1.0864ms)
-✔ GWA 84.99 gives 3 without rounding in both routes (0.792ms)
-✔ GWA 85 gives 4 without rounding in both routes (0.5823ms)
-✔ GWA 89.99 gives 4 without rounding in both routes (0.4414ms)
-✔ GWA 90 gives 5 without rounding in both routes (1.9901ms)
-✔ GWA 94.5 gives 5 without rounding in both routes (1.4083ms)
-✔ GWA 94.99 gives 5 without rounding in both routes (0.521ms)
-✔ GWA 95 gives 6 without rounding in both routes (0.3263ms)
-✔ GWA 100 gives 6 without rounding in both routes (0.3529ms)
-✔ all 85 old-course maxima are 38 and all new-course maxima are 43, with exact breakdowns (22.6373ms)
-✔ GAS removes all strand and GWA awards, retaining subject evidence (1.4292ms)
-✔ empty certificates and electives award zero (0.7356ms)
-✔ matched electives and the linked core award separately; GWA is given once (0.9552ms)
-✔ GWA requires an elective or core match; no cluster award exists (1.0264ms)
-✔ SHA-256 known vectors, padding boundaries and UTF-8 match independent Node crypto (77.2808ms)
-✔ ranking obeys all four comparators, including ascending hash within exact ties (6.3455ms)
-✔ deterministic ranking ignores input key order, array order and metadata (25.5123ms)
-✔ hash uses GWA tier and active-route scoring fields only (1.4082ms)
-✔ validator rejects malformed objects, unknown IDs, duplicates and out-of-range values (3.6709ms)
-✔ production scoring has no cap or percentage transformation (20.799ms)
-✔ inherited scoring properties cannot bypass canonicalization (0.8056ms)
-✔ browser-like VM with no crypto, window or Node APIs produces identical ranking (19.6403ms)
-(node:113856) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringV2/index.js is not specified and it doesn't parse as CommonJS.
+✔ GWA 0 gives 0 without rounding in both routes (5.0708ms)
+✔ GWA 74.99 gives 0 without rounding in both routes (15.6044ms)
+✔ GWA 75 gives 2 without rounding in both routes (1.3863ms)
+✔ GWA 79.99 gives 2 without rounding in both routes (0.7693ms)
+✔ GWA 80 gives 3 without rounding in both routes (1.1414ms)
+✔ GWA 84.99 gives 3 without rounding in both routes (26.8732ms)
+✔ GWA 85 gives 4 without rounding in both routes (1.597ms)
+✔ GWA 89.99 gives 4 without rounding in both routes (6.4171ms)
+✔ GWA 90 gives 5 without rounding in both routes (1.1477ms)
+✔ GWA 94.5 gives 5 without rounding in both routes (19.877ms)
+✔ GWA 94.99 gives 5 without rounding in both routes (1.8829ms)
+✔ GWA 95 gives 6 without rounding in both routes (23.8125ms)
+✔ GWA 100 gives 6 without rounding in both routes (0.6686ms)
+✔ all 85 old-course maxima are 38 and all new-course maxima are 43, with exact breakdowns (29.2227ms)
+✔ GAS removes all strand and GWA awards, retaining subject evidence (0.8275ms)
+✔ empty certificates and electives award zero (1.0794ms)
+✔ matched electives and the linked core award separately; GWA is given once (12.5993ms)
+✔ GWA requires an elective or core match; no cluster award exists (1.1615ms)
+✔ SHA-256 known vectors, padding boundaries and UTF-8 match independent Node crypto (109.5858ms)
+✔ ranking obeys all four comparators, including ascending hash within exact ties (7.4211ms)
+✔ deterministic ranking ignores input key order, array order and metadata (49.1815ms)
+✔ hash uses GWA tier and active-route scoring fields only (2.6752ms)
+✔ validator rejects malformed objects, unknown IDs, duplicates and out-of-range values (4.916ms)
+✔ production scoring has no cap or percentage transformation (41.1633ms)
+✔ inherited scoring properties cannot bypass canonicalization (1.4932ms)
+✔ browser-like VM with no crypto, window or Node APIs produces identical ranking (32.9459ms)
+(node:127652) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/scoringV2/index.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ real module worker without Web Crypto produces identical ranking (139.1974ms)
-(node:113128) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/sessionFlow.test.js is not specified and it doesn't parse as CommonJS.
+✔ real module worker without Web Crypto produces identical ranking (296.4986ms)
+(node:127716) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/sessionFlow.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ Grade 11 automatically uses new, including after restore and an incompatible route patch (4.3977ms)
-﹣ Grade 12 pilot route is locked new; test-only list is never production school data (0.4059ms) # SKIP
-✔ Grade 12 chooses either route without a school question (1.7935ms)
-✔ full production-v1 saved fixture retains identity and clears all scoring and completion (1.0964ms)
-✔ route/context changes clear only the branch that became inactive, retaining shared answers (1.255ms)
-✔ empty/nullable answers need explicit Valley confirmation, not merely valid canonical values (0.8771ms)
-✔ partial validators do not demand unrelated sections, but reject unknown IDs and extra questions (0.4307ms)
-✔ sequential guards do not trust stored completion flags (0.5512ms)
-✔ adapter emits only canonical scoring fields, excludes inactive answers and validates with the real engine (0.7835ms)
-✔ readSessionRecord migrates local and legacy serialized v1 fixtures, clearing notices and preserving preferences (12.4014ms)
-✔ 25b migration drops retired fields, preserves core selections and reopens empty core answers (1.2269ms)
-✔ 25b storage cleanup persists a normalized v2 record and removes the retired step (5.8922ms)
-(node:114512) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/uiEdits.test.js is not specified and it doesn't parse as CommonJS.
+✔ Grade 11 automatically uses new, including after restore and an incompatible route patch (4.7756ms)
+﹣ Grade 12 pilot route is locked new; test-only list is never production school data (0.2865ms) # SKIP
+✔ Grade 12 chooses either route without a school question (2.1606ms)
+✔ full production-v1 saved fixture retains identity and clears all scoring and completion (1.1344ms)
+✔ route/context changes clear only the branch that became inactive, retaining shared answers (1.1778ms)
+✔ empty/nullable answers need explicit Valley confirmation, not merely valid canonical values (1.4587ms)
+✔ partial validators do not demand unrelated sections, but reject unknown IDs and extra questions (0.4688ms)
+✔ sequential guards do not trust stored completion flags (0.637ms)
+✔ adapter emits only canonical scoring fields, excludes inactive answers and validates with the real engine (0.7589ms)
+✔ readSessionRecord migrates local and legacy serialized v1 fixtures, clearing notices and preserving preferences (40.1437ms)
+✔ 25b migration drops retired fields, preserves core selections and reopens empty core answers (1.1631ms)
+✔ 25b storage cleanup persists a normalized v2 record and removes the retired step (4.2152ms)
+(node:127764) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/uiEdits.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ all placement labels cover each journey state and have Filipino drafts (2.9688ms)
-✔ 170 real witness reports fit two pages in both languages and keep ordered source careers/default schools (1979.3339ms)
-(node:99936) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/valleySelection.test.js is not specified and it doesn't parse as CommonJS.
+✔ all placement labels cover each journey state and have Filipino drafts (3.3331ms)
+✔ 170 real witness reports fit two pages in both languages and keep ordered source careers/default schools (2251.5254ms)
+(node:127792) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/valleySelection.test.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to \\?\C:\Users\Charlene\OneDrive\Desktop\career-compass\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-✔ Valley max picks, deselect and exclusive none confirmation (3.4216ms)
-✔ Valley route step lists, flags and exact UI GWA (1.9794ms)
-✔ full old journey from a real reachability witness validates through adapter (6.7812ms)
-✔ full new journey from a real reachability witness validates through adapter (2.6338ms)
-ℹ tests 98
+✔ Valley max picks, deselect and exclusive none confirmation (3.1061ms)
+✔ Valley route step lists, flags and exact UI GWA (4.9757ms)
+✔ full old journey from a real reachability witness validates through adapter (5.6149ms)
+✔ full new journey from a real reachability witness validates through adapter (0.9859ms)
+ℹ tests 102
 ℹ suites 0
-ℹ pass 96
-ℹ fail 1
+ℹ pass 101
+ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 1
 ℹ todo 0
-ℹ duration_ms 3821.2066
-
-✖ failing tests:
-
-test at lib\i18n\v2.test.js:12:1
-✖ real-source T1 and T2 translation inventory has no gaps (474.4419ms)
-  AssertionError [ERR_ASSERTION]: [{"text":"© OpenStreetMap contributors","tier":"T1","origins":["app/results/[courseId]/page.js:34"],"coverage":"missing"}]
-  
-  1 !== 0
-  
-      at TestContext.<anonymous> (file:///C:/Users/Charlene/OneDrive/Desktop/career-compass/lib/i18n/v2.test.js:14:10)
-      at async Test.run (node:internal/test_runner/test:1404:7)
-      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
-    generatedMessage: false,
-    code: 'ERR_ASSERTION',
-    actual: 1,
-    expected: 0,
-    operator: 'strictEqual',
-    diff: 'simple'
-  }
+ℹ duration_ms 4117.9517
