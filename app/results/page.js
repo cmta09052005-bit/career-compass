@@ -158,7 +158,7 @@ export default function ResultsPage() {
           <Localized as="h1" className="font-serif text-4xl leading-tight text-balance sm:text-5xl md:text-6xl">
             Your Career Map
           </Localized>
-          {session.route === "old" && session.old.strand === "STR-04" && <Localized as="p" className="results-strand">GAS has no linked courses. Your matches come from your interests, skills, subjects and certificates.</Localized>}
+          {session.route === "old" && session.old.strand === "STR-04" && <Localized as="p" className="results-strand">GAS has no linked courses. Your matches come from your interests, skills, subjects and certificates & achievements.</Localized>}
 
           {/* 50 — Supporting subtext */}
           <Localized as="p" className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-beige/75 sm:text-base">

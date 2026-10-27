@@ -1,0 +1,2 @@
+{"T1":{"total":772,"missing":0},"T2":{"total":312,"missing":0},"T3":{"total":1477,"missing":0}}
+PASS: T1 translation coverage.

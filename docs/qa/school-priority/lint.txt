@@ -1,0 +1,25 @@
+
+> career-compass@0.1.0 lint
+> eslint
+
+
+C:\Users\Charlene\OneDrive\Desktop\career-compass\lib\i18n\fil-content.js
+  1:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+C:\Users\Charlene\OneDrive\Desktop\career-compass\lib\i18n\fil-courses.js
+  1:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+C:\Users\Charlene\OneDrive\Desktop\career-compass\lib\i18n\fil-notes.js
+  1:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+C:\Users\Charlene\OneDrive\Desktop\career-compass\lib\i18n\fil-v2-content.js
+  3:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+C:\Users\Charlene\OneDrive\Desktop\career-compass\lib\i18n\fil-v2.js
+  3:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+C:\Users\Charlene\OneDrive\Desktop\career-compass\lib\i18n\fil.js
+  2:1  warning  Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+✖ 6 problems (0 errors, 6 warnings)
+

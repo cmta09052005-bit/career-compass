@@ -31,7 +31,7 @@ const steps = [
 const trails = [
   { id: "mountains", name: "The Mountains", type: "Interests", icon: "mountain-peak", format: "8 real-life questions to choose from", description: "There's no right or wrong answer. Every choice tells the system something new about you.", time: "About 10 to 15 minutes", number: "01" },
   { id: "forest", name: "The Forest", type: "Skills", icon: "pine-branch", format: '15 skill statements, from "not really me" to "definitely me"', description: "Covers hands-on, creative, technical, and people skills.", time: "About 10 to 15 minutes", number: "02" },
-  { id: "valley", name: "The Valley", type: "Academics", icon: "ribbon-scroll", format: "4 steps, including certificates", description: "Choose subjects for your curriculum, then add your general average and certificates.", time: "About 10 to 15 minutes", number: "03" },
+  { id: "valley", name: "The Valley", type: "Academics", icon: "ribbon-scroll", format: "4 steps, including certificates & achievements", description: "Choose subjects for your curriculum, then add your general average and certificates & achievements.", time: "About 10 to 15 minutes", number: "03" },
 ];
 const rewards = [["Wayfinder", "mountain-peak"], ["Skillcrafter", "pine-branch"], ["Scholar", "ribbon-scroll"]];
 const outcomes = [
