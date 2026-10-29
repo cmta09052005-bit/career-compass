@@ -4,7 +4,7 @@
 .story-home a,.story-home button { -webkit-tap-highlight-color:transparent; }
 .story-home :focus-visible { outline:3px solid #2dbfb8; outline-offset:6px; }
 .story-map-window { position:fixed; inset:0; z-index:-1; overflow:hidden; pointer-events:none; }
-.story-map { width:100%; height:334dvh; background:url('/landing-map.jpg') center top / 100% 100% no-repeat; will-change:transform; }
+.story-map { width:100%; height:334dvh; background:url('/landing-map.webp') center top / 100% 100% no-repeat; will-change:transform; }
 .story-map-shade { position:absolute; inset:0; background:linear-gradient(90deg,rgba(24,20,19,.32),transparent 45%,rgba(24,20,19,.16)),linear-gradient(#201d2599,transparent 25%,transparent 80%,#201d2544); }
 .story-navbar { position:fixed; z-index:50; top:0; left:0; right:0; display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:88px; padding:14px 4.5%; color:#f5ecd7; transition:background .3s,backdrop-filter .3s; }
 .story-navbar.is-solid { background:rgba(27,42,74,.94); backdrop-filter:blur(8px); box-shadow:0 3px 0 #d4a01755; }

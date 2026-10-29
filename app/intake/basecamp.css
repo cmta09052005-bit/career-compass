@@ -5,7 +5,7 @@
   color:var(--map-beige); font-family:var(--font-inter),sans-serif;
   font-size:clamp(.8rem,1vw,.95rem);
 }
-.basecamp-watermark { position:fixed; inset:-12px; z-index:-2; pointer-events:none; background:linear-gradient(#1b2a4ad9,#1b2a4ad9),url('/landing-map.jpg') center 38%/cover no-repeat; filter:blur(5px); }
+.basecamp-watermark { position:fixed; inset:-12px; z-index:-2; pointer-events:none; background:linear-gradient(#1b2a4ad9,#1b2a4ad9),url('/landing-map.webp') center 38%/cover no-repeat; filter:blur(5px); }
 .basecamp .basecamp-shell.game-panel { width:min(100%,56.25rem); max-width:56.25rem; margin:auto; padding:clamp(24px,4vw,48px)!important; background:var(--deep-navy); border:1px solid #d4a01766!important; border-radius:16px!important; box-shadow:0 24px 70px #08112466!important; animation:none; overflow:visible; }
 .basecamp-shell::before { border-color:#d4a01716; border-radius:12px; background:none; }
 .basecamp-shell::after { border-radius:16px; }

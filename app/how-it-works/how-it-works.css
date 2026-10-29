@@ -1,5 +1,5 @@
 .hiw-page { background:#1b2a4a; color:#f5ecd7; --hiw-muted:#c5c8cb; }
-.hiw-watermark { position:fixed; inset:-12px; z-index:-1; pointer-events:none; background:linear-gradient(#1b2a4ad9,#1b2a4ad9),url('/landing-map.jpg') center 38%/cover no-repeat; filter:blur(5px); }
+.hiw-watermark { position:fixed; inset:-12px; z-index:-1; pointer-events:none; background:linear-gradient(#1b2a4ad9,#1b2a4ad9),url('/landing-map.webp') center 38%/cover no-repeat; filter:blur(5px); }
 .story-navbar nav [aria-current="page"] { color:#edc975; text-decoration:underline; text-underline-offset:10px; text-decoration-thickness:2px; }
 .hiw-container { width:min(100% - 5rem,65.625rem); margin:auto; }
 .hiw-label { font-family:var(--story-label),sans-serif; font-size:10px; font-weight:600; letter-spacing:.19em; text-transform:uppercase; color:#edc975; }
