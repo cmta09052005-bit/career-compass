@@ -96,7 +96,7 @@ export default function LandingPage() {
             <div className="story-actions"><Button href={entry.href} className="story-button story-start" label={journeyLabel(entry, "hero")} /><Localized as="a" href="#explorers" className="story-text-link">Explore the Story ↓</Localized></div>
 
           </Card>
-          <div className="story-compass-stage" aria-hidden="true"><div className="story-orbit" /><div className="story-compass-spin"><Localized as="img" className="story-compass" src="/brand/compass-v2-transparent-1024.png" width="420" height="480" alt="" /></div></div>
+          <div className="story-compass-stage" aria-hidden="true"><div className="story-orbit" /><div className="story-compass-spin"><picture><source media="(min-width: 700px)" srcSet="/brand/compass-v2-transparent-840.webp" type="image/webp" /><source media="(min-width: 700px)" srcSet="/brand/compass-v2-transparent-1024.png" type="image/png" /><Localized as="img" className="story-compass" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="420" height="480" fetchPriority="high" alt="" /></picture></div></div>
           <Localized as="a" className="story-scroll" href="#explorers">SCROLL TO EXPLORE <Localized as="span">↓</Localized></Localized>
         </section>
         <section ref={carousel} id="explorers" className="story-explorers" aria-labelledby="explorers-title">
