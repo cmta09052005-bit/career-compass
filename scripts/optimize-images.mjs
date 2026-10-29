@@ -10,6 +10,9 @@ const jobs = {
   explorers: { source: "public/explorers.png", output: "public/explorers.webp", width: 2280, height: 760, quality: 80, alphaQuality: 70, limit: 400 },
   // Fit inside the requested 840x960 ceiling without stretching the square art.
   compass: { source: "public/brand/compass-v2-transparent-1024.png", output: "public/brand/compass-v2-transparent-840.webp", width: 840, height: 960, quality: 80, limit: 200 },
+  // Render the SVG viewport (including its embedded PNG offset), not just the PNG.
+  // Its 190px-wide landing background is the largest use; keep the 1:2 ratio.
+  navigator: { source: "public/characters/career-compass/navigator-framed.svg", output: "public/characters/career-compass/navigator-framed.webp", width: 380, height: 760, quality: 80, limit: 300 },
 };
 const requested = process.argv.slice(2);
 const selected = requested.length ? requested : Object.keys(jobs);
