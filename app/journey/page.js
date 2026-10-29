@@ -57,7 +57,7 @@ function regionState(index, progress) {
 function Icon({ name, className = "" }) {
   if (name === "lock") return <svg className={`atlas-icon ${className}`} viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.7"><path d="M7 10V7a5 5 0 0 1 10 0v3" /><rect x="4" y="10" width="16" height="12" rx="2" fill="#1b2a4a" /><path d="M12 14v4" /></svg>;
   // Local illustrations retain their original proportions.
-  return <Localized as="img" className={`atlas-icon ${className}`} src={name === "compass" ? "/brand/compass-v2-transparent-96.png" : `/icons/career-compass/${name}.svg`} alt="" draggable="false" />;
+  return <Localized as="img" className={`atlas-icon ${className}`} src={name === "compass" ? "/brand/compass-v2-transparent-96.png" : `/icons/career-compass/${name}.svg`} width={name === "compass" ? 96 : 256} height={name === "compass" ? 96 : 256} alt="" draggable="false" />;
 }
 
 function LocationCard({ name }) {
@@ -71,7 +71,7 @@ function StopMark({ locked = false, opening = false, pending = false }) {
 
 function Explorer({ avatarId, className = "" }) {
   const index = Math.max(0, AVATARS.indexOf(avatarId));
-  return <Localized as="span" aria-hidden="true" className={`atlas-explorer ${className}`} style={avatarId === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center 25%" } : index >= 0 ? { backgroundImage: "url('/explorers.png')", backgroundPosition: `${index * 20}% 25%` } : undefined}>{index < 0 && <Icon name="compass" />}</Localized>;
+  return <Localized as="span" aria-hidden="true" className={`atlas-explorer ${className}`} style={avatarId === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.webp)", backgroundSize: "100% auto", backgroundPosition: "center 25%" } : index >= 0 ? { backgroundImage: "url('/explorers.webp')", backgroundPosition: `${index * 20}% 25%` } : undefined}>{index < 0 && <Icon name="compass" />}</Localized>;
 }
 
 function PinFrame() {
