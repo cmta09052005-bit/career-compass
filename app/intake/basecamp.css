@@ -48,13 +48,13 @@
 .basecamp input:disabled { opacity:.6; cursor:wait; }
 .basecamp-avatars { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; min-width:0; margin:30px 0; }
 .basecamp-avatar-face { position:relative; display:flex; flex-direction:column; height:100%; min-height:275px; align-items:center; border:2px solid #d4a01733; border-radius:10px; background:#17253f; padding:14px 14px 22px; text-align:center; transition:border-color .2s,box-shadow .2s,transform .2s; }
-.basecamp-portrait { display:block; width:8.75rem; height:170px; max-width:100%; background:url('/explorers.png') var(--portrait-position) top/600% auto no-repeat; filter:grayscale(.9); transition:filter .2s; mask-image:linear-gradient(#000 80%,transparent); }
+.basecamp-portrait { display:block; width:8.75rem; height:170px; max-width:100%; background:url('/explorers.webp') var(--portrait-position) top/600% auto no-repeat; filter:grayscale(.9); transition:filter .2s; mask-image:linear-gradient(#000 80%,transparent); }
 .basecamp-avatar strong { font-family:var(--story-heading),sans-serif; font-size:clamp(.85rem,1.3vw,1.05rem); line-height:1.4; margin:10px 0 7px; }
 .basecamp-flavor { color:#f5ecd7a6; font-size:clamp(.7rem,1vw,.8rem); line-height:1.6; }
 .basecamp-avatar input:checked+.basecamp-avatar-face { border-color:var(--compass-gold); box-shadow:0 0 22px #d4a01724; }
 .basecamp-avatar input:checked+.basecamp-avatar-face .basecamp-portrait { filter:grayscale(0); }
 .basecamp-skip { grid-column:2; }
-.basecamp-silhouette { background:#d4a01766; mask:url('/explorers.png') 100% top/600% auto no-repeat; filter:none!important; }
+.basecamp-silhouette { background:#d4a01766; mask:url('/explorers.webp') 100% top/600% auto no-repeat; filter:none!important; }
 .basecamp-dust { position:fixed; inset:0; pointer-events:none; z-index:-1; overflow:hidden; }
 .basecamp-dust i { position:absolute; width:0.1875rem; height:3px; background:var(--compass-gold); border-radius:50%; box-shadow:0 0 7px #d4a01770; opacity:0; animation:basecamp-drift 20s linear infinite; }
 .basecamp-dust[data-paused=true] i { animation-play-state:paused; }

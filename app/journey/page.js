@@ -71,7 +71,7 @@ function StopMark({ locked = false, opening = false, pending = false }) {
 
 function Explorer({ avatarId, className = "" }) {
   const index = Math.max(0, AVATARS.indexOf(avatarId));
-  return <Localized as="span" aria-hidden="true" className={`atlas-explorer ${className}`} style={avatarId === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center 25%" } : index >= 0 ? { backgroundImage: "url('/explorers.png')", backgroundPosition: `${index * 20}% 25%` } : undefined}>{index < 0 && <Icon name="compass" />}</Localized>;
+  return <Localized as="span" aria-hidden="true" className={`atlas-explorer ${className}`} style={avatarId === "navigator" ? { backgroundImage: "url(/characters/career-compass/navigator-framed.svg)", backgroundSize: "100% auto", backgroundPosition: "center 25%" } : index >= 0 ? { backgroundImage: "url('/explorers.webp')", backgroundPosition: `${index * 20}% 25%` } : undefined}>{index < 0 && <Icon name="compass" />}</Localized>;
 }
 
 function PinFrame() {
