@@ -17,11 +17,35 @@
 .results-screen .course-compare-toggle { display:flex; align-items:center; justify-content:center; gap:8px; min-height:44px; padding:8px 12px; border:1px solid #9f8154; border-radius:6px; color:#1b2a4a; cursor:pointer; }
 .results-screen .course-compare-toggle[aria-pressed=true] { background:#d8bf82; border-color:#705321; box-shadow:inset 0 0 0 1px #705321; }
 .results-screen .course-strength-note { margin-top:16px; text-align:left; color:#e5d4ad; font-size:12px; }
+.results-matches-heading { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 24px; margin-bottom:24px; }
+.results-matches-heading h2 { flex:1; min-width:0; }
+.results-screen .results-matches-heading .course-strength-note { order:1; flex-basis:100%; margin-top:0; }
+.results-heading-download { display:flex; align-items:center; justify-content:center; gap:10px; min-height:44px; padding:4px 20px; border:1.5px solid var(--color-gold); border-radius:5px; background:transparent; color:var(--color-beige); font:600 .9375rem/1.4 var(--font-sans); white-space:nowrap; cursor:pointer; transition:background-color 150ms,border-color 150ms; }
+.results-heading-download-icon { flex:none; width:30px; height:30px; background:currentColor; mask:url("/icons/career-compass/compass-download.svg") center / contain no-repeat; mask-mode:luminance; }
+.results-heading-download:focus-visible { outline:2px solid var(--color-beige); outline-offset:3px; }
+.results-heading-download:disabled { cursor:not-allowed; opacity:.65; }
+@media(hover:hover) { .results-heading-download:hover:not(:disabled) { background:color-mix(in srgb,var(--color-gold) 14%,transparent); border-color:color-mix(in srgb,var(--color-gold) 65%,var(--color-beige)); } }
+.results-heading-download:active:not(:disabled) { background:color-mix(in srgb,var(--color-gold) 8%,transparent); }
+@media(prefers-reduced-motion:reduce) { .results-heading-download { transition:none; } }
+@media(width < 40rem) {
+  .results-matches-heading { display:block; margin-bottom:16px; }
+  .results-screen .results-matches-heading .course-strength-note { margin-top:8px; }
+  .results-heading-download { width:100%; margin-top:16px; white-space:normal; }
+}
 .results-screen .results-compare-bar { position:fixed; z-index:25; bottom:16px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:12px; padding:8px 14px; max-width:calc(100vw - 1.5rem); background:#f5ecd7; color:#1b2a4a; border:1px solid #b89552; border-radius:8px; box-shadow:0 4px 24px #08101e88; }
 .results-compare-bar span { font-size:12px; white-space:nowrap; }
 .results-screen .results-compare-dialog { width:min(56.25rem,calc(100vw - 1.5rem)); max-height:calc(100dvh - 32px); overflow:auto; }
+.results-compare-dialog .comparison-header { position:sticky; top:0; z-index:4; display:grid; grid-template-columns:minmax(44px,1fr) auto minmax(44px,1fr); align-items:center; row-gap:8px; padding:8px 0 24px; background:linear-gradient(115deg,#fbf0d5,#ebd5ac); }
+.results-compare-dialog .comparison-header h2 { grid-area:1 / 2; min-width:0; margin:0; font:500 clamp(1.625rem,3vw,2rem)/1.2 var(--font-playfair),serif; letter-spacing:.01em; text-wrap:balance; }
+.results-compare-dialog .comparison-header .popup-close { position:static; grid-area:1 / 3; justify-self:end; }
+.comparison-divider { grid-area:2 / 1 / 3 / -1; position:relative; justify-self:center; width:clamp(6rem,15vw,9rem); height:1px; background:#b49253; }
+.comparison-divider::after { content:""; position:absolute; top:50%; left:50%; width:6px; height:6px; background:#b49253; transform:translate(-50%,-50%) rotate(45deg); }
 .results-screen .course-comparison { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; text-align:left; }
 .results-screen .course-comparison section { min-width:0; padding:16px; border:1px solid #ad895166; border-radius:8px; }
+@media(width > 48rem) {
+  .results-screen .course-comparison { row-gap:0; }
+  .results-screen .course-comparison section { display:grid; grid-row:span 7; grid-template-rows:subgrid; align-items:start; }
+}
 .results-screen .course-comparison h3 { font-family:var(--font-playfair),serif; font-size:22px; }
 .results-screen .course-comparison p { font-size:14px; }
 .results-screen .course-comparison .comparison-score { font-weight:800; color:#715014; font-size:22px; }
@@ -58,7 +82,7 @@
 .results-screen .course-comparison li { font-size:14px; margin-block:8px; overflow-wrap:anywhere; }
 .results-screen .course-comparison small { display:block; }
 .results-screen .results-compare-dialog { overflow:hidden; }
-.results-screen .results-compare-dialog > .popup-card { max-height:calc(100dvh - 48px); overflow-y:auto; }
+.results-screen .results-compare-dialog > .popup-card { max-height:calc(100dvh - 48px); overflow-y:auto; scrollbar-gutter:stable both-edges; }
 
 .results-toolbar { position:sticky; top:0; z-index:12; margin-top:1rem; padding:.75rem; border:1px solid #b8955280; border-radius:8px; background:#1b2a4a; box-shadow:0 4px 12px #08101e44; }
 .results-search-row { display:flex; align-items:flex-end; gap:.75rem; flex-wrap:wrap; }
@@ -83,11 +107,13 @@
 .results-toolbar :is(input,select,button,summary):focus-visible { outline:2px solid #edc975; outline-offset:3px; }
 .results-filter-menu input:focus-visible { outline-color:#1b2a4a; }
 .results-empty { padding:2rem 1rem; text-align:center; color:#f5ecd7; }
-.course-info { margin-top:.8rem; min-width:0; }
-.course-info-links { display:grid; grid-template-columns:1.2fr 1fr .8fr; gap:.8rem; }
-.course-info-item { min-width:0; display:flex; flex-direction:column; gap:.2rem; font-size:.8rem; color:#4e452f; }
+.course-info { margin-top:1rem; min-width:0; }
+.course-info-links { display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1fr) minmax(0,1.5fr); align-items:start; gap:1rem; }
+.course-info-item { min-width:0; display:flex; flex-direction:column; gap:.25rem; font-size:.8rem; color:#4e452f; }
 .course-info-label { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#63512f; }
-.course-info a { display:block; min-width:0; min-height:28px; padding-block:4px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#1b2a4a; text-decoration:underline; text-underline-offset:3px; }
+.course-info a { display:block; min-width:0; min-height:28px; padding-block:4px; overflow-wrap:anywhere; line-height:1.45; color:#1b2a4a; text-decoration:underline; text-underline-offset:3px; }
+.course-info a[href$="#overview"] { overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.course-info a:is([href$="#schools"],[href$="#careers"]) { overflow-wrap:normal; text-wrap:pretty; }
 .course-info a:focus-visible { outline:2px solid #715014; outline-offset:3px; border-radius:2px; }
 .results-screen .course-compare-toggle:focus-visible { outline:2px solid #1b2a4a; outline-offset:3px; }
 .course-match-hint { margin-top:.4rem; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#63512f; font-size:.75rem; }
@@ -105,9 +131,60 @@
   .results-filter-menu,.results-filter-group:last-child .results-filter-menu { left:0; right:0; width:auto; max-height:32dvh; }
   .results-filter-status { flex-direction:column; gap:.25rem; }
   .results-active-filters { max-width:100%; }
-  .course-info-links { grid-template-columns:minmax(0,1fr); gap:.35rem; }
-  .course-info-item { flex-direction:row; align-items:baseline; gap:.5rem; }
-  .course-info-label { flex:0 0 4rem; min-width:0; overflow-wrap:anywhere; }
-  .course-info a { flex:1; }
+  .course-info-links { grid-template-columns:minmax(0,1fr); gap:.75rem; }
 }
 @media(max-width:30rem) { .course-match-hint { display:none; } }
+
+/* Keep comparison context outside the single shared scrolling body. */
+.results-screen .results-compare-dialog { width:min(68rem,calc(100vw - 32px)); max-height:calc(100dvh - 32px); overflow:hidden; }
+.results-screen .results-compare-dialog > .popup-card { display:flex; flex-direction:column; max-height:calc(100dvh - 32px); overflow:hidden; padding:16px!important; }
+.results-compare-dialog .comparison-header { position:static; flex:none; padding:0 0 16px; background:var(--color-beige); }
+.comparison-course-names { position:sticky; top:0; z-index:2; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-items:stretch; background:var(--color-beige); border-block:1px solid #ad895166; }
+.comparison-course-names h3 { min-width:0; min-height:92px; display:flex; align-items:center; padding:16px; color:var(--color-navy); font:500 22px/1.35 var(--font-playfair),serif; overflow-wrap:anywhere; }
+.comparison-course-names h3 + h3 { border-left:1px solid #ad895166; }
+.comparison-scroll { min-height:0; overflow-y:auto; overscroll-behavior:contain; scrollbar-width:auto; scrollbar-color:var(--color-navy) var(--color-beige); scroll-padding-block:160px 24px; box-shadow:inset 0 -10px 12px -12px var(--color-navy); }
+.comparison-scroll::-webkit-scrollbar { width:12px; }
+.comparison-scroll::-webkit-scrollbar-track { background:var(--color-beige); }
+.comparison-scroll::-webkit-scrollbar-thumb { background:var(--color-navy); border:3px solid var(--color-beige); border-radius:8px; }
+.comparison-scroll:focus-visible { outline:2px solid #987449; outline-offset:-2px; }
+.results-screen .course-comparison { grid-template-columns:repeat(2,minmax(0,1fr)); gap:0; }
+.results-screen .course-comparison section { display:grid; grid-row:span 4; grid-template-rows:subgrid; align-items:stretch; min-width:0; padding:0; border:0; border-radius:0; }
+.results-screen .course-comparison section + section { border-left:1px solid #ad895166; }
+.results-screen .course-comparison section > * { min-width:0; }
+.results-screen .course-comparison p { font-size:14px; line-height:1.65; overflow-wrap:anywhere; color:var(--color-navy); }
+.results-screen .course-comparison .comparison-score { margin-top:8px; }
+.results-screen .course-comparison h4 { margin:0 0 12px; font-size:15px; color:var(--color-navy); overflow-wrap:anywhere; }
+.results-screen .course-comparison li { font-size:14px; line-height:1.65; margin:0 0 16px; color:var(--color-navy); }
+.results-screen .course-comparison small,.comparison-notes { display:block; padding-block:4px; font-size:12px; line-height:1.7; color:#645340; overflow:visible; overflow-wrap:anywhere; }
+.comparison-career-title,.comparison-salary { display:block; font-weight:500; }
+.comparison-career-title::first-letter { text-transform:uppercase; }
+.results-screen .comparison-notes p { font-size:12px; color:#645340; }
+.comparison-block { padding:16px; border-bottom:1px solid #ad895166; }
+.comparison-block:nth-child(even) { background:color-mix(in srgb,var(--color-beige) 50%,transparent); }
+.results-screen .comparison-fact-label { font-size:12px; font-weight:600; }
+.comparison-range { margin-top:8px; }
+@media(max-width:48rem) {
+  .results-screen .results-compare-dialog { width:calc(100vw - 16px); max-height:calc(100dvh - 16px); }
+  .results-screen .results-compare-dialog > .popup-card { max-height:calc(100dvh - 16px); padding:8px!important; }
+  .results-compare-dialog .comparison-header { grid-template-columns:44px minmax(0,1fr) 44px; }
+  .results-compare-dialog .comparison-header h2 { font-size:22px; overflow-wrap:anywhere; }
+  .comparison-course-names h3 { padding:12px 8px; font-size:16px; }
+  .results-screen .course-comparison section { padding:0; }
+  .comparison-block { padding:16px 12px; }
+  .results-screen .course-comparison p,.results-screen .course-comparison li { font-size:13px; }
+}
+@media(width < 700px) {
+  .results-screen .course-comparison { grid-template-columns:minmax(0,1fr); }
+  .results-screen .course-comparison section { display:contents; }
+  .comparison-block { grid-column:1; }
+  .course-comparison section:first-child .comparison-block:nth-child(1) { grid-row:1; }
+  .course-comparison section:last-child .comparison-block:nth-child(1) { grid-row:2; }
+  .course-comparison section:first-child .comparison-block:nth-child(2) { grid-row:3; }
+  .course-comparison section:last-child .comparison-block:nth-child(2) { grid-row:4; }
+  .course-comparison section:first-child .comparison-block:nth-child(3) { grid-row:5; }
+  .course-comparison section:last-child .comparison-block:nth-child(3) { grid-row:6; }
+  .course-comparison section:first-child .comparison-block:nth-child(4) { grid-row:7; }
+  .course-comparison section:last-child .comparison-block:nth-child(4) { grid-row:8; }
+  .comparison-block::before { content:attr(data-course); display:block; margin-bottom:12px; font:500 16px/1.4 var(--font-playfair),serif; color:var(--color-navy); }
+  .comparison-course-names h3 { min-height:88px; }
+}

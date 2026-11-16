@@ -1,3 +1,4 @@
+> Outdated scoring rules. See [lib/scoringV2/score.js](../lib/scoringV2/score.js) for the current rules.
 # Scoring engine v2 and verification
 
 Date: 2026-10-26 (Asia/Manila). Phase 2 is complete. The engine is isolated in lib/scoringV2/ and is not imported by any page, component, or old engine.

@@ -16,7 +16,7 @@
 .pillar-card h3 { font-size:17px; letter-spacing:-.02em; }
 .pillar-card p { color:#65513c; font-size:12px; line-height:1.8; margin-top:12px; }
 .about-research { border-top:0; padding-top:15px; padding-bottom:55px; }
-.team-section { padding:65px 0; perspective:1000px; }
+.team-section { padding:65px 0 48px; perspective:1000px; }
 .team-section>h2 { margin-top:18px; max-width:45.625rem; }
 .about-team-description { max-width:45rem; color:#cdd0d3; font-size:14px; line-height:1.9; margin-top:23px; }
 .about-team-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px; max-width:50.625rem; margin:35px auto 0; perspective:1000px; }
@@ -35,7 +35,13 @@
 .team-back>img { object-fit:contain; margin-bottom:15px; }
 .team-bio { display:block; margin-top:20px; font-size:12px; line-height:1.8; color:#5d4d3c; }
 .team-back .team-flip-hint { margin-top:0; }
-.about-avatar-credits { max-width:50.625rem; margin:0 auto 32px; color:#cdd0d3; font-size:12px; line-height:1.7; text-align:center; }
+.about-adviser { margin:0 auto 32px; text-align:center; }
+.about-adviser::before { content:""; display:block; width:min(100%,9rem); height:1px; margin:0 auto 12px; background:#edc975; }
+.about-adviser .team-role { margin:0; color:#edc975; }
+.about-adviser .team-name { margin:4px 0 0; font-size:14px; color:#f5ecd7; text-wrap:balance; }
+.about-adviser .team-school { margin:4px 0 0; color:#cdd0d3; }
+.about-avatar-credits { max-width:50.625rem; margin:0 auto 32px; color:#cdd0d3; font-size:12px; line-height:1.7; text-align:center; text-wrap:balance; }
+.about-credit-name { white-space:nowrap; }
 .about-faq { padding:0 0 25px; max-width:50.625rem; margin:auto; }
 .about-faq h2 { margin:18px 0 28px; }
 .faq-list { border-top:1px solid #ba995a66; }

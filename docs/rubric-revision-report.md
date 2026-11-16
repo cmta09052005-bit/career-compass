@@ -1,3 +1,4 @@
+> Outdated scoring rules. See [lib/scoringV2/score.js](../lib/scoringV2/score.js) for the current rules.
 # Rubric revision list for Prompt 25b
 
 Date: October 26, 2026, Asia/Manila. This is a revision checklist, not an edited rubric. The source New Algorithm.pdf (26 pages) is unchanged. SHA-256: d91ad6acc1221aa6a6207ebbcad47b44659c999281149686f360baeb98e3b350. It is the previously supplied Formal Algorithm Scoring Rubric at Documents/0 CAPSTONE/3 - Capstone 2/upgrade/New folder/New Algorithm.pdf. The prompt's New_Algorithm.pdf name refers to that source.

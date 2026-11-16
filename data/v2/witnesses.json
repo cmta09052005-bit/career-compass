@@ -46,7 +46,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS04",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -103,7 +103,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "BUS04",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -159,7 +159,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS05",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -217,7 +217,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "BUS05",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -273,7 +273,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ICT02",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -330,7 +330,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "BUS07",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -386,7 +386,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS01",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -445,7 +445,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "BUS01",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -501,7 +501,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS02",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -558,7 +558,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "BUS06",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -614,9 +614,9 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC09",
-    "lead": 19,
+    "lead": 16,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
     "status": "PASS",
@@ -672,7 +672,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "BUS02",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -728,9 +728,9 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "SCI08",
-    "lead": 16,
+    "score": 35,
+    "runnerUp": "SOC10",
+    "lead": 14,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
     "status": "PASS",
@@ -785,7 +785,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "BUS05",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -841,7 +841,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS04",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -900,7 +900,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SCI08",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -956,7 +956,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS10",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -1015,7 +1015,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "BUS10",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -1071,7 +1071,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS09",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -1128,7 +1128,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "BUS09",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -1184,7 +1184,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG04",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -1243,7 +1243,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ENG05",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -1299,7 +1299,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS03",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -1358,7 +1358,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "BUS03",
     "lead": 8,
     "uniqueHighestTotal": true,
@@ -1414,7 +1414,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG05",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -1472,7 +1472,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "SCI07",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -1528,7 +1528,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG08",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -1586,7 +1586,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "ENG08",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -1642,7 +1642,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG13",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -1700,7 +1700,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "ENG13",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -1756,7 +1756,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG13",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -1813,7 +1813,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "ENG02",
     "lead": 8,
     "uniqueHighestTotal": true,
@@ -1869,7 +1869,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ICT01",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -1927,7 +1927,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "ENG03",
     "lead": 8,
     "uniqueHighestTotal": true,
@@ -1983,7 +1983,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ICT01",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -2042,7 +2042,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ICT01",
     "lead": 8,
     "uniqueHighestTotal": true,
@@ -2098,7 +2098,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI03",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -2155,7 +2155,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SCI03",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -2211,9 +2211,9 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS02",
-    "lead": 16,
+    "lead": 13,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
     "status": "PASS",
@@ -2269,7 +2269,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "BUS02",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -2325,7 +2325,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG01",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -2384,7 +2384,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ENG01",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -2440,8 +2440,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "ENG11",
+    "score": 35,
+    "runnerUp": "ENG10",
     "lead": 6,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -2499,7 +2499,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ENG11",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -2555,7 +2555,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG11",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -2613,7 +2613,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "ENG11",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -2669,7 +2669,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG09",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -2727,7 +2727,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "ENG10",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -2783,8 +2783,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "AGR03",
+    "score": 35,
+    "runnerUp": "SCI11",
     "lead": 13,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -2842,8 +2842,8 @@
       }
     },
     "rank": 1,
-    "score": 43,
-    "runnerUp": "AGR02",
+    "score": 40,
+    "runnerUp": "AGR03",
     "lead": 10,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -2898,7 +2898,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG03",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -2957,7 +2957,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ENG02",
     "lead": 15,
     "uniqueHighestTotal": true,
@@ -3013,7 +3013,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG13",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -3071,7 +3071,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "AGR03",
     "lead": 14,
     "uniqueHighestTotal": true,
@@ -3127,7 +3127,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG14",
     "lead": 14,
     "uniqueHighestTotal": true,
@@ -3184,7 +3184,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "ENG14",
     "lead": 15,
     "uniqueHighestTotal": true,
@@ -3240,7 +3240,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI03",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -3298,8 +3298,8 @@
       }
     },
     "rank": 1,
-    "score": 39,
-    "runnerUp": "SCI03",
+    "score": 36,
+    "runnerUp": "ENG06",
     "lead": 8,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -3354,7 +3354,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "AGR02",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -3413,7 +3413,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "AGR02",
     "lead": 8,
     "uniqueHighestTotal": true,
@@ -3469,7 +3469,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG06",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -3527,7 +3527,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "ENG06",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -3583,7 +3583,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI06",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -3642,7 +3642,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SCI03",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -3698,8 +3698,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "SCI04",
+    "score": 35,
+    "runnerUp": "SCI11",
     "lead": 13,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -3756,7 +3756,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "SCI04",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -3812,8 +3812,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "SCI03",
+    "score": 35,
+    "runnerUp": "SCI04",
     "lead": 10,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -3871,8 +3871,8 @@
       }
     },
     "rank": 1,
-    "score": 43,
-    "runnerUp": "ICT03",
+    "score": 40,
+    "runnerUp": "SCI07",
     "lead": 11,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -3927,7 +3927,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI08",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -3986,7 +3986,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SCI06",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -4042,7 +4042,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "BUS08",
     "lead": 9,
     "uniqueHighestTotal": true,
@@ -4099,7 +4099,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "BUS08",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -4155,7 +4155,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI02",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -4212,8 +4212,8 @@
       }
     },
     "rank": 1,
-    "score": 35,
-    "runnerUp": "SCI02",
+    "score": 32,
+    "runnerUp": "AGR02",
     "lead": 3,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -4268,7 +4268,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI11",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -4327,7 +4327,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SCI09",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -4383,7 +4383,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ENG08",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -4440,8 +4440,8 @@
       }
     },
     "rank": 1,
-    "score": 35,
-    "runnerUp": "SCI04",
+    "score": 32,
+    "runnerUp": "SCI10",
     "lead": 7,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -4496,7 +4496,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "AGR03",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -4554,7 +4554,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "AGR03",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -4610,7 +4610,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI02",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -4669,7 +4669,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SCI09",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -4725,7 +4725,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "AGR01",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -4782,7 +4782,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "AGR01",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -4838,7 +4838,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "EDU07",
     "lead": 13,
     "uniqueHighestTotal": true,
@@ -4896,7 +4896,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "HLT08",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -4952,7 +4952,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "HLT05",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -5011,7 +5011,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "HLT09",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -5067,7 +5067,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI03",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -5125,7 +5125,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "SCI01",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -5181,7 +5181,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "HLT02",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -5240,7 +5240,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "HLT06",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -5296,7 +5296,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "HLT05",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -5354,7 +5354,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "HLT05",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -5410,7 +5410,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "HLT04",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -5467,7 +5467,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "HLT04",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -5523,7 +5523,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SCI05",
     "lead": 13,
     "uniqueHighestTotal": true,
@@ -5582,7 +5582,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "HLT03",
     "lead": 15,
     "uniqueHighestTotal": true,
@@ -5638,7 +5638,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC02",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -5696,7 +5696,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "HLT08",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -5752,7 +5752,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "AGR04",
     "lead": 13,
     "uniqueHighestTotal": true,
@@ -5810,7 +5810,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "HLT04",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -5866,7 +5866,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "HLT04",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -5923,7 +5923,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "HLT10",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -5979,7 +5979,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "AGR03",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -6037,8 +6037,8 @@
       }
     },
     "rank": 1,
-    "score": 39,
-    "runnerUp": "HLT09",
+    "score": 36,
+    "runnerUp": "SCI10",
     "lead": 10,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -6093,7 +6093,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "EDU02",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -6151,7 +6151,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "EDU02",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -6207,7 +6207,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC18",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -6264,7 +6264,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SOC18",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -6320,8 +6320,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "EDU02",
+    "score": 35,
+    "runnerUp": "EDU01",
     "lead": 10,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -6379,7 +6379,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "EDU02",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -6435,7 +6435,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "EDU05",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -6492,7 +6492,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "EDU05",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -6548,7 +6548,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "EDU04",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -6606,7 +6606,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "HLT04",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -6662,7 +6662,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ART01",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -6720,7 +6720,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "EDU03",
     "lead": 12,
     "uniqueHighestTotal": true,
@@ -6776,8 +6776,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "HLT08",
+    "score": 35,
+    "runnerUp": "AGR04",
     "lead": 16,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -6835,7 +6835,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "AGR04",
     "lead": 17,
     "uniqueHighestTotal": true,
@@ -6891,7 +6891,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "EDU07",
     "lead": 17,
     "uniqueHighestTotal": true,
@@ -6950,7 +6950,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ENG02",
     "lead": 21,
     "uniqueHighestTotal": true,
@@ -7006,7 +7006,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC05",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -7063,7 +7063,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SOC05",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -7119,7 +7119,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "HLT07",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -7176,7 +7176,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SOC01",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -7232,7 +7232,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC02",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -7289,7 +7289,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SOC02",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -7345,7 +7345,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC06",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -7402,7 +7402,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SOC07",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -7458,7 +7458,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC01",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -7517,7 +7517,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SOC01",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -7573,7 +7573,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC04",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -7631,7 +7631,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "SOC07",
     "lead": 3,
     "uniqueHighestTotal": true,
@@ -7687,7 +7687,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC06",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -7746,7 +7746,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SOC06",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -7802,7 +7802,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC05",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -7861,7 +7861,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SOC06",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -7917,7 +7917,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC04",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -7975,7 +7975,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "SOC04",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -8031,8 +8031,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "BUS03",
+    "score": 35,
+    "runnerUp": "ICT02",
     "lead": 13,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -8088,7 +8088,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SOC14",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -8144,8 +8144,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "SOC09",
+    "score": 35,
+    "runnerUp": "SOC04",
     "lead": 14,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -8201,7 +8201,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "EDU04",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -8257,9 +8257,9 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC17",
-    "lead": 17,
+    "lead": 14,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
     "status": "PASS",
@@ -8315,7 +8315,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "SOC17",
     "lead": 11,
     "uniqueHighestTotal": true,
@@ -8371,7 +8371,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC17",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -8430,7 +8430,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "SOC17",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -8486,8 +8486,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "SOC16",
+    "score": 35,
+    "runnerUp": "SOC17",
     "lead": 10,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -8543,7 +8543,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SOC17",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -8599,8 +8599,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "SOC06",
+    "score": 35,
+    "runnerUp": "SOC07",
     "lead": 10,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -8657,7 +8657,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "SOC02",
     "lead": 17,
     "uniqueHighestTotal": true,
@@ -8713,7 +8713,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC17",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -8771,7 +8771,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "SOC17",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -8827,7 +8827,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "SOC16",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -8884,7 +8884,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "SOC13",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -8940,7 +8940,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "EDU02",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -8999,7 +8999,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "EDU02",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -9055,7 +9055,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "EDU06",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -9112,7 +9112,7 @@
       }
     },
     "rank": 1,
-    "score": 35,
+    "score": 32,
     "runnerUp": "ART04",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -9168,7 +9168,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ART01",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -9226,7 +9226,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "ART01",
     "lead": 7,
     "uniqueHighestTotal": true,
@@ -9282,7 +9282,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "EDU06",
     "lead": 10,
     "uniqueHighestTotal": true,
@@ -9341,7 +9341,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ART01",
     "lead": 4,
     "uniqueHighestTotal": true,
@@ -9397,7 +9397,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ART06",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -9456,7 +9456,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ART06",
     "lead": 14,
     "uniqueHighestTotal": true,
@@ -9512,8 +9512,8 @@
       }
     },
     "rank": 1,
-    "score": 38,
-    "runnerUp": "ART04",
+    "score": 35,
+    "runnerUp": "ART06",
     "lead": 13,
     "uniqueHighestTotal": true,
     "hashTieBreakUsed": false,
@@ -9570,7 +9570,7 @@
       }
     },
     "rank": 1,
-    "score": 39,
+    "score": 36,
     "runnerUp": "AGR01",
     "lead": 14,
     "uniqueHighestTotal": true,
@@ -9626,7 +9626,7 @@
       }
     },
     "rank": 1,
-    "score": 38,
+    "score": 35,
     "runnerUp": "ART04",
     "lead": 6,
     "uniqueHighestTotal": true,
@@ -9685,7 +9685,7 @@
       }
     },
     "rank": 1,
-    "score": 43,
+    "score": 40,
     "runnerUp": "ART04",
     "lead": 10,
     "uniqueHighestTotal": true,

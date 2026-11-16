@@ -1178,7 +1178,7 @@
       "lowerInclusive": 95,
       "upperExclusive": 100,
       "includes100": true,
-      "bonus": 6,
+      "bonus": 3,
       "upperInclusive": true
     },
     {
@@ -1187,7 +1187,7 @@
       "lowerInclusive": 90,
       "upperExclusive": 95,
       "includes100": false,
-      "bonus": 5
+      "bonus": 2
     },
     {
       "id": "GWA-03",
@@ -1195,7 +1195,7 @@
       "lowerInclusive": 85,
       "upperExclusive": 90,
       "includes100": false,
-      "bonus": 4
+      "bonus": 2
     },
     {
       "id": "GWA-04",
@@ -1203,7 +1203,7 @@
       "lowerInclusive": 80,
       "upperExclusive": 85,
       "includes100": false,
-      "bonus": 3
+      "bonus": 1
     },
     {
       "id": "GWA-05",
@@ -1211,7 +1211,7 @@
       "lowerInclusive": 75,
       "upperExclusive": 80,
       "includes100": false,
-      "bonus": 2
+      "bonus": 1
     },
     {
       "id": "GWA-06",
