@@ -63,6 +63,8 @@ export default function ResultsPage() {
   const { session, isReady, updateSession } = useSessionAnswers();
   const comparison = session.courseComparison || [];
   const [downloading, setDownloading] = useState(false);
+  const downloadLabel = downloading ? "Preparing your report…" : "Download My Explorer Report";
+  const downloadDisabled = downloading || !isReady;
   const [downloadError, setDownloadError] = useState("");
   const downloadPending = useRef(false);
   const result = useMemo(() => buildRecommendations(session), [session]);
@@ -127,16 +129,35 @@ export default function ResultsPage() {
       </dialog>
       <dialog ref={compareDialog} className="trail-exit-dialog results-compare-dialog" aria-labelledby="compare-title" onCancel={event => { event.preventDefault(); setCompareOpen(false); }}>
         <Card variant="popup" className="popup-card">
-          <Localized as="button" className="popup-close" aria-label="Close comparison" autoFocus onClick={() => setCompareOpen(false)}>×</Localized>
-          <Localized as="h2" id="compare-title">Compare your paths</Localized>
-          <Localized as="div" className="course-comparison">{comparedCourses.map(course => <Localized as="section" key={course.id}>
-            <Localized as="h3">{course.name}</Localized><Localized as="p">{course.group}</Localized>
-            <Localized as="p" className="comparison-score">Rank #{course.rank}</Localized>
-            <Localized as="h4">Overview</Localized><Localized as="p">{course.details.overview}</Localized>
-            <Localized as="h4">Careers</Localized><ul>{course.details.careers.map((career, index) => <li key={index}>{career.jobTitle}: {career.salaryRange}{career.notes ? ` (${t(career.notes)})` : ""}</li>)}</ul>
-            {course.details.careerNotes.map((note,index) => <p key={index}>{note.text}</p>)}
-            <Localized as="h4">Schools</Localized><ul>{course.details.schools.map(school => <li key={school.id}>{schoolLabel(school)}{schoolNotes(school).length > 0 && <small>{schoolNotes(school).map(t).join("; ")}</small>}</li>)}</ul><p>School lists are not complete. Confirm programs with the school.</p>
+          <header className="comparison-header">
+            <Localized as="h2" id="compare-title">Compare your paths</Localized>
+            <Localized as="button" className="popup-close" aria-label="Close comparison" autoFocus onClick={() => setCompareOpen(false)}>×</Localized>
+            <span className="comparison-divider" aria-hidden="true" />
+          </header>
+          <div className="comparison-scroll" role="region" aria-labelledby="compare-title" tabIndex={0}>
+          <div className="comparison-course-names">{comparedCourses.map(course => <Localized as="h3" id={`comparison-name-${course.id}`} key={course.id}>{course.name}</Localized>)}</div>
+          <Localized as="div" className="course-comparison">{comparedCourses.map(course => <Localized as="section" key={course.id} aria-labelledby={`comparison-name-${course.id}`}>
+            <div className="comparison-block comparison-facts" data-course={course.name}>
+              <p className="comparison-fact-label">{language === "fil" ? "Larangan" : "Field"}</p><Localized as="p">{course.group}</Localized>
+              <Localized as="p" className="comparison-score">Rank #{course.rank}</Localized>
+              {course.details.careers.length > 0 && course.details.careers.every(career => /^₱[\d,]+–₱[\d,]+\/month$/.test(career.salaryRange)) && <div className="comparison-range">
+                <p className="comparison-fact-label">{language === "fil" ? "Saklaw ng suweldo" : "Salary range"}</p>
+                <p>₱{Math.min(...course.details.careers.map(career => Number(career.salaryRange.split("–")[0].replace(/\D/g, "")))).toLocaleString("en-PH")}–₱{Math.max(...course.details.careers.map(career => Number(career.salaryRange.split("–")[1].replace(/\D/g, "")))).toLocaleString("en-PH")}{course.details.careers[0].salaryRange.slice(-6)}</p>
+              </div>}
+            </div>
+            <div className="comparison-block" data-course={course.name}>
+              <Localized as="h4">Overview</Localized><Localized as="p">{course.details.overview}</Localized>
+            </div>
+            <div className="comparison-block" data-course={course.name}>
+              <Localized as="h4">Careers</Localized>
+              <ul className="comparison-careers">{course.details.careers.map((career, index) => <li key={index}><span className="comparison-career-title">{career.jobTitle}</span><span className="comparison-salary">{career.salaryRange}</span>{career.notes && <small className="comparison-qualifier">({t(career.notes)})</small>}</li>)}</ul>
+              <div className="comparison-notes">{course.details.careerNotes.map((note,index) => <p key={index}>{note.text}</p>)}</div>
+            </div>
+            <div className="comparison-block" data-course={course.name}>
+              <Localized as="h4">Schools</Localized><ul>{course.details.schools.map(school => <li key={school.id}>{schoolLabel(school)}{schoolNotes(school).length > 0 && <small>{schoolNotes(school).map(t).join("; ")}</small>}</li>)}</ul><p>School lists are not complete. Confirm programs with the school.</p>
+            </div>
           </Localized>)}</Localized>
+          </div>
         </Card>
       </dialog>
       {activeComparison.length === 2 && <div className="results-compare-bar"><Button ref={compareButton} label="Compare selected courses" onClick={() => setCompareOpen(true)} /><Localized as="span" role="status">2 courses selected</Localized></div>}
@@ -170,14 +191,20 @@ export default function ResultsPage() {
 
         {/* 52 — Ranked course card list */}
         <section className="mt-8" aria-labelledby="recommended-paths-heading">
-          <Localized as="h2"
-            id="recommended-paths-heading"
-            className="text-left font-serif text-2xl sm:text-3xl"
-          >
-            {exploring || showAllCourses ? "Your Course Matches" : "Your Top Course Matches"}
-          </Localized>
-          <Localized as="p" className="course-strength-note">The compass arcs show relative match strength.</Localized>
-          <Localized as="div" className="mt-5 grid grid-cols-1 gap-4">
+          <div className="results-matches-heading">
+            <Localized as="h2"
+              id="recommended-paths-heading"
+              className="text-left font-serif text-2xl sm:text-3xl"
+            >
+              {exploring || showAllCourses ? "Your Course Matches" : "Your Top Course Matches"}
+            </Localized>
+            <Localized as="p" className="course-strength-note">The compass arcs show relative match strength.</Localized>
+            <Localized as="button" type="button" className="results-heading-download" onClick={downloadReport} disabled={downloadDisabled} aria-label={downloadLabel}>
+              <span className="results-heading-download-icon" aria-hidden="true" />
+              {downloading ? downloadLabel : "Download"}
+            </Localized>
+          </div>
+          <Localized as="div" className="grid grid-cols-1 gap-4">
             {displayedCourses.map((course) => (
               <CourseMatch key={course.id} course={course} rank={course.rank}
                 strength={arcStrength(course, topCourses)}
@@ -215,9 +242,9 @@ export default function ResultsPage() {
           />
           {/* 55 — Download My Explorer Report button */}
           <Button
-            label={<><Localized as={Image} src="/icons/career-compass/compass-download.svg" width={30} height={30} alt="" />{downloading ? "Preparing your report…" : "Download My Explorer Report"}</>}
+            label={<><Localized as={Image} src="/icons/career-compass/compass-download.svg" width={30} height={30} alt="" />{downloadLabel}</>}
             onClick={downloadReport}
-            disabled={downloading || !isReady}
+            disabled={downloadDisabled}
             className="inline-flex w-full items-center justify-center sm:w-auto"
           />
         </Localized>

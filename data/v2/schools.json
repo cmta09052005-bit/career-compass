@@ -2,6 +2,7 @@
   {
     "id": "SCH-001",
     "school": "Bicol University",
+    "shortName": "BU Legazpi West",
     "campus": "Legazpi - West",
     "location": "Legazpi",
     "province": "Albay",
@@ -54,6 +55,7 @@
   {
     "id": "SCH-002",
     "school": "Bicol University",
+    "shortName": "BU Legazpi East",
     "campus": "Legazpi - East",
     "location": "Legazpi",
     "province": "Albay",
@@ -95,6 +97,7 @@
   {
     "id": "SCH-003",
     "school": "Bicol University",
+    "shortName": "BU Daraga",
     "campus": "Daraga",
     "location": "Daraga",
     "province": "Albay",
@@ -135,6 +138,7 @@
   {
     "id": "SCH-004",
     "school": "Bicol University",
+    "shortName": "BU Guinobatan",
     "campus": "Guinobatan",
     "location": "Guinobatan",
     "province": "Albay",
@@ -173,6 +177,7 @@
   {
     "id": "SCH-005",
     "school": "Bicol University",
+    "shortName": "BU Tabaco",
     "campus": "Tabaco",
     "location": "Tabaco",
     "province": "Albay",
@@ -211,6 +216,7 @@
   {
     "id": "SCH-006",
     "school": "Bicol University",
+    "shortName": "BU Gubat",
     "campus": "Gubat (Sorsogon)",
     "location": "Gubat (Sorsogon)",
     "province": "Sorsogon",
@@ -246,6 +252,7 @@
   {
     "id": "SCH-007",
     "school": "Bicol University",
+    "shortName": "BU Polangui",
     "campus": "Polangui",
     "location": "Polangui",
     "province": "Albay",
@@ -289,6 +296,7 @@
   {
     "id": "SCH-008",
     "school": "Sorsogon State University",
+    "shortName": "SorSU Bulan",
     "campus": "Bulan",
     "location": "Bulan",
     "province": "Sorsogon",
@@ -328,6 +336,7 @@
   {
     "id": "SCH-009",
     "school": "Sorsogon State University",
+    "shortName": "SorSU Magallanes",
     "campus": "Magallanes",
     "location": "Magallanes",
     "province": null,
@@ -359,6 +368,7 @@
   {
     "id": "SCH-010",
     "school": "Sorsogon State University",
+    "shortName": "SorSU Sorsogon",
     "campus": "Sorsogon City",
     "location": "Sorsogon City",
     "province": "Sorsogon",
@@ -396,6 +406,7 @@
   {
     "id": "SCH-011",
     "school": "Sorsogon State University",
+    "shortName": "SorSU Castilla",
     "campus": "Castilla",
     "location": "Castilla",
     "province": "Sorsogon",
@@ -432,6 +443,7 @@
   {
     "id": "SCH-012",
     "school": "Camarines Sur Polytechnic Colleges (CSPC) / Polytechnic State University of Bicol (PSUB)",
+    "shortName": "CSPC",
     "campus": null,
     "location": "Nabua, Camarines Sur",
     "province": "Camarines Sur",
@@ -492,6 +504,7 @@
   {
     "id": "SCH-013",
     "school": "Partido State University (ParSU)",
+    "shortName": "ParSU",
     "campus": null,
     "location": "Goa, Camarines Sur",
     "province": "Camarines Sur",
@@ -552,6 +565,7 @@
   {
     "id": "SCH-014",
     "school": "Catanduanes State University (CatSU)",
+    "shortName": "CatSU",
     "campus": null,
     "location": "Virac, Catanduanes",
     "province": "Catanduanes",
@@ -614,6 +628,7 @@
   {
     "id": "SCH-015",
     "school": "Central Bicol State University of Agriculture (CBSUA)",
+    "shortName": "CBSUA",
     "campus": "Pili (main), Calabanga, Pasacao, Sipocot",
     "location": null,
     "province": null,
@@ -671,6 +686,7 @@
   {
     "id": "SCH-016",
     "school": "University of Camarines Norte (UCN, dating CNSC)",
+    "shortName": "UCN",
     "campus": null,
     "location": "Daet, Camarines Norte",
     "province": "Camarines Norte",
@@ -729,6 +745,7 @@
   {
     "id": "SCH-017",
     "school": "UST-Legazpi",
+    "shortName": "UST Legazpi",
     "campus": null,
     "location": null,
     "province": "Albay",
@@ -763,6 +780,7 @@
   {
     "id": "SCH-018",
     "school": "Mariners' Polytechnic Colleges",
+    "shortName": "Mariners' Polytechnic Colleges",
     "campus": "Naga, Canaman, Legazpi",
     "location": null,
     "province": null,
@@ -796,6 +814,7 @@
   {
     "id": "SCH-019",
     "school": "Ateneo de Naga University",
+    "shortName": "AdNU",
     "campus": null,
     "location": "Naga City",
     "province": "Camarines Sur",
@@ -838,6 +857,7 @@
   {
     "id": "SCH-020",
     "school": "University of Nueva Caceres",
+    "shortName": "UNC",
     "campus": null,
     "location": "Naga City",
     "province": "Camarines Sur",
@@ -875,6 +895,7 @@
   {
     "id": "SCH-021",
     "school": "Daraga Community College",
+    "shortName": "DCOMC",
     "campus": null,
     "location": "Daraga, Albay",
     "province": "Albay",
@@ -914,6 +935,7 @@
   {
     "id": "SCH-022",
     "school": "Ligao Community College",
+    "shortName": "LICOMCO",
     "campus": null,
     "location": "Ligao City, Albay",
     "province": "Albay",
@@ -953,6 +975,7 @@
   {
     "id": "SCH-023",
     "school": "Polangui Community College",
+    "shortName": "PCC",
     "campus": null,
     "location": "Polangui, Albay",
     "province": "Albay",
@@ -992,6 +1015,7 @@
   {
     "id": "SCH-024",
     "school": "Libon Community College",
+    "shortName": "Libon Community College",
     "campus": null,
     "location": "Libon, Albay",
     "province": "Albay",
@@ -1030,6 +1054,7 @@
   {
     "id": "SCH-025",
     "school": "Oas Community College",
+    "shortName": "OCC",
     "campus": null,
     "location": "Oas, Albay",
     "province": "Albay",
@@ -1069,6 +1094,7 @@
   {
     "id": "SCH-026",
     "school": "Tiwi Community College",
+    "shortName": "Tiwi Community College",
     "campus": null,
     "location": "Tiwi, Albay",
     "province": "Albay",
@@ -1103,6 +1129,7 @@
   {
     "id": "SCH-027",
     "school": "San Jose Community College",
+    "shortName": "San Jose Community College",
     "campus": null,
     "location": "Malilipot, Albay",
     "province": "Albay",
@@ -1145,6 +1172,7 @@
   {
     "id": "SCH-028",
     "school": "Community College of Manito",
+    "shortName": "Community College of Manito",
     "campus": null,
     "location": "Manito, Albay",
     "province": "Albay",
@@ -1179,6 +1207,7 @@
   {
     "id": "SCH-029",
     "school": "Donsol Community College",
+    "shortName": "Donsol Community College",
     "campus": null,
     "location": "Donsol, Sorsogon",
     "province": "Sorsogon",
@@ -1211,6 +1240,7 @@
   {
     "id": "SCH-030",
     "school": "Baao Community College (ngayon Rinconada State College)",
+    "shortName": "Baao Community College",
     "campus": null,
     "location": "Baao, Camarines Sur",
     "province": "Camarines Sur",
@@ -1250,6 +1280,7 @@
   {
     "id": "SCH-031",
     "school": "Calabanga Community College",
+    "shortName": "Calabanga Community College",
     "campus": null,
     "location": "Calabanga, Camarines Sur",
     "province": "Camarines Sur",
@@ -1285,6 +1316,7 @@
   {
     "id": "SCH-032",
     "school": "Gov. Mariano E. Villafuerte Community College (GMVCC)",
+    "shortName": "GMVCC Libmanan",
     "campus": "Libmanan",
     "location": "Libmanan, Camarines Sur",
     "province": "Camarines Sur",
@@ -1318,6 +1350,7 @@
   {
     "id": "SCH-033",
     "school": "GMVCC",
+    "shortName": "GMVCC Garchitorena",
     "campus": "Garchitorena",
     "location": "Garchitorena, Camarines Sur",
     "province": "Camarines Sur",
@@ -1353,6 +1386,7 @@
   {
     "id": "SCH-034",
     "school": "GMVCC",
+    "shortName": "GMVCC Siruma",
     "campus": "Siruma",
     "location": "Siruma, Camarines Sur",
     "province": "Camarines Sur",
@@ -1387,6 +1421,7 @@
   {
     "id": "SCH-035",
     "school": "Caramoan Community College",
+    "shortName": "Caramoan Community College",
     "campus": null,
     "location": "Caramoan, Camarines Sur",
     "province": "Camarines Sur",
@@ -1421,6 +1456,7 @@
   {
     "id": "SCH-036",
     "school": "City College of Naga",
+    "shortName": "City College of Naga",
     "campus": null,
     "location": "Naga City",
     "province": "Camarines Sur",
@@ -1456,6 +1492,7 @@
   {
     "id": "SCH-037",
     "school": "Aroroy Municipal College",
+    "shortName": "Aroroy Municipal College",
     "campus": null,
     "location": "Aroroy, Masbate",
     "province": "Masbate",
@@ -1491,6 +1528,7 @@
   {
     "id": "SCH-038",
     "school": "San Pascual Polytechnic College",
+    "shortName": "San Pascual Polytechnic College",
     "campus": null,
     "location": "San Pascual, Masbate",
     "province": "Masbate",
@@ -1523,6 +1561,7 @@
   {
     "id": "SCH-039",
     "school": "UP Diliman",
+    "shortName": "UP Diliman",
     "campus": "Diliman",
     "location": null,
     "province": null,
@@ -1565,6 +1604,7 @@
   {
     "id": "SCH-040",
     "school": "UP Los Banos",
+    "shortName": "UP Los Baños",
     "campus": "Los Banos",
     "location": null,
     "province": "Laguna",
@@ -1601,6 +1641,7 @@
   {
     "id": "SCH-041",
     "school": "UP Manila",
+    "shortName": "UP Manila",
     "campus": "Manila",
     "location": null,
     "province": null,
@@ -1636,6 +1677,7 @@
   {
     "id": "SCH-042",
     "school": "University of Santo Tomas",
+    "shortName": "UST Manila",
     "campus": "Manila",
     "location": "Manila",
     "province": null,
@@ -1669,6 +1711,7 @@
   {
     "id": "SCH-043",
     "school": "Ateneo de Manila University",
+    "shortName": "AdMU",
     "campus": null,
     "location": null,
     "province": null,
@@ -1700,6 +1743,7 @@
   {
     "id": "SCH-044",
     "school": "De La Salle-College of Saint Benilde",
+    "shortName": "Benilde",
     "campus": null,
     "location": null,
     "province": null,
@@ -1731,6 +1775,7 @@
   {
     "id": "SCH-045",
     "school": "De La Salle University",
+    "shortName": "DLSU",
     "campus": null,
     "location": null,
     "province": null,
@@ -1762,6 +1807,7 @@
   {
     "id": "SCH-046",
     "school": "Ateneo de Davao University",
+    "shortName": "AdDU",
     "campus": null,
     "location": null,
     "province": null,
@@ -1794,6 +1840,7 @@
   {
     "id": "SCH-047",
     "school": "Northwestern University",
+    "shortName": "NWU",
     "campus": "Laoag",
     "location": "Laoag",
     "province": "Ilocos Norte",
@@ -1834,6 +1881,7 @@
   {
     "id": "SCH-048",
     "school": "Davao Doctors College",
+    "shortName": "DDC",
     "campus": null,
     "location": null,
     "province": null,
@@ -1867,6 +1915,7 @@
   {
     "id": "SCH-049",
     "school": "Philippine Merchant Marine Academy",
+    "shortName": "PMMA",
     "campus": null,
     "location": null,
     "province": null,
@@ -1899,6 +1948,7 @@
   {
     "id": "SCH-050",
     "school": "Far Eastern University, Philippine Women's University, University of San Carlos",
+    "shortName": "FEU, PWU, USC",
     "campus": null,
     "location": null,
     "province": null,
@@ -1930,6 +1980,7 @@
   {
     "id": "SCH-051",
     "school": "Tarlac State University, Eastern Visayas State University, St. Alexius College",
+    "shortName": "TSU, EVSU, St. Alexius College",
     "campus": null,
     "location": null,
     "province": null,

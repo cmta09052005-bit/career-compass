@@ -1,0 +1,2075 @@
+\n=== PDF PAGE 1 ===\nCAREER COMPASS: A WEB-BASED DECISION SUPPORT 
+SYSTEM FOR SENIOR HIGH SCHOOL 
+ CAREER GUIDANCE  
+ 
+ 
+An Undergraduate Capstone Project Presented to the Faculty of 
+Computer Studies Department 
+Bicol University Polangui 
+Polangui, Albay 
+ 
+ 
+In Partial Fulfillment of the Requirements for the Degree 
+Bachelor of Science in Information Technology 
+ 
+Adille, Charlene Mae T. 
+Romano, Juno Alligah B. 
+ 
+ 
+2026 
+\n=== PDF PAGE 2 ===\n 1  
+Chapter 1 
+THE PROBLEM 
+Introduction 
+Education systems change as the needs of work and society change. Many countries 
+have improved their basic education so that students are ready for college and employment. 
+Career guidance supports this goal by helping students understand their skills and interests 
+and the jobs available to them, so they can prepare for their future (OECD, 2023). In the 
+Philippines, the K to 12 Program under Republic Act No. 10533 added Senior High School 
+to prepare students for college, work, or business (Republic of the Ph ilippines, 2013). 
+Students choose among tracks such as Academic, Technical -Vocational-Livelihood, Arts 
+and Design, or Sports. Even with these options, many students still find it hard to pick the 
+college course and career that suit them (Dayag & Picajas, 2025). 
+One major reason is the lack of personalized career guidance that students can 
+easily reach (Khurumova & Pinto, 2023). Schools usually give general advice through 
+short sessions or talks with classmates. Counselors handle many students at once, so 
+detailed support is hard to give. Interviews with thirty teachers and guidance designates 
+from the participating schools showed the same picture. Career guidance was done 
+manually through orientations, career talks, and individual counseling, most materials were 
+on paper, and guidance duties were often given to a classroom teacher on top of a full 
+teaching load. Technology can help by providing digital tools for counseling and career 
+planning (OECD, 2023; Khurumova & Pinto, 2023). A web -based system can collect 
+information from students and generate recommendations that support their decisions 
+\n=== PDF PAGE 3 ===\n2 
+ 
+(Bambi et al., 2023). The results can also serve as a reference during guidance activities. 
+However, many of the online career tools reviewed for this study were not made for the 
+Philippine Senior High School system and did not consider the K to 12 tracks. This shows 
+the need for a local digital system that gives clear and personalized guidance to Senior 
+High School students. 
+This study developed Career Compass, a web -based decision support system that 
+helps Senior High School students explore college courses and career paths (Bambi et al., 
+2023). The system gathers the interests, skills, and academic performance of the student  
+and ranks college courses using a rule -based weighted scoring method. Guidance 
+counselors may use the printed results as a supporting reference during counseling. The 
+study covered the design, development, and testing of the system. 
+The study falls under the university thematic area of Industry, Energy, and 
+Emerging Technology. It used web -based tools to address a problem in career guidance 
+among Senior High School students. By applying information systems to education, the 
+study provides a digital tool that may support guidance services in schools and benefit the 
+community. 
+The study also supports Sustainable Development Goals 4 and 8. Goal 4 promotes 
+quality education and lifelong learning, and the system contributes by making career 
+guidance easier to reach. Goal 8 promotes decent work and economic growth, and the 
+system contributes by helping students plan for employment and prepare for the demands 
+of the workforce. 
+\n=== PDF PAGE 4 ===\n3 
+ 
+Senior High School students often struggle to select suitable college courses and 
+career paths because of limited guidance support. Most guidance is still done manually and 
+in short counseling sessions that may not reach every student. This can lead to poor choices, 
+low confidence, and difficulty in planning. A web -based system can generate course and 
+career recommendations from an assessment and support counselors in their guidance 
+work. It can also help students choose their future careers in a better informed way. 
+Many of the existing career guidance tools give general advice and do not follow 
+the Philippine Senior High School system. They often lack local data and are not connected 
+to the career guidance programs of schools. The curriculum is also changing, since t he 
+previous strand-based curriculum and the strengthened curriculum with elective subjects 
+now exist side by side. Among the studies reviewed, none was found to apply a rule-based 
+weighted scoring method that covers both the previous and Strengthened Senio r High 
+School curricula. This is the gap that the study addressed. Career Compass links the local 
+information, the student profile, and automated recommendations in one system so that 
+students can choose their future careers with more confidence. 
+The central argument of the study is that a web-based decision support system can 
+support career guidance for Senior High School students by giving organized, 
+personalized, and data -based recommendations. Career Compass was developed to help 
+students select suitable college courses and career paths, and to give counselors a result 
+they can refer to during guidance activities. 
+Students in Senior High School benefit from the developed system through the 
+assessment results and the ranked course and career recommendations based on their 
+\n=== PDF PAGE 5 ===\n4 
+ 
+answers. Guidance counselors benefit from the generated results, which serve as a 
+supporting reference in counseling. Schools can use the system to strengthen their career 
+guidance programs and the readiness of their students for further education and 
+employment. Researchers and system developers can use the results and discussion of this 
+study as a reference for similar educational support systems. 
+Objectives of the Study 
+The aim of the study is to develop a web -based decision support system to assist 
+Senior High School students in selecting appropriate college courses and career paths. 
+Specifically, the study aims to: 
+1. Identify the data requirements needed as input of the system; 
+2. Design and develop a web-based decision support system that applies the rule -based 
+weighted scoring method in generating course and career recommendations; and 
+3. Evaluate the system using the software quality standards of ISO/IEC 25010 in terms 
+of functional suitability, reliability, and interaction capability. 
+Scope and Limitations 
+The study covered the development of Career Compass, a web -based decision 
+support system for Senior High School career guidance. The system gives course and 
+career recommendations based on the student’s interests, skills, and academic performance 
+by applying a rule-based weighted scoring method to the assessment responses. It has two 
+assessment flows, one for students under the previous strand-based curriculum and one for 
+\n=== PDF PAGE 6 ===\n5 
+ 
+students under the strengthened curriculum with elective subjects. Both flows use one 
+shared list of 85 college courses. The assessment has 8 interest scenarios, 15 skills 
+statements, and 4 academic steps. The results show the top five matches of the student and 
+let the student explore all 85 courses through search, filters, and a comparison option. A 
+short PDF report can be downloaded or printed for use during counseling sessions. The 
+system is available in English and Filipino and runs in a web browser on  a desktop 
+computer, laptop, or mobile device. Offline Mode can be turned on so the system keeps 
+working on the same device without an internet connection. The assessment items and 
+guidance materials were based on references from the Department of Educatio n and the 
+guidance offices of Balogo High School, Ponso National High School, and Barayong 
+National High School. The study included the planning, design, development, and testing 
+of the system. The system was evaluated by selected guidance counselors and t eachers 
+from the same three schools using ISO/IEC 25010. The assessment progress is stored in 
+the browser’s localStorage on the user’s device. The system does not require account 
+registration or login and does not use a database to store assessment responses. 
+The study has several limitations. The system uses only the rule -based weighted 
+scoring method and does not use artificial intelligence or machine learning. The 
+recommendations depend on how complete and accurate the answers of the student are, so 
+incomplete or inaccurate answers may lead to unsuitable results. The system covers only 
+the 85 courses in its master list and does not include every course offered in the Philippines. 
+An internet connection is needed to open the system for the first time and to turn on Offline 
+Mode. Progress saved in the browser’s localStorage may remain available after the browser 
+is closed. However, saved progress may be lost if the user clears the browser’s site data or 
+\n=== PDF PAGE 7 ===\n6 
+ 
+uses a different browser or device. Students may download or print the PDF report to keep 
+a separate copy of their recommendations. The recommendations are supporting references 
+only and are not final career decisions. The final decision remains with the student and the 
+guidance counselor. The evaluation was limited to selected guidance counselors and 
+teachers from the three schools, so the results do not represent other schools or locations. 
+Students did not take part in the evaluation. 
+Significance of the Study 
+This study is important because it produced a web -based decision support system 
+that may improve career guidance for Senior High School students. The recommendations 
+are based on the interests, skills, and academic performance of the student. The following  
+groups may benefit from the developed system: 
+Senior High School Students. The assessment results and recommendations help 
+students understand their strengths and the college courses and career paths open to them. 
+The results can be used during counseling to talk about their options. This can reduce 
+confusion and help students feel more certain about their decisions. 
+Parents and Guardians.  The results help parents understand the career path 
+suggested for their children. They can support their children’s decisions with better 
+information and talk about these choices at home. 
+Guidance Counselors. The system supports the guidance counselors of Balogo 
+High School, Ponso National High School, and Barayong National High School in their 
+\n=== PDF PAGE 8 ===\n7 
+ 
+career guidance work. It provides organized and automated recommendations that can 
+guide the counseling session. 
+School. The digital assessment and recommendation tool can improve the career 
+guidance services the school offers to its students. 
+Educational Institutions.  The system may help schools improve their career 
+guidance services and relate the Senior High School strands and electives to college 
+programs. It may also support the preparation of students for further studies and 
+employment. 
+Researchers. The researchers gained experience in planning, designing, 
+developing, and evaluating a web-based system using the ISO/IEC 25010 standard, which 
+strengthened their technical and research skills. 
+Future Researchers. Future researchers may use this study as a reference for 
+similar systems. They may improve or expand the system by adding features or methods, 
+and the results can guide further work in educational technology. 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 9 ===\n8 
+ 
+References 
+Bambi, B. I., Olawale, O. A., & Akintola, A. G. (2023). Decision support systems in  
+education. In Educational administration and management (pp. 210–235).  
+ResearchGate.https://www.researchgate.net/publication/389940059_Decision_Su
+pport_Systems_in_Education 
+Dayag, R. P. F., & Picajas, J. J. S. (2025). Strengthening career readiness through  
+structured career guidance services of grade 11 students. Global Journal of 
+Guidance and Counseling in Schools, 15 (1), 34 –49. 
+https://www.researchgate.net/publication/396775028_Strengthening_career_readi
+ness_through_structured_career_guidance_services_of_grade_11_students 
+Khurumova, V., & Pinto, J. C. (2023). Online and computer-assisted career guidance: Are  
+students prepared for it? Frontiers in Psychology, 14 , Article 1117289. 
+https://doi.org/10.3389/fpsyg.2023.1117289 
+Organisation for Economic Co-operation and Development. (2023). OECD digital  
+education outlook 2023: Towards an effective digital education ecosystem. OECD 
+Publishing. https://doi.org/10.1787/c74f03de-en 
+Republic of the Philippines. (2013). Republic Act No. 10533: Enhanced Basic Education  
+Act of 2013. Official Gazette of the Republic of the Philippines. 
+\n=== PDF PAGE 10 ===\n9 
+ 
+Chapter 2 
+RELATED LITERATURE AND STUDIES 
+This chapter presents the related literature and studies, project synthesis, conceptual 
+framework, and definition of terms. 
+Related Literature 
+Bucad (2024) discussed a career path recommendation system for Senior High 
+School students in selected public schools in the Philippines. The system used multi-label 
+classification and considered students’ choices, backgrounds, and academic performance 
+in recom mending suitable SHS tracks. The study emphasized the importance of clear 
+criteria in matching students with possible educational paths. This literature supports the 
+use of structured criteria in developing career recommendation systems. It is relevant to 
+Career Compass because the system also considers student information when generating 
+recommendations, although it does so through a rule-based weighted scoring method. 
+Gunwant et al. (2022) reviewed twenty-five (25) studies on expert systems used for 
+student career guidance. The review discussed different approaches, including rule-based, 
+case-based, and fuzzy logic systems. It showed how expert systems can support stude nts 
+in exploring educational and career options. This literature is relevant to Career Compass 
+because it provides a basis for considering a rule-based approach that uses defined criteria 
+to generate understandable course and career recommendations. 
+The Organisation for Economic Co -operation and Development (OECD, 2023) 
+discussed the role of digital technologies in supporting educational services and access to 
+ 
+\n=== PDF PAGE 11 ===\n10 
+ 
+information. Digital tools can help educational institutions provide information and support 
+students during their learning experiences. This literature is relevant to Career Compass 
+because the system uses a web -based platform to make career guidance info rmation and 
+assessment-based course recommendations more accessible to Senior High School 
+students. 
+Bambi et al. (2023) discussed the use of Decision Support Systems (DSS) in 
+education. A DSS supports decision -making by organizing relevant information and 
+applying established procedures or rules. This approach is useful when decisions require 
+consideration of several factors. The literature is relevant to Career Compass because the 
+system uses a rule-based weighted scoring method to process students’ interests, skills, and 
+academic performance and generate possible college course recommendations. 
+The Department of Education (DepEd, 2025) introduced the pilot implementation 
+of the Strengthened Senior High School (SHS) Curriculum for Grade 11 in School Year 
+2025–2026. The curriculum reduced the previous four SHS tracks to two: the Academic 
+Track and the Technical -Professional (TechPro ) Track. Following the pilot 
+implementation, DepEd (2026) announced the full implementation of the Strengthened 
+SHS Curriculum for Grade 11 beginning School Year 2026–2027, while Grade 12 learners 
+in non-pilot schools continued under the previous curriculum. These changes are relevant 
+to Career Compass because the system supports students under both the previous and 
+Strengthened SHS curricula. The system considers differences in strands, subjects, and 
+electives when generating course and career recommendations. 
+ 
+\n=== PDF PAGE 12 ===\n11 
+ 
+Related Studies 
+Bejar (2024) developed a career path selection system that used data mining 
+techniques to assist incoming Senior High School students in exploring possible career 
+options. The study is related to Career Compass because both aim  to support students in 
+making educational and career decisions. However, Career Compass uses a rule -based 
+weighted scoring method rather than a data mining approach. This allows the system to 
+generate recommendations using predefined criteria without requ iring a large training 
+dataset. 
+Dayag and Picajas (2025) examined structured career guidance services for Grade 
+11 students. Their study emphasized the importance of organized guidance activities in 
+supporting students’ career readiness and decision-making. This study is relevant to Career 
+Compass becaus e the system provides a structured assessment process and generates 
+course and career recommendations that may serve as supporting references during career 
+guidance activities. 
+Atay et al. (2024) developed a web-based career counseling information system in 
+Türkiye that provided access to career -related information and counseling resources. The 
+study demonstrated the application of web technologies in supporting career guidance 
+services. It is related to Career Compass because both systems use web-based platforms to 
+provide career information. However, Career Compass focuses on generating college 
+course recommendations based on students’ interests, skills, and academic performance  
+within the Philippine Senior High School context. 
+\n=== PDF PAGE 13 ===\n12 
+ 
+Khurumova and Pinto (2023) examined students’ awareness and use of online and 
+computer-assisted career guidance tools. Their study highlighted the importance of 
+considering students’ readiness and willingness to use digital career guidance services. 
+These findings are relevant to Career Compass because they emphasize the need for an 
+accessible and understandable system. Career Compass incorporates a journey -themed 
+assessment environment to encourage students to participate in the career exploration 
+process. 
+Villaruz and Diamante (2024) developed a web-based enrollment appraisal system 
+using a rule -based Decision Support System. The system applied predefined rules to 
+process student information and assess enrollment eligibility. The study also used the 
+Rapid Application Development methodology and ISO/IEC 25010 for software quality 
+evaluation. This study is relevant to Career Compass because both systems apply rule -
+based decision-making in an educational setting and use a web -based platform to support 
+school-related processes. 
+Wang et al. (2025) introduced CareerPooler , an AI -powered career exploration 
+system that used interactive simulations to support career exploration. The study is related 
+to Career Compass because both systems incorporate interactive features to encourage 
+users to explore possible career paths. How ever, Career Compass uses a rule -based 
+weighted scoring method and a journey-themed assessment environment instead of an AI-
+based recommendation approach. This allows the system to generate recommendations 
+based on predefined course alignment rules. 
+ 
+\n=== PDF PAGE 14 ===\n13 
+ 
+Table 1. Summary of Related Studies 
+System Features Strengths Weaknesses 
+Bejar (2024) 
+Random Forest 
+classifier, SHS track 
+prediction 
+Accurate matching Needs large data, 
+technical setup 
+Dayag & Picajas 
+(2025) 
+Structured career 
+guidance program 
+Improves decision 
+confidence 
+Manual process, not 
+automated 
+Atay et al. (2024) 
+Web-based 
+counselling system, 
+labour data 
+integration 
+Online access, 
+organized information 
+Limited 
+personalization 
+Wang et al. (2025) AI-based career 
+simulation High engagement Complex, high system 
+requirements 
+Khurumova & Pinto 
+(2023) 
+Online career 
+guidance tools 
+Supports digital 
+guidance 
+Depends on user 
+readiness 
+Villaruz & Diamante 
+(2024) 
+Rule-based 
+enrollment appraisal 
+system 
+Easy to manage, 
+suitable for schools Limited to fixed rules 
+Proposed System: 
+Career Compass 
+Web-based 
+assessment, rule-
+based scoring, dual 
+SHS curricula, 85 
+courses, PDF results, 
+localStorage, offline 
+mode 
+Personalized 
+recommendations, 
+accessible, easy to use 
+Limited course 
+coverage, predefined 
+rules, dependent on 
+student input 
+ 
+Project Synthesis 
+The reviewed literature and studies discussed the difficulties experienced by Senior 
+High School students in choosing college courses and career paths. They also showed how 
+Decision Support Systems can assist in organizing information and supporting decisi ons 
+that involve several factors, such as interests, skills, and academic performance. Gunwant 
+\n=== PDF PAGE 15 ===\n14 
+ 
+et al. (2022) discussed the application of expert systems in student career guidance, while 
+Villaruz and Diamante (2024) demonstrated the application of a rule -based Decision 
+Support System in an educational setting. Bucad (2024) examined the use of studen t 
+information in career path recommendations. Together, these studies provided a basis for 
+selecting a rule -based weighted scoring method that uses student information for Career 
+Compass. 
+The reviewed studies presented different approaches to digital career guidance, 
+including data mining, web -based counseling, and AI -powered career exploration. Bejar 
+(2024) examined the use of data mining techniques, while Atay et al. (2024) developed a 
+web-based career counseling information system. Khurumova  and Pinto (2023) 
+highlighted the importance of students’ readiness to use online career guidance tools, while 
+Wang et al. (2025) explored an interactive approach to career guidance. In the Philippines, 
+the Department of Education (2025, 2026) introduced c hanges to the Senior High School 
+curriculum, resulting in the transition from the previous four -track structure to the 
+Strengthened SHS Curriculum. These developments emphasize the importance of 
+providing a career guidance system that considers students’ e ducational backgrounds and 
+supports both curriculum structures during the transition. 
+Based on the reviewed literature and studies, several areas were identified for 
+improvement in digital career guidance. Existing systems applied different approaches to 
+career recommendations, including data mining, rule -based decision -making, and 
+interactive career exploration. However, the reviewed studies provided limited discussion 
+of a web -based career guidance system that combines a rule -based weighted scoring 
+method, student interests, skills, academic performance, and support for both the previous 
+\n=== PDF PAGE 16 ===\n15 
+ 
+and Strengthened Philippine Senior High School curricula. These areas provided the basis 
+for developing Career Compass as a system intended to support career guidance activities 
+in the local educational setting. 
+Career Compass was developed to address the identified needs through a web-based 
+Decision Support System that uses a rule -based weighted scoring method. The system 
+processes students’ interests, skills, and academic performance to generate college course 
+and career recommendations. It supports both the previous and Strengthened Senior High 
+School curricula and provides printable assessment results that may serve as supporting 
+references during counseling activities. The system also includes a journey -themed 
+assessment environment designed to make career exploration more engaging and 
+organized. These features reflect the findings of the reviewed literature and studies while 
+providing a system suited to the Philippine Senior High School context. 
+Conceptual Framework 
+The conceptual framework of this study applies the Input –Process–Output (IPO) 
+model, as presented in Figure 1. It illustrates the inputs, development processes, and output 
+involved in the development of Career Compass: A Web-Based Decision Support System 
+for Senior High School Career Guidance. 
+Input. The input consists of three components: Data Requirements, Design 
+Requirements, and Evaluation Requirements. Data Requirements include the information 
+gathered through interviews and the review of related literature and studies, which served 
+as the basis for identifying the system’s required information and functions. Design 
+Requirements include the tools and technologies used to develop a web -based system 
+accessible through desktop computers, laptops, and mobile devices. The system uses the 
+\n=== PDF PAGE 17 ===\n16 
+ 
+browser’s localStorage to save assessment progress on the user’s device without requiring 
+account registration or centralized database storage. Evaluation Requirements include the 
+criteria used to assess the system’s quality in terms of functional suitability, reliability, and 
+interaction capability based on ISO/IEC 25010. 
+Process. The process follows the Rapid Application Development (RAD) 
+methodology, which consists of four phases: Requirements Planning, User Design, 
+Construction, and Cutover. During Requirements Planning, the researchers gathered 
+information about the sys tem requirements. During User Design, the system features and 
+interface were planned and designed. During Construction, the researchers developed and 
+refined the system. During Cutover, the developed system underwent testing and 
+evaluation in preparation for its implementation. 
+Output. The output was Career Compass: A Web-Based Decision Support System 
+for Senior High School Career Guidance. The feedback loop links the output to the input. 
+This means that the findings from the testing and evaluation were used to improve the 
+system. 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 18 ===\n17 
+ 
+INPUT       PROCESS           OUTPUT 
+  
+Figure 1. Conceptual Paradigm 
+Definition of Terms 
+The following terms are conceptually and operationally defined to clarify the key 
+concepts used in this study. 
+Career Compass.  In this study, Career Compass is the name of the web -based 
+decision support system developed for Senior High School career guidance. The system 
+processes the assessment inputs using the rule-based weighted scoring method to generate 
+ 
+  
+Data Requirement 
+- Data gathered 
+interview  
+- RRLS 
+ 
+Design Requirement 
+- Desktop, Laptop, 
+and Mobile 
+ 
+Evaluation  
+Requirement 
+- Functional 
+Suitability 
+- Reliability 
+- Interaction 
+Capability 
+ 
+ 
+  
+Rapid Application 
+Development 
+(RAD) 
+ - Requirement 
+Planning  
+- User Design  
+- Construction  
+- Cutover 
+ 
+ 
+  
+Career Compass: 
+A Web-Based 
+Decision Support 
+System for Senior 
+High School 
+Career Guidance 
+ 
+ FEEDBACK 
+\n=== PDF PAGE 19 ===\n18 
+ 
+course and career suggestions and printable assessment results that can be used as a 
+supporting reference during counseling activities. 
+Career Guidance.  A service that helps students know themselves and the jobs 
+available to them so they can make good decisions for their future (OECD, 2023). In this 
+study, career guidance is the help the system gives students by showing possible courses 
+and careers, together with the support that guidance counselors give through the system. 
+Decision Support System (DSS).  A computer-based tool that helps people make 
+decisions. It collects information, applies rules, and gives suggestions to the user (Bambi 
+et al., 2023). In this study, the Decision Support System is the web -based platform that 
+collects student information and generates course and career suggestions using the scoring 
+method. 
+Rule-Based Weighted Scoring Method. A decision-making approach that assigns 
+points to different criteria according to predefined rules. In this study, the method is used 
+to calculate and rank college courses based on students’ interests, skills, and academic 
+information. The resulting rankings serve as recommendations for career exploration rather 
+than final decisions about a student’s college course. 
+Senior High School (SHS). Senior High School refers to Grades 11 and 12 of the 
+Philippine basic education system under the K to 12 Program (Republic of the Philippines, 
+2013). In this study, SHS refers to the educational level of the students for whom Career 
+Compass was developed. The system supports both the previous and Strengthened SHS 
+curricula when processing students’ academic information and generating college course 
+recommendations. 
+\n=== PDF PAGE 20 ===\n19 
+ 
+Web-Based System.  An application that is accessed through a web browser 
+without being installed on the device. It can be opened on the internet using desktop 
+computers, laptops, or mobile devices (Atay et al., 2024). In this study, the web -based 
+system refers to Career Comp ass, which is used to complete the career assessment and 
+generate printable career recommendation results in a browser. 
+Course Recommendation.  A suggested college course based on a person’s 
+interests, skills, and assessment responses that helps in choosing a suitable course or career 
+path. In this study, course recommendation refers to the recommended college courses and 
+careers generated by proc essing the assessment responses using the rule -based weighted 
+scoring method. 
+Guidance Counselor. School designates who assist students in making educational 
+and career-related decisions by providing guidance, counseling, and career support services 
+(Dayag & Picajas, 2025). In this study, guidance counselor refers to the school designates 
+who facilitate the use of Career Compass and use the generated results as a supporting 
+reference during career counseling activities. 
+ISO/IEC 25010.  An international standard that provides models for evaluating 
+system and software product quality (International Organization for Standardization [ISO], 
+2023). In this study, ISO/IEC 25010 was used as the basis for evaluating Career Compass 
+in terms of functional suitability, reliability, and interaction capability. 
+Rapid Application Development (RAD).  An approach to software development 
+that works quickly and involves users throughout the process. Changes are made based on 
+user feedback so that the final product meets the requirements of the users (Villaruz & 
+Diamante, 2024). In this study, RAD refers t o the development method used to build the 
+\n=== PDF PAGE 21 ===\n20 
+ 
+system. It has four phases: Requirements Planning, User Design, Construction, and 
+Cutover. The researchers gathered user feedback at each phase to improve the system. 
+K to 12 Program. The education program in the Philippines that added two years 
+to basic education, making it twelve years in total. It was established through Republic Act 
+No. 10533 to help students prepare for college, work, or business (Republic of the 
+Philippines, 2013). In this study, the K to 12 Program provides the academic tracks and 
+career options used as references in building Career Compass. 
+Local Storage. A browser-based mechanism that stores data on a user’s device and 
+generally retains the stored information after the browser is closed, unless the data are 
+cleared or removed. In this study, localStorage refers to the browser storage mechanism 
+used by Care er Compass to save assessment progress and allow users to continue their 
+assessment on the same browser and device without creating an account. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 22 ===\n21 
+ 
+References 
+Atay, S., Yilmaz, A., & Celik, B. (2024). Design of a web-based career counselling  
+information system: Türkiye case. Education and Information Technologies, 29(8), 
+9851–9876. https://doi.org/10.1007/s10639-024-12659-2 
+Bambi, B. I., Olawale, O. A., & Akintola, A. G. (2023). Decision support systems in  
+education. In Educational administration and management  (pp. 210 –235). 
+ResearchGate. 
+https://www.researchgate.net/publication/389940059_Decision_Support_Systems
+_in_Education 
+Bejar, R. E., Jr. (2024). Precision in progress: Leveraging data mining technique to  
+empower career path selection for incoming senior high school students. 
+International Journal of Research and Innovation in Social Science, 8(4), 112–125. 
+https://rsisinternational.org/journals/ijriss/articles/precision-in-progress-
+leveraging-data-mining-technique-to-empower-career-path-selection-for-
+incoming-senior-high-school-students/ 
+Bucad, A. T. (2024). Towards the development of a career path recommender system for  
+senior high school in selected public schools using multi -label classification. 
+International Journal of Research and Innovation in Applied Science, 9(3), 45–56. 
+https://rsisinternational.org/journals/ijrias/articles/towards-the-development-of-a-
+career-path-recommender-system-for-senior-high-school-in-selected-public-
+schools-using-multi-label-classification/ 
+Dayag, R. P. F., & Picajas, J. J. S. (2025). Strengthening career readiness through structured  
+\n=== PDF PAGE 23 ===\n22 
+ 
+career guidance services of grade 11 students. Global Journal of Guidance and 
+Counseling in Schools, 15 (1), 34 –49. 
+https://www.researchgate.net/publication/396775028_Strengthening_career_readi
+ness_through_structured_career_guidance_services_of_grade_11_students 
+Department of Education. (2025). DM 048, s. 2025: Pilot implementation of the  
+Strengthened Senior High School Curriculum for Grade 11 in School Year 2025 –
+2026. DepEd. https://www.deped.gov.ph/2025/06/15/june-14-2025-dm-048-s-
+2025-pilot-implementation-of-the-strengthened-senior-high-school-curriculum-
+for-grade-11-in-school-year-2025-2026/ 
+Department of Education. (2026, February 27). DepEd Memorandum No. 012, s. 2026:  
+Full implementation of the Strengthened Senior High School Curriculum in School 
+Year 2026 –2027. https://www.deped.gov.ph/wp-content/uploads/DM-12-s.-
+2026_Full-Implementation-of-the-Strengthened-Senior-High-School-Curriculum-
+in-School-Year-2026-2027.pdf 
+Gunwant, S., Pande, J., & Bisht, R. J. (2022). A systematic study of the literature on career  
+guidance expert systems for students: Implications for ODL. Journal of Learning 
+for Development, 9(3), 492–508. https://doi.org/10.56059/jl4d.v9i3.648 
+International Organization for Standardization. (2023). ISO/IEC 25010: Systems and  
+software engineering—Systems and software quality requirements and evaluation  
+(SQuaRE)—System and software quality models. ISO. 
+Khurumova, V., & Pinto, J. C. (2023). Online and computer-assisted career guidance: Are  
+students prepared for it? Frontiers in Psychology, 14, Article 1117289.  
+https://doi.org/10.3389/fpsyg.2023.1117289 
+\n=== PDF PAGE 24 ===\n23 
+ 
+Organisation for Economic Co-operation and Development. (2023). OECD digital  
+education outlook 2023: Towards an effective digital education ecosystem. OECD  
+Publishing. https://doi.org/10.1787/c74f03de-en 
+Republic of the Philippines. (2013). Republic Act No. 10533: Enhanced Basic Education  
+Act of 2013. Official Gazette of the Republic of the Philippines. 
+Villaruz, R. J. G., & Diamante, R. A. (2024). Enrollment appraisal using rule-based 
+decision support system. Journal of Innovative Technology Convergence, 6(2), 67–
+78. https://doi.org/10.69478/JITC2024v6n002a07 
+Wang, Y., Li, X., & Chen, Z. (2025). CareerPooler: AI-powered metaphorical pool  
+simulation for career exploration [Preprint]. arXiv. 
+https://arxiv.org/abs/2509.11461 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 25 ===\n24 
+ 
+Chapter 3 
+RESEARCH DESIGN AND METHODOLOGY 
+This chapter describes the research methodology and approach used in developing 
+the system. It includes the research method, sources of data, data gathering procedure, 
+software development model, system requirements, evaluation tool, statistical tools, and  
+ethical considerations of the study. 
+Research Method 
+This study developed Career Compass: A Web-Based Decision Support System for 
+Senior High School Career Guidance. It used a descriptive–developmental research design. 
+The descriptive part identified the career guidance practices and requirements of 
+the participating schools. The data were gathered from teachers and guidance designates 
+who handle career guidance for Senior High School students choosing college courses and 
+career paths. The results showed what the system had to handle and what information it 
+had to include. 
+The developmental part guided the building of the system. The researchers 
+designed and built the web-based system using the information gathered. The system gives 
+course and career recommendations to Senior High School students and generates 
+assessment res ults that can assist the guidance counselor during career counseling 
+activities. 
+ 
+ 
+\n=== PDF PAGE 26 ===\n25 
+ 
+Sources of Data 
+This study used two data sources to support the building and evaluation of Career 
+Compass: primary data and secondary data. Together they ensured that the system was 
+based on actual and current information and supported by existing knowledge in the field. 
+The primary data came from individuals directly involved in career guidance at the 
+Senior High School level. Thirty (30) teachers and guidance designates, ten (10) from each 
+of Balogo High School, Ponso National High School, and Barayong National High School, 
+served as the respondents of the study. They were selected through purposive sampling. 
+The available Senior High School teachers and guidance designates who handle or take 
+part in the career guidance process of their school were invited, and those who agreed 
+became the respondents. The same thirty (30) respondents took part in both stages of the 
+study. They were first interviewed to identify the current career guidance practices in their 
+schools and the information the system had to handle. School docum ents such as career 
+guidance forms and sample academic record forms were also reviewed to identify the 
+specific data requirements of the system. Later, the same respondents used the system and 
+went through the assessment flow before answering the evaluation questionnaire. Students 
+were not participants in this study. Guidance counselors may use the system with students 
+in future counseling sessions, but this is outside the scope of this study. 
+The secondary data came from published materials related to the study, such as 
+books, academic journals, related studies, and government publications. These covered 
+career guidance, decision support systems, rule -based systems, the K to 12 Program, and 
+software quality evaluation using ISO/IEC 25010. They supported the theoretical and 
+\n=== PDF PAGE 27 ===\n26 
+ 
+empirical basis for the design and development of Career Compass and the methods used. 
+Course details, admission requirements, and related information from CHED memoranda, 
+official school websites, and industry reports in the Philippines were used to build  the 
+course profiles and the static dataset that supports the scoring system and the information 
+shown to users. 
+Data Gathering Procedure 
+  The researchers carried out a two -stage data gathering process. Each stage had 
+a specific purpose in supporting the development of Career Compass. 
+The first stage was the Requirements and Data Collection Stage. The researchers 
+sent a formal letter to each school to ask permission to conduct the study. Once approved, 
+they interviewed the teachers and guidance designates about the current career guidan ce 
+process in the school and the common problems students face when choosing college 
+courses and career directions. The interviews used Instrument 1, the Interview Guide for 
+Requirements Gathering, which contained open-ended questions that allowed participants 
+to share their experiences and suggestions. School documents such as career guidance 
+forms and career assessment forms were also used to identify the data requirements of the 
+system. The three participating schools have functioning guidance offices an d internet-
+accessible facilities suitable for system testing and evaluation. 
+The second stage was the System Evaluation Stage. The developed system was 
+presented to the guidance counselors and teachers for testing. They used the system directly 
+and went through the assessment flow. After using it, they answered Instrument 2, the 
+\n=== PDF PAGE 28 ===\n27 
+ 
+Career Compass System Evaluation Questionnaire. The questionnaire used close -ended 
+questions to gather their responses about the system. The responses were used to evaluate 
+the system and to identify improvements. 
+Software Developmental Model 
+  The researchers used the Rapid Application Development (RAD) model in 
+developing Career Compass. RAD is a software development approach that allows a 
+system to be built in a short period of time while meeting the needs of its users (Pressman 
+& Maxim, 2020). It also allows the developers to improve the system using feedback from 
+users during development. Villaruz and Diamante (2024) also used RAD in developing a 
+rule-based decision support system for a school process. The model has four phases, as 
+shown in Figure 2. 
+ 
+Figure 2. Rapid Application Development Model 
+Requirements Planning Stage is the phase where the researchers determine the 
+needs and the requirements of the system . In this phase, the researchers determined the 
+needs and requirements of the system. They gathered information from the guidance 
+
+\n=== PDF PAGE 29 ===\n28 
+ 
+designates and teachers through interviews and a review of school documents. This 
+information was used to decide the features and functions that Career Compass needed. 
+User Design Stage is the phase where the researchers make the design of the system 
+ready in accordance with the identified requirements.  In this phase, the researchers 
+prepared the design of the system according to the identified requirements. They designed 
+the layout, interface, and process flow of Career Compass and prepared the site map, 
+wireframes, assessment items, and scoring rules. 
+Construction Stage is the phase where the design that has been approved becomes 
+a system. In this phase, the approved design was turned into a working system. The 
+researchers built the main features of Career Compass and implemented the rule -based 
+weighted scoring method that generates the course and career recommendations. 
+Cutover Stages is the phase where the system is completed, tested, and ready for 
+use. In this phase, the system was completed, tested, and made ready for use. The 
+researchers tested the system, corrected the errors found, and made final adjustments to 
+make sure it worked properly before the evaluation. 
+System Requirements 
+The minimum system requirements of Career Compass are presented below. The 
+development software requirements were: (a) the operating system, Windows 10 or higher; 
+(b) the programming language, JavaScript; (c) the framework, Next.js; (d) the code editor, 
+Visual Studio Code; and (e) the web browser, Google Chrome or Microsoft Edge. The 
+development hardware requirements were: (a) memory of at least 2 GB, with 4 GB or 
+\n=== PDF PAGE 30 ===\n29 
+ 
+higher recommended; (b) a screen resolution of 1280 x 1024 or larger; and (c) an internet 
+connection. 
+Table 2. Minimum System Requirements for Development 
+Category Component Specification 
+Software Operating System Windows 10 and higher 
+ Programming Language JavaScript 
+ Framework Next.js 
+ Code Editor Visual Studio Code 
+ Web Browser Google Chrome or 
+Microsoft Edge 
+Hardware Memory 2 GB minimum, 4 GB or 
+higher recommended 
+ Screen Resolution 1280 x 1024 or larger 
+ Internet Connection Required 
+ 
+The implementation software requirements are: (a) a desktop or laptop running 
+Windows 10 or higher, or a mobile device; and (b) an up-to-date version of Google Chrome 
+or Microsoft Edge. The implementation hardware requirements are: (a) memory of at least 
+2 GB, with 4 GB or higher recommended; (b) a screen resolution of 1280 x 1024 or larger 
+for desktop and laptop use, while the layout adjusts to smaller screens on mobile devices; 
+and (c) an internet connection to open the system for the first time and to tu rn on Offline 
+Mode. Once Offline Mode is on, the system can be used on the same device without an 
+internet connection. 
+\n=== PDF PAGE 31 ===\n30 
+ 
+Table 3. Minimum System Requirements for Implementation 
+Category Component Specification 
+Software Operating System Windows 10 or higher (desktop or 
+laptop), or a mobile device 
+ Web Browser Up-to-date Google Chrome or 
+Microsoft Edge 
+Hardware Memory 2 GB minimum, 4 GB or higher 
+recommended 
+ Screen Resolution 
+1280 x 1024 or larger for desktop 
+and laptop; adjusts to mobile 
+screens 
+ Internet Connection 
+Required to open the system for 
+the first time and to turn on 
+Offline Mode; not required 
+afterward 
+ 
+Evaluation Tool 
+The developed system was evaluated using the ISO/IEC 25010 Software Quality 
+Model. This model is used to check the quality of a software product and defines the quality 
+characteristics to be measured (International Organization for Standardization [ISO], 
+2023). The quality of a system depends on how well it meets the needs of its users and 
+gives them value. Each quality characteristic has sub-characteristics that describe in more 
+detail how quality is measured. 
+This study used three quality characteristics, chosen according to the third objective 
+of the study: functional suitability, reliability, and interaction capability. 
+\n=== PDF PAGE 32 ===\n31 
+ 
+Functional Suitability checks whether the system provides functions that meet the 
+needs of its users. It examines whether the system has the needed features, gives correct 
+results, and helps users complete their tasks (ISO, 2023). 
+Reliability checks whether the system runs without errors and stays available when 
+needed. It also examines whether the system can handle minor difficulties and recover from 
+interruptions (ISO, 2023). 
+Interactions Capability checks whether users can use the system to finish their tasks. 
+It examines how easy the system is to understand, learn, and navigate (ISO, 2023). 
+Table 4 shows the quality characteristics and sub-characteristics used in evaluating 
+the system. The survey questionnaire (Instrument 2) contains eighteen (18) indicators that 
+measure these sub -characteristics: five (5) for Functional Suitability, five (5) for 
+Reliability, and eight (8) for Interaction Capability. Respondents rated each indicator using 
+the five-point scale in Table 6. 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 33 ===\n32 
+ 
+Table 4. Software Product Quality of the Proposed System 
+Criteria 5 4 3 2 1 
+Functional Suitability 
+Functional Completeness       
+Functional Correctness       
+Functional Appropriateness       
+Reliability 
+Faultlessness      
+Fault Tolerance      
+Recoverability      
+Availability       
+Interaction Capability 
+Appropriateness Recognizability       
+Learnability       
+Operability       
+User Error Protection       
+User Engagement      
+Inclusivity      
+User Assistance      
+Self-descriptiveness      
+ 
+Table 5 shows the expected result for each system scenario. Each scenario is 
+matched with the system feature being tested and the result the system is expected to give. 
+ 
+ 
+\n=== PDF PAGE 34 ===\n33 
+ 
+Table 5. Evaluation Expected Results 
+System Scenario System Feature Expected Result 
+Student answers 
+assessment questions 
+Assessment Module Responses are accepted 
+successfully 
+System processes 
+responses 
+Rule-Based Scoring Module Appropriate 
+recommendations are 
+generated 
+System displays 
+recommendations 
+Recommendation Module Suggested courses and 
+careers appear correctly 
+User exports assessment 
+result 
+PDF Generation Module Printable PDF report is 
+generated successfully 
+ 
+Statistical Tools 
+The weighted mean was used to analyze the data from the evaluation of Career 
+Compass. It determines the average rating given by the respondents to each item in the 
+evaluation questionnaire. It is computed by multiplying each scale value by the number of 
+respondents who selected it, adding all the products, and dividing the sum by the total 
+number of respondents. This technique is suitable for Likert-scale data because it gives one 
+representative value for each item that can be compared with the interpretation scale. 
+The formula used is: 
+ 𝑥̄ =
+𝛴        𝑓𝑥
+𝑛  
+Where: 
+x̄  = weighted mean 
+\n=== PDF PAGE 35 ===\n34 
+ 
+Σfx = sum of the products of frequency (f) and scale value (x) 
+f = number of respondents who selected a particular rating 
+x = scale value (1 to 5) 
+n = total number of respondents 
+The weighted mean was computed for each item, for each quality characteristic 
+(Functional Suitability, Reliability, and Interaction Capability), and for the overall 
+evaluation of the system. The results were interpreted using the five -point Likert scale in 
+Table 6. 
+Table 6. Likert Scale 
+Scale Description Range 
+5 Strongly Agree 4.21 – 5.00 
+4 Agree 3.41 – 4.20 
+3 Neutral 2.61 – 3.40 
+2 Disagree 1.81 – 2.60 
+1 Strongly Disagree 1.00 – 1.80 
+ 
+Ethical Consideration 
+This study observed proper ethical standards to protect the rights and welfare of all 
+participants. The researchers followed the Data Privacy Act of 2012 (Republic Act No. 
+10173), which requires that personal information be collected and used only for a declared 
+\n=== PDF PAGE 36 ===\n35 
+ 
+and legitimate purpose (Republic Act No. 10173, 2012). Before data collection, the 
+researchers asked for written permission from the school administrations through a formal 
+letter requesting approval for the interviews and the system evaluation. The purpose, scope, 
+and procedures of the study were explained to the participants before the activities so that 
+each of them understood what they were taking part in. 
+Participation in the study was voluntary. The guidance counselors and teachers who 
+were asked to take part could refuse, no one was forced to answer any question or complete 
+any activity, and anyone could leave at any time without penalty. 
+The identity of each participant was kept private. No full name or identification 
+number was collected through the survey questionnaire or the system evaluation. All 
+responses were treated as confidential and used only for the purpose of this study, and no  
+single response was disclosed to anyone outside the research team. 
+The gathered data were stored securely, and only the researchers and their adviser 
+had access to the responses. The results are reported in summary form so that no individual 
+participant can be identified. At the end of the study, all gathered data will be  properly 
+disposed of to prevent unauthorized access. 
+The Career Compass system itself was also designed with data privacy in mind. It 
+uses the browser’s localStorage to save the assessment responses and progress of its users. 
+This data stays on the user’s own device and is not sent to or saved on any external server 
+or database. The data may remain on the device after the browser is closed until the user 
+clears the browser’s site data. The system does not require an account, and the name 
+\n=== PDF PAGE 37 ===\n36 
+ 
+entered by the user is optional. This design keeps the responses of the users private and 
+follows the principles of the Data Privacy Act of 2012 (Republic Act No. 10173). 
+The study did not require participants to answer questions that could cause 
+emotional or psychological discomfort. The survey items were limited to evaluating the 
+features and interaction capability of Career Compass, and no question asked for sensitive 
+personal information beyond what the study needed. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 38 ===\n37 
+ 
+References 
+International Organization for Standardization. (2023). ISO/IEC 25010: Systems and  
+software engineering—Systems and software quality requirements and evaluation 
+(SQuaRE)—System and software quality models. ISO. 
+Pressman, R. S., & Maxim, B. R. (2020). Software engineering: A practitioner’s approach  
+(9th ed.). McGraw-Hill. 
+Republic Act No. 10173. (2012). Data Privacy Act of 2012. Republic of the Philippines. 
+Villaruz, R. J. G., & Diamante, R. A. (2024). Enrollment appraisal using rule-based  
+decision support system. Journal of Innovative Technology Convergence, 6(2), 67–
+78. https://doi.org/10.69478/JITC2024v6n002a07 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 39 ===\n38 
+ 
+Chapter 4 
+DATA ANALYSIS AND INTERPRETATION 
+ 
+ This chapter presents the data gathered, the development of the system, and the 
+evaluation results. It follows the three objectives of the study. The first part shows the data 
+requirements and the existing process. The second part describes the design, the  scoring 
+rules, and the features of Career Compass. The third part presents the testing of the system 
+and the evaluation results based on ISO/IEC 25010 (International Organization for 
+Standardization [ISO], 2023). 
+Data Requirements 
+ To identify the data that the system must handle, the researchers interviewed thirty 
+(30) teachers and guidance designates from Balogo High School, Ponso National High 
+School, and Barayong National High School. The interview used Instrument 1, the 
+Interview Guide for Requirements Gathering. It covered the current guidance process, the 
+problems met, the materials used, and the features wanted in the system. The answers were 
+grouped by theme and counted. One respondent could give more than one answer, so the 
+counts do not add up to 30. Twenty -seven (27) respondents answered the question on 
+desired features. 
+ All 30 respondents described some form of structured career guidance, such as 
+orientations, career talks, counseling, and assessments. The schedule was not the same 
+across schools. Some respondents gave guidance almost daily, some weekly, some once or 
+twice a year, and some only when needed. Fifteen respondents said guidance is part of their 
+teaching or homeroom activities. Ten said a guidance coordinator works with advisers and 
+ 
+\n=== PDF PAGE 40 ===\n39 
+ 
+subject teachers. Seven said guidance is given on top of a regular teaching load. Most 
+materials were on paper or in hand-entered spreadsheets, and no shared digital record was 
+found in the three schools. 
+ The respondents named several problems that students face. The most common 
+were financial limits on course choice (25 of 30) and family influence on career decisions 
+(18 of 30). Fifteen mentioned that students lack self -awareness or are undecided, and 15 
+mentioned that students know little about the available courses and pathways. Job prospects 
+and access problems such as distance and schedules were each mentioned by 11. Limited 
+counselor time was mentioned by 9. These findings show that the system should give clear 
+course information, including careers, schools, and salary estimates, and should help 
+students see their own interests and strengths. The limited time of counselors shows the 
+need for a result that can be used right away, such as a printable report. 
+ For existing materials, 26 of 30 respondents collected demographic and academic 
+data, and 22 used career or interest assessment tools. Nineteen collected career preferences, 
+18 kept student profiles and academic records, and 14 collected interests, skills,  and 
+strengths. Eight used counseling or referral forms. This shows that the input of the system 
+should cover interests, skills, and academic performance. 
+ For the desired features, 15 of 27 respondents wanted automated course and career 
+recommendations. Twelve wanted digital student profiles and 12 wanted a central place 
+for career information. Eleven wanted a simple interface, and 10 wanted an assessment 
+with a generated result. Ten wanted data security, eight asked for access in low -
+connectivity areas, and five wanted printable or exportable output.  Other requests were 
+mentioned by fewer respondents. Eight wanted regular maintenance and updating of the 
+\n=== PDF PAGE 41 ===\n40 
+ 
+system, four wanted job market information, four wanted a way to track career plans over 
+time, four wanted dashboards and summaries, two wanted non -degree pathways, two 
+wanted links across school offices, and two suggested advanced personalization.  Because 
+financial limits were the most common problem, the system should also show scholarship 
+opportunities together with the course information, so students can see that support for 
+college costs exists. 
+ From these findings, the researchers set eight requirements for the system: (1) 
+collect the interests, skills, and academic performance of the student; (2) give automated 
+course and career recommendations; (3) give clear course information, including caree rs, 
+schools, and salary estimates; (4) produce a printable result for counselors; (5) have a 
+simple interface; (6) protect the data of the users; (7) work in areas with limited internet 
+connection; and (8) serve as a central place for career information. Table 7 shows the data 
+used by the system and where each data type comes from. 
+Table 7. Data Inputs and Sources 
+Data Type Source Usage 
+Student profile (optional name, 
+explorer avatar, grade level, 
+curriculum route) 
+Student input, saved on the 
+device 
+Decides the route (old or 
+new curriculum) and 
+personalizes the journey 
+and the report 
+Interest responses (8 scenarios, 4 
+options each) Student input 
+Each selected option 
+linked to a course adds 3 
+points to that course 
+Skills ratings (15 statements, 
+rated 1 to 5) Student input 
+The rating of each skill 
+linked to a course is added 
+to that course 
+Academic Performance in the 
+Valley (old route: strand and 1 
+to 3 subjects; new route: 0 to 3 
+electives and 1 to 3 core 
+subjects; general weighted 
+average; Certificates and 
+Student input 
+Adds points for each 
+matching strand, subject, 
+elective, core subject, and 
+Certificates and 
+Achievements category. 
+\n=== PDF PAGE 42 ===\n41 
+ 
+Data Type Source Usage 
+Achievements, up to 3 of 13 
+categories or “None yet”) 
+The general weighted 
+average adds a bonus 
+Rule and link table 
+Set by the researchers from 
+the interview findings and 
+Department of Education 
+and school guidance 
+references, and validated 
+by the three guidance 
+designates of the 
+participating schools. 
+Fixed scoring rules that 
+link every item to courses 
+Course and career dataset (85 
+courses) 
+Published sources such as 
+CHED program 
+information, school 
+information, and salary and 
+industry reports. 
+Content for the Results 
+page, Course Detail page, 
+and PDF report 
+  
+Table 7 shows the data used by Career Compass. The profile, interest responses, 
+skills ratings, and academic performance come from the student and are used to compute 
+the course scores. The rule and link table and the course dataset are fixed files prepared by 
+the researchers, and they do not change when a student uses the system. The answers of 
+the student are saved only in the browser of the device and are not sent to a server. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 43 ===\n42 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3. Use Case Diagram of the Existing System 
+\n=== PDF PAGE 44 ===\n43 
+ 
+The existing process was described from the answers of the respondents in Sections 
+A to C of Instrument 1. Figure 3 shows the use case diagram of the existing process. It has 
+two actors, the Student and the Teacher or Guidance Designate, and eight use case s. The 
+Teacher or Guidance Designate takes part in all eight use cases: undergo assessment, 
+request guidance, review student records, attend counseling session, give verbal 
+recommendation, document referral form, conduct follow -up, and track curriculum exi t. 
+The Student takes part in five of them. These are requesting guidance, undergoing 
+assessment, attending the counseling session, receiving the verbal recommendation, and 
+the follow -up. Reviewing student records, documenting the referral form, and tracking 
+curriculum exit are done by the Teacher or Guidance Designate alone. The process depends 
+on face-to-face activity and has no digital tool to support it. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 45 ===\n44 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 4. Activity Diagram of the Existing System 
+\n=== PDF PAGE 46 ===\n45 
+ 
+Figure 4 shows the activity diagram of the existing process. Guidance starts when 
+a student asks for it or when the school schedules an activity. The teacher or guidance 
+designate checks the paper records of the student. Where resources allow, an interest or 
+aptitude test is given, such as the NCAE or an informal inventory. A counseling or 
+orientation session follows, and the student receives advice that often depends on grades 
+and family situation. A referral form may be filled out by hand, but no central digital record 
+exists. Follow-up is done by hand and is not regular. Exit tracking is gathered separately 
+after graduation and is not linked to the earlier guidance session. These steps show the 
+problems that Career Compass was built to address. 
+System Development and Design 
+The system was developed using the Rapid Application Development (RAD) 
+model described in Chapter 3. In Requirements Planning, the interview results defined the 
+data and the features. In User Design, the researchers prepared the site map, wireframes, 
+assessment items, the rule and link table, the course dataset, and the use case and activity 
+diagrams. The assessment items and the scoring algorithm, which includes the rule and link 
+table and the scoring rules, were validated by the three guidance designates of Balogo High 
+School, Ponso National High School, and Barayong National High School. In 
+Construction, the system was built with Next.js (JavaScript) and Tailwind CSS, with GSAP 
+and Lenis.js for animation and jsPDF for the report. In Cutover, the system was tested and 
+put online on Vercel so that it can be opened in a standard browser. 
+Career Compass has no database. It uses two kinds of data. Static data files hold the 
+assessment items, the rule and link table, and the dataset of 85 courses. These files are read 
+only, so users cannot change the scoring rules or the course content. The b rowser’s 
+\n=== PDF PAGE 47 ===\n46 
+ 
+localStorage holds the answers and progress of the student on the same device and browser. 
+The answers are not sent to a server. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 5. Use Case Diagram of the Proposed System 
+ 
+\n=== PDF PAGE 48 ===\n47 
+ 
+Figure 5 shows the use case diagram of Career Compass. It has two actors, the 
+Student and the Guidance Counselor. The Student uses the system without an account. 
+The Guidance Counselor does not log in. The counselor uses the PDF Explorer Report as 
+a supporting reference during counseling. 
+The first group of use cases covers the start of the journey. The Student opens the 
+landing page, reads the How It Works and About pages if needed, and selects “Start Your 
+Journey.” At Basecamp, the Student may enter a name, choose an explorer, and select a 
+grade level and a curriculum. Grade 11 students use the new curriculum route. Grade 12 
+students choose between the old and the new curriculum. This choice decides which 
+questions appear in the Valley section. The Student  may also watch the Atlas tutorial, 
+change the language between English and Filipino, and turn on Offline Mode while 
+connected to the internet. 
+The second group covers the assessment. From the Journey Map, the Student 
+completes three trails in order. In the Mountains, the Student answers 8 interest scenarios. 
+In the Forest, the Student rates 15 skills statements. In the Valley, the Student enters the 
+strand and subjects (old route) or the electives and core subjects (new route), the general 
+weighted average, and Certificates and Achievements. Progress is saved in the browser, 
+so the Student can refresh the page and continue. 
+The third group covers the results. After the three trails, the system shows the top 
+five course matches. The Student can open any of the 85 courses, compare two courses, 
+and download or print the PDF Explorer Report. There is no administrator or registered-
+user role, because the system has no login and no database. 
+ 
+\n=== PDF PAGE 49 ===\n48 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 6. Activity Diagram of the Proposed System 
+\n=== PDF PAGE 50 ===\n49 
+ 
+Figure 6 shows the activity diagram of the proposed system. The student opens the 
+landing page and selects “Start Your Journey.” At Basecamp, the student chooses an 
+explorer, may enter a name, and selects a grade level. Grade 11 students follow the new 
+curriculum route. Grade 12 students choose between the old and the new curriculum. If a 
+required choice is missing, a message asks the student to complete it. The Journey Map 
+then opens with the first trail unlocked and the others locked. The student complete s the 
+Mountains (interests), the Forest (skills), and the Valley (academic performance) in order, 
+and each finished trail unlocks the next one. After the three trails, the system checks the 
+answers, computes the course scores, ranks the 85 courses, and shows the top five matches. 
+From the results, the student may compare two courses, open a course in detail, or 
+download the PDF Explorer Report. Compared with the existing process, each manual step 
+now has a digital step. Paper records become answers saved on  the device. Informal 
+inventories become a structured assessment. Verbal advice becomes ranked results. 
+Handwritten notes become a printable report. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 51 ===\n50 
+ 
+Table 8. Summary of Scoring Rules 
+Component Items Rule 
+Interests 8 questions, 32 options Each selected option linked to a course 
+adds 3 points (maximum 6) 
+Skills 15 statements The 1 to 5 rating of each skill linked to 
+a course is added (maximum 10) 
+Valley: old route 
+strand 
+10 strands, including 
+GAS 
+Adds 4 points if the strand is linked to 
+the course. GAS has no linked course 
+and adds no points 
+Valley: old route 
+subjects 19 subjects, 1 to 3 chosen Adds 3 points for each chosen subject 
+linked to the course (maximum 6) 
+Valley: new route 
+electives 
+70 scored electives, 0 to 3 
+chosen 
+Adds 4 points for each chosen elective 
+linked to the course (maximum 12) 
+Valley: new route 
+core subjects 
+4 core subjects, 1 to 3 
+chosen 
+Adds 3 points if the core subject linked 
+to the course is chosen 
+Valley: general 
+weighted average 
+(GWA) 
+95–100, 90–below 95, 
+85–below 90, 80–below 
+85, 75–below 80, below 
+75 
+Bonus of 6, 5, 4, 3, 2, or 0. It is given 
+once, only if the strand (old route) or an 
+elective or core subject (new route) 
+matches the course 
+Valley: Certificates 
+and Achievements 
+13 categories, up to 3 
+chosen, or “None yet” 
+Each selected category linked to a 
+course adds 3 points. “None yet” adds 
+none (maximum 6) 
+Maximum total  38 (old route) and 43 (new route) 
+ 
+Table 8 shows the scoring rules. The system uses a rule -based weighted scoring 
+method. It has 8 interest questions, 15 skills statements, and the Valley section, which 
+depends on the curriculum route. The Valley collects the strand and subjects (old route) or 
+the electives and core subjects (new route), the general weighted average, and Certificates 
+and Achievements. Each of the 85 courses is linked to the same number of items. Under 
+both routes, each course is linked to 2 interest options, 2 skills, and 2 Certificates and 
+Achievements categories. For the old route, each course is also linked to 1 strand and 2 
+subjects, which gives 9 links. For the new route, each course is also linked to 1 core subject 
+and 5 electives, which gives 12 links. Counting both ro utes, each course has 15 links, and 
+\n=== PDF PAGE 52 ===\n51 
+ 
+the 85 courses have 1,275 links in all, so no course has more chances to score than another. 
+The total score of a course is the sum of the points from its links. A student in the GAS 
+strand receives no strand points and no general weighted average bonus for any course, so 
+the ranking for that student depends on the other items. 
+Courses are ranked from the highest to the lowest total score. If two courses have 
+the same total, the course with more interest points ranks higher. If they are still tied, skills 
+points are compared, and then academic points from the strand, subjects, el ectives, core 
+subject, and general weighted average. Points from Certificates and Achievements count 
+in the total score but are not compared separately. Courses that are still tied after these 
+checks get the same rank and are shown in alphabetical order by course name. Alphabetical 
+order does not change the rank. For example, the ranks may be 1, 1, 3. The system shows 
+the top five matches and lets the student open all 85 courses. Numeric scores are not shown 
+to students. The results show relative compass ar cs instead, because the scores are only 
+used for ranking and the final decision stays with the student and the guidance counselor. 
+Table 9. System Features and Functionality 
+ID Feature Description Status 
+F-01 
+Explorer-Themed Landing 
+Page 
+Introduces the journey, with How It 
+Works and About pages 
+Implemented 
+F-02 
+Basecamp Profile and 
+Curriculum Route 
+Collects an optional name, explorer 
+avatar, grade level, and curriculum 
+without an account 
+Implemented 
+F-03 Journey Map Navigation Hub 
+Shows progress across the Mountains, 
+Forest, and Valley trails 
+Implemented 
+F-04 Interests Assessment Module 
+Eight scenario questions with four 
+options each 
+Implemented 
+\n=== PDF PAGE 53 ===\n52 
+ 
+ID Feature Description Status 
+F-05 Skills Assessment Module Fifteen statements rated from 1 to 5 Implemented 
+F-06 
+Academic Performance 
+Module (Valley) 
+Four steps per route. Old route: strand, 
+subjects, general weighted average, 
+Certificates and Achievements. New 
+route: electives, core subjects, general 
+weighted average, Certificates and 
+Achievements 
+Implemented 
+F-07 
+Rule-Based Weighted 
+Scoring Engine 
+Scores and ranks 85 courses using the 
+rule and link table and the tie rules 
+Implemented 
+F-08 
+Static Course and Career 
+Dataset 
+85 courses with careers, salary 
+estimates, schools, and guidance tips 
+Implemented 
+F-09 Ranked Results 
+Shows the top five matches and all 85 
+courses, without numeric scores 
+Implemented 
+F-10 Course Detail Explorer 
+Overview, subjects to study, careers, 
+salary source, schools, scholarship 
+information, and guidance tips 
+Implemented 
+F-11 
+Printable PDF Report 
+Generator 
+Downloadable and printable Explorer 
+Report 
+Implemented 
+F-12 Responsive Web Access 
+Works on desktop, laptop, and mobile 
+browsers 
+Implemented 
+F-13 Local Progress Recovery 
+Saves progress in the browser’s 
+localStorage and restores it on the same 
+device and browser 
+Implemented 
+F-14 Leave and Restart Warnings 
+Warns before leaving if saving fails and 
+asks for confirmation before restarting 
+or discarding a trail 
+Implemented 
+\n=== PDF PAGE 54 ===\n53 
+ 
+ID Feature Description Status 
+F-15 
+Guided Sequential 
+Progression 
+Trails unlock one at a time in a fixed 
+order, and each finished trail gives a 
+badge 
+Implemented 
+F-16 Course Comparison Shows two selected courses side by side Implemented 
+F-17 
+English and Filipino 
+Language Switch 
+Lets the user change the interface 
+language. The PDF report is in English 
+Implemented 
+F-18 Opt-In Offline Mode 
+Saves the system on the device so it can 
+be used without internet 
+Implemented 
+F-19 
+Atlas Tutorial and Journey 
+Guide 
+Short guided walk-through of the 
+Journey Map 
+Implemented 
+ 
+Table 9 shows the nineteen features of the developed system. The first fifteen cover 
+the planned journey from the landing page to the PDF report. The last four (course 
+comparison, language switch, Offline Mode, and the Atlas tutorial) were added during 
+construction to make the system easier to use and to work when internet access is limited. 
+The main strengths of the design are the support for both the old and the strengthened 
+curriculum, the list of 85 courses, scoring rules that are fixed and can be check ed, the 
+bilingual interface, and the Offline Mode. Together they answer the needs found in the 
+interviews. The Course Detail Explorer (F-10) also shows scholarship information for each 
+course, which responds to the financial problem reported by 25 of the 30 respondents. 
+ 
+\n=== PDF PAGE 55 ===\n54 
+ 
+ 
+Figure 7. Landing Page. 
+Figure 7 shows the landing page with the headline “You are an Explorer. Your 
+career path is a map,” a short description, and the “Start Your Journey” button. The menu 
+has Home, About, and How It Works, and a language menu offers English and Filipino.
+ 
+Figure 8. Basecamp: Choose Your Explorer 
+
+\n=== PDF PAGE 56 ===\n55 
+ 
+Figure 8 shows the first Basecamp step. The student chooses an explorer and may 
+enter a name. The name is optional and is used only for the journey and the report .
+ 
+Figure 9. Basecamp: Choose Your Curriculum 
+Figure 9 shows the second Basecamp step. The student selects a grade level. Grade 
+11 students use the new curriculum route. Grade 12 students choose between the old and 
+the new curriculum. The choice decides which Valley questions are shown. No account is 
+created. 
+
+\n=== PDF PAGE 57 ===\n56 
+ 
+ 
+Figure 10. Journey Map 
+Figure 10 shows the Journey Map with three trails: the Mountains (Interests), the 
+Forest (Skills), and the Valley (Academic Performance). Each trail shows its progress, and 
+only the next trail is open. A note says that progress is saved on this device.
+ 
+Figure 11. Interests Section (the Mountains) 
+
+\n=== PDF PAGE 58 ===\n57 
+ 
+Figure 11 shows one of the eight real -life scenarios. The student chooses one of 
+four options. There are no right or wrong answers. 
+ 
+Figure 12. Skills Section (the Forest) 
+Figure 12 shows a skills statement that the student rates from 1 to 5. The section 
+has fifteen statements. 
+Figure 13. Valley, Old Curriculum Route 
+
+\n=== PDF PAGE 59 ===\n58 
+ 
+Figure 13 shows the Valley for the old curriculum. The student selects a strand, one 
+to three best subjects, and the general weighted average, and then selects Certificates and 
+Achievements or “None yet.” 
+ 
+Figure 14. Valley, New Curriculum Route 
+Figure 14 shows the Valley for the new curriculum. The student selects up to three 
+electives, one to three core subjects, and the general weighted  average, and then selects 
+Certificates and Achievements or “None yet.” 
+
+\n=== PDF PAGE 60 ===\n59 
+ 
+ 
+Figure 15. Processing Screen 
+Figure 15 shows a short screen while the system checks the answers and computes 
+the course matches. 
+ 
+Figure 16. Results Page 
+
+\n=== PDF PAGE 61 ===\n60 
+ 
+Figure 16 shows the top five matches with a short reason for each, based on the 
+answers of the student. The student can open all 85 courses, choose two courses to 
+compare, go back to the Journey Map, or download the report. A note says that the results 
+are supporting references only. 
+ 
+Figure 17. Course Comparison 
+Figure 17 shows two selected courses side by side with their overview, careers, 
+salary estimates, and schools. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 18. Course Detail View 
+
+\n=== PDF PAGE 62 ===\n61 
+ 
+Figure 18 shows the detail page of a course. It has the overview, subjects to study, 
+related careers, salary source and year, schools, and guidance tips such as admission 
+requirements and scholarship opportunities. 
+ 
+ 
+Figure 19. PDF Report Confirmation 
+Figure 19 shows the message that the Explorer Report is ready, with Download and 
+Print options.  
+Evaluation Results 
+The system was checked in two ways: a test of the system components and an evaluation 
+by the same thirty (30) guidance counselors and teachers using Instrument 2, the Career 
+Compass System Evaluation Questionnaire, which is based on ISO/IEC 25010 (ISO, 
+2023). The questionnaire has 18 indicators: five for Functional Suitability, five for 
+Reliability, and eight for Interaction Capability. Each indicator was rated from 5 (Strongly 
+
+\n=== PDF PAGE 63 ===\n62 
+ 
+Agree) to 1 (Strongly Disagree), and the ratings were interpreted using the scale in Table 
+6. In the tables, WM stands for weighted mean. The overall weighted mean was 4.77, 
+interpreted as Strongly Agree. The system components passed all test scenarios. The details 
+are in the tables below. 
+Table 10. System Components 
+Test Scenario Expected Outcome Actual Outcome Result 
+Student answers 
+assessment questions 
+Responses are accepted 
+successfully 
+Complete answers for the old and 
+new routes were accepted. 
+Incomplete answers were not 
+accepted and a message was 
+shown 
+Passed 
+System processes 
+responses 
+Appropriate 
+recommendations are 
+generated 
+All 85 courses were scored and 
+ranked, and the same answers 
+gave the same ranking 
+Passed 
+System displays 
+recommendations 
+Suggested courses and 
+careers appear correctly 
+The top five matches with reasons 
+were shown, all 85 courses could 
+be opened, and the course details 
+appeared correctly 
+Passed 
+User exports 
+assessment result 
+Printable PDF report is 
+generated successfully 
+The Explorer Report was 
+downloaded and printed with the 
+cover, top five matches, profile, 
+course details, and note 
+Passed 
+Link check of the 
+scoring table 
+Each course has 15 
+links (1,275 in all) Confirmed for all 85 courses Passed 
+Maximum score 
+check 
+Maximum total is 38 
+(old route) and 43 (new 
+route) 
+Confirmed from the scoring rules Passed 
+ 
+Table 10 shows the results of the component tests. All scenarios passed, which 
+means the scoring follows the rule and link table and every course has the same number of 
+links. The tests check the rules on test answers. They do not measure how accurate the 
+recommendations are for real students. 
+ 
+\n=== PDF PAGE 64 ===\n63 
+ 
+Table 11. Evaluation Results for Functional Suitability 
+No. Sub-
+characteristic 
+Indicator 5 4 3 2 1 WM Interpretation 
+1 Functional 
+Completeness 
+The system provides the 
+necessary features for career 
+assessment and course 
+recommendations. 
+25 3 2 0 0 4.77 Strongly Agree 
+2 Functional 
+Completeness 
+The system provides a 
+complete PDF report of the 
+assessment results and 
+recommended courses. 
+22 7 1 0 0 4.70 Strongly Agree 
+3 Functional 
+Correctness 
+The system processes 
+assessment answers correctly 
+based on the selected SHS 
+curriculum. 
+23 7 0 0 0 4.77 Strongly Agree 
+4 Functional 
+Correctness 
+The system generates course 
+recommendations that match 
+the assessment answers. 
+25 4 1 0 0 4.80 Strongly Agree 
+5 Functional 
+Appropriateness 
+The system helps users 
+explore suitable college 
+courses based on their 
+assessment results. 
+26 3 1 0 0 4.83 Strongly Agree 
+  
+Functional Suitability 121 24 5 0 0 4.77 Strongly 
+Agree 
+ 
+All five indicators were rated Strongly Agree, with weighted means from 4.70 to 
+4.83. The highest was Item 5 (4.83), which says the system helps users explore suitable 
+college courses. The lowest was Item 2 (4.70), the completeness of the PDF report, which 
+is still Strongly Agree. Of the 150 ratings, 121 (80.7%) were 5, 24 were 4, and only 5 were 
+3. This means the evaluators found the features complete, the answers processed correctly, 
+and the results useful for exploring courses. 
+ 
+ 
+ 
+\n=== PDF PAGE 65 ===\n64 
+ 
+Table 12. Evaluation Results for Reliability 
+No. Sub-characteristic Indicator 5 4 3 2 1 WM Interpretation 
+6 Faultlessness The system works 
+consistently during the 
+assessment and 
+recommendation process. 
+26 3 1 0 0 4.83 Strongly Agree 
+7 Faultlessness The system performs its 
+functions without 
+unexpected errors. 
+24 6 0 0 0 4.80 Strongly Agree 
+8 Fault Tolerance The system remains usable 
+after minor interruptions. 
+23 7 0 0 0 4.77 Strongly Agree 
+9 Recoverability The system keeps saved 
+assessment progress after 
+refreshing or reopening the 
+page in the same browser. 
+27 3 0 0 0 4.90 Strongly Agree 
+10 Availability The system’s Offline Mode 
+allows users to access 
+supported features without 
+an internet connection after it 
+is enabled. 
+26 3 1 0 0 4.83 Strongly Agree 
+  
+Reliability 126 22 2 0 0 4.83 Strongly 
+Agree 
+ 
+All Reliability indicators were rated Strongly Agree, with weighted means from 
+4.77 to 4.90. The highest was Item 9 (4.90), which shows that the evaluators found the 
+saved progress to stay after a refresh or reopening of the page. Items 6 and 10 followed a t 
+4.83. This supports the use of localStorage and Offline Mode in the design. Reliability had 
+the highest mean of the three characteristics, and 126 of 150 ratings (84.0%) were 5. 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 66 ===\n65 
+ 
+Table 13. Evaluation Results for Interaction Capability 
+No. Sub-characteristic Indicator 5 4 3 2 1 WM Interpretation 
+11 Appropriateness 
+Recognizability 
+The interface clearly shows 
+that the system is designed 
+for career guidance. 
+20 7 2 1 0 4.53 Strongly Agree 
+12 Learnability The system is easy to learn 
+and use. 
+22 7 0 0 1 4.63 Strongly Agree 
+13 Operability The system is easy to 
+navigate when completing 
+assessments and viewing 
+results. 
+24 4 2 0 0 4.73 Strongly Agree 
+14 User Error 
+Protection 
+The system helps users 
+avoid mistakes when 
+entering answers. 
+25 3 1 1 0 4.73 Strongly Agree 
+15 User Engagement The interface is visually 
+appealing and encourages 
+users to complete the 
+assessment. 
+23 5 2 0 0 4.70 Strongly Agree 
+16 Inclusivity The system’s text and 
+controls are easy to read and 
+use for people with different 
+needs. 
+24 5 1 0 0 4.77 Strongly Agree 
+17 User Assistance The system provides helpful 
+instructions when users need 
+guidance. 
+21 9 0 0 0 4.70 Strongly Agree 
+18 Self-descriptiveness The system’s buttons, labels, 
+and options clearly show 
+what they do. 
+30 0 0 0 0 5.00 Strongly Agree 
+  
+Interaction Capability 189 40 8 2 1 4.73 Strongly 
+Agree 
+ 
+All eight indicators were rated Strongly Agree, with weighted means from 4.53 to 
+5.00. The highest was Item 18 (5.00), where all 30 evaluators gave a 5 for the clear buttons, 
+labels, and options. Item 16 followed at 4.77. The lowest were Item 11 (4.53) and Item 12 
+(4.63). Interaction Capability had the lowest mean of the three characteristics, and it holds 
+all three of the ratings below 3. Khurumova  and Pinto (2023) noted that the readiness of 
+users to use online guidance tools is important. The lower scores for Items 11 and 12 
+\n=== PDF PAGE 67 ===\n66 
+ 
+suggest that the first screens can explain the purpose of the system more clearly. This 
+agrees with the interview finding that a simple interface was wanted by 11 of 27 
+respondents. 
+Table 14. Summary of Evaluation Results 
+Quality Characteristic Items Responses Σfx Weighted Mean Interpretation 
+Functional Suitability 5 150 716 4.77 Strongly Agree 
+Reliability 5 150 724 4.83 Strongly Agree 
+Interaction Capability 8 240 1,134 4.73 Strongly Agree 
+Overall 18 540 2,574 4.77 Strongly Agree 
+ 
+The overall weighted mean is 4.77 (2,574 ÷ 540), which is interpreted as Strongly 
+Agree. This means the evaluators strongly agreed that Career Compass meets the quality 
+characteristics that were evaluated. Of the 540 ratings, 436 (80.7%) were 5, 86 (15.9%)  
+were 4, 15 (2.8%) were 3, 2 (0.4%) were 2, and 1 (0.2%) was 1. So  96.7% of all ratings 
+were Agree or Strongly Agree. Reliability had the highest mean (4.83), followed by 
+Functional Suitability (4.77) and Interaction Capability (4.73). Expressed as a percentage 
+of the highest possible rating of 5, the overall mean is 95. 4%, Functional Suitability is 
+95.4%, Reliability is 96.6%, and Interaction Capability is 94.6%. 
+\n=== PDF PAGE 68 ===\n67 
+ 
+ 
+Figure 20. Weighted Mean per Quality Characteristic 
+Figure 2 0 shows that the three characteristics were all rated above 4.70, with 
+Reliability the highest and Interaction Capability the lowest. 
+ 
+Figure 21. Weighted Mean per Indicator 
+Figure 21 shows that Item 18 had the highest weighted mean (5.00) and Item 11 
+had the lowest (4.53). All 18 indicators stayed in the Strongly Agree range. 
+4.68
+4.7
+4.72
+4.74
+4.76
+4.78
+4.8
+4.82
+4.84
+Functional Suitability Reliability Interaction Capability
+Weighted Mean per Quality Characteristic
+Weighted Mean
+4.2
+4.3
+4.4
+4.5
+4.6
+4.7
+4.8
+4.9
+5
+5.1
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+Weighted Mean per Indicator
+Weighted Mean
+\n=== PDF PAGE 69 ===\n68 
+ 
+Like Villaruz and Diamante (2024), this study used ISO/IEC 25010 to evaluate a 
+rule-based decision support system made for a school process. The high ratings for 
+Functional Suitability also fit the point of Dayag and Picajas (2025) that career guidance 
+works better when it is organized, since the evaluators found the structured assessment and 
+results suitable for guidance tasks. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 70 ===\n69 
+ 
+References 
+Dayag, R. P. F., & Picajas, J. J. S. (2025). Strengthening career readiness through  
+structured career guidance services of grade 11 students. Global Journal of 
+Guidance and Counseling in Schools, 15 (1), 34 –49. 
+https://www.researchgate.net/publication/396775028_Strengthening_career_readi
+ness_through_structured_career_guidance_services_of_grade_11_students 
+International Organization for Standardization. (2023). ISO/IEC 25010: Systems and  
+software engineering—Systems and software quality requirements and evaluation 
+(SQuaRE)—System and software quality models. ISO. 
+Khurumova, V., & Pinto, J. C. (2023). Online and computer-assisted career guidance: Are  
+students prepared for it? Frontiers in Psychology, 14 , Article 1117289. 
+https://doi.org/10.3389/fpsyg.2023.1117289 
+Villaruz, R. J. G., & Diamante, R. A. (2024). Enrollment appraisal using rule-based  
+decision support system. Journal of Innovative Technology Convergence, 6(2), 67–
+78. https://doi.org/10.69478/JITC2024v6n002a07 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 71 ===\n70 
+ 
+Chapter 5 
+SUMMARY OF FINDINGS, CONCLUSION AND RECOMMENDATIONS 
+This chapter presents the summary of findings, the conclusions, and the 
+recommendations of the study “Career Compass: A Web-Based Decision Support System 
+for Senior High School Career Guidance.” 
+Summary of Findings 
+The study aimed to develop a web-based decision support system that helps Senior 
+High School students choose suitable college courses and career paths. The system uses a 
+rule-based weighted scoring method on the interests, skills, and academic performance of 
+the student. It also gives guidance counselors a printed result that they can use as a 
+supporting reference. Guided by the Rapid Application Development (RAD) model, the 
+researchers identified the data requirements of the system, designed and developed Career 
+Compass, and evaluated it using the ISO/IEC 25010 software quality model. The findings 
+are summarized according to the three specific objectives of the study. 
+1. The interviews with 30 teachers and guidance designates from Balogo High 
+School, Ponso National High School, and Barayong National High School showed the data 
+and features the system needed. Career guidance in the three schools was done by hand 
+through orientations, career talks, counseling, and assessments. It was often given by a 
+classroom teacher on top of a full teaching load, the schedule was not the same across 
+schools, and most materials were on paper. The most common problems of students were 
+limited money (25 of 30), family influence (18 of 30), lack of self -awareness (15 of 30), 
+and little knowledge of available courses (15 of 30). The most wanted feature was 
+automated course and career recommendation (15 of 27), followed by digital student 
+ 
+\n=== PDF PAGE 72 ===\n71 
+ 
+profiles and a central place for career information (12 of 27 each) and a simple interface 
+(11 of 27). From these findings, the researchers set eight requirements for the system. The 
+system needed to collect interests, skills, and academic performance, giv e clear course 
+information, and produce a printable result for counselors. 
+2.  Career Compass was designed and developed using the Rapid Application 
+Development model. The system has 19 features. These include a guided journey in three 
+trails (Mountains, Forest, and Valley), a rule -based scoring engine, a top five result with 
+all 85 courses to explore, a course detail page, course comparison, a printable PDF report, 
+an English and Filipino language switch, progress saving in the browser’s localStorage, 
+and an opt -in Offline Mode. The course detail page also shows scholarship informati on, 
+which responds to limited money, the most common problem of students. The system 
+supports both the old and the strengthened Senior High School curriculum. It scores each 
+course from its links to interests, skills, and academic performance, which includ es 
+Certificates and Achievements. The assessment items were validated by the three guidance 
+designates of the participating schools. The highest possible score is 38 for the old route 
+and 43 for the new route. Each of the 85 courses has the same number of links, so no course 
+has more chances to score than another. The system has no account, no login, and no 
+database, and the answers of the student stay on the device. The system components test 
+showed that the assessment, scoring, results, and PDF report worked as expected. 
+3.  The system was evaluated by 30 guidance counselors and teachers using 
+ISO/IEC 25010. The overall weighted mean was 4.77, interpreted as Strongly Agree. 
+Reliability had the highest weighted mean (4.83), followed by Functional Suitability (4.77) 
+and Interaction Capability (4.73). All 18 indicators were rated Strongly Agree. The highest 
+\n=== PDF PAGE 73 ===\n72 
+ 
+indicator was Item 18 on clear buttons, labels, and options (5.00). The lowest was Item 11 
+on whether the interface clearly shows that the system is for career guidance (4.53). The 
+next lowest was Item 12 on ease of learning and use (4.63). Of the 540 ratings, 96.7% were 
+Agree or Strongly Agree, and only three ratings were below 3. These results are in line 
+with Dayag and Picajas (2025), who stressed that organized guidance supports the career 
+readiness of students, since the evaluators found the structured assessment suitable for 
+guidance tasks. Like Villaruz and Diamante (2024), this study evaluated a rule -based 
+decision support system for a school process using ISO/IEC 25010. 
+Conclusions 
+The study was conducted for the purpose of developing Career Compass, a web -
+based decision support system that supports Senior High School career guidance by 
+generating course and career recommendations from students’ interests, skills, and 
+academic perfor mance. In line with its objectives, the study arrived at the following 
+conclusions: 
+1. The data requirements were identified and matched the real needs of the schools. 
+The interviews showed that guidance is done by hand, that teachers have little time for it, 
+and that students need clear information about courses. They also showed that the input of 
+the system should be the interests, skills, and academic performance of the student. The 
+data requirements were therefore enough to guide the design of Career Compass. 
+2. Career Compass was designed and developed as planned. It applies the rule -
+based weighted scoring method, supports both curricula, and gives ranked course 
+recommendations that the student and the guidance counselor can use as a supporting 
+reference. The scoring rules are fixed, can be checked, and were validated by the guidance 
+\n=== PDF PAGE 74 ===\n73 
+ 
+designates of the three schools. The system works without an account or a database. This 
+shows that a rule-based system can give organized and personal course recommendations. 
+Unlike the data mining approach of Bejar (2024), the rule -based method of Career  
+Compass does not need a large set of training data, which makes it easier to build and to 
+check in a school setting. 
+3.  Career Compass was rated Strongly Agree by the evaluators on the three 
+ISO/IEC 25010 quality characteristics used in this study. The overall weighted mean was 
+4.77 (Strongly Agree). By characteristic, Functional Suitability got 4.77, Reliability got 
+4.83, and Interaction Capability got 4.73, all interpreted as Strongly Agree. The evaluators 
+strongly agreed that the system has the needed functions, works reliably, and is easy to use. 
+The results suggest that the system may serve as a supporting tool in the career guidance 
+of Senior High School students. The lower ratings for Ite ms 11 and 12 show that the first 
+screens can explain the purpose of the system more clearly. 
+The conclusions are limited in several ways. The evaluators were teachers and 
+guidance designates from three schools, and students did not take part, so the results do 
+not show how students feel about the system. The tests check that the scoring follows the 
+rules. They do not measure how accurate the recommendations are for real students. The 
+system covers only 85 courses, and its recommendations depend on the answers of the 
+student. The results are supporting references only, and the final decision stays w ith the 
+student and the guidance counselor. 
+ 
+ 
+ 
+\n=== PDF PAGE 75 ===\n74 
+ 
+Recommendations 
+In light of the findings and conclusions, the following recommendations are given 
+to improve the system and to guide schools and future studies. The first four are for 
+improving the system, and the last three are for schools and future researchers. 
+1. Add more courses and update the course data every year. The system covers 85 
+courses, and salary estimates, schools, requirements, and scholarship information change 
+over time. Regular updates also answer the request of 8 of 27 respondents for regular 
+maintenance. 
+2.  Add non-degree and technical-vocational pathways, and connect the system to 
+current job market data. The system already shows careers, salary estimates, schools, and 
+scholarship information for each of the 85 courses. However, 2 of 27 respondents asked 
+for non-degree pathways, and 4 of 27 asked for job market information. The system covers 
+only college courses, and its salary data is fixed, so students cannot see other options or 
+current job information. Limited money was the most common problem of students (25 of 
+30), so showing low-cost pathways and current job information can help them plan. Current 
+job data needs outside data sources, so this can be done together with Recommendation 3. 
+3.  Add an optional account and a database. These were outside the approved scope, 
+but 12 of 27 respondents wanted digital student profiles, and 4 of 27 wanted a way to track 
+career plans over time. A database would let counselors keep results and follow up wi th 
+students. It would also need strong data privacy protection under the Data Privacy Act of 
+2012. 
+\n=== PDF PAGE 76 ===\n75 
+ 
+4.  Add a counselor dashboard and links with other school offices. Four respondents 
+wanted dashboards and summaries, and two wanted links across offices. These features 
+need a database and a login, so they can be done together with Recommendation 3. 
+5.  Let guidance counselors use the system in their regular guidance activities, and 
+train them to read the results. Limited counselor time was a problem in the schools (9 of 
+30), and the printed report can save time if counselors know how to discuss it with students 
+and their families. 
+6.  Test the system with Senior High School students. Students did not take part in 
+this evaluation. A study with students can show how they feel about the system, whether 
+the recommendations match their later choices, and whether the first screens are clear t o 
+them. This follows the lower ratings for Items 11 and 12. 
+7.  Study other ways to add personalization, such as machine learning, in future work. 
+Two respondents suggested advanced personalization. This study used only a rule -based 
+method, so other methods can be compared with it using real student data. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\n=== PDF PAGE 77 ===\n76 
+ 
+References 
+Bejar, R. E., Jr. (2024). Precision in progress: Leveraging data mining technique to  
+empower career path selection for incoming senior high school students. 
+International Journal of Research and Innovation in Social Science, 8(4), 112–125. 
+https://rsisinternational.org/journals/ijriss/articles/precision-in-progress-
+leveraging-data-mining-technique-to-empower-career-path-selection-for-
+incoming-senior-high-school-students/ 
+Dayag, R. P. F., & Picajas, J. J. S. (2025). Strengthening career readiness through structured  
+career guidance services of grade 11 students. Global Journal of Guidance and 
+Counseling in Schools, 15 (1), 34 –49. 
+https://www.researchgate.net/publication/396775028_Strengthening_career_readi
+ness_through_structured_career_guidance_services_of_grade_11_students 
+Villaruz, R. J. G., & Diamante, R. A. (2024). Enrollment appraisal using rule-based  
+decision support system. Journal of Innovative Technology Convergence, 6(2), 67–
+78. https://doi.org/10.69478/JITC2024v6n002a07 
+ 
+ 
+ 
+ 
+ 

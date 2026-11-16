@@ -1,3 +1,4 @@
+> Outdated scoring rules. See [lib/scoringV2/score.js](../lib/scoringV2/score.js) for the current rules.
 # Revision 25b implementation report
 
 Date: October 26, 2026, Asia/Manila. Branch v2-rebuild. No commit, dependencies, art, fonts or audio assets added. This report and rubric-revision-report.md supersede earlier phase descriptions of the retired scoring rules; earlier reports remain historical records.

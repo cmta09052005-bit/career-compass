@@ -100,8 +100,13 @@ export default function About() {
             </Localized>
           </div>)}</Localized>
         </section>
+        <div className="about-adviser">
+          <Localized as="p" className="team-role">Capstone Project Adviser</Localized>
+          <p className="team-name" translate="no">Jerry B. Agsunod, MIT</p>
+          <p className="team-school" translate="no">Bicol University Polangui</p>
+        </div>
         <section className="about-avatar-credits" aria-label="Character avatar credits">
-          <Localized as="p">Character avatars in Career Compass were generated using Anthropic and curated by the development team.</Localized>
+          <Localized as="p">Character avatars in Career Compass were generated using Anthropic and curated by the development team.{" "}<Localized as="span">Logo designed by</Localized>{" "}<span className="about-credit-name" translate="no">Sophia Mae Alodia Balmaceda</span>.</Localized>
         </section>
         <section className="about-faq" aria-labelledby="faq-title"><Localized as="p" className="hiw-label">A few honest answers</Localized><Localized as="h2" id="faq-title">Questions you might have</Localized><Localized as="div" className="faq-list">{faqs.map(([question, answer], index) => <div className="faq-item" key={question} onPointerEnter={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(index); }} onPointerLeave={(event) => { if (event.pointerType === "mouse" && window.matchMedia("(hover: hover) and (pointer: fine)").matches) showFAQ(null); }}><h3><button type="button" id={`faq-question-${index}`} aria-expanded={openFAQ === index} aria-controls={`faq-answer-${index}`} onClick={() => showFAQ(openFAQ === index ? null : index)}><Localized as="span">{question}</Localized><span className="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="m5 9 7 7 7-7" /></svg></span></button></h3><div id={`faq-answer-${index}`} className="faq-answer" role="region" aria-labelledby={`faq-question-${index}`} aria-hidden={openFAQ !== index}><Localized as="p">{answer}</Localized></div></div>)}</Localized></section>
         <section className="hiw-closing" aria-labelledby="about-closing-title"><Localized as="h2" id="about-closing-title">Ready to start exploring?</Localized><Button href="/intake" className="story-button about-start" label={journeyLabel(entry, "about")} /><Localized as={Link} href="/how-it-works" className="story-text-link">How It Works ↗</Localized></section>

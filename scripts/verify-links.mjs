@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import { gwaBonus, scoreCourses } from '../lib/scoringV2/score.js';
 
 const root = new URL('../data/v2/', import.meta.url);
 const read = async (name) => JSON.parse(await readFile(new URL(name, root), 'utf8'));
@@ -32,9 +33,10 @@ try {
   const best = items.bestSubjects.coreSubjectIds;
   check(best.length === 4 && unique(best), 'Expected 4 unique core-subject choices');
   for (const id of items.bestSubjects.coreSubjectIds) check(ids.coreSubject.has(id), `Unknown best core ${id}`);
-  for (const value of [0, 74.99, 75, 79.5, 80, 84.99, 85, 89.5, 90, 94.5, 95, 100]) {
+  for (const [value, bonus] of [[0, 0], [74.99, 0], [75, 1], [79.99, 1], [80, 1], [84.99, 1], [85, 2], [89.99, 2], [90, 2], [94.99, 2], [95, 3], [100, 3]]) {
     const tiers = items.gwaTiers.filter((tier) => (tier.lowerInclusive === null || value >= tier.lowerInclusive) && (value < tier.upperExclusive || (tier.upperInclusive === true && value === tier.upperExclusive)));
     check(tiers.length === 1, `GWA ${value}: expected exactly one tier`);
+    check(tiers[0]?.bonus === bonus && gwaBonus(value) === bonus, `GWA ${value}: expected bonus ${bonus}`);
   }
   const counts = { interests: 2, skills: 2, oldSubjects: 2, certificates: 2, strand: 1, coreSubject: 1, electives: 5 };
   const strands = {};
@@ -65,6 +67,19 @@ try {
     for (const id of change.removed) check(!links[change.courseId]?.electives.includes(id), `${change.courseId}: removed elective still present ${id}`);
     for (const id of change.added) check(links[change.courseId]?.electives.includes(id), `${change.courseId}: added elective absent ${id}`);
   }
+  if (!errors.length) {
+    for (const { id } of courses) {
+      const link = links[id];
+      const interests = Object.fromEntries(items.interests.map(({ id }) => [id, 'A']));
+      for (const option of link.interests) interests[option.slice(0, 6)] = option.slice(-1);
+      const skills = Object.fromEntries(items.skills.map(({ id }) => [id, link.skills.includes(id) ? 5 : 1]));
+      const common = { interests, skills, certificates: link.certificates, gwa: 100 };
+      const old = scoreCourses({ ...common, route: 'old', old: { strand: link.strand, subjects: link.oldSubjects } });
+      const modern = scoreCourses({ ...common, route: 'new', new: { electives: link.electives.slice(0, 3), bestSubjects: [link.coreSubject] } });
+      check(old.find((row) => row.id === id)?.total === 35, `${id}: expected old-route maximum of 35`);
+      check(modern.find((row) => row.id === id)?.total === 40, `${id}: expected new-route maximum of 40`);
+    }
+  }
   if (errors.length) {
     console.error(`FAIL: ${errors.length} verification error(s)\n${errors.join('\n')}`);
     process.exitCode = 1;
@@ -73,6 +88,7 @@ try {
     console.log('PASS: every course has 2 interests in different questions, 2 skills, 2 old subjects, 2 certificates, 1 non-GAS strand, 1 core subject, 5 electives.');
     console.log('PASS: Appendix A strand totals 17/11/20/7/5/7/9/7/2; GAS 0.');
     console.log('PASS: 425 elective links; all 70 scored rows covered; all 22 Appendix B replacements applied.');
+    console.log('PASS: GWA bonuses match the tier data; all 85 courses reach 35 old and 40 new.');
     console.log('NOTE: 8 interest question prompts are NOT DETERMINED in the supplied rubric; structural verification does not establish content completeness or Rank 1 reachability.');
   }
 } catch (error) {

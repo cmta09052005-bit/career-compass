@@ -1,3 +1,4 @@
+> Outdated scoring rules. See [lib/scoringV2/score.js](../lib/scoringV2/score.js) for the current rules.
  
 
 

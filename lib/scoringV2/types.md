@@ -20,9 +20,12 @@ STR-04 (Academic GAS, unlinked). New electives: 0..3 distinct scored ELE IDs;
 [] means Not sure yet / None. Core subjects (internal bestSubjects): 1..3
  distinct COR-01..COR-04 IDs only. Elective cards are not core choices.
 Work Immersion and display sentinel IDs are not canonical answers. There is
-no cluster field or award. New academic maximum is 21 (total 43); old remains
-16 (total 38). New academic = 4 per matched elective + 3 for the linked core
-subject + GWA bonus once if an elective or core subject matches.
+no cluster field or award. The new route has a maximum of 18 academic points
+and 40 total points. The old route has a maximum of 13 academic points and 35
+total points. GWA is worth 3 at 95–100, 2 at 85 to below 95, 1 at 75 to below
+85, and 0 below 75. Award it once per course when the linked strand matches
+on the old route or when a linked elective or the linked core subject matches
+on the new route.
 
 Only the active route block is required. If the inactive block is supplied it
 must also be valid, but does not affect scores or the hash. Root metadata
@@ -36,8 +39,8 @@ the same errors. Codes: REQUIRED, TYPE, UNKNOWN_ID, UNKNOWN_KEY, RANGE,
 INTEGER, COUNT, DUPLICATE. Invalid route values use RANGE.
 
 Canonical hashing projects only route, complete interests/skills, certificates,
-GWA tier bonus, and the active route block. The rubric specifies the GWA tier
-in the seed, so raw grades in the same tier share a seed. All object keys and
+GWA tier bonus, and the active route block. Raw grades worth the same bonus
+share a seed when the other scoring answers match. All object keys and
 all selection arrays are sorted by Unicode code units before JSON.stringify;
 UTF-8 encoding and lowercase hexadecimal SHA-256 are used. Hash ordering is
 ascending SHA-256(seedHex + courseId); no delimiter. Metadata and inactive

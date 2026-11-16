@@ -1,3 +1,4 @@
+> Outdated scoring rules. See [lib/scoringV2/score.js](lib/scoringV2/score.js) for the current rules.
 # CAREER COMPASS — PROJECT INSTRUCTIONS
 ## Living specification document for AI-assisted development (Claude + Cursor)
 ### Last updated: Phase 5, Step 5.2 (post Prompt 1/2 correction)
